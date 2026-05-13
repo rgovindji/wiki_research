@@ -9,6 +9,32 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-13] new sector | Aerospace & Defense — Phase 1 build
+- User requested new aerospace sector. Researched 6 parallel queries (RKLB, ASTS, SpaceX, space economy, DoD Space Force, defense primes); fetched RKLB + ASTS Q1 press releases per the new earnings workflow.
+- **Phase 1 (this session — 11 new files):**
+  - **Sector page:** [[aerospace-defense]] — full tiering: Tier 1 pure-play space + Tier 2 defense primes + Tier 3 supply chain + Tier 4 private (SpaceX, Anduril, Blue Origin) + Tier 5 ETFs
+  - **Theme page:** [[space-economy]] — Morgan Stanley $1.1T-by-2040 thesis; DoD Space Force $40.2B FY26 (+40% YoY); launch cost compression 95%; SpaceX IPO confidentially filed April 1, 2026 at $1.75-2T
+  - **5 new ticker pages:** [[RKLB]] (bull/HIGH — Q1 record), [[ASTS]] (bull/medium speculative), [[LMT]] (bull/medium mature), [[NOC]] (bull/medium B-21+Sentinel), [[KTOS]] (bull/medium mid-cap)
+  - **2 raw earnings filings:** RKLB + ASTS Q1 2026 press releases saved to `raw/filings/`
+  - **2 source summaries:** [[2026-05-07-RKLB-Q1-2026-earnings]] + [[2026-05-11-ASTS-Q1-2026-earnings]]
+- **Key findings:**
+  - **RKLB Q1 2026:** Revenue $200.3M (+63.5% YoY, record); backlog $2.2B (~2x YoY); 36 new launches contracted Q1; **Department of War Golden Dome Space Based Interceptor partnership with Raytheon**; Neutron debut later 2026; Mynaric + Motiv acquisitions; cash $1.21B + $2B liquidity
+  - **ASTS Q1 2026:** Revenue $14.7M; net loss $191M; cash $3.5B; 2026 guide $150-200M; 45 BlueBird target EOY 2026; **98.9 Mbps direct-to-unmodified-smartphone validated**; FCC US authorization approved; ~60 MNO partners covering 3B+ subscribers
+  - **SpaceX:** $800B Dec 2025 → confidential IPO filed April 1, 2026 at ~$1.75-2T; Starlink $11.4B 2025 revenue (~70% of total)
+  - **DoD Space Force FY26: $40.2B (+40% YoY)** with Big Beautiful Bill + reconciliation; Golden Dome is the new mega-program
+  - **Space economy $470B (78% commercial)** in 2026; Morgan Stanley $1.1T by 2040 / $1.8T by 2035 (newer forecast)
+- **Cross-links established:** [[MP]] cross-cycle play (rare-earth magnets for BOTH robotics AND defense F-35/B-21/Sentinel); [[NVDA]] Jetson edge compute in Neutron + military drone applications; [[bottleneck-roadmap]] framework extensible
+- **Tooltips:** 5 new ticker entries (RKLB, ASTS, LMT, NOC, KTOS) added between AI/robotics blocks
+- **Index + watchlist:** new sector entry, new theme entry, 5 new ticker entries; 2 new source ingests
+- **Stance / conviction changes:** none on existing tickers. 5 new tickers added at their researched stances. **RKLB at bull/HIGH** is justified by the Q1 print magnitude (record rev + 2x backlog + Golden Dome win).
+- **Pending (Phase 2 — next session):**
+  - Phase 2 ticker pages: LUNR, RDW, BKSY, IRDM, RTX, VELO (full page), TDG, HEI, HWM
+  - SpaceX private-watch theme page or addition to aerospace-defense
+  - Morgan Stanley space economy PDF — flagged for user to fetch (paywalled / hard via WebFetch)
+  - CSIS Space Force commercial services analysis — flagged for user to fetch
+  - VELO upgrade from "Tier 3 mention only" to full company page once user signals interest
+- **Total wiki:** 88 files (+8: 1 sector + 1 theme + 5 ticker pages + 2 source summaries = 9 net new, of which sources + raws = 4)
+
 ## [2026-05-13] daily update | full scan: CRWV miss retroactively processed; ON upgraded; macro + Trump-Xi delegation updates
 - User asked for a full daily update scan. Surfaced **major miss: CRWV Q1 2026 print (May 7, 2026)** had not been processed — exactly the same gap that motivated the new earnings workflow memory.
 - **CRWV Q1 retroactive processing per the new earnings workflow:**

@@ -33,7 +33,8 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 | [[TER]] | bull / high conviction | Chip test equipment; Q1 2026 revenue +87% YoY to $1.282B record; 70% AI exposure | Semi Test segment $1B+ run-rate sustainability |
 | [[ENTG]] | bull / high conviction | Fab consumables / FOUPs / ultra-pure materials; Q1 2026 +5%; content-per-wafer growth | Advanced Materials Handling rev mix |
 | [[APD]] | bull / medium conviction | Industrial gases for fabs; multi-decade BOO contracts; Samsung Pyeongtaek largest semi investment | Pyeongtaek phased onstream 2028-2030 |
-| [[MP]] | bull / high conviction | **NEW 2026-05-13.** Only fully integrated US NdFeB producer; Stillwater commercial ramp H1 2026; humanoid magnet content ~10x EV per unit; Apple + GM + DoD anchor customers | First commercial NdFeB shipment from Stillwater; DoD investment terms |
+| [[MP]] | bull / high conviction | **NEW 2026-05-13.** Only fully integrated US NdFeB producer; Stillwater commercial ramp H1 2026; humanoid magnet content ~10x EV per unit; Apple + GM + DoD anchor customers. **Cross-cycle play: rare-earth bottleneck for BOTH robotics AND aerospace-defense** | First commercial NdFeB shipment from Stillwater; DoD investment terms |
+| [[RKLB]] | bull / high conviction | **NEW 2026-05-13.** Q1 2026 record: $200M rev (+63.5% YoY); $2.2B backlog (~2x); cash $1.21B + $2B liquidity. 36 new launches in Q1 (5 Neutron). Department of War Space Based Interceptor (Golden Dome) with Raytheon. Neutron debut later 2026. Mynaric + Motiv acquisitions. | Neutron debut date (slippage risk); Q2 print; Golden Dome contract value |
 
 ## Tactical (6–18mo swing candidates)
 
@@ -70,6 +71,10 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 | [[OUST]] | bull / **low** conviction | **DOWNGRADED 2026-05-13** (medium → low). Lidar pure-play; Q1 2026 +49% YoY; Stereolabs pivot to Physical AI. **But Hesai (China) is 25x larger and already profitable; Luminar filed Chapter 11. Path to scale requires either US tariffs barring Hesai or a named humanoid OEM design win.** | Hesai market share trend; humanoid OEM design-win disclosure; Op cash flow positive milestone; $100M ATM completion |
 | [[ALGM]] | bull / medium conviction | **NEW 2026-05-13.** Magnetic position + current sensors per motor joint; 30-50 sockets per humanoid; Q4 FY26 beat | First humanoid OEM design win disclosure; auto cycle recovery |
 | [[AMBA]] | bull / medium conviction | **NEW 2026-05-13.** Edge AI SoCs; FY26 back to non-GAAP profitability; Edge AI 80% of revenue; CV7 5nm ramping | Q1 FY27 print; CV3-AD design wins; M&A optionality |
+| [[ASTS]] | bull / medium conviction *(speculative)* | **NEW 2026-05-13.** Direct-to-unmodified-smartphone satellite; 98.9 Mbps validated; $3.5B cash; 2026 guide $150-200M; 45 BlueBird target EOY 2026; ~60 MNO partners covering 3B+ subscribers. **Starlink Direct-to-Cell is the structural risk.** | BB 8/9/10 launch mid-June; AT&T/Verizon binding commitments; Q4 revenue ramp |
+| [[LMT]] | bull / medium conviction | **NEW 2026-05-13.** Largest US defense prime; F-35 + Sentinel + Aegis + Golden Dome co-prime; Q1 $18.0B rev (+9.1% YoY); ~3% dividend yield. Mature compounder. | F-35 sustainment renegotiation; Sentinel cost overruns; Golden Dome contract structure |
+| [[NOC]] | bull / medium conviction | **NEW 2026-05-13.** B-21 Raider + Sentinel ICBM primes; record $95.7B backlog FY25; FCF +26% YoY to $3.3B; 2026 guide $43.5-44B; +29% YTD 2026. | Q2 print; B-21 production rate disclosure; Sentinel program milestones |
+| [[KTOS]] | bull / medium conviction | **NEW 2026-05-13.** Mid-cap defense specialist; XQ-58 Valkyrie autonomous drones + Mako hypersonic + Space Force training systems. ~$5B cap. Anduril (private) is the competition. | CCA program contract structure; Mako test milestones; Q2 print |
 
 ## Hold / monitor
 

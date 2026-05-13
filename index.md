@@ -12,6 +12,8 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 
 ## Recent source ingests
 
+- 2026-05-13 earnings: [[2026-05-07-RKLB-Q1-2026-earnings]] (RKLB Q1 record: $200M rev +63.5% YoY; $2.2B backlog ~2x; Golden Dome win)
+- 2026-05-13 earnings: [[2026-05-11-ASTS-Q1-2026-earnings]] (ASTS Q1: $14.7M rev; $3.5B cash; 98.9 Mbps direct-to-unmodified-smartphone validated; 45 BlueBird target EOY 2026)
 - 2026-05-13 earnings: [[2026-05-07-CRWV-Q1-2026-earnings]] (retroactive — CRWV Q1 blow-out: rev $2.078B +112% YoY; backlog $99.4B; Anthropic Claude deal NEW; Meta +$21B; conviction-upgrade candidate pending sign-off)
 - 2026-05-13 earnings: [[2026-05-13-NBIS-Q1-2026-earnings]] (NBIS Q1 blow-out: rev +684% YoY to $399M; Adj EBITDA inflection $129.5M; conviction upgraded medium→high)
 - 2026-05-13 ingest: [[2026-05-13-x-stack-map-humanoid-robotics]] (viral X humanoid-stack thread; prompted new [[robotics]] sector)
@@ -39,12 +41,14 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 - [[bottleneck-roadmap]] — time-sequenced supply-chain bottlenecks: memory (2026) → cleanrooms (2027) → EUV (2028-2030); now includes parallel robotics bottleneck roadmap (rare earths → sensors → actuators)
 - [[datacenter-construction]] — the **physical labor / contracting layer** building AI data centers; ~$76B contracted backlog across [[FIX]] / [[EME]] / [[PWR]]; overlooked because industrial-classified, not tech
 - [[humanoid-oems]] — humanoid OEM landscape (Tesla Optimus, Figure, Agility, Apptronik, AgiBot, Unitree, UBTECH); OEM-side counterpart to [[robotics]]; mostly private companies but determines which public suppliers win design slots
+- [[space-economy]] — $470B economy in 2026 → $1.1T by 2040 (Morgan Stanley); launch cost compression 95%; DoD Space Force $40.2B FY26 (+40% YoY); SpaceX IPO at ~$1.75-2T confidentially filed Apr 2026
 
 ## Sectors (`wiki/sectors/`)
 
 - [[semiconductors]] — NVDA / TSM / ASML / AVGO / AMD / AMAT; AI server spend +45% to $312B in 2026
 - [[cloud-hyperscalers]] — MSFT Azure, AMZN AWS, GOOGL GCP — capex and AI revenue scoreboards
 - [[robotics]] — Robotics & Humanoid Buildout; NdFeB rare-earth magnets, precision sensors, harmonic drives, edge-AI SoCs; bottleneck-roadmap framework applied to humanoid component supply chain
+- [[aerospace-defense]] — Aerospace & Defense; pure-play space (RKLB, ASTS) + defense primes (LMT, NOC, RTX) + supply chain (VELO, KTOS); $470B economy + DoD Space Force $40.2B FY26
 - *AI software sector page — not yet created; tracked under [[watchlist]] "Not yet covered" (PLTR, etc.)*
 
 ## Companies (`wiki/companies/`)
@@ -122,6 +126,13 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 - [[ALGM]] — Allegro MicroSystems; magnetic position + current sensors per motor joint; **stance: bull (medium)**
 - [[AMBA]] — Ambarella; edge AI SoCs; FY26 back to profitability; **stance: bull (medium)**
 - [[VPG]] — Vishay Precision Group; force-torque pure-play but P/E 135-215; **stance: neutral (low)**
+
+### Aerospace & Defense (NEW 2026-05-13)
+- [[RKLB]] — Rocket Lab; Q1 2026 record $200M rev + $2.2B backlog; Neutron debut later 2026; Golden Dome win; **stance: bull (high)**
+- [[ASTS]] — AST SpaceMobile; direct-to-unmodified-smartphone satellite; 98.9 Mbps validated; $3.5B cash; **stance: bull (medium, speculative)**
+- [[LMT]] — Lockheed Martin; defense prime; F-35 + Sentinel + Aegis; mature compounder; **stance: bull (medium)**
+- [[NOC]] — Northrop Grumman; B-21 Raider + Sentinel ICBM; record $95.7B backlog; **stance: bull (medium)**
+- [[KTOS]] — Kratos Defense; XQ-58 Valkyrie autonomous drones + space + hypersonic; **stance: bull (medium)**
 
 ### Power electronics
 - [[STM]] — STMicroelectronics; auto downturn cap on AI thesis; **stance: neutral**
