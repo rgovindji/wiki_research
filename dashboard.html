@@ -255,6 +255,88 @@
     .card, .thesis, .narrative { background: white; border-color: #ccc; }
     .toc { display: none; }
   }
+
+  /* Daily update cards (dashboard variant) */
+  .update-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+  }
+  .update-card .date-badge {
+    display: inline-block;
+    background: var(--hi-bg);
+    color: var(--hi);
+    font-family: ui-monospace, monospace;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.6px;
+    margin-bottom: 8px;
+  }
+  .update-card h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--fg);
+  }
+  .update-card ul { margin: 0 0 0 18px; padding: 0; font-size: 13px; }
+  .update-card ul li { margin-bottom: 4px; color: var(--fg); }
+  .update-card ul li strong { color: var(--accent); }
+
+  /* Top picks table (dark) */
+  .picks-wrap { overflow-x: auto; margin-top: 8px; -webkit-overflow-scrolling: touch; }
+  table.picks {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    min-width: 760px;
+  }
+  table.picks th {
+    background: var(--th-bg);
+    color: var(--fg);
+    text-align: left;
+    padding: 8px 10px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--line);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  table.picks td {
+    padding: 9px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    color: var(--fg);
+  }
+  table.picks .pri { color: var(--fg); font-weight: 700; font-variant-numeric: tabular-nums; }
+  table.picks .sub { display: block; color: var(--muted); font-size: 11px; margin-top: 1px; font-variant-numeric: tabular-nums; }
+  table.picks .pct { color: var(--bull); font-weight: 700; font-size: 11px; margin-left: 4px; }
+  table.picks .tk { font-family: ui-monospace, monospace; color: var(--accent); font-weight: 700; border-bottom: 1px dashed var(--accent); cursor: help; }
+  table.picks td.thesis-cell { font-size: 12px; color: var(--fg); min-width: 240px; line-height: 1.5; }
+
+  .layer-pill {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: 1px solid;
+  }
+  .layer-pill.chips    { background: rgba(248,113,113,0.10); color: #f87171; border-color: rgba(248,113,113,0.25); }
+  .layer-pill.foundry  { background: rgba(245,200,66,0.10); color: var(--hi); border-color: rgba(245,200,66,0.25); }
+  .layer-pill.memory   { background: rgba(168,120,255,0.12); color: #a878ff; border-color: rgba(168,120,255,0.25); }
+  .layer-pill.equip    { background: rgba(126,182,228,0.12); color: var(--accent); border-color: rgba(126,182,228,0.25); }
+  .layer-pill.network  { background: rgba(95,217,217,0.12); color: #5fd9d9; border-color: rgba(95,217,217,0.25); }
+  .layer-pill.power    { background: rgba(74,222,128,0.10); color: var(--bull); border-color: rgba(74,222,128,0.25); }
+  .layer-pill.const    { background: rgba(204,138,89,0.12); color: #cc8a59; border-color: rgba(204,138,89,0.25); }
+  .layer-pill.consum   { background: rgba(245,200,66,0.10); color: var(--hi); border-color: rgba(245,200,66,0.25); }
 </style>
 </head>
 <body>
@@ -268,6 +350,8 @@
 </header>
 
 <nav class="toc">
+  <a href="#recent">Recent Updates</a>
+  <a href="#picks">Top Picks</a>
   <a href="#macro">Macro</a>
   <a href="#theses">Theses</a>
   <a href="#bottleneck">Bottleneck Roadmap</a>
@@ -277,6 +361,60 @@
   <a href="#watch">Watch Items</a>
   <a href="#open">Open Questions</a>
 </nav>
+
+<!-- RECENT UPDATES -->
+<h2 id="recent">Recent Updates</h2>
+<p style="color:var(--muted);font-size:13px;margin:-4px 0 12px;">Rolling log of daily ingests, newest first.</p>
+
+<div class="update-card">
+  <span class="date-badge">2026-05-13</span>
+  <h4>SemiAnalysis value-shift · Cerebras IPO · Apple-Intel confirmed · Q1 hard data</h4>
+  <ul>
+    <li><strong>SemiAnalysis "AI Value Capture":</strong> Anthropic ARR $9B → $44B; inference GM 38% → 70%+. NVDA pricing model: ~40% price hike still leaves neocloud margin. <span data-tip="HBM">SOCAMM</span> $8 → ~$13/GB EOY 2026. Strongest counter yet to "earnings aren't real" bear case.</li>
+    <li><strong><span class="ticker" data-tip="CBRS">CBRS</span> IPO May 13:</strong> $48.8B fully diluted; 20x oversubscribed; OpenAI $10B/750MW; 86% UAE customer concentration (MBZUAI 62%, G42 24%). Added as bull / medium / tactical.</li>
+    <li><strong>Apple-Intel CONFIRMED</strong> (WSJ May 8): Intel 18A-P primary node. <span class="ticker" data-tip="AAPL">AAPL</span> stance unchanged (bear). INTC upgraded to active research candidate after April-doubling.</li>
+    <li><strong>Q1 hard data:</strong> <span class="ticker" data-tip="ETN">ETN</span> datacenter orders +240% YoY; <span class="ticker" data-tip="GEV">GEV</span> Q1 datacenter electrification ($2.4B) &gt; all of 2025; <span class="ticker" data-tip="VRT">VRT</span> $1B Feb 2026 cooling acquisition. Transformers added to bottleneck-roadmap as 2027 parallel constraint.</li>
+  </ul>
+</div>
+
+<!-- TOP PICKS -->
+<h2 id="picks">Top Picks</h2>
+<p style="color:var(--muted);font-size:13px;margin:-4px 0 8px;">15-name distillation across the AI stack. Hover any ticker for full thesis. Bull 2027/2028 are scenario projections (conviction-tier multipliers), <strong>not analyst targets</strong>.</p>
+
+<div class="picks-wrap">
+<table class="picks">
+  <thead>
+    <tr>
+      <th>Ticker</th>
+      <th>Layer</th>
+      <th>Cap (now)</th>
+      <th>Bull 2027</th>
+      <th>Bull 2028</th>
+      <th>Thesis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><span class="tk" data-tip="NVDA">NVDA</span></td><td><span class="layer-pill chips">Chips / GPU</span></td><td><span class="pri">$5.37T</span><span class="sub">$216 / sh</span></td><td><span class="pri">$8.05T</span><span class="pct">+50%</span><span class="sub">$324 / sh</span></td><td><span class="pri">$10.20T</span><span class="pct">+90%</span><span class="sub">$411 / sh</span></td><td class="thesis-cell">AI chip leader. $1T confirmed demand through 2027; $90B LT supply contracts; &gt;70% N3 capacity by 2027.</td></tr>
+    <tr><td><span class="tk" data-tip="AVGO">AVGO</span></td><td><span class="layer-pill chips">Custom XPU</span></td><td><span class="pri">$1.99T</span></td><td><span class="pri">$2.98T</span><span class="pct">+50%</span></td><td><span class="pri">$3.78T</span><span class="pct">+90%</span></td><td class="thesis-cell">Custom XPU for 6 hyperscalers. OpenAI Project Titan = 10 GW by 2029. $100B AI rev target by 2027.</td></tr>
+    <tr><td><span class="tk" data-tip="AMD">AMD</span></td><td><span class="layer-pill chips">GPU #2</span></td><td><span class="pri">$743B</span></td><td><span class="pri">$1.11T</span><span class="pct">+50%</span></td><td><span class="pri">$1.41T</span><span class="pct">+90%</span></td><td class="thesis-cell">Credible #2. OpenAI 6 GW + Meta 6 GW + Oracle 50K MI450. Helios rack Q3 2026 on TSMC 2nm.</td></tr>
+    <tr><td><span class="tk" data-tip="TSM">TSM</span></td><td><span class="layer-pill foundry">Foundry</span></td><td><span class="pri">$2.10T</span><span class="sub">$405 / sh</span></td><td><span class="pri">$3.15T</span><span class="pct">+50%</span><span class="sub">$607 / sh</span></td><td><span class="pri">$3.99T</span><span class="pct">+90%</span><span class="sub">$769 / sh</span></td><td class="thesis-cell">Sole leading-edge foundry. A16 first customer is AI, not Apple. 2026 capex $52-56B; revenue +30%.</td></tr>
+    <tr><td><span class="tk" data-tip="ASML">ASML</span></td><td><span class="layer-pill equip">EUV / Equip</span></td><td><span class="pri">$614B</span></td><td><span class="pri">$890B</span><span class="pct">+45%</span></td><td><span class="pri">$1.11T</span><span class="pct">+80%</span></td><td class="thesis-cell">EUV monopoly. THE binding constraint of all AI by 2028-2030. Upside if "generous monopolist" framing breaks.</td></tr>
+    <tr><td><span class="tk" data-tip="AMAT">AMAT</span></td><td><span class="layer-pill equip">Equipment</span></td><td><span class="pri">$346B</span></td><td><span class="pri">$519B</span><span class="pct">+50%</span></td><td><span class="pri">$657B</span><span class="pct">+90%</span></td><td class="thesis-cell">&gt;50% of HBM equipment value (15 of 19 HBM-stacking steps). &gt;20% growth guide 2026.</td></tr>
+    <tr><td><span class="tk" data-tip="MU">MU</span></td><td><span class="layer-pill memory">Memory / HBM</span></td><td><span class="pri">$847B</span><span class="sub">$747 / sh</span></td><td><span class="pri">$1.27T</span><span class="pct">+50%</span><span class="sub">$1,120 / sh</span></td><td><span class="pri">$1.61T</span><span class="pct">+90%</span><span class="sub">$1,419 / sh</span></td><td class="thesis-cell">Preferred NVDA HBM supplier. HBM4 ramp Q2 2026. +76% past month. Mizuho $740 PT.</td></tr>
+    <tr><td><span class="tk" data-tip="TER">TER</span></td><td><span class="layer-pill equip">Test Equip</span></td><td><span class="pri">$57.6B</span></td><td><span class="pri">$86.4B</span><span class="pct">+50%</span></td><td><span class="pri">$109B</span><span class="pct">+90%</span></td><td class="thesis-cell"><em>Overlooked.</em> Q1 2026 +87% YoY ($1.282B record). 70% AI exposure. Outside WFE bucket.</td></tr>
+    <tr><td><span class="tk" data-tip="ENTG">ENTG</span></td><td><span class="layer-pill consum">Fab consumables</span></td><td><span class="pri">$17.4B</span></td><td><span class="pri">$26.1B</span><span class="pct">+50%</span></td><td><span class="pri">$33.1B</span><span class="pct">+90%</span></td><td class="thesis-cell"><em>Overlooked.</em> FOUPs, ultra-pure materials, gas/liquid filtration. Content/wafer grows with AI complexity.</td></tr>
+    <tr><td><span class="tk" data-tip="COHR">COHR</span></td><td><span class="layer-pill network">Optical</span></td><td><span class="pri">$61.8B</span><span class="sub">$344 / sh</span></td><td><span class="pri">$92.7B</span><span class="pct">+50%</span><span class="sub">$516 / sh</span></td><td><span class="pri">$117B</span><span class="pct">+90%</span><span class="sub">$654 / sh</span></td><td class="thesis-cell">NVDA $2B direct investment. Q3 datacenter +41% YoY. Orders booked through 2028.</td></tr>
+    <tr><td><span class="tk" data-tip="VRT">VRT</span></td><td><span class="layer-pill power">Power+Cool</span></td><td><span class="pri">$141B</span><span class="sub">$368 / sh</span></td><td><span class="pri">$212B</span><span class="pct">+50%</span><span class="sub">$552 / sh</span></td><td><span class="pri">$268B</span><span class="pct">+90%</span><span class="sub">$699 / sh</span></td><td class="thesis-cell">Only large player covering power AND cooling. $9.5B backlog. $1B Feb 2026 cooling acquisition.</td></tr>
+    <tr><td><span class="tk" data-tip="ETN">ETN</span></td><td><span class="layer-pill power">Power / Grid</span></td><td><span class="pri">$164B</span></td><td><span class="pri">$246B</span><span class="pct">+50%</span></td><td><span class="pri">$312B</span><span class="pct">+90%</span></td><td class="thesis-cell">Beam Rubin DSX w/ NVDA. Q1 datacenter orders <strong>+240% YoY</strong>; backlog $22.8B.</td></tr>
+    <tr><td><span class="tk" data-tip="GEV">GEV</span></td><td><span class="layer-pill power">Power Gen</span></td><td><span class="pri">$290B</span></td><td><span class="pri">$435B</span><span class="pct">+50%</span></td><td><span class="pri">$551B</span><span class="pct">+90%</span></td><td class="thesis-cell">Gas turbines + Prolec $5.3B buyout for transformers. Q1 datacenter orders ($2.4B) &gt; all of 2025.</td></tr>
+    <tr><td><span class="tk" data-tip="BE">BE</span></td><td><span class="layer-pill power">Fuel cells</span></td><td><span class="pri">$82.1B</span></td><td><span class="pri">$123B</span><span class="pct">+50%</span></td><td><span class="pri">$156B</span><span class="pct">+90%</span></td><td class="thesis-cell">Oracle Project Jupiter 2.45 GW primary power; up to 2.8 GW across multiple Oracle deployments.</td></tr>
+    <tr><td><span class="tk" data-tip="FIX">FIX</span></td><td><span class="layer-pill const">Construction</span></td><td><span class="pri">$71.0B</span><span class="sub">$2,009 / sh</span></td><td><span class="pri">$106B</span><span class="pct">+50%</span><span class="sub">$3,014 / sh</span></td><td><span class="pri">$135B</span><span class="pct">+90%</span><span class="sub">$3,818 / sh</span></td><td class="thesis-cell"><em>Overlooked.</em> Pure mech/HVAC contractor. $12.46B backlog (+81% YoY). 45% data center. Joining S&amp;P 500.</td></tr>
+    <tr><td><span class="tk" data-tip="PWR">PWR</span></td><td><span class="layer-pill const">Transmission</span></td><td><span class="pri">$117B</span></td><td><span class="pri">$176B</span><span class="pct">+50%</span></td><td><span class="pri">$222B</span><span class="pct">+90%</span></td><td class="thesis-cell"><em>Overlooked.</em> $48.5B record backlog. NiSource ~3 GW gen engagement. Grid/transmission builder.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p style="font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;">Methodology: bull/high = +50% (2027) / +90% (2028); bull/high (multi-yr) = +45% / +80%. Implied $/share at constant share count. Data as of 2026-05-13.</p>
 
 <!-- MACRO SNAPSHOT -->
 <h2 id="macro">Macro Snapshot</h2>
