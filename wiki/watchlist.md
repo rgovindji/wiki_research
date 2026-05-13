@@ -99,6 +99,10 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 - **Energy infra beyond [[GEV]]/[[BE]]** — utilities serving hyperscalers; SMR nuclear; aeroderivative engine OEMs
 - **Intel (INTC)** — STATUS CHANGE (2026-05-13): Apple-Intel deal CONFIRMED + April stock doubling + Wall Street narrative rotation make INTC worth a fresh look. Was "not coverage-worthy" — now flagged as **active research candidate**.
 
+### Explicitly avoided (with reasoning)
+
+- **POET Technologies (POET)** — Asked 2026-05-13. **Avoid.** $1.07M revenue in 2025 (yes, million); $63M annual losses; stock dropped **49% in a single day** when Marvell cancelled orders. First meaningful "production order" is only $5M. This is venture-stage tech that happens to be publicly traded — not a supplier with proven AI revenue. The wiki's optical-layer thesis is captured by [[COHR]] / [[LITE]] / [[GLW]] / [[FN]] (NVDA-backed, real revenue, real backlogs). If POET's optical interposer ever becomes the CPO standard, there will be 2-3 quarters of real revenue visibility to validate before buying — no need to bet on the prototype phase. **Downside scenario: −60% to −80% if any 2026 partnership announcement slips, AI sentiment cools, or any single customer cancels** (precedent: Marvell). This is the textbook late-cycle speculative AI name that gets destroyed first when sentiment shifts. See [[ai-bubble-debate]] "Late-cycle warning indicators."
+
 ## Conventions
 
 - **Conviction levels:** high (multiple sources, consistent thesis, low contradiction), medium (thesis is live but key questions open), low (early/speculative)
