@@ -20,6 +20,15 @@ grep "^## \[" log.md | tail -5
 - Wiki touched (initial creation): [[overview]], [[watchlist]], [[fed-policy]], [[valuation-environment]], [[inflation-tariffs]], [[ai-capex-cycle]], [[market-concentration]], [[ai-bubble-debate]], [[semiconductors]], [[cloud-hyperscalers]], [[NVDA]], [[GOOGL]], [[MSFT]], [[META]], [[AMZN]], [[AAPL]], [[TSLA]], [[TSM]], [[ASML]]
 - Next: ingest first formal source via the ingest workflow to validate the schema.
 
+## [2026-05-13] research | MU counterpoint to "undervalued" framing + cycle-peak P/E paradox added globally
+- User asked about the "MU is undervalued" thesis circulating on Twitter / retail. Used the prompt as a chance to strengthen the wiki's counter-framing.
+- **[[MU]] update**: substantially expanded bear case with explicit cycle-peak P/E paradox (historical drawdowns 2022/2019/2015-16/2000); added Mizuho PT-below-price observation; added 70%-commodity-revenue caveat; added "value capture cuts against memory" link to SemiAnalysis ingest; added explicit "right framing" section (leveraged multi-year trade NOT compounder) + "what would move the view higher/lower" tables for exit discipline.
+- **[[ai-bubble-debate]] update**: added "Cycle-peak P/E paradox" as a globally-applicable framework — applies to any cyclical semi (MU, SNDK, WDC). The framework: cheap forward P/E + growing EPS = late-cycle warning in memory; opposite of what it means in software.
+- **[[SNDK]] update**: cross-reference to cycle-peak P/E framework; +91% past month makes this acute.
+- **[[WDC]] update**: same cross-reference; +40% past month.
+- **Stance changes**: NONE. MU stays bull/high. SNDK stays bull/high. WDC stays bull/medium. The updates make the BEAR CASE stronger and the SIZING / EXIT DISCIPLINE clearer — the wiki is now honest about cyclicality risk on top picks where the "undervalued long-term compounder" framing is wrong.
+- **Why this matters**: memory names are leveraged multi-year trades, not structural compounders like [[NVDA]] / [[TSM]] / [[ASML]]. The wiki's bull conviction is intact for the next 2-3 years of the supercycle, but new readers (e.g., user's buddy via the shared GitHub repo) need to understand the cyclicality risk explicitly.
+
 ## [2026-05-13] daily update | SemiAnalysis value-shift + Cerebras IPO + Apple-Intel confirmed
 - **Material findings this session** (curated; skipped low-value items):
   - **SemiAnalysis "AI Value Capture — Shift to Model Labs"** ([[2026-05-13-semianalysis-value-capture]]) — Anthropic ARR $9B→$44B, inference gross margin 38%→70%+. NVDA pricing framework: cost-floor $4.92/GPU-hr, value-ceiling $12.25, current $0.28/PFLOP below trend — ~40% NVDA price hike still leaves neocloud margin. SOCAMM pricing $8→$13/GB by EOY 2026. THE major new bull data point.

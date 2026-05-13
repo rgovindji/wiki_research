@@ -29,6 +29,7 @@ The HDD-focused remainder after the [[SNDK|SanDisk]] spin-off — AI "data exhau
 - **Stock up ~176% YTD 2026** on the AI storage thesis
 
 ## Bear case / risks
+- **Cycle-peak P/E paradox applies (NEW).** WDC is +40% in the past month and increasingly being called "undervalued." Storage / memory P/Es look cheap at cycle peaks because the E is at peak. See [[ai-bubble-debate]] for the framework. **Which means:** WDC is a leveraged trade on the AI data-exhaust storage cycle, not a buy-and-hold compounder. The two-supplier HDD oligopoly is real but doesn't immunize WDC from cycle risk.
 - **HDD is a sunset technology** — long term, all-flash will erode the moat (the question is *when*, not *if*)
 - **Cyclical** — every storage cycle has booms and busts; current demand strength may be more cycle than secular
 - **Customer concentration** — large hyperscalers represent a significant share of unit demand

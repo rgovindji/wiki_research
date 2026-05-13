@@ -29,7 +29,8 @@ Pure-play NAND flash storage, recently spun out from [[WDC|Western Digital]] (Fe
 - **Pure-play exposure** — unlike Samsung/SK Hynix/Micron which mix NAND with DRAM
 
 ## Bear case / risks
-- **NAND rises *less* than DRAM (NEW NUANCE).** Per [[2026-05-09-dwarkesh-dylan-semianalysis]]: as smartphone volumes collapse (1.4B → ~500-600M by 2027), the destruction *releases more NAND than DRAM* back to AI demand. So NAND prices go up, but **the price increases for DRAM will be larger than those of NAND.** Net: SNDK still benefits from the AI memory supercycle, but the *pure-play NAND* story is structurally less leveraged than [[MU]]'s HBM-attached DRAM story.
+- **The cycle-peak P/E paradox applies in full force.** SNDK is +91% in the past month and the "undervalued on forward P/E" framing is dangerous in memory. **Which means:** the same warning that applies to [[MU]] applies here — memory P/Es look cheap at cycle peaks because the E is at peak. See [[ai-bubble-debate]] for the framework. SNDK is a leveraged multi-year trade, not a buy-and-hold compounder. Sizing and exit discipline matter more than for structural names like [[NVDA]] or [[ASML]].
+- **NAND rises *less* than DRAM (NUANCE).** Per [[2026-05-09-dwarkesh-dylan-semianalysis]]: as smartphone volumes collapse (1.4B → ~500-600M by 2027), the destruction *releases more NAND than DRAM* back to AI demand. So NAND prices go up, but **the price increases for DRAM will be larger than those of NAND.** Net: SNDK still benefits from the AI memory supercycle, but the *pure-play NAND* story is structurally less leveraged than [[MU]]'s HBM-attached DRAM story.
 - **YTD move is enormous.** 528% leaves no room for execution misses; mean reversion risk is acute
 - **NAND has historically been MORE cyclical than DRAM** — peak-to-trough swings are violent
 - **No HBM exposure** — the highest-margin memory product is DRAM/HBM, not NAND

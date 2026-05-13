@@ -32,11 +32,43 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 - **Bandwidth is what matters.** HBM4 stack: 2.5 TB/s vs. DDR5: 64-128 GB/s in same shoreline — order of magnitude advantage that no commodity DRAM substitute can deliver
 
 ## Bear case / risks
-- **Memory is structurally cyclical.** Every cycle since 1998 has had a 40-70% drawdown. A capex pause hits MU hard.
-- **HBM yield risk.** 16-high stacking is technically demanding; yield-related cost overruns possible
-- **SK Hynix dominance** — owns ~62% HBM share; competition for NVDA share is fierce
-- **Commodity DRAM/NAND** still ~70% of revenue — exposed to general PC/handset cycles
-- **High YTD beta** — significant gains already priced; near-term consolidation risk
+
+> **The single most important warning on MU:** the "undervalued on forward P/E" framing pushed by retail / Twitter / many sell-side notes is the textbook **cycle-peak P/E paradox** — explained in detail below. The wiki stays bull / high conviction on MU, but for "multi-year supercycle has 2-3 more years to run" reasons, **NOT** "undervalued long-term compounder" reasons. Sizing and exit discipline matter more here than for any other top pick.
+
+- **The cycle-peak P/E paradox.** Memory stocks ALWAYS look cheap on forward P/E at cycle peaks because the **E** is at peak. Investors buying MU on "low P/E + growing earnings" lost money in **2022 (-40%), 2019 (-50%), 2015-16 (-70%), and 2000**. Every one of those drawdowns came AFTER the forward P/E looked cheap. **Which means:** for cyclical semis you pay HIGH multiples on TROUGH earnings (early cycle) and LOW multiples on PEAK earnings (late cycle). Today's "low" forward P/E may be a peak-earnings P/E that compresses 50-70% when EPS normalizes. The cheap-P/E signal in memory is the OPPOSITE of what it means in software or services.
+- **Memory is structurally cyclical.** Every cycle since 1998 has had a 40-70% drawdown. A capex pause hits MU hardest because **70% of MU's revenue is still commodity DRAM/NAND** — only ~30% is HBM. **Which means:** even at sold-out HBM economics, the bull case rests on only a third of the business. If consumer device demand recovers (smartphones, PCs) OR if memory makers over-invest into the boom (always happens), commodity prices collapse and squeeze 70% of MU's revenue regardless of how HBM does.
+- **Mizuho $740 PT is BELOW current price (~$747).** **Which means:** even the most bullish memory analysts on the Street can't justify upside from here. When the "undervalued" framing is no longer institutional, it's mostly retail momentum. That's a flag that the easy money in this trade is behind.
+- **SK Hynix has 62% HBM share, not MU.** MU is "preferred supplier" at NVDA but not dominant. NVDA actively triangulates among SK Hynix / Samsung / MU to maintain leverage. **Which means:** MU's pricing power is bounded — they can't act monopolistic because they aren't one. The "preferred supplier" framing is real but limited; gross margin expansion has a ceiling set by SK Hynix's pricing.
+- **HBM yield risk.** 16-high HBM4 stacking is technically demanding; yield-related cost overruns possible. **Which means:** a quarter or two of yield issues could compress the 66% gross margin investors are extrapolating, triggering multiple compression even with revenue intact.
+- **The same SemiAnalysis data the bulls cite predicts the bust.** DRAM ASPs double in 2026, double-digits in 2027 — that's the bull leg. But new fabs (2-year build cycle) come online by 2028 and the supply response begins. **Which means:** the bull case has a built-in cyclical end date around 2028-2029. Memory makers always over-invest into boom phases — it's their structural pathology. Plan the exit before that supply wave hits.
+- **Value-capture framework (per [[2026-05-13-semianalysis-value-capture]]) cuts against MU.** SemiAnalysis argues downstream model labs (Anthropic 70% inference GM) are capturing value while infrastructure suppliers sit on legacy pricing. **Which means:** MU's bull case requires memory tightness to PERSIST while labs continue scaling. If model labs extract more margin (which the framework predicts), the marginal AI-cycle value flows to Anthropic/OpenAI, not to memory vendors.
+- **+120% YTD already.** "Undervalued" relative to what? Stock has more than doubled in less than 5 months. **Which means:** at some point "undervalued" becomes "you're chasing." The base rate for a stock that has doubled in 5 months going up another 50% is poor regardless of fundamentals.
+- **High YTD beta** — significant gains already priced; near-term consolidation risk is real.
+
+## The right framing for MU
+
+- **What it is:** a leveraged multi-year trade on the AI memory crunch through ~2028
+- **What it isn't:** a "compounder" or "undervalued long-term hold." Memory is cyclical. Always.
+- **Sizing:** smaller than NVDA / TSM / AMAT / ASML. The cyclicality means the drawdown when the cycle turns will be 40%+ even on the bull case.
+- **Exit discipline (the most important variable):** When SemiAnalysis flags memory ASPs peaking AND new fab capacity coming online (currently signaled for 2028), that's the trim signal. **Don't ride it through the next cycle.**
+
+## What would move the view higher (above current bull / high)
+
+| Signal | Implication |
+|---|---|
+| HBM mix exceeds 50% of revenue | Conviction higher — less commodity exposure; trade rotates from cyclical to structural |
+| MU wins majority HBM4 share at NVDA (vs SK Hynix) | Bullish surprise — would justify higher multiple |
+| Memory makers show CAPEX RESTRAINT during boom | Bullish — first time in industry history; would extend the cycle |
+
+## What would move the view lower (trim/exit)
+
+| Signal | Implication |
+|---|---|
+| Any hyperscaler cuts AI capex guidance | Trim aggressively — that's the cycle signal |
+| Memory makers announce >50% capex hike | Over-investment cycle starting; supply response = price collapse in 2028 |
+| Mizuho or peers raise PT only modestly (e.g., $800-$900 vs current $747) | Confirms current price near analyst ceiling — momentum chase, not value |
+| HBM yields slip; gross margin compresses below 60% | Multiple compression risk; the 66% margin is a key bull anchor |
+| Stock breaks back below $600 | Cycle rolling; the "undervalued" narrative was wrong |
 
 ## Key questions / what to watch
 1. **HBM4 ramp execution** — wafers/month and yield reporting through 2026
