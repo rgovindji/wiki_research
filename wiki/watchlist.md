@@ -62,6 +62,7 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 | [[CAMT]] | bull / medium conviction | Inspection equipment for advanced packaging | Order momentum |
 | [[KEYS]] | bull / medium conviction | T&M for AI silicon design verification | Comm/EISG segment trends |
 | [[FLEX]] | bull / medium conviction | Diversified contract mfg with AI infra exposure | Cloud/data center segment |
+| [[CBRS]] | bull / medium conviction | Cerebras wafer-scale AI chip; $48.8B IPO May 13; OpenAI $10B/750MW deal; 86% UAE concentration | Customer diversification; lock-up Nov 2026 |
 | [[GEV]] | bull / high conviction | Gas turbines for data center power; lead times beyond 2030 (caveat: power not the binding AI constraint per Dylan) | Combined-cycle order book; aeroderivative mix |
 | [[BE]] | bull / medium conviction | Fuel cells; SemiAnalysis bullish 18+ months on production-ramp speed | MW shipped; hyperscaler deals |
 | [[ORCL]] | bull / medium conviction | OpenAI compute partner; multi-year capacity deals | OCI growth + AI mix |
@@ -96,7 +97,7 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 - **Foxconn, Quanta** — Taiwanese/Asian ODM assemblers
 - **Sovereign AI plays** — country-level AI factory build-outs
 - **Energy infra beyond [[GEV]]/[[BE]]** — utilities serving hyperscalers; SMR nuclear; aeroderivative engine OEMs
-- **Intel (INTC)** — US foundry strategic question mark; not currently coverage-worthy
+- **Intel (INTC)** — STATUS CHANGE (2026-05-13): Apple-Intel deal CONFIRMED + April stock doubling + Wall Street narrative rotation make INTC worth a fresh look. Was "not coverage-worthy" — now flagged as **active research candidate**.
 
 ## Conventions
 

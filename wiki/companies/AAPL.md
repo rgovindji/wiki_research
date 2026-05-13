@@ -51,7 +51,8 @@ stance: bear
 7. **App Store regulatory outcomes** — financial impact of EU DMA, US Epic remedies
 
 ## Recent developments
-- **2026-05-11** — WSJ reports Apple has reached a **preliminary agreement with Intel (INTC) to manufacture some chips** used in Apple devices. INTC rallied 5.7%. **Caveat: "some chips"**, not leading-edge SoCs (still [[TSM|TSMC]]); preliminary, not finalized. **Stance unchanged** — Intel doesn't yet have leading-edge foundry capacity at scale, and the smartphone-volume + memory-BOM bear cases are independent of foundry sourcing. But this is a small option-value positive: US-foundry diversification path emerging.
+- **2026-05-13** — Apple-Intel deal **CONFIRMED** (was preliminary May 8). Intel +15% on confirmation; doubled in April; +33% early May. Primary node: **Intel 18A-P** (enhanced 18A — 9% higher perf vs standard at same power). Intel 14A targeted 2028. Apple **also exploring Samsung** Texas plant in parallel. **Stance unchanged (bear).** Intel 18A-P is not bleeding-edge by 2027-2028 standards; leading-edge SoCs (A-series, M-series) likely still [[TSM|TSMC]] N2/A16. Memory + smartphone volume bear case independent of foundry sourcing. WSJ quote validates wiki framing: "TSMC has more limited capacity for chips made for consumer devices, and Apple has less leverage." See [[2026-05-13-apple-intel-deal]].
+- **2026-05-11** — WSJ initial report on Apple-Intel preliminary agreement.
 - **2026-05-09** — Stance flipped from **neutral** to **bear** based on [[2026-05-09-dwarkesh-dylan-semianalysis]] disclosing TSMC's structural deprioritization of Apple plus the memory-driven smartphone-volume collapse projections.
 
 ## Related

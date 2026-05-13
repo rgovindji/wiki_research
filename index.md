@@ -50,6 +50,7 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 ### AI accelerators (NVDA competitors)
 - [[AMD]] — MI400/MI450/Helios on TSMC 2nm; OpenAI 6GW + Meta 6GW + Oracle 50K MI450 deals; **stance: bull**
 - [[AVGO]] — Broadcom; custom XPU for 6 hyperscalers (OpenAI Project Titan 10GW by 2029); Tomahawk 6 (102.4 Tbps); **stance: bull**
+- [[CBRS]] — Cerebras; wafer-scale AI chip; IPO May 13 2026 at $48.8B; OpenAI $10B/750MW commitment; 86% UAE concentration risk; **stance: bull (medium / tactical)**
 
 ### Memory
 - [[MU]] — Micron; preferred HBM supplier; HBM4 ramp Q2 2026; **stance: bull**

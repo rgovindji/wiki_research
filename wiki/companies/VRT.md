@@ -45,6 +45,7 @@ The **only large player covering both power AND cooling** for AI data centers �
 5. **Geographic / customer mix** disclosure
 
 ## Recent developments
+- **2026-05-13** — Feb 2026 detail surfaced: **$1B strategic acquisition** in high-density cooling solidified VRT's lead in GPU-cluster cooling. Market cap roughly **tripled since 2024**.
 - **2026-05-07** — **Citi raised PT to $414 from $353**, Buy maintained. Citi: expects Vertiv to raise long-term organic growth outlook to **12-24% range**. Multi-year visibility to sales and earnings growth on AI-driven data center spending cited.
 
 ## Related

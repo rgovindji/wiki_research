@@ -20,6 +20,23 @@ grep "^## \[" log.md | tail -5
 - Wiki touched (initial creation): [[overview]], [[watchlist]], [[fed-policy]], [[valuation-environment]], [[inflation-tariffs]], [[ai-capex-cycle]], [[market-concentration]], [[ai-bubble-debate]], [[semiconductors]], [[cloud-hyperscalers]], [[NVDA]], [[GOOGL]], [[MSFT]], [[META]], [[AMZN]], [[AAPL]], [[TSLA]], [[TSM]], [[ASML]]
 - Next: ingest first formal source via the ingest workflow to validate the schema.
 
+## [2026-05-13] daily update | SemiAnalysis value-shift + Cerebras IPO + Apple-Intel confirmed
+- **Material findings this session** (curated; skipped low-value items):
+  - **SemiAnalysis "AI Value Capture — Shift to Model Labs"** ([[2026-05-13-semianalysis-value-capture]]) — Anthropic ARR $9B→$44B, inference gross margin 38%→70%+. NVDA pricing framework: cost-floor $4.92/GPU-hr, value-ceiling $12.25, current $0.28/PFLOP below trend — ~40% NVDA price hike still leaves neocloud margin. SOCAMM pricing $8→$13/GB by EOY 2026. THE major new bull data point.
+  - **Cerebras IPO** ([[2026-05-13-cerebras-ipo]]) — CBRS pricing May 13 at $48.8B, 20x oversubscribed, 51x trailing rev. $510M revenue, 47% net margin, OpenAI $10B/750MW deal. 86% UAE customer concentration. **New ticker page added.**
+  - **Apple-Intel deal CONFIRMED** ([[2026-05-13-apple-intel-deal]]) — WSJ confirmed May 8 (was preliminary). Intel 18A-P primary node. AAPL stance unchanged (bear); Intel coverage upgraded from "not coverage-worthy" to "active research candidate."
+  - **Eaton Q1 2026** ([[2026-05-13-eaton-gev-q1-2026-key-data]]) — datacenter orders **+240% YoY**, backlog $22.8B.
+  - **GE Vernova Q1 2026** — orders $18.3B (+71% organic). $2.4B Q1 datacenter electrification orders = MORE than all of 2025. Prolec $5.3B Feb 2026 buyout completes transformer dominance.
+  - **Vertiv** — Feb 2026 $1B acquisition in high-density cooling surfaced.
+- **Wiki touched**: [[NVDA]] (SemiAnalysis pricing framework, SOCAMM), [[AAPL]] (deal confirmed), [[ETN]] (+240% datacenter orders Q1), [[GEV]] (Q1 orders + Prolec), [[VRT]] ($1B cooling deal), [[CBRS]] (new page), [[ai-bubble-debate]] (Anthropic 70% margin data point), [[bottleneck-roadmap]] (transformers as 2027 sub-bottleneck), [[index]] (CBRS added to AI accelerators), [[watchlist]] (CBRS added; INTC status upgraded)
+- **Sources created**: [[2026-05-13-semianalysis-value-capture]], [[2026-05-13-cerebras-ipo]], [[2026-05-13-apple-intel-deal]]
+- **Raw saved** (gitignored): `raw/articles/2026-05-13-semianalysis-ai-value-capture.md`, `raw/articles/2026-05-13-cerebras-ipo.md`, `raw/articles/2026-05-13-apple-intel-deal-confirmed.md`, `raw/filings/2026-05-13-eaton-gev-q1-2026-key-data.md`
+- **Stance / conviction changes**: none today; CBRS added at bull/medium.
+- **Tooltips refreshed**: CBRS added; HTML artifacts re-inlined.
+- **Skipped (low value)**: opinion pieces, Trump-Xi meeting (geopolitics, not investable signal yet), "4 Brilliant Chip Stocks" listicles, generic CNBC "party going to end" framing without new data.
+- **Pending**: do a fresh research session on Intel given Apple deal + Wall Street rotation; revisit memory-vendor caps after Q1 prints; consider adding transformer makers (Hitachi Energy, Siemens Energy) to the 2027 bottleneck cluster.
+- **Total wiki**: 70 files (+1 new ticker CBRS).
+
 ## [2026-05-12] ingest | The "invisible" fab layer — TER / ENTG / APD
 - Followup to "what are we overlooking downstream" — sharpened the lens past the obvious "second-leg" names (MRVL, CDNS, CEG/VST/TLN, PLTR) to truly overlooked downstream plays
 - Picked **three names that sit outside the WFE bucket** but capture AI fab-buildout content:

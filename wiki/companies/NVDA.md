@@ -54,6 +54,16 @@ The dominant supplier of AI accelerators with a $1T confirmed demand backlog thr
 5. **Sovereign AI deal flow** — incremental demand or replacement?
 
 ## Recent developments
+- **2026-05-13** — Source ingest [[2026-05-13-semianalysis-value-capture]]. SemiAnalysis pricing model on Vera Rubin NVL72:
+  - **Cost floor**: $4.92/GPU-hour (5-yr, 15% prepay, 15.6% IRR baseline)
+  - **Value ceiling**: $12.25/GPU-hour ($/PFLOP parity with GB300); conservative $9.63
+  - Current pricing yields $0.28/PFLOP — **below historical trend**
+  - **~40% NVDA price increase still leaves neocloud margin headroom**
+  - **SOCAMM** (socketed memory in VR NVL72): $8/GB Q1 → potentially **>$13/GB by EOY 2026**; ~60% gross margin disaggregated pricing not possible on GB300's soldered LPDDR5X. Material new revenue line.
+  - Capex per watt only ticked $37.4/W → $38.1/W despite nearly doubled TDP — NVDA "leaving value on the table"
+  - GB300 vs H100: 17x throughput FP8, 32x FP4 — productivity multiplier real
+  - **Counter-tension to bear case**: Anthropic inference gross margin 38% → 70%+ on ARR explosion $9B → $44B. If margins are 70%, capex IS earning its cost of capital.
+- **2026-05-13** — Cerebras (CBRS) IPO May 13 at $48.8B valuation. Wafer-scale competitor. 86% UAE customer concentration limits immediate hyperscaler threat. See [[CBRS]].
 - **2026-05-09** — Source ingest [[2026-05-09-dwarkesh-dylan-semianalysis]] adds: $90B long-term contracts; >70% of N3 by 2027; "X-1 not AGI-pilled" supply-chain framing; H100-worth-more-today economics; Samsung Texas LPU launch (a separate non-TSMC supply line for Nvidia, paired with Tesla's robot chips).
 - **2026-02-25** — Q4 FY26 earnings: $68B revenue; Q1 FY27 outlook framed by Fortune as "quashing AI bubble talk." [Fortune](https://fortune.com/2026/02/25/nvidia-nvda-earnings-q4-results-jensen-huang/)
 - **2026 (ongoing)** — Blackwell platform sold out through mid-year; backlog into Vera Rubin

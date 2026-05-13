@@ -45,6 +45,10 @@ One of three Western combined-cycle gas turbine OEMs (with Mitsubishi and Siemen
 5. **Mix of grid vs. behind-the-meter orders**
 
 ## Recent developments
+- **2026-05-13** — Q1 2026 hard data:
+  - **Total Q1 orders $18.3B (+71% organically)**
+  - **Q1 Electrification orders for data centers alone: $2.4B — MORE than all of 2025**
+  - **February 2026: completed $5.3B Prolec GE buyout** (transformer manufacturing) — gives total control of one of the world's largest transformer ops. **Transformers may emerge as a 2027-2028 grid bottleneck adjacent to EUV.**
 - **2026-05-05** — GEV announced strategic collaboration with **Blue Energy** for the world's first **gas-plus-nuclear power plant**. First plant at Blue Energy's Texas site, powering a nearby data center campus. Final investment decision in 2027. **Slot reservation agreement** for delivery of **two 7HA.02 gas turbines** in 2029. Notable: GEV turbine slots are **tightening through 2030** per Power Engineering reporting.
 
 ## Related

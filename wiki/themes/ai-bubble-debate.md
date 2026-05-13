@@ -52,6 +52,9 @@ GQG (Rajiv Jain) channel checks across 12+ NVIDIA resellers in May 2026 report *
 ### Dylan Patel: 30% of capex is going to memory (NEW)
 This is a specific, measurable form of margin stacking. **30% of Big 4 hyperscalers' 2026 capex** is going to memory — Micron / SK Hynix / Samsung. So when you see GOOGL/MSFT/AMZN/META capex juicing their suppliers' (NVDA, MU) revenue, ~$180B of that is the memory leg specifically. If smartphone demand stops being destroyed (i.e. consumer demand recovers), memory could free up at lower prices and the supply chain doesn't earn the margins everyone is pricing in. Direction-of-travel risk for the memory-supercycle bull thesis.
 
+### SemiAnalysis (May 2026): Anthropic margins say "earnings are real" (NEW STRONG BULL POINT)
+The single biggest counter to the bear thesis from new data: **Anthropic ARR exploded from $9B to $44B** within months, with **inference gross margins moving from 38% to 70%+**. From [[2026-05-13-semianalysis-value-capture]]. If model labs are running 70%+ inference gross margins on tokens, then **the hyperscaler capex IS earning its cost of capital** — the bear case "capex hangover / ROI uncertain" framing materially weakens. Counter-cap: Anthropic isn't a hyperscaler, so its margins don't directly prove MSFT/AMZN/GOOGL/META AI revenue economics — but it's a strong directional signal that token monetization is real and growing.
+
 ## Stress-test scenarios
 - **Soft landing:** AI capex grows but at a decelerating rate; hyperscalers monetize; Mag 7 multiples compress modestly. Index returns **5-10%** through 2026.
 - **Capex peak:** one or more hyperscalers cuts capex guidance; Mag 7 de-rates **15-25%**; index drawdown **10-15%**.
