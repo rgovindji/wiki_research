@@ -1,9 +1,9 @@
 ---
 type: theme
-tags: [ai, supply-chain, bottlenecks, semianalysis]
-last_updated: 2026-05-09
+tags: [ai, supply-chain, bottlenecks, semianalysis, robotics]
+last_updated: 2026-05-13
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -67,8 +67,27 @@ Synthesized from the May 2026 Dwarkesh × Dylan Patel interview ([[2026-05-09-dw
 - Does China indigenize DUV by 2030 → is there a non-ASML path to scale at lagging nodes?
 - What is the price elasticity at which AI labs *would* destroy demand? (Dylan: probably never, given token monetization)
 
+## The parallel: Robotics bottleneck roadmap (NEW 2026-05-13)
+
+The same time-sequenced bottleneck framework applies to the humanoid robotics buildout, offset by ~2 years. See [[robotics]] for the full sector primer.
+
+| Period | Binding constraint | Why | Beneficiaries (pricing power) |
+|---|---|---|---|
+| **2026** | **Rare-earth NdFeB processing** | China controls ~90% of downstream processing; per-humanoid magnet content runs ~10x that of a passenger EV; no synthetic substitute at the required torque density | **[[MP]]** (only fully integrated US NdFeB producer), USAR, UUUU |
+| **2027** | **Precision sensors + harmonic drives** | Force-torque sensing requires sub-Newton precision; harmonic drives dominated by Leader Drive (China) and Harmonic Drive Systems (Japan); Western alternatives subscale | [[OUST]] (lidar + stereo cameras), [[ALGM]] (magnetic position/current sensors), [[VPG]] (force-torque pure-play but valuation stretched) |
+| **2027-2028** | **Edge AI inference SoCs** | Control loops need sub-10ms inference at single-digit-watt power; different stack than autonomous-driving compute | [[AMBA]] (vision SoCs), CEVA (DSP/NPU IP licensing), LSCC (low-power FPGAs for sensor fusion) |
+| **2028-2030** | **Scaled actuator + battery manufacturing** | Chinese supply chain (Sanhua, Leader Drive, Inovance) is unavoidable; most are PRC-listed and inaccessible to Western retail without Stock Connect | Hard to play directly from Western markets — see [[humanoid-oems]] for OEM-side framing |
+
+> **What this means:** Robotics has its own bottleneck cycle running 2-3 years behind AI's. Today, the constraint is rare-earth magnets — exactly the same "the supplier no one can substitute" pattern that made packaging (CoWoS) the 2023 trade and memory (HBM) the 2025-26 trade. The harvest is 2028-2030.
+
+### Why both roadmaps reinforce each other (cross-cycle dynamic)
+- **Power and grid:** the 2027 transformer / substation constraint applies to BOTH AI data centers AND robotics manufacturing facilities — [[GEV]] / Hitachi / Siemens benefit from both demand pulls
+- **Edge inference vs. cloud inference:** robotics demands a different compute stack (low-latency, low-power, on-device) — this pulls volume away from [[NVDA]]'s data-center business toward smaller-cap NPU/FPGA players ([[AMBA]], LSCC, CEVA) — slight bear data point for NVDA's TAM dominance over very long timelines
+- **Skilled labor (2030+):** the [[datacenter-construction]] labor bottleneck applies to both AI data centers and robotics manufacturing facilities — same union electricians, same wage inflation
+
 ## Related
-[[ai-capex-cycle]] · [[ai-bubble-debate]] · [[nvda-supply-chain]] · [[datacenter-construction]] · [[semiconductors]] · [[ASML]] · [[AMAT]] · [[TER]] · [[ENTG]] · [[APD]] · [[MU]] · [[KLAC]] · [[LRCX]] · [[AMKR]] · [[VRT]] · [[ETN]] · [[FIX]] · [[EME]] · [[PWR]] · [[overview]]
+[[ai-capex-cycle]] · [[ai-bubble-debate]] · [[nvda-supply-chain]] · [[datacenter-construction]] · [[robotics]] · [[humanoid-oems]] · [[semiconductors]] · [[ASML]] · [[AMAT]] · [[TER]] · [[ENTG]] · [[APD]] · [[MU]] · [[KLAC]] · [[LRCX]] · [[AMKR]] · [[VRT]] · [[ETN]] · [[FIX]] · [[EME]] · [[PWR]] · [[MP]] · [[OUST]] · [[ALGM]] · [[VPG]] · [[AMBA]] · [[overview]]
 
 ## Sources
-1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for this synthesis
+1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the AI bottleneck synthesis
+2. [[2026-05-13-x-stack-map-humanoid-robotics]] — primary source for the robotics bottleneck extension

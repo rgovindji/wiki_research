@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, capex, hyperscalers]
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 last_full_review: 2026-05-09
-sources: 1
+sources: 4
 ---
 
 # AI Capex Cycle
@@ -14,8 +14,10 @@ The multi-year, hundreds-of-billions-of-dollars buildout of AI compute infrastru
 ## Why it matters now
 
 - AI investment is driving **~40% of S&P 500 earnings growth** in 2026 (Inc. / FactSet).
-- **Cloud computing companies plan to spend ~$670B on AI infra in 2026** (incl. all hyperscalers).
-- **MSFT + AMZN + GOOGL + META** alone: **~$600B in 2026** capex (per [[2026-05-09-dwarkesh-dylan-semianalysis]] — close to wiki's prior $200B figure once you include all data center capex, not just AI infra)
+- **Big 4 hyperscaler 2026 capex = $725B (REVISED UP, May 2026; see [[2026-05-12-hyperscaler-capex-q1-revisions]])** — up **+77% YoY from $410B in 2025**. Breakdown: [[MSFT]] $190B (vs $152B consensus; CFO Hood explicitly attributes **$25B to rising memory chip costs**), [[GOOGL]] $190B (raised $5B; **cloud contract backlog doubled to $460B in one quarter**), [[AMZN]] $200B (held flat — only one not raising), [[META]] $125-145B (raised on "component pricing"). Including secondary hyperscalers (Oracle, ByteDance, Alibaba), **total ~$830B**.
+
+> **What this means:** Microsoft, Google, Amazon, and Meta together are spending three-quarters of a *trillion* dollars in 2026 on AI infrastructure — nearly double what they spent in 2025. Microsoft alone is paying $25 billion *more* than it expected, just because memory chip prices have gotten so much more expensive. Google has already pre-sold $460 billion of cloud capacity. The takeaway: the companies actually writing the checks have not slowed down — they've accelerated.
+- **MSFT + AMZN + GOOGL + META** alone: **$725B in 2026** capex (revised May 2026 from prior $600B estimate)
 - **Whole supply chain capex (incl. fab construction, turbine deposits, etc.): ~$1T (NEW).** Big 4 hyperscaler capex is roughly 60% of total supply-chain capex; the rest is at [[TSM|TSMC]], ASML, memory makers, power vendors, OEMs.
 - **2026 incremental US data center capacity: ~20 GW critical IT** (per Dylan)
 - **OpenAI + Anthropic each at ~2-2.5 GW now** → targeting **5-6 GW by EOY 2026**, **~10 GW by EOY 2027**
@@ -23,6 +25,10 @@ The multi-year, hundreds-of-billions-of-dollars buildout of AI compute infrastru
 - **JPM Global Research:** AI supercycle driving above-trend EPS growth of **13–15% for at least two years**.
 - **Cumulative trajectory:** AI capex projected at **$1.6 trillion through 2029** (Vanguard).
 - **Demand is under-estimated across the supply chain (NEW).** Per Dylan: "OpenAI and Anthropic know they need X. Nvidia is not quite as AGI-pilled — they're building X-1. You go down the supply chain, everyone's doing X-1. In some cases X÷2." This is a structural mispricing of demand by the supply chain, which has supported the bull case repeatedly through 2024-2026.
+- **GPU rental capacity sold out (NEW — Apr 2026; see [[2026-04-01-semianalysis-gpu-rental-index]]).** SemiAnalysis launched a public H100 1-yr rental price index: **+40% in 5 months** ($1.70 → $2.35/hr from Oct 2025 to Mar 2026), still rising 15-20% MoM. **All Neocloud + Hyperscaler capacity coming online until August-September 2026 has already been booked.** Customers paying $14/hr/GPU for AWS p6-b200 spot. **Which means:** demand has been inelastic enough at current price points that rental rates can rise materially without curtailing demand — the ROI on AI tools is in the 5-10x range so token-buyers absorb price increases. This is the cleanest single data point refuting the "capex demand was over-extrapolated" bear case.
+- **Anthropic ARR triple-step (NEW — Apr 2026).** $9B end-of-quarter → $30B+ current → SemiAnalysis's value-capture model has $44B+. **Which means:** model-lab monetization is scaling faster than infrastructure deployment. SemiAnalysis's own internal Claude Code burn rate hit **$10.95M ARR** before Opus 4.7's token-efficiency reset it. The token-consumption curve is accelerating.
+- **Memory pricing parabolic (NEW — Jan 2026).** LPDDR5 contract prices +4x YoY, DDR5 +5x YoY (per SemiAnalysis Memory Model). **Which means:** AI server BoMs repriced 8-14% above September baselines, project IRRs compressed, some operators slow-rolled deployments — supply withheld → rental tightness compounds. Self-reinforcing dynamic.
+- **GPU clusters = 80%+ of foundation-model startup funding (NEW; see [[2026-04-20-semianalysis-gpu-cluster-cost]]).** SemiAnalysis: "We know multiple companies spending over 80% of their initial funding on GPUs." **Which means:** the entire AI-native venture financing structure now revolves around GPU access, which directly underwrites [[NVDA]] / [[CRWV]] / [[NBIS]] revenue durability through 2027.
 
 ## Key drivers
 - **Hyperscaler competition** — none of MSFT/AMZN/GOOGL/META can afford to under-invest if a competitor's models pull ahead
@@ -54,6 +60,30 @@ The multi-year, hundreds-of-billions-of-dollars buildout of AI compute infrastru
 - Power electronics: [[STM]], [[ADI]], [[MPWR]], [[NVTS]], [[ON]] (800V DC architecture)
 - **Construction labor** (see [[datacenter-construction]]): [[FIX]] (mech/HVAC), [[EME]] (MEP), [[PWR]] (transmission/grid) — ~$76B contracted backlog across three names
 - Still not yet covered: nuclear utilities (CEG/VST/TLN), industrial gases (APD/LIN), data center REITs (DLR/EQIX)
+
+### Neocloud cohort breakout — Q1 2026 prints (NEW 2026-05-13)
+
+The Neocloud category ([[CRWV]] + [[NBIS]]) decisively broke out from "speculative AI infrastructure" to "hyperscaler-quality scaled infrastructure" in Q1 2026:
+
+| | CRWV Q1 2026 | NBIS Q1 2026 |
+|---|---|---|
+| Revenue | $2.078B (+112% YoY) | $399M (+684% YoY) |
+| Adj EBITDA | $1.157B (56% margin) | $129.5M (profitability inflection from -$53.7M Y/Y) |
+| Operating Cash Flow | $2.984B | $2.258B |
+| Backlog / Contracted | **$99.4B** | $44.4B (MSFT $17.4B + Meta $27B) |
+| New Customer Win | Anthropic multi-year Claude | — |
+| Combined backlog | **$143.8B** across the two | |
+
+**Which means:** The two largest public Neoclouds collectively have **~$144B of contracted AI infrastructure revenue** — that's the size of an entire mid-tier S&P 500 sector. The "is Neocloud a real category?" debate from 2024-2025 is over. The remaining debates are (a) financial leverage in rising-rate regime, (b) customer concentration sustainability, (c) capex pacing.
+
+### Adjacent cycle: Robotics & humanoid buildout (NEW 2026-05-13; see [[robotics]])
+
+The same [[bottleneck-roadmap]] framework applied to humanoid robotics yields its own parallel beneficiary stack. **Which means:** investors playing the AI capex cycle should view robotics not as a separate sector but as the *second leg* of the same multi-year compute-and-physical-AI buildout — supply chains are being negotiated now for a 2027-2030 buildout.
+
+- **Rare-earth processing (binding now):** [[MP]] (only fully integrated US NdFeB producer), USAR, UUUU
+- **Precision sensors / motion (binds 2027):** [[OUST]] (lidar + stereo cameras), [[ALGM]] (magnetic position + current sensors), [[VPG]] (force-torque pure-play)
+- **Edge AI inference SoCs (2027-28):** [[AMBA]], CEVA, LSCC
+- **Scaled actuator + battery mfg (2028-2030):** Chinese supply chain dominant — Sanhua (002050.SZ), Leader Drive (688017.SS), Inovance — mostly inaccessible to Western retail without Stock Connect
 
 ## The bull thesis (capex pays back)
 - AI delivers real, measurable productivity gains in software, customer service, R&D

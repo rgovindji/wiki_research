@@ -2,51 +2,94 @@
 type: company
 ticker: NBIS
 tags: [ai, neocloud, gpu-cloud, nvda-direct, international]
-last_updated: 2026-05-09
-last_full_review: 2026-05-09
-sources: 0
-conviction: medium
+last_updated: 2026-05-13
+last_full_review: 2026-05-13
+sources: 3
+conviction: high
 stance: bull
 ---
 
 # Nebius Group (NBIS)
 
-**Stance:** bull · **Conviction:** medium · **Time horizon:** medium-term tactical
+**Stance:** bull · **Conviction:** **high** (upgraded from medium 2026-05-13 after Q1 2026 blow-out) · **Time horizon:** long-term + medium-term tactical
 
 ## One-line thesis
-Neocloud peer to [[CRWV]] — **NVDA invested $2B** to jointly develop next-gen hyperscale AI cloud. Locked in **$27B Meta contract**, with **~70% YTD** stock gain (vs. CRWV ~40% YTD). Lower revenue base than CoreWeave but stronger growth dynamics.
+Neocloud peer to [[CRWV]] — **NVDA invested $2B for 8.3% stake**, locked in **$17.4B 5-year Microsoft contract** + **$27B Meta contract** (combined ~$44.4B contracted revenue). **Q1 2026 print: revenue +684% YoY to $399M, adjusted EPS $2.11 vs -$0.78 expected, profitable on Adj EBITDA basis ($129.5M)** — the print decisively validates the bull case and triggered a +14.7% pre-market move.
+
+> **What this means:** Nebius just printed the strongest quarter any public Neocloud has ever reported — revenue grew nearly 8x year-over-year, they turned profitable on the operating measure that matters most (Adj EBITDA), and they have ~$44 billion of contracted business from Microsoft and Meta combined. The previous "smaller, faster-growing Neocloud" framing was correct but understated; the company is now operating at hyperscaler-quality customer concentration with hyperscaler-quality pricing.
 
 ## Role in the NVDA stack
 - **Neocloud / GPU cloud** — Tier-2 buyer of NVDA hardware
-- **NVDA $2B direct investment** — strongest NVDA equity tie among neoclouds
-- **Meta $27B contract**, $12B committed first 5 years
-- **Power: 2GW contracted, 5GW target by 2030; 800MW–1GW connected by end 2026**
+- **NVDA $2B direct investment for 8.3% stake (March 2026)** — strongest NVDA equity tie among neoclouds. Jensen Huang described Nebius as building "the kind of AI cloud infrastructure needed for the agentic era."
+- **Microsoft 5-year $17.4B GPU infrastructure deal (NEW — March 2026)** — separate from Meta; first hyperscaler-scale offtake
+- **Meta $27B contract**, $12B committed first 5 years (expanded March 2026)
+- **Combined contracted revenue: ~$44.4B** (MSFT $17.4B + Meta $27B)
+- **Power: 2GW contracted, 5GW target by 2030; 800MW–1GW connected by end 2026; new 1.2 GW facility power secured in Q1 2026**
 
 ## Bull case
-- **NVDA's $2B direct investment** is the deepest equity tie of any neocloud
-- **Meta $27B contract** is material long-duration revenue
-- **Power infrastructure already secured** — 2GW contracted gives runway
-- **Outpacing CRWV YTD** (70% vs 40%) on relative performance
-- **Smaller revenue base = higher growth optionality**
+- **Q1 2026 blow-out print (May 13, 2026) decisively validates the thesis.** Per the official press release ([[2026-05-13-NBIS-Q1-2026-earnings]]): Revenue **$399M (+684% YoY)** vs $50.9M Y/Y, beat consensus by ~$10M. **Adjusted EPS $2.11 vs -$0.78 expected** ($2.89 beat). **Adjusted EBITDA $129.5M vs -$53.7M Y/Y — profitability inflection.** Net income $621.2M (includes one-time items; Adj Net Loss still -$100.3M). **Operating cash flow $2.26B (vs -$184M Y/Y) — the deepest inflection.** Cash position **$9.3B** at Mar 31. 2026 revenue guide **$3.0-3.4B** per coverage; ARR target **$7-9B by EOY 2026**. Stock +14.7% premarket. **Which means:** the previous "speculative AI infra" framing is obsolete — NBIS is now operating at hyperscaler-quality unit economics. This is the single most validating quarter any Neocloud has ever printed.
+- **Operating-leverage flip is the underappreciated story.** Per the Q1 release: Cost of Revenue dropped from 49% → 26% of revenue; R&D from 72% → 17%; SG&A from 120% → 36%. **Which means:** NBIS is no longer in build-phase economics — they've transitioned to harvest-phase economics in one quarter. This is the structural shift that justifies the conviction upgrade from medium to high.
+- **Microsoft $17.4B 5-year GPU infrastructure deal (NEW — March 2026).** Separate from Meta. **Which means:** NBIS now has *two* hyperscaler-scale offtake contracts, not just one. Customer concentration risk remains but the floor under revenue is much higher than a typical Neocloud — multi-year forward visibility of ~$44.4B is hyperscaler-grade.
+- **NVDA $2B direct investment for 8.3% stake (March 2026)** is the deepest equity tie of any Neocloud. Jensen explicitly endorsed: "the kind of AI cloud infrastructure needed for the agentic era."
+- **Meta $27B contract** is material long-duration revenue (expanded March 2026 from $3B initial commitment).
+- **Power infrastructure already secured** — 2GW contracted gives runway; new 1.2 GW facility power secured in Q1 2026 per CEO comments on "unprecedented demand."
+- **GPU rental rates +40% in 5 months (see [[2026-04-01-semianalysis-gpu-rental-index]]).** H100 1-yr contracts rose from $1.70 → $2.35/hr (Oct 2025 → Mar 2026), still rising 15-20% MoM. All Neocloud + Hyperscaler capacity through Aug-Sep 2026 already booked. **Which means:** NBIS's unit economics are improving fast through 2026 contract repricing — and Q1 results validate this is already flowing through to financials.
+- **Sentiment vs fundamentals disconnect FINALLY RESOLVED.** The April SemiAnalysis "Long NBIS" featured comment is now decisively validated. The Q1 print + guidance is the catalyst that re-rates NBIS away from the "speculative Neocloud" framing.
+
+> **What this means (bull case synthesis):** Three months ago, NBIS was a "high-conviction story stock" — NVDA-backed, Meta-backed, but unprofitable and undersized. Today, NBIS is a profitable company with ~$44 billion of contracted revenue, +684% growth, and a guidance path to $7-9B ARR within 12 months. The earnings power is no longer theoretical.
 
 ## Bear case / risks
-- **Smaller revenue base** than CRWV — execution risk on scale-up
-- **GPU depreciation cycle** the same as CRWV — fast write-down risk
-- **Customer concentration** — Meta is the dominant customer
-- **Capital intensive** — power, real estate, GPUs
+- ~~Smaller revenue base than CRWV~~ → **No longer applies after Q1 2026 print.** NBIS Q1 revenue $399M annualized = $1.6B run-rate, with guide to $3-3.4B for 2026.
+- **GPU depreciation cycle** the same as CRWV — fast write-down risk as Blackwell → Rubin → next-gen ramps
+- **Customer concentration EXTREME post-Q1.** MSFT + Meta = essentially the entire $44.4B contracted backlog. Loss of either renegotiates the entire valuation.
+- **Capital intensive** — power, real estate, GPUs. Q1 net income of $621M includes one-time items; sustainability of the profitability inflection needs Q2 confirmation.
 - **Geopolitical complexity** — Nebius is the post-Yandex spin-out; legacy Russia perception risk despite operational separation
+- **+14.7% premarket move = "easy money is gone."** Buying into this print is chasing, not investing. Position sizing should reflect this.
+- **Macro multiple-compression risk still applies** (see [[2026-05-13-ppi-cpi-shock-positioning]]). High-duration profile means even with stronger earnings, multiple compression from higher-for-longer rates can offset the EPS beat in stock price terms.
+- **$15M insider selling earlier in the quarter** (pre-print, per Ad-Hoc-News coverage) — worth tracking if insiders sell into the print.
+
+> **What this means (bear case synthesis):** NBIS's biggest risk is no longer "will they execute?" — Q1 proved they can. The biggest risk is now (1) the macro multiple-compression overlay (which can offset earnings even when earnings are good), (2) extreme customer concentration (MSFT + Meta = the entire story), and (3) chasing risk after a +14.7% pop. Position-size accordingly.
 
 ## Key questions / what to watch
-1. **Meta contract revenue conversion** schedule
-2. **Power milestone delivery** (800MW–1GW by end 2026)
-3. **GPU fleet utilization**
-4. **Operating cash flow** as build-out continues
-5. **Customer diversification** beyond Meta
+1. **Q2 2026 print** — does the profitability hold? Adj EBITDA sustainability is the most material near-term datapoint
+2. **Customer diversification** — any third hyperscaler-scale offtake beyond MSFT + Meta?
+3. **ARR progression toward $7-9B EOY 2026 target** — quarterly disclosure
+4. **Power milestone delivery** (800MW-1GW by end 2026; 1.2 GW new facility ramp)
+5. **GPU fleet utilization** — is the rev growth coming from utilization gains or pure capacity adds?
+6. **Capex / cash burn trajectory** — Q1 profitable on Adj EBITDA but capital intensity is real
+7. **MSFT contract revenue timing** — when does the $17.4B start showing up in P&L vs being backlog?
+
+## Recent developments
+
+- **2026-05-13 — Q1 2026 BLOW-OUT (full data from official press release).** See [[2026-05-13-NBIS-Q1-2026-earnings]].
+  - Revenue **$399M (+684% YoY)**; Adj EPS $2.11 (beat -$0.78 by $2.89); **Adj EBITDA $129.5M (vs -$53.7M Y/Y)** — profitability inflection
+  - **Operating cash flow $2.26B** (vs -$184M Y/Y) — massive inflection
+  - **Cash position $9.3B** at Mar 31, 2026 (the wiki previously had outdated $175M figure)
+  - Capex $2.47B in Q1 (+355% YoY) — ~$10B annual run rate
+  - Total assets $22.3B (+80% in one quarter)
+  - Cost ratios collapsed dramatically: cost of rev 49% → 26%, R&D 72% → 17%, SG&A 120% → 36%
+  - **1.2 GW Pennsylvania AI factory** secured + Independence MO facility
+  - **Clarifai core team acquihire + Eigen AI acquisition** announced alongside — Token Factory inference platform strengthening
+  - **Conviction upgraded medium → high** based on the print
+  - 2026 revenue guide $3-3.4B per coverage; ARR target $7-9B EOY 2026 per coverage (these specific numbers not in the press release sourced; from earnings call coverage)
+- **2026-03** — **Microsoft $17.4B 5-year GPU infrastructure deal** (new, separate from Meta).
+- **2026-03** — Meta contract expanded from $3B initial to up to $27B (with $12B committed first 5 years).
+- **2026-03** — **NVDA $2B investment for 8.3% stake.** Jensen Huang: "agentic era" framing.
+- **2026-04** — SemiAnalysis [[2026-04-01-semianalysis-gpu-rental-index]] featured comment: "Long NBIS." Now validated by Q1 print.
 
 ## Related
-[[NVDA]] · [[nvda-supply-chain]] · [[CRWV]] · [[ORCL]] · [[META]] · [[ai-capex-cycle]] · [[overview]]
+[[NVDA]] · [[nvda-supply-chain]] · [[CRWV]] · [[ORCL]] · [[META]] · [[MSFT]] · [[ai-capex-cycle]] · [[2026-05-13-ppi-cpi-shock-positioning]] · [[overview]]
+
+## Sources
+1. [[2026-05-13-NBIS-Q1-2026-earnings]] — official Q1 2026 press release; the Q1 print that triggered conviction upgrade to high
+2. [[2026-04-01-semianalysis-gpu-rental-index]] — H100 1-yr rental +40%, all capacity booked through Sep 2026, "Long NBIS" featured comment
+3. [[2026-04-20-semianalysis-gpu-cluster-cost]] — ClusterMAX 2.1; goodput-based Neocloud differentiation
 
 ## Citations
+- [Nebius reports first quarter 2026 financial results — BusinessWire (May 13, 2026)](https://www.businesswire.com/news/home/20260513568820/en/Nebius-reports-first-quarter-2026-financial-results)
+- [Nebius Q1 revenue jumps 684% to $399M, turns profit — StockTitan](https://www.stocktitan.net/news/NBIS/nebius-reports-first-quarter-2026-financial-83ppz0unmqy3.html)
+- [Nebius stock surges nearly 15% on earnings beat and strong guidance — Investing.com](https://www.investing.com/news/earnings/nebius-stock-surges-nearly-15-on-earnings-beat-and-strong-guidance-93CH-4684055)
+- [Nebius Reports Whopping 684% Jump In Q1 Revenue — Stocktwits](https://stocktwits.com/news-articles/markets/equity/nbis-stock-soaring-today-after-nebius-q1-results-ceo-unprecedented-demand/cZXLSpmRe0r)
 - Techi NBIS analysis: https://www.techi.com/nebius-stock/
 - 24/7 Wall St on $2B NVDA investment: https://247wallst.com/investing/2026/03/11/after-2-billion-nvidia-investment-nebius-group-just-became-the-real-neocloud-winner/
 - Investing.com on $49B contract pipeline: https://www.investing.com/analysis/nebius-just-locked-up-49b-in-ai-contracts-5-ways-to-play-the-neocloud-boom-200677144

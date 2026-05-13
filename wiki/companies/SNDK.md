@@ -2,9 +2,9 @@
 type: company
 ticker: SNDK
 tags: [ai, semis, memory, nand, storage]
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -33,6 +33,7 @@ Pure-play NAND flash storage, recently spun out from [[WDC|Western Digital]] (Fe
 - **NAND rises *less* than DRAM (NUANCE).** Per [[2026-05-09-dwarkesh-dylan-semianalysis]]: as smartphone volumes collapse (1.4B → ~500-600M by 2027), the destruction *releases more NAND than DRAM* back to AI demand. So NAND prices go up, but **the price increases for DRAM will be larger than those of NAND.** Net: SNDK still benefits from the AI memory supercycle, but the *pure-play NAND* story is structurally less leveraged than [[MU]]'s HBM-attached DRAM story.
 - **YTD move is enormous.** 528% leaves no room for execution misses; mean reversion risk is acute
 - **NAND has historically been MORE cyclical than DRAM** — peak-to-trough swings are violent
+- **DeepSeek V4 KV cache reduction (NEW; see [[2026-04-24-semianalysis-coding-assistant]]).** DeepSeek V4 published with a **90% reduction in KV cache** vs V3.2 (10% KV cache, 27% inference FLOPs at 1M-token context). SemiAnalysis explicitly flagged: **"NAND Flash investors, watch out."** **Which means:** the core "AI data exhaust drives NAND demand" bull thesis has a 2027+ overhang — if architectural KV-cache compression generalizes across the frontier (it likely will, since the technique is open-source), then the marginal-token NAND demand from inference workloads is structurally smaller than the bull case assumes. Near-term (2026) impact is muted because deployed infrastructure is already buying NAND on the old assumption. HBF (SanDisk's High-Bandwidth Flash) is partial offset — but HBF is positioned as HBM substitute, not as KV cache.
 - **No HBM exposure** — the highest-margin memory product is DRAM/HBM, not NAND
 - **Recently spun out** — limited public history; less analyst visibility on stand-alone economics
 - **Concentrated customers** — hyperscaler buying patterns drive a large share of revenue
@@ -52,6 +53,7 @@ Pure-play NAND flash storage, recently spun out from [[WDC|Western Digital]] (Fe
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the "NAND rises less than DRAM" nuance
+2. [[2026-04-24-semianalysis-coding-assistant]] — DeepSeek V4 90% KV cache reduction; "NAND investors watch out" callout
 
 ## Citations
 - TipRanks on Cantor PT raises: https://www.tipranks.com/news/sandisk-sndk-and-western-digital-wdc-why-this-top-cantor-analyst-is-bullish-on-ai-memory-stocks

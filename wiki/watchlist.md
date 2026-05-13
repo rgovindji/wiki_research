@@ -1,7 +1,7 @@
 ---
 type: watchlist
 tags: [watchlist]
-last_updated: 2026-05-09
+last_updated: 2026-05-13
 last_full_review: 2026-05-09
 ---
 
@@ -33,6 +33,7 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 | [[TER]] | bull / high conviction | Chip test equipment; Q1 2026 revenue +87% YoY to $1.282B record; 70% AI exposure | Semi Test segment $1B+ run-rate sustainability |
 | [[ENTG]] | bull / high conviction | Fab consumables / FOUPs / ultra-pure materials; Q1 2026 +5%; content-per-wafer growth | Advanced Materials Handling rev mix |
 | [[APD]] | bull / medium conviction | Industrial gases for fabs; multi-decade BOO contracts; Samsung Pyeongtaek largest semi investment | Pyeongtaek phased onstream 2028-2030 |
+| [[MP]] | bull / high conviction | **NEW 2026-05-13.** Only fully integrated US NdFeB producer; Stillwater commercial ramp H1 2026; humanoid magnet content ~10x EV per unit; Apple + GM + DoD anchor customers | First commercial NdFeB shipment from Stillwater; DoD investment terms |
 
 ## Tactical (6–18mo swing candidates)
 
@@ -46,8 +47,8 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 | [[JBL]] | bull / medium conviction | AI rev $13.1B FY26 (+46%); NC facility mid-2026 | Intelligent Infra segment growth |
 | [[ARM]] | bull / medium conviction | Royalty stream scales with Vera Rubin volumes 2H 2026 | Vera Rubin volume ramp |
 | [[SNPS]] | bull / medium conviction | EDA duopoly + NVDA $2B for AI-accelerated tools | NVDA-co-developed product traction |
-| [[NBIS]] | bull / medium conviction | NVDA $2B; Meta $27B contract; 2GW power contracted | Meta contract revenue conversion |
-| [[CRWV]] | bull / medium conviction | NVDA $250M IPO anchor; Meta $35B | GPU fleet utilization |
+| [[NBIS]] | bull / **HIGH** conviction *(upgraded from medium 2026-05-13 on Q1 blow-out)* | NVDA $2B (8.3% stake); **MSFT $17.4B + Meta $27B = $44.4B contracted**; **Q1 2026: rev +684% YoY to $399M; Adj EBITDA $129.5M (profitability inflection); op cash flow $2.26B; cash $9.3B; guide $3-3.4B; ARR $7-9B EOY**. **MOVED TO LONG-TERM CORE candidate.** | Q2 print sustainability; third hyperscaler customer; PA 1.2GW ramp |
+| [[CRWV]] | bull / **HIGH** conviction *(upgraded from medium 2026-05-13 on Q1 blow-out)* | **Q1 2026: rev $2.078B (+112% YoY); BACKLOG $99.4B (~50% QoQ); Adj EBITDA $1.157B (56% margin); Anthropic Claude deal NEW; Meta +$21B March**; NVDA $2B + 5+GW partnership. 2026 guide $12-13B; exit ARR $18-19B; >$30B EOY 2027. **Largest AI infra backlog in public markets. MOVED TO LONG-TERM CORE candidate.** | Q2 Adj op income expansion ($30-90M guide); capex pace sustainability; rate-refi risk |
 | [[ADI]] | bull / medium conviction | 800V DC partner; quality compounder + industrial recovery | AI / data center revenue mix |
 | [[MPWR]] | bull / medium conviction | PMIC content per AI server growing | Customer concentration trend |
 | [[ASX]] | bull / medium conviction | OSAT for CoWoS overflow from TSMC | Advanced packaging revenue growth |
@@ -66,16 +67,20 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 | [[GEV]] | bull / high conviction | Gas turbines for data center power; lead times beyond 2030 (caveat: power not the binding AI constraint per Dylan) | Combined-cycle order book; aeroderivative mix |
 | [[BE]] | bull / medium conviction | Fuel cells; SemiAnalysis bullish 18+ months on production-ramp speed | MW shipped; hyperscaler deals |
 | [[ORCL]] | bull / medium conviction | OpenAI compute partner; multi-year capacity deals | OCI growth + AI mix |
+| [[OUST]] | bull / **low** conviction | **DOWNGRADED 2026-05-13** (medium → low). Lidar pure-play; Q1 2026 +49% YoY; Stereolabs pivot to Physical AI. **But Hesai (China) is 25x larger and already profitable; Luminar filed Chapter 11. Path to scale requires either US tariffs barring Hesai or a named humanoid OEM design win.** | Hesai market share trend; humanoid OEM design-win disclosure; Op cash flow positive milestone; $100M ATM completion |
+| [[ALGM]] | bull / medium conviction | **NEW 2026-05-13.** Magnetic position + current sensors per motor joint; 30-50 sockets per humanoid; Q4 FY26 beat | First humanoid OEM design win disclosure; auto cycle recovery |
+| [[AMBA]] | bull / medium conviction | **NEW 2026-05-13.** Edge AI SoCs; FY26 back to non-GAAP profitability; Edge AI 80% of revenue; CV7 5nm ramping | Q1 FY27 print; CV3-AD design wins; M&A optionality |
 
 ## Hold / monitor
 
 | Ticker | Stance | One-line thesis | Trigger to watch |
 |---|---|---|---|
 | [[STM]] | neutral / medium conviction | 800V DC partner but auto downturn caps near-term torque | Auto + industrial trough |
-| [[ON]] | neutral / medium conviction | SiC leader but auto cycle weighs | Auto SiC trough |
+| [[ON]] | bull / medium conviction *(UPGRADED neutral → bull 2026-05-13)* | **Q1 2026: AI data center +30% QoQ, on track to DOUBLE YoY 2026**; broad adoption across XPU vendors + hyperscalers. SiC auto leg intact. Long-term targets 10-12% CAGR, 53% GM. | AI DC quarterly progression; auto cycle recovery; named hyperscaler design wins |
 | [[SMCI]] | neutral / low conviction | Strong Blackwell support but accounting/legal overhang | Quarterly filing cleanliness |
 | [[NVTS]] | bull / low conviction | NVDA 800V partner but ~74x sales — wait for revenue inflection | Quarterly revenue inflection |
 | [[NOK]] | bull / low conviction | NVDA $1B AI-RAN bet; long lead time to revenue | T-Mobile US trial results |
+| [[VPG]] | neutral / low conviction | **NEW 2026-05-13.** Force-torque sensing for humanoid actuators; CEO pivoting narrative to "Physical AI"; **P/E 135-215 prices in execution success** before it shows up in financials | Q2 2026 print; first named humanoid OEM design win |
 
 ## Avoid (bear)
 
@@ -87,7 +92,7 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 ## Not yet covered (next research targets)
 
 - **MRVL (Marvell)** — second-leg custom silicon and optical (AWS Trainium 2, optical DSPs); the AVGO pair
-- **CDNS (Cadence)** — EDA duopoly companion to [[SNPS]]
+- **CDNS (Cadence)** — EDA duopoly companion to [[SNPS]]. **PRIORITY BUMPED 2026-05-12** after [[2026-05-11-semianalysis-eda-primer]] quantified the structural design-bottleneck thesis (67K worker shortage, $300M+ 3nm design cost, verification = 70% of project effort, design-productivity gap widening every node). CDNS deserves co-leader coverage with SNPS.
 - **CEG / VST / TLN** — nuclear utilities with hyperscaler PPAs (well-followed but no wiki pages yet)
 - **LIN (Linde)** — industrial-gas peer to [[APD]]; would complete the duopoly
 - **MKSI (MKS Instruments)** — fab subsystems (vacuum, flow, photonics); even more overlooked than ENTG

@@ -2,7 +2,7 @@
 type: company
 ticker: HPE
 tags: [ai, server-oem, networking, infrastructure]
-last_updated: 2026-05-09
+last_updated: 2026-05-13
 last_full_review: 2026-05-09
 sources: 0
 conviction: medium
@@ -38,14 +38,19 @@ The third leg of the enterprise AI server OEM stool with [[DELL]] and [[SMCI]], 
 - **Catching up to Dell** — HPE was a laggard in 2024-2025; 2026 portfolio (RTX PRO + Vera Rubin) closes the gap
 - **Less SMCI risk** — clean accounting, established governance vs. SMCI's lingering legal overhang
 - **GreenLake recurring revenue** provides ballast against cyclical hardware
+- **Autonomous AIOps + rugged edge AI (NEW 2026-05-13).** HPE launched autonomous agentic AIOps across HPE Mist + Aruba Central, plus ruggedized ProLiant edge servers for AI in harsh / distributed environments. Stock popped **+7.5% on the announcement.** New HPE Compute Scale-up Server 3250 (Intel Xeon 6, **up to 64TB DDR5**) targets in-memory database + business-critical AI workloads. **GreenLake 4th-gen private cloud now unifies Kubernetes + VM management on one platform.** **BofA raised PT $32 → $38** (Buy maintained) on cash flow outlook. **Which means:** HPE is broadening from pure AI server OEM to "AI-managed infrastructure platform" — AIOps is a sticky subscription opportunity that compounds beyond hardware refresh cycles.
 
 ## Bear case / risks
 - **Late mover** — Dell already captured first-mover Vera Rubin / GB300 deals; HPE has to displace, not just win
+- **Dell is materially outperforming HPE YTD 2026 (NEW).** **Dell +67% YTD vs HPE +20% YTD.** HPE participating in the AI server rally but trailing Dell on share. **Which means:** the structural share-shift dynamic still favors Dell; HPE is the "less efficient" AI server play right now and would need a catalyst (sovereign-AI win disclosed, Dell stumble, valuation gap closing) to flip the relative trade.
+- **+78% past year — easy money gone.** Stock near 52-week high $31.64; BofA PT $38 implies only ~20% further upside. Not enough valuation cushion to justify new adds at current price.
 - **AI server margins are thin** — like the rest of the OEMs, growth is volume-led, not margin-led
 - **Hyperscaler bypass** — large hyperscalers buy direct from ODM (Foxconn, Quanta) not OEMs
 - **Juniper integration risk** — $13.4B acquisitions take 2-3 years to fully integrate; cultural + product roadmap consolidation is non-trivial
 - **Cisco competition in networking** — Juniper enters HPE into a head-on fight with Cisco that wasn't on prior threat list
 - **Storage business cyclicality** — drag from non-AI segments
+
+> **What this means:** HPE is doing the right things (Juniper integration progressing, edge AI launching, AIOps differentiating) and earnings power is real. But the stock has already moved 78% in a year, BofA's PT implies only ~20% more upside, and Dell is winning the AI server share-shift war on the underlying volume metric. The wiki keeps bull/medium because the strategic moves are sound — but valuation discipline says don't chase at the 52-week high. Add on weakness if HPE pulls back to mid-$20s, not at the highs.
 
 ## Key questions / what to watch
 1. **Networking segment growth** — does the +151% YoY momentum continue ex-acquisition?
@@ -56,6 +61,7 @@ The third leg of the enterprise AI server OEM stool with [[DELL]] and [[SMCI]], 
 6. **Juniper integration milestones** — synergy realization
 
 ## Recent developments
+- **2026-05 — Multi-product launch + BofA PT raise.** Autonomous agentic AIOps across HPE Mist + Aruba Central; ruggedized HPE ProLiant edge servers for AI in distributed environments; HPE Compute Scale-up Server 3250 (Intel Xeon 6, up to 64TB DDR5); GreenLake 4th-gen private cloud unifying Kubernetes + VM. **Stock +7.5% on the announcement.** BofA raised PT $32 → $38 (Buy). Trading near 52-week high $31.64; **+78% past year, +20% YTD 2026** (vs Dell +67% YTD).
 - **2026 Q1 FY26 print** — **Revenue $9.3B (+18% YoY)**; **Networking segment $2.71B (+152%)** on Juniper integration; **raised full-year non-GAAP EPS guide to $2.30-$2.50**; **FCF swung positive to $708M (from −$877M)**. Stock +20% YTD 2026. Q1 print was March 9.
 - **2026-03** — HPE unveiled next-gen AI factory and supercomputing advancements with NVIDIA at GTC; added Blackwell + Rubin systems to AI factory portfolio
 - **2026-03** — Launched HPE AI Grid Solution for edge AI with NVIDIA

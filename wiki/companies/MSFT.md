@@ -2,9 +2,9 @@
 type: company
 ticker: MSFT
 tags: [ai, mag7, cloud, software]
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 last_full_review: 2026-05-09
-sources: 0
+sources: 1
 conviction: high
 stance: bull
 ---
@@ -47,8 +47,14 @@ The enterprise AI distribution leader — Azure scale + tight OpenAI partnership
 4. **OpenAI dynamics** — any change in commercial terms or product overlap
 5. **Maia silicon traction** — does internal silicon reduce NVDA dependence?
 
+## Recent developments
+- **2026-05-12** — MSFT set 2026 capex at **$190B** (vs $152B analyst consensus — a $38B beat). **CFO Amy Hood explicitly attributed $25B of the figure to rising memory chip and component costs** (see [[2026-05-12-hyperscaler-capex-q1-revisions]]). **Which means:** the memory inflation thesis that the wiki tracks via [[MU]] / [[SNDK]] / [[WDC]] is now flowing through to a hyperscaler P&L statement as an explicit line item, not just a supply-chain anecdote. This is direct validation of the AI memory supercycle thesis with hyperscalers absorbing the price. Cross-reference: SemiAnalysis Memory Model (per [[2026-04-01-semianalysis-gpu-rental-index]]) called for LPDDR5 +4x YoY and DDR5 +5x YoY in Q1 2026; MSFT's $25B attribution is the corporate-finance translation of that price action.
+
 ## Related
-[[ai-capex-cycle]] · [[cloud-hyperscalers]] · [[GOOGL]] · [[AMZN]] · [[NVDA]] · [[market-concentration]] · [[overview]]
+[[ai-capex-cycle]] · [[cloud-hyperscalers]] · [[GOOGL]] · [[AMZN]] · [[NVDA]] · [[MU]] · [[market-concentration]] · [[overview]]
+
+## Sources
+1. [[2026-05-12-hyperscaler-capex-q1-revisions]] — MSFT 2026 capex $190B (+$38B vs consensus); $25B memory-cost attribution from CFO Hood
 
 ## Citations
 - Motley Fool Mag 7 ranking: https://www.fool.com/investing/2026/04/17/rank-magnificent-seven-stocks-best-worst-buys/

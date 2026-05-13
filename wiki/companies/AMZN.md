@@ -2,9 +2,9 @@
 type: company
 ticker: AMZN
 tags: [ai, mag7, cloud, retail]
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 last_full_review: 2026-05-09
-sources: 0
+sources: 2
 conviction: medium
 stance: bull
 ---
@@ -37,6 +37,8 @@ Two re-acceleration stories on parallel tracks — AWS regaining cloud growth sh
 - **Capex weight on FCF** — like all hyperscalers, near-term FCF compressed by AI investment
 - **Multiple compression** alongside Mag 7 (see [[market-concentration]])
 - **Anti-trust + EU regulatory** scrutiny on marketplace + Prime bundling
+- **AWS networking handicap is structural (NEW; see [[2026-05-12-stratechery-amazon-durability]]).** Ben Thompson sharpens the AWS bear case: AWS's in-house **Nitro + EFA networking stack was optimized for the CPU cloud era**, not for AI workload topologies (low-latency, lossless, high-bandwidth between small numbers of high-power GPUs). [[NVDA]] NVLink/Spectrum-X and [[AVGO]] Tomahawk are the substrate the AI industry is building on; AWS faces a choice between grafting them in (losing Nitro differentiation) or shipping AI on Nitro (underdelivering on goodput vs Azure / GCP). **Which means:** the AWS AI revenue lag vs MSFT / GOOGL has a **technical/architectural root cause**, not just a go-to-market gap — the kind of multi-year handicap that doesn't resolve in one capex cycle.
+- **AMZN held 2026 capex FLAT at $200B (May 2026; see [[2026-05-12-hyperscaler-capex-q1-revisions]])** while MSFT, GOOGL, META all raised. Could be read two ways: (a) supply-constrained (bullish supply chain, neutral AMZN) or (b) leaning harder on internal Trainium silicon (bearish for NVDA's AMZN revenue line, neutral AMZN). The Stratechery framing tilts toward "structural AI-readiness gap" as the explanation. If AMZN can't show AI-attached revenue growth in line with peers by 2H 2026, consider downgrade to neutral.
 
 ## Key questions / what to watch
 1. **AWS quarterly growth rate** — vs. Azure / GCP; specifically AI-attributable growth
@@ -47,6 +49,10 @@ Two re-acceleration stories on parallel tracks — AWS regaining cloud growth sh
 
 ## Related
 [[ai-capex-cycle]] · [[cloud-hyperscalers]] · [[NVDA]] · [[AVGO]] · [[GOOGL]] · [[MSFT]] · [[market-concentration]] · [[inflation-tariffs]] · [[overview]]
+
+## Sources
+1. [[2026-05-12-stratechery-amazon-durability]] — Ben Thompson on AWS Nitro/EFA networking handicap vs Nvidia/Broadcom; structural AI-readiness gap
+2. [[2026-05-12-hyperscaler-capex-q1-revisions]] — Q1 2026 earnings synthesis; AMZN held capex flat at $200B while peers raised
 
 ## Citations
 - Motley Fool Mag 7 ranking: https://www.fool.com/investing/2026/04/17/rank-magnificent-seven-stocks-best-worst-buys/

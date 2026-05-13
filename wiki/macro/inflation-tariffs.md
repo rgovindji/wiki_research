@@ -1,7 +1,7 @@
 ---
 type: macro
 tags: [inflation, tariffs, energy]
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -14,8 +14,25 @@ Two intertwined inflation sources keeping the Fed cautious in 2026: tariff pass-
 ## Current state (May 2026)
 
 - **Tariff regime:** average US tariff rate has risen from **~2% to ~12%** under the current policy stance. Goldman estimates **consumers absorb 67%** of the tariff cost (the rest is split between exporters and US importers compressing margins).
-- **Energy:** elevated due to Middle East geopolitical tensions; explicitly cited in the April 2026 FOMC statement as a driver of "elevated" inflation.
+- **Energy:** elevated due to Middle East geopolitical tensions; explicitly cited in the April 2026 FOMC statement as a driver of "elevated" inflation. **WTI ~$98 / Brent ~$104** as of May 11 on Iran-US-Israel conflict.
 - **Labor:** softening but not collapsing — keeps the Fed in "hold" mode rather than cut mode.
+
+### April 2026 CPI + PPI shock (NEW, May 12-13 prints — see [[2026-05-13-ppi-cpi-shock-positioning]])
+
+Two consecutive hot prints have **fundamentally shifted the inflation picture**:
+
+| Metric | Actual | Surprise |
+|---|---|---|
+| **April CPI YoY (released May 12)** | **3.8%** | Highest since May 2023 |
+| April Core CPI YoY | 2.8% | Above Fed 2% target |
+| April Core CPI MoM | 0.4% | Highest since Jan 2025 |
+| **April PPI YoY (released May 13)** | **6.0%** | +200 bps re-acceleration vs prior 4.0% |
+| **April Core PPI MoM** | **1.0%** | **3.3x consensus (0.3%)** |
+| April Core PPI YoY | 5.2% | +120 bps re-acceleration |
+
+> **What this means:** The Iran-US-Israel oil shock is propagating from energy into **core** (excluding food and energy), which means the cost pressure has moved past the gas pump into freight, packaging, transportation, and services. Annualized, a 1.0% monthly core PPI = ~12.7% annualized — that's an inflation regime, not noise. The previous month was also revised UP, meaning the underlying trend was understated.
+
+**Key sequencing point:** PPI is a 1-3 month leading indicator for CPI. So today's hot PPI tells us the pipeline pressure feeding into the next CPI (**June 10, 2026 release for May data**) is worse than the already-hot April CPI suggests. June 10 is now the binary that confirms or breaks a regime shift.
 
 ## Implications for equities
 
@@ -33,13 +50,28 @@ Two intertwined inflation sources keeping the Fed cautious in 2026: tariff pass-
 - **Semiconductors ([[NVDA]], [[TSM]], [[ASML]]):** geopolitically exposed but not tariff-exposed in the same way; watch for export controls more than tariffs
 - **Auto / EV ([[TSLA]]):** exposed to both input tariffs AND consumer affordability pressure
 
+### Post-PPI-shock equity positioning (NEW 2026-05-13)
+
+Full ticker mapping in [[2026-05-13-ppi-cpi-shock-positioning]]. Summary:
+
+| Bucket | Read |
+|---|---|
+| **Long-duration AI** ([[NVDA]] / [[TSM]] / [[ASML]] / [[AMAT]]) | Bearish near-term on multiple compression. Earnings intact. **Hold; don't add this week.** |
+| **Memory** ([[MU]] / [[SNDK]] / [[WDC]]) | Counter-intuitively defensive. Hyperscalers absorbing memory cost inflation explicitly ([[MSFT]] CFO Hood attributed $25B of $190B capex to memory). |
+| **Construction labor** ([[FIX]] / [[EME]] / [[PWR]]) | **Most defensive subset in the wiki.** $76B locked-in backlog at fixed prices. |
+| **Rare earths** ([[MP]]) | **Asymmetric upside.** Supply-side inflation strengthens domestic-processing case. |
+| **Neoclouds + speculative AI** ([[CRWV]] / [[NBIS]] / [[OUST]]) | Bearish. High duration + capital-raising into rising rates = worst combo. |
+| **Consumer / retail** ([[AAPL]] / [[TSLA]] / [[AMZN]] retail) | Bearish. Tariff pass-through + margin compression. |
+
 ## Open questions
 - Does Middle East de-escalation knock energy back, freeing the Fed?
 - Are tariffs a structural shift or a negotiating tactic that reverses?
 - How much of corporate margin resilience to date is **front-loaded inventory** vs. real pass-through ability?
+- **Will the proposed "Board of Trade" mechanism (USTR Greer, May 2026) replace ad hoc tariffs?** If so, this could institutionalize the current tariff regime — turning what looked like negotiating posture into structural policy. See [[us-china-relations]] for the bilateral framing and [[2026-05-12-trump-xi-summit-investment-implications]] for near-term catalyst.
+- **Does the June 10 CPI print confirm the regime shift?** (NEW 2026-05-13) Three scenarios: cooling (~25%), stable hot (~45%), accelerating (~30%). Two consecutive hot prints would explicitly re-introduce hike-talk for a non-trivial Fed minority. See [[2026-05-13-ppi-cpi-shock-positioning]] for the positioning playbook by scenario.
 
 ## Related
-[[fed-policy]] · [[valuation-environment]] · [[overview]]
+[[fed-policy]] · [[valuation-environment]] · [[us-china-relations]] · [[overview]]
 
 ## Citations
 - April 2026 FOMC statement: https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm

@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-05-09
+last_updated: 2026-05-13
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -14,10 +14,12 @@ The top-level synthesis. Read this first. Updated whenever a meaningful new sour
 
 - **Equities:** S&P 500 closed **above 7,400** on May 10 (first close above that level) → S&P slipped 0.12% on May 11 with Dow flat, Nasdaq −0.34%, Russell 2000 +0.76% (small-cap leadership). April close was 7,209 (all-time high then). Goldman targets **7,600 YE** (+5.5%), Oppenheimer **8,100 YE** (+12%). Forward P/E **20.9** vs. 5yr avg 19.9 / 10yr avg 18.9. Earnings growth pace is what matters more than multiples — analysts call for **~21% EPS growth in 2026**.
 - **Energy / Iran:** WTI crude **+2.59% to $97.89**, Brent **+2.63% to $104** on May 11 on US-Iran conflict developments — keeps energy-driven inflation pressure on [[fed-policy]].
-- **Semis:** **PHLX Semiconductor Index +66% YTD** — the leading sub-sector by a wide margin.
-- **Rates:** Fed held at **3.50–3.75%** in April 2026 (8-4 dissent — biggest split since Oct 1992). JPM expects holds through 2026, possible hike Q3 2027. See [[fed-policy]].
-- **Inflation:** elevated, driven by energy and tariff pass-through (avg tariff rate 2% → 12%). See [[inflation-tariffs]].
-- **Risks:** valuation (CAPE **39.8**, highest since 2000 dot-com), concentration (Mag 7 = **35% of S&P 500**, matches dot-com peak), AI capex ROI uncertainty. See [[valuation-environment]], [[market-concentration]], [[ai-bubble-debate]].
+- **Semis:** **PHLX Semiconductor Index +66% YTD** — the leading sub-sector by a wide margin. **NVDA hit ATH $5.4T market cap May 13, 2026** (reports Q1 FY27 May 20 with guide $78B ± 2% — single highest-leverage near-term catalyst). **Neocloud breakout:** both [[CRWV]] (Q1 May 7) and [[NBIS]] (Q1 May 13) printed blow-out quarters with combined $143.8B contracted backlog.
+- **Rates:** Fed held at **3.50–3.75%** in April 2026 (8-4 dissent — biggest split since Oct 1992). **CME FedWatch (May 12, 2026): 37% probability of a HIKE by EOY 2026** after PPI shock; cut probability through EOY 2027 essentially zero. **Incoming Fed Chair Kevin Warsh** (taking reins May 2026) is a dovish Trump appointee walking into hawkish data — see [[fed-policy]] for the 4-scenario framework. **10y Treasury 4.49% intraday May 13** — approaching the 4.5% volatility-trigger threshold flagged in [[2026-05-13-ppi-cpi-shock-positioning]].
+- **Inflation:** **REGIME SHIFT 2026-05-13.** April CPI 3.8% YoY (highest since May 2023), April PPI **6.0% YoY** with core PPI MoM 1.0% (3.3x consensus). Iran-US-Israel oil shock propagating from energy into core. See [[inflation-tariffs]] and [[2026-05-13-ppi-cpi-shock-positioning]] for the full positioning playbook.
+- **Risks:** valuation (CAPE **39.8**, highest since 2000 dot-com), concentration (Mag 7 = **35% of S&P 500**, matches dot-com peak), AI capex ROI uncertainty, **NEW (2026-05-13): inflation regime shift + Warsh-vs-data Fed tension**. See [[valuation-environment]], [[market-concentration]], [[ai-bubble-debate]], [[2026-05-13-ppi-cpi-shock-positioning]].
+
+> **What this means (May 13, 2026):** Two consecutive hot inflation prints (April CPI + April PPI) plus a new dovish Fed Chair (Warsh) walking into hawkish data has reset the macro backdrop in 48 hours. The wiki's structural compounders (NVDA, TSM, ASML, GOOGL, MSFT) keep their earnings stories, but lose the rate-cut tailwind that was supporting multiples. **Don't add equity exposure this week.** June 10 CPI is the binary that confirms or breaks the regime shift. Rotate marginal capital toward backlog-locked industrials (FIX/EME/PWR) and rare earths (MP); trim leveraged-duration speculative AI (CRWV/NBIS/OUST).
 
 ## The dominant story: AI capex cycle
 
@@ -46,6 +48,10 @@ Both are live. See [[ai-capex-cycle]] and [[ai-bubble-debate]].
 5. **Overlooked downstream play: [[datacenter-construction]] (NEW).** While the market obsesses over chips and racks, the **mechanical/electrical contractors** physically building the data centers carry ~$76B contracted backlog across [[FIX]] (HVAC pure-play, +81% YoY backlog, 45% data center mix), [[EME]] (largest US MEP contractor, $15.62B RPOs, raised FY26 EPS guide to $28-$30), and [[PWR]] (transmission/grid, $48.5B record backlog). Industrial-classified, not tech-classified — falls outside most AI ETFs. **The labor bottleneck of [[bottleneck-roadmap]] 2030+ is monetized here.**
 
 6. **The "invisible" fab layer (NEW).** Outside the WFE bucket (AMAT/LRCX/KLAC), three names quietly capture AI fab-buildout content: [[TER]] (chip test equipment — **Q1 2026 +87% YoY, 70% AI exposure**), [[ENTG]] (FOUPs, ultra-pure materials, gas/liquid filtration — content-per-wafer grows with chip complexity), and [[APD]] (industrial gases — **Samsung Pyeongtaek = APD's largest semi investment ever**, multi-decade BOO contracts). Each sits in a different industry classification bucket from the obvious AI names — collectively they may be the most overlooked semi-fab beneficiary group in public markets.
+
+7. **The robotics buildout is the next bottleneck cycle (NEW 2026-05-13).** The new [[robotics]] sector page applies the same [[bottleneck-roadmap]] framework that worked for AI: rare-earth NdFeB processing is the binding constraint now ([[MP]] is the only fully integrated US producer, Stillwater commercial ramp H1 2026), precision sensors and harmonic drives bind in 2027 ([[OUST]], [[ALGM]], [[VPG]]), edge-AI inference SoCs follow in 2027-28 ([[AMBA]], CEVA, LSCC), and scaled actuator + battery manufacturing dominates 2028-2030 (Chinese supply chain unavoidable — Sanhua, Leader Drive, Inovance — mostly inaccessible to Western retail). Humanoid robotics in 2026 maps to AI infrastructure in mid-2023: louder narrative than realized revenue, but supply chains are being contracted now for the 2027-2030 buildout. **Which means:** the positioning playbook (bottleneck pricing power, harvest 2-3 years out) ports directly from AI — but at much smaller market caps with sharper drawdown risk on timeline slips.
+
+> **What this means:** Humanoid robots are where AI chips were in 2023 — more hype than sales, but companies are *already* locking down the parts they need to build them at scale in 2027-2030. The same playbook the wiki used for AI (own the bottleneck supplier early, harvest later) applies. The biggest difference: robotics companies are smaller, so when they go up they fly — and when the timeline slips, they drop harder.
 
 ## Open questions / next research
 

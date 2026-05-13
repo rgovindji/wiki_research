@@ -2,9 +2,9 @@
 type: company
 ticker: MU
 tags: [ai, semis, memory, hbm]
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -35,10 +35,13 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 
 > **The single most important warning on MU:** the "undervalued on forward P/E" framing pushed by retail / Twitter / many sell-side notes is the textbook **cycle-peak P/E paradox** — explained in detail below. The wiki stays bull / high conviction on MU, but for "multi-year supercycle has 2-3 more years to run" reasons, **NOT** "undervalued long-term compounder" reasons. Sizing and exit discipline matter more here than for any other top pick.
 
+> **What this means:** Micron is a great trade for the next 2-3 years because AI memory demand has another leg up. But it is **not** a "buy and hold forever" stock. Memory has crashed 40-70% in every prior cycle. The reason it looks cheap right now is the same reason it always looks cheap right before it crashes. Plan your exit.
+
 - **The cycle-peak P/E paradox.** Memory stocks ALWAYS look cheap on forward P/E at cycle peaks because the **E** is at peak. Investors buying MU on "low P/E + growing earnings" lost money in **2022 (-40%), 2019 (-50%), 2015-16 (-70%), and 2000**. Every one of those drawdowns came AFTER the forward P/E looked cheap. **Which means:** for cyclical semis you pay HIGH multiples on TROUGH earnings (early cycle) and LOW multiples on PEAK earnings (late cycle). Today's "low" forward P/E may be a peak-earnings P/E that compresses 50-70% when EPS normalizes. The cheap-P/E signal in memory is the OPPOSITE of what it means in software or services.
 - **Memory is structurally cyclical.** Every cycle since 1998 has had a 40-70% drawdown. A capex pause hits MU hardest because **70% of MU's revenue is still commodity DRAM/NAND** — only ~30% is HBM. **Which means:** even at sold-out HBM economics, the bull case rests on only a third of the business. If consumer device demand recovers (smartphones, PCs) OR if memory makers over-invest into the boom (always happens), commodity prices collapse and squeeze 70% of MU's revenue regardless of how HBM does.
 - **Mizuho $740 PT is BELOW current price (~$747).** **Which means:** even the most bullish memory analysts on the Street can't justify upside from here. When the "undervalued" framing is no longer institutional, it's mostly retail momentum. That's a flag that the easy money in this trade is behind.
 - **SK Hynix has 62% HBM share, not MU.** MU is "preferred supplier" at NVDA but not dominant. NVDA actively triangulates among SK Hynix / Samsung / MU to maintain leverage. **Which means:** MU's pricing power is bounded — they can't act monopolistic because they aren't one. The "preferred supplier" framing is real but limited; gross margin expansion has a ceiling set by SK Hynix's pricing.
+- **Samsung HBM4 closing the gap (NEW — see [[2026-04-15-semianalysis-isscc-roundup]]).** At ISSCC 2026 Samsung demonstrated HBM4 hitting **3.3 TB/s at 13 Gb/s/pin** (vs. HBM3E's 1.3 TB/s at 10 Gb/s/pin) and meeting Rubin pin-speed requirements while staying below 1V. Their 1c-based HBM4 paired with an SF4 logic base die appears competitive with SK Hynix on performance — and 1c front-end yields have improved from ~50% last year. **Which means:** the third leg of [[NVDA]]'s HBM4 triangulation (Samsung) is becoming a credible alternative for the first time in two HBM generations. If Samsung wins meaningful Rubin allocation, MU's "preferred supplier" pricing premium narrows. Monitor 2026 NVDA design-win disclosures carefully — this is the single most actionable thing to watch on MU specifically.
 - **HBM yield risk.** 16-high HBM4 stacking is technically demanding; yield-related cost overruns possible. **Which means:** a quarter or two of yield issues could compress the 66% gross margin investors are extrapolating, triggering multiple compression even with revenue intact.
 - **The same SemiAnalysis data the bulls cite predicts the bust.** DRAM ASPs double in 2026, double-digits in 2027 — that's the bull leg. But new fabs (2-year build cycle) come online by 2028 and the supply response begins. **Which means:** the bull case has a built-in cyclical end date around 2028-2029. Memory makers always over-invest into boom phases — it's their structural pathology. Plan the exit before that supply wave hits.
 - **Value-capture framework (per [[2026-05-13-semianalysis-value-capture]]) cuts against MU.** SemiAnalysis argues downstream model labs (Anthropic 70% inference GM) are capturing value while infrastructure suppliers sit on legacy pricing. **Which means:** MU's bull case requires memory tightness to PERSIST while labs continue scaling. If model labs extract more margin (which the framework predicts), the marginal AI-cycle value flows to Anthropic/OpenAI, not to memory vendors.
@@ -77,6 +80,7 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 4. **Capex discipline** — is the industry over- or under-investing for the next cycle?
 
 ## Recent developments
+- **2026-05-12** — SemiAnalysis Apr 2026 ISSCC roundup ([[2026-04-15-semianalysis-isscc-roundup]]) flags **Samsung HBM4 as competitive with peers** for the first time in two generations. Samsung is the most aggressive on base-die node (SF4 vs. SK Hynix's TSMC N12 vs. Micron's internal CMOS). **Which means:** the bull case's "MU as preferred supplier" framing is intact for HBM3E but faces a credible Samsung challenger on HBM4 at Rubin. Add to "what would move the view lower" watchlist. Separate data point: LPDDR5 contract prices going **parabolic** in Q1 2026 (+4x YoY per SemiAnalysis Memory Model) — bullish for MU's commodity DRAM leg.
 - **2026-05-11** — MU **+76% in past month** on the AI memory supercycle. **Cloud Memory Business Unit revenue $5.28B at 66% gross margin** (Q-recent). **Mizuho $740 PT** raised. Stock "eyeing $1 trillion club" per Stocktwits coverage. **SK Hynix** told investors HBM / DRAM / NAND for 2026 are essentially booked; **Samsung** memory chief warned shortages continue through at least 2027 — all directionally supportive of the wiki's [[bottleneck-roadmap]] memory thesis.
 
 ## Related
@@ -84,6 +88,7 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the demand-destruction mechanism and 30%-of-capex-to-memory data
+2. [[2026-04-15-semianalysis-isscc-roundup]] — Samsung HBM4 closing the gap; LPDDR6 specs; primary source for the new competitive-risk addition to the bear case
 
 ## Citations
 - io-fund Micron HBM 2026 plan: https://io-fund.com/ai-stocks/micron-stock-up-100-hbm-leader-2026-plan

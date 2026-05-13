@@ -8,26 +8,43 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 
 - [[overview]] — current macro stance + leading theses (synthesis page, May 2026)
 - [[watchlist]] — active buy / hold / avoid candidates with one-line theses
+- [[log]] — chronological activity log
+
+## Recent source ingests
+
+- 2026-05-13 earnings: [[2026-05-07-CRWV-Q1-2026-earnings]] (retroactive — CRWV Q1 blow-out: rev $2.078B +112% YoY; backlog $99.4B; Anthropic Claude deal NEW; Meta +$21B; conviction-upgrade candidate pending sign-off)
+- 2026-05-13 earnings: [[2026-05-13-NBIS-Q1-2026-earnings]] (NBIS Q1 blow-out: rev +684% YoY to $399M; Adj EBITDA inflection $129.5M; conviction upgraded medium→high)
+- 2026-05-13 ingest: [[2026-05-13-x-stack-map-humanoid-robotics]] (viral X humanoid-stack thread; prompted new [[robotics]] sector)
+- 2026-05-12 daily overview: [[2026-05-12-hyperscaler-capex-q1-revisions]] (Big 4 capex $725B, +77% YoY), [[2026-05-12-stratechery-amazon-durability]] (AWS networking handicap bear case)
+- 2026-05-12 ingest: **5 SemiAnalysis PDFs** — [[2026-04-01-semianalysis-gpu-rental-index]] (H100 +40%, sold-out through Sep 2026), [[2026-04-15-semianalysis-isscc-roundup]] (Samsung HBM4 closing gap, LPDDR6), [[2026-04-20-semianalysis-gpu-cluster-cost]] (ClusterMAX 2.1), [[2026-04-24-semianalysis-coding-assistant]] (DeepSeek V4 90% KV cache reduction), [[2026-05-11-semianalysis-eda-primer]] (design-bottleneck structural thesis)
+
+## Recent analyses
+
+- [[2026-05-13-ppi-cpi-shock-positioning]] — April CPI/PPI shock; Warsh as Fed Chair walking into hot data; 5 of 6 late-cycle warning indicators firing; ticker-by-ticker positioning grid + rotation playbook
+- [[2026-05-12-trump-xi-summit-investment-implications]] — May 14-15 Beijing summit; 3 scenarios mapped to wiki positions; rare earths as underappreciated risk
 
 ## Macro (`wiki/macro/`)
 
 - [[fed-policy]] — Fed funds 3.50–3.75%, held April 2026, 8-4 dissent, post-Powell era beginning
 - [[valuation-environment]] — S&P 500 forward P/E 20.9, CAPE 39.8, concentration at dot-com peak levels
 - [[inflation-tariffs]] — tariff avg rates 2% → 12%, energy-driven inflation pressure
+- [[us-china-relations]] — bilateral relationship arc: trade, tech decoupling, Taiwan, rare earths; ticker-by-ticker beneficiary mapping
 
 ## Themes (`wiki/themes/`)
 
-- [[ai-capex-cycle]] — hyperscalers spending ~$670B in 2026; 40% of S&P 500 EPS growth attributed to AI
+- [[ai-capex-cycle]] — hyperscalers spending ~$725B in 2026 (+77% YoY); 40% of S&P 500 EPS growth attributed to AI
 - [[market-concentration]] — Mag 7 = 35% of S&P 500, equal to dot-com peak; counter-thesis
 - [[ai-bubble-debate]] — bull (real productivity) vs. bear (CAPE 39.8, capex ROI uncertain)
 - [[nvda-supply-chain]] — NVIDIA's vendor stack + direct equity investments; second-order AI plays
-- [[bottleneck-roadmap]] — time-sequenced supply-chain bottlenecks: memory (2026) → cleanrooms (2027) → EUV (2028-2030); from SemiAnalysis
+- [[bottleneck-roadmap]] — time-sequenced supply-chain bottlenecks: memory (2026) → cleanrooms (2027) → EUV (2028-2030); now includes parallel robotics bottleneck roadmap (rare earths → sensors → actuators)
 - [[datacenter-construction]] — the **physical labor / contracting layer** building AI data centers; ~$76B contracted backlog across [[FIX]] / [[EME]] / [[PWR]]; overlooked because industrial-classified, not tech
+- [[humanoid-oems]] — humanoid OEM landscape (Tesla Optimus, Figure, Agility, Apptronik, AgiBot, Unitree, UBTECH); OEM-side counterpart to [[robotics]]; mostly private companies but determines which public suppliers win design slots
 
 ## Sectors (`wiki/sectors/`)
 
 - [[semiconductors]] — NVDA / TSM / ASML / AVGO / AMD / AMAT; AI server spend +45% to $312B in 2026
 - [[cloud-hyperscalers]] — MSFT Azure, AMZN AWS, GOOGL GCP — capex and AI revenue scoreboards
+- [[robotics]] — Robotics & Humanoid Buildout; NdFeB rare-earth magnets, precision sensors, harmonic drives, edge-AI SoCs; bottleneck-roadmap framework applied to humanoid component supply chain
 - *AI software sector page — not yet created; tracked under [[watchlist]] "Not yet covered" (PLTR, etc.)*
 
 ## Companies (`wiki/companies/`)
@@ -98,6 +115,13 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 - [[FIX]] — Comfort Systems USA; pure mechanical/HVAC; $12.46B backlog (+81% YoY); 45% data center mix; **stance: bull**
 - [[EME]] — EMCOR Group; largest US MEP contractor; $15.62B RPOs; FY26 EPS guide $28-$30; **stance: bull**
 - [[PWR]] — Quanta Services; transmission/substation/grid; $48.5B record backlog; **stance: bull**
+
+### Robotics & humanoid components (NEW 2026-05-13)
+- [[MP]] — MP Materials; only fully integrated US NdFeB producer; Stillwater H1 2026 ramp; **stance: bull (high)**
+- [[OUST]] — Ouster; lidar + Stereolabs stereo cameras; Q1 2026 +49% YoY; **stance: bull (low)** — *downgraded 2026-05-13 on Hesai competitive gap*
+- [[ALGM]] — Allegro MicroSystems; magnetic position + current sensors per motor joint; **stance: bull (medium)**
+- [[AMBA]] — Ambarella; edge AI SoCs; FY26 back to profitability; **stance: bull (medium)**
+- [[VPG]] — Vishay Precision Group; force-torque pure-play but P/E 135-215; **stance: neutral (low)**
 
 ### Power electronics
 - [[STM]] — STMicroelectronics; auto downturn cap on AI thesis; **stance: neutral**

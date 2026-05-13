@@ -2,7 +2,7 @@
 type: company
 ticker: NVDA
 tags: [ai, semis, mag7]
-last_updated: 2026-05-09
+last_updated: 2026-05-13
 last_full_review: 2026-05-09
 sources: 1
 conviction: high
@@ -12,6 +12,8 @@ stance: bull
 # NVIDIA (NVDA)
 
 **Stance:** bull · **Conviction:** high · **Time horizon:** long-term (multi-year) with tactical entry/exit windows
+
+> **NEAR-TERM CATALYST (NEW 2026-05-13):** NVDA reports **Q1 FY27 earnings on May 20, 2026** after the close. Guidance is **$78B ± 2%**. **NVDA hit ATH market cap $5.4T on May 13.** Jensen Huang is in Beijing with Trump's delegation (May 13-14 summit) — China H200 access framing will likely surface on the call. This is the single highest-leverage near-term read of the cycle.
 
 ## One-line thesis
 The dominant supplier of AI accelerators with a $1T confirmed demand backlog through 2027 and a deepening software/networking moat (CUDA, NVLink, Spectrum-X) — the canonical picks-and-shovels long-term hold for the AI capex cycle.

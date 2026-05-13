@@ -2,9 +2,9 @@
 type: company
 ticker: GOOGL
 tags: [ai, mag7, cloud, advertising]
-last_updated: 2026-05-09
+last_updated: 2026-05-12
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -47,6 +47,7 @@ The most under-priced Mag 7 stock entering 2026 — vertically integrated AI sta
 5. **Ad-business margin** under economic pressure (tariffs, consumer spending — see [[inflation-tariffs]])
 
 ## Recent developments
+- **2026-05-12** — **GCP cloud contract backlog hit $460B in Q1 2026 — DOUBLED from $240B at EOY 2025 in a single quarter.** GOOGL raised 2026 capex guide by $5B to **$190B** (matching [[MSFT]]). Per [[2026-05-12-hyperscaler-capex-q1-revisions]]. **Which means:** demand for GCP is being signed in advance at a velocity that materially exceeds the rate at which capacity can be deployed — i.e., GOOGL is sold out for years on contracts that haven't yet hit revenue. This is the cleanest single data point validating the [[GOOGL]] bull case in any source the wiki has captured. Also bullish for [[TSM]] (TPU manufacturer) and [[NVDA]] (GCP also runs NVDA chips at scale).
 - **2026-05-09** — Source ingest [[2026-05-09-dwarkesh-dylan-semianalysis]] adds three concrete data points:
   - **Q4 2025 Gemini ARR hit ~$5B** after Nano Banana / Gemini 3 drove user metrics inflection
   - Google **sold ~1M Ironwood (TPU v7) to Anthropic in Q3 2025** — driven by Google Cloud people taking a deal Anthropic's compute team (ex-Google) saw before Google leadership did. DeepMind people reportedly thought "this is insane, why did we do this?" An information-asymmetry blunder.
@@ -59,6 +60,7 @@ The most under-priced Mag 7 stock entering 2026 — vertically integrated AI sta
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for Gemini Q4 ARR, Anthropic Ironwood sale, and Google's belated AGI-pilling
+2. [[2026-05-12-hyperscaler-capex-q1-revisions]] — GCP cloud backlog doubled to $460B in Q1 2026; capex raised to $190B
 
 ## Citations
 - Motley Fool Mag 7 #1 pick: https://www.fool.com/investing/2025/12/30/ranking-the-best-magnificent-seven-stocks-to-buy-1/
