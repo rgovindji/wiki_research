@@ -1,0 +1,70 @@
+---
+type: theme
+tags: [ai, datacenter, construction, contractors, labor]
+last_updated: 2026-05-12
+last_full_review: 2026-05-12
+sources: 0
+---
+
+# Data Center Construction Layer
+
+## What this is
+The **physical labor and contracting layer** that actually *builds* AI data centers. Often overlooked because everyone focuses on the chips inside the racks, the gear in the racks, and the REITs that own the land — but somebody has to dig the foundations, run conduit, install switchgear, hang busways, run plumbing for liquid cooling, and connect substations to the grid. **That somebody is a small number of large mechanical/electrical contractors with multi-year backlogs already booked.**
+
+Per [[bottleneck-roadmap]], the **2030+ binding constraint is labor + modularization**. Dylan Patel: "Crusoe Abilene 1.2 GW data center has ~5,000 workers at peak; 100 GW would imply 400K+ workers." This cluster captures the labor-bottleneck rent.
+
+## The three big names
+
+| Ticker | Scope | Q1 2026 backlog | Notable |
+|---|---|---|---|
+| [[FIX]] | Pure-play mech / HVAC (closest to the rack) | **$12.46B** (+81% YoY) | Data center = **45% of revenue**; gross margin 26.9% |
+| [[EME]] | Mech + electrical, broader scope | **$15.62B RPOs** | EPS guide raised to $28.25-$29.75; visibility into 2027+ |
+| [[PWR]] | Grid / transmission / substation (upstream of data center) | **$48.5B** | NiSource: building 3 GW generation; broader utility-scale |
+
+Together: **~$76 B of contracted AI-infrastructure construction backlog** across just three names.
+
+## Why this is overlooked
+
+1. **Industry classification mismatch.** These are listed as "engineering & construction" or "industrials" — they don't appear in AI ETFs or tech screens despite ~40-50% AI-data-center revenue at FIX and large data center mix at EME / PWR.
+2. **Boring business model.** Contracting is mid-margin, project-based, blue-collar. Hard to get excited about. But the multi-year backlogs lock in high-visibility revenue.
+3. **Sell-side coverage gap.** Most analysts who cover AI are technology analysts; most who cover these names are industrial analysts. The "AI data center construction" story doesn't map cleanly to a single sell-side desk.
+4. **Mid-cap by market cap.** FIX is mid-cap; EME mid-to-large; PWR large. None are in mega-cap-only AI baskets.
+
+## Why now
+
+- **2025-2027 is peak data-center build phase** per [[ai-capex-cycle]]: ~$670B of hyperscaler capex in 2026; ~$800B projected for 2026 capex per PWR commentary
+- **Labor scarcity is the new bottleneck** — 100,000+ US electricians needed; importing skilled labor from Europe (per Dylan Patel)
+- **Backlogs are already booked** — multi-year revenue visibility regardless of near-term AI sentiment swings
+- **Margins are expanding** as pricing power builds — FIX mechanical margin 26.9% (was 21.7%), EME operating margin +50 bps to 8.7%
+- **Balance sheets are pristine** — FIX has $1.05B cash vs. $39M debt; clean returns of capital
+
+## Bull case
+- **Multi-year contracted revenue** — backlogs are essentially pre-sold revenue; less sensitive to monthly AI sentiment than chip names
+- **Labor pricing power compounds** — every additional GW of data center built tightens skilled-labor supply more
+- **Modularization tailwind** — Asia-shipped pre-assembled modules (per [[bottleneck-roadmap]]) reduce on-site labor needs but contractors capture the integration / installation revenue
+- **Diversified beyond AI** — utility grid modernization, electrification of transportation, building decarbonization all provide non-AI optionality
+
+## Bear case
+- **Cyclical at heart** — construction is cyclical; if AI capex pauses, the new-bookings rate falls fast even if the backlog burns down
+- **Already-run stocks** — FIX +47% YTD 2026, EME and PWR both with strong runs; valuation premium real
+- **Margin ceiling** — contracting historically can't grow above mid-double-digit operating margins; pure financial leverage from AI is bounded
+- **Labor inflation cuts both ways** — wage inflation could compress margin if customer pricing doesn't keep pace
+- **Geographic concentration risk** — heavy exposure to specific hyperscaler campuses (Texas, Virginia, Arizona, Phoenix); local issues hit revenue
+- **Competition from internal hyperscaler self-perform programs** — Google and Amazon have at times brought construction in-house for certain components
+
+## What to watch
+- **Quarterly backlog direction** — bookings rate vs. burn rate (the key leading indicator)
+- **Mix of data center vs. non-data-center revenue** — direction of AI exposure
+- **Operating margin trajectory** — does pricing power keep ahead of labor inflation?
+- **Hyperscaler capex commentary** — read-through is direct
+- **Modularization adoption** — Crusoe / Google / Meta moves to factory-built modules could shift revenue mix
+- **Power-side execution** — PWR specifically benefits from generation + transmission build; FIX/EME more from inside-the-fence MEP
+
+## Related
+[[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[FIX]] · [[EME]] · [[PWR]] · [[VRT]] · [[ETN]] · [[GEV]] · [[BE]] · [[overview]]
+
+## Citations
+- Comfort Systems Q1 2026 backlog: https://www.tikr.com/blog/comfort-systems-stock-climbs-47-in-2026-as-data-center-demand-drives-record-11-94-billion-backlog
+- EMCOR Q1 2026: https://www.investing.com/news/company-news/emcor-q1-2026-slides-record-revenue-ai-boom-lifts-backlog-93CH-4646176
+- Quanta Q1 2026: https://markets.financialcontent.com/stocks/article/finterra-2026-1-22-the-architect-of-electrification-a-deep-dive-into-quanta-services-pwr-in-2026
+- SimplyWall on EME $3T data center supercycle: https://simplywall.st/community/narratives/us/capital-goods/nyse-eme/emcor-group/7gmdi4uc-eme-and-the-dollar3-trillion-data-center-supercycle-powering-the-shift-from-it-real-estate-to-mission-critical-ai-infrastructure-by-2030

@@ -1,0 +1,22 @@
+# Personal
+.DS_Store
+.idea/
+.vscode/
+
+# Obsidian app state (per-user)
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+
+# Source material — copyrighted, not redistributed
+raw/
+
+# Local env / secrets
+.env
+.env.local
+*.key
+*.pem
+
+# Build output / temp
+node_modules/
+*.log
+.tmp/

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard Design Comparison</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px;
+    background: #0d0e12;
+    color: #e8e6e0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .page-header {
+    max-width: 1600px;
+    margin: 0 auto 24px;
+  }
+  .page-header h1 {
+    margin: 0 0 4px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .page-header p {
+    margin: 0;
+    color: #888;
+    font-size: 13px;
+  }
+  .grid {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  .preview {
+    border: 1px solid #2a2d35;
+    border-radius: 6px;
+    overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  .preview-label {
+    background: #1a1d24;
+    padding: 8px 14px;
+    border-bottom: 1px solid #2a2d35;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .preview-label .tag {
+    background: #0d0e12;
+    color: #e8e6e0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 9px;
+    font-weight: 600;
+  }
+  .preview-frame {
+    flex: 1;
+    overflow: hidden;
+  }
+  @media (max-width: 700px) {
+    body { padding: 12px; }
+  }
+
+  /* ============================== LINEAR ============================== */
+  .linear-frame {
+    background: #010102;
+    color: #f7f8f8;
+    padding: 18px;
+    font-family: -apple-system, "SF Pro Display", sans-serif;
+    font-size: 12.5px;
+    line-height: 1.45;
+    height: 100%;
+  }
+  .linear-frame .hdr {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    border-bottom: 1px solid #23252a;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+  .linear-frame .hdr .sub { font-size: 11px; color: #8a8f98; font-weight: 500; }
+  .linear-frame .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  .linear-frame .stat {
+    background: #0f1011;
+    border: 1px solid #23252a;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .linear-frame .stat .lbl {
+    font-size: 9px; color: #8a8f98; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 700;
+  }
+  .linear-frame .stat .val {
+    font-size: 18px; font-weight: 600; color: #f7f8f8; letter-spacing: -0.5px; font-variant-numeric: tabular-nums;
+  }
+  .linear-frame .stat .val.accent { color: #5e6ad2; }
+  .linear-frame .stat .desc { font-size: 10px; color: #62666d; margin-top: 2px; }
+  .linear-frame .section { font-size: 11px; color: #5e6ad2; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin: 8px 0 6px; }
+  .linear-frame .row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 6px 0; border-bottom: 1px solid #18191a;
+  }
+  .linear-frame .ticker { font-family: ui-monospace, monospace; color: #5e6ad2; font-weight: 600; }
+  .linear-frame .pill { font-size: 9px; padding: 1px 6px; border-radius: 8px; background: rgba(39,166,68,0.15); color: #27a644; font-weight: 700; border: 1px solid rgba(39,166,68,0.3); }
+  .linear-frame .pill.bear { background: rgba(255,80,80,0.12); color: #ff6b6b; border-color: rgba(255,107,107,0.3); }
+
+  /* ============================== STRIPE ============================== */
+  .stripe-frame {
+    background: #ffffff;
+    color: #0d253d;
+    padding: 18px;
+    font-family: -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 12.5px;
+    height: 100%;
+  }
+  .stripe-frame .hdr {
+    font-size: 16px; font-weight: 700; color: #0d253d;
+    border-bottom: 1px solid #e3e8ee;
+    padding-bottom: 8px; margin-bottom: 12px;
+  }
+  .stripe-frame .hdr .sub { font-size: 11px; color: #64748d; font-weight: 500; display: block; margin-top: 2px; }
+  .stripe-frame .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  .stripe-frame .stat {
+    background: #f6f9fc; border: 1px solid #e3e8ee; padding: 10px; border-radius: 6px;
+  }
+  .stripe-frame .stat .lbl { font-size: 10px; color: #64748d; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; }
+  .stripe-frame .stat .val { font-size: 18px; font-weight: 700; color: #0d253d; margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .stripe-frame .stat .val.accent { color: #533afd; }
+  .stripe-frame .stat .desc { font-size: 10px; color: #64748d; margin-top: 2px; }
+  .stripe-frame .section { font-size: 11px; color: #533afd; font-weight: 700; text-transform: uppercase; margin: 8px 0 6px; letter-spacing: 0.5px; }
+  .stripe-frame .row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 6px 0; border-bottom: 1px solid #e3e8ee;
+  }
+  .stripe-frame .ticker { font-family: ui-monospace, monospace; color: #533afd; font-weight: 700; }
+  .stripe-frame .pill { font-size: 9px; padding: 2px 8px; border-radius: 10px; background: #e7f5ee; color: #1f7a3a; font-weight: 700; }
+  .stripe-frame .pill.bear { background: #fce7ec; color: #ea2261; }
+
+  /* ============================== VERCEL ============================== */
+  .vercel-frame {
+    background: #ffffff;
+    color: #171717;
+    padding: 18px;
+    font-family: "Geist", -apple-system, sans-serif;
+    font-size: 12.5px;
+    height: 100%;
+  }
+  .vercel-frame .hdr {
+    font-size: 16px; font-weight: 700; color: #171717;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 8px; margin-bottom: 12px; letter-spacing: -0.3px;
+  }
+  .vercel-frame .hdr .sub { font-size: 11px; color: #888888; font-weight: 500; display: block; margin-top: 2px; }
+  .vercel-frame .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  .vercel-frame .stat {
+    background: #fafafa; border: 1px solid #ebebeb; padding: 10px; border-radius: 8px;
+  }
+  .vercel-frame .stat .lbl { font-size: 10px; color: #888888; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+  .vercel-frame .stat .val { font-size: 18px; font-weight: 700; color: #171717; margin-top: 2px; font-variant-numeric: tabular-nums; letter-spacing: -0.5px; }
+  .vercel-frame .stat .val.accent { color: #0070f3; }
+  .vercel-frame .stat .desc { font-size: 10px; color: #888888; margin-top: 2px; }
+  .vercel-frame .section { font-size: 11px; color: #888888; font-weight: 600; text-transform: uppercase; margin: 8px 0 6px; letter-spacing: 0.5px; }
+  .vercel-frame .row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 6px 0; border-bottom: 1px solid #ebebeb;
+  }
+  .vercel-frame .ticker { font-family: ui-monospace, "Geist Mono", monospace; color: #171717; font-weight: 700; }
+  .vercel-frame .pill { font-size: 9px; padding: 2px 8px; border-radius: 12px; background: #aaffec; color: #29bc9b; font-weight: 700; border: 1px solid #29bc9b; }
+  .vercel-frame .pill.bear { background: #f7d4d6; color: #c50000; border-color: #ee0000; }
+
+  /* ============================== SUPERHUMAN ============================== */
+  .superhuman-frame {
+    background: #fafaf8;
+    color: #292827;
+    padding: 18px;
+    font-family: -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 12.5px;
+    height: 100%;
+  }
+  .superhuman-frame .hdr {
+    font-size: 16px; font-weight: 600; color: #1b1938;
+    border-bottom: 1px solid #e8e4dd;
+    padding-bottom: 8px; margin-bottom: 12px; letter-spacing: -0.3px;
+  }
+  .superhuman-frame .hdr .sub { font-size: 11px; color: #73706d; font-weight: 500; display: block; margin-top: 2px; }
+  .superhuman-frame .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  .superhuman-frame .stat {
+    background: #ffffff; border: 1px solid #e8e4dd; padding: 10px; border-radius: 4px;
+  }
+  .superhuman-frame .stat .lbl { font-size: 10px; color: #73706d; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  .superhuman-frame .stat .val { font-size: 18px; font-weight: 700; color: #1b1938; margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .superhuman-frame .stat .val.accent { color: #1b1938; }
+  .superhuman-frame .stat .desc { font-size: 10px; color: #9a9794; margin-top: 2px; }
+  .superhuman-frame .section { font-size: 11px; color: #1b1938; font-weight: 700; text-transform: uppercase; margin: 8px 0 6px; letter-spacing: 0.5px; }
+  .superhuman-frame .row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 6px 0; border-bottom: 1px solid #e8e4dd;
+  }
+  .superhuman-frame .ticker { font-family: ui-monospace, monospace; color: #1b1938; font-weight: 600; }
+  .superhuman-frame .pill { font-size: 9px; padding: 2px 8px; border-radius: 4px; background: #1b1938; color: #c9b4fa; font-weight: 700; }
+  .superhuman-frame .pill.bear { background: #f5e9d4; color: #292827; }
+
+  /* ============================== CLAUDE ============================== */
+  .claude-frame {
+    background: #faf9f5;
+    color: #141413;
+    padding: 18px;
+    font-family: "Charter", "Georgia", serif;
+    font-size: 13px;
+    height: 100%;
+  }
+  .claude-frame .hdr {
+    font-size: 17px; font-weight: 700; color: #141413;
+    border-bottom: 1px solid #e6dfd8;
+    padding-bottom: 8px; margin-bottom: 12px;
+  }
+  .claude-frame .hdr .sub { font-size: 11px; color: #6c6a64; font-weight: 400; display: block; margin-top: 2px; font-family: -apple-system, sans-serif; }
+  .claude-frame .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  .claude-frame .stat {
+    background: #f5f0e8; border: 1px solid #e6dfd8; padding: 10px; border-radius: 6px;
+  }
+  .claude-frame .stat .lbl { font-size: 10px; color: #6c6a64; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; font-family: -apple-system, sans-serif; }
+  .claude-frame .stat .val { font-size: 19px; font-weight: 700; color: #141413; margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .claude-frame .stat .val.accent { color: #cc785c; }
+  .claude-frame .stat .desc { font-size: 10.5px; color: #6c6a64; margin-top: 2px; }
+  .claude-frame .section { font-size: 11px; color: #cc785c; font-weight: 700; text-transform: uppercase; margin: 8px 0 6px; letter-spacing: 0.6px; font-family: -apple-system, sans-serif; }
+  .claude-frame .row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 6px 0; border-bottom: 1px solid #e6dfd8;
+  }
+  .claude-frame .ticker { font-family: ui-monospace, monospace; color: #cc785c; font-weight: 700; }
+  .claude-frame .pill { font-size: 9px; padding: 2px 8px; border-radius: 4px; background: rgba(93,184,114,0.15); color: #2d7a3a; font-weight: 700; font-family: -apple-system, sans-serif; }
+  .claude-frame .pill.bear { background: rgba(198,69,69,0.12); color: #c64545; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Dashboard Design Comparison</h1>
+  <p>Same content rendered in five design systems from <code>awesome-design-md</code>. Pick one and I'll regenerate <code>dashboard.html</code> with the full token set.</p>
+</div>
+
+<div class="grid">
+
+  <!-- =========== LINEAR =========== -->
+  <div class="preview">
+    <div class="preview-label">
+      <span>Linear</span>
+      <span class="tag">DARK · LAVENDER</span>
+    </div>
+    <div class="preview-frame">
+      <div class="linear-frame">
+        <div class="hdr">
+          Investing Wiki
+          <div class="sub">As of 2026-05-12 · 69 files</div>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="lbl">S&amp;P 500</div><div class="val accent">7,400+</div><div class="desc">First close above 7,400 May 10</div></div>
+          <div class="stat"><div class="lbl">PHLX Semi YTD</div><div class="val">+66%</div><div class="desc">Leading sub-sector</div></div>
+          <div class="stat"><div class="lbl">Fed Funds</div><div class="val">3.50–3.75%</div><div class="desc">8-4 dissent, April hold</div></div>
+          <div class="stat"><div class="lbl">Capex 2026</div><div class="val accent">~$1T</div><div class="desc">Full supply chain</div></div>
+        </div>
+        <div class="section">Long-term Core</div>
+        <div class="row"><span class="ticker">NVDA</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">TSM</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">ASML</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">MU</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">AAPL</span><span class="pill bear">bear</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========== STRIPE =========== -->
+  <div class="preview">
+    <div class="preview-label">
+      <span>Stripe</span>
+      <span class="tag">LIGHT · INDIGO</span>
+    </div>
+    <div class="preview-frame">
+      <div class="stripe-frame">
+        <div class="hdr">
+          Investing Wiki
+          <span class="sub">As of 2026-05-12 · 69 files</span>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="lbl">S&amp;P 500</div><div class="val accent">7,400+</div><div class="desc">First close above 7,400 May 10</div></div>
+          <div class="stat"><div class="lbl">PHLX Semi YTD</div><div class="val">+66%</div><div class="desc">Leading sub-sector</div></div>
+          <div class="stat"><div class="lbl">Fed Funds</div><div class="val">3.50–3.75%</div><div class="desc">8-4 dissent, April hold</div></div>
+          <div class="stat"><div class="lbl">Capex 2026</div><div class="val accent">~$1T</div><div class="desc">Full supply chain</div></div>
+        </div>
+        <div class="section">Long-term Core</div>
+        <div class="row"><span class="ticker">NVDA</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">TSM</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">ASML</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">MU</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">AAPL</span><span class="pill bear">bear</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========== VERCEL =========== -->
+  <div class="preview">
+    <div class="preview-label">
+      <span>Vercel</span>
+      <span class="tag">LIGHT · MINIMAL</span>
+    </div>
+    <div class="preview-frame">
+      <div class="vercel-frame">
+        <div class="hdr">
+          Investing Wiki
+          <span class="sub">As of 2026-05-12 · 69 files</span>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="lbl">S&amp;P 500</div><div class="val accent">7,400+</div><div class="desc">First close above 7,400 May 10</div></div>
+          <div class="stat"><div class="lbl">PHLX Semi YTD</div><div class="val">+66%</div><div class="desc">Leading sub-sector</div></div>
+          <div class="stat"><div class="lbl">Fed Funds</div><div class="val">3.50–3.75%</div><div class="desc">8-4 dissent, April hold</div></div>
+          <div class="stat"><div class="lbl">Capex 2026</div><div class="val accent">~$1T</div><div class="desc">Full supply chain</div></div>
+        </div>
+        <div class="section">Long-term Core</div>
+        <div class="row"><span class="ticker">NVDA</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">TSM</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">ASML</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">MU</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">AAPL</span><span class="pill bear">bear</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========== SUPERHUMAN =========== -->
+  <div class="preview">
+    <div class="preview-label">
+      <span>Superhuman</span>
+      <span class="tag">LIGHT · DENSE</span>
+    </div>
+    <div class="preview-frame">
+      <div class="superhuman-frame">
+        <div class="hdr">
+          Investing Wiki
+          <span class="sub">As of 2026-05-12 · 69 files</span>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="lbl">S&amp;P 500</div><div class="val">7,400+</div><div class="desc">First close above 7,400 May 10</div></div>
+          <div class="stat"><div class="lbl">PHLX Semi YTD</div><div class="val">+66%</div><div class="desc">Leading sub-sector</div></div>
+          <div class="stat"><div class="lbl">Fed Funds</div><div class="val">3.50–3.75%</div><div class="desc">8-4 dissent, April hold</div></div>
+          <div class="stat"><div class="lbl">Capex 2026</div><div class="val">~$1T</div><div class="desc">Full supply chain</div></div>
+        </div>
+        <div class="section">Long-term Core</div>
+        <div class="row"><span class="ticker">NVDA</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">TSM</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">ASML</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">MU</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">AAPL</span><span class="pill bear">bear</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========== CLAUDE =========== -->
+  <div class="preview">
+    <div class="preview-label">
+      <span>Claude</span>
+      <span class="tag">WARM · CREAM</span>
+    </div>
+    <div class="preview-frame">
+      <div class="claude-frame">
+        <div class="hdr">
+          Investing Wiki
+          <span class="sub">As of 2026-05-12 · 69 files</span>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="lbl">S&amp;P 500</div><div class="val accent">7,400+</div><div class="desc">First close above 7,400 May 10</div></div>
+          <div class="stat"><div class="lbl">PHLX Semi YTD</div><div class="val">+66%</div><div class="desc">Leading sub-sector</div></div>
+          <div class="stat"><div class="lbl">Fed Funds</div><div class="val">3.50–3.75%</div><div class="desc">8-4 dissent, April hold</div></div>
+          <div class="stat"><div class="lbl">Capex 2026</div><div class="val accent">~$1T</div><div class="desc">Full supply chain</div></div>
+        </div>
+        <div class="section">Long-term Core</div>
+        <div class="row"><span class="ticker">NVDA</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">TSM</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">ASML</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">MU</span><span class="pill">bull</span></div>
+        <div class="row"><span class="ticker">AAPL</span><span class="pill bear">bear</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
