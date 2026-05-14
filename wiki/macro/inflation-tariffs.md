@@ -68,7 +68,7 @@ Full ticker mapping in [[2026-05-13-ppi-cpi-shock-positioning]]. Summary:
 - Are tariffs a structural shift or a negotiating tactic that reverses?
 - How much of corporate margin resilience to date is **front-loaded inventory** vs. real pass-through ability?
 - **Will the proposed "Board of Trade" mechanism (USTR Greer, May 2026) replace ad hoc tariffs?** If so, this could institutionalize the current tariff regime — turning what looked like negotiating posture into structural policy. See [[us-china-relations]] for the bilateral framing and [[2026-05-12-trump-xi-summit-investment-implications]] for near-term catalyst.
-- **Does the June 10 CPI print confirm the regime shift?** (NEW 2026-05-13) Three scenarios: cooling (~25%), stable hot (~45%), accelerating (~30%). Two consecutive hot prints would explicitly re-introduce hike-talk for a non-trivial Fed minority. See [[2026-05-13-ppi-cpi-shock-positioning]] for the positioning playbook by scenario.
+- **Does the June 10 CPI print confirm the regime shift?** (NEW 2026-05-13; **REFINED 2026-05-14 PM**) Three scenarios: cooling (~30-35%, up from 25%), stable hot (~45%), accelerating (~25-30%, down from 30%). Probability nudges driven by **OPEC+ quota-hike plan (more oil supply moderates energy inflation) + IMF "medium-term inflation expectations remain anchored" (Fed has cover to hold)** — see [[fed-policy]] "Counter-bear relief valve" section. Two consecutive hot prints would still re-introduce hike-talk for a non-trivial Fed minority. See [[2026-05-13-ppi-cpi-shock-positioning]] for the positioning playbook by scenario.
 
 ## Related
 [[fed-policy]] · [[valuation-environment]] · [[us-china-relations]] · [[overview]]
