@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio Synthesis — 80/20 Framework — 2026-05-14</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #000;
+  --surface: #0a0a0a;
+  --surface-2: #111;
+  --surface-3: #161616;
+  --border: #1f1f1f;
+  --border-strong: #2a2a2a;
+  --border-active: #404040;
+  --text: #fafafa;
+  --text-muted: #8c8c8c;
+  --text-faint: #555;
+  --accent: #0070f3;
+  --accent-light: #3291ff;
+  --accent-dark: #0050b3;
+  --bull: #0070f3;
+  --bear: #ff4d4d;
+  --neutral: #f5a623;
+  --success: #00d97e;
+  --warn: #ffb020;
+  --error: #ff4d4d;
+  --layer-chips: rgba(0, 112, 243, 0.15);
+  --layer-foundry: rgba(245, 166, 35, 0.15);
+  --layer-memory: rgba(0, 217, 126, 0.15);
+  --layer-equip: rgba(168, 85, 247, 0.15);
+  --layer-power: rgba(255, 159, 67, 0.15);
+  --layer-const: rgba(0, 217, 126, 0.15);
+  --layer-network: rgba(56, 189, 248, 0.15);
+  --layer-defense: rgba(220, 38, 127, 0.15);
+  --layer-rare: rgba(245, 158, 11, 0.15);
+  --layer-neocloud: rgba(139, 92, 246, 0.15);
+  --layer-aero: rgba(56, 189, 248, 0.15);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+.container { max-width: 1280px; margin: 0 auto; padding: 32px 24px 96px; }
+
+/* Header */
+header.hero {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 32px;
+  margin-bottom: 48px;
+}
+.crumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 16px;
+}
+.crumb .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.crumb .sep { color: var(--text-faint); }
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+  line-height: 1.15;
+}
+.subhead {
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 720px;
+  line-height: 1.5;
+}
+.meta-row {
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.meta-row .item { display: flex; gap: 6px; align-items: center; }
+.meta-row .label { color: var(--text-faint); }
+.meta-row .value { color: var(--text); }
+.meta-row .pulse {
+  width: 6px; height: 6px; border-radius: 50%; background: var(--success);
+  box-shadow: 0 0 8px var(--success);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
+
+/* Disclaimer */
+.disclaimer {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--warn);
+  padding: 16px 20px;
+  border-radius: 4px;
+  margin-bottom: 48px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+.disclaimer strong { color: var(--text); }
+
+/* Section */
+section { margin-bottom: 64px; }
+.section-header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.section-header .num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--text-faint);
+  letter-spacing: 0.5px;
+  margin-right: 12px;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.section-header .right {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Stat grid */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+.stat {
+  background: var(--surface);
+  padding: 20px;
+}
+.stat .label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.stat .value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+.stat .value.bull { color: var(--bull); }
+.stat .value.bear { color: var(--bear); }
+.stat .value.neutral { color: var(--neutral); }
+.stat .sub { font-size: 11px; color: var(--text-muted); }
+
+/* Chart wrapper */
+.chart-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+@media (max-width: 800px) { .chart-row { grid-template-columns: 1fr; } }
+.chart-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 24px;
+}
+.chart-card h3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.chart-card svg { display: block; margin: 0 auto; }
+
+/* Table */
+.table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th {
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-faint);
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border-strong);
+}
+th.num, td.num { text-align: right; font-family: 'JetBrains Mono', monospace; }
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: var(--surface-2); }
+tr.layer-header td {
+  background: var(--surface-3);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  padding: 8px 16px;
+}
+.ticker {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 13px;
+}
+.layer-pill {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.layer-pill.chips { background: var(--layer-chips); color: #5fa8ff; }
+.layer-pill.foundry { background: var(--layer-foundry); color: #ffb84d; }
+.layer-pill.memory { background: var(--layer-memory); color: #00d97e; }
+.layer-pill.equip { background: var(--layer-equip); color: #c084fc; }
+.layer-pill.power { background: var(--layer-power); color: #ff9f43; }
+.layer-pill.const { background: var(--layer-const); color: #00d97e; }
+.layer-pill.network { background: var(--layer-network); color: #38bdf8; }
+.layer-pill.defense { background: var(--layer-defense); color: #ec4899; }
+.layer-pill.rare { background: var(--layer-rare); color: #f59e0b; }
+.layer-pill.neocloud { background: var(--layer-neocloud); color: #a78bfa; }
+.layer-pill.aero { background: var(--layer-aero); color: #38bdf8; }
+.layer-pill.yolo { background: rgba(239,68,68,0.15); color: #f87171; }
+.conv {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+.conv.high { background: rgba(0,112,243,0.15); color: var(--bull); }
+.conv.med { background: rgba(245,166,35,0.15); color: var(--neutral); }
+.conv.low { background: rgba(255,77,77,0.15); color: var(--bear); }
+.weight {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--text);
+}
+.return-bull {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--bull);
+  font-weight: 500;
+}
+.return-bear {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--bear);
+  font-weight: 500;
+}
+.thesis {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  max-width: 380px;
+}
+
+/* Scenario card */
+.scenario-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+@media (max-width: 800px) { .scenario-grid { grid-template-columns: 1fr; } }
+.scenario {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 24px;
+  position: relative;
+}
+.scenario.bull { border-left: 3px solid var(--bull); }
+.scenario.base { border-left: 3px solid var(--neutral); }
+.scenario.bear { border-left: 3px solid var(--bear); }
+.scenario .label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-faint);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.scenario .label.bull { color: var(--bull); }
+.scenario .label.base { color: var(--neutral); }
+.scenario .label.bear { color: var(--bear); }
+.scenario .ret {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+.scenario .ret.bull { color: var(--bull); }
+.scenario .ret.base { color: var(--text); }
+.scenario .ret.bear { color: var(--bear); }
+.scenario .horizon {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.scenario .body { font-size: 13px; line-height: 1.55; color: var(--text-muted); }
+.scenario .body strong { color: var(--text); }
+
+/* Options cards */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+.opt-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 18px;
+}
+.opt-card .head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 12px;
+}
+.opt-card .tk {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  font-size: 18px;
+}
+.opt-card .sig {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.opt-card .sig.bullish { background: rgba(0,112,243,0.15); color: var(--bull); }
+.opt-card .sig.bearish { background: rgba(255,77,77,0.15); color: var(--bear); }
+.opt-card .sig.neutral { background: rgba(245,166,35,0.15); color: var(--neutral); }
+.opt-card .data {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+.opt-card .data .v { color: var(--text); font-weight: 500; }
+.opt-card .read {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.opt-card .read strong { color: var(--text); }
+
+/* Timeline */
+.timeline {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 0;
+}
+.tl-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 200px;
+  gap: 16px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+}
+.tl-row:last-child { border-bottom: none; }
+.tl-row .date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+}
+.tl-row .event { font-size: 14px; color: var(--text); }
+.tl-row .impact {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: right;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-muted);
+}
+.tl-row.critical { background: rgba(0,112,243,0.04); }
+.tl-row.critical .date { color: var(--accent-light); }
+.tl-row.critical .impact { color: var(--accent-light); }
+
+/* Caveats */
+.caveat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+.caveat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--warn);
+  padding: 18px;
+  border-radius: 4px;
+}
+.caveat .num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--warn);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.caveat .body { font-size: 13px; line-height: 1.55; color: var(--text-muted); }
+.caveat .body strong { color: var(--text); }
+
+/* Footer */
+footer {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-faint);
+  line-height: 1.7;
+}
+footer .links { margin-top: 12px; }
+footer .links a { color: var(--text-muted); margin-right: 16px; text-decoration: none; }
+footer .links a:hover { color: var(--accent); }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 11px; margin-top: 12px; color: var(--text-muted); }
+.legend .item { display: flex; align-items: center; gap: 6px; }
+.legend .swatch { width: 10px; height: 10px; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- HERO -->
+<header class="hero">
+  <div class="crumb">
+    <span class="dot"></span>
+    <span>investing-wiki</span>
+    <span class="sep">/</span>
+    <span>portfolio-synthesis</span>
+    <span class="sep">/</span>
+    <span>v1.0</span>
+  </div>
+  <h1>80/20 Portfolio Construction Framework</h1>
+  <p class="subhead">
+    A synthesis allocating capital across the wiki's existing conviction tiers — 80% structural compounders, 20% high-asymmetry plays. Built on bottleneck-roadmap, AI capex cycle, and the latest options-positioning data.
+  </p>
+  <div class="meta-row">
+    <div class="item"><span class="pulse"></span><span class="value">Generated 2026-05-14</span></div>
+    <div class="item"><span class="label">wiki state</span><span class="value">92 files</span></div>
+    <div class="item"><span class="label">structural names</span><span class="value">36</span></div>
+    <div class="item"><span class="label">yolo plays</span><span class="value">8</span></div>
+    <div class="item"><span class="label">conviction tier mapping</span><span class="value">tooltips.js</span></div>
+  </div>
+</header>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  <strong>Methodology, not recommendation.</strong> This artifact maps the wiki's <em>research stances</em> to allocation weights. Stances aren't recommendations. Bull-case projections use conviction-tier multipliers (high = +50% by 2027 / +90% by 2028; medium = +30% / +50%) applied to current market caps — they are <strong>scenarios, not analyst price targets</strong>. The wiki's late-cycle warning indicators are <strong>5 of 6 firing</strong> as of 2026-05-14 — this allocation is what to deploy <em>when conditions are right</em>, not necessarily into ATH equities + 30y at 5%+. See "Critical caveats" below.
+</div>
+
+<!-- TOP STATS -->
+<div class="stat-grid">
+  <div class="stat">
+    <div class="label">Structural Allocation</div>
+    <div class="value bull">80%</div>
+    <div class="sub">Multi-year bull/high + bull/medium conviction; 9 stack layers</div>
+  </div>
+  <div class="stat">
+    <div class="label">YOLO Allocation</div>
+    <div class="value neutral">19%</div>
+    <div class="sub">High-asymmetry plays; 1-4% per position</div>
+  </div>
+  <div class="stat">
+    <div class="label">Dry Powder</div>
+    <div class="value">1%</div>
+    <div class="sub">Cash for opportunistic adds (e.g., NVDA -5% post-earnings)</div>
+  </div>
+  <div class="stat">
+    <div class="label">Bear Case 2027</div>
+    <div class="value bear">−22%</div>
+    <div class="sub">If 5/6 late-cycle indicators converge to drawdown</div>
+  </div>
+  <div class="stat">
+    <div class="label">Base Case 2027</div>
+    <div class="value">+22%</div>
+    <div class="sub">If most bull/medium theses play out partially</div>
+  </div>
+  <div class="stat">
+    <div class="label">Bull Case 2027</div>
+    <div class="value bull">+60%</div>
+    <div class="sub">If bull/high multipliers + YOLO multi-baggers</div>
+  </div>
+</div>
+
+<!-- ALLOCATION VISUALIZATION -->
+<section>
+  <div class="section-header">
+    <div><span class="num">01</span><h2 style="display:inline-block">Allocation by stack layer</h2></div>
+    <div class="right">9 buckets · 80% structural · 20% YOLO</div>
+  </div>
+
+  <div class="chart-row">
+    <div class="chart-card">
+      <h3>Capital allocation (donut)</h3>
+      <svg viewBox="0 0 240 240" width="280" height="280">
+        <!-- Donut chart segments; each segment uses stroke-dasharray on circle -->
+        <g transform="translate(120, 120)">
+          <circle r="80" fill="none" stroke="#1f1f1f" stroke-width="40"/>
+          <!-- Segments. Total 360 degrees. -->
+          <!-- Mega-cap AI 25% = 90deg -->
+          <circle r="80" fill="none" stroke="#0070f3" stroke-width="40"
+            stroke-dasharray="125.66 502.65" stroke-dashoffset="0"
+            transform="rotate(-90)"/>
+          <!-- Memory + WFE 12% = 43.2deg, offset 125.66 -->
+          <circle r="80" fill="none" stroke="#00d97e" stroke-width="40"
+            stroke-dasharray="60.32 502.65" stroke-dashoffset="-125.66"
+            transform="rotate(-90)"/>
+          <!-- ASML 3% -->
+          <circle r="80" fill="none" stroke="#c084fc" stroke-width="40"
+            stroke-dasharray="15.08 502.65" stroke-dashoffset="-185.98"
+            transform="rotate(-90)"/>
+          <!-- Power 8% -->
+          <circle r="80" fill="none" stroke="#ff9f43" stroke-width="40"
+            stroke-dasharray="40.21 502.65" stroke-dashoffset="-201.06"
+            transform="rotate(-90)"/>
+          <!-- Construction 8% -->
+          <circle r="80" fill="none" stroke="#38bdf8" stroke-width="40"
+            stroke-dasharray="40.21 502.65" stroke-dashoffset="-241.27"
+            transform="rotate(-90)"/>
+          <!-- Optical/Consumables 6% -->
+          <circle r="80" fill="none" stroke="#5fa8ff" stroke-width="40"
+            stroke-dasharray="30.16 502.65" stroke-dashoffset="-281.48"
+            transform="rotate(-90)"/>
+          <!-- Cross-cycle defense 10% -->
+          <circle r="80" fill="none" stroke="#ec4899" stroke-width="40"
+            stroke-dasharray="50.27 502.65" stroke-dashoffset="-311.64"
+            transform="rotate(-90)"/>
+          <!-- Neoclouds 5% -->
+          <circle r="80" fill="none" stroke="#a78bfa" stroke-width="40"
+            stroke-dasharray="25.13 502.65" stroke-dashoffset="-361.91"
+            transform="rotate(-90)"/>
+          <!-- Hyperscaler optionality 3% -->
+          <circle r="80" fill="none" stroke="#0050b3" stroke-width="40"
+            stroke-dasharray="15.08 502.65" stroke-dashoffset="-387.04"
+            transform="rotate(-90)"/>
+          <!-- YOLO 20% -->
+          <circle r="80" fill="none" stroke="#ff4d4d" stroke-width="40"
+            stroke-dasharray="100.53 502.65" stroke-dashoffset="-402.12"
+            transform="rotate(-90)"/>
+          <text text-anchor="middle" dominant-baseline="middle" font-family="JetBrains Mono" font-size="14" fill="#8c8c8c" y="-8">TOTAL</text>
+          <text text-anchor="middle" dominant-baseline="middle" font-family="JetBrains Mono" font-size="22" font-weight="600" fill="#fafafa" y="12">100%</text>
+        </g>
+      </svg>
+      <div class="legend" style="margin-top: 20px;">
+        <div class="item"><span class="swatch" style="background:#0070f3"></span>Mega-cap AI 25%</div>
+        <div class="item"><span class="swatch" style="background:#00d97e"></span>Memory+WFE 12%</div>
+        <div class="item"><span class="swatch" style="background:#c084fc"></span>ASML 3%</div>
+        <div class="item"><span class="swatch" style="background:#ff9f43"></span>Power 8%</div>
+        <div class="item"><span class="swatch" style="background:#38bdf8"></span>Construction 8%</div>
+        <div class="item"><span class="swatch" style="background:#5fa8ff"></span>Optical/Consum 6%</div>
+        <div class="item"><span class="swatch" style="background:#ec4899"></span>Cross-cycle 10%</div>
+        <div class="item"><span class="swatch" style="background:#a78bfa"></span>Neocloud 5%</div>
+        <div class="item"><span class="swatch" style="background:#0050b3"></span>Hyper opt 3%</div>
+        <div class="item"><span class="swatch" style="background:#ff4d4d"></span>YOLO 20%</div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h3>2027 scenarios — portfolio level</h3>
+      <svg viewBox="0 0 360 240" width="100%" height="280">
+        <!-- Axis -->
+        <line x1="40" y1="20" x2="40" y2="200" stroke="#2a2a2a" stroke-width="1"/>
+        <line x1="40" y1="200" x2="340" y2="200" stroke="#2a2a2a" stroke-width="1"/>
+        <!-- Zero line at y=120 -->
+        <line x1="40" y1="120" x2="340" y2="120" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="2,4"/>
+        <text x="36" y="124" text-anchor="end" font-family="JetBrains Mono" font-size="9" fill="#555">0%</text>
+        <!-- Y-axis labels -->
+        <text x="36" y="44" text-anchor="end" font-family="JetBrains Mono" font-size="9" fill="#555">+60%</text>
+        <text x="36" y="82" text-anchor="end" font-family="JetBrains Mono" font-size="9" fill="#555">+30%</text>
+        <text x="36" y="160" text-anchor="end" font-family="JetBrains Mono" font-size="9" fill="#555">-30%</text>
+        <text x="36" y="195" text-anchor="end" font-family="JetBrains Mono" font-size="9" fill="#555">-60%</text>
+
+        <!-- Bear bar: -22% -> from 120 to 148 -->
+        <rect x="80" y="120" width="60" height="28" fill="#ff4d4d" opacity="0.85"/>
+        <text x="110" y="164" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#ff4d4d" font-weight="600">−22%</text>
+        <text x="110" y="216" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#8c8c8c">BEAR</text>
+
+        <!-- Base bar: +22% -> from 120 to 92 (22%/60% * 60 = 22 up) -->
+        <rect x="170" y="92" width="60" height="28" fill="#f5a623" opacity="0.85"/>
+        <text x="200" y="84" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f5a623" font-weight="600">+22%</text>
+        <text x="200" y="216" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#8c8c8c">BASE</text>
+
+        <!-- Bull bar: +60% -> from 120 to 44 (60% of 60% mid range = full height) -->
+        <rect x="260" y="44" width="60" height="76" fill="#0070f3" opacity="0.85"/>
+        <text x="290" y="36" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#0070f3" font-weight="600">+60%</text>
+        <text x="290" y="216" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#8c8c8c">BULL</text>
+
+        <text x="180" y="232" text-anchor="middle" font-family="Geist" font-size="10" fill="#8c8c8c">Probability-weighted: ~+22% expected (base)</text>
+      </svg>
+      <div style="margin-top: 12px; font-size: 12px; color: var(--text-muted); line-height: 1.6;">
+        <strong style="color:var(--text)">Bear:</strong> 80% structural −15% + 20% YOLO −50% (multiple bombs).<br>
+        <strong style="color:var(--text)">Base:</strong> 80% +20% (partial bull theses) + 20% +30%.<br>
+        <strong style="color:var(--text)">Bull:</strong> 80% +45% (most bull/high plays out) + 20% +120% (multi-baggers).
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE 80% BUCKET -->
+<section>
+  <div class="section-header">
+    <div><span class="num">02</span><h2 style="display:inline-block">The 80% bucket — structural compounders</h2></div>
+    <div class="right">9 stack layers · max 5% any single name</div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Layer</th>
+          <th class="num">Weight</th>
+          <th>Conv</th>
+          <th class="num">Cap (now)</th>
+          <th class="num">Bull '27</th>
+          <th class="num">Bull '28</th>
+          <th>Thesis (one-line)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="layer-header"><td colspan="8">Mega-cap AI infrastructure — 25%</td></tr>
+        <tr>
+          <td><span class="ticker">NVDA</span></td>
+          <td><span class="layer-pill chips">Chips/GPU</span></td>
+          <td class="num"><span class="weight">7%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$5.37T</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">AI chip leader. $1T confirmed demand through 2027; $90B LT supply contracts. May 20 Q1 FY27 = highest-leverage catalyst.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">TSM</span></td>
+          <td><span class="layer-pill foundry">Foundry</span></td>
+          <td class="num"><span class="weight">5%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$2.10T</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Sole leading-edge foundry. A16 first customer = AI, not Apple. 2026 capex $52-56B. Trump-Xi de-escalation = tail-risk reduction.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">GOOGL</span></td>
+          <td><span class="layer-pill chips">Hyperscaler</span></td>
+          <td class="num"><span class="weight">5%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$4.80T</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Cheapest Mag 7 fwd P/E ~29.7. Cloud backlog doubled $460B Q1. Anthropic 5GW TPU deal validates TPU vs NVDA.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">MSFT</span></td>
+          <td><span class="layer-pill chips">Hyperscaler</span></td>
+          <td class="num"><span class="weight">4%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$3.10T</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Azure + Copilot. CFO Hood attributed $25B of $190B 2026 capex to memory cost inflation — direct validation of supercycle.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">AVGO</span></td>
+          <td><span class="layer-pill chips">Custom XPU</span></td>
+          <td class="num"><span class="weight">4%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$1.99T</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Custom XPU for 6 hyperscalers. Anthropic 5GW Broadcom-TPU validation. Project Titan slip = near-term noise; structural thesis intact.</td>
+        </tr>
+
+        <tr class="layer-header"><td colspan="8">Memory + WFE — 12% (the 2026 → 2027 bottleneck transition)</td></tr>
+        <tr>
+          <td><span class="ticker">MU</span></td>
+          <td><span class="layer-pill memory">Memory/HBM</span></td>
+          <td class="num"><span class="weight">4%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$847B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Preferred NVDA HBM. Cycle-peak P/E paradox = size carefully. Samsung HBM4 closing gap = watch item.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">AMAT</span></td>
+          <td><span class="layer-pill equip">Equipment</span></td>
+          <td class="num"><span class="weight">3%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$346B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">&gt;50% of HBM equipment value (15 of 19 stacking steps). 2027 fab buildout = sweet spot.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">KLAC</span></td>
+          <td><span class="layer-pill equip">Equipment</span></td>
+          <td class="num"><span class="weight">3%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$235B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Process control monopoly. Highest GM in WFE. Jefferies $1,500 PT.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">LRCX</span></td>
+          <td><span class="layer-pill equip">Equipment</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$370B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">HBM is wafer-intensive (3x DDR5/GB) — Lam content scales accordingly.</td>
+        </tr>
+
+        <tr class="layer-header"><td colspan="8">ASML (2028+ asymmetric monopoly) — 3%</td></tr>
+        <tr>
+          <td><span class="ticker">ASML</span></td>
+          <td><span class="layer-pill equip">EUV</span></td>
+          <td class="num"><span class="weight">3%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$614B</td>
+          <td class="num"><span class="return-bull">+45%</span></td>
+          <td class="num"><span class="return-bull">+80%</span></td>
+          <td class="thesis">EUV monopoly. THE binding constraint of all AI by 2028-2030. Pricing-power optionality = single highest-leverage variable.</td>
+        </tr>
+
+        <tr class="layer-header"><td colspan="8">Power + data center infrastructure — 8%</td></tr>
+        <tr>
+          <td><span class="ticker">VRT</span></td>
+          <td><span class="layer-pill power">Power+Cool</span></td>
+          <td class="num"><span class="weight">2.5%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$141B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Only large player covering power AND cooling. $9.5B backlog. $1B Feb 2026 cooling acquisition.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">ETN</span></td>
+          <td><span class="layer-pill power">Power/Grid</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$164B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Beam Rubin DSX with NVDA. Q1 datacenter orders +240% YoY. 800V DC architecture.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">GEV</span></td>
+          <td><span class="layer-pill power">Power Gen</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$290B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Combined-cycle gas turbines (lead times beyond 2030) + Prolec $5.3B buyout for transformer dominance.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">BE</span></td>
+          <td><span class="layer-pill power">Fuel Cells</span></td>
+          <td class="num"><span class="weight">1.5%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$82.1B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Oracle Project Jupiter 2.45 GW primary power; up to 2.8 GW across multiple Oracle deployments.</td>
+        </tr>
+
+        <tr class="layer-header"><td colspan="8">Construction labor (defensive) — 8%</td></tr>
+        <tr>
+          <td><span class="ticker">FIX</span></td>
+          <td><span class="layer-pill const">Mech/HVAC</span></td>
+          <td class="num"><span class="weight">3%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$71.0B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Pure mech/HVAC pure-play. $12.46B backlog (+81% YoY). 45% data center mix. Joining S&amp;P 500.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">EME</span></td>
+          <td><span class="layer-pill const">MEP</span></td>
+          <td class="num"><span class="weight">3%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$41.2B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Largest US MEP. $15.62B RPOs. FY26 EPS guide $28.25-$29.75. Most defensive name in wiki.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">PWR</span></td>
+          <td><span class="layer-pill const">Transmission</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$117B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">$48.5B record backlog. NiSource ~3 GW gen engagement. Transmission/substation builder for AI DCs.</td>
+        </tr>
+
+        <tr class="layer-header"><td colspan="8">Optical + fab consumables — 6%</td></tr>
+        <tr>
+          <td><span class="ticker">COHR</span></td>
+          <td><span class="layer-pill network">Optical</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$61.8B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">NVDA $2B direct investment (with LITE). Q3 DC +41% YoY to $1.36B. Orders booked through 2028.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">ENTG</span></td>
+          <td><span class="layer-pill equip">Fab consumables</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$17.4B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">FOUPs, ultra-pure materials, gas/liquid filtration. Content-per-wafer grows with AI complexity.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">APD</span></td>
+          <td><span class="layer-pill equip">Industrial Gas</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv med">MEDIUM</span></td>
+          <td class="num">$67.8B</td>
+          <td class="num"><span class="return-bull">+30%</span></td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="thesis">Industrial gases for fabs. Samsung Pyeongtaek = APD's largest semi investment in history. Multi-decade BOO contracts.</td>
+        </tr>
+
+        <tr class="layer-header"><td colspan="8">Cross-cycle: rare-earth + defense + aerospace — 10%</td></tr>
+        <tr>
+          <td><span class="ticker">MP</span></td>
+          <td><span class="layer-pill rare">Rare Earth</span></td>
+          <td class="num"><span class="weight">3%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$10.5B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Only fully integrated US NdFeB producer. Cross-cycle: robotics AND defense (F-35 = ~920 lbs magnets). Stillwater H1 2026.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">RKLB</span></td>
+          <td><span class="layer-pill aero">Aerospace</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">~$15B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Q1 $200M rev (+63.5% YoY), $2.2B backlog (~2x), Department of War Golden Dome Space Based Interceptor with Raytheon.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">NOC</span></td>
+          <td><span class="layer-pill defense">Defense</span></td>
+          <td class="num"><span class="weight">2.5%</span></td>
+          <td><span class="conv med">MEDIUM</span></td>
+          <td class="num">~$80B</td>
+          <td class="num"><span class="return-bull">+30%</span></td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="thesis">B-21 + Sentinel + MTI satellites $500M→$8.8B (17.6x). Record $95.7B backlog.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">LMT</span></td>
+          <td><span class="layer-pill defense">Defense</span></td>
+          <td class="num"><span class="weight">2.5%</span></td>
+          <td><span class="conv med">MEDIUM</span></td>
+          <td class="num">~$110B</td>
+          <td class="num"><span class="return-bull">+30%</span></td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="thesis">F-35 + Sentinel + Aegis + Golden Dome co-prime. ~3% div yield. Mature compounder.</td>
+        </tr>
+
+        <tr class="layer-header"><td colspan="8">Neoclouds (upgraded HIGH) — 5%</td></tr>
+        <tr>
+          <td><span class="ticker">NBIS</span></td>
+          <td><span class="layer-pill neocloud">Neocloud</span></td>
+          <td class="num"><span class="weight">2.5%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$45.0B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Q1 +684% YoY to $399M; profitability inflection $129.5M Adj EBITDA. MSFT $17.4B + Meta $27B = $44.4B contracted.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">CRWV</span></td>
+          <td><span class="layer-pill neocloud">Neocloud</span></td>
+          <td class="num"><span class="weight">2.5%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$42.7B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Q1 $2.078B (+112%); backlog $99.4B (largest AI infra in public mkts). Anthropic Claude contract NEW.</td>
+        </tr>
+
+        <tr class="layer-header"><td colspan="8">Hyperscaler optionality — 3%</td></tr>
+        <tr>
+          <td><span class="ticker">META</span></td>
+          <td><span class="layer-pill chips">Hyperscaler</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv med">MEDIUM</span></td>
+          <td class="num">$1.52T</td>
+          <td class="num"><span class="return-bull">+30%</span></td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="thesis">Ad biz funds AI. AVGO MTIA + AMD 6 GW Instinct. WhatsApp Incognito Chat = privacy-tech moat AI labs can't match.</td>
+        </tr>
+        <tr>
+          <td><span class="ticker">AMD</span></td>
+          <td><span class="layer-pill chips">GPU #2</span></td>
+          <td class="num"><span class="weight">1%</span></td>
+          <td><span class="conv high">HIGH</span></td>
+          <td class="num">$743B</td>
+          <td class="num"><span class="return-bull">+50%</span></td>
+          <td class="num"><span class="return-bull">+90%</span></td>
+          <td class="thesis">Credible #2 GPU. OpenAI 6 GW + Meta 6 GW + Oracle 50K MI450. Helios rack Q3 2026 on TSMC 2nm.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- THE 20% YOLO BUCKET -->
+<section>
+  <div class="section-header">
+    <div><span class="num">03</span><h2 style="display:inline-block">The 20% YOLO bucket — high-asymmetry plays</h2></div>
+    <div class="right">8 positions · max 4% any single · explicit catalysts</div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Type</th>
+          <th class="num">Weight</th>
+          <th>Risk</th>
+          <th>Bull case</th>
+          <th>Catalyst / Timing</th>
+          <th class="num">Upside</th>
+          <th class="num">Downside</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="ticker">NVDA $240C May 22</span></td>
+          <td><span class="layer-pill yolo">Calls</span></td>
+          <td class="num"><span class="weight">3.5%</span></td>
+          <td><span class="conv low">HIGH</span></td>
+          <td>NVDA beats $1.77 EPS + raises Vera Rubin demand commentary; China H200 upside via Trump-Xi delegation.</td>
+          <td><strong>May 20 AC</strong> (Q1 FY27 earnings; same day as $16B 20yr Treasury auction)</td>
+          <td class="num"><span class="return-bull">+100-150%</span></td>
+          <td class="num"><span class="return-bear">−80-100%</span></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">ASTS equity</span></td>
+          <td><span class="layer-pill yolo">Squeeze</span></td>
+          <td class="num"><span class="weight">3%</span></td>
+          <td><span class="conv low">HIGH</span></td>
+          <td>21.5% short interest = squeeze setup. Tech validated (98.9 Mbps direct-to-phone). Multi-year direct-to-cell platform.</td>
+          <td><strong>Mid-June Falcon 9 launch</strong> (BlueBird 8/9/10); AT&amp;T/Verizon binding contract.</td>
+          <td class="num"><span class="return-bull">+80-120%</span></td>
+          <td class="num"><span class="return-bear">−40-60%</span></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">CRWV adds at pullback</span></td>
+          <td><span class="layer-pill yolo">Equity</span></td>
+          <td class="num"><span class="weight">3%</span></td>
+          <td><span class="conv med">MEDIUM</span></td>
+          <td>$99.4B backlog + Anthropic Claude. Jane Street $6B + $1B equity at $109 = floor signal. BofA $140 PT.</td>
+          <td>Recent pullback ~$107 = entry zone vs $138 high. Q2 print sustains.</td>
+          <td class="num"><span class="return-bull">+50-90%</span></td>
+          <td class="num"><span class="return-bear">−30-40%</span></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">KTOS</span></td>
+          <td><span class="layer-pill yolo">Drones</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv med">MEDIUM</span></td>
+          <td>XQ-58 Valkyrie autonomous combat drone (CCA program). Mako hypersonic. ~$5B cap = high torque per win.</td>
+          <td>CCA program contract structure disclosure.</td>
+          <td class="num"><span class="return-bull">+50-80%</span></td>
+          <td class="num"><span class="return-bear">−30%</span></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">CBRS</span></td>
+          <td><span class="layer-pill yolo">Wafer AI</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv low">HIGH</span></td>
+          <td>Wafer-scale AI architecture. OpenAI $10B/750MW commitment. 86% UAE concentration = real bear risk.</td>
+          <td>Customer diversification announcement; lock-up Nov 2026.</td>
+          <td class="num"><span class="return-bull">+50-100%</span></td>
+          <td class="num"><span class="return-bear">−50-70%</span></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">VPG</span></td>
+          <td><span class="layer-pill yolo">Humanoid</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv low">HIGH</span></td>
+          <td>Force-torque sensing for humanoids. CEO pivoting to "Physical AI." Named humanoid OEM design win = re-rate.</td>
+          <td>Q2 print sustainability + design win disclosure.</td>
+          <td class="num"><span class="return-bull">+60-100%</span></td>
+          <td class="num"><span class="return-bear">−40-60%</span></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">USAR or UUUU</span></td>
+          <td><span class="layer-pill yolo">Rare Earth</span></td>
+          <td class="num"><span class="weight">2%</span></td>
+          <td><span class="conv low">HIGH</span></td>
+          <td>Pre-revenue rare-earth speculation. Cross-cycle exposure (robotics + defense). USAR Round Top TX; UUUU White Mesa.</td>
+          <td>Any rare-earth export-control retaliation announcement.</td>
+          <td class="num"><span class="return-bull">+80-150%</span></td>
+          <td class="num"><span class="return-bear">−50-70%</span></td>
+        </tr>
+        <tr>
+          <td><span class="ticker">ALNT</span></td>
+          <td><span class="layer-pill yolo">Motion Ctrl</span></td>
+          <td class="num"><span class="weight">1.5%</span></td>
+          <td><span class="conv low">HIGH</span></td>
+          <td>Only motion-control name on humanoid stack maps small enough for humanoid rev to move P&amp;L.</td>
+          <td>First named humanoid OEM design win.</td>
+          <td class="num"><span class="return-bull">+80-150%</span></td>
+          <td class="num"><span class="return-bear">−40-60%</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- SCENARIO ANALYSIS DETAIL -->
+<section>
+  <div class="section-header">
+    <div><span class="num">04</span><h2 style="display:inline-block">Scenario analysis — what each case requires</h2></div>
+    <div class="right">2-year horizon (target end-2027)</div>
+  </div>
+
+  <div class="scenario-grid">
+    <div class="scenario bear">
+      <div class="label bear">Bear case</div>
+      <div class="ret bear">−22%</div>
+      <div class="horizon">By end-2027</div>
+      <div class="body">
+        <strong>Requires:</strong> 5/6 late-cycle indicators converge to drawdown event. June 10 CPI confirms regime; Warsh hikes; 30y above 5.5%; Mag 7 multiple compression. Memory cycle peaks ahead of schedule. POET-class small-caps crash 70-80%.<br><br>
+        <strong>What survives:</strong> Construction labor (FIX/EME/PWR) holds best (~−5%). Memory + cyclicals get hit hardest (~−45%).<br><br>
+        <strong>YOLO bucket:</strong> NVDA calls -80-100%; ASTS/CBRS lose 50-60%; rare-earth speculation -50-70%. Combined YOLO ~−50%.
+      </div>
+    </div>
+
+    <div class="scenario base">
+      <div class="label base">Base case</div>
+      <div class="ret base">+22%</div>
+      <div class="horizon">By end-2027</div>
+      <div class="body">
+        <strong>Requires:</strong> Bull theses play out partially; Anthropic/CRWV/NBIS sustain Q2 momentum; NVDA Q1 FY27 beats; AI capex curve persists at +50% per year; June 10 CPI stable hot (not accelerating).<br><br>
+        <strong>What carries:</strong> Mega-cap AI + memory bull/high names at +30%. Construction + cross-cycle defensive at +20%. AVGO Project Titan slips but stabilizes.<br><br>
+        <strong>YOLO bucket:</strong> NVDA calls win or lose by 50%; ASTS squeeze partial; rest of YOLO mixed at +30% avg. Combined YOLO ~+30%.
+      </div>
+    </div>
+
+    <div class="scenario bull">
+      <div class="label bull">Bull case</div>
+      <div class="ret bull">+60%</div>
+      <div class="horizon">By end-2027</div>
+      <div class="body">
+        <strong>Requires:</strong> ASML pricing power finally arrives (the highest-leverage variable); Anthropic ARR continues to $50B+; multiple Neocloud Q1 prints validate sustainability; Trump-Xi de-escalation persists; OPEC+ supply moderates oil; June 10 CPI cools.<br><br>
+        <strong>What wins biggest:</strong> NVDA + GOOGL + AVGO at +50%. Memory complex full +90%. ASML asymmetric +80%. CRWV/NBIS continue compounding +90%.<br><br>
+        <strong>YOLO bucket:</strong> NVDA calls +100-150%; ASTS squeeze +120%; rare-earth speculation +150%; ALNT/VPG humanoid OEM design wins +100%+. Combined YOLO ~+120%.
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card" style="margin-top: 24px;">
+    <h3>Probability-weighted expected return path</h3>
+    <svg viewBox="0 0 600 200" width="100%" height="220">
+      <!-- Axis -->
+      <line x1="60" y1="20" x2="60" y2="170" stroke="#2a2a2a"/>
+      <line x1="60" y1="170" x2="580" y2="170" stroke="#2a2a2a"/>
+      <line x1="60" y1="120" x2="580" y2="120" stroke="#2a2a2a" stroke-dasharray="2,3"/>
+      <text x="55" y="174" text-anchor="end" font-family="JetBrains Mono" font-size="9" fill="#555">0%</text>
+      <text x="55" y="124" text-anchor="end" font-family="JetBrains Mono" font-size="9" fill="#555">+10%</text>
+      <text x="55" y="74" text-anchor="end" font-family="JetBrains Mono" font-size="9" fill="#555">+30%</text>
+      <text x="55" y="24" text-anchor="end" font-family="JetBrains Mono" font-size="9" fill="#555">+60%</text>
+
+      <!-- Timeline today, Q3, Q4 2026, Q2 2027, Q4 2027 -->
+      <text x="80" y="190" font-family="JetBrains Mono" font-size="9" fill="#8c8c8c">Today</text>
+      <text x="200" y="190" font-family="JetBrains Mono" font-size="9" fill="#8c8c8c">Q3 '26</text>
+      <text x="320" y="190" font-family="JetBrains Mono" font-size="9" fill="#8c8c8c">Q1 '27</text>
+      <text x="440" y="190" font-family="JetBrains Mono" font-size="9" fill="#8c8c8c">Q3 '27</text>
+      <text x="560" y="190" font-family="JetBrains Mono" font-size="9" fill="#8c8c8c">Q1 '28</text>
+
+      <!-- Bull line (blue) -->
+      <polyline points="80,170 200,140 320,110 440,70 560,30"
+        fill="none" stroke="#0070f3" stroke-width="2.5"/>
+      <text x="566" y="34" font-family="JetBrains Mono" font-size="10" fill="#0070f3" font-weight="600">+60% bull</text>
+
+      <!-- Base line (orange) -->
+      <polyline points="80,170 200,160 320,140 440,118 560,92"
+        fill="none" stroke="#f5a623" stroke-width="2.5"/>
+      <text x="566" y="96" font-family="JetBrains Mono" font-size="10" fill="#f5a623" font-weight="600">+22% base</text>
+
+      <!-- Bear line (red) -->
+      <polyline points="80,170 200,178 320,182 440,180 560,184"
+        fill="none" stroke="#ff4d4d" stroke-width="2.5"/>
+      <text x="566" y="188" font-family="JetBrains Mono" font-size="10" fill="#ff4d4d" font-weight="600">−22% bear</text>
+
+      <!-- Markers for key events -->
+      <circle cx="100" cy="170" r="4" fill="#0070f3"/>
+      <text x="100" y="160" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#0070f3">May 20</text>
+      <text x="100" y="152" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#8c8c8c">NVDA</text>
+
+      <circle cx="135" cy="170" r="4" fill="#f5a623"/>
+      <text x="135" y="208" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#f5a623">Jun 10</text>
+      <text x="135" y="220" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#8c8c8c">CPI</text>
+    </svg>
+  </div>
+</section>
+
+<!-- OPTIONS DATA -->
+<section>
+  <div class="section-header">
+    <div><span class="num">05</span><h2 style="display:inline-block">Options & positioning data</h2></div>
+    <div class="right">As of 2026-05-14</div>
+  </div>
+
+  <div class="options-grid">
+
+    <div class="opt-card">
+      <div class="head">
+        <span class="tk">NVDA</span>
+        <span class="sig bullish">Slightly bullish</span>
+      </div>
+      <div class="data">
+        <div>Expected move (May 20): <span class="v">±12.9% (≈$28)</span></div>
+        <div>IV rank: <span class="v">61</span> (elevated)</div>
+        <div>30-day IV: <span class="v">44–47%</span></div>
+        <div>Put/Call: <span class="v">0.84</span></div>
+        <div>Realized vol: <span class="v">~30%</span></div>
+      </div>
+      <div class="read">
+        Market pricing a <strong>$28 swing</strong> on Q1 FY27. P/C 0.84 = slightly bullish. <strong>IV crush post-earnings</strong> will hurt long premium plays. Front-month options (May 23) priced at 44-50% IV vs second-month 30-35%.
+      </div>
+    </div>
+
+    <div class="opt-card">
+      <div class="head">
+        <span class="tk">NBIS</span>
+        <span class="sig bullish">Very bullish</span>
+      </div>
+      <div class="data">
+        <div>May 1 UOA: <span class="v">130,188 calls</span></div>
+        <div>May 13 contracts: <span class="v">198,000</span></div>
+        <div>Put/Call (May 13): <span class="v">0.52</span></div>
+        <div>Stock move May 13: <span class="v">+15.79% to $207.40</span></div>
+      </div>
+      <div class="read">
+        Smart money <strong>front-ran the Q1 print</strong> with the May 1 UOA. P/C 0.52 = positioning is crowded long. Squeeze upside reduced; structural thesis intact.
+      </div>
+    </div>
+
+    <div class="opt-card">
+      <div class="head">
+        <span class="tk">CRWV</span>
+        <span class="sig neutral">Mixed</span>
+      </div>
+      <div class="data">
+        <div>Range: <span class="v">$107.75 → $138</span></div>
+        <div>BofA PT: <span class="v">$140 (raised from $120)</span></div>
+        <div>Q1 GM: <span class="v">71.7%</span></div>
+        <div>Jane Street deal: <span class="v">$6B + $1B equity at $109</span></div>
+      </div>
+      <div class="read">
+        Pulled back to <strong>$107.75 from $138 high</strong>. Jane Street $109 equity is a floor signal. Bull/high conviction; entry is now better than at the high. Volatile; size accordingly.
+      </div>
+    </div>
+
+    <div class="opt-card">
+      <div class="head">
+        <span class="tk">ASTS</span>
+        <span class="sig bullish">Squeeze setup</span>
+      </div>
+      <div class="data">
+        <div>Short interest: <span class="v">21.51% of float</span></div>
+        <div>Shares short: <span class="v">48.63M</span></div>
+        <div>Days to cover: <span class="v">3.31</span></div>
+        <div>Next catalyst: <span class="v">Mid-June Falcon 9</span></div>
+      </div>
+      <div class="read">
+        <strong>21.5% short interest is squeeze territory.</strong> BlueBird 8/9/10 launch + any AT&amp;T/Verizon binding contract = trigger. Tech validated (98.9 Mbps). Speculative.
+      </div>
+    </div>
+
+    <div class="opt-card">
+      <div class="head">
+        <span class="tk">AVGO</span>
+        <span class="sig neutral">Institutional hedged</span>
+      </div>
+      <div class="data">
+        <div>Current: <span class="v">~$417.72</span></div>
+        <div>Q2 earnings: <span class="v">June 3</span></div>
+        <div>Positioning: <span class="v">Long OTM calls + deep ITM puts</span></div>
+        <div>Project Titan: <span class="v">2027 deployment (slip)</span></div>
+      </div>
+      <div class="read">
+        Smart money <strong>hedged for kinetic uncertainty</strong> — long OTM calls paired with deep ITM puts. Q2 earnings June 3 is the catalyst, not May 20. Project Titan financing snag is reflected.
+      </div>
+    </div>
+
+    <div class="opt-card">
+      <div class="head">
+        <span class="tk">RKLB</span>
+        <span class="sig bullish">Run cautionary</span>
+      </div>
+      <div class="data">
+        <div>Current: <span class="v">$128.20</span></div>
+        <div>Recent move: <span class="v">+34% in one day</span></div>
+        <div>Q1 rev: <span class="v">$200.3M (+63.5% YoY)</span></div>
+        <div>Catalyst: <span class="v">Neutron debut later 2026</span></div>
+      </div>
+      <div class="read">
+        Stock <strong>quintupled since early wiki framing</strong>. Bull/HIGH thesis was right; entry is now expensive. Neutron debut later 2026 + Golden Dome SBI program = multi-year story but near-term overbought.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TIMING / CALENDAR -->
+<section>
+  <div class="section-header">
+    <div><span class="num">06</span><h2 style="display:inline-block">Timing playbook — the next 60 days</h2></div>
+    <div class="right">Catalyst-driven entries, not timing the market</div>
+  </div>
+
+  <div class="timeline">
+    <div class="tl-row">
+      <div class="date">This week</div>
+      <div class="event"><strong>Don't chase records.</strong> S&amp;P at 7,444 + NASDAQ at 26,402 = ATH closes. 30y crossed 5%. Late-cycle 5 of 6 indicators firing. Wait for entries.</div>
+      <div class="impact">High caution</div>
+    </div>
+    <div class="tl-row">
+      <div class="date">May 18</div>
+      <div class="event">$89B 3-mo bills + $77B 6-mo bills auction. Heavy supply day 1 of week.</div>
+      <div class="impact">Macro background</div>
+    </div>
+    <div class="tl-row critical">
+      <div class="date">May 20</div>
+      <div class="event"><strong>NVDA Q1 FY27 earnings AC</strong> + $16B 20-year Treasury auction <em>same day</em>. ±12.9% expected move. If 20-yr tails AND NVDA misses = compound bond+equity shock. Strong auction + NVDA beat = record extension.</div>
+      <div class="impact">THE CATALYST</div>
+    </div>
+    <div class="tl-row">
+      <div class="date">May 21</div>
+      <div class="event">$19B 10-year TIPS reopened auction.</div>
+      <div class="impact">Bond market</div>
+    </div>
+    <div class="tl-row">
+      <div class="date">Mid-June</div>
+      <div class="event"><strong>ASTS BlueBird 8/9/10 launch on Falcon 9.</strong> Material catalyst for YOLO position.</div>
+      <div class="impact">YOLO trigger</div>
+    </div>
+    <div class="tl-row critical">
+      <div class="date">June 10</div>
+      <div class="event"><strong>May CPI release.</strong> THE binary that determines if rates regime stays or breaks. Cool ~30-35% / stable hot ~45% / accelerate ~25-30% (refined after OPEC+ + IMF data).</div>
+      <div class="impact">REGIME BINARY</div>
+    </div>
+    <div class="tl-row">
+      <div class="date">June 3</div>
+      <div class="event">AVGO Q2 earnings. Watch Project Titan + Microsoft commitment language.</div>
+      <div class="impact">Single-name</div>
+    </div>
+    <div class="tl-row">
+      <div class="date">June 17</div>
+      <div class="event">FOMC meeting (Warsh's first as Chair). Statement language sets tone for back-half of 2026.</div>
+      <div class="impact">Macro pivotal</div>
+    </div>
+    <div class="tl-row">
+      <div class="date">Late July</div>
+      <div class="event"><strong>CRWV + NBIS Q2 prints.</strong> Does the profitability inflection sustain? Validates conviction upgrades.</div>
+      <div class="impact">Conviction validation</div>
+    </div>
+    <div class="tl-row">
+      <div class="date">Aug — Sep</div>
+      <div class="event">Hyperscaler Q2 prints. NVDA Q2 FY27. Looking for capex commentary trajectory + China H200 delivery confirmation.</div>
+      <div class="impact">Multi-name</div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTRY GUIDANCE -->
+<section>
+  <div class="section-header">
+    <div><span class="num">07</span><h2 style="display:inline-block">Suggested entry mechanics</h2></div>
+    <div class="right">Risk-managed deployment</div>
+  </div>
+
+  <div class="caveat-grid">
+    <div class="caveat" style="border-left-color: var(--accent);">
+      <div class="num" style="color: var(--accent);">Tranching strategy</div>
+      <div class="body">
+        Deploy the 80% structural bucket in <strong>thirds over 4-6 weeks</strong>: 1/3 immediately on any &gt;3% pullback in mega-cap names; 1/3 after June 10 CPI clears; 1/3 reserved for any catalyst-driven re-rating. Avoid lump-sum at ATH.
+      </div>
+    </div>
+    <div class="caveat" style="border-left-color: var(--accent);">
+      <div class="num" style="color: var(--accent);">YOLO sizing</div>
+      <div class="body">
+        Each YOLO position is <strong>1-4% of total portfolio</strong>. NVDA calls = 3.5% MAX; ASTS = 3% MAX. Total YOLO must not exceed 20%. Any single -100% loss in YOLO bucket = -3-4% portfolio drawdown, survivable.
+      </div>
+    </div>
+    <div class="caveat" style="border-left-color: var(--accent);">
+      <div class="num" style="color: var(--accent);">Exit triggers (structural)</div>
+      <div class="body">
+        Trim cycle-sensitive names (MU, SNDK) when SemiAnalysis flags memory ASPs peaking. Trim mega-cap AI on first hyperscaler capex cut. Hold construction labor (FIX/EME/PWR) through cycle — they're contracted backlog.
+      </div>
+    </div>
+    <div class="caveat" style="border-left-color: var(--accent);">
+      <div class="num" style="color: var(--accent);">NVDA options play execution</div>
+      <div class="body">
+        Buy $240C May 22 expiry on <strong>any pullback to $215 or lower</strong> before May 20 close. Pay no more than $10-12 per contract. Set hard stop: exit at 50% loss or after May 21 IV crush even if break-even. Don't roll into next earnings.
+      </div>
+    </div>
+    <div class="caveat" style="border-left-color: var(--accent);">
+      <div class="num" style="color: var(--accent);">ASTS squeeze positioning</div>
+      <div class="body">
+        Enter equity (not options — short interest data implies hard borrow). Add on any pullback to $35 before mid-June Falcon 9 launch. Hold through launch; trim 50% if pop &gt;30% post-launch, hold rest for AT&amp;T/Verizon commercial contract.
+      </div>
+    </div>
+    <div class="caveat" style="border-left-color: var(--accent);">
+      <div class="num" style="color: var(--accent);">Rebalance cadence</div>
+      <div class="body">
+        Review the 80/20 split <strong>quarterly</strong> on Q2/Q3 print cycles. Conviction changes (e.g., another stance flip like ON neutral→bull) trigger ad hoc rebalances. Don't rebalance on price action alone — wait for thesis change.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CRITICAL CAVEATS -->
+<section>
+  <div class="section-header">
+    <div><span class="num">08</span><h2 style="display:inline-block">Critical caveats — read before any deployment</h2></div>
+    <div class="right">Risk discipline</div>
+  </div>
+
+  <div class="caveat-grid">
+    <div class="caveat">
+      <div class="num">01</div>
+      <div class="body">
+        <strong>Late-cycle 5 of 6 firing.</strong> Small-cap AI speculation (POET), IPO oversubscription extremes (CBRS 51x rev), retail "undervalued P/E" on memory, "trillion-dollar club" rhetoric, geopolitical tail risk all firing. GPU rental softening is the only indicator NOT firing (SemiAnalysis +40% data).
+      </div>
+    </div>
+    <div class="caveat">
+      <div class="num">02</div>
+      <div class="body">
+        <strong>30y above 5% is real.</strong> Bond market pricing higher-for-longer convincingly. May 20 20-year auction is the next test. If long-end keeps breaking higher, multiples compress regardless of earnings strength.
+      </div>
+    </div>
+    <div class="caveat">
+      <div class="num">03</div>
+      <div class="body">
+        <strong>NVDA earnings is binary.</strong> ±12.9% expected move. IV elevated. Single-day move could compress full month of allocation gains. Position-size NVDA core (not just calls) accordingly.
+      </div>
+    </div>
+    <div class="caveat">
+      <div class="num">04</div>
+      <div class="body">
+        <strong>The 20% YOLO bucket can lose 50%+ in aggregate</strong> in a true risk-off scenario. NVDA calls expire worthless; ASTS squeeze unwinds; speculative small-caps crash. -10% portfolio drag from a single bad week is the realistic downside.
+      </div>
+    </div>
+    <div class="caveat">
+      <div class="num">05</div>
+      <div class="body">
+        <strong>Don't average down on YOLO.</strong> If NVDA calls drop -50% pre-earnings, exit. If ASTS drops -25% pre-launch, exit. YOLO is binary by design — averaging down converts a thesis trade into a value trade with no margin of safety.
+      </div>
+    </div>
+    <div class="caveat">
+      <div class="num">06</div>
+      <div class="body">
+        <strong>This is a synthesis, not a recommendation.</strong> All stances are research stances. The 80/20 framework is yours to validate against your risk tolerance, time horizon, tax situation, and concentration limits. Past framework hit rate (see <code>wiki/feedback-log.md</code>) tells you what the analysis got right and wrong — read that before deploying.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div><strong>Methodology.</strong> Synthesis of 92 wiki files maintained at <code>./wiki/</code>. Allocation weights derived from conviction tiers in <code>tooltips.js</code> (bull/high = +50%/+90%; bull/medium = +30%/+50%; bull/low = +20%/+30%). Scenario projections use these multipliers applied to current market caps — not analyst price targets.</div>
+  <div style="margin-top: 8px;"><strong>Sources.</strong> Wiki: <code>overview.md</code>, <code>ai-capex-cycle.md</code>, <code>ai-bubble-debate.md</code>, <code>bottleneck-roadmap.md</code>, <code>aerospace-defense.md</code>, <code>robotics.md</code>. Source summaries: 17+ files in <code>./sources/</code>. Options data: OptionCharts, MarketBeat, MarketChameleon, OptionAlpha (May 2026).</div>
+  <div style="margin-top: 8px;"><strong>Not investment advice.</strong> Stances are research stances. Numbers are dated. Verify before any decision.</div>
+  <div style="margin-top: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-faint);">
+    Generated 2026-05-14 · Wiki state at 92 files · Prior portfolio synthesis: none (v1.0)
+  </div>
+  <div class="links">
+    <a href="market_overview_ai.html">→ Read-mode memo</a>
+    <a href="dashboard.html">→ Scan dashboard</a>
+    <a href="market_overview_robotics.html">→ Robotics memo</a>
+  </div>
+</footer>
+
+</div>
+
+</body>
+</html>
