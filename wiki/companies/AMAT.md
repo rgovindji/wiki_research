@@ -2,9 +2,9 @@
 type: company
 ticker: AMAT
 tags: [ai, semis, equipment, deposition, hbm]
-last_updated: 2026-05-09
+last_updated: 2026-05-14
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -26,12 +26,18 @@ The largest US wafer fab equipment vendor — Applied provides solutions for **1
 ## Snapshot (as of May 2026; verify before any decision)
 | Metric | Value | As of |
 |---|---|---|
-| Calendar 2026 equipment growth guide | **>20% YoY** | mgmt (Q1 FY2026) |
+| **Calendar 2026 equipment growth guide (RAISED)** | **>30% YoY** (up from ">20%") | **mgmt (Q2 FY26 print, 2026-05-14)** |
+| Q2 FY26 revenue | $7.91B (record, +11% YoY) | 2026-05-14 |
+| Q2 FY26 non-GAAP EPS | $2.86 (beat $2.68 cons, +20% YoY) | 2026-05-14 |
+| Q2 FY26 GAAP gross margin | 49.9% | 2026-05-14 |
+| Q3 FY26 revenue guide | $8.95B ± $500M | 2026-05-14 |
+| Q3 FY26 non-GAAP EPS guide | $3.36 ± $0.20 | 2026-05-14 |
+| Semi Systems Q2 mix | Foundry/Logic 67% · DRAM 29% · Flash 4% | 2026-05-14 |
 | Forward customer visibility | **12-24 months** | mgmt commentary |
 | HBM equipment value capture | **>50%** | research / mgmt |
 | 2026 WFE market forecast | **$126B** | industry |
 | Stock 2025 performance | **+170%** | reported |
-| Cloud capex 2026 / 2027 | $600B / $700B | industry |
+| Cloud capex 2026 / 2027 | $725B / >$800B | industry (May 2026) |
 | Data center share of leading-edge wafers | **30%** (eclipsed PC) | 2026 |
 
 ## Bull case
@@ -64,8 +70,12 @@ The largest US wafer fab equipment vendor — Applied provides solutions for **1
 7. **Process node mix** — leading-edge vs. ICAPS (mature nodes)
 
 ## Recent developments
-- **2026-Q1 FY** — CEO Gary Dickerson guided **equipment business growth >20% in calendar 2026**
+
+- **2026-05-14 — Q2 FY26 print (RAISED CY26 GUIDE).** Rev $7.91B record (+11% YoY), non-GAAP EPS $2.86 beat $2.68 cons (+20% YoY), GAAP EPS $3.51 (+33% YoY). Non-GAAP GM 50.0%. **CEO Gary Dickerson explicitly raised the CY26 semi equipment growth guide from ">20%" to ">30%"** — first explicit annual-outlook upgrade this cycle. **CFO Brice Hill: "AI demand is now in full force."** Semi Systems $5.97B with mix Foundry/Logic 67% / DRAM 29% / Flash 4% (DRAM share expansion = HBM ramp embedded). AGS $1.67B, 29.2% OpMar. 15% dividend hike to $0.53/share (9th consecutive raise). Q3 guide $8.95B ± $500M. **Acquiring ASMPT NEXX advanced packaging business**. EPIC Center partnerships with TSMC, SK hynix, Micron announced. See [[2026-05-14-AMAT-Q2-2026-earnings]] for full breakdown.
+- **2026-Q1 FY** — CEO Gary Dickerson guided **equipment business growth >20% in calendar 2026** (superseded by May 14 raise to >30%)
 - **2026 (ongoing)** — Industry $126B WFE forecast; HBM intensity (3-4x wafer per bit) sustaining DRAM equipment demand through 2028+
+
+> **What this means:** AMAT just took the rare step of upgrading its own annual guide mid-year — moving from ">20%" to ">30%" semi equipment growth in CY26. That's a $1-2B+ revenue uplift to consensus and a direct supply-side validation of the **[[bottleneck-roadmap]] memory → fab → EUV cascade**. The bull/high conviction was the right call; the print is a "stay the course" confirmation, not a re-rate trigger.
 
 ## Related
 [[NVDA]] · [[nvda-supply-chain]] · [[TSM]] · [[ASML]] · [[KLAC]] · [[LRCX]] · [[TER]] · [[ENTG]] · [[APD]] · [[MU]] · [[bottleneck-roadmap]] · [[ai-capex-cycle]] · [[semiconductors]] · [[overview]]
@@ -82,3 +92,4 @@ The largest US wafer fab equipment vendor — Applied provides solutions for **1
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — references Applied Materials in equipment expansion context (Dylan: "Applied Materials, Lam Research, and all these other companies expanding capacity a lot as well")
+2. [[2026-05-14-AMAT-Q2-2026-earnings]] — Q2 FY26 print, record revenue + CY26 guide raise from >20% to >30%

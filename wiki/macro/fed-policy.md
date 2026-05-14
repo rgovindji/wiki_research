@@ -17,6 +17,22 @@ The path of US short-term interest rates as set by the FOMC. The single biggest 
 - This was widely framed as **Powell's final meeting** as Chair
 - FOMC statement: "Inflation is elevated, in part reflecting the recent increase in global energy prices"
 
+### 30y Treasury auction confirmed above 5% (NEW 2026-05-14 PM2 — auction result)
+
+**$25B 30-year auction cleared at 5.046% on May 14, 2026 — first time above 5% since 2007.**
+
+| Metric | Result | Read |
+|---|---|---|
+| Stop-out yield | **5.046%** | First above 5% since 2007 |
+| Tail | +0.5 bps | Tailed (sold above pre-auction yield) |
+| Bid-to-cover | **2.3x** (below 6-auction avg 2.42x) | **Soft demand** |
+| Indirect bidders | 63.95% | OK but not strong |
+| Size | $25B | As scheduled |
+
+**Why it matters:** the "30y at 5.02%" the wiki flagged earlier today as the key technical level just got priced in a real auction with real bids — not a screen quote. Soft B/C ratio (2.3x vs 2.42x avg) + the tail says the bond market is **demanding more yield to absorb supply at the long end**. Two consecutive days of soft auction results add up to real pressure heading into the May 20 20-year auction.
+
+**Which means:** the counter-bear relief valve (OPEC+ + IMF anchored expectations) is now competing against a bond-market signal that's becoming material. The 30y >5% confirmed at auction is **not a screen anomaly** — it's where buyers will actually transact. **Cooling-scenario probability nudge from earlier (25% → 30-35%) holds but the upside path is narrowing**: if the May 20 20-year auction also tails on the same day NVDA reports, the compounding shock case (bond + equity) becomes the dominant near-term tail.
+
 ### May 20 = macro + micro confluence (NEW 2026-05-14 PM)
 
 A concentrated Treasury supply window converges with the NVDA Q1 FY27 print:

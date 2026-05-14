@@ -45,6 +45,34 @@ Each entry follows this structure:
 
 ## Recent entries (reverse chronological)
 
+### [2026-05-14] ✅ Right | AMAT bull/high held through guide raise — bottleneck-roadmap cascade validated
+
+**Original call (2026-05-09 → 2026-05-14):** AMAT bull/high conviction maintained throughout the wiki. [[bottleneck-roadmap]] framework predicted: memory (2026) → cleanrooms/fabs (2027) → EUV (2028-2030). AMAT identified as canonical play on the 2027 fab buildout. Pre-print stance: "stay the course, this is the supply-side beneficiary."
+
+**Observed (2026-05-14 AC):** AMAT Q2 FY26 print — Rev $7.91B record (+11% YoY), non-GAAP EPS $2.86 beat $2.68 cons. **CEO Gary Dickerson raised CY26 semi equipment growth guide from ">20%" to ">30%"** — first explicit annual-outlook upgrade this cycle. CFO Brice Hill: "AI demand is now in full force." Semi Systems DRAM share 29% = HBM ramp embedded in the mix. Q3 guide $8.95B ± $500M (mid-point implies +18% YoY).
+
+**Verdict:** ✅ **Right.** Bull/high was the correct stance + conviction. The CY26 >30% guide raise is direct validation of the bottleneck-roadmap memory→fab cascade.
+
+**Framework:** [[bottleneck-roadmap]] supply-cascade framing + [[ai-capex-cycle]] $725B hyperscaler capex underwriting
+
+**Lesson (validated):** Bull/high conviction on supply-chain beneficiaries with **explicit forward customer visibility** (12-24 months mgmt-confirmed at the prior print) is durable through cycle accelerations. The framework correctly predicted that customers (TSMC, Samsung, SK Hynix, Micron) would pre-buy for 2027 fab buildout, pulling forward equipment orders into CY26. **Holding through "the stock has run hard" risk-management noise was the right discipline.** Next print to verify: Q3 FY26 (delivers vs $8.95B ± $500M guide) — also watch CSCO Q4 FY26 for whether the $9B AI infra order trajectory holds.
+
+---
+
+### [2026-05-14] ✅ Right | "30y at 5.02% is the key level" — confirmed at auction with soft demand
+
+**Original call (2026-05-14 PM):** [[fed-policy]] and [[overview]] flagged 30y Treasury crossing 5.02% as "the key level to watch — any further break higher amplifies risk." Wiki specifically framed it as the bond-market signal that competes with the counter-bear relief valve (OPEC+ + IMF anchored expectations).
+
+**Observed (2026-05-14 PM2):** $25B 30-year Treasury auction cleared at **5.046% — first auction above 5% since 2007**. Bid-to-cover 2.3x vs 6-auction average 2.42x = **soft demand**, +0.5 bps tail. Two consecutive days of soft auction results.
+
+**Verdict:** ✅ **Right.** The 30y > 5% framing called the level, and the auction confirmed it not as a screen anomaly but as where real buyers transact at real volume — with soft demand on top. The bond market is convincingly pricing higher-for-longer.
+
+**Framework:** [[fed-policy]] long-end signal framing + [[2026-05-13-ppi-cpi-shock-positioning]] regime-shift framing
+
+**Lesson:** When a "key technical level" gets confirmed at a real auction (not just screen quote), the signal compounds. **Improvement:** before each Treasury auction in the May 18-21 window, pre-write the read-through framework for tail / B/C / indirect outcomes — so the wiki can react within hours instead of after the fact. **Caveat for the counter-bear relief valve framework:** OPEC+ + IMF anchored expectations remain valid, but the path is narrowing. If May 20 20-year auction also tails on NVDA print day, the compounding-shock scenario (bond + equity) becomes the dominant tail.
+
+---
+
 ### [2026-05-14] 🛠️ Process gap | Wiki had zero coverage of residential solar / consumer energy — ENPH purchase was off-framework
 
 **Original call (none — gap):** User bought [[ENPH]] (Enphase Energy) on 2026-05-12. The wiki had zero coverage of ENPH or the broader residential solar / consumer energy category. The wiki's "power" coverage is entirely **data-center power infrastructure** ([[VRT]] / [[ETN]] / [[GEV]] / [[BE]] / [[FIX]] / [[EME]] / [[PWR]]) — a B2B hyperscaler AI capex thesis. Residential solar / consumer energy was never built into the framework.

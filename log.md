@@ -9,6 +9,31 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-14] PM2 | Daily update — AMAT Q2 print + 30y auction confirmed above 5%
+
+- **Sweep:** parallel WebSearch on market close, earnings reports, NVDA pre-earnings positioning, 30y auction. Material findings:
+  - **AMAT Q2 FY26 (May 14 AC) — earnings workflow triggered.** Rev $7.91B record (+11% YoY); non-GAAP EPS $2.86 vs $2.68 cons (+20% YoY); GAAP EPS $3.51 (+33%). Non-GAAP GM 50.0%; OpInc $2.52B. Semi Systems $5.97B with mix Foundry/Logic 67% / DRAM 29% / Flash 4%. AGS $1.67B. **CEO raised CY26 semi equipment growth guide from ">20%" to ">30%"** — first explicit annual-outlook upgrade this cycle. CFO: "AI demand is now in full force." Q3 guide $8.95B ± $500M. 15% dividend hike to $0.53. Acquiring ASMPT NEXX advanced packaging.
+  - **30y Treasury auction (May 14) cleared at 5.046%** — first auction above 5% since 2007. Bid-to-cover 2.3x (below 6-auction avg 2.42x = **soft demand**). Tail +0.5 bps. Indirect 63.95%.
+  - **Cisco Q3 FY26 (May 13 AC):** Rev $15.8B beat; EPS $1.06 beat. **AI infrastructure orders guidance raised from $5B to $9B** for FY26 (80% increase). DC switching +40% YoY. Stock +20% on print.
+  - **NVDA pre-earnings:** consensus $78.8B rev / $1.77 EPS for May 20 print; Polymarket 90% implied beat probability. NVDA hit ATH May 8 at $217.80.
+  - **Market close:** S&P record 7,444.25 (+0.5%); NASDAQ record 26,402.34 (+1.2%); Dow -0.14%. NVDA +2%, MU +4%, SMH +2%.
+- **Strategic synthesis — supply-side AI capex validation:** AMAT raising CY26 from >20% to >30% + CSCO raising AI infra orders $5B→$9B = the supply chain is **upgrading its own outlook mid-year**. The bear case "AI capex is over-extrapolated" gets harder to sustain when WFE + networking + model labs all independently confirm the curve.
+- **Tension:** AI demand validation (AMAT, CSCO) clashes with bond-market signal (30y >5% confirmed at auction with soft demand). This is the macro/micro tension the wiki has been mapping — both signals are now stronger than 24 hours ago.
+- **Wiki touched:**
+  - [[AMAT]] — full Q2 FY26 update; snapshot table refreshed; recent developments + "what this means" added; CY26 >30% guide raise reflected
+  - [[2026-05-14-AMAT-Q2-2026-earnings]] — new source summary
+  - [[fed-policy]] — new "30y auction confirmed above 5%" section with metrics + read
+  - [[overview]] — refreshed rates line; new "Supply-side AI capex validation" section; "what this means" updated
+  - [[ai-capex-cycle]] — added AMAT + CSCO supply-side validation bullets
+  - [[feedback-log]] — ✅ AMAT bull/high call validated; ✅ 30y >5% call validated
+  - [[index]] — new source added
+- **Stance / conviction changes:** none. AMAT stays bull/high (already correct). Wiki conviction validated via guide raise, not changed by it.
+- **Skipped (low-value):**
+  - JD.com earnings — not in wiki ticker list
+  - General "S&P at record" commentary (already captured)
+  - BABA / PLUG / others reporting this week not in wiki
+- **Pending:** May 18-21 Treasury supply window (bills May 18, $16B 20-year May 20 same day as NVDA, $19B 10y TIPS May 21); NVDA Q1 FY27 print May 20 AC; AMAT/CSCO follow-up Q3 prints.
+
 ## [2026-05-14] PM | ENPH coverage gap closed — residential solar added to wiki
 
 - User flagged off-framework purchase: bought [[ENPH]] (Enphase Energy) on 2026-05-12; asked retroactively if wiki had recommended.
