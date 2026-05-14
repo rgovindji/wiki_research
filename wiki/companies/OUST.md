@@ -67,6 +67,12 @@ Highest-quality Western lidar pure-play with a credible 2026 profitability infle
 
 ## Recent developments
 
+- **2026-05-14 — Stock +26% since wiki downgrade ($26.80 → $33.86).** Multiple catalysts stacked through the week:
+  - **NVDA DRIVE Hyperion + DriveWorks full qualification** for Rev8 family — OEMs and AV developers at Level 4 autonomy can plug OUST sensors into pre-built NVDA software stack (material step up from prior "qualified to run on" framing)
+  - **BlueCity smart-infrastructure expansion** — going from 6 to **30+ intersections in greater Atlanta**, including the area around Mercedes-Benz Stadium ahead of the 2026 FIFA World Cup (recurring software/lidar revenue smoothing)
+  - **Stereolabs ZED X Nano launch** — wrist-mounted stereo camera for robotics and Physical AI (new product line into the humanoid sensor stack)
+  - **Oppenheimer raised PT to $42 from $40** (Outperform maintained)
+  **Wiki framing update:** thesis was structurally right but timing was wrong. Stock at $33.86 vs Oppenheimer's $42 PT = only **24% upside** to the most bullish public PT (down from 57% upside when we downgraded). **Easy money is now mostly gone even if the bull case plays out.** Stance/conviction unchanged at bull/LOW — Hesai's 25x scale advantage + Luminar Chapter 11 + Tesla Optimus camera-only thesis remains structurally intact. Bull case still requires (a) US tariffs barring Hesai from Western auto markets, OR (b) publicly-named humanoid OEM design win. Neither is in place. The +26% has come on product execution and analyst enthusiasm, not on the structural unlock.
 - **2026-05-13 — Wiki conviction downgraded from medium → low.** Driver: Hesai competitive-gap data (4M unit capacity 2026, 9.73% op margin vs OUST -61%) and Luminar Chapter 11 (~1 month earlier). Stance stays bull on Stereolabs/Physical-AI optionality but conviction reflects the structural scale gap.
 - **2026-05-11** — **Cantor Fitzgerald second downgrade in 4 days: Neutral → Hold**, $33 PT (vs current ~$26.80).
 - **2026-05-12** — Q1 2026 results confirmed: revenue **$48.6M (+49% YoY)**; net loss narrowed $22.0M → $17.5M; **12,600 combined lidar + camera shipments**; Q2 guide $49.5-52.5M (Stereolabs full quarter contribution).

@@ -9,6 +9,28 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-14] price-action review | POET + OUST honest reckoning
+- User asked why POET went up so much today and whether we missed it; also whether OUST might be a sleeper hit.
+- **POET (stance unchanged: AVOID):**
+  - Stock $18.45 May 14 (high $20.65, low $13.90); bounced from $7.97 late-April low = +130% in ~3 weeks
+  - Catalysts: new COO Sandeep Kumar (Silicon Labs veteran) building Malaysia AI manufacturing + speculation Marvell cancellation was one-off
+  - **Wall Street consensus PT: $8.20** (range $8.00-$8.40) — stock now trades at **2.2x consensus PT**
+  - Fundamentals unchanged: $1.07M 2025 revenue, $63M losses
+  - **Framework validated:** the wiki's [[ai-bubble-debate]] "Late-cycle warning indicators" #1 specifically named POET as the canonical example of small-cap AI speculation. The +130% bounce on narrative without earnings inflection IS the pattern.
+- **OUST (stance unchanged: bull/LOW; price moved):**
+  - Stock $33.86 May 14, **+26% since wiki downgrade May 13 ($26.80)**
+  - Catalysts: NVDA DRIVE Hyperion + DriveWorks full qualification; BlueCity expanding 6 → 30+ Atlanta intersections (FIFA World Cup tailwind); Stereolabs ZED X Nano wrist-mounted stereo camera launch; Oppenheimer PT raised $40 → $42
+  - **Honest read:** thesis structurally right (Hesai gap, Luminar BK, Tesla camera-only intact) but timing was wrong on near-term momentum
+  - At $33.86 vs $42 PT = only **24% upside** to most bullish public PT (down from 57% at downgrade). Easy money mostly gone.
+  - Bull case still requires (a) US tariffs barring Hesai OR (b) named humanoid OEM design win. Neither in place.
+- **Wiki updates:**
+  - [[watchlist]] POET entry: added "Update 2026-05-14: framework validated" with +130% bounce data point
+  - [[OUST]] page: new Recent developments entry capturing +26% week with all catalysts; explicit "thesis was structurally right but timing was wrong" honesty
+  - `tooltips.js` OUST entry: price updated $26.80 → $33.86; thesis text reflects framework validation
+  - [[ai-bubble-debate]] late-cycle indicator #1: POET bounce added as "framework validated" follow-up with "lesson: indicator firing ≠ stock down tomorrow" framing
+- **Stance / conviction changes:** none. Both stay where they are.
+- **Meta-lesson captured:** the wiki's framework identifies which way asymmetry skews, not market timing. Holding POET avoid through both the -49% drop AND the +130% bounce was the right call. Holding OUST bull/low while it ran +26% is the same call in inverse — structural risk doesn't go away just because the stock went up.
+
 ## [2026-05-14] ingest | 3 space-economy foundational sources processed
 - User fetched the 3 PDFs/articles I had flagged as Phase 2 documents:
   1. **Aerospace Corp — FY 2026 Defense Space Budget: Emergence of Golden Dome** (Aug 2025, PDF saved to `raw/reports/`)
