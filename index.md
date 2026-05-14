@@ -16,6 +16,7 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 
 - [[2026-05-20-nvda-earnings]] — NVDA Q1 FY27 print playbook; 4 scenarios w/ position-by-position actions; 20-year auction same day (NEW 2026-05-14)
 - [[2026-06-10-cpi-binary]] — May CPI print playbook; cool / stable hot / accelerating scenarios; sector-rotation cheat sheet (NEW 2026-05-14)
+- [[weekly-synthesis-template]] — Friday templated artifact for internal-review + Substack publication; structure, voice notes, publishing checklist (NEW 2026-05-14)
 
 ## Recent source ingests
 
@@ -61,6 +62,16 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 - [[robotics]] — Robotics & Humanoid Buildout; NdFeB rare-earth magnets, precision sensors, harmonic drives, edge-AI SoCs; bottleneck-roadmap framework applied to humanoid component supply chain
 - [[aerospace-defense]] — Aerospace & Defense; pure-play space (RKLB, ASTS) + defense primes (LMT, NOC, RTX) + supply chain (VELO, KTOS); $470B economy + DoD Space Force $40.2B FY26
 - *AI software sector page — not yet created; tracked under [[watchlist]] "Not yet covered" (PLTR, etc.)*
+
+### Adjacent coverage (NEW 2026-05-14 — stub coverage to close framework gaps)
+
+These pages exist to prevent off-framework user purchases. Stub-level depth by design; deepen with company pages on user signal.
+
+- [[commodity-producers]] — gold (GLD/NEM/AEM/WPM), copper (FCX/SCCO), oil E&Ps (XOM/CVX/COP/OXY) — hedge-adjacent + Iran/dollar exposure
+- [[defensives]] — utilities (NEE/DUK/SO + AI-exposed CEG/VST), staples (PG/KO/COST), defensive healthcare (UNH/JNJ); late-cycle rotation targets
+- [[financials]] — banks (JPM/BAC), IBs (GS/MS), asset managers (BLK/BX/KKR), payments (V/MA/PYPL), insurance (BRK/PGR); rate-regime exposure
+- [[biotech-pharma]] — weight-loss (LLY/NVO), specialty (REGN/VRTX), large-cap biotech (AMGN); different beta from defensives, catalyst-driven
+- [[consumer-cyclicals]] — retail (COST/HD/AMZN), restaurants (MCD/SBUX), travel (BKNG/ABNB), brands (NKE/LULU), autos (F/GM/UBER) — consumer-rate-sensitive
 
 ## Companies (`wiki/companies/`)
 
@@ -166,7 +177,8 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 *(empty — populate as needed during ingest)*
 
 ## Analyses (`wiki/analyses/`)
-*(empty — file good queries here as they happen)*
+
+- [[2026-05-15-weekly-synthesis]] — first weekly synthesis instance; "The week the supply chain raised its hand — and the bond market raised it higher"; AMAT guide raise + 30y auction above 5%; ~1,300 words; internal draft for Saturday May 17 publication (NEW 2026-05-14)
 
 ## Sources (`sources/`)
 - [[2026-05-09-dwarkesh-dylan-semianalysis]] — Dwarkesh × Dylan Patel (SemiAnalysis CEO), 2hr semis deep-dive: EUV is THE 2028-2030 bottleneck; memory crunch is the 2026 story; H100 worth more today than 3 yrs ago; AAPL structurally squeezed at TSMC; power is NOT the bottleneck

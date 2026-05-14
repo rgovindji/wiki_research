@@ -9,6 +9,31 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-14] PM4 | Process improvement v2 — adjacent coverage + weekly synthesis pipeline
+
+- **Context:** Continuing the process-improvement roadmap after pushing PM3 (playbooks + hedging). Two remaining items from the original menu: bridge adjacent coverage + weekly synthesis pipeline. User authorized both.
+- **Adjacent coverage stubs (5 new sector pages):**
+  - [[commodity-producers]] — gold (GLD/NEM/AEM), copper (FCX/SCCO), oil E&Ps (XOM/CVX/COP/OXY) — closes the hedge-adjacent gap; ties into [[hedging-risk]] Tier 1 GLD recommendation
+  - [[defensives]] — utilities (NEE/DUK/SO + AI-exposed CEG/VST/TLN), staples (PG/KO/COST), defensive healthcare (UNH/JNJ); explicit framing that defensives are Tier 2 hedging (not primary)
+  - [[financials]] — banks (JPM/BAC), IBs (GS/MS), asset managers (BLK/BX/KKR), payments (V/MA), insurance (BRK/PGR); flagged the AI-private-credit thesis as worth standalone treatment later
+  - [[biotech-pharma]] — separated from defensive healthcare due to different beta profile; LLY/NVO weight-loss gap flagged explicitly as the wiki's biggest single mega-cap miss
+  - [[consumer-cyclicals]] — retail/restaurants/travel/brands/autos — closes the consumer-rate-sensitive gap that the macro framework had been flagging without ticker anchors
+- **Weekly synthesis pipeline:**
+  - [[weekly-synthesis-template]] — reusable Friday template with structure (lede, big picture, what changed in wiki, one idea, catalyst calendar, position discipline, reading list, sign-off), voice notes, Substack publishing checklist. Targeted at 800-1,500 word publication length.
+  - [[2026-05-15-weekly-synthesis]] — first instance for Saturday May 17 publication. Title: "The week the supply chain raised its hand — and the bond market raised it higher." Anchors on AMAT >30% CY26 guide raise + 30y auction at 5.046%. ~1,300 words. Internal draft; final edit pass before Saturday publication.
+- **Wiki touched:**
+  - 5 new sector pages (`wiki/sectors/`)
+  - 1 template page + 1 first-instance page (`wiki/playbooks/` and `wiki/analyses/`)
+  - [[index]] — Adjacent coverage subsection added under Sectors; Analyses subsection populated; Playbooks updated with template
+- **Stance / conviction changes:** none. All preliminary stub-level stances on the new sector pages are flagged as low-confidence pending deeper coverage.
+- **Pending items closed by this session:** Bridge adjacent coverage ✓; Weekly synthesis pipeline ✓
+- **Original 4-item process improvement roadmap status (May 14):**
+  - 1. NVDA + CPI playbooks ✓ (PM3)
+  - 2. Hedging coverage ✓ (PM3)
+  - 3. Bridge adjacent coverage ✓ (this session)
+  - 4. Weekly synthesis + Substack pipeline ✓ (this session)
+- **Next natural cadence:** Saturday May 17 — final edit + publish first weekly synthesis (if user wants to begin Substack cadence). Otherwise hold as internal review artifact.
+
 ## [2026-05-14] PM3 | Process improvement v1 — pre-mortem playbooks + hedging coverage
 
 - **Context:** User asked for high-level process improvement suggestions. Identified 8 improvements ranked by leverage. After clarifying conversation, user opted to skip positions tracker (privacy) and tackle the other recommendations.
