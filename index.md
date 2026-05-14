@@ -9,7 +9,13 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 - [[overview]] — current macro stance + leading theses (synthesis page, May 2026)
 - [[watchlist]] — active buy / hold / avoid candidates with one-line theses
 - [[feedback-log]] — accountability log: wiki's calls vs actual outcomes; right / right-but-timing-wrong / process gap verdicts (NEW 2026-05-14)
+- [[hedging-risk]] — hedging & risk coverage; defensive instruments by indicator-firing tier; current recommended hedge stack (NEW 2026-05-14)
 - [[log]] — chronological activity log
+
+## Playbooks (`wiki/playbooks/`) — pre-committed actions for binary events
+
+- [[2026-05-20-nvda-earnings]] — NVDA Q1 FY27 print playbook; 4 scenarios w/ position-by-position actions; 20-year auction same day (NEW 2026-05-14)
+- [[2026-06-10-cpi-binary]] — May CPI print playbook; cool / stable hot / accelerating scenarios; sector-rotation cheat sheet (NEW 2026-05-14)
 
 ## Recent source ingests
 

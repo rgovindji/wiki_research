@@ -47,6 +47,15 @@ Two data points the bond market hasn't priced:
 
 **Watch:** if 20-year auction tails on the 20th AND NVDA misses or guides cautiously, bond-market shock could overwhelm equity earnings story for that session. Conversely, strong auction + NVDA beat + Vera Rubin demand commentary = potential record-high extension.
 
+### Pre-committed playbooks (NEW 2026-05-14 PM3)
+
+Two binary catalysts in the next 27 days now have pre-written response frameworks. **Read these BEFORE the events to remove in-the-moment emotion from the response:**
+
+- **[[2026-05-20-nvda-earnings]]** — 4 scenarios (strong beat / in-line / disappoint / black swan); position-by-position action table; hard rules for NVDA $240C May 22 calls; 20-year auction read-through
+- **[[2026-06-10-cpi-binary]]** — 3 scenarios (cool / stable hot / accelerating) tied to specific YoY/MoM triggers; sector-rotation cheat sheet; explicit Warsh-credibility tail handling
+
+Plus a new **[[hedging-risk]]** page covering the wiki's first defensive coverage — VIX, put spreads, gold, cash/BIL. Recommended hedge stack for current 5/6-indicators-firing state: ~6-9% in hedges + ~3-5% in cash = ~10% defensive sleeve.
+
 ## The dominant story: AI capex cycle
 
 AI investment is driving **~40% of S&P 500 earnings growth** in 2026. The four hyperscalers (MSFT, AMZN, GOOGL, META) alone are spending **>$200B on AI infra in 2026**; total cloud capex is **~$670B**. Bloomberg Intelligence: AI server spend +45% YoY to $312B in 2026. JPM sees AI driving 13–15% above-trend EPS growth for at least two years.

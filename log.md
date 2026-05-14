@@ -9,6 +9,25 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-14] PM3 | Process improvement v1 — pre-mortem playbooks + hedging coverage
+
+- **Context:** User asked for high-level process improvement suggestions. Identified 8 improvements ranked by leverage. After clarifying conversation, user opted to skip positions tracker (privacy) and tackle the other recommendations.
+- **Sequencing decision:** time-sensitive items first (NVDA May 20 = 6 days out; June 10 CPI = 27 days out), then structural items later.
+- **Created:**
+  - [[2026-05-20-nvda-earnings]] — NVDA Q1 FY27 playbook. 4 scenarios (Strong beat 40% / In-line 35% / Disappoint 20% / Black swan 5%). Each has triggers (Rev/EPS/GM/guide thresholds), expected stock reaction, and position-by-position action table covering NVDA core, NVDA $240C May 22 YOLO, WFE complex, neoclouds, memory, defense, hedges. Cheat-sheet card for mobile.
+  - [[2026-06-10-cpi-binary]] — May CPI playbook. 3 scenarios (Cool 30-35% / Stable hot 45% / Accelerating 25-30%). Each tied to specific YoY/MoM triggers, macro implications, equity reactions, position-by-position actions. Adds Scenario 3b "stagflation shock" for the Warsh-cuts-into-hot-inflation 20% tail from [[fed-policy]].
+  - [[hedging-risk]] — first defensive coverage page in the wiki. Tier 1 (cash/BIL, QQQ put spreads, VIX call spreads, GLD), Tier 2 (NVDA-specific spreads, sector rotation), Tier 3 (NOT recommended — TLT, leveraged inverse ETFs, covered calls on high-conviction names). Recommended hedge stack for current 5/6-indicators-firing state: ~6-9% in hedges + ~3-5% in cash.
+- **Wiki touched:**
+  - 3 new pages created (playbooks + hedging)
+  - [[index]] — added Playbooks section + hedging-risk to top-level
+  - [[overview]] — added "Pre-committed playbooks" section cross-referencing all three
+- **Stance / conviction changes:** none. Hedging coverage doesn't reflect a stance flip — it formalizes the contradiction the wiki has been mapping (5/6 late-cycle indicators firing while 100% long-biased).
+- **Pending for next session:**
+  - **Bridge adjacent coverage** — stub pages for autos, fintech, energy E&Ps, gold/copper miners, utilities, staples, healthcare, biotech, REITs
+  - **Weekly synthesis + Substack pipeline** — Friday templated artifact bridging wiki to publication
+  - Post-NVDA May 20: update [[2026-05-20-nvda-earnings]] with actual outcome + feedback-log entry
+  - Post-June 10 CPI: same protocol for [[2026-06-10-cpi-binary]]
+
 ## [2026-05-14] PM2 | Daily update — AMAT Q2 print + 30y auction confirmed above 5%
 
 - **Sweep:** parallel WebSearch on market close, earnings reports, NVDA pre-earnings positioning, 30y auction. Material findings:
