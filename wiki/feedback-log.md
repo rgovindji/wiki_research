@@ -45,6 +45,18 @@ Each entry follows this structure:
 
 ## Recent entries (reverse chronological)
 
+### [2026-05-14] ✅ Right (3rd validation) | POET +38% on Lumilens deal — same pattern, framework holds
+
+**Original call:** AVOID stance per [[ai-bubble-debate]] late-cycle warning indicator #1 (small-cap AI-photonics names trade on narrative without earnings inflection).
+
+**Observed (2026-05-14 AC):** POET announced Lumilens partnership. $50M initial PO + "potential $500M over 5 years" + 22.9M-share warrant at $8.25 strike. Engineering samples late 2026, production ramp 2027. **Stock +38% to $19.87.** Wall Street consensus PT still $8.20 = stock now **2.4x consensus**.
+
+**Verdict:** ✅ **Right (third validation in 3 weeks).** Same shape as the Marvell deal that was cancelled (-49% in April). Warrant dilution + production ramp 2027 = same "announcement without revenue" pattern. Asymmetric downside at $20 is larger than at $8 because the gap to consensus PT widened.
+
+**Lesson (re-validated):** Three POET data points (-49% drop, +130% bounce, +38% Lumilens pop) all consistent with the framework. The "small-cap photonics announcements are press releases not contracts" thesis is now a stress-tested call. Stop counting these as separate validations — fold into a single durable framework point.
+
+---
+
 ### [2026-05-14] ✅ Right | AMAT bull/high held through guide raise — bottleneck-roadmap cascade validated
 
 **Original call (2026-05-09 → 2026-05-14):** AMAT bull/high conviction maintained throughout the wiki. [[bottleneck-roadmap]] framework predicted: memory (2026) → cleanrooms/fabs (2027) → EUV (2028-2030). AMAT identified as canonical play on the 2027 fab buildout. Pre-print stance: "stay the course, this is the supply-side beneficiary."
