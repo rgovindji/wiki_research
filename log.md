@@ -9,6 +9,32 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-14] new artifact | Feedback log accountability page launched
+- User requested a "feedback log" tracking wiki calls vs actual outcomes — explicitly as a trust-building mechanism for the eventual Substack/YouTube vision.
+- **Created:** [[feedback-log]] — top-level wiki page with structured schema for tracking:
+  - ✅ Right calls (matched directionally + timing)
+  - ⏱️ Right but timing wrong (structural call correct, near-term move opposite)
+  - 〰️ Partially right (right on some dimensions, wrong on others)
+  - ❌ Wrong calls
+  - 🛠️ Process gaps (workflow broke; not necessarily wrong analytically)
+- **9 backfilled entries** from the past 2 weeks:
+  - ⏱️ OUST downgrade timing wrong (+26% in 8 days after downgrade)
+  - ✅ POET avoid stays correct through -49% drop AND +130% bounce
+  - ✅ Trump-Xi summit Scenario A (60% probability) confirmed
+  - 🛠️ CRWV Q1 print missed for 6 days → closed via new earnings workflow
+  - ✅ NBIS Q1 conviction upgrade captured same day
+  - ✅ Anthropic margins prediction validated at CFO level (cross-source convergence)
+  - ⏱️ PPI shock macro framework right, Neocloud bucketing was too coarse
+  - ✅ OUST Hesai-gap structural downgrade immediately validated
+  - ✅ Culper NVDA short thesis — wiki framework separated verified facts from contested allegations
+- **10 pending verdicts** flagged with explicit "verdict TBD when X happens" markers (AAPL stance flip; MU cycle-peak warning; ASML pricing power; NVDA Q1 FY27 May 20; etc.)
+- **9 lessons accumulated** at bottom of page (stance ≠ market timing; cross-source convergence; macro+catalysts; fact-based downgrades; etc.)
+- **New memory saved:** `feedback_accountability_log.md` — workflow rule for when to add entries, schema to follow, verdict tags to use
+- **Updated [[index]]** with feedback-log at top-level alongside overview / watchlist / log
+- **Stance / conviction changes:** none. This is a meta-artifact, not a positioning change.
+- **Why this matters:** The wiki now has explicit "show your work" honesty. Wrong calls get the same visual treatment as right ones. Pending verdicts are flagged so readers know what's testable. This is exactly the kind of trust-building Substack/YouTube readers respond to.
+- **Total wiki:** 92 files (+1 new top-level page).
+
 ## [2026-05-14] price-action review | POET + OUST honest reckoning
 - User asked why POET went up so much today and whether we missed it; also whether OUST might be a sleeper hit.
 - **POET (stance unchanged: AVOID):**
