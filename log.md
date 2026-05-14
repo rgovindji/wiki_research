@@ -9,6 +9,21 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-14] PM | ENPH coverage gap closed — residential solar added to wiki
+
+- User flagged off-framework purchase: bought [[ENPH]] (Enphase Energy) on 2026-05-12; asked retroactively if wiki had recommended.
+- **Honest answer:** zero wiki coverage. Grep returned no hits on "ENPH" or "Enphase" across 92 files. Solar appeared only as generic "solar+battery" in [[bottleneck-roadmap]] / [[GEV]] / [[VRT]] data-center power alternatives.
+- **Diagnosis:** wiki's "power" coverage is entirely **data-center power infrastructure** ([[VRT]] / [[ETN]] / [[GEV]] / [[BE]] / [[FIX]] / [[EME]] / [[PWR]]) — a B2B AI capex thesis. Residential solar / consumer energy was never built.
+- **Actions taken:**
+  - Created [[ENPH]] company page with Q1 2026 data: Rev $282.9M beat, non-GAAP EPS $0.47 beat, non-GAAP GM 44%, FCF $83M, cash $930.6M, GAAP net loss $7.4M
+  - Q2 guide $280-310M, GM 44-47% incl. ~3pp reciprocal tariff drag
+  - Hold consensus (avg PT $59 / current $42)
+  - **Stance: neutral, low conviction** — value-recovery / bombed-out-cyclical play; NOT in core AI capex framework
+  - Explicit framing that ENPH is exposed to consumer rates + tariffs + ITC — all macro headwinds the wiki separately flags
+  - Position sizing guidance: cap at 1-2%, buy zone $35-38, stop $30, trim ladder $52/$65/$80
+- **Feedback log:** added 🛠️ Process gap entry. **Lesson:** wiki's macro pessimism (rates, tariffs, ITC) wasn't anchored to any consumer-rate-sensitive tickers — so user purchase in that space wasn't surfaced. Future improvement: add a "consumer-rate-sensitive" ticker bucket so macro framework maps to specific names.
+- **Wiki touched:** [[ENPH]] (new), [[feedback-log]], [[index]], [[log]]
+
 ## [2026-05-14] PM | Counter-bear relief valve + May 20 macro-micro confluence
 - User shared news feed with multiple macro items. Filtered signal from noise.
 - **Material findings:**

@@ -138,6 +138,9 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 - [[NOC]] — Northrop Grumman; B-21 Raider + Sentinel ICBM; record $95.7B backlog; **stance: bull (medium)**
 - [[KTOS]] — Kratos Defense; XQ-58 Valkyrie autonomous drones + space + hypersonic; **stance: bull (medium)**
 
+### Residential energy / consumer solar (NEW 2026-05-14 — coverage gap closed)
+- [[ENPH]] — Enphase Energy; residential microinverters + IQ Batteries; Q1 beat but GAAP loss + tariff drag; **stance: neutral (low conviction)** — value-recovery setup, NOT in core AI capex thesis
+
 ### Power electronics
 - [[STM]] — STMicroelectronics; auto downturn cap on AI thesis; **stance: neutral**
 - [[ADI]] — Analog Devices; quality compounder; **stance: bull**

@@ -45,6 +45,20 @@ Each entry follows this structure:
 
 ## Recent entries (reverse chronological)
 
+### [2026-05-14] 🛠️ Process gap | Wiki had zero coverage of residential solar / consumer energy — ENPH purchase was off-framework
+
+**Original call (none — gap):** User bought [[ENPH]] (Enphase Energy) on 2026-05-12. The wiki had zero coverage of ENPH or the broader residential solar / consumer energy category. The wiki's "power" coverage is entirely **data-center power infrastructure** ([[VRT]] / [[ETN]] / [[GEV]] / [[BE]] / [[FIX]] / [[EME]] / [[PWR]]) — a B2B hyperscaler AI capex thesis. Residential solar / consumer energy was never built into the framework.
+
+**Observed (2026-05-14):** User asked retroactively whether the wiki had recommended ENPH. Honest answer: no — zero mentions of "ENPH" or "Enphase" anywhere in 92 wiki files. Grep returned only generic "solar+battery" references in [[bottleneck-roadmap]] / [[GEV]] / [[VRT]] as one of 16+ AI-power alternatives.
+
+**Verdict:** 🛠️ **Process gap, now closed.** The wiki built [[ENPH]] retroactively with full Q1 2026 print data (Rev $282.9M beat, non-GAAP EPS $0.47, non-GAAP GM 44%, FCF $83M, $930M cash) + Q2 guide (incl. ~3pp reciprocal tariff GM drag) + Hold consensus (avg PT $59 / current $42). Stance set to **neutral, low conviction** with explicit framing that this is NOT in the core wiki AI-capex thesis — it's a value-recovery / bombed-out-cyclical play exposed to consumer rates + tariffs + ITC policy (all of which the wiki separately flags as macro headwinds).
+
+**Framework:** None — coverage gap. Now bridged via [[ENPH]] company page + this entry.
+
+**Lesson:** The wiki's macro pages ([[fed-policy]] / [[inflation-tariffs]] / [[us-china-relations]]) flag consumer-rate sensitivity, reciprocal tariffs, and ITC-policy risk as bearish headwinds — but the wiki had no consumer-energy-exposed tickers to anchor those macro themes to. **Improvement:** add a **"consumer-rate-sensitive" ticker bucket** (residential solar, EV financing, consumer discretionary durables) so the wiki's macro pessimism actually maps to specific names. **Secondary lesson:** when the wiki's broader macro framework is explicitly bearish on a sector (consumer + tariffs + rate-sensitive), that's relevant context for ANY purchase the user makes in that space — even if the wiki hasn't named the specific ticker. Going forward, add a "How user purchases get evaluated against macro context" check to the workflow.
+
+---
+
 ### [2026-05-14] ⏱️ Right but timing wrong | OUST downgrade was structurally right but ran +26% anyway
 
 **Original call (2026-05-13):** Downgraded OUST conviction medium → low on Hesai competitive-gap data (Hesai 25x scale + profitability, Luminar Chapter 11, Tesla Optimus camera-only). Stock at $26.80. Wiki framing: "Bull case requires US tariffs vs Hesai OR humanoid OEM design win; neither in place."
