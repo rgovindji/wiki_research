@@ -12,6 +12,7 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 
 ## Recent source ingests
 
+- 2026-05-14 budget sources: [[2026-05-14-space-economy-budget-sources]] (Aerospace Corp FY26 budget brief + CSIS commercial services gap + Morgan Stanley ecosystem — Golden Dome $24.4B w/ Space Based Interceptor $5.6B; MTI satellites $500M→$8.8B (17.6x); FY27 Space Force $71B request; commercial starvation pattern)
 - 2026-05-13 podcast: [[2026-05-13-anthropic-cfo-podcast]] (Anthropic CFO Krishna Rao on Invest Like the Best — $9B→$30B ARR in 1 quarter; 9 of Fortune 10 customers; 500% NDR; $75B raised + $50B committed = $125B total; >$100B compute commitment incl. 5 GW Google/Broadcom TPU + 5 GW Amazon Tranium; 90%+ of code by Claude Code; multi-platform fungibility moat)
 - 2026-05-13 research: [[2026-05-13-culper-nvda-short-thesis]] (Culper Research short on NVDA + DoJ indictment of SMCI cofounder Wally Liaw for $2.5B China diversion; SMCI -33%; bear-case sharpening on NVDA and SMCI)
 - 2026-05-13 earnings: [[2026-05-07-RKLB-Q1-2026-earnings]] (RKLB Q1 record: $200M rev +63.5% YoY; $2.2B backlog ~2x; Golden Dome win)

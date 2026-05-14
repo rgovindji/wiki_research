@@ -9,6 +9,29 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-14] ingest | 3 space-economy foundational sources processed
+- User fetched the 3 PDFs/articles I had flagged as Phase 2 documents:
+  1. **Aerospace Corp — FY 2026 Defense Space Budget: Emergence of Golden Dome** (Aug 2025, PDF saved to `raw/reports/`)
+  2. **CSIS — Where Is the Space Force Budget for Commercial Services?** (April 2026, Clayton Swope)
+  3. **Morgan Stanley — Capital Flows as Space Opens for Business** (2020, foundational framing)
+- Consolidated into single source summary: **[[2026-05-14-space-economy-budget-sources]]**
+- **MOST MATERIAL FINDINGS:**
+  - **Golden Dome $24.4B reconciliation funding** = 16% of $153.4B national security total. 4 categories: Tracking threats from space $9.2B; Space-Based Interceptors $5.6B (first since Reagan SDI); Launch/test range $910M; Terrestrial $8.7B. CBO 20-year cost range: $161B-$542B.
+  - **Moving-Target-Indicator satellites: $500M (FY25) → $8.8B (FY26) = 17.6x growth.** Replaces E-3 Sentry AWACS + retired E-8C JSTARS aircraft. **NOC primary beneficiary** (radar + EW heritage + E-8 legacy).
+  - **FY27 Space Force request: $71B (+77% over FY26 $40.2B)** per CSIS.
+  - **Commercial services starvation pattern:** Of $71B FY27 request, only $1.4B clearly earmarked for commercial — and $1.3B of that is launch (SpaceX). TacSRT, SDA, Earth obs, weather all face "Pentagon requests little → Congress adds" cycle. **BKSY / PL (Planet Labs) exposed; ASTS partially exposed.**
+  - **$190M new line for proliferated LEO satcom** (Space Force buying for rest of military) — mildly positive ASTS data point.
+- **Wiki touched:**
+  - [[NOC]] — new bull case bullet on MTI satellites (17.6x growth, NOC primary beneficiary); Golden Dome co-prime breakout context; FY27 $71B framing; Sources section added
+  - [[RKLB]] — sharper Golden Dome SBI context ($5.6B program tier, not single contract); CBO 20-year cost range; Sources updated
+  - [[ASTS]] — new mixed-signal bullet: $190M proliferated LEO satcom positive offset by commercial-services-starvation structural headwind
+  - [[aerospace-defense]] — new Golden Dome 4-category breakdown table; new Commercial Services Gap section flagging BKSY/PL as cautious-coverage candidates
+  - [[space-economy]] — Golden Dome breakdown integrated; MTI satellite ramp; FY27 $71B; Sources expanded
+  - [[index]] — new source ingest entry
+- **Stance / conviction changes:** none. Findings REINFORCE existing positions on NOC (bull/medium), RKLB (bull/high), ASTS (bull/medium).
+- **Names flagged for future coverage:** BKSY (BlackSky), PL (Planet Labs) — Earth observation pure-plays exposed to TacSRT starvation pattern
+- **Total wiki:** 91 files (+1 source summary).
+
 ## [2026-05-14] daily update | Trump-Xi summit outcomes + Warsh confirmed + bond + AVGO snag
 - Ran the 8-step daily ritual. Parallel discovery across markets, summit, earnings, rates, NVDA/AVGO.
 - **Material findings (curated; skipped low-value):**

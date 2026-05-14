@@ -55,10 +55,17 @@ The space economy crossed **$470B in 2026** with **78% commercial revenue** (Mor
 
 ### Defense space buildout
 
-- **Golden Dome layered missile defense** — Space Force's flagship multi-year program. LMT, NOC, RTX are co-primes; RKLB selected for Space Based Interceptor.
-- **Sentinel ICBM** — NOC; ground-based but space-integrated targeting
+- **Golden Dome layered missile defense — $24.4B in reconciliation funding alone (Aerospace Corp FY26 budget brief; see [[2026-05-14-space-economy-budget-sources]])**. First space-based missile interceptor program since Reagan SDI ended.
+  - Tracking threats from space: $9.2B
+  - Space-based missile interceptors: $5.6B (RKLB selected, Raytheon partner)
+  - Launch + test range: $910M
+  - Terrestrial: $8.7B
+  - **Trump claim: $175B / 3-year fielding. CBO range: $161B-$542B over 20 years.**
+- **Moving-Target-Indicator satellites — $500M (FY25) → $8.8B (FY26) = 17.6x growth.** Replaces E-3 AWACS + E-8C JSTARS aircraft. NOC primary beneficiary.
+- **Sentinel ICBM** — NOC; ground-based but space-integrated targeting (~$200B program over decades)
 - **B-21 Raider** — NOC; nuclear bomber + space-integrated mission systems
 - **Commercial Augmentation Space Reserve** — 20 contracts by EOY 2026; formalizes commercial-DoD integration
+- **FY27 Space Force request: $71B (+77% over FY26)** per CSIS — budget trajectory steepens further
 
 ### Direct-to-cell satellite (the disruptive bet)
 
@@ -100,7 +107,9 @@ See [[aerospace-defense]] for the full tiered framework. Summary:
 
 1. [[2026-05-07-RKLB-Q1-2026-earnings]] — Rocket Lab Q1 2026 print
 2. [[2026-05-11-ASTS-Q1-2026-earnings]] — AST SpaceMobile Q1 2026 print
-3. Morgan Stanley Global Space Economy — https://www.morganstanley.com/Themes/global-space-economy
-4. SpaceNews FY26 defense appropriations + Space Force $26B — https://spacenews.com/defense-appropriations-bill-for-2026-funds-space-force-at-26-billion-presses-pentagon-on-golden-dome/
-5. Sacra SpaceX revenue + valuation — https://sacra.com/c/spacex/
-6. CSIS Space Force commercial services analysis — https://www.csis.org/analysis/where-space-force-budget-commercial-services
+3. [[2026-05-14-space-economy-budget-sources]] — **consolidated source summary** for Aerospace Corp FY26 budget brief (Golden Dome breakdown + MTI satellites $500M → $8.8B), CSIS commercial services gap, Morgan Stanley ecosystem framing
+4. Morgan Stanley Global Space Economy — https://www.morganstanley.com/Themes/global-space-economy
+5. SpaceNews FY26 defense appropriations + Space Force $26B — https://spacenews.com/defense-appropriations-bill-for-2026-funds-space-force-at-26-billion-presses-pentagon-on-golden-dome/
+6. Sacra SpaceX revenue + valuation — https://sacra.com/c/spacex/
+7. CSIS Space Force commercial services analysis — https://www.csis.org/analysis/where-space-force-budget-commercial-services
+8. Aerospace Corp FY26 Defense Space Budget Brief (PDF) — https://csps.aerospace.org/sites/default/files/2025-08/FY26BudgetBrief_20250805.pdf

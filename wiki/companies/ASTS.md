@@ -42,6 +42,7 @@ The pure-play direct-to-cellphone-from-space bet — Q1 2026 validated the core 
 - **FCC Supplemental Coverage from Space authorization approved** for US direct-to-device with up to 248 satellites
 - **Commercial pipeline $1.2B+** (per pre-print coverage; not in official release)
 - **Government contracts** — 3 new US Government awards since March 2026 via prime contractors
+- **Mixed signal on Space Force commercial budget (NEW 2026-05-14).** Per CSIS analysis ([[2026-05-14-space-economy-budget-sources]]): FY26 budget includes a **new $190M line for proliferated LEO satcom** (Space Force buying for rest of military) — first time outside launch this would be the largest commercial space services program in the Space Force budget. **However:** broader Pentagon commercial satcom ($1.2B annually) is funded from other service branches' budgets via Space Force working-capital fund, not directly from Space Force budget. Non-launch commercial services (TacSRT, SDA, Earth obs) face structural "starvation pattern" — Pentagon requests little, Congress adds money each year. **Which means:** ASTS's US Government contract trajectory depends on which budget line a given deal sits in. Proliferated LEO satcom is a marginally positive tailwind, but the broader commercial-services-gap pattern is a structural headwind for the Pentagon-dependent leg of the thesis.
 
 ## Bull case
 
@@ -89,6 +90,7 @@ The pure-play direct-to-cellphone-from-space bet — Q1 2026 validated the core 
 ## Sources
 
 1. [[2026-05-11-ASTS-Q1-2026-earnings]] — official Q1 2026 press release
+2. [[2026-05-14-space-economy-budget-sources]] — CSIS analysis on commercial-services starvation pattern + $190M new proliferated LEO satcom line
 
 ## Citations
 

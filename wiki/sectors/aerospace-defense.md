@@ -77,6 +77,33 @@ Three structural drivers converging in 2026:
 - UFO — Procure Space
 - ROKT — SPDR S&P Kensho Final Frontiers
 
+## Golden Dome detailed breakdown (NEW 2026-05-14)
+
+Per [[2026-05-14-space-economy-budget-sources]] (Aerospace Corp FY26 budget brief), the $24.4B Golden Dome reconciliation funding splits into 4 categories:
+
+| Category | $ | Primary beneficiaries |
+|---|---|---|
+| **Tracking threats from space** | **$9.2B** | [[NOC]] (MTI satellites + radar heritage), [[LMT]] (space systems), satellite primes |
+| **Space-based missile interceptors** | **$5.6B** | [[RKLB]] (Space Based Interceptor program selection with Raytheon partner), RTX |
+| **Launch and test range infrastructure** | $910M | SpaceX (private), [[RKLB]] |
+| **Terrestrial elements** | $8.7B | [[LMT]], RTX, NOC (radars, hypersonic + ICBM defense) |
+
+**Moving-Target-Indicator (MTI) satellites — underappreciated mega-program:**
+- **$500M FY25 → $8.8B FY26 = 17.6x growth** (within tracking-threats category)
+- Replaces E-3 Sentry AWACS + retired E-8C JSTARS
+- NOC's E-8 legacy + radar/EW heritage = primary beneficiary
+- Caveat: E-7 Wedgetail reinstatement push (House Appropriations + HASC) could delay ramp
+
+## Commercial services gap pattern (CSIS, April 2026)
+
+Despite $71B FY27 Space Force request, only **$1.4B clearly earmarked for commercial services — and $1.3B of that is launch (SpaceX).** Non-launch commercial space (TacSRT, SDA, Earth observation, weather) face the "Pentagon requests little → Congress adds money" cycle year after year.
+
+**Why this matters for the wiki:**
+- **BKSY (BlackSky)** and **PL (Planet Labs)** — Earth observation; exposed to TacSRT starvation. Not in wiki yet; flagging as cautious-coverage candidates.
+- **IRDM, SATS** — commercial satcom is $1.2B annually but funded by other service branches, not Space Force directly.
+- **[[ASTS]]** — partial exposure; $190M new proliferated LEO satcom line is mildly positive; broader pattern is structural headwind for Pentagon-dependent leg.
+- **Structurally favored** (commercial gap = moat): SpaceX (private; captures $1.3B launch line), [[RKLB]] (HASTE + Space Based Interceptor).
+
 ## Cross-links to existing wiki
 
 - **[[MP]]** — rare-earth NdFeB magnets are critical for defense systems (F-35 contains ~920 lbs of rare-earth magnets per aircraft); MP's DoD strategic-asset positioning is THE single most important Tier 3 supply-chain name across both robotics AND aerospace-defense

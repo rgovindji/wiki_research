@@ -48,7 +48,7 @@ The only US-listed pure-play small/medium-lift launch + space-systems vertically
 - **Q1 2026 record print validates the thesis.** Revenue $200.3M (+63.5% YoY); backlog $2.2B (~2x YoY). **More launches sold in Q1 2026 than full year 2025.** GAAP gross margin 38.2% record; adj EBITDA loss narrowing rapidly.
 - **Neutron is the next leg.** Medium-lift entry into a market where SpaceX Falcon 9 is the only credible Western alternative. Even partial market share at debut creates a step-change in TAM.
 - **Space Systems is the underappreciated moat.** Mynaric + Motiv + Gauss positions RKLB as a vertically-integrated space supplier — they sell components AND launches. Higher-margin recurring revenue.
-- **Defense pivot is durable.** Golden Dome Space Based Interceptor partnership with Raytheon + $190M HASTE hypersonic deal + DoD Department of War contracts. Multi-decade revenue lock.
+- **Defense pivot is durable + Golden Dome SBI is a $5.6B program tier (NEW 2026-05-14).** Per [[2026-05-14-space-economy-budget-sources]] (Aerospace Corp FY26 budget brief): the **Space Based Interceptor category within Golden Dome receives $5.6B in FY25-29 reconciliation funding** — first space-based interceptor program since Reagan SDI ended. RKLB-Raytheon partnership is the named selection. Plus $190M HASTE hypersonic deal + ongoing DoD Department of War contracts. **Which means:** the RKLB defense pivot isn't a single contract — it's positioning within a multi-billion-dollar, multi-decade program category that has presidential-level priority. The CBO 20-year cost range for Golden Dome is $161-542B; even at the low end, RKLB's positioning is structurally durable.
 - **Cash + liquidity strong.** $1.21B cash + $2B+ liquidity = no near-term dilution risk despite ongoing capex for Neutron.
 - **Confidential largest-ever contract signed in Q1** for Neutron + Electron through 2029 — implies named customer disclosure when allowed.
 - **SpaceX IPO comp tailwind.** When SpaceX IPOs at $1.75-2T valuation, RKLB as the only public pure-play launch competitor gets re-rated.
@@ -86,6 +86,7 @@ The only US-listed pure-play small/medium-lift launch + space-systems vertically
 ## Sources
 
 1. [[2026-05-07-RKLB-Q1-2026-earnings]] — official Q1 2026 press release
+2. [[2026-05-14-space-economy-budget-sources]] — Aerospace Corp FY26 budget brief detail on $5.6B Space Based Interceptor program tier (Golden Dome)
 2. Rocket Lab Q1 2026 transcript via Yahoo Finance: https://finance.yahoo.com/markets/stocks/articles/rocket-lab-rklb-q1-2026-165716989.html
 3. Money Morning $120 PT analysis: https://moneymorning.com/2026/05/13/rocket-lab-rklb-q1-2026-earnings-neutron-rocket-price-target
 
