@@ -17,6 +17,24 @@ The path of US short-term interest rates as set by the FOMC. The single biggest 
 - This was widely framed as **Powell's final meeting** as Chair
 - FOMC statement: "Inflation is elevated, in part reflecting the recent increase in global energy prices"
 
+### May 20 = macro + micro confluence (NEW 2026-05-14 PM)
+
+A concentrated Treasury supply window converges with the NVDA Q1 FY27 print:
+- **May 18:** $89B 3-mo bills + $77B 6-mo bills
+- **May 20:** **$16B 20-year Treasury auction** — same day as NVDA Q1 FY27 earnings
+- **May 21:** $19B 10-year TIPS reopened
+
+**Why this matters:** if the 20-year auction tails on the 20th AND NVDA misses/guides cautiously, bond-market shock + equity-earnings shock compound for that session. Conversely, strong auction + NVDA beat + Vera Rubin demand = potential record-high extension. The 30y at 5.02% is the key level to watch — any further break higher amplifies risk.
+
+### Counter-bear relief valve (NEW 2026-05-14 PM)
+
+Two emerging offsets the bond market hasn't priced:
+
+- **OPEC+ plan to complete series of quota hikes** (per delegates, May 14) — moderates oil → relieves energy inflation impulse
+- **IMF: "medium-term inflation expectations remain anchored"** (May 14) — even in IMF's "adverse scenario" framing, anchored expectations give the Fed cover to hold
+
+**Which means:** the path to "this resolves quietly" before June 10 CPI is now visible. **Cooling-scenario probability nudged up from 25% → 30-35%.** Reduces (but doesn't eliminate) the 20% Warsh-cuts-into-hot-inflation tail.
+
 ### Post-PPI-CPI shock update (2026-05-13 → 2026-05-14)
 
 Following the April CPI + PPI hot prints (see [[2026-05-13-ppi-cpi-shock-positioning]]):

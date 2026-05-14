@@ -21,6 +21,23 @@ The top-level synthesis. Read this first. Updated whenever a meaningful new sour
 
 > **What this means (May 14, 2026):** S&P 500 and NASDAQ closed at record highs despite hot inflation + 30y Treasury crossing 5%. Market is choosing AI demand momentum (Anthropic CFO confirmed $9B→$30B ARR; CRWV $99.4B backlog; NBIS profitability inflection; Trump-Xi summit delivered H200 China clearance per the wiki's pre-summit Scenario A framework). **But the underlying tension is real** — 30y at 5%+ is the bond market pricing higher-for-longer regardless of what equities do. **Position discipline:** don't chase records; hold structural compounders; June 10 CPI is the binary that determines if the rates regime stays this way or breaks toward cuts.
 
+### Counter-bear relief valve emerging (NEW 2026-05-14 PM)
+
+Two data points the bond market hasn't priced:
+
+1. **OPEC+ plan to complete series of quota hikes** — more supply coming → moderates oil prices → relieves the Iran-shock-driven energy inflation impulse that drove April PPI to 6% YoY
+2. **IMF: "medium-term inflation expectations remain anchored"** — even with the IMF's "adverse scenario" framing, expectations haven't unanchored. The Fed has cover to hold rather than hike.
+
+**Which means:** the June 10 CPI cooling scenario (prior 25% probability in [[2026-05-13-ppi-cpi-shock-positioning]]) now has fundamental support, not just hope. The 30y >5% may be over-pricing the hike risk. **Probability of cooling scenario nudged up to ~30-35%; accelerating scenario nudged down.** Not a regime change — but the path to "this resolves quietly" is more visible than it was 48 hours ago.
+
+### May 20 = macro+micro confluence day
+
+- **NVDA Q1 FY27 earnings after close** (Wall Street expects $1.77 EPS, ~78% YoY revenue growth)
+- **$16B 20-year Treasury auction same day**
+- **Plus:** $89B 3-mo + $77B 6-mo bill auctions May 18; $19B 10-yr TIPS reopened May 21
+
+**Watch:** if 20-year auction tails on the 20th AND NVDA misses or guides cautiously, bond-market shock could overwhelm equity earnings story for that session. Conversely, strong auction + NVDA beat + Vera Rubin demand commentary = potential record-high extension.
+
 ## The dominant story: AI capex cycle
 
 AI investment is driving **~40% of S&P 500 earnings growth** in 2026. The four hyperscalers (MSFT, AMZN, GOOGL, META) alone are spending **>$200B on AI infra in 2026**; total cloud capex is **~$670B**. Bloomberg Intelligence: AI server spend +45% YoY to $312B in 2026. JPM sees AI driving 13–15% above-trend EPS growth for at least two years.

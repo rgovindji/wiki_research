@@ -182,6 +182,7 @@ Each entry follows this structure:
 - **[[CRWV]] / [[NBIS]] high-conviction upgrades** — Both upgraded on Q1 print magnitude. Verdict on Q2 prints: do margins sustain? Profitability hold?
 - **Trump-Xi summit Scenario A outcome translates to durable de-escalation** — Or does Taiwan flare again before 2028 election? Verdict: 6-12 months.
 - **Late-cycle warning indicators (5 of 6 firing)** — If June 10 CPI confirms regime, indicator framework predicts 5-15% drawdown is on the table. Verdict: by July 2026.
+- **June 10 CPI probability framework** (initially set 2026-05-13): cool 25% / stable hot 45% / accelerate 30%. **Refined 2026-05-14 PM:** OPEC+ quota hikes + IMF anchored expectations = relief-valve evidence. **Cooling scenario nudged to ~30-35%**, accelerate scenario nudged down. Verdict: June 10.
 
 ## Lessons accumulated
 

@@ -9,6 +9,26 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-14] PM | Counter-bear relief valve + May 20 macro-micro confluence
+- User shared news feed with multiple macro items. Filtered signal from noise.
+- **Material findings:**
+  - **OPEC+ plan to complete series of quota hikes** (per delegates) — more supply moderates oil prices → relieves Iran-shock-driven energy inflation impulse
+  - **IMF: "medium-term inflation expectations remain anchored"** — even in IMF's "adverse scenario" framing, expectations haven't unanchored. Gives Fed cover to hold rather than hike.
+  - **Tech rally continuing** — Cisco strong results + NVDA continued momentum
+  - **May 18-21 Treasury supply concentration** — $89B 3-mo + $77B 6-mo bills May 18; **$16B 20-year auction May 20 (same day as NVDA earnings)**; $19B 10-yr TIPS May 21
+- **Strategic synthesis:** OPEC+ + anchored expectations = counter-bear relief valve. The 30y >5% bond pricing may be over-extrapolating. Cooling-scenario probability for June 10 CPI nudged up from 25% → 30-35%. Reduces (but doesn't eliminate) the 20% Warsh-cuts-into-hot-inflation tail.
+- **Wiki touched:**
+  - [[overview]] — "Counter-bear relief valve emerging" section + "May 20 macro+micro confluence" callout
+  - [[inflation-tariffs]] — new "Counter-bear relief valve" section with OPEC+ + IMF framing
+  - [[fed-policy]] — new "May 20 = macro + micro confluence" section + "Counter-bear relief valve" section
+  - [[feedback-log]] — pending verdict refined: June 10 CPI probabilities now 30-35% / 45% / 25-30% (was 25% / 45% / 30%)
+- **Filtered out (noise):**
+  - BoE's Pill jawboning (UK central bank, not US-material)
+  - UK Health Secretary resignation (political noise)
+  - ECB Villeroy on GDP (background)
+  - IMF Iran war assistance (already in framework via energy)
+- **Stance / conviction changes:** none. This is probability refinement at the margin.
+
 ## [2026-05-14] new artifact | Feedback log accountability page launched
 - User requested a "feedback log" tracking wiki calls vs actual outcomes — explicitly as a trust-building mechanism for the eventual Substack/YouTube vision.
 - **Created:** [[feedback-log]] — top-level wiki page with structured schema for tracking:
