@@ -2,7 +2,7 @@
 type: company
 ticker: AVGO
 tags: [ai, semis, custom-silicon, networking, hyperscaler]
-last_updated: 2026-05-09
+last_updated: 2026-05-14
 last_full_review: 2026-05-09
 sources: 0
 conviction: high
@@ -12,6 +12,8 @@ stance: bull
 # Broadcom (AVGO)
 
 **Stance:** bull · **Conviction:** high · **Time horizon:** long-term
+
+> **DEVELOPMENT 2026-05-14 (mildly bearish near-term, thesis intact):** Reports indicate **Broadcom's custom AI hardware plan with OpenAI hit a financing roadblock** — Broadcom will only finance Project Titan's first phase if **Microsoft commits to buying ~40% of the chips**. **OpenAI's first-gen XPU with Broadcom now expected to deploy in volume in 2027 at >1 GW** (was previously framed as mass production late 2026 — material timing slip). **Stock dropped ~3% on the report.** Net read: doesn't change the structural bull case (Anthropic's 5 GW TPU + Broadcom partnership and existing 5-customer pipeline are intact) but materially de-emphasizes Project Titan as the near-term catalyst the wiki was tracking. Watch for: (a) MSFT commitment language on Project Titan, (b) Q3 2026 update on OpenAI XPU deployment timeline.
 
 ## One-line thesis
 The non-Nvidia AI infrastructure pure play — designs custom AI accelerators (XPUs) for **six hyperscalers** (Google, Meta, ByteDance, Anthropic, OpenAI, plus one more), ships the world's first **102.4 Tbps switching silicon** (Tomahawk 6), and projects **$100B AI revenue by 2027**. The OpenAI "Project Titan" deal alone targets **10 GW of deployed compute by 2029**. The single best NVDA hedge.

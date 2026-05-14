@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-05-13
+last_updated: 2026-05-14
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -12,14 +12,14 @@ The top-level synthesis. Read this first. Updated whenever a meaningful new sour
 
 ## Current macro stance
 
-- **Equities:** S&P 500 closed **above 7,400** on May 10 (first close above that level) → S&P slipped 0.12% on May 11 with Dow flat, Nasdaq −0.34%, Russell 2000 +0.76% (small-cap leadership). April close was 7,209 (all-time high then). Goldman targets **7,600 YE** (+5.5%), Oppenheimer **8,100 YE** (+12%). Forward P/E **20.9** vs. 5yr avg 19.9 / 10yr avg 18.9. Earnings growth pace is what matters more than multiples — analysts call for **~21% EPS growth in 2026**.
+- **Equities (NEW RECORDS May 14):** S&P 500 **+0.5% to record close 7,444.25**; **NASDAQ +1.2% to record close 26,402.34**; Dow -0.14%. Chips drove gains despite hot PPI. Breadth weak (decliners > advancers both NYSE and Nasdaq). Goldman targets **7,600 YE** (+5.5%), Oppenheimer **8,100 YE** (+12%). Forward P/E **20.9** vs. 5yr avg 19.9 / 10yr avg 18.9. Earnings growth pace is what matters more than multiples — analysts call for **~21% EPS growth in 2026**.
 - **Energy / Iran:** WTI crude **+2.59% to $97.89**, Brent **+2.63% to $104** on May 11 on US-Iran conflict developments — keeps energy-driven inflation pressure on [[fed-policy]].
 - **Semis:** **PHLX Semiconductor Index +66% YTD** — the leading sub-sector by a wide margin. **NVDA hit ATH $5.4T market cap May 13, 2026** (reports Q1 FY27 May 20 with guide $78B ± 2% — single highest-leverage near-term catalyst). **Neocloud breakout:** both [[CRWV]] (Q1 May 7) and [[NBIS]] (Q1 May 13) printed blow-out quarters with combined $143.8B contracted backlog.
-- **Rates:** Fed held at **3.50–3.75%** in April 2026 (8-4 dissent — biggest split since Oct 1992). **CME FedWatch (May 12, 2026): 37% probability of a HIKE by EOY 2026** after PPI shock; cut probability through EOY 2027 essentially zero. **Incoming Fed Chair Kevin Warsh** (taking reins May 2026) is a dovish Trump appointee walking into hawkish data — see [[fed-policy]] for the 4-scenario framework. **10y Treasury 4.49% intraday May 13** — approaching the 4.5% volatility-trigger threshold flagged in [[2026-05-13-ppi-cpi-shock-positioning]].
+- **Rates:** Fed held at **3.50–3.75%** in April 2026 (8-4 dissent — biggest split since Oct 1992). **CME FedWatch (May 12-14, 2026): 37%+ probability of a HIKE by EOY 2026**; cut probability through EOY 2027 essentially zero. **Kevin Warsh CONFIRMED by Senate May 13 (narrow vote)** — investors actively assessing his independence under political pressure. See [[fed-policy]] for the 4-scenario framework. **10y Treasury at 4.46% May 14** (was 4.49% intraday May 13). **30y Treasury crossed 5.02% on May 14 — first time above 5%.** Bond market not comforted by Warsh confirmation; long end pricing higher-for-longer convincingly even as 10y plateaus.
 - **Inflation:** **REGIME SHIFT 2026-05-13.** April CPI 3.8% YoY (highest since May 2023), April PPI **6.0% YoY** with core PPI MoM 1.0% (3.3x consensus). Iran-US-Israel oil shock propagating from energy into core. See [[inflation-tariffs]] and [[2026-05-13-ppi-cpi-shock-positioning]] for the full positioning playbook.
 - **Risks:** valuation (CAPE **39.8**, highest since 2000 dot-com), concentration (Mag 7 = **35% of S&P 500**, matches dot-com peak), AI capex ROI uncertainty, **NEW (2026-05-13): inflation regime shift + Warsh-vs-data Fed tension**. See [[valuation-environment]], [[market-concentration]], [[ai-bubble-debate]], [[2026-05-13-ppi-cpi-shock-positioning]].
 
-> **What this means (May 13, 2026):** Two consecutive hot inflation prints (April CPI + April PPI) plus a new dovish Fed Chair (Warsh) walking into hawkish data has reset the macro backdrop in 48 hours. The wiki's structural compounders (NVDA, TSM, ASML, GOOGL, MSFT) keep their earnings stories, but lose the rate-cut tailwind that was supporting multiples. **Don't add equity exposure this week.** June 10 CPI is the binary that confirms or breaks the regime shift. Rotate marginal capital toward backlog-locked industrials (FIX/EME/PWR) and rare earths (MP); trim leveraged-duration speculative AI (CRWV/NBIS/OUST).
+> **What this means (May 14, 2026):** S&P 500 and NASDAQ closed at record highs despite hot inflation + 30y Treasury crossing 5%. Market is choosing AI demand momentum (Anthropic CFO confirmed $9B→$30B ARR; CRWV $99.4B backlog; NBIS profitability inflection; Trump-Xi summit delivered H200 China clearance per the wiki's pre-summit Scenario A framework). **But the underlying tension is real** — 30y at 5%+ is the bond market pricing higher-for-longer regardless of what equities do. **Position discipline:** don't chase records; hold structural compounders; June 10 CPI is the binary that determines if the rates regime stays this way or breaks toward cuts.
 
 ## The dominant story: AI capex cycle
 

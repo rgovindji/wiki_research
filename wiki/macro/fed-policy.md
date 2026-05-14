@@ -17,11 +17,13 @@ The path of US short-term interest rates as set by the FOMC. The single biggest 
 - This was widely framed as **Powell's final meeting** as Chair
 - FOMC statement: "Inflation is elevated, in part reflecting the recent increase in global energy prices"
 
-### Post-PPI-CPI shock update (2026-05-13)
+### Post-PPI-CPI shock update (2026-05-13 → 2026-05-14)
 
 Following the April CPI + PPI hot prints (see [[2026-05-13-ppi-cpi-shock-positioning]]):
 
-- **Incoming Fed Chair: Kevin Warsh** — confirmed taking the reins later in May 2026. Warsh has been **outspoken in favor of cutting** and aligns with President Trump's vocal preference for an easing central bank
+- **Kevin Warsh CONFIRMED by Senate on May 13, 2026 (narrow vote)** — investors now actively assessing his independence under political pressure. Analysts expect "any major policy changes to happen gradually" — building consensus among FOMC members takes time
+- **30y Treasury crossed 5.02% on May 14** — first time above 5%; 10y at 4.46% (down slightly from May 13's 4.49%). **Bond market not comforted by Warsh confirmation** — long end pricing higher-for-longer convincingly even as the 10y plateaus
+- Warsh has been **outspoken in favor of cutting** and aligns with President Trump's vocal preference for an easing central bank
 - **CME FedWatch market pricing (per CNBC, May 12, 2026):**
   - **37% probability of a HIKE by EOY 2026** (up from ~0% pre-print)
   - **Cut probability through EOY 2027 = essentially zero** — a 24-month dovish bet erased in two prints

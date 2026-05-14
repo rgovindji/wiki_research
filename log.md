@@ -9,6 +9,25 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-14] daily update | Trump-Xi summit outcomes + Warsh confirmed + bond + AVGO snag
+- Ran the 8-step daily ritual. Parallel discovery across markets, summit, earnings, rates, NVDA/AVGO.
+- **Material findings (curated; skipped low-value):**
+  - **Trump-Xi summit (May 14) delivered Scenario A "Theater" with partial Scenario B (H200 carve-out):** US cleared H200 chip sales to **10 Chinese firms** (Alibaba, Tencent, ByteDance, JD.com + 6 others); **no shipments yet**; 25% revenue arrangement (chips pass through US territory first); Blackwell + Rubin remain restricted. **"Strategic stability" framework agreed.** **Board of Trade formalized.** Strait of Hormuz to remain open; Xi expressed interest in more US oil. **Xi told NVDA + TSLA + AAPL CEOs China will "open wider."** Jensen joined Trump trip last-minute. **Wiki's pre-summit 60% Scenario A probability was directionally correct.**
+  - **Kevin Warsh CONFIRMED by Senate May 13** (narrow vote). Investors assessing independence; analysts expect changes "gradually."
+  - **30y Treasury crossed 5.02% May 14 — first time above 5%.** 10y at 4.46% (slightly off May 13's 4.49% peak). **Bond market not comforted by Warsh confirmation.** Long-end pricing higher-for-longer convincingly even as 10y plateaus.
+  - **Markets at records despite hot PPI:** S&P +0.5% to 7,444.25 (record); NASDAQ +1.2% to 26,402.34 (record); Dow -0.14%. Chips drove the gains. Breadth weak.
+  - **AVGO Project Titan financing snag:** Reports indicate Broadcom will only finance OpenAI's Phase 1 custom AI hardware if **Microsoft commits to buying ~40% of the chips.** OpenAI's first-gen XPU deployment now expected 2027 at >1 GW (was mass-production late 2026). Stock -3% on the report.
+- **No new wiki pages.** Updates to existing:
+  - [[NVDA]] — Post-summit update on H200 clearance to 10 firms (no shipments yet); Jensen last-minute trip
+  - [[AVGO]] — New top-banner on Project Titan financing roadblock + 2027 deployment slip
+  - [[fed-policy]] — Warsh CONFIRMED + 30y at 5.02% + 10y at 4.46%
+  - [[us-china-relations]] — New "Trump-Xi Beijing summit outcomes" section
+  - [[2026-05-12-trump-xi-summit-investment-implications]] — Major post-summit update section added with ticker-by-ticker actual-vs-predicted mapping; market reaction; "bigger surprise" framing on 30y crossing 5%
+  - [[overview]] — Market records + Warsh confirmation + 30y >5% + revised "what this means" framing
+- **Stance / conviction changes:** none. Trump-Xi outcomes were the wiki's base case (Scenario A 60%). AVGO bull/HIGH unchanged — Project Titan slip is mildly bearish near-term but structural bull case (Anthropic 5 GW TPU + 5 named hyperscalers) intact.
+- **Skipped (low-value):** AMD Q1 already covered; Qnity/Ambiq/IonQ not in wiki; generic listicles.
+- **Pending:** HTML refresh already done this morning; can update with summit-confirmed timestamps if needed. NVDA Q1 FY27 on May 20 = next material catalyst — always-on earnings workflow will trigger.
+
 ## [2026-05-13] research + podcast | Culper NVDA short thesis + Anthropic CFO podcast — two major sources processed
 - **Two distinct material sources processed in this session block:**
 

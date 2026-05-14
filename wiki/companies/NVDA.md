@@ -13,7 +13,7 @@ stance: bull
 
 **Stance:** bull · **Conviction:** high · **Time horizon:** long-term (multi-year) with tactical entry/exit windows
 
-> **NEAR-TERM CATALYST (NEW 2026-05-13):** NVDA reports **Q1 FY27 earnings on May 20, 2026** after the close. Guidance is **$78B ± 2%**. **NVDA hit ATH market cap $5.4T on May 13.** Jensen Huang is in Beijing with Trump's delegation (May 13-14 summit) — China H200 access framing will likely surface on the call. This is the single highest-leverage near-term read of the cycle.
+> **NEAR-TERM CATALYST (Updated 2026-05-14):** NVDA reports **Q1 FY27 earnings on May 20, 2026** after the close. Street consensus: **$1.77 EPS, ~78% YoY revenue growth** (guide was $78B ± 2%). **NVDA hit ATH market cap $5.4T on May 13.** Jensen joined Trump's Beijing delegation last-minute. **POST-SUMMIT UPDATE (May 14):** US **cleared H200 sales to 10 Chinese firms** (Alibaba, Tencent, ByteDance, JD.com + 6 others) per Reuters — but **NO SHIPMENTS YET**; chips must pass through US territory under 25% revenue arrangement. **Blackwell + Rubin remain restricted.** Xi told Huang + Musk + Cook that China will "open wider." Net read: the chip-carve-out happened at the H200 level (what wiki Scenario B partially anticipated) — incremental positive but not transformational; bull case unchanged.
 
 ## One-line thesis
 The dominant supplier of AI accelerators with a $1T confirmed demand backlog through 2027 and a deepening software/networking moat (CUDA, NVLink, Spectrum-X) — the canonical picks-and-shovels long-term hold for the AI capex cycle.

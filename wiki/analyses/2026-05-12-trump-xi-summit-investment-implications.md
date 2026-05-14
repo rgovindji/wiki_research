@@ -1,14 +1,49 @@
 ---
 type: analysis
 tags: [macro, geopolitics, us-china, summit, ai-chips, taiwan, rare-earths]
-last_updated: 2026-05-12
-last_full_review: 2026-05-12
+last_updated: 2026-05-14
+last_full_review: 2026-05-14
 sources: 0
 ---
 
 # Trump-Xi Beijing Summit (May 14-15, 2026) — Investment Implications
 
 > **Premise:** Trump is in Beijing meeting Xi on May 14-15, 2026. Headline framing is "open China." This page maps that headline to specific positions in the wiki — which theses change, which don't, and what to watch.
+
+## ✅ Post-summit update (2026-05-14)
+
+The summit delivered **Scenario A (Theater) outcomes with partial Scenario B (chip carve-out at H200 level only)** — directionally consistent with the wiki's pre-summit framework. The 60% probability case priced for Scenario A was confirmed.
+
+**Verified outcomes (Reuters, CNBC, CFR, NBC reporting May 14):**
+
+- **"Strategic stability" framework agreed** — guides US-China relations for "next 3 years and beyond" (Beijing's preferred phrasing)
+- **"Board of Trade" mechanism announced** (USTR Greer's pre-summit concept formalized) — senior officials oversee Chinese commitments to buy US goods and services
+- **US cleared H200 chip sales to 10 Chinese firms** including Alibaba, Tencent, ByteDance, JD.com (Reuters exclusive). **NO SHIPMENTS YET** — 25% revenue arrangement requires chips to pass through US territory first. **Blackwell + Rubin remain restricted.** Jensen joined Trump's trip last-minute on his invitation.
+- **Strait of Hormuz** to remain open; Xi expressed interest in buying more American oil
+- **Xi tells NVDA, TSLA, AAPL CEOs that China will "open wider"** — diplomatic framing aimed at US delegation
+- **No public rare-earth retaliation language** — the wiki's "underappreciated risk" did not materialize this round
+
+**Ticker-by-ticker actual vs predicted impact:**
+
+| Ticker | Pre-summit prediction (Scenario A 60%) | Post-summit actual | Read |
+|---|---|---|---|
+| [[NVDA]] | Free option, not base case; minor upside if H200 cleared further | H200 cleared to 10 firms but **no Blackwell**; no shipments yet | **Mildly positive incremental** — clearance is real but executable revenue pending |
+| [[TSM]] | Slight bullish on de-escalation | No Taiwan escalation; "strategic stability" framing | **Slight bullish confirmed** — tail-risk reduction is the main story |
+| [[ASML]] | Unchanged — EUV stays restricted | EUV not discussed publicly; no change | **Unchanged** |
+| [[AAPL]] | Cook's presence supports consumer demand framing | Xi "open wider" framing applied to Cook directly | **Slight bullish on demand, doesn't fix memory bear case** |
+| [[TSLA]] | Musk's presence supports FSD-China optionality | Musk part of delegation; no FSD-specific deals announced | **No material change** |
+| AMD / AVGO | Incremental China upside if MI300 unlocked | No MI300 / AMD-specific China clearance announced | **Unchanged** |
+| Memory ([[MU]] / [[SNDK]] / [[WDC]]) | China-deal-with-surcharge = more supply chain demand | Memory not specifically addressed | **Unchanged** |
+
+**Market reaction (May 14 close):**
+- **S&P 500 +0.5% to record close 7,444.25**
+- **NASDAQ +1.2% to record close 26,402.34**
+- Dow -0.14%; breadth weak (decliners > advancers)
+- Chips drove the gains despite hot PPI
+
+**Bigger surprise that overshadowed the summit:** **30y Treasury crossed 5.02%** on May 14 — first time above 5%. The bond market read accelerating inflation + Warsh's narrow confirmation as "higher-for-longer" confirmed. This is more macro-material than the summit details.
+
+> **What this means:** The wiki's pre-summit framework was directionally correct — Scenario A "Theater with marginal carve-outs." Net positive for [[NVDA]] (H200 to 10 firms) and [[TSM]] (de-escalation), nothing transformational. **The more important May 14 data point is bond market — 30y crossing 5% with Warsh confirmed says markets are pricing higher-for-longer convincingly.** Don't let the China-deal headlines distract from the inflation/rates regime shift that's the dominant story.
 
 ## TL;DR
 

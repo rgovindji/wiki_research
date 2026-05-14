@@ -42,6 +42,21 @@ Most of the wiki's AI-tech-heavy positioning is on names that **either depend on
 - **Status:** China has been holding out on buying H200s — wants Blackwell access as negotiating lever
 - **Nvidia preparing 82,000 H200 GPU shipments** to China (March 2026 announcement)
 
+### Trump-Xi Beijing summit outcomes (May 14, 2026)
+
+The summit delivered Scenario A (Theater) outcomes with partial Scenario B (chip carve-out at H200 level only) — directionally consistent with the wiki's pre-summit framework in [[2026-05-12-trump-xi-summit-investment-implications]].
+
+**Verified outcomes:**
+
+- **"Strategic stability" framework agreed** — to guide US-China relationship for next 3 years and beyond (Beijing's preferred framing)
+- **"Board of Trade" mechanism announced** (USTR Greer's pre-summit concept now formalized) — comprising senior officials from both countries to oversee Chinese commitments for significant purchases of US goods and services
+- **US cleared H200 chip sales to 10 Chinese firms** including Alibaba, Tencent, ByteDance, JD.com (Reuters exclusive, May 14) — but **NO SHIPMENTS YET**. 25% revenue arrangement requires chips to pass through US territory first. **Blackwell + Rubin remain restricted.**
+- **Strait of Hormuz** — both sides agreed it must remain open to support energy flow; Xi expressed interest in buying more American oil
+- **Xi tells Nvidia, Tesla, Apple CEOs that China will "open wider"** — diplomatic framing aimed at US business delegation
+- **Jensen Huang joined Trump trip last-minute** at Trump's invitation; picked up in Alaska en route
+
+**Investment read:** Scenario A "Theater" outcome was the 60% probability case the wiki pre-priced. Net = stabilization (positive for [[TSM]] tail-risk reduction), incremental positive for [[NVDA]] (H200 China clearance), no change to Blackwell/Rubin restrictions, no rare-earth retaliation surfaced. Markets reacted modestly positive (NASDAQ +1.2% to record close 26,402 May 14).
+
 ### Active DoJ enforcement of export controls (NEW 2026-05-13)
 
 The export-control regime is no longer just policy posture — it's active prosecutorial enforcement:
