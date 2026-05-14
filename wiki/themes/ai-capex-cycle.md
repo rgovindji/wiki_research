@@ -61,6 +61,17 @@ The multi-year, hundreds-of-billions-of-dollars buildout of AI compute infrastru
 - **Construction labor** (see [[datacenter-construction]]): [[FIX]] (mech/HVAC), [[EME]] (MEP), [[PWR]] (transmission/grid) — ~$76B contracted backlog across three names
 - Still not yet covered: nuclear utilities (CEG/VST/TLN), industrial gases (APD/LIN), data center REITs (DLR/EQIX)
 
+### Second-wave buyer commitment — Anthropic alone at $100B+ (NEW 2026-05-13)
+
+From the Anthropic CFO Krishna Rao podcast (see [[2026-05-13-anthropic-cfo-podcast]]):
+
+- **5 GW Google + Broadcom TPU deal starting 2027**
+- **Up to 5 GW Amazon Tranium deal**
+- **>$100B total compute commitment** (in addition to existing infrastructure)
+- ARR $9B → >$30B in Q1 2026
+
+**Which means:** The $725B Big-4 hyperscaler 2026 capex figure is only one layer of the demand stack. **Labs are independently locking in compute** — Anthropic alone committing $100B+ over the next 2-3 years means the hyperscalers' own capex is at least partly underwritten by labs paying them. The "demand is over-extrapolated" bear case requires both layers to break simultaneously. Both happening simultaneously is less likely than either one independently.
+
 ### Neocloud cohort breakout — Q1 2026 prints (NEW 2026-05-13)
 
 The Neocloud category ([[CRWV]] + [[NBIS]]) decisively broke out from "speculative AI infrastructure" to "hyperscaler-quality scaled infrastructure" in Q1 2026:

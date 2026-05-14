@@ -53,6 +53,7 @@ Two re-acceleration stories on parallel tracks — AWS regaining cloud growth sh
 ## Sources
 1. [[2026-05-12-stratechery-amazon-durability]] — Ben Thompson on AWS Nitro/EFA networking handicap vs Nvidia/Broadcom; structural AI-readiness gap
 2. [[2026-05-12-hyperscaler-capex-q1-revisions]] — Q1 2026 earnings synthesis; AMZN held capex flat at $200B while peers raised
+3. [[2026-05-13-anthropic-cfo-podcast]] — **Anthropic CFO confirms up to 5 GW Tranium deal with Amazon** — strongest external validation of AWS custom-silicon strategy; partial counter-balance to the Stratechery AWS-networking-handicap bear thesis at the chip layer specifically
 
 ## Citations
 - Motley Fool Mag 7 ranking: https://www.fool.com/investing/2026/04/17/rank-magnificent-seven-stocks-best-worst-buys/

@@ -12,6 +12,8 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 
 ## Recent source ingests
 
+- 2026-05-13 podcast: [[2026-05-13-anthropic-cfo-podcast]] (Anthropic CFO Krishna Rao on Invest Like the Best — $9B→$30B ARR in 1 quarter; 9 of Fortune 10 customers; 500% NDR; $75B raised + $50B committed = $125B total; >$100B compute commitment incl. 5 GW Google/Broadcom TPU + 5 GW Amazon Tranium; 90%+ of code by Claude Code; multi-platform fungibility moat)
+- 2026-05-13 research: [[2026-05-13-culper-nvda-short-thesis]] (Culper Research short on NVDA + DoJ indictment of SMCI cofounder Wally Liaw for $2.5B China diversion; SMCI -33%; bear-case sharpening on NVDA and SMCI)
 - 2026-05-13 earnings: [[2026-05-07-RKLB-Q1-2026-earnings]] (RKLB Q1 record: $200M rev +63.5% YoY; $2.2B backlog ~2x; Golden Dome win)
 - 2026-05-13 earnings: [[2026-05-11-ASTS-Q1-2026-earnings]] (ASTS Q1: $14.7M rev; $3.5B cash; 98.9 Mbps direct-to-unmodified-smartphone validated; 45 BlueBird target EOY 2026)
 - 2026-05-13 earnings: [[2026-05-07-CRWV-Q1-2026-earnings]] (retroactive — CRWV Q1 blow-out: rev $2.078B +112% YoY; backlog $99.4B; Anthropic Claude deal NEW; Meta +$21B; conviction-upgrade candidate pending sign-off)

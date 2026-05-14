@@ -45,6 +45,9 @@ The dominant supplier of AI accelerators with a $1T confirmed demand backlog thr
 - **Hyperscaler custom silicon (broader).** TPU ([[GOOGL]]), Trainium ([[AMZN]]), MTIA ([[META]]) erode NVDA's wallet share over time. Not a near-term threat; very real over 3-5 years.
 - **Demand cycle peak risk.** If hyperscaler capex pauses (see [[ai-capex-cycle]]), the entire bull case re-rates simultaneously.
 - **China export controls.** Geopolitical revenue cap; unpredictable policy environment.
+- **Export-control diversion risk + Culper short thesis (NEW 2026-05-13 — see [[2026-05-13-culper-nvda-short-thesis]]).** **DoJ indicted SMCI cofounder + sitting board member Wally Liaw on March 19, 2026** for conspiring to illegally export ≥$2.5B in NVDA AI tech to China through SE Asian intermediaries (SMCI -33% on the news). **Culper Research is now publicly short NVDA** alleging the pattern extends through Megaspeed (Singapore), Speedmatrix, Novagate Cloud, Aivres Systems, Giga Computing, and YTL AI Cloud Malaysia — claiming >20% of FY26 compute revenue is China-attributed via diversion. NYT (Paul Mozur) published parallel reporting. **Which means:** the export-control compliance dimension has shifted from policy risk to active prosecutorial enforcement. More DoJ indictments of intermediaries are plausible. Jensen's optics — in Beijing with Trump's delegation this week while DoJ prosecutes diversion through an NVDA Elite OEM — are a real management-risk vector that didn't exist 30 days ago. **May 20 Q1 FY27 earnings call now has a new analyst-question dimension** on China revenue mix + export control compliance.
+
+> **What this means:** Nvidia's bull case is intact — its earnings power is from US hyperscalers, not China, and the DoJ is prosecuting middlemen (SMCI cofounder, fixers), not Nvidia leadership. But this isn't nothing. A sitting board member of an Nvidia Elite OEM was indicted for $2.5B of diversion. The Justice Department is actively investigating the broader pattern. A credible short-seller (Culper) has published a thesis that mainstream press (NYT) has independently validated parts of. Jensen will face questions on the May 20 earnings call that didn't exist before. Position-size discipline matters more than the bull thesis changing.
 - **Hardware obsolescence cycle.** Each new generation depreciates the prior; impacts hyperscaler ROI calculations and resale value.
 - **Concentration in S&P 500.** Largest stock by market cap → tied to passive flow risk (see [[market-concentration]]).
 
@@ -90,3 +93,5 @@ The dominant supplier of AI accelerators with a $1T confirmed demand backlog thr
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for $90B contracts, "X-1" framing, H100 long-life depreciation
+2. [[2026-05-13-culper-nvda-short-thesis]] — DoJ indictment of SMCI cofounder + Culper short thesis on export-control diversion to China via SE Asian intermediaries
+3. [[2026-05-13-anthropic-cfo-podcast]] — Anthropic CFO confirms 9 of Fortune 10 customers + 500% NDR + $9B→$30B ARR; multi-platform compute strategy (Anthropic uses NVDA GPU + Tranium + TPU fungibly = NVDA share-of-wallet at top labs is not 100%)

@@ -59,6 +59,21 @@ This is a specific, measurable form of margin stacking. **30% of Big 4 hyperscal
 ### SemiAnalysis (May 2026): Anthropic margins say "earnings are real" (NEW STRONG BULL POINT)
 The single biggest counter to the bear thesis from new data: **Anthropic ARR exploded from $9B to $44B** within months, with **inference gross margins moving from 38% to 70%+**. From [[2026-05-13-semianalysis-value-capture]]. If model labs are running 70%+ inference gross margins on tokens, then **the hyperscaler capex IS earning its cost of capital** — the bear case "capex hangover / ROI uncertain" framing materially weakens. Counter-cap: Anthropic isn't a hyperscaler, so its margins don't directly prove MSFT/AMZN/GOOGL/META AI revenue economics — but it's a strong directional signal that token monetization is real and growing.
 
+### Anthropic CFO confirms the bull case at insider level (NEW 2026-05-13)
+
+The strongest single piece of evidence the wiki has captured. From the Invest Like the Best podcast with CFO Krishna Rao (see [[2026-05-13-anthropic-cfo-podcast]]):
+
+- **ARR confirmed:** "Started year at $9B run-rate, ended quarter at >$30B run-rate" — direct CFO quote
+- **9 of Fortune 10 are customers**
+- **Net Dollar Retention >500% annualized** (customers tripling+ year-over-year)
+- **$75B raised in 2 years + $50B committed = ~$125B total capital**
+- **>$100B committed compute spend** including 5 GW Google+Broadcom TPU deal + 5 GW Amazon Tranium deal starting 2027
+- **30 product/feature releases in January 2026 alone**
+- **90+% of Anthropic's code is written by Claude Code itself** — recursive self-improvement at production scale
+- "Two double digit million-dollar commits in a 20-minute Uber ride" anecdote on enterprise velocity
+
+> **What this means:** This is the strongest single answer to the "AI capex isn't earning its cost of capital" bear case. The CFO of the second-largest closed AI lab on record confirms (a) revenue growing more than 3x in a single quarter, (b) customer-cohort expansion at 500% annualized rates, and (c) $100 billion in forward compute commitments. If Anthropic alone signs $100B of compute, the hyperscaler $725B 2026 capex is funded by buyers who have already committed to keep paying. The "demand is over-extrapolated" narrative is structurally weakened.
+
 > **What this means:** Anthropic (the maker of Claude) is selling AI services at 70+ cents profit on every dollar of revenue, and its annualized sales jumped from $9 billion to $44 billion in just months. That kind of profitability proves the customers buying AI services are actually getting their money's worth — which is the single best argument that the trillions being spent on AI infrastructure aren't going to waste.
 
 ### SemiAnalysis (Apr 2026): "This Time Might Be Different" — GPU rental data refutes the softening thesis (NEW)
@@ -90,6 +105,7 @@ The fundamentals can stay strong while positioning deteriorates. Watch these sig
 - **"Trillion-dollar club" rhetoric on cyclicals.** MU "eyeing $1T club" headlines May 2026 after stock ran 120%. **Which means:** trillion-dollar framing belongs to NVDA / TSMC (structural monopolies); applying it to memory makers is late-cycle reach. The size of the prize is being extrapolated from peak-cycle margins.
 - **GPU rental price softening on prior-gen.** GQG channel checks May 2026: H200 secondary-market discounts >50% vs year-ago. **Which means:** even if current-gen demand stays tight, the depreciation cycle for n-1 silicon is steepening — eventually flows through to capex revisions. **⚠️ DIRECTLY CONTRADICTED by SemiAnalysis Apr 2026 data (NEW; see [[2026-04-01-semianalysis-gpu-rental-index]]):** H100 1-yr contract pricing **+40% in 5 months** ($1.70 → $2.35/hr), all capacity through Sep 2026 already booked, customers paying $14/hr for AWS p6-b200 spot. Some H100 contracts being renewed **at the exact same rate they were signed at 2-3 years ago**. The GQG anecdote was a localized data point; the SemiAnalysis survey-based index (100+ market participants + transaction data) shows the OPPOSITE through March 2026. **Net:** the warning indicator framework is conceptually correct but **this specific signal is NOT firing** — pricing is reaccelerating, not decaying. Track on the SemiAnalysis index, not channel anecdotes.
 - **Geopolitical tail risk acceleration.** US-Iran conflict driving WTI +2.59% May 2026; Trump-Xi meeting scheduled. **Which means:** an external shock during peak positioning concentration (Mag 7 = 35% of S&P) creates non-linear drawdown risk even if AI fundamentals are intact.
+- **Short-seller research targeting NVDA management + export-control compliance, validated by DoJ enforcement (NEW 2026-05-13).** Culper Research disclosed short position in NVDA alleging >20% of FY26 compute revenue is China-attributed via SE Asian diversion networks; **DoJ indicted SMCI cofounder + sitting board member Wally Liaw on March 19, 2026** for conspiring to illegally export ≥$2.5B in NVDA AI tech to China (SMCI -33% on the news). NYT (Paul Mozur) published parallel reporting. See [[2026-05-13-culper-nvda-short-thesis]]. **Which means:** the export-control compliance dimension has shifted from theoretical policy risk to active prosecutorial enforcement. Even if NVDA leadership is unaffected, the pattern of additional indictments + congressional scrutiny + management-time-on-defense is the classic late-cycle "things break above ground level even when the building's foundation is fine" dynamic.
 
 **Position management framework when 3+ of these are firing simultaneously (current state):**
 1. Trim leveraged cyclical trades (memory) — they've already paid the cycle

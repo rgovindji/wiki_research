@@ -9,6 +9,44 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-13] research + podcast | Culper NVDA short thesis + Anthropic CFO podcast — two major sources processed
+- **Two distinct material sources processed in this session block:**
+
+### 1. Culper Research short thesis on NVDA (via user-saved raw/social/nvidia_short_thesis_twitter.txt)
+
+- **Verified facts:** **DoJ indicted SMCI cofounder + sitting board member Wally Liaw on March 19, 2026** for conspiring to illegally export ≥$2.5B in NVDA AI tech to China; **SMCI -33% on the news**. **Culper Research publicly short NVDA** alleging the pattern extends through Megaspeed, Speedmatrix, Novagate Cloud, Aivres Systems, Giga Computing, YTL AI Cloud Malaysia. NYT (Paul Mozur) published parallel reporting.
+- **Source summary:** [[2026-05-13-culper-nvda-short-thesis]] — separates verified facts (court records) from contested allegations (single-source)
+- **Wiki touched:** [[NVDA]] bear case (new export-control diversion bullet + "What this means" box); [[SMCI]] (Liaw indictment moved from generic "legal overhang" to specific indictment data point; bear case synthesis box); [[ai-bubble-debate]] (late-cycle warning indicators — added short-seller research as a signal); [[us-china-relations]] (new "Active DoJ enforcement of export controls" section); [[index]] (new source ingest)
+- **Stance / conviction changes:** NONE. NVDA stays bull/high; SMCI stays neutral/low. Bear cases sharpened on both.
+
+### 2. Anthropic CFO Krishna Rao on Invest Like the Best podcast (1.5-hr transcript)
+
+- **Most material AI source the wiki has captured.** CFO directly confirms:
+  - **ARR $9B → $30B+ run-rate in Q1 2026** (~3.3x in single quarter)
+  - **$75B raised in 2 years; $50B more committed = ~$125B total capital**
+  - **>$100B in compute commitment**: 5 GW Google+Broadcom TPU starting 2027 + up to 5 GW Amazon Tranium
+  - **9 of Fortune 10 are customers**
+  - **Net Dollar Retention >500% annualized**
+  - **90+% of Anthropic's code is written by Claude Code** (recursive self-improvement at production scale)
+  - **30 product/feature releases in January 2026 alone**
+  - **Mythos** is the newest model tier above Opus 4.7 — cyber-capable, phased release
+  - Pricing: brought Opus 4.5 DOWN, saw Jevons-paradox consumption explosion
+  - Multi-platform fungibility: Tranium + TPU + NVDA GPU; "only language lab using all three"
+  - "America first" approach; Department of War interaction confirmed
+- **Source summary:** [[2026-05-13-anthropic-cfo-podcast]] — comprehensive synthesis with verbatim CFO quotes
+- **Wiki touched:**
+  - [[ai-bubble-debate]] — major upgrade to "Anthropic margins are real" section with CFO-level confirmation + new "What this means" framing
+  - [[ai-capex-cycle]] — new "Second-wave buyer commitment — Anthropic alone at $100B+" section showing labs are independently locking compute beyond hyperscaler $725B
+  - [[GOOGL]] — Anthropic 5 GW TPU deal is strongest external validation of TPU competitiveness vs NVDA
+  - [[AMZN]] — Anthropic 5 GW Tranium deal partially counter-balances Stratechery AWS-networking-handicap bear thesis at the chip layer
+  - [[NVDA]] — Anthropic uses NVDA but ALSO Tranium and TPU fungibly = NVDA share-of-wallet at top labs is not 100% (sharpens existing bear case data point)
+- **Stance / conviction changes:** NONE on existing tickers. The data REINFORCES existing bull theses on [[GOOGL]] and [[AVGO]]; partially OFFSETS the [[AMZN]] AWS-networking bear case.
+
+### Combined day-end status
+
+- **Total wiki:** 90 files (+2: 2 new source summaries today)
+- **Net read:** Bear case for NVDA/SMCI sharpens on export-control diversion; bull case for the broader AI complex significantly strengthens via Anthropic CFO data. The two pull in opposite directions on NVDA but neither is stance-changing.
+
 ## [2026-05-13] new sector | Aerospace & Defense — Phase 1 build
 - User requested new aerospace sector. Researched 6 parallel queries (RKLB, ASTS, SpaceX, space economy, DoD Space Force, defense primes); fetched RKLB + ASTS Q1 press releases per the new earnings workflow.
 - **Phase 1 (this session — 11 new files):**

@@ -42,6 +42,16 @@ Most of the wiki's AI-tech-heavy positioning is on names that **either depend on
 - **Status:** China has been holding out on buying H200s — wants Blackwell access as negotiating lever
 - **Nvidia preparing 82,000 H200 GPU shipments** to China (March 2026 announcement)
 
+### Active DoJ enforcement of export controls (NEW 2026-05-13)
+
+The export-control regime is no longer just policy posture — it's active prosecutorial enforcement:
+
+- **March 19, 2026 DoJ indictment** of Supermicro ([[SMCI]]) cofounder + sitting board member **Wally Liaw** (+ Taiwan GM Steven Chang + fixer Willy Sun) for conspiring to illegally export **≥$2.5B in NVDA AI tech to China** via SE Asian intermediaries. SMCI -33% on the news; Liaw left the board.
+- **May 2026 Culper Research short thesis on NVDA** alleging the pattern extends through Megaspeed (Singapore), Speedmatrix, Novagate Cloud, Aivres Systems (NVDA Elite OEM), Giga Computing (NVDA Elite OEM), and YTL AI Cloud Malaysia. NYT (Paul Mozur) published parallel reporting. See [[2026-05-13-culper-nvda-short-thesis]].
+- **Pattern:** Southeast Asian shell companies / data centers / OEM partners → repackaged servers → China. The Malaysia / Singapore / Taiwan corridor is the active investigation surface.
+
+> **What this means:** US-China relations isn't just summit theater (Trump-Xi May 14-15) and policy announcements anymore — it's an active law enforcement regime that's prosecuting senior tech executives and could plausibly produce more indictments in 2026-2027. For NVDA, this is a management-risk vector. For [[SMCI]], it's the dominant overhang. For the broader supply chain, it's pressure on Elite OEMs (Aivres, Giga Computing) and SE Asian data center partners (YTL AI Cloud).
+
 ### Capital flows
 - US restrictions on outbound investment into China-based AI and quantum (Treasury Outbound Investment Program, 2024)
 - China VIE-structured ADRs trading at discounts; periodic delisting threats from SEC
