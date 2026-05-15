@@ -58,6 +58,24 @@ Two ways AI may show up in wiki-tracked financials:
 1. **JPM** invests heavily in AI infrastructure — Jamie Dimon has called it "a transformational technology." Cost-takeout play; not yet showing up in margins materially.
 2. **Asset managers** (BLK, BX, KKR) launch AI-themed funds and benefit from flow tailwind. **Apollo + Blackstone are positioning as private credit lenders to neoclouds** ([[CRWV]] equipment financing; [[NBIS]] data center development debt) — direct AI-capex exposure via debt rather than equity.
 
+### MAJOR EXPOSURE TRACKING (NEW 2026-05-15) — see [[ai-infrastructure-debt]]
+
+The wiki's bear case has materially sharpened on the financials sector specifically:
+
+- **Banks offloading $38B+ AI DC debt:** JPM, Morgan Stanley, SMBC, MUFG, Citi, Goldman all named
+- **Private credit absorbing:** Blue Owl ($30B Meta Hyperion + OTIC tech fund 40.7% Q1 redemption requests), Apollo ($25B flagship gated), Blackstone (BCRED limit raised 5%→7%), BlackRock, TPG
+- **SRT mechanism** moving exposure → pension + insurance
+- **FSB:** AI = >33% of private credit deals 2025 (vs 17% prior 5yr avg)
+- **$120B AI DC debt** shifted off bank balance sheets
+
+**Stance implications (preliminary):**
+- **Money-center banks (JPM/BAC):** mild downgrade — exposure being managed but balance sheet absorbing initial underwriting risk
+- **Asset managers / private credit (BX/APO/ARES/BLK):** **stance shifts to neutral/bear** on near-term (12-18mo) given Q1 2026 redemption pressure + AI concentration in deal flow. **Was bull (low) — now neutral.** Long-term thesis intact, but the gating risk is real.
+- **Insurance (MET/PRU):** flag as monitoring item — final holders of SRT credit risk
+- **Pension funds:** N/A direct equity, but watch state pension annual reports for AI-correlated holdings
+
+See [[ai-infrastructure-debt]] for the full framework.
+
 ## Pre-committed views (preliminary — stub-level confidence)
 
 | Bucket | Stance | Reasoning |

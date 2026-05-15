@@ -9,6 +9,30 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-15] PM3 | New theme page — wiki/themes/ai-infrastructure-debt.md
+
+- **Followed through on the research thread opened in PM2.** Created dedicated [[ai-infrastructure-debt]] page unifying the SRT mechanism, named exposures, private credit absorption, and 2008 CDO/SIV pattern analog into a single tracker.
+- **Additional research that fed into the page:**
+  - **Private credit redemption crisis (Q1 2026) is bigger than initially captured:**
+    - Blue Owl OCIC ($36B fund): 21.9% requested → gated at 5%
+    - **Blue Owl OTIC ($6B tech fund): 40.7% requested → gated at 5%** (near-run on tech-focused private credit)
+    - Apollo flagship ($25B): 11.2% requested → gated
+    - Blackstone BCRED ($82B): 7.9% requested → raised limit 5%→7%
+    - $4.6B+ trapped in redemption limits across funds
+  - **SRT mechanism details verified via BIS + Basel + CFA Institute:** 2% of bank loans currently, US = 30% of global deal flow, 50-80% RWA reduction per transaction, investor base = private credit + hedge funds + pension + insurance
+  - **Major AI DC private credit deals named:** Blue Owl $30B Meta Hyperion (Louisiana), Apollo + Blackstone + BlackRock + TPG all participating in data center deals
+- **NVDA bill-and-hold verification attempt:** WebSearch + WebFetch on 10-K could not surface any specific bill-and-hold disclosure. NVDA customer advances grew $323M (H1 FY25) → $664M (H1 FY26) — consistent with CONSERVATIVE deferred revenue practice, not supportive of bill-and-hold. Per ASC 606, material bill-and-hold requires disclosure; absence is informative. Flagged as pending verification on May 20 earnings call.
+- **Wiki touched:**
+  - **NEW:** [[ai-infrastructure-debt]] (full theme page — 130+ lines with mechanism explanation, named exposures, falsifiable watch triggers, counter-arguments, sources list)
+  - [[index]] — added ai-infrastructure-debt to Themes section
+  - [[financials]] — added "MAJOR EXPOSURE TRACKING" section with stance implications:
+    - **Asset managers / private credit (BX/APO/ARES/BLK):** stance shifts neutral/bear on near-term given Q1 2026 redemption pressure (was bull/low)
+    - Money-center banks (JPM/BAC): mild downgrade pending
+    - Insurance (MET/PRU): flag for monitoring as SRT end-holders
+- **Stance / conviction changes:**
+  - **Asset managers / private credit ([[financials]] section): bull (low) → neutral/bear** — preliminary; needs proper company page work to confirm. Flagged prominently.
+- **Methodology note:** The wiki's "verify named specifics" discipline that surfaced in PM2 paid off here. Created a tracker page for the bear vector with the highest-leverage data, not a generic theme rant. Falsifiable watch triggers attached to the page.
+
 ## [2026-05-15] PM2 | Bear case verification via Gemini transcript search + WebSearch
 
 - **User used Gemini to dig deeper into the podcast transcripts.** Returned: (a) Dylan Patel (Kakashi) is the source for bill-and-hold on NVDA per the podcast — significant credibility upgrade; (b) Zitron named specific projects (Project Rainier, Stargate Abilene, MSFT Fairwater Wisconsin); (c) Zitron sourced FT story on banks "choking" on AI DC debt + $1T-of-$6T insurance annuities in private credit claim; (d) Kedrosky's NVDA over-ordering is his own analysis, not external evidence.

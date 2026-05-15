@@ -49,6 +49,7 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 - [[ai-capex-cycle]] — hyperscalers spending ~$725B in 2026 (+77% YoY); 40% of S&P 500 EPS growth attributed to AI
 - [[market-concentration]] — Mag 7 = 35% of S&P 500, equal to dot-com peak; counter-thesis
 - [[ai-bubble-debate]] — bull (real productivity) vs. bear (CAPE 39.8, capex ROI uncertain)
+- [[ai-infrastructure-debt]] — the contagion mechanism; $38B Oracle DC debt distribution, $120B off-balance-sheet shift, SRT mechanism, Blue Owl + Apollo redemption gates, named bank exposures, 2008 CDO/SIV pattern analog (NEW 2026-05-15)
 - [[nvda-supply-chain]] — NVIDIA's vendor stack + direct equity investments; second-order AI plays
 - [[bottleneck-roadmap]] — time-sequenced supply-chain bottlenecks: memory (2026) → cleanrooms (2027) → EUV (2028-2030); now includes parallel robotics bottleneck roadmap (rare earths → sensors → actuators)
 - [[datacenter-construction]] — the **physical labor / contracting layer** building AI data centers; ~$76B contracted backlog across [[FIX]] / [[EME]] / [[PWR]]; overlooked because industrial-classified, not tech
