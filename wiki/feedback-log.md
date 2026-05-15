@@ -45,6 +45,22 @@ Each entry follows this structure:
 
 ## Recent entries (reverse chronological)
 
+### [2026-05-15] ✅ Right (4th validation) | POET -11% on dilution dump + Q1 miss + CFO exit
+
+**Original call:** AVOID stance per [[ai-bubble-debate]] late-cycle indicator #1; specifically flagged POET as the canonical small-cap-photonics-trading-on-narrative example.
+
+**Observed (2026-05-15):** Two-day sequence completed the canonical playbook:
+- May 14: Lumilens partnership pumped stock +38% to $19.87 (with 22.9M-share warrant grant to Lumilens at $8.25 deep ITM)
+- May 15: POET dumped $400M of stock + 19M-share warrants at $21 to undisclosed institutional investor. Stock -11% to $18.27. Q1 EPS missed ($0.08 loss vs $0.05 expected). CFO Thomas Mika announced retirement after 10 years.
+
+**Verdict:** ✅ **Right — 4th validation in 5 weeks.** The complete dilute-into-narrative pattern played out exactly as the wiki framework described. Lumilens deal created the pop; the $400M raise monetized it; CFO exits ahead of close.
+
+**Framework:** [[ai-bubble-debate]] late-cycle warning indicator #1 + [[POET]] dedicated company page
+
+**Lesson:** The dilute-into-narrative two-step is now the canonical playbook signature: (1) partnership announcement with non-cash warrant component creates the price pop; (2) cash raise into the pop within 24-48 hours monetizes the dilution. **Future wiki application:** when ANY small-cap announces a major partnership with a warrant component, **check for a follow-on cash raise within 48 hours.** This is now a named pattern. Going forward, mark this as "POET signature" pattern. Also: stop counting these as separate validations — fold into single durable framework point on the [[POET]] page going forward.
+
+---
+
 ### [2026-05-15] 〰️ Partially right (Zitron) + ✅ Right (Patel co-sign bill-and-hold) | Bear case strongmen verified
 
 **Original call (2026-05-15):** Integrated Kedrosky + Zitron bear cases into [[ai-bubble-debate]] as falsifiable bear-trigger framework. Specific Zitron claims to verify: (a) "operational" DCs are 1-2 buildings out of dozens, (b) bill-and-hold on NVDA, (c) bank debt offloading. Specific projects named: Project Rainier, Stargate Abilene, MSFT Fairwater.

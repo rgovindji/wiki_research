@@ -76,6 +76,9 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 
 ## Companies (`wiki/companies/`)
 
+### Anti-canonical (the wiki's "AVOID" reference)
+- [[POET]] — POET Technologies; canonical late-cycle indicator #1; AVOID stance held through 4 validation events in 5 weeks (Marvell drop -49%, bounce +130%, Lumilens pop +38%, $400M dilution -11%); **stance: AVOID (bear)**
+
 ### Mag 7 + adjacent
 - [[NVDA]] — AI chip leader; Q1 FY27 data center +69% YoY; $90B LT contracts; **stance: bull**
 - [[GOOGL]] — Alphabet; cheapest Mag 7; TPU = NVDA alternative; Q4 Gemini ARR $5B; **stance: bull**

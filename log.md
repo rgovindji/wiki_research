@@ -9,6 +9,22 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-15] PM4 | POET $400M dilution dump + Q1 miss + CFO exit — dedicated wiki page created
+
+- **POET stock -11% to $18.27** today on three stacked events:
+  1. **$400M registered direct offering** to undisclosed single institutional investor — 19M common shares + 19M warrants at $21/$26.15. **38M potential new shares = ~30-40% dilution.**
+  2. **Q1 FY26 EPS missed:** adjusted loss $0.08 vs $0.05 expected (wider by $0.03)
+  3. **CFO Thomas Mika announced retirement** (May 12) after 10 years of service. Timing: ahead of the $400M financing close (May 18). Reason not publicly disclosed.
+- **Two-day playbook completed:** May 14 Lumilens partnership (with 22.9M-share warrant at $8.25 deep ITM to Lumilens) pumped stock +38% to $20+; May 15 POET sold $400M into the pop. **Lumilens deal created the pop; the $400M raise monetized it.** This is the canonical small-cap-photonics dilute-into-narrative playbook the wiki has been documenting.
+- **Wiki action:**
+  - **NEW:** [[POET]] dedicated company page (AVOID stance, high conviction). Snapshot, full bull-and-bear case, position sizing guidance, 4-validation track record, key questions, recent developments timeline
+  - [[feedback-log]] — 4th validation entry (-49% drop, +130% bounce, +38% Lumilens pop, -11% dilution all hit the framework correctly). New pattern named: "dilute-into-narrative two-step" — when a small-cap announces partnership-with-warrant, check for follow-on cash raise within 48 hours
+  - [[index]] — added "Anti-canonical" section with POET as the wiki's reference AVOID stance
+- **User context:** User's friend has $100K+ in POET, sees the $18.27 pullback as a "better buying opportunity." Wiki framework view: this is the FOMO-on-pullback pattern; the asymmetric downside is BIGGER at $18 (vs $8.20 PT = 2.2x consensus) than at $8 was. Position sizing >5% of net worth is concentration risk inconsistent with the speculative nature.
+- **Wall Street consensus PT remains $8.20** per public consensus. Stock at $18.27 = 2.2x consensus. If stock returns to consensus = -55% downside.
+- **Stance / conviction changes:** none. POET stays AVOID/high. Pattern was correctly identified prior to today's event.
+- **Skipped (low-value):** General "POET drop" market coverage; speculation on the institutional buyer identity (will surface in 13F filings naturally).
+
 ## [2026-05-15] PM3 | New theme page — wiki/themes/ai-infrastructure-debt.md
 
 - **Followed through on the research thread opened in PM2.** Created dedicated [[ai-infrastructure-debt]] page unifying the SRT mechanism, named exposures, private credit absorption, and 2008 CDO/SIV pattern analog into a single tracker.
