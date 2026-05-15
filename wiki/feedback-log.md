@@ -45,6 +45,26 @@ Each entry follows this structure:
 
 ## Recent entries (reverse chronological)
 
+### [2026-05-15] 〰️ Partially right (Zitron) + ✅ Right (Patel co-sign bill-and-hold) | Bear case strongmen verified
+
+**Original call (2026-05-15):** Integrated Kedrosky + Zitron bear cases into [[ai-bubble-debate]] as falsifiable bear-trigger framework. Specific Zitron claims to verify: (a) "operational" DCs are 1-2 buildings out of dozens, (b) bill-and-hold on NVDA, (c) bank debt offloading. Specific projects named: Project Rainier, Stargate Abilene, MSFT Fairwater.
+
+**Observed (2026-05-15, via Gemini transcript search + WebSearch):**
+
+**(a) DC commissioning claim:** PARTIALLY WRONG. Project Rainier IS at 7/30 buildings (numbers accurate) BUT those 7 buildings = 2.2 GW running 500K Trainium2 chips for Anthropic — meaningful operational scale, not fictional. Stargate Abilene is at ~4/8 (Zitron said 1→2 — out of date). MSFT Fairwater Wisconsin Phase 1 operational by July 2026 (on schedule, not fake). **Framing misleading, numbers technically accurate.**
+
+**(b) Bill-and-hold on NVDA:** UPGRADED. Per podcast transcript, **Dylan Patel (SemiAnalysis) is the source.** This is the wiki's most-trusted semis voice. Promoted from "Zitron allegation" to "Patel + Zitron" — material credibility upgrade. Action: verify on next NVDA 10-Q + flag for May 20 earnings Q&A.
+
+**(c) Bank debt offloading:** VERIFIED + BIGGER. $38B Oracle-leased DC debt being distributed by JPM/MUFG over 6+ months at discounts to non-bank lenders. 6 major banks named: JPM, Morgan Stanley, SMBC, MUFG, Citi, Goldman. SRT (Significant Risk Transfer) mechanism transferring exposure to private credit + insurance/pension funds. FSB: AI = >33% of private credit deals 2025 (vs 17% prior 5yr avg). **Tech groups shifted $120B AI DC debt off bank balance sheets.**
+
+**Verdict:** 〰️ Zitron partially right (debt claim verified, DC claim empirically weak on framing); ✅ Patel bill-and-hold gets credibility upgrade; ✅ wiki's "verify before adopting" discipline held — Zitron's claims got fact-checked rather than ingested wholesale.
+
+**Framework:** "Strongest version of bear case" intake methodology (vs dismissing all bears as cranks)
+
+**Lesson:** Two methodology wins. (1) **Verify named specifics — Zitron's "1-2 buildings of dozens" claim collapsed under fact-check; his "banks choking on AI debt" claim verified and got bigger.** Single-source ≠ single-truth. (2) **Source-credibility matters.** Same claim (bill-and-hold) from Zitron alone has lower weight than from Zitron + Dylan Patel. Future intake should ask: "who is the actual source behind this assertion?" Wiki promoted the bank-debt thread from research-only to active bear trigger and added named DC examples to the bull rebuttal.
+
+---
+
 ### [2026-05-14] ✅ Right (3rd validation) | POET +38% on Lumilens deal — same pattern, framework holds
 
 **Original call:** AVOID stance per [[ai-bubble-debate]] late-cycle warning indicator #1 (small-cap AI-photonics names trade on narrative without earnings inflection).

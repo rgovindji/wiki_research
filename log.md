@@ -9,6 +9,29 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-15] PM2 | Bear case verification via Gemini transcript search + WebSearch
+
+- **User used Gemini to dig deeper into the podcast transcripts.** Returned: (a) Dylan Patel (Kakashi) is the source for bill-and-hold on NVDA per the podcast — significant credibility upgrade; (b) Zitron named specific projects (Project Rainier, Stargate Abilene, MSFT Fairwater Wisconsin); (c) Zitron sourced FT story on banks "choking" on AI DC debt + $1T-of-$6T insurance annuities in private credit claim; (d) Kedrosky's NVDA over-ordering is his own analysis, not external evidence.
+- **WebSearch verification on the named DCs:**
+  - **Project Rainier (AWS Indiana):** 7 of 30 buildings operational ✓ (Zitron's numbers right) BUT those 7 are **2.2 GW running 500K Trainium2 for Anthropic** — meaningful scale, not fictional. $26B committed across phases. Phase II planned.
+  - **Stargate Abilene:** Zitron said 1→2 buildings in 6 months; reality is ~4 of 8 operational May 2026, remaining 6 mid-2026. 450K GB200 GPUs total. **Zitron framing out of date.**
+  - **MSFT Fairwater Wisconsin:** Phase 1 operational by July 2026 (on schedule), +15 buildings approved Jan 2026. $7.3B invested. **Active phased buildout, not fake.**
+- **Bank-debt-offloading verification:** Verified + BIGGER than Zitron stated.
+  - **$38B Oracle-leased DC debt** being distributed by JPM + MUFG at discounts to non-bank lenders
+  - 6 major banks offloading: JPM, Morgan Stanley, SMBC, MUFG, Citi, Goldman
+  - **SRT (Significant Risk Transfer)** mechanism transferring risk to private credit + insurance + pension funds
+  - **FSB stat:** AI = >33% of private credit deals 2025 (vs 17% prior 5yr avg)
+  - **Tech groups shifted $120B AI DC debt off bank balance sheets** (FT)
+  - Man Group quote: "out of scale to anything we've thought about, ever"
+- **Strategic synthesis:** Two methodology wins captured. (1) **Verify-named-specifics discipline** — Zitron's "1-2 buildings of dozens" framing collapsed under fact-check; his banks-offloading-debt claim verified and got materially bigger. (2) **Source credibility matters** — bill-and-hold from Zitron + Dylan Patel weighs more than Zitron alone.
+- **Wiki touched:**
+  - [[ai-bubble-debate]] — 3 entries updated with verified specifics; new dedicated "AI infrastructure debt" section with $38B Oracle deal + 6 banks + SRT mechanism + FSB stats
+  - [[feedback-log]] — 〰️/✅ verdict entry capturing the partial validation + methodology lessons
+  - [[overview]] — new top-level callout on AI infrastructure debt as systemic risk vector wiki had missed
+- **Stance / conviction changes:** none. Bear thesis sharpened with verified data; bull thesis unchanged.
+- **Research thread opened:** dedicated [[ai-infrastructure-debt]] page potentially worth building (next session) — would unify SRT mechanism, named exposures, private credit absorption, insurance/pension fund risk. **This is closer to 2008 CDO/SIV pattern than dot-com pattern** and the wiki should treat it explicitly as the contagion mechanism, not just a bull-vs-bear debate point.
+- **Outstanding follow-up:** WebFetch NVDA 10-Q revenue recognition footnote to verify bill-and-hold claim before May 20 earnings.
+
 ## [2026-05-15] PM | Bear case integration — Zitron + Kedrosky + Jane Street DC tour
 
 - **3 podcast sources processed.** Two bear cases (Zitron x2 episodes, Kedrosky on Plain English) + one bull data point (Jane Street DC tour). Goal: sharpen the wiki's bear framework with the strongest available critiques rather than dismiss them.

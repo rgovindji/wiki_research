@@ -70,9 +70,9 @@ Two well-credentialed bears made the sharpest version of the bubble case in podc
 | Argument | Wiki integration |
 |---|---|
 | **3 horsemen of bubble pop:** (a) DC under construction cancelled, (b) DC planned never built, (c) operational DC shutting down for lack of demand | **Falsifiable framework.** None have happened yet — track explicitly |
-| **"Operational" DCs are 1-2 buildings out of dozens; multi-GW announcements ≠ commissioned capacity** | **Testable + coverage gap.** Wiki accepts announced capacity. Worth tracking SemiAnalysis site-level commissioning vs announcement |
-| **"Bill and hold" on NVDA:** counting revenue from GPUs sitting in warehouses awaiting DC commissioning | **Material allegation.** SEC ASC 606 has specific rules. Check NVDA 10-Q revenue recognition footnote; flag for May 20 Q&A |
-| **Bank debt offloading at discounts:** financial sector nervousness | **Coverage gap.** Need specific examples for tracking |
+| **"Operational" DCs are 1-2 buildings out of dozens; multi-GW announcements ≠ commissioned capacity** | **VERIFIED 2026-05-15 — partially right, framing misleading.** Specifics he named: (a) **Project Rainier (AWS Indiana):** 7 of 30 buildings operational — BUT those 7 are 2.2 GW running 500K Trainium2 chips for Anthropic. (b) **Stargate Abilene:** he claimed "1 → 2 buildings in 6 months" — actually ~4 of 8 operational May 2026; remaining 6 mid-2026 (450K GB200 GPUs total). (c) **MSFT Fairwater Wisconsin:** Phase 1 operational by July 2026, +15 buildings approved Jan 2026. **Verdict:** building counts are technically accurate but framing misleads — multi-GW operational capacity is real, not fictional. Active phased buildout, not "fake." |
+| **"Bill and hold" on NVDA:** counting revenue from GPUs sitting in warehouses awaiting DC commissioning. **Source per podcast: Dylan Patel (SemiAnalysis)** — the wiki's most-trusted semis source has co-signed the claim. | **Material allegation, credibility upgraded.** SEC ASC 606 has specific rules. Verify on NVDA 10-Q revenue recognition footnote; flag for May 20 Q&A. Already added to NVDA earnings playbook as watch item #7. |
+| **Bank debt offloading at discounts:** financial sector nervousness | **VERIFIED 2026-05-15 — bigger than Zitron stated.** $38B of construction debt for Oracle-leased Texas + Wisconsin data center being distributed by JPMorgan + MUFG over 6 months at discounts to non-bank lenders. Banks offloading: **JPMorgan, Morgan Stanley, SMBC, MUFG, Citi, Goldman**. Mechanism: **Significant Risk Transfer (SRT)** synthetic securitizations moving exposure to private credit + hedge funds + pension funds. **Financial Stability Board flagged:** AI firms = >33% of private credit deals in 2025 (up from 17% prior 5yr avg). **Tech groups shifted $120B of AI DC debt OFF balance sheets** per FT. Man Group's Matthew Moniot: "out of scale to anything we've thought about, ever." UK/European deal sizes haven't been seen since pre-2008 syndicated loans. **This is the most concrete bear data point captured in 2026 to date.** |
 | **Capacity wall for OpenAI/Anthropic** from slow DC build | **Inverts his own bear case** — if true, argues FOR more capex spending, not less |
 | **Circular economy:** Hyperscalers funding labs that pay back as cloud revenue | Partially right (~30-50% of MSFT-OpenAI). Anthropic CFO data ($9B→$30B ARR; 9 of Fortune 10 customers; Claude Code adoption) is a strong counter-data point |
 | **NVDA invests in own customers (CRWV/NBIS/Lambda)** | Real but ~$10-15B equity stakes vs $200B+ revenue from MSFT/GOOGL/META/AMZN (none NVDA-invested) — doesn't carry his stronger "fundamentally a revenue model" claim |
@@ -80,6 +80,20 @@ Two well-credentialed bears made the sharpest version of the bubble case in podc
 #### Counter-data: Jane Street DC tour (May 2026)
 
 Quick reality check against Zitron's "DCs aren't being built": Jane Street's Texas facility runs **4,032 GPUs across 56 racks at 140 kW per cabinet** (14x traditional density). Real liquid-cooled deployment, not announcement. Validates [[VRT]] / [[ETN]] power+cooling thesis. One DC ≠ industry survey, but it's a concrete counter to "operational means 1-2 buildings out of dozens."
+
+#### AI infrastructure debt — the real systemic risk vector (NEW 2026-05-15, verified)
+
+Separately from any "data centers aren't being built" theatrical bear case, the actual financing structure has confirmed fragility:
+
+- **$38B Oracle-leased DC construction debt** being distributed by JPMorgan + MUFG over 6+ months, with some banks selling at discount to non-bank lenders
+- **6 major banks offloading:** JPMorgan, Morgan Stanley, SMBC, MUFG, Citi, Goldman
+- **SRT (Significant Risk Transfer)** mechanism: synthetic securitizations moving AI infrastructure loan exposure from regulated banks → private credit, hedge funds, pension funds
+- **$120B of AI DC debt** total shifted off bank balance sheets (FT reporting)
+- **FSB warning:** AI firms = **>33% of private credit deals in 2025** (up from 17% prior 5yr avg) = concentration risk in less-regulated channel
+- **Zitron's "$1T of $6T insurance annuities tied to private credit"** claim (unverified but FSB direction validates)
+- **SPV structure risk:** data centers funded by Special Purpose Vehicles that buy GPUs against project revenues. If projects lack revenue, debt isn't repaid — creditors stuck with GPUs that have no resale market
+
+**Why this matters more than the "is AI a bubble" debate:** Even if AI capex is justified and DCs produce real value, **the financing layer transferring $120B+ of risk from banks to insurance/pension funds is the actual contagion mechanism** that historically converts an industry slowdown into a financial crisis. This is the 2008 SIV / CDO pattern, not the dot-com leverage-free crash pattern. **Wiki had ZERO coverage of this until May 15.** Promoting to active bear trigger.
 
 #### Watch list — falsifiable bear triggers
 

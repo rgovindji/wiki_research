@@ -21,6 +21,18 @@ The top-level synthesis. Read this first. Updated whenever a meaningful new sour
 
 > **What this means (May 14, 2026):** S&P 500 and NASDAQ closed at record highs despite hot inflation + 30y Treasury auctioning above 5% with soft demand. Market is choosing AI demand momentum (**AMAT just raised CY26 semi-equipment growth guide from >20% to >30%**; Cisco AI infrastructure orders raised $5B → $9B; Anthropic CFO confirmed $9B→$30B ARR; CRWV $99.4B backlog; NBIS profitability inflection; Trump-Xi summit delivered H200 China clearance). **But the underlying tension is real** — 30y at 5%+ confirmed at auction (not just screen quote) is the bond market pricing higher-for-longer regardless of what equities do. **Position discipline:** don't chase records; hold structural compounders; June 10 CPI is the binary that determines if the rates regime stays this way or breaks toward cuts.
 
+### AI infrastructure debt — the systemic risk vector the wiki had been missing (NEW 2026-05-15)
+
+Bear case integration today surfaced a **verified, named, $38B+ specific exposure** the wiki framework had been blind to:
+
+- **JPMorgan + MUFG distributing $38B Oracle-leased DC construction debt** at discounts to non-bank lenders
+- Banks named offloading: **JPM, Morgan Stanley, SMBC, MUFG, Citi, Goldman**
+- **$120B of AI DC debt** total shifted off bank balance sheets (FT)
+- **SRT (Significant Risk Transfer)** mechanism moving exposure → private credit, hedge funds, pension funds
+- **FSB stat:** AI firms = **>33% of private credit deals 2025** (up from 17% prior 5yr avg)
+
+**Which means:** the financing structure of the AI buildout is now the closest analog to 2008's CDO/SIV risk transfer — not the dot-com leverage-free crash. Even if AI capex is justified and DCs produce real value, the $120B+ being shifted from banks to insurance + pension + private credit is the contagion mechanism that historically converts industry slowdowns into financial crises. This sits alongside (not instead of) the bull thesis. See [[ai-bubble-debate]] "AI infrastructure debt" section + [[financials]] for private-credit exposure naming.
+
 ### Friday May 15 reversal — bond market wins the day (NEW 2026-05-15)
 
 - **S&P -1%, NASDAQ -1.3%** — pulled back from Thursday's record close on yield spike + Trump-Xi summit disappointment
