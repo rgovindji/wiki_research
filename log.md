@@ -9,6 +9,32 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-15] EOD | Daily update close — Friday close data + Blue Owl risk-off signal
+
+- **Friday close confirmed:** S&P -1.24% to 7,408.50; NASDAQ -1.54% to 26,225.14; Dow -1.07% to 49,526.17. Worst day since the Trump-Xi summit week began.
+- **Wiki tickers moves:**
+  - NVDA -4.39% on H200 China limbo + macro overlay
+  - AMAT -3% despite Thursday beat + CY26 >30% guide raise (post-print selling pattern)
+  - CBRS -10% after Thursday +68% IPO debut surge — late-cycle volatility
+  - Intel -8% to $108 after 214% YTD run on Apple foundry speculation (not in wiki, signal only)
+  - **POET -11% to $18.27** on $400M dilution dump + Q1 miss + CFO exit (covered in PM4)
+- **Other material signals:**
+  - **Bill Ackman's Pershing Square took a MSFT position** — described pullback as "rare opportunity to buy dominant tech franchise at compelling valuation." Institutional bull-side validation
+  - **Blue Owl OPTED NOT TO FUND Oracle's $10B Michigan data center** — bear-case data point for [[ai-infrastructure-debt]]; CEO explicitly stated reducing software exposure (May 7); but Blue Owl AUM still grew 15% YoY. Largest private credit AI funder being selective, not pulling out wholesale
+  - **Trump left Beijing with NO rare earth deal confirmed** — China 90% rare earth refining + 60%+ mined supply gives massive leverage. Bullish for [[MP]] domestic rare earth thesis; bearish for any name requiring China rare earth supply
+  - **Apollo $8B in two recent DC deals** (Zelter quote) — still actively deploying, just more selective
+  - **Ares co-president flagged $900B opportunity** for third-party DC investment — frames the scale of private credit absorption ahead
+- **Next week catalysts confirmed:**
+  - **May 20 Wed AC: NVDA Q1 FY27** — consensus updated $1.78/$78.98B (slightly higher than prior $1.77/$78.8B)
+  - **May 21 Thu BMO: WMT Q1 FY27** — consumer health check
+  - **May 20 + 21:** $16B 20-year Treasury auction (same day NVDA) + $19B 10-year TIPS reopened
+- **Wiki updates:**
+  - [[ai-infrastructure-debt]] — Blue Owl Oracle Michigan PASS data point added; CEO software-reduction statement; PIMCO+Blue Owl $29B Meta partnership now framed as "selective continuation"
+  - [[overview]] — Friday close numbers updated; CBRS, Intel, Ackman MSFT position added to context
+- **Stance / conviction changes:** none.
+- **Skipped (low value):** Speculation about Ackman's MSFT entry price (no public info yet); general "tech selloff" headlines (already captured); detailed Walmart preview (not in wiki ticker list directly)
+- **Pending for Monday open:** Hedges should be sized + in place per [[hedging-risk]] ahead of May 20 NVDA + 20-year auction compound shock window. [[2026-05-20-nvda-earnings]] playbook is the operating manual for that day.
+
 ## [2026-05-15] PM4 | POET $400M dilution dump + Q1 miss + CFO exit — dedicated wiki page created
 
 - **POET stock -11% to $18.27** today on three stacked events:

@@ -33,14 +33,17 @@ Bear case integration today surfaced a **verified, named, $38B+ specific exposur
 
 **Which means:** the financing structure of the AI buildout is now the closest analog to 2008's CDO/SIV risk transfer — not the dot-com leverage-free crash. Even if AI capex is justified and DCs produce real value, the $120B+ being shifted from banks to insurance + pension + private credit is the contagion mechanism that historically converts industry slowdowns into financial crises. This sits alongside (not instead of) the bull thesis. See [[ai-bubble-debate]] "AI infrastructure debt" section + [[financials]] for private-credit exposure naming.
 
-### Friday May 15 reversal — bond market wins the day (NEW 2026-05-15)
+### Friday May 15 reversal — bond market wins the day (NEW 2026-05-15; UPDATED with close data)
 
-- **S&P -1%, NASDAQ -1.3%** — pulled back from Thursday's record close on yield spike + Trump-Xi summit disappointment
+- **S&P -1.24% to 7,408.50, NASDAQ -1.54% to 26,225.14, Dow -1.07% to 49,526.17** — pulled back from Thursday's record close on yield spike + Trump-Xi summit disappointment
 - **30y to 5.08%** (+5 bps from May 14 auction-cleared 5.046%) — bond market continues breaking higher
 - **10y to 4.54%** — highest since May 2025
 - **Markets fully priced out 2026 Fed cuts; some traders pricing in a December hike**
 - **NVDA -4% Friday** despite Thursday's +4.4% pop on H200 China approval — because **China has NOT approved the purchases** (Trump: "they want to develop their own"). H200 deal in limbo. **Validates Trump-Xi Scenario A "Theater" framing** — chip carve-out was symbolic, not transformational
 - **AMAT -3% Friday** despite beating + raising CY26 guide >30% — classic post-earnings selling after multi-month run-up; thesis unchanged
+- **CBRS -10% Friday** giving back part of Thursday's +68% IPO debut surge — first-week IPO volatility; thesis unchanged but illustrates the late-cycle small-cap AI speculation pattern
+- **Intel -8% to $108** after surging 214% YTD on Apple foundry speculation — speculative INTC trade unwinding (not in wiki, signal only)
+- **Bill Ackman's Pershing Square built a position in MSFT** calling the pullback "a rare opportunity to buy one of the world's dominant tech franchises at a compelling valuation" — institutional bull-side validation
 
 **Which means:** Thursday's "supply-side AI capex validation" thesis is intact (AMAT/CSCO upgrades are real), but the bond market is convincingly winning the macro debate. Friday's pullback is the market acknowledging both signals at once. The wiki's "30y > 5% is the key level" framework is now stress-tested across two consecutive days of bond pressure. Position discipline: hedges should be in place by Monday open ahead of May 20 NVDA + 20-yr auction.
 

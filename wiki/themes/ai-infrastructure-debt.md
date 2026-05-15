@@ -73,7 +73,7 @@ The end of the chain: **pension funds and insurance companies** taking on the AI
 
 ### Private credit absorbing
 
-- **Blue Owl** (BX subsidiary) — $30B Meta Hyperion deal + tech-focused OTIC fund (40.7% Q1 redemption requests = near-run)
+- **Blue Owl** (BX subsidiary) — $30B Meta Hyperion deal + tech-focused OTIC fund (40.7% Q1 redemption requests = near-run). **NEW 2026-05-15: Blue Owl OPTED NOT TO FUND Oracle's $10B Michigan data center.** AUM $315B (+15% YoY), but **CEO explicitly stated reducing software exposure** (May 7). PIMCO + Blue Owl now co-leading $29B Meta DC financing instead. **Signal: largest private credit AI funder is being selective + scaling back software, even while still adding to specific DC deals.**
 - **Apollo** — $25B flagship fund gated; broader AI DC participation
 - **Blackstone** — BCRED $82B fund; participated in data center deals
 - **BlackRock** — data center lending participation
