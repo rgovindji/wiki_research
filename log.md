@@ -9,6 +9,26 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-15] PM | Bear case integration — Zitron + Kedrosky + Jane Street DC tour
+
+- **3 podcast sources processed.** Two bear cases (Zitron x2 episodes, Kedrosky on Plain English) + one bull data point (Jane Street DC tour). Goal: sharpen the wiki's bear framework with the strongest available critiques rather than dismiss them.
+- **Kedrosky (Plain English):** Strongest version of the bear case. Railroads-style infrastructure bubble framing. 5 material new arguments: (1) 3-phase capex/market-cap regime shift ($1 → $0 → negative reward), (2) productivity math is misleading (GDP arithmetic, not AI working), (3) deterministic+expansive (coding) vs non-deterministic+compressive (white-collar) token economics — refutes naive 100M-knowledge-worker token extrapolation, (4) SBC+buyback compression, (5) HALO rotation cohort.
+- **Zitron (Tech Report x2):** Sharper but less sophisticated. New material claims: (1) "operational" DCs are 1-2 buildings out of dozens, (2) bill-and-hold accounting on NVDA, (3) bank debt offloading at discounts, (4) capacity wall for OpenAI/Anthropic (actually inverts his own bear case).
+- **Jane Street DC tour:** 4,032 GPUs at 140 kW per cabinet (14x traditional density) — real operating facility, counter to Zitron's "DCs aren't being built." Validates VRT/ETN power+cooling thesis.
+- **Wiki touched:**
+  - [[ai-bubble-debate]] — added "Bear case strongmen" section consolidating Kedrosky + Zitron with claim-by-claim wiki integration + falsifiable watch list (7 specific triggers)
+  - [[ai-capex-cycle]] — added two caveats: token-economics-not-uniform across knowledge work, productivity-math-is-just-capex-arithmetic
+  - [[VRT]] — added 140 kW density data point from Jane Street
+  - [[2026-05-20-nvda-earnings]] playbook — added bill-and-hold watch item as #7 in "what to watch on call"
+- **Stance / conviction changes:** none. Framework integration sharpens the bear case but doesn't break the bull thesis. Late-cycle 5/6 firing was already mapped; hedging-risk page already built.
+- **Falsifiable watch list (NEW):** 7 specific triggers added to ai-bubble-debate. If any fire → bear case activates → execute hedging-risk Tier 2 sizing.
+- **Research threads opened (not yet pages):**
+  - Bank debt offloading at discounts (need specific examples — Zitron's claim, no evidence yet)
+  - NVDA bill-and-hold 10-Q check (could do via WebFetch on next NVDA 10-Q)
+  - SemiAnalysis site-level commissioned capacity tracker (test Zitron's "1-2 buildings of dozens" claim)
+  - Mag 7 buyback rate vs SBC tracker (Kedrosky's compression thesis)
+- **Skipped (low value):** Talus/Cerebras inference disruption as immediate bear catalyst (5-10yr story; near-term NVDA CUDA moat intact); revisit if any major customer announces shifted away from NVDA inference.
+
 ## [2026-05-15] AM | Daily update — Friday reversal, H200 China limbo, AMAT post-print sell
 
 - **Market reversal Friday May 15:** S&P -1%, NASDAQ -1.3% from Thursday records. Driven by yield spike + Trump-Xi summit disappointment + H200 China deal stalling.

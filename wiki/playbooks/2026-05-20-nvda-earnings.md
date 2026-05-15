@@ -44,6 +44,7 @@ status: active-pre-event
 4. **Q2 FY27 guide.** Consensus implies ~$85B. Guide < $82B = bearish; > $88B = strong bullish. **Sub-question:** does the guide include or exclude China H200 contribution? Ask in Q&A.
 5. **Capex commentary about customer commitments.** Any "customers asked us to pull forward" = bullish; any softening = bearish.
 6. **Q&A: pricing power.** If analysts press on Blackwell pricing vs Hopper and answers are evasive = bearish setup for Q2.
+7. **Bill-and-hold / revenue recognition (NEW 2026-05-15 per Zitron Tech Report).** Zitron alleges NVDA may be counting revenue on GPUs sitting in warehouses awaiting DC commissioning. SEC ASC 606 has specific rules on bill-and-hold (customer must request delay; title transferred; no obligation to repurchase). **Watch the call for:** (a) any analyst question about deferred-delivery / un-deployed shipped inventory; (b) any change in language around "delivered but not deployed"; (c) deferred revenue line item in the 10-Q. Material if true — could mean revenue is overstated. **Bullish signal:** clear language that all shipped revenue is deployed and operational. **Bearish signal:** evasive or technical language about delivery vs deployment.
 
 ## Pre-committed scenarios
 

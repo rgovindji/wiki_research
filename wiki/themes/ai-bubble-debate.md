@@ -1,7 +1,7 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-05-12
+last_updated: 2026-05-15
 last_full_review: 2026-05-09
 sources: 6
 ---
@@ -42,6 +42,56 @@ The live debate over whether the AI investment cycle is a healthy productivity-d
 - "Is AI real?" → **yes** (productivity is measurable)
 - "Will the cycle generate adequate ROI on $1.6T?" → **uncertain**
 - "Are current valuations consistent with even the bull case?" → **borderline at index level, justified at NVDA/TSM, stretched at TSLA/AAPL**
+
+### Bear case strongmen — Kedrosky + Zitron (NEW 2026-05-15)
+
+Two well-credentialed bears made the sharpest version of the bubble case in podcast appearances this week. Cataloged here as the **falsifiable bear framework** the wiki tracks against outcomes.
+
+#### Paul Kedrosky (Plain English w/ Derek Thompson, May 2026)
+
+**Frame: AI is a railroads-style infrastructure bubble.** Not "AI is fake" — "we're overbuilding the substrate. Half of US railroad track miles built at peak were eventually abandoned. AI may follow the same pattern: real and transformative AND a bubble."
+
+| Argument | Wiki integration |
+|---|---|
+| **3-phase capex/market-cap regime shift:** 2 years ago $1 AI capex = +$2 market cap (rewarded) → 6 months ago = $0 (neutral) → now = **negative** (punished). Mag 7 all negative YTD; MSFT -13%; Mag 7 fwd P/E converging with S&P (MSFT ≈ ExxonMobil) | Sharper framing than wiki's "Mag 7 weakness" note. **Worth tracking each phase shift as a date marker.** |
+| **Game theory trap:** hyperscalers can't stop spending because first-to-fold gets crushed → infrastructure builds even when market punishes the build | Aligns with wiki framework |
+| **SBC + buyback compression:** Capex eats free cash flow → less buyback capacity → dilution rises → multiples compress | **Coverage gap.** Worth a dedicated tracker on Mag 7 buyback rate vs SBC |
+| **Productivity math is misleading:** Q3 +2.2% productivity is just GDP arithmetic. GDP = C+G+I+(X-M); I parabolic from AI capex; hours flat → productivity rises mechanically, NOT from AI driving real output | **Important caveat.** Don't cite headline productivity as "AI is working" evidence |
+| **Deterministic + expansive (coding) vs non-deterministic + compressive (white-collar) token economics:** Coding generates more code (expansive); white-collar work compresses long docs into bullets. Can't extrapolate Claude Code token consumption to 100M knowledge workers — they'll consume far less per worker | **Real intellectual refinement.** Wiki's bull thesis implicitly assumed knowledge-worker token consumption mirrors coding |
+| **NVDA over-ordering risk:** Customers protect queue position by ordering 2-3x what they actually need (fiber-precedent). When demand slows even modestly, the unwind is brutal | **Testable but unverified.** Wiki accepts NVDA's $90B "non-cancelable" contracts at face value — check next earnings for any softening in language |
+| **Private credit stress:** Blue Owl gating redemptions; Apollo/Blackstone limiting | **Coverage gap.** Wiki has zero private credit coverage despite massive AI-data-center exposure |
+| **"HALO" rotation:** Heavy Asset Low Obsolescence (industrial, grid, waste) outperforming Mag 7 already; "software eats itself" | Wiki's construction labor (FIX/EME/PWR) is HALO-adjacent; could make this an explicit rotation thesis |
+| **Talus/Cerebras inference disruption + innovator's dilemma on NVDA** | 5-10yr story; near-term NVDA CUDA moat intact |
+
+#### Ed Zitron (multiple Tech Report episodes, May 2026)
+
+**Frame: the data center buildout is largely fictional + circular financing.** Stronger claims than Kedrosky, weaker evidence.
+
+| Argument | Wiki integration |
+|---|---|
+| **3 horsemen of bubble pop:** (a) DC under construction cancelled, (b) DC planned never built, (c) operational DC shutting down for lack of demand | **Falsifiable framework.** None have happened yet — track explicitly |
+| **"Operational" DCs are 1-2 buildings out of dozens; multi-GW announcements ≠ commissioned capacity** | **Testable + coverage gap.** Wiki accepts announced capacity. Worth tracking SemiAnalysis site-level commissioning vs announcement |
+| **"Bill and hold" on NVDA:** counting revenue from GPUs sitting in warehouses awaiting DC commissioning | **Material allegation.** SEC ASC 606 has specific rules. Check NVDA 10-Q revenue recognition footnote; flag for May 20 Q&A |
+| **Bank debt offloading at discounts:** financial sector nervousness | **Coverage gap.** Need specific examples for tracking |
+| **Capacity wall for OpenAI/Anthropic** from slow DC build | **Inverts his own bear case** — if true, argues FOR more capex spending, not less |
+| **Circular economy:** Hyperscalers funding labs that pay back as cloud revenue | Partially right (~30-50% of MSFT-OpenAI). Anthropic CFO data ($9B→$30B ARR; 9 of Fortune 10 customers; Claude Code adoption) is a strong counter-data point |
+| **NVDA invests in own customers (CRWV/NBIS/Lambda)** | Real but ~$10-15B equity stakes vs $200B+ revenue from MSFT/GOOGL/META/AMZN (none NVDA-invested) — doesn't carry his stronger "fundamentally a revenue model" claim |
+
+#### Counter-data: Jane Street DC tour (May 2026)
+
+Quick reality check against Zitron's "DCs aren't being built": Jane Street's Texas facility runs **4,032 GPUs across 56 racks at 140 kW per cabinet** (14x traditional density). Real liquid-cooled deployment, not announcement. Validates [[VRT]] / [[ETN]] power+cooling thesis. One DC ≠ industry survey, but it's a concrete counter to "operational means 1-2 buildings out of dozens."
+
+#### Watch list — falsifiable bear triggers
+
+Track each of these against outcomes. If any fire → bear case activates → execute hedging-risk Tier 2 sizing:
+
+1. **DC cancellation in progress** (Zitron horseman #1) — nothing yet
+2. **Planned DC never built / capex announcement quietly retired** (Zitron #2) — Project Stargate cycle to watch
+3. **Operational DC shutting down for lack of demand** (Zitron #3) — nothing yet
+4. **NVDA revenue commentary on bill-and-hold or deferred revenue line jumps materially** — May 20 watch item
+5. **Mag 7 stock buyback rate drops while SBC stays flat** — Kedrosky compression thesis
+6. **Private credit gating expands beyond Blue Owl** — financial sector stress signal
+7. **SemiAnalysis site-level commissioned capacity gap widens vs announced** — needs new tracker
 
 ### Jim Chanos warning
 Chanos has flagged that AI capex itself is **boosting S&P 500 EPS estimates** — i.e., the spending shows up as customers' revenue, juicing earnings on the way up. The risk is that if capex slows, the EPS impulse reverses on the way down.
