@@ -40,8 +40,8 @@ status: active-pre-event
 
 1. **Gross margin trajectory.** Q4 FY26 GAAP GM was 73.0%. Any guide below 72.5% = bearish; >74% = bullish.
 2. **Vera Rubin demand commentary.** Specific 5GW+ customer commits = bullish; vague language = neutral.
-3. **China H200 shipment update.** Confirmed shipments + revenue contribution = bullish; "evaluating" language = neutral.
-4. **Q2 FY27 guide.** Consensus implies ~$85B. Guide < $82B = bearish; > $88B = strong bullish.
+3. **China H200 shipment update (UPDATED 2026-05-15 — now more important).** Setup: US approved H200 to ~10 China firms (75K chips each); China NOT YET approved purchases (Trump: "they want to develop their own"). **Bullish:** Jensen confirms shipments imminent OR Q2 guide assumes ~$5-10B China contribution. **Neutral:** "evaluating" / "discussions continuing" language. **Bearish:** explicit acknowledgment China revenue is off the table for FY27.
+4. **Q2 FY27 guide.** Consensus implies ~$85B. Guide < $82B = bearish; > $88B = strong bullish. **Sub-question:** does the guide include or exclude China H200 contribution? Ask in Q&A.
 5. **Capex commentary about customer commitments.** Any "customers asked us to pull forward" = bullish; any softening = bearish.
 6. **Q&A: pricing power.** If analysts press on Blackwell pricing vs Hopper and answers are evasive = bearish setup for Q2.
 

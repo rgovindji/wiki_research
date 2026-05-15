@@ -9,6 +9,17 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-15] AM | Daily update — Friday reversal, H200 China limbo, AMAT post-print sell
+
+- **Market reversal Friday May 15:** S&P -1%, NASDAQ -1.3% from Thursday records. Driven by yield spike + Trump-Xi summit disappointment + H200 China deal stalling.
+- **30y to 5.08%** (+5 bps from May 14 auction-cleared 5.046%); **10y to 4.54%** (highest since May 2025). Markets fully priced out 2026 Fed cuts; some pricing in December hike. Direct continuation of bond-market pressure framework.
+- **NVDA H200 China limbo:** Thursday +4.4% on US clearing H200 sales to ~10 Chinese firms (Alibaba, Tencent, ByteDance, JD.com, Lenovo, Foxconn + 4 others; up to 75K chips each). Friday -4% on news that **China has NOT approved purchases** from its side. **Trump: "they want to develop their own."** Refines Trump-Xi summit feedback-log entry: Scenario A "Theater" call now stronger, not weaker — even the symbolic chip carve-out is bilaterally contested.
+- **AMAT -3% despite Thursday's beat + CY26 >30% guide raise.** Classic post-earnings selling after multi-month run-up. Thesis intact; no stance change.
+- **Wiki touched:** [[NVDA]] (H200 limbo line), [[overview]] (Friday reversal section + yields update), [[feedback-log]] (Trump-Xi refinement), [[2026-05-20-nvda-earnings]] playbook (China commentary now more important — added explicit bullish/neutral/bearish triggers).
+- **Stance / conviction changes:** none. NVDA stays bull/high. AMAT stays bull/high.
+- **Skipped (low-value):** BABA Q4/FY25 print (not in wiki); WMT preview next week; broad coverage of "tech pulled back" headline (already captured); various pundit takes on H200.
+- **Pending:** Weekend = pre-position for Monday open. Hedges should be in place by Monday per [[hedging-risk]] sizing.
+
 ## [2026-05-14] PM4 | Process improvement v2 — adjacent coverage + weekly synthesis pipeline
 
 - **Context:** Continuing the process-improvement roadmap after pushing PM3 (playbooks + hedging). Two remaining items from the original menu: bridge adjacent coverage + weekly synthesis pipeline. User authorized both.

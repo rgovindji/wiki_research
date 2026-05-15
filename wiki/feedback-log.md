@@ -127,11 +127,13 @@ Each entry follows this structure:
 
 ---
 
-### [2026-05-14] ✅ Right | Trump-Xi Beijing summit = Scenario A (Theater, 60% probability)
+### [2026-05-14] ✅ Right (refined 2026-05-15) | Trump-Xi Beijing summit = Scenario A (Theater, 60% probability)
 
 **Original call (2026-05-12):** Pre-summit analysis at [[2026-05-12-trump-xi-summit-investment-implications]] mapped 3 scenarios with probabilities: **A. Theater (60%)** / B. Trade deal w/ chip carve-out (25%) / C. Acrimonious breakdown (15%). Predicted "stabilization, not breakthroughs."
 
 **Observed (2026-05-14):** Summit delivered Scenario A with **partial Scenario B (chip carve-out at H200 level only).** "Strategic stability" framework agreed. Board of Trade formalized. US cleared H200 sales to 10 Chinese firms (Alibaba, Tencent, ByteDance, JD.com + 6 others) — but no shipments yet; 25% revenue arrangement. **Blackwell + Rubin remain restricted.** No rare-earth retaliation. Xi told NVDA/TSLA/AAPL CEOs China will "open wider."
+
+**Refined (2026-05-15):** **China has NOT approved purchases from its side.** Trump publicly said "they want to develop their own." NVDA -4% Friday on the reversal. **This strengthens — not weakens — the Scenario A "Theater" call.** The chip carve-out was always going to be symbolic; even the symbolic piece is now bilaterally contested. Scenario A was correctly described as "stabilization, not breakthroughs."
 
 **Verdict:** ✅ **Right.** Net = stabilization + marginal positives on chips (NVDA H200) + de-escalation on Taiwan (TSM tail-risk reduction). No transformational deal. The 60% probability was directionally correct.
 

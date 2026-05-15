@@ -21,6 +21,17 @@ The top-level synthesis. Read this first. Updated whenever a meaningful new sour
 
 > **What this means (May 14, 2026):** S&P 500 and NASDAQ closed at record highs despite hot inflation + 30y Treasury auctioning above 5% with soft demand. Market is choosing AI demand momentum (**AMAT just raised CY26 semi-equipment growth guide from >20% to >30%**; Cisco AI infrastructure orders raised $5B → $9B; Anthropic CFO confirmed $9B→$30B ARR; CRWV $99.4B backlog; NBIS profitability inflection; Trump-Xi summit delivered H200 China clearance). **But the underlying tension is real** — 30y at 5%+ confirmed at auction (not just screen quote) is the bond market pricing higher-for-longer regardless of what equities do. **Position discipline:** don't chase records; hold structural compounders; June 10 CPI is the binary that determines if the rates regime stays this way or breaks toward cuts.
 
+### Friday May 15 reversal — bond market wins the day (NEW 2026-05-15)
+
+- **S&P -1%, NASDAQ -1.3%** — pulled back from Thursday's record close on yield spike + Trump-Xi summit disappointment
+- **30y to 5.08%** (+5 bps from May 14 auction-cleared 5.046%) — bond market continues breaking higher
+- **10y to 4.54%** — highest since May 2025
+- **Markets fully priced out 2026 Fed cuts; some traders pricing in a December hike**
+- **NVDA -4% Friday** despite Thursday's +4.4% pop on H200 China approval — because **China has NOT approved the purchases** (Trump: "they want to develop their own"). H200 deal in limbo. **Validates Trump-Xi Scenario A "Theater" framing** — chip carve-out was symbolic, not transformational
+- **AMAT -3% Friday** despite beating + raising CY26 guide >30% — classic post-earnings selling after multi-month run-up; thesis unchanged
+
+**Which means:** Thursday's "supply-side AI capex validation" thesis is intact (AMAT/CSCO upgrades are real), but the bond market is convincingly winning the macro debate. Friday's pullback is the market acknowledging both signals at once. The wiki's "30y > 5% is the key level" framework is now stress-tested across two consecutive days of bond pressure. Position discipline: hedges should be in place by Monday open ahead of May 20 NVDA + 20-yr auction.
+
 ### Supply-side AI capex validation (NEW 2026-05-14 PM2)
 
 Two major equipment / networking prints validate the AI capex curve from the **supply side** (vs. demand-side confirmation from Anthropic/CRWV/NBIS prints earlier this week):
