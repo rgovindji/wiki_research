@@ -28,6 +28,7 @@ The **only large player covering both power AND cooling** for AI data centers �
 - **Fast delivery** has become a competitive moat in supply-constrained data center build-outs
 - **AI factory unit economics** are increasingly limited by power/cooling — VRT is in the bottleneck
 - **800V DC architecture transition** is a multi-year content tailwind
+- **140 kW per rack is the new normal (NEW 2026-05-15).** Jane Street's Texas AI data center confirmed in a public facility tour: **140 kW per cabinet (14x traditional 10 kW density)**, liquid cooling with cold plates standard, retrofit of existing facility (suggests retrofit wave beyond greenfield). VRT covers both power distribution AND cooling — the only large vendor doing both — this is the single biggest density transition since modern DCs began, and every existing site needs to upgrade.
 
 ## Bear case / risks
 - **Power is NOT going to be the binding AI constraint (NEW).** Per [[2026-05-09-dwarkesh-dylan-semianalysis]], power has **16+ vendors** of generation (combined-cycle, aeroderivatives, reciprocating engines, ship engines, fuel cells, solar+battery), and ~50% of new AI capacity by EOD will be behind-the-meter. Could unlock ~200 GW of US grid just with peak-shaving batteries. **Implication:** VRT keeps growing, but its *pricing-power* moat is bounded by power-side alternatives — the framing shifts from "scarcity" to "growth + execution."
