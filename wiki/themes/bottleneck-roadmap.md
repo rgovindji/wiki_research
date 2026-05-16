@@ -1,9 +1,9 @@
 ---
 type: theme
-tags: [ai, supply-chain, bottlenecks, semianalysis, robotics]
-last_updated: 2026-05-13
+tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
+last_updated: 2026-05-16
 last_full_review: 2026-05-09
-sources: 2
+sources: 3
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -80,6 +80,20 @@ The same time-sequenced bottleneck framework applies to the humanoid robotics bu
 
 > **What this means:** Robotics has its own bottleneck cycle running 2-3 years behind AI's. Today, the constraint is rare-earth magnets — exactly the same "the supplier no one can substitute" pattern that made packaging (CoWoS) the 2023 trade and memory (HBM) the 2025-26 trade. The harvest is 2028-2030.
 
+### The model + data layer (NEW 2026-05-16 per [[2026-05-16-jim-fan-nvda-robotics]])
+
+The previous version of this roadmap covered only the **physical** bottlenecks (rare-earths → sensors → SoCs → actuators). Per Jim Fan (NVIDIA Robotics chief scientist), there's an upstream **model + data layer** that constrains the entire physical buildout:
+
+| Period | Constraint | Why | Beneficiaries (pricing power) |
+|---|---|---|---|
+| **2024-2026** | **VLA pre-training data (egocentric video)** | Scaling laws now established for dexterity (clean log-linear; mirror of LLM 2018 moment). 10M+ hours/year of egocentric data needed. iPhone-scale data ingestion is the FSD-equivalent moment. | [[NVDA]] (Cosmos, Dream Zero, EgoScale, Dream Dojo); [[AAPL]] (iPhone as pocket world scanner — second-order optionality) |
+| **2026-2027** | **World Action Model architecture (WAM)** | VLA → WAM paradigm shift; Dream Zero is first commercial example. Open-source diffusion (V3, Sora) provides pre-training backbone; closed-source action heads provide moat. | [[NVDA]] dominates; competitive landscape: Pi (Physical Intelligence) + Sunday + Groot (legacy VLA) — all venture-stage, not investable on public markets |
+| **2027-2029** | **Neural simulator compute** | Dream Dojo-style learned simulators replace physics engines. Massively parallel RL across millions of environments. "Compute = environment = data." | [[NVDA]] GPU demand from robotics RL parallels AI training demand; second-order pull on [[VRT]] / [[ETN]] data center infrastructure |
+
+**Why this matters for the physical bottleneck cohort:** the **dexterity scaling law** anchors the commercial timeline. If model improvements follow the same log-linear curve LLMs did 2018-2024, **humanoid robots cross the physical Turing test in 2028-2029** (Fan's prediction, ~15% discounted for self-promotional bias). Component supply chains need to be ready BEFORE that — meaning today's bottleneck names ([[MP]] / [[ALGM]] / [[VPG]] / [[ALNT]]) are paying their dues during the model-layer maturation NOW.
+
+**The full cascade:** model layer (2024-2027 NVIDIA) → physical bottlenecks (2026-2030 component cohort) → OEM deployment (2028-2032) → mass commercial (2030+).
+
 ### Why both roadmaps reinforce each other (cross-cycle dynamic)
 - **Power and grid:** the 2027 transformer / substation constraint applies to BOTH AI data centers AND robotics manufacturing facilities — [[GEV]] / Hitachi / Siemens benefit from both demand pulls
 - **Edge inference vs. cloud inference:** robotics demands a different compute stack (low-latency, low-power, on-device) — this pulls volume away from [[NVDA]]'s data-center business toward smaller-cap NPU/FPGA players ([[AMBA]], LSCC, CEVA) — slight bear data point for NVDA's TAM dominance over very long timelines
@@ -91,3 +105,4 @@ The same time-sequenced bottleneck framework applies to the humanoid robotics bu
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the AI bottleneck synthesis
 2. [[2026-05-13-x-stack-map-humanoid-robotics]] — primary source for the robotics bottleneck extension
+3. [[2026-05-16-jim-fan-nvda-robotics]] — model + data layer extension; WAM paradigm; dexterity scaling law; 2040 endgame framing
