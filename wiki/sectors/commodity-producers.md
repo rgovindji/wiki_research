@@ -1,9 +1,9 @@
 ---
 type: sector
 tags: [commodities, gold, silver, copper, oil, energy-producers, hedge-adjacent]
-last_updated: 2026-05-14
+last_updated: 2026-05-16
 last_full_review: 2026-05-14
-sources: 0
+sources: 1
 status: stub-coverage
 ---
 
@@ -41,6 +41,21 @@ This is **stub coverage** — built to prevent off-framework purchases the next 
 5. **Late-cycle 5/6 indicators firing** ✓ (current) — gold as low-correlation diversifier
 6. **AI data center copper-demand inflection** — 1 GW = ~5,000 tonnes copper; multiply by 20 GW US 2026 = 100kt incremental demand on a tight market
 
+## Druckenmiller's copper positioning — futures, NOT equities (NEW 2026-05-16, ~March 2026 dated)
+
+Per [[2026-05-16-druckenmiller-hard-lessons]]: Stan Druckenmiller (Duquesne Family Office) made a specific framing on copper that's worth noting for any investor weighing FCX / SCCO equity vs copper futures:
+
+> *"We own copper. It's not a genius trade. It's a big consensus trade. There's no supply coming on of meaningful supply, very tight for the next 8 years. And obviously you have a big add-on from AI and data centers. **We're not long copper equities as much as we are. We just keep rolling the front end.**"*
+
+**Which means:**
+- The structural supply-shortage thesis is purer in **front-month copper futures** than in copper equities (FCX, SCCO).
+- Copper equities carry **operational, geographic, and execution risk** independent of copper price (Freeport's Indonesia exposure, Southern Copper's Peru/Mexico political risk, smelter outages, labor disputes).
+- A sophisticated macro investor with structural copper conviction is choosing futures over equities — implying he sees the spread between physical-supply tightness and equity execution as a *negative* drag on the equity thesis.
+
+**Implication for wiki users**: if you want pure exposure to the AI-driven copper-demand thesis, copper ETFs (CPER) or futures-tracking products may be cleaner than FCX/SCCO. The equities still work as a *leveraged* play but carry idiosyncratic risk. **The "consensus" framing is also notable — Druckenmiller is openly admitting this is crowded. The wiki's [[hedging-risk]] page should reflect copper as a *consensus structural trade*, not a contrarian one.**
+
+**Staleness**: source is ~2 months old at ingest; Druckenmiller may have rotated. The *framework* (futures > equities for pure exposure) is the durable insight.
+
 ## Why precious metals specifically (the case the wiki hadn't made)
 
 Gold has been in a **structural bull market since 2024** driven by:
@@ -71,4 +86,5 @@ As of May 2026, gold is **~$3,400/oz** — already up significantly from the $2,
 [[hedging-risk]] · [[fed-policy]] · [[inflation-tariffs]] · [[USAR]] · [[UUUU]] · [[overview]]
 
 ## Sources
-*(stub — citations to be added when individual company pages built)*
+1. [[2026-05-16-druckenmiller-hard-lessons]] — Druckenmiller copper-futures-not-equities framing; structural 8-year supply shortage thesis
+*(stub — additional citations to be added when individual company pages built)*

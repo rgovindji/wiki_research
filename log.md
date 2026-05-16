@@ -9,6 +9,17 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-16] ingest | Stan Druckenmiller (Duquesne) — Morgan Stanley Hard Lessons (~March 2026 dated)
+
+- **Source:** [[2026-05-16-druckenmiller-hard-lessons]] (raw at `raw/podcasts/drukenmiller.txt`)
+- **⚠ Staleness flag**: source content is ~2 months old at ingest. Druckenmiller says he changes mind every 3 weeks. Treat as framework anchor, NOT current portfolio.
+- **TL;DR:** Stan Druckenmiller on Morgan Stanley's *Hard Lessons*. Lower-yield than the other May 16 ingests because most content is process/wisdom rather than current data. Three things worth capturing:
+  1. **Reduced — NOT shorted — AI exposure** starting summer/fall 2025 because "AI started to get disturbingly heated… some rhyme with 1999-2000." Important nuance: he did NOT bet against AI, he rotated to other longs (biotech, TEVA, Japan-Korea, copper futures, gold, short bonds, bearish USD). Distinct from Burry/Chanos/Culper (active shorts).
+  2. **Copper futures, not equities** — Druckenmiller specifically rolling the front-end of copper futures rather than holding FCX/SCCO. Implies he views the pure structural-supply thesis as cleaner in futures than in equities (which carry idiosyncratic operational/geographic execution risk).
+  3. **The NVDA "couldn't stand success" exit anti-pattern** — bought at ~$150 (pre-ChatGPT), doubled twice; said publicly he'd hold for 2-3 years at $390; sold at $800. Stock went to $1,400 in 5 weeks. The lesson encoded: when massive secular change is in motion and your sizing is correct, the default should be HOLD over TRIM. Useful sizing-discipline anchor for [[NVDA]].
+- **Wiki touched:** [[ai-bubble-debate]], [[commodity-producers]], [[NVDA]]
+- **No stance changes.** All patches add expert anchors and wisdom; nothing flips.
+
 ## [2026-05-16] ingest | Aswath Damodaran (NYU Stern) — Prof G Markets quarterly live stream
 
 - **Source:** [[2026-05-16-damodaran-profg-markets]] (raw at `raw/podcasts/ai_boom.txt`)

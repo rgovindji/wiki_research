@@ -3,7 +3,7 @@ type: theme
 tags: [ai, bubble, risk, debate]
 last_updated: 2026-05-16
 last_full_review: 2026-05-09
-sources: 8
+sources: 9
 ---
 
 # AI Bubble Debate
@@ -235,6 +235,17 @@ Damodaran: 10 years ago chips were **3% of S&P 500**; today **17%**. Sector up *
 
 **Discount**: Damodaran is a long-horizon valuation expert, not a near-term tactician (he admits he was lucky on Intel). But the data points — 17% S&P share, 60% in 2 months — are real and notable. Treat as a *position-sizing prompt* for [[NVDA]] / [[MU]] / [[AMAT]] / [[KLAC]] / [[LRCX]] / [[ASML]], not a stance-change prompt. The long-term theses remain intact regardless of a near-term correction.
 
+## Druckenmiller reduced AI exposure on '99 rhyme (NEW 2026-05-16, ~March 2026 dated)
+
+Per [[2026-05-16-druckenmiller-hard-lessons]]: Stan Druckenmiller said publicly on Morgan Stanley's *Hard Lessons* (recorded ~March 2026) that in summer/fall 2025 *"AI things started to get, let me say, disturbingly heated… some rhyme with what I went through in '99-2000."*
+
+He explicitly framed the rotation:
+> *"For the last three years our portfolio was very much AI-driven. We still have drips and drabs of AI around, but it's not driving the engine anymore."*
+
+**Critical nuance: Druckenmiller did NOT short AI.** He **reduced long exposure** and **rotated to other longs** (biotech, TEVA pharma, Japan/Korea equities, copper futures, some gold, short bonds, bearish USD). The wiki should be careful not to overweight this as a short signal — it's a *legendary macro investor saw 1999-rhyme valuations and trimmed*, distinct from Burry / Chanos (active shorts) or Culper Research (active NVDA short on China-diversion thesis — see [[2026-05-13-culper-nvda-short-thesis]]).
+
+**Staleness flag**: source is ~2 months old at ingest. Druckenmiller himself says he *"changes mind every 3 weeks."* His specific position book may have evolved. Treat as a *framework anchor* (rotated AWAY from AI, NOT short AI), not a current portfolio recommendation.
+
 ## LLM data-wall — expert dissent thread (NEW 2026-05-16)
 
 A new bear-side leg of the debate is firming up: the **pre-training data exhaustion** claim now has multiple independent expert sources converging.
@@ -279,3 +290,4 @@ LeCun goes further — he argues LLMs are *not the path* to human-level intellig
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the H100-worth-more-today counter-argument and the 30%-capex-to-memory framing of Chanos's concern
 2. [[2026-05-16-yann-lecun-ame-labs]] — LLM data-wall hard claim + expert dissent on AGI-via-LLMs timeline + Anthropic regulatory-capture framing
 3. [[2026-05-16-damodaran-profg-markets]] — macro spillover thesis + chip-sector top warning + "AI is still net expense for non-chip Mag 7"
+4. [[2026-05-16-druckenmiller-hard-lessons]] — Druckenmiller reduced (not shorted) AI on '99 rhyme; rotated to biotech/copper/Japan-Korea; ~2 months stale

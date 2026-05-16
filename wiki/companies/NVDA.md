@@ -4,7 +4,7 @@ ticker: NVDA
 tags: [ai, semis, mag7]
 last_updated: 2026-05-16
 last_full_review: 2026-05-09
-sources: 5
+sources: 6
 conviction: high
 stance: bull
 ---
@@ -54,6 +54,16 @@ The dominant supplier of AI accelerators with a $1T confirmed demand backlog thr
 - **Hardware obsolescence cycle.** Each new generation depreciates the prior; impacts hyperscaler ROI calculations and resale value.
 - **Concentration in S&P 500.** Largest stock by market cap → tied to passive flow risk (see [[market-concentration]]).
 
+## Sizing-discipline anchor — the Druckenmiller anti-pattern (NEW 2026-05-16, ~March 2026 dated)
+
+Per [[2026-05-16-druckenmiller-hard-lessons]]: Stan Druckenmiller bought NVDA at ~$150 (pre-ChatGPT, mid-2022), doubled after ChatGPT, doubled again on Morgan Stanley analyst commentary. Said publicly in a 2024 interview (at $390): *"I cannot possibly see myself selling Nvidia over the next two or three years."* Then sold at $800. NVDA went to $1,400 in 5 weeks. His own framing:
+
+> *"I knew through years of experience when you have massive massive change investors just can't make themselves keep up with it. I cannot possibly see myself selling Nvidia… The stock can't not go up for at least 3 years. So then the stock goes to 800 and I violated everything I said. I couldn't stand success."*
+
+**Which means** for any wiki user holding [[NVDA]]: this is the canonical anti-pattern for trimming AI winners. A legendary macro investor *who explicitly knew better* sold 5 weeks before a 75% run. The encoded lesson: when massive secular change is unfolding AND your sizing has remained correct, the default bias should be **HOLD over TRIM** unless valuations actively impair the thesis (gross-margin compression, demand-side disappointment, NVDA-specific corporate-governance event). The "lock in gains" instinct that feels like prudence usually isn't.
+
+**Calibration**: this is *wisdom*, not a current data point. The wiki's bull thesis on NVDA is currently held on Tensor Core hardware moat + $1T contracted demand + Vera Rubin roadmap (not on momentum). But sizing discipline matters more than directional conviction at current levels — see the chip-sector top warning from Damodaran ([[2026-05-16-damodaran-profg-markets]]) for the counter-anchor.
+
 ## Key questions / what to watch
 1. **Q1 FY27 gross margin print** (calendar Q2 2026 release) — direction and management commentary on Blackwell mix
 2. **Hyperscaler capex commentary** — every MSFT / AMZN / GOOGL / META quarterly call is an NVDA read-through
@@ -100,3 +110,4 @@ The dominant supplier of AI accelerators with a $1T confirmed demand backlog thr
 3. [[2026-05-13-anthropic-cfo-podcast]] — Anthropic CFO confirms 9 of Fortune 10 customers + 500% NDR + $9B→$30B ARR; multi-platform compute strategy (Anthropic uses NVDA GPU + Tranium + TPU fungibly = NVDA share-of-wallet at top labs is not 100%)
 4. [[2026-05-16-jim-fan-nvda-robotics]] — NVDA chief scientist Jim Fan on robotics moat layers (VLA→WAM, EgoScale scaling law, Dream Dojo simulator)
 5. [[2026-05-16-horace-he-ml-systems]] — Meta PyTorch compilers lead Horace He: Tensor Core 15× moat, FP4 precision lever, 131K-GPU fault-tolerance ceiling
+6. [[2026-05-16-druckenmiller-hard-lessons]] — Druckenmiller "couldn't stand success" exit anti-pattern at $800 → $1,400; sizing-discipline wisdom anchor (~March 2026 dated, stale)
