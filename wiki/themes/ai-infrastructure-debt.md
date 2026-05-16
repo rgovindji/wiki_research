@@ -60,6 +60,14 @@ The end of the chain: **pension funds and insurance companies** taking on the AI
 
 **Zitron's $1T-of-$6T claim** (insurance annuities tied to private credit) is unverified at exact magnitude but the *direction* is validated by the FSB private credit data.
 
+### Side-channel: token spend as Mag 7 OpEx line (NEW 2026-05-16)
+
+Per Mitchell Hashimoto + corroborating HN discussion (May 2026): FAANG companies have implemented per-engineer **$300/day token quotas** with explicit pressure to consume the full quota ("the quota has been raised for a reason — use it"). This is a real, growing OpEx category that wasn't material 18 months ago.
+
+**Implication for Kedrosky's SBC/buyback compression thesis:** AI token spend now competes for free cash flow with stock buybacks. At FAANG scale ($300/day × ~50,000 engineers × ~250 working days = ~$3.75B/year per company just in internal token consumption), this is **material to free cash flow** even at Mag 7 scale. Adds to the structural pressure on multiples that Kedrosky identifies.
+
+**This is anecdotal corporate evidence,** not audited financials. But it's directionally consistent with what Mag 7 capex disclosures already show. Worth tracking as future earnings calls quantify "AI infrastructure expense" line items.
+
 ## Named exposures
 
 ### Banks offloading

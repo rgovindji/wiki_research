@@ -1,7 +1,7 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-05-15
+last_updated: 2026-05-16
 last_full_review: 2026-05-09
 sources: 6
 ---
@@ -43,9 +43,15 @@ The live debate over whether the AI investment cycle is a healthy productivity-d
 - "Will the cycle generate adequate ROI on $1.6T?" → **uncertain**
 - "Are current valuations consistent with even the bull case?" → **borderline at index level, justified at NVDA/TSM, stretched at TSLA/AAPL**
 
-### Bear case strongmen — Kedrosky + Zitron (NEW 2026-05-15)
+### Bear case strongmen — Kedrosky + Zitron + Hashimoto (UPDATED 2026-05-16)
 
-Two well-credentialed bears made the sharpest version of the bubble case in podcast appearances this week. Cataloged here as the **falsifiable bear framework** the wiki tracks against outcomes.
+Three well-credentialed bears made the sharpest versions of the bubble case in May 2026. Cataloged here as the **falsifiable bear framework** the wiki tracks against outcomes.
+
+#### The Carlota Perez anchor (academic framework)
+
+Carlota Perez's *Technological Revolutions and Financial Capital* is the academic backing for the wiki's "AI is real AND a bubble" both-sides framework. Her framing: every major technology revolution (canals → railroads → electrification → automobiles → internet) follows the same sequence — **installation phase (over-investment + bubble) → crash → golden age (productivity from cheap infrastructure)**. The bubble and the transformation aren't alternatives; they're the same process in different phases. **AI almost certainly follows this pattern.** The investable question isn't "is it real" or "is it a bubble" — it's "where are we in the Perez cycle, and what's the timing of the crash phase that converts installation into deployment."
+
+This is the most credible single anchor for the wiki's framework. Cite Perez when defending the both-sides framing against either AI-hypists or AI-doomers.
 
 #### Paul Kedrosky (Plain English w/ Derek Thompson, May 2026)
 
@@ -95,6 +101,25 @@ Separately from any "data centers aren't being built" theatrical bear case, the 
 
 **Why this matters more than the "is AI a bubble" debate:** Even if AI capex is justified and DCs produce real value, **the financing layer transferring $120B+ of risk from banks to insurance/pension funds is the actual contagion mechanism** that historically converts an industry slowdown into a financial crisis. This is the 2008 SIV / CDO pattern, not the dot-com leverage-free crash pattern. **Wiki had ZERO coverage of this until May 15.** Promoting to active bear trigger.
 
+#### Mitchell Hashimoto — "AI psychosis" at the corporate level (NEW 2026-05-16)
+
+Mitchell Hashimoto (HashiCorp founder, Ghostty author — a *builder*, not a critic) coined "AI psychosis" to describe corporate AI adoption disconnected from technical reality. **Key value-add over Kedrosky/Zitron:** sociological rather than financial framing. His observations from inside the industry:
+
+| Pattern | Wiki integration |
+|---|---|
+| **Leadership mandates AI use without understanding the trade-offs** | Aligns with [[ai-capex-cycle]] "capex justified by FOMO not ROI" framing |
+| **"It's fine to ship bugs, agents will fix them"** | New corporate failure mode — bugs accumulating faster than agents resolve them; complexity rotting under the surface; the system becomes "a very resilient catastrophe machine" |
+| **Bug report rates drop because users lose faith in fixes** | Falsifiable signal: declining user-reported bugs at vibecoded products = trust collapse, not quality improvement |
+| **Companies under "AI psychosis" can't even discuss the trade-offs** | Group-think mechanism prevents course correction; same dynamic that killed dot-com darlings |
+| **FAANG-level $300/day token quotas, mandated AI use, "use it or be terrible"** | Anecdotal corporate evidence supporting Kedrosky's SBC/buyback compression — token spend is now a real Mag 7 OpEx line item |
+
+**Why this matters:** Hashimoto's voice carries weight because he's spent 15 years building infrastructure tools. He's not anti-AI — he uses it daily. His critique is specifically of the *corporate adoption pattern*, which is the sociological complement to Kedrosky's financial critique. **The "very resilient catastrophe machine" framing is the most useful single description of what's happening at vibecoded companies right now.**
+
+Direct relevance to the wiki:
+- Confirms 5/6 late-cycle indicators (specifically: "extreme rhetoric" + "FOMO-driven capital allocation")
+- Adds a sociological dimension to the Kedrosky financial framework
+- Notes the GitHub uptime degradation as collateral evidence (vibe coding destabilizing critical infrastructure)
+
 #### Watch list — falsifiable bear triggers
 
 Track each of these against outcomes. If any fire → bear case activates → execute hedging-risk Tier 2 sizing:
@@ -106,6 +131,7 @@ Track each of these against outcomes. If any fire → bear case activates → ex
 5. **Mag 7 stock buyback rate drops while SBC stays flat** — Kedrosky compression thesis
 6. **Private credit gating expands beyond Blue Owl** — financial sector stress signal
 7. **SemiAnalysis site-level commissioned capacity gap widens vs announced** — needs new tracker
+8. **First major incident at a vibecoded mission-critical system** (medical, financial, industrial, infrastructure) — NEW 2026-05-16. When this fires, AI insurance / liability emerges as a sector, regulatory framework accelerates, and the "vibecode the hospital" pattern collapses. Hashimoto + HN community already tracking specific cases (vibecoded hospital inventory systems, dropped databases, leaked PII). The wiki should track named incidents to date.
 
 ### Jim Chanos warning
 Chanos has flagged that AI capex itself is **boosting S&P 500 EPS estimates** — i.e., the spending shows up as customers' revenue, juicing earnings on the way up. The risk is that if capex slows, the EPS impulse reverses on the way down.

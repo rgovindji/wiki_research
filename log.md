@@ -9,6 +9,30 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-16] ingest | HN thread on Hashimoto "AI psychosis" — bear case sharpening v2
+
+- **Source:** Hacker News thread (1683 upvotes, 908 comments) on Mitchell Hashimoto's "AI psychosis" post about companies forcing AI adoption without checks
+- **TL;DR:** Mostly confirmation of wiki's existing bear framework (Kedrosky/Zitron already integrated). Three new material additions:
+  - **Carlota Perez framework** as academic anchor — *Technological Revolutions and Financial Capital* — bubble + crash + golden age sequence. Most credible academic backing for the wiki's "AI is real AND a bubble" both-sides framing.
+  - **Mitchell Hashimoto's sociological framing** of "AI psychosis" at corporate level — HashiCorp founder, builder not critic; complements Kedrosky's financial framework. "Very resilient catastrophe machine" is the sharpest single description of what's happening at vibecoded companies.
+  - **Vibecoded mission-critical failure** added as 8th falsifiable bear trigger — when first major incident lands (medical / financial / industrial / infrastructure), AI insurance/liability emerges as a sector.
+- **Corroborating anecdotal data:**
+  - FAANG $300/day token quotas + "use it or be terrible" pressure = material OpEx line item (~$3.75B/year per company at scale)
+  - GitHub uptime degradation as collateral damage of vibe coding
+  - Hospital vibecoded inventory systems with security/data issues
+  - Amazon workers making up AI tasks to look productive
+- **Wiki touched:**
+  - [[ai-bubble-debate]] — added Carlota Perez academic anchor section; added Hashimoto "AI psychosis" to "Bear case strongmen" with corporate adoption patterns table; added 8th falsifiable bear trigger
+  - [[ai-infrastructure-debt]] — added "Token spend as Mag 7 OpEx line" section with FAANG $300/day quota anecdote + tied to Kedrosky's SBC/buyback compression thesis
+  - [[log]] — this entry
+- **Stance / conviction changes:** none. This is bear-case sharpening, not bull thesis breaking.
+- **Skipped (low-value):**
+  - Endless ad hominem about "AI psychosis" as clinical vs colloquial term
+  - Bot accusations on the thread (correct but not actionable)
+  - Pedantic compiler/JIT/CNC analogies
+  - Technology vs craftsmanship general debate
+- **Methodology note:** This was a thread, not a primary source. The named voices (Hashimoto, references to Perez) get cited; anonymous commentary is treated as anecdote, not data. Same discipline as POET Lumilens deal analysis.
+
 ## [2026-05-16] ingest | Jim Fan (NVIDIA Robotics chief scientist) — "The Great Parallel" robotics talk
 
 - **Source:** raw/podcasts/nvda_robotics.txt — saved by user 2026-05-16
