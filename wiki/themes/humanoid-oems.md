@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [robotics, humanoid, oems, private-companies, supply-chain, china]
-last_updated: 2026-05-13
+last_updated: 2026-05-16
 last_full_review: 2026-05-13
-sources: 1
+sources: 2
 ---
 
 # Humanoid OEMs (Original Equipment Manufacturers)
@@ -13,6 +13,21 @@ The companies actually *building* humanoid robots — most of which are private.
 ## Why this matters for investors
 
 Even though you can't buy Figure or Agility on a stock exchange, the production decisions these private OEMs make in 2026 determine the 2027-2030 revenue trajectory for every public component supplier in the [[robotics]] sector. **The OEM that wins becomes the customer concentration risk for its supply chain — and the OEM that fails takes those suppliers' growth narratives down with it.**
+
+> **There is no "Nvidia of robotics" yet (NEW 2026-05-16 per [[2026-05-16-sergey-levine-physical-intelligence]]).** Sergey Levine (Physical Intelligence co-founder, UC Berkeley): "I would really like to see a world where there's a lot of heterogeneity in robots." **Which means:** the OEM landscape is *deliberately* heterogeneous and likely to stay that way through at least 2028-2030. **Direct portfolio implication: do not concentrate in single humanoid OEMs.** The TSLA Optimus thesis already on AVOID; private OEMs (Figure / Apptronik / Agility) are venture-stage. Value accrues to (a) foundation-model layer (mostly Meta-PyTorch + Google-Gemma + private labs like Physical Intelligence), (b) **diversified component supply chain that ships into multiple OEMs** (MP, OUST, ALGM, AMBA, VPG, ALNT), (c) compute/inference (CRWV/NBIS).
+
+### The cost-curve unlock (NEW 2026-05-16)
+
+Per Levine, the manipulation-arm cost curve has been faster than almost any other hardware category:
+
+| Year | Cost / arm |
+|---|---|
+| 2014 (PR2 research robot) | $400,000 |
+| Early-2020s (Berkeley research) | $30,000 |
+| **2026 (Physical Intelligence)** | **~$3,000** |
+| Forward | "A small fraction of $3,000" |
+
+**~100× cost decline in ~10 years**, with line-of-sight to another order of magnitude by 2028-2030. **Which means:** OEM unit-economics models (which currently assume $5K-$30K per arm/limb) are likely *too conservative*. Unitree's $16K humanoid pricing isn't a floor — it's a *ceiling* that could compress by 5-10× over the decade. This radically expands TAM but also compresses OEM margins → reinforces "no winner-take-all OEM" thesis (heterogeneity).
 
 > **What this means:** You can't directly invest in most humanoid robot makers (Figure, Agility, Apptronik are private; Chinese ones aren't accessible to most US retail). But the supplier stocks you *can* buy — rare-earth, sensors, edge AI — only matter if those private OEMs actually scale. Watching the OEMs is how you handicap the suppliers.
 
@@ -148,5 +163,6 @@ This is the design-win logic — which public suppliers benefit from which OEMs 
 ## Sources
 
 1. [[2026-05-13-x-stack-map-humanoid-robotics]] — primary source for the public-supplier landscape
-2. Counterpoint Research humanoid installation data (Jan 2026 report) — Chinese OEM share data
-3. Industry partnership disclosures: BMW × Figure, Mercedes-Benz × Apptronik, Amazon × Agility (publicly announced via OEMs' own communications)
+2. [[2026-05-16-sergey-levine-physical-intelligence]] — "no Nvidia of robotics" heterogeneity thesis; 100× arm-cost curve
+3. Counterpoint Research humanoid installation data (Jan 2026 report) — Chinese OEM share data
+4. Industry partnership disclosures: BMW × Figure, Mercedes-Benz × Apptronik, Amazon × Agility (publicly announced via OEMs' own communications)

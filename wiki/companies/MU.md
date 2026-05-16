@@ -2,9 +2,9 @@
 type: company
 ticker: MU
 tags: [ai, semis, memory, hbm]
-last_updated: 2026-05-12
+last_updated: 2026-05-16
 last_full_review: 2026-05-09
-sources: 2
+sources: 3
 conviction: high
 stance: bull
 ---
@@ -47,6 +47,7 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 - **Value-capture framework (per [[2026-05-13-semianalysis-value-capture]]) cuts against MU.** SemiAnalysis argues downstream model labs (Anthropic 70% inference GM) are capturing value while infrastructure suppliers sit on legacy pricing. **Which means:** MU's bull case requires memory tightness to PERSIST while labs continue scaling. If model labs extract more margin (which the framework predicts), the marginal AI-cycle value flows to Anthropic/OpenAI, not to memory vendors.
 - **+120% YTD already.** "Undervalued" relative to what? Stock has more than doubled in less than 5 months. **Which means:** at some point "undervalued" becomes "you're chasing." The base rate for a stock that has doubled in 5 months going up another 50% is poor regardless of fundamentals.
 - **High YTD beta** — significant gains already priced; near-term consolidation risk is real.
+- **Damodaran calls a near-term top on the chip sector (NEW 2026-05-16 per [[2026-05-16-damodaran-profg-markets]]).** Aswath Damodaran on Prof G Markets cited [[MU]] specifically as **+160% YTD** (the wiki had +120% — verify which is current) and said: *"The bulk of the run is done… right now it's a question of consolidation in this market and a cleaning up. There is going to be a correction in some of those companies because we've run up too much too quickly."* Damodaran noted the chip sector is now **17% of S&P 500 (vs. 3% a decade ago) and up 60% in the last 2 months.** **Discount appropriately:** Damodaran is a long-horizon valuation expert, not a near-term tactician, and admits he was lucky on Intel. But this is the cleanest expert call-out the wiki has on near-term chip-sector correction risk. Treat as a **position-sizing prompt**, not a stance-change prompt: don't add aggressively at current levels; if MU pulls back 20-30%, the long-term thesis remains intact and Damodaran's read was right; if it grinds higher into Q3 2026, his read was wrong. Sizing discipline matters more than directional conviction at this price point.
 
 ## The right framing for MU
 
@@ -89,6 +90,7 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the demand-destruction mechanism and 30%-of-capex-to-memory data
 2. [[2026-04-15-semianalysis-isscc-roundup]] — Samsung HBM4 closing the gap; LPDDR6 specs; primary source for the new competitive-risk addition to the bear case
+3. [[2026-05-16-damodaran-profg-markets]] — chip-sector top warning specifically citing MU; sizing-discipline prompt
 
 ## Citations
 - io-fund Micron HBM 2026 plan: https://io-fund.com/ai-stocks/micron-stock-up-100-hbm-leader-2026-plan

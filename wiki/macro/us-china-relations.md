@@ -1,9 +1,9 @@
 ---
 type: macro
 tags: [macro, geopolitics, us-china, tariffs, export-controls, taiwan, rare-earths]
-last_updated: 2026-05-12
+last_updated: 2026-05-16
 last_full_review: 2026-05-12
-sources: 0
+sources: 1
 ---
 
 # US-China Relations
@@ -131,6 +131,24 @@ Catalysts that historically move tech equities materially:
 5. **Chinese stimulus announcements** (especially property + consumer)
 6. **TSMC quarterly results / Taiwan strait incidents** (high-frequency)
 
+## Robotics supply-chain decoupling (NEW 2026-05-16)
+
+A new bilateral chokepoint is forming in parallel with the AI-chip story, and the consensus on this from leading robotics researchers is now clear:
+
+**Dwarkesh (channeling the wiki's framing exactly):** *"Whenever I talk to guests about different things, it's just like, 'Yeah, within a few years the key bottleneck to every single part of the supply chain here will be something that China is the 80% world supplier of.'"*
+
+**Sergey Levine (Physical Intelligence) response (per [[2026-05-16-sergey-levine-physical-intelligence]]):** *"Something really important to get right here is a balanced robotics ecosystem… we need to think about how to balance our priorities, our investment, the kind of things that we spend our time on… AI is tremendously exciting, but we should also recognize that getting AI right is not the only thing that we need to do."*
+
+**Which means:**
+- The robotics supply chain (rare-earth magnets, harmonic drives, precision actuators, servo motors) has the **same structural China dependency as semiconductors had pre-2018** — and the decoupling response is roughly a half-decade behind.
+- The wiki's [[MP]] high-conviction position (only fully integrated US NdFeB producer) is the most direct US-supply-chain answer to this; reinforced by every leading-researcher commentary the wiki has captured in 2026.
+- The next plausible export-control / industrial-policy lever from a 2027-2028 administration is *robotics components*. Watch for: (a) DoD humanoid procurement requirements with domestic-content rules; (b) Chinese rare-earth retaliation similar to the 2024 gallium/germanium move; (c) US tariff carve-outs for non-PRC sourcing.
+
+**Affected wiki positions:**
+- [[MP]] — directly reinforced as the strategic US asset (bullish)
+- [[robotics]] Tier 1 component basket (OUST, ALGM, AMBA, VPG, ALNT) — reinforced as Western alternatives gain strategic weight
+- Chinese OEMs (Unitree, AgiBot, UBTECH) — face same trajectory as Huawei post-2019 if decoupling extends to robotics
+
 ## Open questions
 
 - Does the "Board of Trade" mechanism actually launch, and what's in it?
@@ -142,6 +160,10 @@ Catalysts that historically move tech equities materially:
 ## Related
 
 [[inflation-tariffs]] · [[fed-policy]] · [[valuation-environment]] · [[ai-capex-cycle]] · [[ai-bubble-debate]] · [[market-concentration]] · [[2026-05-12-trump-xi-summit-investment-implications]] · [[overview]]
+
+## Sources
+
+1. [[2026-05-16-sergey-levine-physical-intelligence]] — robotics supply-chain decoupling framing; "balanced robotics ecosystem" reinforcement
 
 ## Citations
 

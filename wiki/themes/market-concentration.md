@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [risk, concentration, mag7]
-last_updated: 2026-05-09
+last_updated: 2026-05-16
 last_full_review: 2026-05-09
-sources: 0
+sources: 1
 ---
 
 # Market Concentration
@@ -15,6 +15,7 @@ The S&P 500 is a cap-weighted index, and the top 10 names — almost all Mag 7 p
 - **Top 10 stocks: >35% of S&P 500 weight** — exceeds the concentration seen at the 1929 and 2000 peaks
 - **Magnificent Seven: ~35% of S&P 500** — same concentration the top 7 had at the dot-com peak
 - The seven: [[NVDA]], [[MSFT]], [[GOOGL]], [[AMZN]], [[META]], [[AAPL]], [[TSLA]]
+- **Chip sector concentration is the underappreciated story (NEW 2026-05-16 per [[2026-05-16-damodaran-profg-markets]]).** Damodaran: 10 years ago chips were **3% of S&P 500**; today **17%**. The chip sector as a whole is up **60% in the last 2 months**. [[MU]] alone +160% YTD. **Which means:** the Mag 7 concentration story is now compounded by a *sector-level* concentration story — beyond the obvious mega-cap tilt, the S&P 500 has become a *6x-leveraged bet on semiconductor cyclicality* over the last decade. The wiki's existing Mag 7 framing (NVDA + MSFT + GOOGL etc.) understates this — there is additional exposure via [[AMD]] / [[AVGO]] / [[MU]] / [[KLAC]] / [[LRCX]] / [[AMAT]] / [[ASML]] that aggregates to a much larger chip-cycle bet than the headline Mag 7 weight suggests.
 
 ## Why this matters
 
@@ -39,10 +40,10 @@ The S&P 500 is a cap-weighted index, and the top 10 names — almost all Mag 7 p
 - Forced selling from passive flows reverses if outflows hit.
 
 ## What it means for portfolio construction
-- **If you own SPY/VOO**, you already have a 35% bet on Mag 7. Don't double down without intent.
+- **If you own SPY/VOO**, you already have a 35% bet on Mag 7 — plus, via the 17% chip-sector share, a *separate* leveraged bet on semi-cycle. Don't double down without intent.
 - **Equal-weight S&P (RSP)** is a real diversification choice with structurally lower concentration risk.
 - **Active stock picking** within Mag 7 (e.g. preferring [[GOOGL]] over [[TSLA]]) lets you own the AI thesis without owning the whole basket.
-- **International/global exposure** ([[TSM]], [[ASML]]) is a partial concentration hedge — same theme, different geography and listings.
+- **International/global exposure** ([[TSM]], [[ASML]]) is a partial concentration hedge — same theme, different geography and listings — but note both are *also* chip names, so this doesn't hedge the sector-level concentration.
 
 ## Open questions
 - Is concentration a structural feature of the AI / network-effects era, or a transient peak?
@@ -51,6 +52,9 @@ The S&P 500 is a cap-weighted index, and the top 10 names — almost all Mag 7 p
 
 ## Related
 [[valuation-environment]] · [[ai-capex-cycle]] · [[ai-bubble-debate]] · [[overview]]
+
+## Sources
+1. [[2026-05-16-damodaran-profg-markets]] — chip-sector S&P share (3% → 17% / +60% in 2 months)
 
 ## Citations
 - Financer market crash 2026: https://financer.com/invest/market-crash-2026/

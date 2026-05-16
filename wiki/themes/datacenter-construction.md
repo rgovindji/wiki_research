@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, datacenter, construction, contractors, labor]
-last_updated: 2026-05-12
+last_updated: 2026-05-16
 last_full_review: 2026-05-12
-sources: 0
+sources: 1
 ---
 
 # Data Center Construction Layer
@@ -44,6 +44,23 @@ Together: **~$76 B of contracted AI-infrastructure construction backlog** across
 - **Modularization tailwind** — Asia-shipped pre-assembled modules (per [[bottleneck-roadmap]]) reduce on-site labor needs but contractors capture the integration / installation revenue
 - **Diversified beyond AI** — utility grid modernization, electrification of transportation, building decarbonization all provide non-AI optionality
 
+## 2028-2030: will robots help with the buildout? (NEW 2026-05-16)
+
+Dwarkesh asked Sergey Levine (Physical Intelligence) the question this thesis turns on: *"By 2028, am I seeing a bunch of robots laying down solar panels and transformers and switchgear, or am I seeing humans?"*
+
+Levine: *"I would hope you'd see at least some robots. My sense is that if we get everything right, you really should… Where we land on that spectrum by 2028 will depend on our ability to handle all of the complex edge cases."*
+
+**What this means for the thesis:**
+- The labor-bottleneck rent for [[FIX]] / [[EME]] / [[PWR]] is **least exposed** to robotic substitution in the 2026-2027 window — the 2028-2030 backlogs are already booked at human-labor pricing.
+- By 2028+, narrow-scope humanoid robotics (per Levine's framework: rebar-tying, conduit-pulling, panel-hanging) plus Levine's **~100× arm cost decline** ($400K → $3K → "small fraction of $3K") could meaningfully offset the labor-cost trajectory.
+- **First-order**: bullish — robots assist contractors, expanding what each $1 of construction capex builds, increases backlog burn rate.
+- **Second-order**: if robotic-assisted construction labor becomes meaningful by 2028-2030, the *pricing power* of skilled-labor providers compresses — but this is the back half of the decade, after most of the buildout has been contracted.
+- **Practical near-term:** the same Tier 1 [[robotics]] component suppliers (MP, ALGM, OUST) get a second demand vector beyond Tesla/Figure programs — datacenter-construction tools and assistive humanoids designed for the buildout itself.
+
+Not yet investable as a thesis pivot. Worth tracking — if FIX or EME mentions robotic-assisted labor in a 2027 earnings call, it's a leading indicator.
+
+See [[robotics]] for the underlying Levine framework. See [[2026-05-16-sergey-levine-physical-intelligence]] for the source.
+
 ## Bear case
 - **Cyclical at heart** — construction is cyclical; if AI capex pauses, the new-bookings rate falls fast even if the backlog burns down
 - **Already-run stocks** — FIX +47% YTD 2026, EME and PWR both with strong runs; valuation premium real
@@ -62,6 +79,9 @@ Together: **~$76 B of contracted AI-infrastructure construction backlog** across
 
 ## Related
 [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[FIX]] · [[EME]] · [[PWR]] · [[VRT]] · [[ETN]] · [[GEV]] · [[BE]] · [[overview]]
+
+## Sources
+1. [[2026-05-16-sergey-levine-physical-intelligence]] — 2028-2030 robot-assisted construction framing; arm-cost-curve thesis input
 
 ## Citations
 - Comfort Systems Q1 2026 backlog: https://www.tikr.com/blog/comfort-systems-stock-climbs-47-in-2026-as-data-center-demand-drives-record-11-94-billion-backlog

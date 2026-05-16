@@ -1,9 +1,9 @@
 ---
 type: sector
 tags: [semis, ai, hardware]
-last_updated: 2026-05-09
+last_updated: 2026-05-16
 last_full_review: 2026-05-09
-sources: 0
+sources: 1
 ---
 
 # Semiconductors
@@ -53,6 +53,8 @@ The chip stack — design (GPUs, CPUs, custom silicon), foundry ([[TSM|TSMC]]), 
 - AI demand is **contracted** (NVDA backlog, hyperscaler capex commitments) → lower risk of bubble vs. application layer
 - Leading-edge foundry capacity is **physically constrained** — TSMC bottleneck supports pricing and margins
 - **Sovereign AI** adds a second buyer base (UAE, Saudi, EU, India) outside US hyperscalers
+- **Architecture lock-in via Tensor Cores (NEW 2026-05-16 per [[2026-05-16-horace-he-ml-systems]]).** On A100, matmul ops run **~15× faster** than non-matmul ops (1000 TFLOPS TF32 vs 67 TFLOPS FP32). If you aren't doing matmuls, you get **7% of peak FLOP utilization**. **Which means:** the entire ML industry consolidated onto transformers because no other architecture could use modern Nvidia hardware efficiently. This is a *chip-level* reason for architecture monoculture, not a software fashion — and it locks in continued demand for matmul-specialized hardware (which is what every AI accelerator now is, including AMD MI400/MI450 and AVGO custom XPUs). The sector benefits from the architectural homogeneity it created.
+- **Effective-FLOPs lever via precision drops (NEW 2026-05-16).** Bit-precision ladder: V100 = FP16 default → A100 = FP8 → B100 = FP4. Each halving roughly doubles effective throughput per transistor **without requiring a new fab node**. **Which means:** even if 2nm / 1.4nm timelines slip, the compute-per-dollar curve keeps falling via precision drops — supportive for the long-cycle demand thesis without requiring EUV bottleneck-relief.
 
 ## Bear case for the sector
 - **Cyclicality** — semis have always been boom/bust; this cycle's amplitude could match the upside on the way down
@@ -69,6 +71,9 @@ The chip stack — design (GPUs, CPUs, custom silicon), foundry ([[TSM|TSMC]]), 
 
 ## Related
 [[ai-capex-cycle]] · [[NVDA]] · [[TSM]] · [[ASML]] · [[cloud-hyperscalers]] · [[overview]]
+
+## Sources
+1. [[2026-05-16-horace-he-ml-systems]] — Tensor Core 15× cliff drives architecture monoculture; FP4 precision lever extends compute curve
 
 ## Citations
 - Schwab Q1 tech earnings preview: https://www.schwab.com/learn/story/semiconductor-earnings-preview

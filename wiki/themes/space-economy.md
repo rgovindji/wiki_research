@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [space, economy, satellites, launch, defense, dod]
-last_updated: 2026-05-13
+last_updated: 2026-05-16
 last_full_review: 2026-05-13
-sources: 2
+sources: 3
 ---
 
 # Space Economy
@@ -19,6 +19,7 @@ The space economy crossed **$470B in 2026** with **78% commercial revenue** (Mor
 1. **Launch cost compression of 95% over the past decade** (SpaceX-driven). Falcon 9 reusability brought cost from ~$10,000/kg to ~$2,000/kg. Neutron + Starship target sub-$500/kg by 2028. **Which means:** entire categories of satellite businesses that weren't economical 10 years ago (mega-constellations, direct-to-cell, Earth-observation-as-a-service) are now investable.
 2. **DoD Space Force budget at $40.2B FY26 (+40% YoY).** Largest single-year increase ever. **Golden Dome layered missile defense** is the new mega-program. **Commercial Augmentation Space Reserve** plans 20 contracts by EOY 2026 — formalizing commercial as part of DoD's space posture.
 3. **SpaceX IPO confidentially filed April 1, 2026 at $1.75-2T**. Whenever it lists, it triggers a re-rating of comparable public space companies upward (RKLB, ASTS) AND a re-anchoring of valuations broadly. Index inclusion in S&P 500 / Nasdaq-100 would be material.
+   - **Damodaran intrinsic-value anchor (NEW 2026-05-16 per [[2026-05-16-damodaran-profg-markets]]): $1.2T** — published in Damodaran's recent "Trillions and Beyond" paper. Drivers: space launch + Starlink moats ("strongest modes of any of the tech companies"). He is less impressed with the xAI side. Damodaran notes the $1.2T requires "a lot of things to go right." **Which means:** if SpaceX IPOs at $1.75T+, Damodaran's framework implies ~30-45% overvaluation at issue — a useful retail anchor when the IPO actually prices. The Damodaran number is the highest-credibility independent DCF in the wiki.
 
 > **What this means:** Space is no longer a "future" theme — it's a $470 billion live economy growing 8%+ a year, with the US government as the anchor customer and SpaceX about to become the largest defense-adjacent IPO in history. The investable question is which sub-categories will see the most asymmetric upside as the cycle scales.
 
@@ -108,6 +109,7 @@ See [[aerospace-defense]] for the full tiered framework. Summary:
 1. [[2026-05-07-RKLB-Q1-2026-earnings]] — Rocket Lab Q1 2026 print
 2. [[2026-05-11-ASTS-Q1-2026-earnings]] — AST SpaceMobile Q1 2026 print
 3. [[2026-05-14-space-economy-budget-sources]] — **consolidated source summary** for Aerospace Corp FY26 budget brief (Golden Dome breakdown + MTI satellites $500M → $8.8B), CSIS commercial services gap, Morgan Stanley ecosystem framing
+4. [[2026-05-16-damodaran-profg-markets]] — Damodaran SpaceX intrinsic value DCF anchor at $1.2T
 4. Morgan Stanley Global Space Economy — https://www.morganstanley.com/Themes/global-space-economy
 5. SpaceNews FY26 defense appropriations + Space Force $26B — https://spacenews.com/defense-appropriations-bill-for-2026-funds-space-force-at-26-billion-presses-pentagon-on-golden-dome/
 6. Sacra SpaceX revenue + valuation — https://sacra.com/c/spacex/

@@ -3,7 +3,7 @@ type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
 last_updated: 2026-05-16
 last_full_review: 2026-05-09
-sources: 3
+sources: 5
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -42,6 +42,18 @@ Synthesized from the May 2026 Dwarkesh × Dylan Patel interview ([[2026-05-09-dw
 - Elon wants 100 GW/yr → 50% share is implausible
 - Tool cost: **$300-400M** each
 - $50B of data center CapEx per GW vs. only **$1.2B of EUV tooling** per GW → enormous leverage
+
+## Sub-bottleneck: memory bandwidth (always-on within compute) — NEW 2026-05-16
+
+Per Horace He (Meta PyTorch Compilers) — see [[2026-05-16-horace-he-ml-systems]]:
+
+- On BERT-class workloads, **matmuls = 99.8% of FLOPs but only 61% of runtime**. The remaining 39% of runtime is non-matmul operations doing 0.2% of FLOPs — *almost entirely memory-bandwidth bound*.
+- Horace: operator fusion is "by far the most important optimization in a deep learning compiler" — because the entire point is to avoid round-trips between SRAM and VRAM.
+- A100 hardware ratio: ~15× cliff between matmul (1000 TFLOPS TF32) and non-matmul (67 TFLOPS FP32) compute.
+
+**Which means:** the [[MU]] HBM thesis isn't just a 2025-2026 cycle — *every* compute generation runs into the same data-shuffling wall, which is why HBM density and bandwidth keep scaling alongside FLOPs. The structural reason memory is a perennial bottleneck (not a one-cycle event) is the architecture of GPUs themselves. HBM4 → HBM4E → HBM5 cadence isn't optional; without it, the next NVDA chip generation suffocates on its own matmul throughput.
+
+**Cross-cycle note for robotics:** Sergey Levine ([[2026-05-16-sergey-levine-physical-intelligence]]) makes the same memory point in a different domain — π0 has only 1 second of visual context vs. human "hours to decades." Scaling robot context length requires the same memory hierarchy improvements that AI training does. Same vendors, same demand vector.
 
 ## What's NOT a bottleneck (per Dylan)
 
@@ -106,3 +118,5 @@ The previous version of this roadmap covered only the **physical** bottlenecks (
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the AI bottleneck synthesis
 2. [[2026-05-13-x-stack-map-humanoid-robotics]] — primary source for the robotics bottleneck extension
 3. [[2026-05-16-jim-fan-nvda-robotics]] — model + data layer extension; WAM paradigm; dexterity scaling law; 2040 endgame framing
+4. [[2026-05-16-horace-he-ml-systems]] — memory-bandwidth sub-bottleneck; matmul/non-matmul 15× cliff; FP4 precision lever
+5. [[2026-05-16-sergey-levine-physical-intelligence]] — robot-context memory parallel; "robotics is software AND industrial" reinforcement

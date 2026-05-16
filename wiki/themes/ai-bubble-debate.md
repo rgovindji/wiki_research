@@ -3,7 +3,7 @@ type: theme
 tags: [ai, bubble, risk, debate]
 last_updated: 2026-05-16
 last_full_review: 2026-05-09
-sources: 6
+sources: 8
 ---
 
 # AI Bubble Debate
@@ -214,6 +214,45 @@ A general framework worth tracking across [[MU]], [[SNDK]], [[WDC]], and other c
 
 > **What this means:** Memory stocks like Micron and SanDisk are cyclical — their earnings boom-and-bust every few years. When their stocks look "cheap" on forward earnings near a cycle peak, that's actually a warning sign, not a buy signal, because the earnings are about to fall. Treat them as multi-year trades with explicit exit rules, not buy-and-forever holds.
 
+## Macro spillover thesis — Damodaran (NEW 2026-05-16)
+
+Aswath Damodaran (NYU Stern, "dean of valuation") on Prof G Markets [[2026-05-16-damodaran-profg-markets]] adds a major framing the wiki had been missing — what an AI correction would *actually look like* relative to the dotcom analog:
+
+> *"This is carrying the macro economy a lot more than the dotcom boom did. You didn't get the kind of investment into the economy. You're getting it across the country in the building of data centers, people being employed, you know, the power companies, the water being demanded. There's collectively a lot more accounting for here if there's a correction than there was in the dotcom boom… It'll be more marketwide. It won't be just a tech company correction. It'll be a correction across more sectors than you did then and more of a macroeconomic hangover that'll take a little longer to get through."*
+
+**Which means:** the typical retail framing of "AI bubble = repeat of 2000" understates the transmission risk. Unlike 2000 — where the bust was concentrated in Silicon Valley + dot-com pure-plays — a 2026-2027 AI correction would propagate via:
+- Industrial / construction labor demand collapse (FIX/EME/PWR backlog burn-down)
+- Power utility capex revisions (CEG / VST / GEV / BE)
+- Regional commercial real estate (data center clusters in TX, VA, AZ, OH)
+- Bank exposure to data center debt (now offloaded to private credit — see [[ai-infrastructure-debt]])
+- AI capex was holding GDP positive ("without AI spending we'd probably be looking at GDP growth in the negative" per Damodaran) → correction = recession risk, not just sector drawdown
+
+**Hedging implication**: the wiki's [[hedging-risk]] framework should treat the AI bubble as a *macro* hedge problem, not a sector hedge problem. Cyclicals / industrials / regional banks / commercial real estate REITs are not safe havens — they're *more* exposed than they were in 2000 because the AI buildout has been carrying the macro economy.
+
+## Chip sector top warning (NEW 2026-05-16)
+
+Damodaran: 10 years ago chips were **3% of S&P 500**; today **17%**. Sector up **60% in the last 2 months**. [[MU]] +160% YTD per Damodaran. His call: *"the bulk of the run is done."*
+
+**Discount**: Damodaran is a long-horizon valuation expert, not a near-term tactician (he admits he was lucky on Intel). But the data points — 17% S&P share, 60% in 2 months — are real and notable. Treat as a *position-sizing prompt* for [[NVDA]] / [[MU]] / [[AMAT]] / [[KLAC]] / [[LRCX]] / [[ASML]], not a stance-change prompt. The long-term theses remain intact regardless of a near-term correction.
+
+## LLM data-wall — expert dissent thread (NEW 2026-05-16)
+
+A new bear-side leg of the debate is firming up: the **pre-training data exhaustion** claim now has multiple independent expert sources converging.
+
+**Yann LeCun** (Turing Award, just left Meta to start AME Labs) on [[2026-05-16-yann-lecun-ame-labs]]:
+> *"They've already run out of data. The openly available publicly available data text data is already all used. So what those companies are doing is licensing commercial copyrighted data or training on synthetic data."*
+
+LeCun goes further — he argues LLMs are *not the path* to human-level intelligence at all, regardless of scaling. His full thesis: only world-model architectures (JEPA) get to AGI. He frames OpenAI / Anthropic as *"the Sun Microsystem and HPUX of yesterday"* — a strong claim that the closed-frontier-LLM business will be wiped out by open architectures over a 5+ year horizon.
+
+**Where this fits in the debate:**
+- This is one of the few times a Turing-Award-winning AI researcher has openly told investors that the LLM paradigm is *capped*, not just *bounded*.
+- LeCun's framing also includes a notable shot at Anthropic specifically: *"There is some kind of commercial good commercial reasons for them to believe that and to kind of brainwash some people and government into thinking their systems are dangerous."* — i.e., LeCun reads Anthropic's safety positioning as regulatory capture.
+- **Which means** for portfolio sizing: the *pre-training* leg of the bull case (scale + data + compute keeps improving capability) is weaker than the *inference + applications* leg. NVDA/CRWV/NBIS demand comes from BOTH legs but inference is the more durable layer.
+
+**Counter-balancing**: LeCun is, by his own admission, raising money for a JEPA-bet lab. He has direct commercial interest in talking down LLMs. Discount appropriately.
+
+**Wiki resolution**: keep both views surfaced. Bull case on LLMs intact for the inference / monetization legs; bear case on pre-training-scaling sharpens with each new expert defection.
+
 ## Stress-test scenarios
 - **Soft landing:** AI capex grows but at a decelerating rate; hyperscalers monetize; Mag 7 multiples compress modestly. Index returns **5-10%** through 2026.
 - **Capex peak:** one or more hyperscalers cuts capex guidance; Mag 7 de-rates **15-25%**; index drawdown **10-15%**.
@@ -238,3 +277,5 @@ A general framework worth tracking across [[MU]], [[SNDK]], [[WDC]], and other c
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the H100-worth-more-today counter-argument and the 30%-capex-to-memory framing of Chanos's concern
+2. [[2026-05-16-yann-lecun-ame-labs]] — LLM data-wall hard claim + expert dissent on AGI-via-LLMs timeline + Anthropic regulatory-capture framing
+3. [[2026-05-16-damodaran-profg-markets]] — macro spillover thesis + chip-sector top warning + "AI is still net expense for non-chip Mag 7"

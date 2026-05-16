@@ -2,9 +2,9 @@
 type: company
 ticker: NBIS
 tags: [ai, neocloud, gpu-cloud, nvda-direct, international]
-last_updated: 2026-05-13
+last_updated: 2026-05-16
 last_full_review: 2026-05-13
-sources: 3
+sources: 4
 conviction: high
 stance: bull
 ---
@@ -35,6 +35,7 @@ Neocloud peer to [[CRWV]] — **NVDA invested $2B for 8.3% stake**, locked in **
 - **Power infrastructure already secured** — 2GW contracted gives runway; new 1.2 GW facility power secured in Q1 2026 per CEO comments on "unprecedented demand."
 - **GPU rental rates +40% in 5 months (see [[2026-04-01-semianalysis-gpu-rental-index]]).** H100 1-yr contracts rose from $1.70 → $2.35/hr (Oct 2025 → Mar 2026), still rising 15-20% MoM. All Neocloud + Hyperscaler capacity through Aug-Sep 2026 already booked. **Which means:** NBIS's unit economics are improving fast through 2026 contract repricing — and Q1 results validate this is already flowing through to financials.
 - **Sentiment vs fundamentals disconnect FINALLY RESOLVED.** The April SemiAnalysis "Long NBIS" featured comment is now decisively validated. The Q1 print + guidance is the catalyst that re-rates NBIS away from the "speculative Neocloud" framing.
+- **Latent demand vector — off-board robot inference (NEW 2026-05-16, light bullet).** Per Sergey Levine (Physical Intelligence) [[2026-05-16-sergey-levine-physical-intelligence]]: low-cost robots will likely stream sensor data to **cloud GPUs**, with on-board inference reserved for outdoor/reliability-critical use cases. A billion-plus robots in 2030+ each pulling control commands at sub-second cadence creates a new compute load class — high QPS, low-batch, latency-sensitive — additive to the LLM training/inference workloads NBIS is currently scaling for. **Which means:** NBIS has a second demand vector beyond the current MSFT/Meta framing, on the 2028-2030 horizon. Not yet priced. The European geographic footprint may actually be an *advantage* for serving European humanoid OEMs / industrial robotics customers as they emerge.
 
 > **What this means (bull case synthesis):** Three months ago, NBIS was a "high-conviction story stock" — NVDA-backed, Meta-backed, but unprofitable and undersized. Today, NBIS is a profitable company with ~$44 billion of contracted revenue, +684% growth, and a guidance path to $7-9B ARR within 12 months. The earnings power is no longer theoretical.
 
@@ -84,6 +85,7 @@ Neocloud peer to [[CRWV]] — **NVDA invested $2B for 8.3% stake**, locked in **
 1. [[2026-05-13-NBIS-Q1-2026-earnings]] — official Q1 2026 press release; the Q1 print that triggered conviction upgrade to high
 2. [[2026-04-01-semianalysis-gpu-rental-index]] — H100 1-yr rental +40%, all capacity booked through Sep 2026, "Long NBIS" featured comment
 3. [[2026-04-20-semianalysis-gpu-cluster-cost]] — ClusterMAX 2.1; goodput-based Neocloud differentiation
+4. [[2026-05-16-sergey-levine-physical-intelligence]] — off-board robot inference as latent 2028-2030 demand vector
 
 ## Citations
 - [Nebius reports first quarter 2026 financial results — BusinessWire (May 13, 2026)](https://www.businesswire.com/news/home/20260513568820/en/Nebius-reports-first-quarter-2026-financial-results)

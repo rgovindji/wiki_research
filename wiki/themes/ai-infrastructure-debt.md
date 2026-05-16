@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [debt, private-credit, srt, ai-data-centers, systemic-risk, contagion]
-last_updated: 2026-05-15
+last_updated: 2026-05-16
 last_full_review: 2026-05-15
-sources: 0
+sources: 1
 conviction: high
 ---
 
@@ -92,6 +92,31 @@ Per Mitchell Hashimoto + corroborating HN discussion (May 2026): FAANG companies
 
 The wiki's existing coverage of [[CRWV]] and [[NBIS]] is relevant here — both raise capital aggressively, both have significant debt + lease components. Their refinancing risk increases materially if the private credit channel tightens.
 
+## Hyperscaler revenue concentration in OpenAI + Anthropic (NEW 2026-05-16)
+
+Per Aswath Damodaran [[2026-05-16-damodaran-profg-markets]] (citing a chart on the show), OpenAI + Anthropic spending commitments make up the following share of each hyperscaler's revenue backlog:
+
+| Hyperscaler | OpenAI + Anthropic share of revenue backlog |
+|---|---|
+| [[MSFT]] | **~50%** |
+| [[ORCL]] | **>50%** |
+| [[GOOGL]] | **43%** |
+| [[AMZN]] | **51%** |
+
+(Source attribution per Galloway on the podcast; not independently verified by the wiki — *verify before use in any analysis.*)
+
+**Which means:** if EITHER OpenAI or Anthropic delivers a downgrade (revenue miss, growth deceleration, fundraise difficulty, governance crisis) in 2026-27, the revenue revision flows simultaneously to all four hyperscalers. This is the *quantitative* version of the circularity concern the wiki has been tracking qualitatively. The wiki's existing framing (Anthropic CFO's $100B+ compute commitment, CRWV $99.4B backlog including Anthropic Claude) was directional; Damodaran's numbers are precise.
+
+**Combined with the debt-structure leverage** documented in this page: a single AI lab disappointment cascades through (a) hyperscaler revenue, (b) SPV lease income, (c) SRT-distributed bank debt held by insurance + pension funds, (d) private credit redemption-gated funds. The propagation path is now *quantified*, not just sketched.
+
+## Bank distribution of data center debt — independent corroboration (NEW 2026-05-16)
+
+Per [[2026-05-16-damodaran-profg-markets]], Damodaran was asked directly about the May 3, 2026 FT report that **JPMorgan Chase, Morgan Stanley, and SMBC** are distributing data center debt to broader investor bases via private deals + risk transfers. Damodaran's response:
+
+> *"By itself, it makes sense, right? Because if you have a lot of debt to a particular segment of the economy, as a bank, you want to try to create some sharing of that risk. So by itself, that doesn't bother me. But I think that it also means that if everybody's trying to do it at the same time, then the concern is what if there are people who don't want to share that risk? What if you just took on too much debt? And that's a potential problem for banks… maybe the regulators need to keep tabs on how much of the debt is going towards these data centers and figure out a way to look at banks that are overexposed."*
+
+**Which means:** the SRT / risk-transfer mechanism described above is now independently corroborated by an outside expert in real time. Damodaran's specific concern — "what if everybody's trying to do it at the same time" — is precisely the 2007-2008 mechanism where every bank tried to distribute mortgage exposure simultaneously, with the same counterparties absorbing it. Falsifiable watch trigger added: track BIS quarterly SRT issuance data; track named bank concentrations in any forthcoming Q2 / Q3 2026 earnings disclosures.
+
 ## Why this matters more than the demand-side bubble debate
 
 | Scenario | Demand-side bear case | Debt-structure bear case |
@@ -161,6 +186,7 @@ Whether the analog plays out depends on what triggers AI capex slowing (if anyth
 
 ## Sources
 
+1. [[2026-05-16-damodaran-profg-markets]] — hyperscaler-backlog concentration percentages (MSFT 50%, ORCL 50%+, GOOGL 43%, AMZN 51%); independent corroboration of bank data-center debt distribution
 - [Banks try to offload AI data-centre debt as exposure mounts (FT via ResultSense)](https://www.resultsense.com/news/2026-05-06-banks-offload-ai-data-centre-debt/)
 - [Tech groups shift $120bn of AI data centre debt off balance sheets (FT)](https://www.facebook.com/financialtimes/posts/tech-groups-shift-120bn-of-ai-data-centre-debt-off-balance-sheets/1266725628834145/)
 - [Wall Street Banks Choking on AI Data Center Debt — SRT (Kim Minwoo)](https://kimminwoo.com/daily/2026-05-04-claude-scout2)

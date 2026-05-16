@@ -2,9 +2,9 @@
 type: company
 ticker: MP
 tags: [rare-earths, robotics, humanoid, defense, ev]
-last_updated: 2026-05-13
+last_updated: 2026-05-16
 last_full_review: 2026-05-13
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -38,6 +38,7 @@ The only fully integrated rare-earth producer in the US, with H1 2026 commercial
 > **What this means:** Every electric car uses some rare-earth magnets. Every humanoid robot uses about ten times as much. So even a modest humanoid buildout (say, 100,000 units in 2027) creates magnet demand equivalent to a million EVs — on top of existing demand from cars, wind turbines, and defense. MP Materials owns the only US factory that can supply this.
 - **Northlake TX 10X magnetics facility** backed by $200M incentive package expected to break ground 2026 — adds long-cycle capacity.
 - **Wedbush $90 PT** (Dan Ives initiation, April 2026) frames MP as not yet fully priced for vertical integration; consensus runs lower at ~$62 (Morgan Stanley Overweight).
+- **"Balanced robotics ecosystem" framing reinforces strategic-asset status (NEW 2026-05-16 per [[2026-05-16-sergey-levine-physical-intelligence]]).** Sergey Levine (Physical Intelligence, Berkeley): "Something really important to get right here is a balanced robotics ecosystem… we need to think about how to balance our priorities, our investment." Dwarkesh on this episode pulls the exact pattern the wiki has been tracking: "within a few years the key bottleneck to every single part of the supply chain here will be something that China is the 80% world supplier of." **Which means:** as the consensus among leading robotics researchers converges on "US needs domestic robotics-components capacity," the political/strategic justification for MP's DoD-partnership trajectory deepens. Each new researcher commentary makes the path to a 2027-2028 industrial-policy lever (e.g., domestic-content rules for DoD humanoid procurement, tariffs on Chinese magnet/actuator imports) marginally more likely. Direct upside catalyst for MP's pricing power on top of base-rate humanoid demand growth.
 
 ## Bear case / risks
 
@@ -70,6 +71,7 @@ The only fully integrated rare-earth producer in the US, with H1 2026 commercial
 ## Sources
 
 1. `sources/2026-05-13-x-stack-map-humanoid-robotics.md`
-2. Stocktitan — *The 2027 Defense Deadline That Is Forcing the U.S. to Rebuild* (May 2026)
-3. 24/7 Wall St. — *Wedbush Projects $90 for MP Materials* (April 20, 2026)
-4. MP Materials Q1 2026 earnings release.
+2. [[2026-05-16-sergey-levine-physical-intelligence]] — "balanced robotics ecosystem" framing; reinforces strategic-asset trajectory
+3. Stocktitan — *The 2027 Defense Deadline That Is Forcing the U.S. to Rebuild* (May 2026)
+4. 24/7 Wall St. — *Wedbush Projects $90 for MP Materials* (April 20, 2026)
+5. MP Materials Q1 2026 earnings release.

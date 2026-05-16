@@ -9,6 +9,59 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-16] ingest | Aswath Damodaran (NYU Stern) — Prof G Markets quarterly live stream
+
+- **Source:** [[2026-05-16-damodaran-profg-markets]] (raw at `raw/podcasts/ai_boom.txt`)
+- **TL;DR:** Aswath Damodaran ("dean of valuation," NYU Stern) on Prof G Markets with Scott Galloway / Ed Elson. Mostly confirmation of existing wiki theses but from a high-credibility independent voice. Six investment-relevant data points:
+  1. **AI correction would be WORSE than dotcom** because of macro spillover — data centers + power + water + employment across the country = market-wide correction with longer macro hangover. Direct sharpening of [[ai-bubble-debate]] bear case.
+  2. **Hyperscaler revenue concentration in OpenAI + Anthropic** — Galloway cites a chart: MSFT ~50%, ORCL >50%, GOOGL 43%, AMZN 51% of revenue backlog. The cleanest quantitative single-source for the circularity concern. Tightens [[ai-infrastructure-debt]].
+  3. **"AI is still NET EXPENSE, not income, for most of Mag 7"** — depreciation on AI capex puts downward pressure on earnings for MSFT/GOOGL/META/AMZN; real AI earnings concentrate at chip makers. Caveat added to [[ai-capex-cycle]] bull case.
+  4. **Chip sector top warning** — 10 years ago = 3% of S&P 500; today = 17%. +60% in 2 months. MU +160% YTD. Damodaran: "the bulk of the run is done." Added to [[ai-bubble-debate]] + [[MU]] as a sizing-discipline prompt.
+  5. **Banks distributing data center debt (JPM, MS, SMBC)** — Damodaran independently corroborates [[ai-infrastructure-debt]] thesis. Direct quote on regulators needing to track bank overexposure.
+  6. **SpaceX intrinsic value $1.2T** per Damodaran's "Trillions and Beyond" DCF — implies ~30-45% overvaluation if SpaceX IPOs at $1.75T+ private mark. Highest-credibility independent DCF anchor in the wiki. Added to [[space-economy]].
+- **Notable color**: combined SpaceX + Anthropic + OpenAI IPOs will exceed entire dotcom-era IPO market cap. Damodaran: "those three companies alone will be larger in market cap than 95% of the markets out there."
+- **Wiki touched:** [[ai-bubble-debate]], [[ai-infrastructure-debt]], [[ai-capex-cycle]], [[market-concentration]], [[MU]], [[space-economy]]
+- **No stance changes.** MU stays bull/high — sizing flag added to bear case. Other patches sharpen existing theses without flipping any.
+
+## [2026-05-16] ingest | Yann LeCun (AME Labs / ex-Meta) — Unsupervised Learning podcast
+
+- **Source:** [[2026-05-16-yann-lecun-ame-labs]] (raw at `raw/podcasts/yan.txt`)
+- **TL;DR:** Yann LeCun (Turing Award winner) confirms he left Meta in late 2025 / early 2026 to start AME Labs (Advanced Machine Intelligence) in Paris, focused on JEPA / world-model architecture. Five investment-relevant data points:
+  1. **Insider validation of the Meta strategic refocus story.** Post-Llama-4 disappointment, Mark refocused company on LLM catch-up; FAIR was "isolated within the company"; "lots of good people have left already." Mild bearish on Meta's research-talent moat.
+  2. **PyTorch dominance independently corroborated by an outgoing competitor.** LeCun: "the entire industry is built on PyTorch basically except for a few people at Google." Reinforces the META programming-model moat bullet (just added from Horace He).
+  3. **3-way architecture contradiction with Jim Fan + Sergey Levine.** LeCun: VLA = "pretty much now seen as a failure"; generative video world models = "losing proposition"; only JEPA / joint-embedding architecture works. Three top researchers from three orgs disagree on architecture even while agreeing on 3-5yr timeline. Surfaced explicitly in [[robotics]] per wiki house rule.
+  4. **LLM data-wall hard claim**: "They've already run out of data. The openly available publicly available data text data is already all used. So what those companies are doing is licensing commercial copyrighted data or training on synthetic data." Strengthens the [[ai-bubble-debate]] bear leg on pre-training scaling.
+  5. **Sovereign-AI federated training mechanism (Tapestry)** + industrial process control as adjacent TAM. Both added as monitor-but-not-investable threads to [[ai-capex-cycle]].
+- **Notable color**: LeCun also takes a direct shot at Anthropic — "some kind of commercial good commercial reasons for them to believe that and to kind of brainwash some people and government into thinking their systems are dangerous." First high-profile peer accusing Anthropic of regulatory capture for commercial advantage.
+- **Hinton/Bengio divergence**: LeCun says they "changed their minds, I didn't change mine" in 2023 after GPT-4. Hinton's calc: cortex = 16B neurons / 10 backprop equivalents = 1.6B ≈ GPT-4 → quasi-AGI. LeCun's read: Hinton wanted to retire.
+- **Wiki touched:** [[META]], [[robotics]], [[ai-bubble-debate]], [[ai-capex-cycle]]
+- **No stance changes.** META bear case slightly sharpens (research-talent moat erodes) but is offset by PyTorch confirmation; net unchanged.
+
+## [2026-05-16] ingest | Dwarkesh × Sergey Levine (Physical Intelligence) — robotics foundation models
+
+- **Source:** [[2026-05-16-sergey-levine-physical-intelligence]] (raw at `raw/podcasts/robotics.txt`)
+- **TL;DR:** Sergey Levine (Physical Intelligence co-founder, UC Berkeley professor, leading robotics foundation-model researcher) gives an independent, slightly more-measured timeline vs. Jim Fan: **5-year median to fully autonomous home robot; GPT-5-equivalent robotics in 2028-2030; useful narrow deployment 1-2 years**. Key data point: **robot arm cost has collapsed from $400K (2014 PR2) → $30K (early-2020s research) → $3K (PI today) → "small fraction of $3K" forward**. ~100× cost decline in ~10 years. Physical Intelligence's π0 model = Google's open-source **Gemma VLM** + grafted action expert. Levine: **"no Nvidia of robotics" yet** — wants heterogeneity. Off-board inference (cloud-streamed) likely for low-cost robots.
+- **Five investment-relevant insights:**
+  1. Independent corroboration of 2-5yr timeline for first major capability inflection (alongside Jim Fan); contradiction surfaced not resolved (Fan more aggressive at 2-3yr Turing test)
+  2. 100× arm cost decline + future "small fraction of $3K" → deployment-velocity assumptions in robotics market sizing are likely too conservative
+  3. "No Nvidia of robotics" → bearish for single-OEM concentration (TSLA Optimus, Figure, Apptronik); bullish for diversified component supply chain (MP, OUST, ALGM, AMBA, VPG, ALNT)
+  4. Off-board inference → latent 2028-2030 demand vector for CRWV/NBIS that nobody is pricing yet
+  5. Gemma open-source as robotics substrate → modest GOOGL tailwind; PyTorch as training framework → META platform-tax tailwind
+- **Wiki touched:** [[robotics]], [[humanoid-oems]], [[bottleneck-roadmap]], [[datacenter-construction]], [[us-china-relations]], [[MP]], [[CRWV]], [[NBIS]], [[GOOGL]], [[META]], [[ai-capex-cycle]]
+- **No stance changes.** Conviction reinforcements only.
+
+## [2026-05-16] ingest | Horace He (Meta PyTorch Compilers) — "Building ML Systems for a Trillion-Trillion FLOPs"
+
+- **Source:** [[2026-05-16-horace-he-ml-systems]] (raw at `raw/podcasts/deep_learning.txt`)
+- **TL;DR:** Horace He (PyTorch compilers team at Meta — wrote torch.compile and FlexAttention) on the structural shape of ML systems. Technical talk with 5 investment-relevant data points:
+  1. **Tensor Core moat is hardware-level, not just CUDA-level.** On A100: 1000 TFLOPS TF32 (matmul) vs 67 TFLOPS FP32 (everything else) = **~15× cliff**. If you aren't doing matmuls on a GPU, you get 7% of peak FLOP utilization. This is the chip-level reason transformers consolidated as the only architecture.
+  2. **Bit precision trajectory: V100=FP16 → A100=FP8 → B100=FP4.** Each halving roughly doubles effective throughput per transistor *without* requiring a new fab node. Effective-FLOPs growth axis independent of EUV bottleneck.
+  3. **Fault tolerance ceiling at 131K GPUs.** Per Llama 3 paper: at 16K GPUs, MTBF ≈ 1.8 hrs; at 131K GPUs, ≈ 15 minutes. Engineering complexity scales worse than linearly → only hyperscalers + a small set of neoclouds (CRWV/NBIS) can actually USE frontier-scale clusters.
+  4. **Memory bandwidth as perennial sub-bottleneck.** Matmul = 99.8% of FLOPs, 61% of runtime; the other 39% of runtime is memory-bound. Validates the structural HBM thesis (MU) as not a one-cycle event but an architectural constant.
+  5. **Programming-model ownership > compiler optimization.** Horace's thesis: durable winners own the programming model (CUDA for NVDA, PyTorch for META). Compilers are unreliable; programming models that bake parallelism in (FlexAttention, torch.compile) win.
+- **Wiki touched:** [[NVDA]], [[ai-capex-cycle]], [[bottleneck-roadmap]], [[META]], [[semiconductors]]
+- **No stance changes.** Existing high-conviction NVDA + META bull theses thickened with hardware-level evidence.
+
 ## [2026-05-16] ingest | HN thread on Hashimoto "AI psychosis" — bear case sharpening v2
 
 - **Source:** Hacker News thread (1683 upvotes, 908 comments) on Mitchell Hashimoto's "AI psychosis" post about companies forcing AI adoption without checks

@@ -2,9 +2,9 @@
 type: company
 ticker: NVDA
 tags: [ai, semis, mag7]
-last_updated: 2026-05-13
+last_updated: 2026-05-16
 last_full_review: 2026-05-09
-sources: 1
+sources: 5
 conviction: high
 stance: bull
 ---
@@ -38,6 +38,8 @@ The dominant supplier of AI accelerators with a $1T confirmed demand backlog thr
 - **Networking + system business.** Spectrum-X, NVLink, full-stack systems (DGX, GB200) increase ASPs and lock in customers at the rack level, not just the chip.
 - **Sovereign AI demand.** UAE, Saudi, India, EU — adds a second buyer base beyond US hyperscalers (see [[ai-capex-cycle]]).
 - **Robotics moat is deeper than chips (NEW 2026-05-16).** Per chief scientist Jim Fan ([[2026-05-16-jim-fan-nvda-robotics]]): NVIDIA leads the **VLA→WAM paradigm shift** with **Dream Zero** (world action model that learns physics from video). EgoScale discovered a **clean log-linear scaling law for dexterity** (21k hours egocentric video + only 4 hours teleop). **Dream Dojo** is a neural simulator (no physics engine, no graphics engine) enabling massively parallel robot RL. NVIDIA owns the model layer + data scaling law + simulator infrastructure — three additional moats stacked on the chip moat. Fan: **physical Turing test 2-3 years away; full robotics endgame by 2040 with 95% certainty**.
+- **Tensor Cores are a structural hardware moat, not just CUDA (NEW 2026-05-16).** Per Horace He (Meta PyTorch Compilers) [[2026-05-16-horace-he-ml-systems]]: on A100, matmul ops run **~15× faster** than non-matmul ops (1000 TFLOPS TF32 vs 67 TFLOPS FP32). If you're not doing matmuls on a GPU, you get **~7% of peak FLOP utilization** — full stop. This is *the* underlying reason transformers consolidated as the only architecture; non-matmul-heavy models literally cannot use modern Nvidia hardware efficiently. **Which means**: bear cases that lean on "AMD ROCm will catch up because software is converging" understate the depth of the moat — the architectural lock-in compounds at every precision drop (FP16 → FP8 → FP4), and the programming-model layer (CUDA, NVLink, FlexAttention, torch.compile) is a *separate* moat on top of the hardware. Each generation widens both.
+- **Hyperscaler engineering complexity is a customer-stickiness moat (NEW 2026-05-16).** Llama 3 paper data: at 16K GPUs, mean time between failures ≈ 1.8 hrs; at **131K GPUs ≈ 15 minutes**. Only hyperscalers + a handful of neoclouds have the systems-engineering depth to actually USE the GPUs they order at frontier scale. **Which means** NVDA's top customers are *captive* on engineering capability, not just contractual commitment — and tier-2 buyers (CRWV, NBIS) win by *renting* hyperscaler-grade engineering rather than replicating it.
 
 ## Bear case / risks
 - **Gross margin compression.** Industry-leading margins are unsustainable through Blackwell ramp + competitive intensity. The single most important variable to watch.
@@ -96,3 +98,5 @@ The dominant supplier of AI accelerators with a $1T confirmed demand backlog thr
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for $90B contracts, "X-1" framing, H100 long-life depreciation
 2. [[2026-05-13-culper-nvda-short-thesis]] — DoJ indictment of SMCI cofounder + Culper short thesis on export-control diversion to China via SE Asian intermediaries
 3. [[2026-05-13-anthropic-cfo-podcast]] — Anthropic CFO confirms 9 of Fortune 10 customers + 500% NDR + $9B→$30B ARR; multi-platform compute strategy (Anthropic uses NVDA GPU + Tranium + TPU fungibly = NVDA share-of-wallet at top labs is not 100%)
+4. [[2026-05-16-jim-fan-nvda-robotics]] — NVDA chief scientist Jim Fan on robotics moat layers (VLA→WAM, EgoScale scaling law, Dream Dojo simulator)
+5. [[2026-05-16-horace-he-ml-systems]] — Meta PyTorch compilers lead Horace He: Tensor Core 15× moat, FP4 precision lever, 131K-GPU fault-tolerance ceiling

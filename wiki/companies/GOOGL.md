@@ -2,9 +2,9 @@
 type: company
 ticker: GOOGL
 tags: [ai, mag7, cloud, advertising]
-last_updated: 2026-05-12
+last_updated: 2026-05-16
 last_full_review: 2026-05-09
-sources: 2
+sources: 3
 conviction: high
 stance: bull
 ---
@@ -31,6 +31,7 @@ The most under-priced Mag 7 stock entering 2026 — vertically integrated AI sta
 - **GCP momentum.** Often called out as the share-shift story among the three big clouds.
 - **Distribution moats.** Android, Chrome, YouTube, Search — embedded distribution for Gemini-powered features.
 - **Per consensus rankings, often the #1 Mag 7 pick for 2026.**
+- **Gemma as the open-source robotics substrate (NEW 2026-05-16 — secondary optionality).** Per Sergey Levine (Physical Intelligence co-founder) [[2026-05-16-sergey-levine-physical-intelligence]]: the **π0 robotics foundation model is built on Google's open-source Gemma VLM** with a grafted action expert. If Gemma becomes the de-facto substrate for robotics foundation models across multiple labs (Physical Intelligence, Skild, others), Google captures (a) ecosystem influence with no direct monetization risk, (b) data on real-world physical-AI architectures, (c) latent demand pull on GCP for robotics training/inference workloads. **Which means:** Google's open-model strategy (Gemma) has a second leg beyond LLM commoditization — it positions Google as the *underlying-model layer* for the robotics buildout, paralleling how Llama positioned Meta. Modest standalone signal; large if the robotics flywheel starts in 2027-2028 as Levine predicts.
 
 ## Bear case / risks
 - **Search disruption from AI.** Generative AI competitors (ChatGPT, Perplexity) and Google's own Gemini cannibalize the cash-cow search business in non-trivial ways. Not yet showing in revenue, but a real watch item.
@@ -62,6 +63,7 @@ The most under-priced Mag 7 stock entering 2026 — vertically integrated AI sta
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for Gemini Q4 ARR, Anthropic Ironwood sale, and Google's belated AGI-pilling
 2. [[2026-05-12-hyperscaler-capex-q1-revisions]] — GCP cloud backlog doubled to $460B in Q1 2026; capex raised to $190B
+3. [[2026-05-16-sergey-levine-physical-intelligence]] — Gemma open-source VLM is the substrate for Physical Intelligence's π0 robotics foundation model
 
 ## Citations
 - Motley Fool Mag 7 #1 pick: https://www.fool.com/investing/2025/12/30/ranking-the-best-magnificent-seven-stocks-to-buy-1/

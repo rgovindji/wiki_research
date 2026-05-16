@@ -2,9 +2,9 @@
 type: company
 ticker: CRWV
 tags: [ai, neocloud, gpu-cloud, nvda-direct]
-last_updated: 2026-05-13
+last_updated: 2026-05-16
 last_full_review: 2026-05-13
-sources: 3
+sources: 4
 conviction: high
 stance: bull
 ---
@@ -37,6 +37,7 @@ The largest "neocloud" — leases out high-performance GPU compute to AI labs, h
 - **GPU rental rates +40% (NEW — see [[2026-04-01-semianalysis-gpu-rental-index]]).** H100 1-yr contracts rose from $1.70 → $2.35/hr (Oct 2025 → Mar 2026), still rising 15-20% MoM. **All capacity through Aug-Sep 2026 already booked, market-wide.** Some H100 contracts being renewed at the exact same rate they were signed at 2-3 years ago. **Which means:** CRWV's unit economics are improving rapidly through 2026 contract repricing — shorter-duration contract books reprice into the higher-rate environment fastest. The "GPU rental softening / commoditization" bear case is being refuted in real-time by the authoritative SemiAnalysis survey index.
 - **Sentiment vs fundamentals disconnect FINALLY RESOLVED.** April SemiAnalysis "Long NBIS" comment and parallel "sentiment vs fundamentals" framing applied to CRWV too — Q1 print is the catalyst that re-rates the entire Neocloud cohort.
 - **Cluster goodput differentiation (NEW — see [[2026-04-20-semianalysis-gpu-cluster-cost]]).** SemiAnalysis ClusterMAX 2.1 framework rates Neoclouds on goodput (effective compute output), not just raw $/GPU-hr. **Which means:** the "all clouds will commoditize" bear case is structurally wrong — providers with measurable uptime/performance advantages command premiums and longer-tenor contracts.
+- **Latent demand vector — off-board robot inference (NEW 2026-05-16, light bullet).** Per Sergey Levine (Physical Intelligence) [[2026-05-16-sergey-levine-physical-intelligence]]: low-cost robots will likely stream sensor data to **cloud GPUs**, with on-board inference reserved for outdoor / reliability-critical use cases. A billion robots in 2030+ each pulling control commands at sub-second cadence = a new compute load class (high QPS, low-batch, latency-sensitive), additive to LLM training/inference. **Which means:** beyond the current LLM-training-and-inference framing, CRWV has a *second* demand vector emerging on the 2028-2030 horizon. Not yet priced anywhere. Watch for any CRWV / hyperscaler disclosure of robotics-cloud-inference SKUs as the leading indicator.
 
 > **What this means (bull case synthesis):** CoreWeave just printed $2 billion in quarterly revenue with $100 billion in backlog, signed Anthropic to a multi-year Claude contract, and has more than 1 GW of active AI compute running. They are no longer a "neocloud bet" — they are a hyperscaler-quality scaled infrastructure business with the largest AI-specific backlog in public markets. The remaining risk is purely execution at the capex pace, not "does the business model work."
 
@@ -70,6 +71,7 @@ The largest "neocloud" — leases out high-performance GPU compute to AI labs, h
 1. [[2026-05-07-CRWV-Q1-2026-earnings]] — official Q1 2026 press release; backlog $99.4B; Anthropic Claude deal disclosure
 2. [[2026-04-01-semianalysis-gpu-rental-index]] — H100 1-yr rental price index, +40% in 5 months, all capacity booked through Sep 2026, sentiment-vs-fundamentals disconnect
 3. [[2026-04-20-semianalysis-gpu-cluster-cost]] — ClusterMAX 2.1 framework; goodput-based differentiation refutes commoditization bear case
+4. [[2026-05-16-sergey-levine-physical-intelligence]] — off-board robot inference as latent 2028-2030 demand vector
 
 ## Citations
 - 24/7 Wall St on NBIS as neocloud winner: https://247wallst.com/investing/2026/03/11/after-2-billion-nvidia-investment-nebius-group-just-became-the-real-neocloud-winner/
