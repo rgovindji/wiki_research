@@ -20,3 +20,5 @@ raw/
 node_modules/
 *.log
 .tmp/
+n8n-credentials.env
+*.env
