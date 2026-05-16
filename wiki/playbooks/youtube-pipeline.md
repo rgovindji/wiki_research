@@ -11,17 +11,26 @@ status: template
 
 > **Goal:** Convert each Substack article into a YouTube video + 3 shorts in ~35 minutes of post-writing work. Audience doesn't care about polish; volume and consistency win.
 
-## Tool stack
+## Tool stack — INFOGRAPHIC STYLE (updated 2026-05-15)
+
+**Style target:** animated charts, big text overlays, number counters, minimal stock footage, single bold color scheme. Think Visual Capitalist, Statista, animated finance shorts. NOT talking-head with stock b-roll.
 
 | Tool | Purpose | Monthly cost | URL |
 |---|---|---|---|
-| **InVideo AI** | Article → video automation | $30 | invideo.io |
-| **Eleven Labs** | Premium AI voiceover (consistent voice = your brand) | $22 | elevenlabs.io |
-| **Canva** | Thumbnails (the single biggest factor in CTR) | $13 | canva.com |
-| **Opus Clip** | Auto-clip long video into shorts | $19 | opus.pro |
+| **Canva** (Magic Studio) ⭐ | Animated infographic templates + thumbnails + Magic AI generation | $13 | https://canva.com |
+| **Flourish Studio** | Animated finance charts (bar race, line, pie) — the killer data-viz tool | Free / $69 | https://flourish.studio |
+| **Eleven Labs** | Premium AI voiceover (consistent voice = your brand) | $22 | https://elevenlabs.io |
+| **CapCut** | Free editor to combine voiceover + Flourish chart + Canva | Free | https://capcut.com |
+| **Opus Clip** | Auto-clip long video into more shorts (optional) | $19 | https://opus.pro |
 | **YouTube Studio** | Upload + schedule + analytics | Free | studio.youtube.com |
 
-**Total: $84/mo.** Pays back at ~5,000 subscribers + monetization.
+**Recommended starter (cheapest path): $35/mo** = Canva + Eleven Labs + free Flourish + free CapCut. Add Opus Clip later if you also produce long-form.
+
+**Even simpler — Canva-only ($13/mo):** Canva alone has animated finance infographic templates + Magic Studio AI generation + voiceover input + 9:16 vertical export. For non-savvy audience that won't notice the difference, this is enough.
+
+## Why this stack changed from the original recommendation
+
+The original stack (InVideo AI + stock footage) is the "talking explainer with b-roll" style. **The infographic style is fundamentally different** — animated numbers, charts, and text overlays drive engagement, not stock footage. Tool choice has to match style choice.
 
 ## Pre-flight setup (one-time, ~3 hours)
 
@@ -85,31 +94,42 @@ Convert Substack article to video script. **Key differences from article:**
 - Download MP3
 - File naming: `voiceover-YYYY-MM-DD-slug.mp3`
 
-### Step 3: Generate visuals in InVideo AI (10 min)
+### Step 3: Generate visuals (15 min)
 
-**Option A: Paste script (recommended for control)**
-- InVideo AI → "Generate Video" → "From Script"
-- Paste script
-- Settings: 16:9 aspect ratio, 1080p, "explainer/educational" template
-- InVideo auto-matches stock footage to script lines
-- Pre-built music bed; usually fine — pick "documentary" or "corporate"
+For infographic style, this is a 2-tool combo: Flourish for animated charts + Canva for text overlays + branding.
 
-**Option B: Paste Substack URL (faster, less control)**
-- InVideo AI → "Generate Video" → "From Article URL"
-- Paste your published Substack URL
-- Tool auto-extracts text, generates script, matches visuals
+**Sub-step 3a — Build animated chart in Flourish (5 min):**
+- Open Flourish Studio → "New visualization"
+- For "Top N" lists: pick **Bar chart race** template
+- For "X over time" stories: pick **Line chart with animation**
+- For "before vs after": pick **Bar chart with counter animation**
+- Paste your data (e.g., CSV: Ticker, Value, Date)
+- Pick brand colors (consistent navy/cream/orange palette)
+- Export as MP4 video, 1920×1080 or 1080×1920 (vertical for shorts)
 
-**Replace voiceover with Eleven Labs MP3:**
-- InVideo → upload your `voiceover-X.mp3`
-- Sync to timeline; mute InVideo's default voiceover
-- Auto-sync may need 1-2 manual nudges
+**Sub-step 3b — Add text overlays + branding in Canva (8 min):**
+- Open Canva → search "animated finance infographic" template (vertical 1080×1920 for shorts; 1920×1080 for long-form)
+- Pick a template, customize:
+  - Replace headline with your title (2-3 words)
+  - Replace stat with your number
+  - Replace ticker with the one your video is about
+  - Apply your consistent color palette
+- Upload your Flourish chart MP4 as a video element
+- Position chart prominently — chart is the visual anchor
+- Add timing: text overlays appear at script beats
 
-**Tweak any visuals that look obviously wrong:**
-- InVideo sometimes picks weird stock footage (e.g., "the stock market" → random unrelated office shot)
-- Replace from InVideo's library — usually 2-3 swaps per video
-- For finance-specific shots: trader floor, charts, ticker boards, executives, data centers
+**Sub-step 3c — Combine voiceover (in CapCut OR Canva) (2 min):**
+- Drag Eleven Labs voiceover MP3 onto timeline
+- Trim or stretch chart animation timing to match voiceover
+- Add background music at low volume (Canva has built-in royalty-free; CapCut has "Trending sounds")
+- Auto-captions: CapCut has free auto-captions; Canva has Magic Captions in Pro
 
-**Export:** 1080p, MP4, H.264
+**Even simpler — Canva-only path:**
+- Skip Flourish; use Canva's built-in animated chart elements
+- Slightly less polished but 60% faster — fine for the audience
+- Total time for visuals: 8 minutes
+
+**Export:** 9:16 MP4 for shorts; 16:9 MP4 for long-form. 1080p, H.264.
 
 ### Step 4: Thumbnail in Canva (5 min)
 
@@ -190,11 +210,12 @@ Before publish:
 
 These are NOT worth your time if audience is non-savvy:
 
-- **Perfect b-roll matching.** InVideo's stock footage is "good enough."
-- **Custom music.** Built-in tracks are fine.
-- **Transitions/animations.** Simple cuts work better than fancy transitions for retail.
+- **Pixel-perfect chart styling.** Flourish defaults are fine.
+- **Custom music.** Canva/CapCut built-in tracks work.
+- **Hand-drawn animations.** Stick to Flourish's auto-animation presets.
 - **Color grading.** Skip entirely.
-- **Custom intro animation.** Skip; just start talking. Save 10 seconds at top = better retention.
+- **Custom intro animation.** Skip; jump straight to the hook. Save 10 seconds at top = better retention.
+- **Multiple animation styles.** Pick one chart type (bar race OR line OR pie) per video. Mixing styles confuses retail viewers.
 
 ## What IS worth time
 
@@ -214,21 +235,25 @@ These are NOT worth your time if audience is non-savvy:
 
 **Critical:** 95% of finance YouTube channels die before 50 videos. Plan for 100 videos minimum before evaluating success.
 
-## Daily Substack + YouTube combined workflow
+## Daily Substack + YouTube combined workflow (infographic style)
 
 | Time | Task | Tool |
 |---|---|---|
 | 8:30 AM | Write Substack article | Wiki + Claude.ai |
 | 9:30 AM | Publish Substack | Substack |
 | 9:35 AM | Generate voiceover | Eleven Labs |
-| 9:45 AM | Generate video visuals | InVideo |
-| 9:55 AM | Make thumbnail | Canva |
-| 10:00 AM | Upload + schedule YouTube | YouTube Studio |
-| 10:05 AM | Auto-clip shorts | Opus Clip |
-| 10:10 AM | Cross-post shorts to TikTok + Reels | Opus / native |
-| 10:15 AM | Post takes to Twitter | Twitter |
+| 9:45 AM | Build animated chart | Flourish (or skip if Canva-only) |
+| 9:55 AM | Build infographic + text overlays | Canva |
+| 10:05 AM | Combine voiceover + visuals + music | CapCut (or directly in Canva) |
+| 10:15 AM | Make thumbnail | Canva |
+| 10:20 AM | Upload + schedule YouTube long-form (16:9 version) | YouTube Studio |
+| 10:25 AM | Build 1-3 vertical short versions (re-use chart, vertical text) | Canva |
+| 10:35 AM | Cross-post shorts to TikTok + Reels + YT Shorts | Native uploads |
+| 10:40 AM | Post takes to Twitter | Twitter |
 
-**Total: ~105 min/day for ONE article published across 5 platforms.** Daily cadence sustainable in 8-hour work day with hours to spare for engagement / research / wiki maintenance.
+**Total: ~130 min/day for ONE article published across 5 platforms with infographic style.** Slightly more than stock-footage style because chart-building takes a few extra minutes. Still sustainable in 8-hour day.
+
+**Speed shortcut:** if Substack is your primary, you can skip long-form YouTube some days and ONLY do the 9:16 vertical shorts (60-90 seconds each). Total time drops to ~75 min/day for Substack + 3 vertical shorts cross-posted to all 3 short platforms.
 
 ## What to track (weekly)
 
