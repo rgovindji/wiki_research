@@ -1,9 +1,9 @@
 ---
 type: sector
 tags: [robotics, humanoid, physical-ai, rare-earths, sensors, edge-ai]
-last_updated: 2026-05-13
+last_updated: 2026-05-16
 last_full_review: 2026-05-13
-sources: 1
+sources: 2
 ---
 
 # Robotics & Humanoid Buildout
@@ -38,6 +38,41 @@ Working assumption for the wiki: ~$2–3B TAM in 2025 (depending on scope), infl
 - **NdFeB magnet demand.** Per-humanoid permanent-magnet content runs ~10× that of a passenger EV. No synthetic substitute at the torque density humanoids require. China controls ~90% of downstream rare-earth processing — single largest supply-chain risk in the sector.
 - **OEM production commitments.** Tesla Optimus (factory conversion at Fremont), Figure 02 (deployed at BMW Spartanburg), Agility Digit (RoboFab in Salem OR with 10,000-unit annual capacity), plus Chinese OEMs led by AgiBot (~31% market share), Unitree (~27%), UBTECH (~5%). Western and Chinese OEMs run on overlapping component supply chains.
 - **World-model AI maturation.** NVIDIA Cosmos, Google Gemini Robotics, and similar foundation models for embodied AI are closing the perception-to-action gap that previously required hand-crafted policies. This is the single largest unlock for general-purpose use cases.
+
+### Model paradigm shift: VLA → WAM (NEW 2026-05-16 per [[2026-05-16-jim-fan-nvda-robotics]])
+
+Per NVIDIA Robotics chief scientist Jim Fan, the dominant model architecture is shifting:
+
+| | Vision-Language-Action (OLD — Pi, Groot) | World Action Models (NEW — Dream Zero) |
+|---|---|---|
+| Built on | VLM with grafted action head ("LVA — language-heavy") | Video world models like V3 that learn physics by predicting pixels |
+| Strength | Encoding nouns, knowledge | Physics, verbs, generalization |
+| Weakness | Physics, generalization | Still early; "AI video slop" but learning physics by accident |
+| Action vocabulary | Trained motion vocab | Open-ended natural language ("Dream Zero is GPT-2 for motion") |
+
+**Why this matters for the supply chain:** WAMs accelerate the commercial timeline. If pixel-prediction video models can be action-fine-tuned into policies that handle 22-DOF dextrous hands (as EgoScale demonstrated), the perception-to-action software gap closes faster than expected. **OEMs need components ready earlier.**
+
+### The data revolution — teleop → wearables → egocentric video
+
+| Method | Scale ceiling | Status |
+|---|---|---|
+| **Teleop** | 24 hr/robot/day max (3 hr real) | Dying per Fan |
+| **UMI / wearables** | 100k hours/year | Active; spawned unicorns Generalist + Sunday |
+| **Egocentric video (NVIDIA EgoScale)** | **10M+ hours/year potential** | NVIDIA going all-in |
+
+**The dexterity scaling law (NEW):** EgoScale discovered a clean log-linear relationship between pre-training hours of egocentric video and validation loss — 6 years after the original LLM scaling law. **Robotics now has its own neuroscaling law.** Implication: throwing more egocentric data at the model produces predictable improvements, just like LLMs from 2018-2023.
+
+### The 2040 endgame (Fan framework)
+
+| Achievement | Timeline | Description |
+|---|---|---|
+| **Physical Turing test** | **2-3 years (2028-2029)** | Can't distinguish human vs robot doing a task |
+| **Physical API** | Mid-2030s | Robots configured via API/CLI; lights-out factories |
+| **Physical auto-research** | By 2040 | Robots designing next-gen robots |
+
+Fan's anchor: AlexNet (2012) → AI ascent (2026) = 14 years. Another 14 years → 2040. **95% confidence on full endgame by 2040.**
+
+**Bias caveat:** Fan is NVIDIA's chief scientist of Robotics speaking at NVIDIA's conference. Discount certainty by ~15% for self-promotional bias. But even at 80% confidence, the framework reshapes the wiki's robotics timeline from "speculative" to "credibly priced 5-15 year buildout."
 - **Force-torque sensing precision.** Dexterous manipulation requires sub-Newton force-feedback precision, which is where [[VPG]] and competing precision-measurement vendors live.
 - **Spatial awareness.** Lidar + stereo cameras + IMU sensor fusion for navigation and obstacle avoidance. [[OUST]] is the highest-quality Western pure-play.
 - **Edge AI inference latency.** Control loops require sub-10ms inference at single-digit-watt power budgets — a different stack than autonomous-driving compute. Favors low-power FPGA + DSP/NPU IP licensing over bulk GPU.

@@ -9,6 +9,29 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-16] ingest | Jim Fan (NVIDIA Robotics chief scientist) — "The Great Parallel" robotics talk
+
+- **Source:** raw/podcasts/nvda_robotics.txt — saved by user 2026-05-16
+- **Source summary:** [[2026-05-16-jim-fan-nvda-robotics]]
+- **TL;DR:** Robotics is following the LLM 3-step function (pre-train next-world-state → action fine-tune → RL). VLA models (Pi, Groot) being superseded by World Action Models (Dream Zero). EgoScale found a clean log-linear scaling law for dexterity (21k hr egocentric video + 4 hr teleop). Dream Dojo = neural simulator. Physical Turing test 2-3 years; full endgame 2040 with 95% certainty.
+- **Wiki touched:**
+  - [[NVDA]] — added "Robotics moat is deeper than chips" bullet to bull case: Dream Zero (WAM) + EgoScale scaling law + Dream Dojo simulator = three additional moats stacked on chip moat
+  - [[robotics]] sector — added "Model paradigm shift VLA→WAM" subsection + "Data revolution" + "2040 endgame framework" with Fan's 14-year extrapolation
+  - [[AAPL]] — added small option-value bull bullet: iPhone as "pocket world scanner" for robotics data ingestion (doesn't flip bear stance, structural hedge only)
+  - [[index]] — added source ingest entry
+  - [[log]] — this entry
+- **Stance / conviction changes:**
+  - **NVDA:** stays bull/HIGH. Conviction strengthened — wider moat than wiki captured. No size change since already maxed.
+  - **AAPL:** stays bear/medium. Small positive added to bull side but doesn't flip thesis.
+  - **Robotics sector:** thesis sharpened, not changed. 2040 endgame framework now anchors timeline framing.
+- **Implications:**
+  - For [[MP]] / [[ALGM]] / [[VPG]] / [[ALNT]] / [[AMBA]] (humanoid component cohort): accelerating model timeline pulls commercial deployment closer. Mild positive; mostly priced.
+  - For competitive landscape: Pi (Physical Intelligence) and other pure-play VLA labs at risk if WAM wins. Not in wiki ticker list but shapes venture-side dynamics.
+  - For NVDA: confirms the bull thesis is multi-layered (chips + models + data + simulator). Less single-point-of-failure than wiki had assumed.
+- **Bias caveat:** Fan is NVIDIA's chief scientist of Robotics speaking at NVIDIA's conference. Discount certainty by ~15% for self-promotional bias.
+- **No contradictions** with existing wiki framework. This SHARPENS rather than challenges.
+- **Skipped:** specific Pi / Groot unicorn valuations — not investable on public markets.
+
 ## [2026-05-15] EOD | Daily update close — Friday close data + Blue Owl risk-off signal
 
 - **Friday close confirmed:** S&P -1.24% to 7,408.50; NASDAQ -1.54% to 26,225.14; Dow -1.07% to 49,526.17. Worst day since the Trump-Xi summit week began.

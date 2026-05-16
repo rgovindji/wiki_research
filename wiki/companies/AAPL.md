@@ -30,6 +30,7 @@ stance: bear
 - **Capital return discipline** — multi-year buyback program reduces share count; dividend growing
 - **Apple Intelligence** is differentiated on **privacy-by-design** (on-device + Private Cloud Compute) — unique positioning
 - **Defensive characteristics** — relatively less AI-cycle exposed than Mag 7 peers
+- **iPhone as "pocket world scanner" for robotics (NEW 2026-05-16, small option value).** Per NVIDIA's Jim Fan ([[2026-05-16-jim-fan-nvda-robotics]]): iPhone 3D scans feed NVIDIA's real-to-sim-to-real pipeline for robot training. As humanoid robotics scales, the iPhone becomes ambient data-collection infrastructure for the entire industry. This is **second-order option value** — Apple doesn't capture the robotics market, but every iPhone becomes a data ingestion node. Doesn't flip the bear stance (TSMC deprioritization + smartphone volume collapse still dominate) but adds a small structural hedge.
 
 ## Bear case / risks
 - **TSMC deprioritization (NEW).** Per [[2026-05-09-dwarkesh-dylan-semianalysis]]: Apple is being squeezed off TSMC's leading edge. 2 nm in 2026 is the first time Apple is **not** the first customer to a leading node (excluding Huawei pre-ban). At A16 (N2 variant), the **first customer is AI, not Apple**. Apple "will become a smaller and smaller percentage of TSMC's revenue, and therefore be less relevant for TSMC to cater to their demands ... they are just not TSMC's best bud like they have been historically."

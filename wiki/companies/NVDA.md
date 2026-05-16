@@ -37,6 +37,7 @@ The dominant supplier of AI accelerators with a $1T confirmed demand backlog thr
 - **Vera Rubin roadmap.** Next-gen platform behind Blackwell ensures product cadence stays ahead of competition.
 - **Networking + system business.** Spectrum-X, NVLink, full-stack systems (DGX, GB200) increase ASPs and lock in customers at the rack level, not just the chip.
 - **Sovereign AI demand.** UAE, Saudi, India, EU — adds a second buyer base beyond US hyperscalers (see [[ai-capex-cycle]]).
+- **Robotics moat is deeper than chips (NEW 2026-05-16).** Per chief scientist Jim Fan ([[2026-05-16-jim-fan-nvda-robotics]]): NVIDIA leads the **VLA→WAM paradigm shift** with **Dream Zero** (world action model that learns physics from video). EgoScale discovered a **clean log-linear scaling law for dexterity** (21k hours egocentric video + only 4 hours teleop). **Dream Dojo** is a neural simulator (no physics engine, no graphics engine) enabling massively parallel robot RL. NVIDIA owns the model layer + data scaling law + simulator infrastructure — three additional moats stacked on the chip moat. Fan: **physical Turing test 2-3 years away; full robotics endgame by 2040 with 95% certainty**.
 
 ## Bear case / risks
 - **Gross margin compression.** Industry-leading margins are unsustainable through Blackwell ramp + competitive intensity. The single most important variable to watch.

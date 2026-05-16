@@ -20,6 +20,7 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 
 ## Recent source ingests
 
+- 2026-05-16 podcast: [[2026-05-16-jim-fan-nvda-robotics]] (NVIDIA chief scientist Jim Fan; "The Great Parallel" — robotics following LLM trajectory; Dream Zero WAM, EgoScale dexterity scaling law, Dream Dojo neural simulator; physical Turing test 2-3 years; 2040 endgame 95% certainty)
 - 2026-05-14 earnings: [[2026-05-14-AMAT-Q2-2026-earnings]] (AMAT Q2 FY26: Rev $7.91B record; non-GAAP EPS $2.86 beat; **CEO raised CY26 semi equipment growth guide from >20% to >30%**; first explicit annual-outlook upgrade this cycle; bull/high conviction validated)
 - 2026-05-14 budget sources: [[2026-05-14-space-economy-budget-sources]] (Aerospace Corp FY26 budget brief + CSIS commercial services gap + Morgan Stanley ecosystem — Golden Dome $24.4B w/ Space Based Interceptor $5.6B; MTI satellites $500M→$8.8B (17.6x); FY27 Space Force $71B request; commercial starvation pattern)
 - 2026-05-13 podcast: [[2026-05-13-anthropic-cfo-podcast]] (Anthropic CFO Krishna Rao on Invest Like the Best — $9B→$30B ARR in 1 quarter; 9 of Fortune 10 customers; 500% NDR; $75B raised + $50B committed = $125B total; >$100B compute commitment incl. 5 GW Google/Broadcom TPU + 5 GW Amazon Tranium; 90%+ of code by Claude Code; multi-platform fungibility moat)
