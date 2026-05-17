@@ -131,6 +131,22 @@ Catalysts that historically move tech equities materially:
 5. **Chinese stimulus announcements** (especially property + consumer)
 6. **TSMC quarterly results / Taiwan strait incidents** (high-frequency)
 
+## Chinese open-weight models winning the inference-commoditization layer (NEW 2026-05-17)
+
+Per HN community-cited OpenRouter data (May 2026), Chinese open-weight models (DeepSeek, Qwen) now constitute **~36% of all OpenRouter token volume**. OpenRouter itself just raised at a **$1.3B valuation backed by a16z**.
+
+**Mechanism**: Beijing-adjacent capital subsidizing model training + low-margin hosting to capture market share, while US labs (Anthropic, OpenAI) maintain premium frontier-tier pricing. Chinese models (Qwen 3.6 27B specifically called out as benchmark-competitive with Gemma 4 31B) are reaching "good enough" quality for non-frontier workloads.
+
+**Which means:**
+- The US "lab moat" is real but is narrowing to the **frontier edge** (latest Opus/GPT/Gemini at the cutting edge)
+- The **commodity inference layer is being captured by Chinese open weights** — outside the US they're already the default for cost-conscious workloads
+- This is analogous to the EV / battery dynamic: US holds the high-end design and ecosystem, China captures the volume tier through subsidized scale
+- For [[ai-capex-cycle]]: hyperscaler cloud-inference revenue captures more of the *premium* tier (Anthropic, OpenAI usage on AWS/Azure/GCP) but the *commodity* tier is increasingly Chinese-model-hosted-on-Western-infra (OpenRouter pattern)
+- For [[NVDA]] / [[CRWV]] / [[NBIS]]: total compute demand is unchanged; the *labs* spending the money on inference shift slightly toward Chinese-origin model providers
+- For trade policy: open-weight Chinese AI models are not bound by chip export controls. Even if NVDA H100s can't ship to China, *trained Chinese models can ship anywhere*. This is a structural gap in the US strategic-tech containment regime.
+
+**Verification caveat**: 36% figure is community-cited; not yet independently verified from OpenRouter's own disclosures. Worth tracking if/when OpenRouter releases official volume breakdowns.
+
 ## Robotics supply-chain decoupling (NEW 2026-05-16)
 
 A new bilateral chokepoint is forming in parallel with the AI-chip story, and the consensus on this from leading robotics researchers is now clear:

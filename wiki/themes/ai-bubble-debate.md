@@ -235,6 +235,18 @@ Damodaran: 10 years ago chips were **3% of S&P 500**; today **17%**. Sector up *
 
 **Discount**: Damodaran is a long-horizon valuation expert, not a near-term tactician (he admits he was lucky on Intel). But the data points — 17% S&P share, 60% in 2 months — are real and notable. Treat as a *position-sizing prompt* for [[NVDA]] / [[MU]] / [[AMAT]] / [[KLAC]] / [[LRCX]] / [[ASML]], not a stance-change prompt. The long-term theses remain intact regardless of a near-term correction.
 
+## Inference-layer commoditization deepens — Chinese open-weights dominate OpenRouter (NEW 2026-05-17)
+
+Per HN community-cited data (May 2026): **OpenRouter raised at $1.3B valuation (a16z-led)** and **~36% of its token volume is Chinese open-weight models** (DeepSeek, Qwen 3.6). The platform-level commodity-inference market is being captured by Beijing-adjacent subsidized models.
+
+**Which means:** for the bubble/bull debate this cuts both ways:
+
+- **Bear case strengthens**: The "Western labs hold a moat" thesis is narrowing to the *frontier edge*. Mid-tier commercial inference (any workload where "good enough" suffices) is priced by Chinese state-adjacent capital, not US lab economics. Anthropic / OpenAI premium pricing only survives at the truly-frontier tier. The competitive floor is lower than US-investor narratives assume.
+- **Bull case (top-of-stack only)**: Frontier-model premium pricing is *more* durable because the commodity tier is differentiated from it by Chinese open-weights pricing. The cheap-to-frontier ladder is steepening, which lets [[NVDA]] cluster customers (premium hyperscaler tenants, Anthropic, OpenAI) keep their high-margin tier protected — but only if they stay at the frontier.
+- **Architectural shift to watch**: HN-documented hybrid pattern of "Opus 4.7 for planning + local Qwen for execution" is increasingly common in engineering workflows. Top-tier model usage shifts from "all tasks" to "planner/critic" calls — narrower but higher-value usage.
+
+**Verification caveat**: 36% figure is community-cited; verify against OpenRouter disclosure when available. **Also relevant**: see [[us-china-relations]] for the strategic-trade dimension — Chinese AI models are not bound by chip export controls and ship freely worldwide, even when the GPUs that trained them can't.
+
 ## Public-market validation: AI-infra wins, AI-application loses (NEW 2026-05-16)
 
 YTD-through-mid-May 2026 performance split, observed across a single thematic basket circulating on social media (unverified provenance, but the numbers are independently verifiable from market data):
