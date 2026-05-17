@@ -46,6 +46,9 @@ The chip stack — design (GPUs, CPUs, custom silicon), foundry ([[TSM|TSMC]]), 
 ### Networking / interconnect
 - [[AVGO]] — see above. Tomahawk 6 (102.4 Tbps) + Jericho switching silicon + custom XPU = the credible non-NVDA fabric.
 
+### Photonics substrates (the upstream CPO bottleneck) — NEW 2026-05-17
+- [[SOITEC]] (SOI.PA, Paris-listed) — only qualified volume supplier of **photonics-grade SOI wafers** to TSMC, GlobalFoundries, and Tower Semiconductor. **Which means** every NVDA Spectrum-X / Quantum-X CPO switch, AVGO Davisson chiplet, and MRVL Celestial chiplet substrate is Soitec. Stance: bull / low-medium conviction; stock has rallied ~6x off Dec 2025 lows so valuation is the main pushback.
+
 ### Memory
 - Micron, SK Hynix, Samsung — HBM (high-bandwidth memory) is the under-supplied input for AI chips *(no pages yet)*
 

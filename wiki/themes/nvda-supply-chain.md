@@ -46,6 +46,7 @@ Treat this page as the index for second-order [[ai-capex-cycle]] plays. Drill in
 - [[APD]] — Air Products; **build-own-operate industrial gas plants** at fabs (N2/O2/Ar/H2 + NF3 chamber clean + specialty gases); **Samsung Pyeongtaek** largest semi investment in APD history; new facilities onstream 2028-2030
 
 ### Networking & optical (the data center fabric)
+- [[SOITEC]] — Soitec (SOI.PA, Paris-listed); **only qualified volume supplier of photonics-SOI substrates** to TSMC, GlobalFoundries, and Tower Semiconductor — meaning **every NVDA Spectrum-X / Quantum-X CPO switch substrate** is Soitec. Upstream of the optical-module layer (COHR / LITE / FN). **Stance: bull (low-medium)** — pre-May 27 earnings (NEW 2026-05-17)
 - [[COHR]] — Coherent; **NVDA $2B direct investment** (March 2026, split with LITE); CPO partner
 - [[GLW]] — Corning; **NVDA $3.2B direct investment** (May 2026); 3 new US optical fiber factories; near-monopoly in high-perf fiber
 - [[FN]] — Fabrinet; contract manufacturer for transceivers/modules

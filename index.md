@@ -131,6 +131,9 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 - [[ENTG]] — Entegris; FOUPs / wafer carriers / ultra-pure materials / gas+liquid filtration; **stance: bull (high)**
 - [[APD]] — Air Products; industrial gases (N2/O2/Ar/H2, NF3 chamber clean); BOO contracts; Samsung Pyeongtaek largest semi investment; **stance: bull (medium)**
 
+### Photonics substrates (NEW 2026-05-17)
+- [[SOITEC]] — Soitec (SOI.PA, Paris-listed; no US ADR); sole qualified photonics-SOI substrate supplier to TSMC/GlobalFoundries/Tower; NVDA Spectrum-X/Quantum-X + AVGO Davisson + MRVL Celestial substrates; ~€5.28B market cap; **stance: bull (low-medium conviction)** — pre-May 27 earnings; stock has rallied ~6x off Dec 2025 lows so entry valuation is the main pushback
+
 ### Networking & optical (incl. NVDA direct investments)
 - [[COHR]] — Coherent; NVDA $2B investment (with LITE); **stance: bull**
 - [[GLW]] — Corning; NVDA $3.2B fiber investment; **stance: bull**

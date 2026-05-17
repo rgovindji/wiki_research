@@ -44,7 +44,7 @@ Specialized contract manufacturer for optical transceivers and modules — pulls
 - **2026-05 (recent Q)** — Set **company records on both revenue and EPS**. Management explicitly stated on the call that **data center optical module demand continues to outstrip supply**. Stock initially declined post-print (sector "sell the news") but participated in the May 11 optics-trade rebound.
 
 ## Related
-[[NVDA]] · [[nvda-supply-chain]] · [[COHR]] · [[LITE]] · [[GLW]] · [[APH]] · [[ai-capex-cycle]] · [[overview]]
+[[NVDA]] · [[nvda-supply-chain]] · [[COHR]] · [[LITE]] · [[GLW]] · [[APH]] · [[SOITEC]] · [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[overview]]
 
 ## Citations
 - Industrial Analyst optical networking: https://industrialanalyst.substack.com/p/the-backbone-of-ai-optical-networking

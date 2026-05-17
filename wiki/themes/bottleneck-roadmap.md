@@ -21,6 +21,7 @@ Synthesized from the May 2026 Dwarkesh × Dylan Patel interview ([[2026-05-09-dw
 | 2024 | **Power + data centers** | Hyperscalers ahead of grid availability; permitting gridlock | [[VRT]], [[ETN]], gas turbines |
 | **2025-2026** | **Memory (HBM + DRAM)** | HBM4 ramp insufficient; consumer DRAM has to be destroyed to free wafers for AI | **[[MU]]**, SK Hynix, Samsung; HBM ASPs structurally up |
 | **2027** | **Cleanroom space (fabs) + transformers** | Memory makers + foundries didn't build new fabs through the 2023 trough; takes 2 years to build a fab. **NEW:** transformers (medium/high-voltage substation gear) are emerging as a parallel grid-side bottleneck — [[GEV]] consolidated control via $5.3B Prolec buyout Feb 2026. | TSMC, Micron + foundry equipment ([[KLAC]], [[LRCX]], [[AMAT]], [[TER]]) + fab consumables ([[ENTG]]) + industrial gases ([[APD]] — multi-decade BOO contracts kick in 2028-2030) + transformer makers ([[GEV]]/Hitachi/Siemens) |
+| **2026-2028** | **Photonic substrates (Photonics-SOI)** | CPO transition (NVDA Spectrum-X/Quantum-X launched 2025; AVGO Davisson, MRVL Celestial in pipeline) requires photonics-grade SOI wafers; sole qualified volume supplier at TSMC/GF/Tower | **[[SOITEC]]** (SOI.PA, Paris-listed) — Smart Cut patent moat (3,500+ patents); only Photonics-SOI is currently capacity-constrained, not all SOI segments |
 | **2028-2030** | **EUV tooling (ASML)** | Tool output capped at ~70-100/yr; supply chain (Carl Zeiss, Cymer) physically can't ramp faster | **[[ASML]]** — but it has not historically taken margin; pricing power is theoretical, not realized |
 | **2030+** | **Labor + modularization** | Need to build hundreds of GW per year; 5,000 workers per 1.2 GW data center is the current ratio | Asian factory module assemblers (Foxconn, Korean ODMs); electricians (wage inflation); **mech/electrical contractors** — see [[datacenter-construction]]: [[FIX]] / [[EME]] / [[PWR]] |
 
@@ -158,7 +159,7 @@ The previous version of this roadmap covered only the **physical** bottlenecks (
 - **Skilled labor (2030+):** the [[datacenter-construction]] labor bottleneck applies to both AI data centers and robotics manufacturing facilities — same union electricians, same wage inflation
 
 ## Related
-[[ai-capex-cycle]] · [[ai-bubble-debate]] · [[nvda-supply-chain]] · [[datacenter-construction]] · [[robotics]] · [[humanoid-oems]] · [[semiconductors]] · [[ASML]] · [[AMAT]] · [[TER]] · [[ENTG]] · [[APD]] · [[MU]] · [[KLAC]] · [[LRCX]] · [[AMKR]] · [[VRT]] · [[ETN]] · [[FIX]] · [[EME]] · [[PWR]] · [[MP]] · [[OUST]] · [[ALGM]] · [[VPG]] · [[AMBA]] · [[overview]]
+[[ai-capex-cycle]] · [[ai-bubble-debate]] · [[nvda-supply-chain]] · [[datacenter-construction]] · [[robotics]] · [[humanoid-oems]] · [[semiconductors]] · [[ASML]] · [[AMAT]] · [[TER]] · [[ENTG]] · [[APD]] · [[MU]] · [[KLAC]] · [[LRCX]] · [[AMKR]] · [[SOITEC]] · [[VRT]] · [[ETN]] · [[FIX]] · [[EME]] · [[PWR]] · [[MP]] · [[OUST]] · [[ALGM]] · [[VPG]] · [[AMBA]] · [[overview]]
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the AI bottleneck synthesis

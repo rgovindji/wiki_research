@@ -46,7 +46,7 @@ Photonics leader paired with [[COHR]] in **NVDA's $4B March 2026 commitment** (s
 - **2026-05 (Q3 print)** — **Revenue +90% YoY to $808M** (historic high); EPS beat; **Q3 guidance +85% YoY** beat Wall Street estimates. Stock fell ~5-7% on May 7 ("sell the news" + dilution concerns from financing) then rallied **+17% on May 11** in the optics-trade rebound.
 
 ## Related
-[[NVDA]] · [[nvda-supply-chain]] · [[COHR]] · [[GLW]] · [[FN]] · [[APH]] · [[ai-capex-cycle]] · [[overview]]
+[[NVDA]] · [[nvda-supply-chain]] · [[COHR]] · [[GLW]] · [[FN]] · [[APH]] · [[SOITEC]] · [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[overview]]
 
 ## Citations
 - CNBC NVDA $4B COHR + LITE: https://www.cnbc.com/2026/03/02/nvidia-investment-coherent-lumentum.html

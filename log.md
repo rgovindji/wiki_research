@@ -9,6 +9,38 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] research | New coverage initiated: SOITEC (SOI.PA) — photonics-SOI substrate monopoly
+
+User flagged Soitec from a semiconductor forum mention and is considering starting a small position. Did batched web research and created [[SOITEC]] company page (stub-to-medium depth — full FY26 results May 27 will trigger upgrade or downgrade).
+
+**Why this fits the wiki framework:**
+- Soitec is the **sole qualified volume supplier of photonics-SOI substrate wafers** to TSMC, GlobalFoundries, and Tower Semiconductor — the three foundries shipping silicon-photonics for CPO.
+- **Direct foundry-level exposure** to NVDA Spectrum-X / Quantum-X CPO switches (launched March 2025), AVGO Davisson chiplet, MRVL Celestial chiplet. The substrate layer captures upstream rent that doesn't flow to the optical-module names ([[COHR]] / [[LITE]] / [[FN]]).
+- Adds a new row to [[bottleneck-roadmap]]: **2026-2028 photonic substrates** between memory (2025-26) and EUV (2028-30).
+- Patent moat (Smart Cut, 3,500+ patents); only competitor licensee Shin-Etsu has limited volume, GlobalWafers license terminated 2025.
+
+**Why conviction is low-medium not high:**
+- Stock has already rallied **~6x off Dec 2025 lows** (€23 → ~€148-171) — entry valuation is uncomfortable
+- **Sell-side targets €31-€35** (JPM/HSBC/MS Hold) vs spot ~€148+. Either analysts haven't caught up, or the market has front-run multiple years of execution
+- Mobile Communications still 52% of revenue and declining 30% YoY — race against time
+- Photonics-SOI is only ~17% of revenue (~€100M) today — needs 5-7x scale to drive bull math
+- Customer concentration (3 customers >10%); CPO ramp execution risk; EUR/FX/liquidity for US holders
+- Paris-listed only (no US ADR)
+
+**Wiki touched:**
+- Created [[SOITEC]] (new company page)
+- [[nvda-supply-chain]] — added Soitec as upstream substrate above optical-module layer
+- [[bottleneck-roadmap]] — added 2026-2028 photonic substrates row + SOITEC to Related
+- [[semiconductors]] — new Photonics Substrates sub-segment
+- [[COHR]], [[LITE]], [[FN]] — added SOITEC + bottleneck-roadmap to Related (substrate is upstream of module)
+- [[index]] — added Photonics substrates category
+
+**Key event**: **May 27, 2026** FY26 full-year results — single biggest catalyst. Watch for Photonics-SOI absolute revenue print, FY27 growth guide, any named CPO customers, gross margin trajectory.
+
+**Position sizing recommendation surfaced on page**: small starter pre-earnings; add only on May 27 confirmation; half-sized vs comparable bull/medium-conviction names ([[MU]], [[KLAC]]) given the valuation gap.
+
+---
+
 ## [2026-05-17] ingest | Dylan Patel + John Arnold — Invest Like the Best dual ingest
 
 User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_best.txt + john_arnold.txt). Both ingested in one workflow pass.

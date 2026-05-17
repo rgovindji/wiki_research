@@ -47,7 +47,7 @@ Optical-networking and photonics leader, **direct $2B NVDA investment** (March 2
 - **Reported book-to-bill** remains >4x; orders booked through 2028.
 
 ## Related
-[[NVDA]] · [[nvda-supply-chain]] · [[LITE]] · [[GLW]] · [[FN]] · [[APH]] · [[ai-capex-cycle]] · [[overview]]
+[[NVDA]] · [[nvda-supply-chain]] · [[LITE]] · [[GLW]] · [[FN]] · [[APH]] · [[SOITEC]] · [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[overview]]
 
 ## Citations
 - CNBC NVDA $4B Coherent + Lumentum: https://www.cnbc.com/2026/03/02/nvidia-investment-coherent-lumentum.html
