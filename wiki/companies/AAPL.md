@@ -52,6 +52,7 @@ stance: bear
 7. **App Store regulatory outcomes** — financial impact of EU DMA, US Epic remedies
 
 ## Recent developments
+- **2026-05-17 — Ming-Chi Kuo lifecycle detail + Apple TSMC-tilt acknowledgment** (per [[2026-05-17-semiwiki-kuo-apple-intel]]). Kuo's 10-point industry checks add precision to the Apple-Intel timeline: **small-scale testing 2026 → ramp 2027 → growth 2028 → decline 2029** at Intel 18A-P. Critically: **"Even if Intel's initial shipments go smoothly, TSMC will still retain over 90% of supply share"** AND **"Apple began discussions with Intel well before TSMC's advanced-node capacity became tight"** — this is long-planned strategic diversification, NOT reactive. Kuo's #10: **"Apple recognizes that TSMC's resources will continue tilting toward AI"** — Apple itself acknowledging the TSMC-deprioritization framing the wiki has been on since May 9. Forum technical pushback (Ian Cutress concerns about BSPDN thermal in phone SoCs) is unresolved but partially offset by Intel's 50% thermal conductivity claim. **Stance unchanged (bear)** — Intel diversification is too small/slow to repair the smartphone-volume and TSMC-priority story by 2029.
 - **2026-05-13** — Apple-Intel deal **CONFIRMED** (was preliminary May 8). Intel +15% on confirmation; doubled in April; +33% early May. Primary node: **Intel 18A-P** (enhanced 18A — 9% higher perf vs standard at same power). Intel 14A targeted 2028. Apple **also exploring Samsung** Texas plant in parallel. **Stance unchanged (bear).** Intel 18A-P is not bleeding-edge by 2027-2028 standards; leading-edge SoCs (A-series, M-series) likely still [[TSM|TSMC]] N2/A16. Memory + smartphone volume bear case independent of foundry sourcing. WSJ quote validates wiki framing: "TSMC has more limited capacity for chips made for consumer devices, and Apple has less leverage." See [[2026-05-13-apple-intel-deal]].
 - **2026-05-11** — WSJ initial report on Apple-Intel preliminary agreement.
 - **2026-05-09** — Stance flipped from **neutral** to **bear** based on [[2026-05-09-dwarkesh-dylan-semianalysis]] disclosing TSMC's structural deprioritization of Apple plus the memory-driven smartphone-volume collapse projections.
@@ -65,3 +66,5 @@ stance: bear
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for stance change (TSMC dynamics + smartphone volume collapse + memory BOM)
+2. [[2026-05-13-apple-intel-deal]] — Apple-Intel partnership confirmation
+3. [[2026-05-17-semiwiki-kuo-apple-intel]] — Kuo lifecycle detail + Apple's own acknowledgment of TSMC tilting toward AI (added 2026-05-17)

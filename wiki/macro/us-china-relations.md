@@ -217,6 +217,28 @@ A new bilateral chokepoint is forming in parallel with the AI-chip story, and th
 - [[robotics]] Tier 1 component basket (OUST, ALGM, AMBA, VPG, ALNT) — reinforced as Western alternatives gain strategic weight
 - Chinese OEMs (Unitree, AgiBot, UBTECH) — face same trajectory as Huawei post-2019 if decoupling extends to robotics
 
+## CXMT DDR5 ramp: China's memory champion sovereign-AI play (NEW 2026-05-17 per [[2026-05-17-semiwiki-cxmt-ddr5]])
+
+ChangXin Memory Technologies (CXMT) — China's only domestic DRAM maker at mass production — is now shipping DDR5 in commercial volumes via Chinese module makers (Powev/Sinker, Comay, Gloway, KingBank), with **Shanghai STAR Market IPO** planned for **29.5B yuan (~$4.34B)** raise (prospectus accepted Dec 30, 2025).
+
+**Hard data**:
+- CXMT 9M 2025 revenue: **+97.8% YoY to ~$4.5B**; net loss narrowing
+- DDR5 launched November 2025 at speeds up to **8,000 Mbps**, densities **16Gb / 24Gb**
+- LPDDR already in supply chains of **Xiaomi, OPPO, Vivo, Transsion, Lenovo**
+- Sugon launched May 13 high-end FlashNexus 9000 storage claiming **100% domestic** components
+
+**Structural significance**:
+- CXMT is **one generation behind** Samsung/SK Hynix/Micron (24Gb vs 32Gb DDR5) and **cannot make HBM** (no EUV access)
+- Big 3 retain **91.5% global DRAM share** Q4 2025 (Samsung 32.6% + Hynix 33.2% + Micron 25.7% per TrendForce)
+- **CXMT plugs the commodity DRAM hole** the Big 3 are vacating to make HBM — supply response that allows the price to bifurcate (leading-edge expensive, commodity replaced by China)
+
+**Which means**: this is the most concrete data point yet that China's "indigenous semiconductor stack" is materializing in commodity layers (DRAM, LPDDR, storage) even as it remains years behind in HBM and EUV-dependent leading-edge. **Asymmetric outcome**: China loses the AI-compute race ([[2026-05-14-anthropic-2028-ai-leadership]] 11x compute ratio framing) but wins commodity DRAM and the smartphone/PC supply chain. Western memory cohort ([[MU]] etc.) keeps the high-margin HBM/leading-edge segment.
+
+**Investment read-through**:
+- [[MU]] HBM thesis intact; commodity DRAM share loss is already in MU's voluntary mix shift
+- A CXMT IPO at $4.34B raise is also a sovereign-AI flow indicator — track institutional participation
+- Watch for Western memory pricing pressure in DDR4/low-end DDR5 segments where CXMT can compete
+
 ## Open questions
 
 - Does the "Board of Trade" mechanism actually launch, and what's in it?
@@ -234,6 +256,7 @@ A new bilateral chokepoint is forming in parallel with the AI-chip story, and th
 1. [[2026-05-16-sergey-levine-physical-intelligence]] — robotics supply-chain decoupling framing; "balanced robotics ecosystem" reinforcement
 2. [[2026-05-14-anthropic-2028-ai-leadership]] — Anthropic policy paper; Huawei = 4%/2% NVDA compute share; 11x US-China compute ratio claim; DeepSeek safety-compliance disparity (added 2026-05-17)
 3. [[2026-05-16-john-arnold-invest-like-best]] — Concrete decoupling metrics: flights -70%, expats -50-75%, US students in China -90% (added 2026-05-17)
+4. [[2026-05-17-semiwiki-cxmt-ddr5]] — CXMT DDR5 ramp + Shanghai STAR IPO; commodity DRAM bifurcation (added 2026-05-17)
 
 ## Citations
 

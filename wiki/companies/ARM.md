@@ -27,6 +27,7 @@ The IP / instruction-set layer underneath the entire mobile world AND now the da
 - **Data center penetration accelerating** — AWS Graviton, Microsoft Cobalt, Google Axion, NVIDIA Vera/Grace = all hyperscalers + NVDA on Arm
 - **AI inference at the edge** — every smartphone, IoT device, automotive SoC ships Arm; AI features pull more compute (and royalties) per device
 - **v9 architecture mix-shift** — higher royalty per chip vs. v8
+- **Cross-cycle CPU-shortage beneficiary (NEW 2026-05-17)** — per [[2026-05-17-semiwiki-cpu-shortage-intel-18a]], the AI-driven CPU shortage is constraining both Intel (Q1 2026 server volume -5% YoY) and AMD (production-constrained). **Which means** every wafer of incremental x86 capacity Intel can't deliver pushes hyperscalers further toward custom ARM-based server CPUs (Graviton, Cobalt, Axion, Vera/Olympus). ARM captures royalty without taking the capex risk — the cleanest "shortage premium" beneficiary in the entire CPU stack.
 
 ## Bear case / risks
 - **Customer concentration / SoftBank ownership** — float is small; SoftBank still holds ~90%

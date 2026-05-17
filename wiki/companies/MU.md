@@ -92,8 +92,10 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 2. [[2026-04-15-semianalysis-isscc-roundup]] — Samsung HBM4 closing the gap; LPDDR6 specs; primary source for the new competitive-risk addition to the bear case
 3. [[2026-05-16-damodaran-profg-markets]] — chip-sector top warning specifically citing MU; sizing-discipline prompt
 4. [[2026-05-16-dylan-patel-invest-like-best]] — DRAM 2-3x doubling/tripling thesis (added 2026-05-17)
+5. [[2026-05-17-semiwiki-cxmt-ddr5]] — CXMT DDR5 ramp; DRAM market bifurcation framing (added 2026-05-17)
 
 ## Recent developments (2026-05-17)
+- **DRAM market is bifurcating, not commoditizing — CXMT context (NEW 2026-05-17 PM, per [[2026-05-17-semiwiki-cxmt-ddr5]])**: ChangXin Memory Technologies (CXMT) is now shipping DDR5 in commercial volumes through Chinese module makers (Powev/Sinker, Comay, Gloway, KingBank). CXMT 9M 2025 revenue +97.8% YoY to ~$4.5B; Shanghai STAR IPO planned (~$4.34B raise). **But CXMT's 24Gb dies are one generation behind** Samsung/Hynix/Micron's 32Gb DDR5; CXMT cannot make HBM (no EUV access). **Big 3 retain 91.5% of global DRAM Q4 2025** (Samsung 32.6% + Hynix 33.2% + Micron 25.7% per TrendForce). **Connect-the-dots**: this is *complement* to Dylan's "DRAM 2-3x" thesis, not counter — Big 3 are vacating commodity DRAM to make HBM, CXMT plugs the commodity hole, leaving structural pricing power for Big 3 in HBM/leading-edge. Commodity DRAM share is lost to China structurally, but commodity is the lowest-margin segment MU is voluntarily exiting anyway. **MU HBM moat intact**.
 - **HBM3E pricing**: Samsung + SK Hynix reportedly raised HBM3E prices by **~20% for 2026 deliveries** (TrendForce, Digitimes)
 - **HBM4 ramp**: Production begins Q3 2026; 2026 HBM revenue mix forecast at ~55% HBM4 / 45% HBM3E
 - **Micron HBM4 production**: Lags SK Hynix + Samsung by 1-2 quarters; **entire 2026 HBM4 capacity already sold out via advance contracts** (confirmed CES 2026)

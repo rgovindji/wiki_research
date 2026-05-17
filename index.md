@@ -20,6 +20,9 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 
 ## Recent source ingests
 
+- 2026-05-17 forum: [[2026-05-17-semiwiki-kuo-apple-intel]] — Kuo lifecycle on Apple-Intel partnership (2026 test → 2029 decline); TSMC retains 90%+; Apple itself acknowledges TSMC tilting toward AI
+- 2026-05-17 forum: [[2026-05-17-semiwiki-cpu-shortage-intel-18a]] — AI-driven CPU shortage; Intel Q1 ASP +27% vs volume -5%; AMD +38% vs Intel +7% YoY; insider "no grand strategy" tension with Nenni bull view; basis for new [[INTC]] page
+- 2026-05-17 forum: [[2026-05-17-semiwiki-cxmt-ddr5]] — CXMT (China's only domestic DRAM at scale) shipping DDR5 in commercial volumes; STAR IPO ~$4.34B planned; commodity DRAM bifurcation framing for [[MU]]
 - 2026-05-15 article: [[2026-05-15-semiwiki-tsmc-tool-orders-capex]] (SemiWiki / Daniel Nenni ingest 2026-05-17 — first ingest from SemiWiki as a monitored source; **TSMC Q1 2026 board capital appropriations $31.3B with $21B Advanced Node equipment = highest single-quarter authorization since tracking began Q4 2019**; **TTM Advanced Node equipment approvals ~$55B vs $56B full-year 2026 CapEx guide** → math forces upward guide revision; Nenni: "TSMC's current 2026 CapEx framework is already becoming too conservative"; independent corroboration of Dylan's $100B-by-2028 trajectory from a different source class)
 - 2026-05-16 podcast: [[2026-05-16-dylan-patel-invest-like-best]] (Dylan Patel ILTB ingest 2026-05-17 — second podcast in 8 days; **DRAM pricing structurally 2-3x** because HBM conversion drains DRAM capacity; **GPU 7-8 year useful life** refutes Burry 1-3yr depreciation framing; **Anthropic gross margins 30%→72% in 5 months** (compute price decline); **TSMC 2028 capex approaching $100B** — 70-80% upward revision vs prior wiki framing; **few-shot robotics learning 6-18 months out** — most aggressive timeline yet, 4-way researcher contradiction; **copper foil for PCBs sold out** — independent confirmation of [[copper-thesis]]; sharpens [[MU]] / [[NVDA]] / [[TSM]] / [[bottleneck-roadmap]] / [[robotics]])
 - 2026-05-16 podcast: [[2026-05-16-john-arnold-invest-like-best]] (Arnold ILTB ingest 2026-05-17 — former Enron / Centaurus, now climate-philanthropy infrastructure backer; **China decoupling quantified**: flights -70%, expats -50-75%, students -90%, vivid "Apocalypse Now" personal account; **federal permitting reform plausibly passes 2026** (Schumer + Lee bipartisan) — biggest near-term political catalyst for [[datacenter-construction]]; **solar PPA pricing +50%**; **SMRs 10-15 year horizon, NOT 2030**; sharpens [[us-china-relations]] / [[datacenter-construction]] / [[ai-capex-cycle]])
@@ -86,6 +89,9 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 - [[consumer-cyclicals]] — retail (COST/HD/AMZN), restaurants (MCD/SBUX), travel (BKNG/ABNB), brands (NKE/LULU), autos (F/GM/UBER) — consumer-rate-sensitive
 
 ## Companies (`wiki/companies/`)
+
+### Foundry binary / Intel reset (NEW 2026-05-17)
+- [[INTC]] — Intel Corporation; +114% in April 2026 alone; US gov 9.9% owner (~$36B mark); Apple/Tesla/xAI customer wins under Lip-Bu Tan; 18A yields hit industry-standard "only 2027"; Q1 server ASP +27% but volume -5%; insider "no grand strategy" contradiction with Nenni bull view; **stance: neutral (low conviction)** — binary 18-24 month event-driven trade
 
 ### Anti-canonical (the wiki's "AVOID" reference)
 - [[POET]] — POET Technologies; canonical late-cycle indicator #1; AVOID stance held through 4 validation events in 5 weeks (Marvell drop -49%, bounce +130%, Lumilens pop +38%, $400M dilution -11%); **stance: AVOID (bear)**

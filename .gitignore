@@ -22,3 +22,4 @@ node_modules/
 .tmp/
 n8n-credentials.env
 *.env
+.semiwiki-tmp/

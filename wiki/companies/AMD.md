@@ -60,6 +60,7 @@ The credible #2 AI GPU vendor — **OpenAI signed a 6 GW AMD GPU deal**, **Meta 
 7. **HBM4 allocation** — does AMD secure enough?
 
 ## Recent developments
+- **2026-05-17 — AMD outpacing Intel 5x in the AI-CPU shortage cycle** (per [[2026-05-17-semiwiki-cpu-shortage-intel-18a]]). **AMD Q1 2026 revenue +38% YoY vs Intel +7% YoY**. Both are supply-constrained, but AMD's relative-growth signal is the cleanest read in the CPU cycle — AMD is winning share AND benefiting from price hikes (10-15% recent industry-wide). **Which means** Intel's "AI CPU" narrative is hollowed out on a relative basis; the structural read is that AMD's EPYC + MI accelerator cross-sell is producing real wallet-share movement.
 - **2026-05-11** — AMD provided **Q2 revenue guide ~$11.2B**, surpassing Wall Street consensus; **20+ brokerages raised price targets** post-print. AI revenue ramp clearly visible in the guide.
 - **2026-Q1/Q2** — MI450 sampling to lead customers; production targets H2 2026
 - **2026-02** — Meta announced 6 GW expanded partnership + custom MI450 + 160M-share warrant
@@ -67,7 +68,7 @@ The credible #2 AI GPU vendor — **OpenAI signed a 6 GW AMD GPU deal**, **Meta 
 - **2025-10** — OpenAI 6 GW GPU deal announced; first 1 GW data center on MI450
 
 ## Related
-[[NVDA]] · [[nvda-supply-chain]] · [[TSM]] · [[AVGO]] · [[META]] · [[CRWV]] · [[ORCL]] · [[ai-capex-cycle]] · [[cloud-hyperscalers]] · [[bottleneck-roadmap]] · [[semiconductors]] · [[overview]]
+[[NVDA]] · [[nvda-supply-chain]] · [[TSM]] · [[AVGO]] · [[META]] · [[CRWV]] · [[ORCL]] · [[INTC]] · [[ARM]] · [[ai-capex-cycle]] · [[cloud-hyperscalers]] · [[bottleneck-roadmap]] · [[semiconductors]] · [[overview]]
 
 ## Citations
 - DCD on MI400/MI500: https://www.datacenterdynamics.com/en/news/amd-unveils-full-mi400-product-lineup-claims-mi500-chips-will-deliver-1000x-increase-in-ai-performance/

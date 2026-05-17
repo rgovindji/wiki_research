@@ -9,6 +9,34 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | SemiWiki forum sweep #1 — INTC page created, 4 threads ingested
+
+User is sick (flu) and granted autonomous control. First batch from forum browsing via authenticated Chrome MCP session.
+
+### Threads ingested
+1. **[[2026-05-17-semiwiki-kuo-apple-intel]]** — Ming-Chi Kuo's 10 industry checks on Apple-Intel partnership. Apple lifecycle at Intel 18A-P: test 2026 → ramp 2027 → growth 2028 → decline 2029. TSMC retains 90%+ Apple supply. Apple itself acknowledges TSMC tilting toward AI.
+2. **[[2026-05-17-semiwiki-cpu-shortage-intel-18a]]** — Combined source for two related threads (CPU shortage + Lip-Bu Tan strategy). Key extraction: Intel Q1 10-Q quoted verbatim (server ASP +27% YoY, volume -5% YoY); AMD Q1 +38% YoY revenue vs Intel +7%; Intel $125.5B CapEx forensics; insider "no grand strategy" quote (BlueOne, multiple Intel-internal sources); Daniel Nenni's contra bull view.
+3. **[[2026-05-17-semiwiki-cxmt-ddr5]]** — CXMT shipping DDR5 commercial volumes; STAR Market IPO planned (~$4.34B); 9M 2025 revenue +97.8% YoY. CXMT one generation behind (24Gb vs 32Gb), can't make HBM. Big 3 retain 91.5% global DRAM share. Bifurcation framing: complement to Dylan's "DRAM 2-3x" thesis, not counter.
+4. **T-Glass MediaTek / Google TPU thread** — checked, content is paywalled (only teaser visible). Deferred.
+
+### Wiki changes
+- **Created [[INTC]]** (new company page) — long-deferred Intel coverage now opened. **Stance: neutral / low conviction**. Surface bull (gov 9.9% stake, Apple/Tesla/Terafab wins, +114% April, CPU shortage ASP benefit) and bear (Q1 volume -5%, AMD outperformance 5x, 18A yields slip to 2027, $125.5B capex forensics, insider "no strategy") with equal weight per house rule.
+- **Patched [[AAPL]]** — Kuo lifecycle detail + Apple's own TSMC-tilt acknowledgment. Stance unchanged (bear).
+- **Patched [[AMD]]** — Q1 +38% YoY vs Intel +7%; relative-growth signal sharpening AMD bull thesis. Added [[INTC]] and [[ARM]] to Related.
+- **Patched [[ARM]]** — cross-cycle CPU-shortage beneficiary; x86 constraint accelerates ARM-based server CPU adoption (Graviton/Cobalt/Axion/Vera) without capex risk.
+- **Patched [[MU]]** — DRAM market bifurcation framing; CXMT plugs commodity hole, Big 3 retain HBM/leading-edge pricing power. HBM moat intact.
+- **Patched [[bottleneck-roadmap]]** — new "x86 CPUs (parallel constraint)" row between memory and photonic substrates; [[INTC]] + [[AMD]] + [[ARM]] cross-link.
+- **Patched [[us-china-relations]]** — new CXMT section; commodity DRAM bifurcation framing; sovereign-AI flow indicator.
+- **Updated [[index]]** — added new INTC entry in Companies; 3 new source entries in Recent Source Ingests.
+
+### Process notes
+- All forum content accessed via Chrome MCP with authenticated session (semiwiki.com).
+- Account is "pending approval" status — but full forum-thread content is rendered to read-only despite the gating banner. Posting/replying likely blocked.
+- Snapshot files in `.semiwiki-tmp/` (gitignored); content extracted via grep/awk to keep working context lean.
+- Insider commentary (BlueOne on Intel "no strategy"; Naga Chandrasekaran on Intel-as-foundry economics; Kevork Kechichian on Intel culture) was the high-value differentiator vs unauthenticated WebFetch.
+
+---
+
 ## [2026-05-17] ingest | SemiWiki (Daniel Nenni) — TSMC Record Tool Orders / CapEx Shockwave
 
 User surfaced SemiWiki (semiwiki.com) as a new monitored source — industry-insider blog + forum run by Daniel Nenni, longtime semi industry analyst. Saved [[reference-semiwiki]] memory entry. **First article ingested**: Nenni's May 15 piece on TSMC's record Q1 2026 tool orders.
