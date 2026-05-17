@@ -29,6 +29,7 @@ Trading at **~178x 2026 expected earnings** — valuation depends almost entirel
 - **Energy storage** business growing fast and high margin.
 - **Brand + leadership.** Cult-of-CEO premium that doesn't apply to other Mag 7.
 - **Samsung Texas robot-chip deal (NEW).** Per [[2026-05-09-dwarkesh-dylan-semianalysis]]: Elon signed a major deal with Samsung to fab robot chips in Texas — gives Tesla **(a) Taiwan-risk diversification** and **(b) a separate, less-contended supply chain** that doesn't compete with the AI-data-center wallet. Real strategic positive for the robotics thesis if Optimus actually ships.
+- **Tesla remains TSMC customer despite Terafab (NEW 2026-05-17 PM)**. Per CC Wei Q1 2026 earnings call (Nenni article): *"Intel and Tesla... actually, they are still our customers and we are very confident in our technology position."* **Which means**: Terafab (Tesla on Intel 14A) is **additive, not substitutive** — Tesla's existing HW3/4 + AI chip families continue at TSMC. Diversification breadth (Samsung Texas + Intel Terafab + TSMC) is a legitimate strategic positive — not a replacement of TSMC dependence.
 - **Dojo restart.** Tesla Dojo (wafer-scale chip with 25 chips on it) was cancelled and restarted; per Dylan, "still probably the best chip for running convolutional neural networks." Niche but live.
 
 ## Bear case / risks (the dominant view)
