@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What I learned this weekend — May 17, 2026</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.65;
+  color: #1a1a1a;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+  background: #fafaf8;
+}
+h1 {
+  font-size: 28px;
+  line-height: 1.25;
+  margin: 0 0 6px;
+  letter-spacing: -0.02em;
+}
+.subtitle {
+  color: #666;
+  font-size: 15px;
+  margin: 0 0 36px;
+  border-bottom: 1px solid #e5e5e1;
+  padding-bottom: 24px;
+}
+h2 {
+  font-size: 22px;
+  margin: 44px 0 10px;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-size: 17px;
+  margin: 28px 0 8px;
+  color: #2c2c2c;
+}
+p { margin: 12px 0; }
+a {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-decoration-color: rgba(29, 78, 216, 0.35);
+  text-underline-offset: 2px;
+}
+a:hover { text-decoration-color: rgba(29, 78, 216, 1); }
+.ticker {
+  font-weight: 600;
+  color: #0a0a0a;
+  border-bottom: 1px dotted #999;
+  cursor: help;
+  text-decoration: none;
+}
+.term {
+  border-bottom: 1px dotted #b0b0b0;
+  cursor: help;
+}
+.callout {
+  background: #fff7e6;
+  border-left: 4px solid #f59e0b;
+  padding: 14px 18px;
+  margin: 18px 0;
+  border-radius: 0 6px 6px 0;
+  font-size: 15px;
+}
+.callout-title {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #92400e;
+}
+.headline {
+  background: #fef2f2;
+  border-left: 4px solid #dc2626;
+  padding: 14px 18px;
+  margin: 18px 0;
+  border-radius: 0 6px 6px 0;
+}
+.headline-title {
+  font-weight: 700;
+  color: #991b1b;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+.disclosure {
+  font-size: 13px;
+  color: #777;
+  border-top: 1px solid #e5e5e1;
+  padding-top: 24px;
+  margin-top: 56px;
+  line-height: 1.5;
+}
+ul { padding-left: 22px; margin: 12px 0; }
+li { margin: 6px 0; }
+strong { color: #0a0a0a; }
+.calendar {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  padding: 14px 18px;
+  border-radius: 6px;
+  margin: 18px 0;
+}
+.calendar h3 { margin-top: 0; color: #075985; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 14px;
+}
+th, td {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e5e5e1;
+}
+th {
+  background: #f5f5f3;
+  font-weight: 600;
+  font-size: 13px;
+  color: #444;
+}
+</style>
+</head>
+<body>
+
+<h1>What I learned this weekend — Sunday, May 17, 2026</h1>
+<p class="subtitle">Notes from a long research weekend on AI, robotics, semis, space, and defense investing. Plain-English version for friends. Not investment advice — these are research findings, not recommendations.</p>
+
+<div class="headline">
+<div class="headline-title">The one chart-level finding</div>
+<p style="margin: 0;"><strong><a class="ticker" href="https://www.nvidia.com" target="_blank" title="NVIDIA Corporation — designs the AI chips powering ChatGPT, Claude, and everything else">NVDA</a> overtook <a class="ticker" href="https://www.apple.com" target="_blank" title="Apple Inc.">AAPL</a> as <a class="ticker" href="https://www.tsmc.com" target="_blank" title="Taiwan Semiconductor — the world's most important chip factory">TSMC</a>'s #1 customer in 2025.</strong> NVDA was 19% of TSMC's 2025 revenue. Apple was 17% — down from 22% the year before. Apple lost five percentage points of TSMC's wallet in a single year. This is the empirical proof that <span class="term" title="Making AI chips more important than iPhone chips for TSMC's roadmap">TSMC is deprioritizing Apple in favor of AI customers</span>. It's no longer a forward-looking thesis — it's happening at observable, measurable speed.</p>
+</div>
+
+<h2>1. Why this matters: TSMC is becoming an AI company</h2>
+
+<p>TSMC is the single most important company you've never thought about. It manufactures the chips for <a class="ticker" href="https://www.nvidia.com" target="_blank">NVDA</a>, Apple's iPhone, AMD, Qualcomm — pretty much every chip designer that doesn't have its own factory. So when TSMC's customer mix shifts, the AI investment story shifts with it.</p>
+
+<p>Three things became concrete this weekend:</p>
+
+<ul>
+<li><strong>TSMC's 2026 revenue is on track to grow 25% per year through 2029</strong> — that's the company's own management target, much higher than the 10-15% the chip industry usually grows.</li>
+<li><strong>TSMC just committed $20 billion to its Arizona fabs</strong> — about one-third of its full-year 2026 spending going to a single US site. Big read-through to companies that build data centers in the US: <a class="ticker" href="https://www.comfortsystemsusa.com" target="_blank" title="Comfort Systems — mechanical/HVAC contractor; 45% data center revenue mix">FIX</a>, <a class="ticker" href="https://www.emcorgroup.com" target="_blank" title="EMCOR — electrical/mechanical contractor">EME</a>, <a class="ticker" href="https://www.quanta-services.com" target="_blank" title="Quanta Services — grid + substation construction">PWR</a>, <a class="ticker" href="https://www.amkor.com" target="_blank" title="Amkor — advanced packaging">AMKR</a>.</li>
+<li><strong>TSMC's CEO publicly said "Intel and Tesla are still our customers"</strong> on the Q1 call, despite their announcement to build the Texas <span class="term" title="Joint Intel-Tesla-xAI fab project, $55B initial / $119B total, in Texas">Terafab</span>. Translation: even the headline-stealing diversification moves aren't actually replacing TSMC at scale yet.</li>
+</ul>
+
+<div class="callout">
+<span class="callout-title">What this means for non-investors</span>
+The AI boom has a physical-world chokepoint that everyone underestimates. It's a 60-mile-radius cluster of factories in Taiwan plus a growing US footprint in Arizona. Every dollar of AI spending eventually has to pass through this chokepoint. That's why TSMC is up so much — it's not luck, it's structurally captured rent.
+</div>
+
+<h2>2. Tuesday's big event: NVDA earnings</h2>
+
+<p>NVIDIA reports earnings Tuesday after the close. The stock has rallied a ton off its March low, then sold off a bit from its May peak. People are nervous because last quarter NVDA <em>beat</em> earnings handily but the stock fell anyway — investors decided the growth was "already priced in."</p>
+
+<p>The bar this Tuesday:</p>
+<ul>
+<li><strong>Revenue:</strong> ~$78.5 billion (up about 79% from last year)</li>
+<li><strong>What actually moves the stock:</strong> not the Q1 result — it's the Q2 forecast. Wall Street wants to see at least $86 billion guided for Q2. Above $87.5 billion = stock jumps; below $84 billion = stock drops 10%+.</li>
+<li><strong>China wildcard:</strong> US cleared NVIDIA to sell H200 chips to ~10 Chinese firms, but zero have actually been delivered. <span class="term" title="Culper Research — short-seller that published a bear case on NVDA's China exposure">Short-sellers</span> claim 20%+ of NVDA's revenue is China-tied through indirect channels. If Jensen quantifies it on the call, that's a real signal.</li>
+</ul>
+
+<p>Most likely outcome: NVDA beats, guides roughly in line, stock moves ±2-4% intraday and then settles. The big surprise scenarios go either direction with about 15-30% odds each.</p>
+
+<h2>3. Humanoid robots — Tesla vs. Figure vs. China</h2>
+
+<p>This is the topic that lit up my research most. The short version: <strong>Tesla is behind, Figure is ahead, and a Chinese company called Unitree is quietly the world leader by units shipped.</strong></p>
+
+<table>
+<tr><th>Who</th><th>What they shipped/are shipping</th></tr>
+<tr><td><strong>Tesla Optimus</strong></td><td>Gen 3 production starts July-August 2026. Zero external customers. Internal use only "for learning."</td></tr>
+<tr><td><strong>Figure AI</strong> (private)</td><td>30,000+ BMW X3 vehicles built using Figure 02 robots in an 11-month pilot at BMW Spartanburg. 240 units/month April 2026.</td></tr>
+<tr><td><strong>Unitree</strong> (China, private)</td><td>5,500 units shipped in 2025 — more than Tesla + Figure + Agility combined. Just filed for a Shanghai IPO.</td></tr>
+<tr><td><strong>Apptronik</strong> (private)</td><td>$5 billion valuation as of February. Apollo robot at Mercedes-Benz factories. Made by <a class="ticker" href="https://www.jabil.com" target="_blank">JBL</a> (Jabil) in the US.</td></tr>
+</table>
+
+<div class="headline">
+<div class="headline-title">Live news worth tracking</div>
+<p style="margin: 0;">Elon Musk publicly confirmed in May 2026 that <strong>Tesla Optimus production has been hit by China's rare-earth export controls</strong>. Each Optimus needs about 3.5 kilograms of neodymium magnets, and China refines about 85% of the world's supply. The only fully integrated US producer of these magnets is <a class="ticker" href="https://mpmaterials.com" target="_blank">MP</a> (MP Materials). This is the cleanest "supply chain bottleneck" trade in the robotics build-out today.</p>
+</div>
+
+<h3>What about prediction markets?</h3>
+<p>Polymarket-style prediction markets currently give a <strong>6% probability</strong> that Optimus will be on sale to consumers by June 2026. Tesla's stock price implies it'll happen. That's a big gap. The "Optimus everywhere by 2027" Tesla bull case has very few believers outside the stock.</p>
+
+<h2>4. SpaceX is going public next month</h2>
+
+<p>SpaceX filed for an IPO confidentially on April 1 at a target valuation of $1.75 to $2 trillion (that's "T" with a T — bigger than ExxonMobil, Mastercard, or Walmart). The public S-1 is expected this week (May 15-22). Roadshow June 8. <strong>IPO date June 18-30, 2026.</strong></p>
+
+<div class="callout">
+<span class="callout-title">The hidden Google angle</span>
+<a class="ticker" href="https://abc.xyz" target="_blank">GOOGL</a> bought roughly 5% of SpaceX for $500 million back in 2015. At today's $2T expected valuation, that stake is worth about $100 billion. Even at a more conservative $1.2T post-IPO trading valuation, it's worth $60 billion+. <strong>This is not currently reflected in most GOOGL valuation models.</strong> Largest single-public-equity exposure to SpaceX anywhere.
+</div>
+
+<p>What SpaceX actually does at scale today (May 2026 numbers):</p>
+<ul>
+<li><strong>Starlink:</strong> 10 million+ subscribers, projected 18 million by year-end. Revenue running at $14-16 billion annualized — about 70% of all SpaceX revenue.</li>
+<li><strong>Starship:</strong> Just completed its first all-engine static fire test. Orbital flight attempt May 19. Still very experimental.</li>
+<li><strong>Falcon 9:</strong> 167 launches in 2025. 82% of global commercial launch market.</li>
+</ul>
+
+<h2>5. The macro risk nobody is hedging — Bank of Japan June 16-17</h2>
+
+<p>This is the one most likely to surprise people. The Bank of Japan meets June 16-17 and is expected to raise rates by a quarter point (from 0.75% to 1.0%). Sounds boring. It is not.</p>
+
+<p><strong>Here's why this matters:</strong> Hedge funds and traders around the world have been borrowing yen at ~0% for years to buy high-flying things like tech stocks. This is called the <span class="term" title="Borrow cheap yen, invest in higher-yielding assets globally, pocket the spread">yen carry trade</span>. When BoJ raises rates, the yen strengthens, and those carry-trade positions get squeezed. Forced selling spreads to whatever those trades were funding.</p>
+
+<p>In August 2024, the BoJ raised rates by 0.15% and:</p>
+<ul>
+<li>The VIX (the "fear index") spiked 180% intraday to 65 (largest single-day spike on record)</li>
+<li>The Nikkei (Japan's S&amp;P) fell 12.4% in one day (worst since 1987)</li>
+<li>Tech stocks globally got cratered for about 4 trading days before recovering</li>
+</ul>
+
+<p><strong>Morgan Stanley estimates ~$500 billion of yen-carry positions are still on, post-2024.</strong> Only about 10% of the trade unwound in August 2024. The other 90% is still there. If BoJ surprises hawkish in June, the 2024 episode could repeat — or be longer this time, because the US Fed is no longer about to cut rates to soften the blow.</p>
+
+<div class="callout">
+<span class="callout-title">What this means for non-investors</span>
+If you're holding a lot of US tech in 401(k)s or index funds, the week of June 16-17 has unusual tail-risk. A "boring" central bank meeting in Tokyo could trigger a 5-10% pullback in NVDA, MU, the Magnificent 7, etc. Not predicting it. Just saying it's on the calendar and it's underpriced.
+</div>
+
+<div class="calendar">
+<h3>📅 Calendar of binary events the next ~6 weeks</h3>
+<table>
+<tr><th>Date</th><th>Event</th></tr>
+<tr><td><strong>Tue, May 20</strong></td><td><a class="ticker" href="https://www.nvidia.com" target="_blank">NVDA</a> Q1 FY27 earnings (after close)</td></tr>
+<tr><td><strong>Wed, May 27</strong></td><td><a class="ticker" href="https://www.soitec.com" target="_blank">Soitec</a> FY26 full-year earnings (Paris-listed)</td></tr>
+<tr><td><strong>Tue, Jun 10</strong></td><td>May US CPI inflation print (8:30 AM)</td></tr>
+<tr><td><strong>Sun, Jun 8</strong></td><td>SpaceX IPO roadshow begins</td></tr>
+<tr><td><strong>Mon–Tue, Jun 16-17</strong></td><td><strong>Bank of Japan rate decision</strong></td></tr>
+<tr><td><strong>Jun 18-30</strong></td><td>SpaceX IPO pricing window</td></tr>
+<tr><td><strong>Late June</strong></td><td>Micron (<a class="ticker" href="https://www.micron.com" target="_blank">MU</a>) Q3 FY26 earnings</td></tr>
+</table>
+</div>
+
+<h2>6. The "smart money is positioning for a correction" signals</h2>
+
+<p>This was the surprise of my weekend. Three independent data points from the latest hedge fund filings (Q1 2026, filed mid-May):</p>
+
+<ol>
+<li><strong>Warren Buffett (Berkshire)</strong> trimmed Apple, sold Amazon entirely, sold UnitedHealth entirely, sold Domino's entirely. Portfolio shrank from $274B to $263B. Top 5 holdings now 68% of the portfolio — maximum defensiveness.</li>
+<li><strong>Dan Loeb (Third Point)</strong> established a large position in SPY puts — a direct macro hedge against the S&amp;P 500.</li>
+<li><strong>Stan Druckenmiller</strong> exited Alphabet (GOOGL) entirely (385K shares), cut Amazon 97%, but initiated a position in Broadcom (<a class="ticker" href="https://www.broadcom.com" target="_blank">AVGO</a>). Major rotation OUT of hyperscaler giants INTO chip-equipment enablers.</li>
+</ol>
+
+<p>And on the other side: <strong>Bill Ackman (Pershing Square)</strong> initiated a $2.09 billion stake in Microsoft. <strong>Dan Loeb</strong> raised his Microsoft position 175%. <strong>Cathie Wood (ARK)</strong> bought Tesla on weakness. Multiple top funds reached the same Microsoft conclusion the same quarter.</p>
+
+<div class="callout">
+<span class="callout-title">The single weirdest insider signal</span>
+Among all the chip companies, <strong>TSMC's CEO is the only one currently buying his own stock</strong>. C.C. Wei bought a small amount of shares April 9 via the company's employee purchase program — but it's the only Mag-7-adjacent name showing any insider accumulation. Everyone else (NVDA's Jensen Huang, AMD's Lisa Su, Micron's Sanjay Mehrotra, Hock Tan at Broadcom) is in pre-arranged selling programs.
+</div>
+
+<h2>7. Three under-the-radar tickers worth knowing</h2>
+
+<h3><a class="ticker" href="https://www.soitec.com" target="_blank">SOITEC</a> (SOI.PA — Paris-listed)</h3>
+<p>French company that makes a specialty type of silicon wafer used in <span class="term" title="Co-packaged optics — integrating optical fiber directly into computer chip packaging">co-packaged optics</span> — the next-gen way of moving data inside AI data centers. They're the only company qualified to supply this material to TSMC, GlobalFoundries, and Tower Semiconductor. Every NVIDIA Spectrum-X/Quantum-X CPO switch is built on a Soitec wafer. iPhone 17 mmWave antenna modules are also on Soitec FD-SOI silicon (independently confirmed). Stock has rallied 4-6x off Dec 2025 lows so valuation is uncomfortable; earnings May 27 is binary.</p>
+
+<h3><a class="ticker" href="https://www.xpeng.com" target="_blank">XPEV</a> (Xpeng Motors — NYSE ADR)</h3>
+<p>Chinese EV company that just committed roughly $13.7 billion to a humanoid robot program called IronMan. They're targeting 1,000+ units per month by late 2026. Stock is meaningfully cheaper than Tesla — and Tesla's 178x earnings already prices in the robot future. XPENG's robot bet is the same direction but at a fraction of the valuation. Most US investors don't know this story.</p>
+
+<h3><a class="ticker" href="https://www.intuitive.com" target="_blank">ISRG</a> (Intuitive Surgical)</h3>
+<p>If you want exposure to "AI robotics" without speculative humanoid bets, ISRG is the only operationally-proven public play. They make the da Vinci surgical robot. Revenue grew 23% last quarter; their newest da Vinci 5 system placements grew 58% year-over-year. 86% of their revenue is recurring (instruments + services). Already profitable, structurally moated, cash-flow validated — completely different risk profile from "Tesla Optimus by 2027" speculation.</p>
+
+<h2>8. The two contradictions worth holding in your head</h2>
+
+<p>These are unresolved on the wiki on purpose. Smart people disagree, and I don't pretend to know who's right.</p>
+
+<ol>
+<li><strong>How long do AI GPUs actually last?</strong> Dylan Patel (SemiAnalysis) argues 7-8 years of useful life. A Google data center architect, quoted in a SemiWiki forum thread, says 1-3 years of operational service life. NVIDIA's warranty reserves quietly grew from a small fraction to 1.8% of revenue — that's the empirical test. If this number keeps creeping up, the depreciation bear case on hyperscalers is back on the table.</li>
+<li><strong>Is Intel actually fixable?</strong> Daniel Nenni (a respected industry insider) says "GO INTEL — never bet against Lip-Bu Tan." A forum member with apparent Intel sources says "I've heard from multiple employees — there isn't a grand strategy. There are only tactics." Intel stock is +200% YTD on hope. The execution will tell.</li>
+</ol>
+
+<h2>What I'd actually do with this</h2>
+
+<p>Not investment advice — just how I'd think about it as a normal person reading this:</p>
+
+<ol>
+<li><strong>Don't panic-buy or panic-sell on Tuesday's NVDA earnings.</strong> Most likely outcome is a modest move. Position sizing matters more than reaction speed.</li>
+<li><strong>Mark June 16-17 on your calendar.</strong> Even if you don't trade, know that "boring Bank of Japan meeting" could move your 401(k) by 5-10% in either direction.</li>
+<li><strong>Notice the smart-money-getting-defensive signal.</strong> When Buffett raises cash AND Druckenmiller exits Alphabet AND Loeb buys SPY puts in the same quarter, the right reaction is not "they're all wrong." It's "what do they see that retail doesn't?"</li>
+<li><strong>The AI robotics theme is real but the public-market entry points are limited.</strong> Tesla is priced for perfection. Figure/Apptronik/Skild are private. The cleanest public proxies right now are: NVIDIA (for compute), <a class="ticker" href="https://mpmaterials.com" target="_blank">MP</a> Materials (for the rare-earth bottleneck Elon just confirmed), <a class="ticker" href="https://www.intuitive.com" target="_blank">ISRG</a> (for cash-flow-validated robotics), and <a class="ticker" href="https://www.xpeng.com" target="_blank">XPEV</a> (for the under-covered Chinese humanoid pure-play).</li>
+</ol>
+
+<div class="disclosure">
+<strong>Not investment advice.</strong> This is research-grade notes from a long weekend of work — synthesized from primary-source company filings, industry analyst writing (SemiWiki / SemiAnalysis / Daniel Nenni), 13F hedge fund disclosures, and multiple agentic-AI research pulls. Stances reflected here are research stances. Verify everything before making any decision. <br><br>
+Generated Sunday, May 17, 2026 by an autonomous research session that produced 27 commits, 17 new wiki pages, and ran 27 parallel research subagents covering AI + Robotics + Semis + Aerospace + Space + Defense + Nuclear + Quantum + Energy + Cybersecurity + Healthcare AI + Climate. The underlying wiki is available on request.
+</div>
+
+</body>
+</html>
