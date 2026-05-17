@@ -235,6 +235,18 @@ Damodaran: 10 years ago chips were **3% of S&P 500**; today **17%**. Sector up *
 
 **Discount**: Damodaran is a long-horizon valuation expert, not a near-term tactician (he admits he was lucky on Intel). But the data points — 17% S&P share, 60% in 2 months — are real and notable. Treat as a *position-sizing prompt* for [[NVDA]] / [[MU]] / [[AMAT]] / [[KLAC]] / [[LRCX]] / [[ASML]], not a stance-change prompt. The long-term theses remain intact regardless of a near-term correction.
 
+## Public-market validation: AI-infra wins, AI-application loses (NEW 2026-05-16)
+
+YTD-through-mid-May 2026 performance split, observed across a single thematic basket circulating on social media (unverified provenance, but the numbers are independently verifiable from market data):
+
+**AI infrastructure / chips / server OEM winners**:
+- DELL +93%, TXN +77%, JBL +53%, KLAC +51%, AVGO +26%, NVDA +23%, ETN +26%, GOOGL +26%
+
+**AI / enterprise SaaS application-layer losers**:
+- NOW -45%, WDAY -41%, CRM -37%, FIS -37%, AXON -36%, CDW -36%, ADBE -33%
+
+**Which means:** the market is *actively pricing* the "infrastructure wins, application layer gets disrupted by AI" thesis the wiki has been tracking via Kedrosky / token economics / Hashimoto. The bifurcation isn't theoretical anymore — it's showing up in YTD returns. Notable: CRM, NOW, WDAY are the canonical "AI was supposed to eat their lunch" trio, and they're all down 35-45% while their cloud-infrastructure suppliers (NVDA, GOOGL, AVGO, ORCL) are up. This is a meaningful data point for both the bull case (infra demand is monetizing) AND the bear case (application-layer multiples are deflating sharply — a leading-edge SaaS correction is already happening).
+
 ## Retail FOMO into speculative micro-caps — behavioral late-cycle indicator (NEW 2026-05-16)
 
 Observation from r/stocks "Next Big Sector" thread (May 2026, 275 upvotes, 301 comments): retail is actively hunting for "the next NVDA" by chasing speculative micro-caps in adjacent narrative buckets:
