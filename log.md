@@ -9,6 +9,49 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | SemiWiki forum sweep #2 — TSMC $20B Arizona + INTC reversal + Apple modem
+
+Second batch of autonomous forum browsing. Combined source: [[2026-05-17-semiwiki-forum-sweep-2]].
+
+### Threads covered
+- **A**: Trump-Xi summit (May 13-14, 2026) — CEO entourage + post-trip stock data
+- **B**: MRC supercomputer networking — Google Apollo/Palomar OCS framing
+- **C**: TSMC wins Apple modem order — Apple C2 5G on N2, modem-disaggregation strategy
+- **D**: TSMC Board of Directors Meeting Resolutions — **primary source** for $31.3B + new **$20B Arizona injection**
+- **E**: TSMC sells 8.1% of VIS — capital recycling
+
+### Headline findings
+- **TSMC $20B capital injection into TSMC Arizona** — roughly 1/3 of FY26 CapEx ear-marked for Arizona alone. Most aggressive US-foundry posture to date. Direct booster to [[FIX]] / [[EME]] / [[PWR]] / [[AMKR]] addressable demand.
+- **INTC -16.61% one-week** during Xi summit (despite +200% YTD); Lip-Bu Tan conspicuously absent from the CEO trip — political signal worth tracking
+- **Apple's C2 5G modem going to TSMC on N2** (not Intel) — flagship Apple work stays at TSMC; Intel gets at most secondary AP shares (Samsung-style role). Reduces Apple-Intel bull case strength for [[INTC]]
+- **GOOGL Apollo/Palomar OCS** validated as a generation ahead of industry consortium (MRC) — vertical-integration moat extends beyond TPU into network fabric
+- **QCOM -13.24% week** (we don't have a page) — confirmed losing Apple modem to in-house C2 starting 2027
+- **TSMC backend test capacity "almost fully booked"** with AI demand from NVDA/GOOGL/MSFT/META/AMD — independent confirmation of [[bottleneck-roadmap]] thesis
+
+### Wiki touched
+- [[TSM]] — board resolution primary data, $20B Arizona, VIS divest, Apple modem
+- [[INTC]] — -16.61% one-week, Lip-Bu absent, Apple modem stays at TSMC reframes bull case
+- [[AAPL]] — modem-disaggregation strategy (BB on TSMC N2, AP multi-source)
+- [[GOOGL]] — Apollo/Palomar OCS moat
+- [[us-china-relations]] — Trump-Xi summit market read + post-trip moves
+- [[datacenter-construction]] — TSMC $20B Arizona read-through to FIX/EME/PWR
+- [[index]] — added forum-sweep-2 source entry
+
+### Skipped (intentionally)
+- T-Glass / MediaTek thread — paywalled, only teaser content
+- McLaren Racing / Intel — PR fluff
+- Keysight CSR report — non-investable PR
+- Weebit Nano fundraise — too small / not in framework
+- "Is AI the automobile" speculative thread — no actionable data
+
+### Process notes
+- Continued use of Chrome MCP authenticated session
+- Snapshot files cleaned between batches (kept in .semiwiki-tmp/, gitignored)
+- 6 sources written and 9 wiki pages patched across batches 1+2 today
+- Two commits pushed: cbe2a27 (batch 1), pending (batch 2)
+
+---
+
 ## [2026-05-17] autonomous-session | SemiWiki forum sweep #1 — INTC page created, 4 threads ingested
 
 User is sick (flu) and granted autonomous control. First batch from forum browsing via authenticated Chrome MCP session.

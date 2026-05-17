@@ -69,6 +69,7 @@ Intel is a **binary bet**: bull if 18A yields hit industry-standard by 2027 AND 
 - **CPU shortage duration** — Intel 10-Q says "throughout remainder of 2026"; any pull-forward to Q3/Q4 normalization changes the ASP story
 
 ## Recent developments
+- **2026-05-17 — Post-Xi-summit reversal + Apple modem clarification** ([[2026-05-17-semiwiki-forum-sweep-2]]). **INTC -16.61% one-week** during Trump's Beijing summit despite **+200% YTD** (larger than the +114% April figure cited above). **Lip-Bu Tan conspicuously absent** from the CEO entourage (Musk, Huang, Cook, Mehrotra, Fink, Amon, Schwarzman, Solomon all went) — politically curious given INTC's 9.9% government stake and Apple/Tesla customer ambitions. Separately, **Apple's flagship 5G modem (C2) is going to TSMC on N2**, not Intel — meaning Intel's eventual Apple wallet share is likely **secondary AP shares** (Samsung-style role) rather than the marquee modem work the Kuo lifecycle implied ([[2026-05-17-semiwiki-kuo-apple-intel]]). **Which means**: the wiki's neutral / low-conviction stance is reinforced; both bull (+200% YTD, AI CPU shortage ASP benefit) and bear (-16.61% one-week, Lip-Bu absent, Apple's marquee work stays at TSMC) signals continue to balance.
 - **2026-05-17 — Forum sweep (this entry)** — surfaced via [[2026-05-17-semiwiki-cpu-shortage-intel-18a]] (Lip-Bu Tan thread + CPU shortage thread) and [[2026-05-17-semiwiki-kuo-apple-intel]] (Apple diversification thread). Key tension: Intel +7% Q1 vs AMD +38%; insider commentary points to "no strategy" while Daniel Nenni is bullish on Lip-Bu. Government 9.9% stake (~$36B) acts as backstop.
 - **2026-04 — Stock +114% in single month** (best in 55 years); +24% single-day move (best since 1987)
 - **2026-Q1 — Earnings beat** ($13.6B vs $12.3B consensus); DCAI +22% YoY; server ASPs +27% YoY but volume -5% YoY
@@ -83,6 +84,7 @@ Intel is a **binary bet**: bull if 18A yields hit industry-standard by 2027 AND 
 1. [[2026-05-17-semiwiki-kuo-apple-intel]] — Ming-Chi Kuo Apple-Intel diversification thread (May 2026)
 2. [[2026-05-17-semiwiki-cpu-shortage-intel-18a]] — CPU shortage + Lip-Bu Tan strategic reset (combined source)
 3. [[2026-05-09-dwarkesh-dylan-semianalysis]] — Dylan Patel context on Intel foundry as a TSMC alternative
+4. [[2026-05-17-semiwiki-forum-sweep-2]] — Post-Xi-summit market reversal (-16.61% / +200% YTD); Apple modem stays at TSMC N2 (added 2026-05-17)
 
 ## Citations
 - Intel Q1 2026 10-Q (DCAI disclosure quoted in forum thread)

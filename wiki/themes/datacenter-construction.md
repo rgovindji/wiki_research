@@ -69,6 +69,24 @@ Not yet investable as a thesis pivot. Worth tracking — if FIX or EME mentions 
 
 See [[robotics]] for the underlying Levine framework. See [[2026-05-16-sergey-levine-physical-intelligence]] for the source.
 
+## TSMC $20B Arizona capital injection (NEW 2026-05-17 PM)
+
+Per the TSMC Board of Directors Meeting Resolutions (May 17 primary source — see [[2026-05-17-semiwiki-forum-sweep-2]] Thread D):
+
+> "Approved the capital injection of not more than US$20 billion to TSMC Arizona, a wholly-owned subsidiary of TSMC."
+
+**Roughly 1/3 of TSMC's full-year 2026 CapEx ($56-60B range) earmarked for Arizona alone** — much more aggressive than prior public posture. This is on top of:
+- $31.3B Q1 2026 board-approved capital appropriations (per [[2026-05-15-semiwiki-tsmc-tool-orders-capex]])
+- Prior Phase 1 + 2 Arizona commitments (~$65B total before this $20B)
+
+**Direct read-through to this page's cohort:**
+- **[[FIX]]** (Comfort Systems USA) — Arizona / Phoenix metro is a major data-center cluster; mechanical/HVAC backlog growing
+- **[[EME]]** (EMCOR) — MEP contractor; SW US exposure including TSMC Arizona campus
+- **[[PWR]]** (Quanta Services) — substation / transmission for the additional Arizona power load
+- **[[AMKR]]** Peoria AZ campus — adjacent advanced-packaging build benefits from cluster effects (utilities, labor pool, supply chain)
+
+**Which means**: the datacenter-construction thesis gets a *direct foundry-side* booster on top of the hyperscaler buildout. Same labor pool, same skilled-electrician shortage, same backlog math — but now with TSMC's $20B order added to FIX/EME/PWR addressable demand. Reinforces the "labor pricing power compounds" framing.
+
 ## John Arnold: federal permitting reform plausible in 2026 (NEW 2026-05-17)
 
 Per [[2026-05-16-john-arnold-invest-like-best]]: John Arnold (former Enron / Centaurus, now major climate-philanthropy infrastructure backer with direct DC engagement) said he is **"reasonably optimistic" that comprehensive federal permitting reform passes Congress in 2026**, citing:
@@ -107,6 +125,7 @@ This is the **single largest near-term political catalyst** for the construction
 ## Sources
 1. [[2026-05-16-sergey-levine-physical-intelligence]] — 2028-2030 robot-assisted construction framing; arm-cost-curve thesis input
 2. [[2026-05-16-john-arnold-invest-like-best]] — federal permitting reform 2026 prediction; Schumer + Lee bipartisan bill (added 2026-05-17)
+3. [[2026-05-17-semiwiki-forum-sweep-2]] — TSMC $20B Arizona capital injection from board resolutions (added 2026-05-17)
 
 ## Citations
 - Comfort Systems Q1 2026 backlog: https://www.tikr.com/blog/comfort-systems-stock-climbs-47-in-2026-as-data-center-demand-drives-record-11-94-billion-backlog

@@ -217,6 +217,28 @@ A new bilateral chokepoint is forming in parallel with the AI-chip story, and th
 - [[robotics]] Tier 1 component basket (OUST, ALGM, AMBA, VPG, ALNT) — reinforced as Western alternatives gain strategic weight
 - Chinese OEMs (Unitree, AgiBot, UBTECH) — face same trajectory as Huawei post-2019 if decoupling extends to robotics
 
+## Trump-Xi summit (May 13-14, 2026): market voted skeptical (NEW 2026-05-17 per [[2026-05-17-semiwiki-forum-sweep-2]] Thread A)
+
+Trump's first China visit in nearly a decade (May 13-14, 2026, Beijing). Two-day summit with state banquet at Great Hall of the People; Bessent had 3 hours of preparatory talks in South Korea. Agenda included trade, Iran war, US arms sales to Taiwan, China-Iran intermediation. Trade truce maintenance was the primary public objective.
+
+**CEO entourage** (per Reuters): Musk, **Jensen Huang (NVDA)**, **Tim Cook (AAPL)**, Larry Fink (BLK), Stephen Schwarzman (BX), Kelly Ortberg (BA), Brian Sikes (Cargill), Jane Fraser (Citi), Larry Culp (GE), David Solomon (GS), **Sanjay Mehrotra (MU)**, **Cristiano Amon (QCOM)**.
+
+**Notably absent**: Lip-Bu Tan (INTC) — politically curious given INTC's 9.9% gov stake. Trump asked Huang "at the last minute" — boarded Air Force One in Alaska.
+
+**Stock moves week ending ~May 16** (per forum member tabulation):
+| Ticker | 1-week | Note |
+|---|---|---|
+| **INTC** | **-16.61%** | (+200% YTD remains) |
+| **QCOM** | **-13.24%** | (likely Apple modem swap pressure) |
+| **MU** | **-8.48%** | |
+| **BA** | -7.91% | |
+| **BX** | -4.35% | |
+| **C** | -1.48% | |
+
+**Forum verdict (siliconbruh999)**: *"Doesn't seem like the visit did much .. ?"*
+
+**Which means**: market is voting *against* the trip producing material trade-relief catalysts. Reinforces the wiki's framing that US-China engagement is "managed decline" rather than "warming" — episodic diplomacy doesn't move the structural decoupling thesis. Note QCOM -13.24% likely reflects Apple's confirmed C2 modem swap (TSMC N2) eliminating QCOM's Apple modem business in 2027.
+
 ## CXMT DDR5 ramp: China's memory champion sovereign-AI play (NEW 2026-05-17 per [[2026-05-17-semiwiki-cxmt-ddr5]])
 
 ChangXin Memory Technologies (CXMT) — China's only domestic DRAM maker at mass production — is now shipping DDR5 in commercial volumes via Chinese module makers (Powev/Sinker, Comay, Gloway, KingBank), with **Shanghai STAR Market IPO** planned for **29.5B yuan (~$4.34B)** raise (prospectus accepted Dec 30, 2025).
@@ -257,6 +279,7 @@ ChangXin Memory Technologies (CXMT) — China's only domestic DRAM maker at mass
 2. [[2026-05-14-anthropic-2028-ai-leadership]] — Anthropic policy paper; Huawei = 4%/2% NVDA compute share; 11x US-China compute ratio claim; DeepSeek safety-compliance disparity (added 2026-05-17)
 3. [[2026-05-16-john-arnold-invest-like-best]] — Concrete decoupling metrics: flights -70%, expats -50-75%, US students in China -90% (added 2026-05-17)
 4. [[2026-05-17-semiwiki-cxmt-ddr5]] — CXMT DDR5 ramp + Shanghai STAR IPO; commodity DRAM bifurcation (added 2026-05-17)
+5. [[2026-05-17-semiwiki-forum-sweep-2]] — Trump-Xi summit market read; INTC/QCOM/MU post-trip moves; TSMC $20B Arizona injection (added 2026-05-17)
 
 ## Citations
 
