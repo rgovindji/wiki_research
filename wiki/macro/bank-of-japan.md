@@ -75,14 +75,23 @@ The Aug 2024 episode is the **lower bound** for what a 2026 unwind looks like. M
 | [[INTC]] | +200% YTD largely on government catalyst, less duration-sensitive | Medium |
 | Defensive cohort | Inversely correlated; potential hedge legs | **Hedge** |
 
-## Hedge instruments (idea generation only — not advice)
+## Hedge AND profit strategy
 
+**🔑 Detailed three-tier playbook**: see [[2026-06-16-boj-decision]] for the **full scenario matrix + position-by-position actions** including:
+- **Tier 1 (pure hedge, ~2% portfolio cost)**: FXY July call spread + VIX July spread + QQQ put spread
+- **Tier 2 (asymmetric profit, ~3-4% cost)**: adds Japanese bank ADRs (MUFG/SMFG/MFG benefit from BoJ NIM expansion) + extended FXY + trim NVDA/MU + defensive long
+- **Tier 3 (aggressive profit, ~5-6% cost)**: adds Dec FXY + short USD/JPY future + NVDA puts + NEM/GLD
+
+Scenario probabilities + position actions for each: Scenario A (vanilla hike + dovish, 35%) → close hedges + redeploy risk-on; Scenario B (vanilla + hawkish path, 30%) → take 3-5x on FXY + add to high-conviction names at -10%; Scenario C (50bp surprise or aggressive path, 15%) → **5-10x on FXY/VIX + convert hedge profits to LONG positions at distressed levels — the "buy the dip with hedge profits" scenario the playbook is designed for**; Scenario D (hold + dovish, 15%) → close FXY at loss, roll to September; Scenario E (hold + hawkish, 5%) → hold stack.
+
+Brief instrument summary:
 - **VIX calls**: cheapest insurance against a vol event
 - **Yen calls (FXY)** or **USD/JPY puts**: direct exposure to the catalyst
+- **Long Japanese bank ADRs (MUFG, SMFG, MFG)**: inverse-of-carry-unwind exposure; benefit from NIM expansion
 - **Trimming highest-multiple names** ahead of June 16-17: NVDA after +32% off March low; MU after +154% YTD
 - **Long Japan domestic defensives** vs Japan exporters (relative trade)
 - **Long US defensives** (utilities CEG/VST/NEE, staples COST/PG)
-- See [[hedging-risk]] for the current recommended hedge stack
+- See [[hedging-risk]] for the current recommended hedge stack and [[2026-06-16-boj-decision]] for full playbook
 
 ## Open questions
 

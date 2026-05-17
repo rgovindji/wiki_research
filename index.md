@@ -16,6 +16,7 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 
 - [[2026-05-20-nvda-earnings]] — NVDA Q1 FY27 print playbook; 4 scenarios w/ position-by-position actions; 20-year auction same day (NEW 2026-05-14)
 - [[2026-06-10-cpi-binary]] — May CPI print playbook; cool / stable hot / accelerating scenarios; sector-rotation cheat sheet (NEW 2026-05-14)
+- [[2026-06-16-boj-decision]] — **NEW 2026-05-17 PM** — BoJ rate decision playbook; 5 scenarios; three-tier strategy (pure hedge / asymmetric profit / aggressive profit) with concrete instruments (FXY call spreads, VIX, Japanese bank ADRs MUFG/SMFG/MFG, USD/JPY shorts); pre-event positioning by June 10; "buy the dip with hedge profits" Scenario C playbook
 - [[weekly-synthesis-template]] — Friday templated artifact for internal-review + Substack publication; structure, voice notes, publishing checklist (NEW 2026-05-14)
 
 ## Recent source ingests
