@@ -1809,3 +1809,14 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
 - Highlights the under-priced idea: MRVL post-Celestial acquisition is the cleanest public exposure to photonic-fabric / photonic-memory-adjacency; sell-side coverage hasn't fully priced it in
 - Genesis: user asked for intellectual reply to Twitter "photonic memory" gatekeeping post → I offered Substack alternative → user said "yea do a substack"
 - Committed and pushed to main as 8a13351
+
+## [2026-05-17] ingest | Robotics ticker deep-dive: MBLY + SONY + MDA + ARBE
+- User-requested research on TER + OUST + ARBE + MBLY + SONY + MDA for robotics angle
+- TER, OUST already have wiki pages — synthesis only
+- 4 new wiki pages created: `wiki/companies/MBLY.md`, `wiki/companies/SONY.md`, `wiki/companies/MDA.md`, `wiki/companies/ARBE.md`
+- **MBLY** (bull / medium-high): $900M Mentee Robotics acquisition Jan 6 2026 instantly puts MBLY in humanoid platform race; Amnon Shashua = founder of both Mobileye AND Mentee; Q1 2026 +27% rev, $1.94-2.02B raised guide, $250M buyback; VW/MOIA robotaxi + Porsche SuperVision + Mahindra wins. Most underappreciated humanoid platform pick outside TSLA. Intel ~88% ownership overhang is the structural bear.
+- **SONY** (bull / high): 63.6% global image sensor market share (gminsights 2025); IMX500 first AI-on-sensor architecture; AS-DT1 LiDAR April 2026 launch; Sony-TSMC JV May 2026 explicitly targets "physical AI / automotive / robotics"; project Ace Nature paper (autonomous table tennis competitive with human experts) is the credentialing event. Picks-and-shovels robotics pick — whichever humanoid OEM wins, Sony sensors inside. Conglomerate discount is the structural bear; SSS spin-out would be the multiple-expansion catalyst.
+- **MDA** (bull / medium): Only public space-robotics pure-play globally. Q1 2026 rev $464M CAD (+32% YoY), backlog $4.6B, Robotics & Space Ops segment +18.5% YoY. Canadarm3 ($1B CSA contract) NOT canceled by NASA Gateway pause March 2026 — contract held with CSA. SKYMAKER product line commercializes 3 decades of orbital robotics IP. Separate thesis from humanoid (does NOT substitute for MBLY/TSLA). US-listed under MDA on NYSE.
+- **ARBE** (neutral / low): Penny stock with real product. 4D imaging radar (2,304-channel array). CES 2026 NVIDIA partnership real but technical-only. 2025 revenue $1.0M; 2026 guide $4-6M revenue / $28-31M EBITDA loss against $128M market cap at $1.05/share. Binary tail option — design win 5-10x's, otherwise dilutes. Max 0.5-1% position only if you want speculative radar exposure.
+- Investment-framing synthesis: For robotics-broadening to the 8-stock portfolio: MBLY + SONY > MDA > OUST > ARBE. MBLY/SONY have real revenue + real moats; OUST/ARBE are story-stocks needing policy or design-win catalysts.
+- index.md updated; log.md updated. Wiki now has 62+ company pages.
