@@ -1800,3 +1800,12 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
 - Key data points: NVDA $4B to COHR+LITE (Mar 2026); NVDA $3.2B to GLW (May 2026); NVDA $2B each to NBIS and SNPS; NVDA $1B to NOK; NVDA $250M anchor at CRWV IPO. AMKR 2026 capex $2.5-3B (~3x prior). VRT Q1 2026 $2.65B/+30%; $9.5B backlog. JBL AI rev $13.1B FY26 (+46%). MU HBM4 ramps Q2 2026 at 15K wafers/month.
 - Total wiki: 53 markdown files.
 - Next: monitor NVDA Q1 FY27 earnings (calendar Q2 2026); track first AVGO / AMD / HPE pages; watch for any single source that triggers a multi-page lint.
+
+## [2026-05-17] note | Photonic memory Substack written + HTML version
+- New: `wiki/analyses/2026-05-17-photonic-memory-stack.md` (~2100 words Substack-publish-ready)
+- New: `wiki/analyses/2026-05-17-photonic-memory-stack.html` (Substack-paste-friendly + standalone-shareable)
+- Layer-by-layer map: Soitec substrate → TSMC COUPE foundry → SNPS/CDNS EDA → COHR/LITE/FN pluggables → AVGO/NVDA/MRVL CPO → Marvell-Celestial photonic fabric → MU/Hynix/Samsung HBM → ALAB CXL → photonic memory storage (no public ticker)
+- 3 investability tiers + "how to spot bad pitches" section flagging PENG/SMCI/TSEM/RKLB conflations
+- Highlights the under-priced idea: MRVL post-Celestial acquisition is the cleanest public exposure to photonic-fabric / photonic-memory-adjacency; sell-side coverage hasn't fully priced it in
+- Genesis: user asked for intellectual reply to Twitter "photonic memory" gatekeeping post → I offered Substack alternative → user said "yea do a substack"
+- Committed and pushed to main as 8a13351
