@@ -9,6 +9,59 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | Batch 18 — Space + Aerospace multi-agent (5 more Haiku agents = 20 total today)
+
+User expanded scope to AI + Robotics + Semi + Aerodynamics + Space. 5 parallel Haiku agents on space + aerospace + defense.
+
+### Headline finding (this batch)
+**🔥 SpaceX IPO June 18-30, 2026** (much earlier than wiki assumed Q4 2026 / 2027):
+- S-1 confidentially filed April 1, 2026 at **$1.75-2T valuation**
+- S-1 public filing expected May 15-22 (this week)
+- Roadshow June 8; **IPO June 18-30**
+- **GOOGL ~5% stake = ~$100B at $2T IPO** (200x return on 2015 $500M)
+- Lead banks: Goldman, BofA, Citi, JPM, MS
+- Starlink 10M+ subs; 10,296 satellites; $14-16B 2026 run-rate
+
+### Other major findings
+- **Planet Labs (PL)** $900M defense backlog; **Spire Global (SPIR)** 76% of 2026 contracted; **Redwire (RDW)** $498M backlog book-to-bill 1.92 — all new wiki page candidates
+- **Amazon $12B GlobalStar acquisition closing 2027** — removes mid-market direct-to-device competition for ASTS
+- **UFO (Procure Space) +122% 12-month** — best pure-space ETF; ROKT balanced; ARKX lags
+- **AVAV: 143.4% revenue growth most recent quarter; 45x forward P/E vs PLTR 82-97x; analyst PT $316.88 vs spot $158** — most valuation-friendly defense AI public play
+- **HWM commercial engine spares +48% YoY Q1 2026**; hypersonic Ti-Al/Ti-Si embedded in ARRW/HACM/GPI; $1.8B Consolidated Aerospace acquisition H1 2026
+- **🔑 Pentagon Golden Dome total cost $185B** (vs wiki's $24.4B FY26 allocation — 7.6x larger multi-decade program)
+- **LMT Patriot PAC-3 production 600→2,000/yr by 2030**; **THAAD 96→400/yr**; $4.7B + $9.8B Sept 2025 contracts; ARRW revival $387M FY26 + $1.8B FYDP
+- **NOC GPI sole-source $1.3B + $475M April 2026 acceleration** for 2028 PDR; Japan interoperability
+- **RTX SM-6 +300% to >500/yr**; Iron Dome Tamir $1.25B Camden AR; Coyote counter-UAS "significantly" up
+- **SpaceX SBI prime $57M Link-182 April 2026** — defense contractor footprint growing
+- **L3Harris Axyv missile spin-off H2 2026** (tax-free) at 25-30x EV/EBITDA on solid-rocket motors
+- **GE Aerospace 21.8% Q1 OM**; AI predictive maintenance $500M-$1B opportunity by 2028; Singapore $300M facility +33% throughput
+- **Materion (MTRN)** $65M defense-backed beryllium capacity; 50% YoY order growth
+- **Mercury Systems (MRCY)** +73.7% YoY bookings; space-qualified AI/ML; $1.6B backlog
+- **TransDigm (TDG)** aftermarket compounder; Cohen Q1 2026 13F position
+- **NVDA earnings (Tuesday)** — implied move ±12.9%; Polymarket 97% beat probability; Q2 FY27 guide pin at $86B; Q4 FY26 precedent (massive beat, stock -5.5% on "growth priced in") most likely outcome again
+- **Twitter sentiment**: Ben Thompson agentic-AI > LLM framework; ARK cut $79.9M AMD mid-May, loaded GOOGL+META+Tempus; Yann LeCun AMI Labs $1.03B raise (March)
+
+### New wiki pages
+- **[[HWM]]** — Howmet Aerospace; commercial spares + hypersonic titanium chokepoint; bull / medium conviction
+- **[[AVAV]]** — AeroVironment; combat-validated loitering munitions + counter-UAS; 143% growth; bull / medium
+
+### Wiki pages patched
+- [[GOOGL]] — SpaceX 5% stake = $100B at IPO (major near-term catalyst surfaced)
+- [[space-economy]] — SpaceX IPO June 2026 timeline + satellite operators + ETF rankings
+- [[index]] — added AVAV + HWM + Defense AI + Aerospace + Hypersonic category
+
+### Cumulative session totals (final tally)
+- **Commits**: 19+ pushed
+- **Source summaries**: 15+
+- **New wiki pages today**: [[INTC]], [[SOITEC]], [[bank-of-japan]], [[CDNS]], [[XPEV]], [[ISRG]], [[PLTR]], [[HWM]], [[AVAV]] = **9 new pages**
+- **New playbook**: [[2026-06-16-boj-decision]]
+- **Wiki pages patched**: 30+ unique
+- **Haiku subagents spawned**: **20** (robotics 12 + insider/13F/IPO 3 + space/aerospace 5)
+
+This is the deepest single-day research session on the wiki. Coverage expanded from AI+Semi+Robotics to also include Aerodynamics + Space + Defense AI + Hypersonic.
+
+---
+
 ## [2026-05-17] autonomous-session | Batch 17 — Insider + 13F + IPO pipeline (3 more Haiku agents)
 
 3 final parallel Haiku subagents on smart-money / IPO market intelligence. **Total today: 15 Haiku subagents.**

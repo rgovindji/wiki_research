@@ -78,10 +78,12 @@ The space economy crossed **$470B in 2026** with **78% commercial revenue** (Mor
 
 See [[aerospace-defense]] for the full tiered framework. Summary:
 
-- **Tier 1 pure-play space:** [[RKLB]], [[ASTS]], LUNR, RDW, BKSY, IRDM
-- **Tier 2 defense primes:** [[LMT]], [[NOC]], RTX, GD, BA
-- **Tier 3 supply chain:** [[VELO]] (additive mfg), [[KTOS]] (drones + space), AVAV
-- **Tier 4 private:** SpaceX (IPO 2026), Anduril, Blue Origin
+- **Tier 1 pure-play space:** [[RKLB]], [[ASTS]], LUNR, RDW, BKSY, IRDM, **PL** (Planet Labs), **SPIR** (Spire Global)
+- **Tier 2 defense primes:** [[LMT]], [[NOC]], RTX, GD, BA, [[HWM]] (titanium structural)
+- **Tier 3 supply chain:** [[VELO]] (additive mfg), [[KTOS]] (drones + space), [[AVAV]] (loitering munitions + counter-UAS)
+- **Tier 4 private:** **SpaceX (IPO June 18-30, 2026)**, Anduril ($61B Series H May 2026), Blue Origin
+- **Tier 5 ETFs:** UFO (best pure-space), ROKT (defense+space balanced), ITA (defense primes), XAR (defense mid-cap tilt)
+- **Tier 6 public-market SpaceX exposure**: **[[GOOGL]] ~5% stake = ~$100B at $2T IPO**
 
 ## Risks / counter-thesis
 
@@ -91,6 +93,45 @@ See [[aerospace-defense]] for the full tiered framework. Summary:
 - **DoD budget political risk.** Trump admin has signaled willingness to renegotiate defense prime economics (Jan 2026 executive order on pay + buybacks). Defense primes' valuations are sensitive to political environment.
 - **SpaceX dominance is the elephant in the room.** Starlink at 9M subscribers and growing makes the satcom competitive landscape difficult for ASTS, IRDM, SATS. If Starlink Direct-to-Cell scales globally before ASTS reaches commercial scale, ASTS thesis weakens materially.
 - **Capital intensity.** ASTS Q1 net loss $191M/quarter on $14.7M revenue. Even with $3.5B cash, runway depends on execution + ability to raise more capital.
+
+## 🔥 SpaceX IPO June 18-30, 2026 (NEW 2026-05-17 PM per [[2026-05-17-space-aerospace-multi-agent]] Agent P)
+
+**Timeline accelerated dramatically from earlier wiki assumption (Q4 2026 / 2027)**:
+- **S-1 confidentially filed April 1, 2026** at $1.75-2T
+- **S-1 public filing expected May 15-22, 2026** (THIS WEEK)
+- **Roadshow: June 8, 2026**
+- **IPO date: June 18-30, 2026** ← TYPICALLY ~30 DAYS POST-ROADSHOW
+- **Lead banks**: Goldman, BofA, Citi, JPM, MS
+- **Bridge financing**: $20B 18-month refinancing $17.5B xAI/X debt
+- **SpaceX Forge Global May 16: $1.51T at $646.78/share** (+215% over 12 months)
+
+**🔑 PUBLIC-MARKET EXPOSURE**: [[GOOGL]] holds ~5% SpaceX stake (originally $500M 2015) → **~$100B mark at $2T IPO** (200x return); ~$60B at conservative $1.2T post-IPO trading. **Single largest public-equity exposure to SpaceX**. Currently NOT priced into GOOGL valuation models.
+
+**Operational state May 2026**:
+- **Starlink 10M+ subscribers; projected 18.4M by EOY**; revenue run-rate $14-16B annualized 2026 (70% of SpaceX total)
+- ARPU declined 18% to $70/month (volume strategy)
+- **10,296 satellites in orbit**; 99.9%+ operational
+- **Falcon 9: 167 missions 2025**; 82% global commercial launch share
+- **Starship V3 Raptor V3 first static fire May 2026**; orbital flight target May 19, 2026
+
+**Competitor watch**: **Amazon Kuiper launched first 2 production satellites April 2026**; OneWeb enterprise/telco; **Amazon $12B GlobalStar acquisition closing 2027** — removes mid-market direct-to-device competition for [[ASTS]]
+
+## Satellite operators public market refresh (NEW 2026-05-17 PM per Agent Q)
+
+**Top 3 cleanest revenue paths (2026-2028)**:
+- **Planet Labs (PL)**: $66.3M Q1 (+10% YoY); **$900M defense backlog**; 59% non-GAAP GM climbing; NGA + DIA multi-year visibility — new wiki page candidate
+- **Spire Global (SPIR)**: $15.8M Q1 (+13% YoY); **76% of 2026 guide already contracted**; $150M NOAA pipeline; 5 new US RF Geolocation orders — new wiki page candidate
+- **Redwire (RDW)**: **$498M backlog; book-to-bill 1.92**; 2026 guide $450-500M; GEO refuelable Mako program; ELSA solar production — new wiki page candidate
+
+**Iridium vs Starlink/ASTS**:
+- Iridium Project Stardust = NB-IoT narrowband (NOT broadband threat); survives niche (voice, emergency SOS, IoT)
+- Starlink/ASTS race for broadband direct-to-device
+
+**Space ETF rankings**:
+- **🏆 UFO (Procure Space)**: +31% YTD, **122% 12-month** — best pure-space (Planet, GlobalStar, Rocket Lab, Viasat)
+- **ROKT (SPDR S&P Kensho Space)**: +29% YTD, **100% 12-month**; 54% aerospace/defense primes dilution
+- **ARKX (ARK Space Exploration)**: +11% YTD — lags
+- **AVOID**: DFEN (3x leveraged daily reset; volatility decay)
 
 ## Open questions
 
