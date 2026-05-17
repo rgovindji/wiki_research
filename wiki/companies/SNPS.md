@@ -54,7 +54,7 @@ EDA (electronic design automation) duopoly with Cadence — every advanced AI ch
 5. **Ansys synergies** realization
 
 ## Related
-[[NVDA]] · [[nvda-supply-chain]] · [[ARM]] · [[TSM]] · [[ai-capex-cycle]] · [[overview]]
+[[NVDA]] · [[nvda-supply-chain]] · [[ARM]] · [[TSM]] · [[CDNS]] · [[SOITEC]] · [[ai-capex-cycle]] · [[overview]]
 
 ## Sources
 1. [[2026-05-11-semianalysis-eda-primer]] — Part 1 of 3-part series on EDA; design-bottleneck structural thesis; verification = 70% of effort

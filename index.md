@@ -201,6 +201,10 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 - [[NVTS]] — Navitas; GaN/SiC; ~74x sales; **stance: bull (low conviction)**
 - [[ON]] — onsemi; SiC; auto downturn dominant; **stance: neutral**
 
+### EDA duopoly
+- [[SNPS]] — Synopsys; NVDA $2B AI-EDA; agentic Fusion Compiler on TSMC A14; 3DIC at 5.5x reticle; Ansys-integrated multiphysics; **stance: bull (medium)**
+- [[CDNS]] — Cadence Design Systems; **NEW 2026-05-17**; co-equal half of EDA duopoly; TSMC partnership at N3/N2/A16/A14 + COUPE; native 3D-IC (Clarity/Sigrity/Celsius); silicon-proven IP HBM4/LPDDR6/DDR5/PCIe 7.0/UCIe; **stance: bull (medium)**
+
 ### NVDA direct investments + AI cloud (cloud / telecom / EDA)
 - [[CRWV]] — CoreWeave (neocloud); NVDA $250M IPO anchor; Meta $35B; **stance: bull**
 - [[NBIS]] — Nebius (neocloud); NVDA $2B; Meta $27B; **stance: bull**
