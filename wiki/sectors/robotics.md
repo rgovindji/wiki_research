@@ -124,6 +124,21 @@ Levine: "I would really like to see a world where there's a lot of heterogeneity
 
 Levine: low-cost robots will likely stream sensor data to **cloud GPUs**, with on-board inference reserved for outdoor / reliability-critical use cases. **Which means:** if a billion robots deploy in 2030+ each pulling control commands from cloud GPUs, that's a **new compute load class** (high QPS, low-batch, latency-sensitive) — different from LLM training/inference, additive to it. [[CRWV]] / [[NBIS]] / [[ORCL]] all latent beneficiaries; nobody is pricing this yet.
 
+## Adjacent: autonomous trucking is *applied AI in the physical world*, ahead of humanoids on commercial traction (NEW 2026-05-16)
+
+The wiki tracks humanoid robotics as the canonical "physical AI" thesis (this page + [[humanoid-oems]]). Worth noting that **autonomous trucking is the OTHER physical-AI category** — and it's *meaningfully ahead* of humanoids on commercial-revenue traction:
+
+| | Humanoid robots (2026) | Autonomous trucking (2026) |
+|---|---|---|
+| Public pure-plays | None (private: Figure, Apptronik, Agility, Physical Intelligence) | **2** — [[AUR]] (Aurora), KDK (Kodiak AI, IPO Sept 2025) |
+| Commercial revenue today | ~$0 from humanoids; component cohort revenue from EVs/wind | **$1M Q1 2026 (Aurora) — Berkshire-backed McLane** as first driverless paying customer |
+| Timeline to "real" commercial scale | Levine: 5 yrs; Fan: 2-3 yrs Turing test | 2026-2027 active scale-up (200 trucks Aurora EOY 2026) |
+| NVIDIA stack | GR00T + Cosmos + Dream Zero (model layer) | **Drive Thor + Blackwell** (commercial hardware in production) |
+
+**Which means:** for investors who want exposure to the "AI applied to the physical world" thesis BEFORE humanoid revenue inflects (still 2-5 yrs away), **autonomous trucking is the only category with paying customers today**. See [[AUR]] for the bull/bear deep dive. The trade-off: AUR has real revenue but valuation prices 5+ years of perfection (~$15.7B market cap on $14-16M 2026 revenue guide).
+
+The component-supplier thesis on this page (MP / OUST / ALGM / AMBA / VPG) is **agnostic** to humanoids vs. trucks — most of the same sensor / rare-earth / edge-AI content goes into both form factors. Autonomous trucking actually de-risks the component thesis by providing earlier-cycle revenue validation for the supply chain.
+
 ## Architecture contradiction — three top researchers disagree (NEW 2026-05-16)
 
 Per the wiki house rule (contradictions surfaced, not resolved): in a 72-hour window the wiki ingested three top researchers — one from NVIDIA, one from the leading independent robotics-foundation-model lab, one Turing Award winner who just left Meta to start his own lab — and they **disagree on the architecture** for robotics foundation models even while broadly agreeing on the 3-5 year timeline horizon.

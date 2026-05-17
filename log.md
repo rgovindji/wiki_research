@@ -9,6 +9,22 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-16] research | New coverage initiated: AUR (Aurora Innovation) + retail-FOMO behavioral indicator
+
+- **Trigger**: r/stocks "Next Big Sector" thread (275 upvotes, 301 comments) — AUR surfaced as one of the few applied-AI investable plays vs. mostly speculative micro-caps (HGRAF +2,650%, quantum, eVTOL).
+- **AUR coverage initiated** at `wiki/companies/AUR.md`:
+  - One of 2 surviving commercial autonomous-trucking pure-plays (with Kodiak AI / KDK) after TuSimple / Embark / Waymo Via exits.
+  - First US driverless commercial freight live for McLane (Berkshire Hathaway) on Dallas-Houston April 2026.
+  - Hirschbach 500-truck MOU (April 30, 2026) targeting binding in H2 2026; "hundreds of millions" multi-year DaaS revenue; deliveries 2027.
+  - NVIDIA Drive Thor (dual-SoC, Blackwell architecture) + Continental manufacturing (production 2027) + Volvo VNL Autonomous + PACCAR.
+  - Q1 2026: $1M revenue, -$0.10 EPS (beat by $0.01), $1.3B liquidity, $190-220M/quarter burn = ~6 quarters runway.
+  - 2026 guide: $14-16M revenue, Q4 exit run-rate ~$80M, 200 driverless trucks EOY.
+  - Stock surged 50%+ in May 2026 ($5.15 → ~$8) on McLane + Hirschbach catalysts; market cap ~$15.7B.
+  - Analyst dispersion extreme: Goldman Neutral $5 / TD Cowen Hold $7 / Morgan Stanley Overweight $14.
+  - **Stance: bull / low-medium conviction.** Real product, real customers, but valuation requires 5+ years of execution; dilution near-certain through 2027.
+- **Wiki touched**: [[AUR]] (new), [[nvda-supply-chain]] (added Drive Thor partner section), [[NVDA]] (Drive Thor commercial deployment bullet), [[robotics]] (autonomous trucking as adjacent applied-AI category), [[ai-bubble-debate]] (retail-FOMO behavioral late-cycle indicator), index, log
+- **Behavioral indicator captured**: HGRAF +2,650% YTD with $19K Q1 revenue and $1.8B market cap recorded as a *late-cycle micro-cap-mania marker* in [[ai-bubble-debate]]. Worth tracking if it crashes 80%+ in a week as a textbook signal.
+
 ## [2026-05-16] ingest | Stan Druckenmiller (Duquesne) — Morgan Stanley Hard Lessons (~March 2026 dated)
 
 - **Source:** [[2026-05-16-druckenmiller-hard-lessons]] (raw at `raw/podcasts/drukenmiller.txt`)

@@ -83,6 +83,10 @@ Treat this page as the index for second-order [[ai-capex-cycle]] plays. Drill in
 - [[LITE]], [[GLW]], [[COHR]] — see networking layer above (also direct investments)
 - [[ORCL]] — Oracle (not a direct equity investment, but a major OpenAI compute partner with multi-year deals; rides NVDA's offtake structure)
 
+### Drive Thor partners (automotive / autonomous = NVDA's non-data-center AI compute layer) — NEW 2026-05-16
+- [[AUR]] — Aurora Innovation; **dual Drive Thor SoC (Blackwell architecture)** powers the Aurora Driver; Continental manufacturing production hardware at scale 2027; Volvo VNL Autonomous + PACCAR trucks. **First commercial driverless freight customer for McLane (Berkshire Hathaway) — April 2026. 500-truck Hirschbach MOU = "hundreds of millions" multi-year DaaS pipeline.** Aurora is NVDA's flagship Drive Thor commercial deployment outside of robotaxi. Bull / low-medium conviction.
+- Toyota, Mercedes-Benz, BYD — also announced Drive Thor partnerships at CES 2025/2026 (not yet covered as standalone wiki pages)
+
 ## Why this whole map matters for portfolio construction
 
 1. **Beta to NVDA without owning NVDA.** Many of these names give targeted exposure to specific bottlenecks (HBM via [[MU]], CoWoS via [[AMKR]], optical via [[COHR]]/[[GLW]]) at lower starting valuations than NVDA itself.

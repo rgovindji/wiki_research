@@ -235,6 +235,21 @@ Damodaran: 10 years ago chips were **3% of S&P 500**; today **17%**. Sector up *
 
 **Discount**: Damodaran is a long-horizon valuation expert, not a near-term tactician (he admits he was lucky on Intel). But the data points — 17% S&P share, 60% in 2 months — are real and notable. Treat as a *position-sizing prompt* for [[NVDA]] / [[MU]] / [[AMAT]] / [[KLAC]] / [[LRCX]] / [[ASML]], not a stance-change prompt. The long-term theses remain intact regardless of a near-term correction.
 
+## Retail FOMO into speculative micro-caps — behavioral late-cycle indicator (NEW 2026-05-16)
+
+Observation from r/stocks "Next Big Sector" thread (May 2026, 275 upvotes, 301 comments): retail is actively hunting for "the next NVDA" by chasing speculative micro-caps in adjacent narrative buckets:
+- **HGRAF** (Hudson Graphene): **+2,650% YTD**, $1.8B market cap, **~$19K (nineteen thousand dollars) of Q1 revenue**
+- Quantum micro-caps (INFQ, QNC, IONQ) — all pre-commercial
+- eVTOL pre-revenue (HOVR, JOBY, EVTL, ARCHER, EVEX)
+- Synthetic biology speculation ($DNA, $SLS, $DRTS)
+- "Famous YouTube investor" recommendations for unprofitable nuclear micro-caps
+
+**Pattern**: when retail is collectively asking "what's next after AI / Space / Robotics / Nuclear / Quantum ran" rather than "is the current trade still working," that's late-cycle rotation-chasing behavior — analogous to the 2021 SPAC mania, the 1999 dot-com micro-cap chase, and the 2007 mortgage-derivative complexity push.
+
+**Which means:** this is a **behavioral late-cycle indicator** to track alongside the [[2026-05-13-ppi-cpi-shock-positioning]] framework's 5/6 firing macro indicators. Worth recording the parabolic moves of speculative names (especially HGRAF +2,650% / $19K revenue) as a marker — if HGRAF crashes 80%+ in a single week, that's a textbook *micro-cap-mania-ends-first* late-cycle signal.
+
+**Counter-balancing**: the top-upvoted comment in the same thread (392 upvotes) was the boring-correct answer — *"SEMIS is and still will be the next big thing for the next 5 years"* — which aligns with the wiki's existing high-conviction stance on the AI capex cycle. So the crowd-wisdom signal is mixed: smart-crowd answer agrees with the wiki; fringe-crowd FOMO behavior is the late-cycle marker. Both can be true simultaneously.
+
 ## Druckenmiller reduced AI exposure on '99 rhyme (NEW 2026-05-16, ~March 2026 dated)
 
 Per [[2026-05-16-druckenmiller-hard-lessons]]: Stan Druckenmiller said publicly on Morgan Stanley's *Hard Lessons* (recorded ~March 2026) that in summer/fall 2025 *"AI things started to get, let me say, disturbingly heated… some rhyme with what I went through in '99-2000."*

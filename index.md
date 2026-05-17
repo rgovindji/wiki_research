@@ -152,6 +152,9 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 - [[EME]] — EMCOR Group; largest US MEP contractor; $15.62B RPOs; FY26 EPS guide $28-$30; **stance: bull**
 - [[PWR]] — Quanta Services; transmission/substation/grid; $48.5B record backlog; **stance: bull**
 
+### Autonomous trucking (NEW 2026-05-16)
+- [[AUR]] — Aurora Innovation; one of 2 surviving commercial autonomous-trucking pure-plays (with Kodiak AI / KDK); first US driverless commercial freight live for McLane (Berkshire-owned) April 2026; Hirschbach 500-truck MOU pipeline; NVIDIA Drive Thor + Continental + Volvo + PACCAR partnership stack; **stance: bull (low-medium conviction)** — real product + real customers but pre-meaningful-revenue ($14-16M FY2026 guide) on ~$15.7B market cap; cash runway ~6 quarters
+
 ### Robotics & humanoid components (NEW 2026-05-13)
 - [[MP]] — MP Materials; only fully integrated US NdFeB producer; Stillwater H1 2026 ramp; **stance: bull (high)**
 - [[OUST]] — Ouster; lidar + Stereolabs stereo cameras; Q1 2026 +49% YoY; **stance: bull (low)** — *downgraded 2026-05-13 on Hesai competitive gap*
