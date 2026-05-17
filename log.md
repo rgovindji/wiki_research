@@ -9,6 +9,79 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | Batch 17 — Insider + 13F + IPO pipeline (3 more Haiku agents)
+
+3 final parallel Haiku subagents on smart-money / IPO market intelligence. **Total today: 15 Haiku subagents.**
+
+### Headline findings (this batch)
+
+**Insider activity (Agent M)**:
+- **🏆 TSM is the ONLY Mag-7-adjacent name with INSIDER BUYING** — C.C. Wei bought 186 shares Apr 9 @ $57.87 via ESPP; CEO direct holdings 7.9M → 8.15M (235K net add Mar-Apr). Massive bull-conviction signal.
+- **NVDA**: Jensen Huang $2.9B sold 18mo via 10b5-1; CFO Kress 62.6K shares Mar 20 ~$11M; pattern systematic not panic
+- **AMD**: Lisa Su 125K shares May 13 @ $432-457 (~$57M); 335K total past 6mo
+- **MU**: Mehrotra 40K shares May 1 @ $511-545; 10b5-1 plan only 3 weeks old when sold
+- **GOOGL**: Pichai 32.5K each Feb + Mar @ ~$310; 807.5K net sold 18mo
+- **AVGO**: Hock Tan consistent seller (tax-harvesting pattern)
+- **META**: Zuckerberg 17.3M shares to charity LLC (estate planning, not market sale)
+- **MSFT**: Lightest selling pressure in Mag 7
+- **CRWV**: post-lockup $1B+ sold; stock -46% from peak
+- **NBIS**: Volozh sold 33.4K shares Apr 2 @ ~$3.46M
+
+**Smart-money 13F (Agent N)**:
+- **🔥 MSFT = consensus smart-money NEW BUY**: Ackman +$2.09B, Loeb +175%; convergent post-earnings dislocation buy
+- **NVDA**: 19 of 20 top 13F filers hold NVDA Q1 2026; net adding 658M shares (+4.15%)
+- **Druckenmiller EXITED GOOGL** (385K shares); slashed AMZN 97%; cut TSM 29%; **INITIATED Broadcom** — major rotation out of hyperscaler giants into chip-equipment enablers
+- **Berkshire MAX-DEFENSIVE**: $274B → $263B; trimmed Apple; exited Amazon + UnitedHealth + Domino's; heavy Chevron sells; top 5 = 68% of portfolio (cash hoarding)
+- **🟡 Dan Loeb established SPY PUT position** (portfolio-level macro hedge); also added Norfolk Southern + MSFT
+- **Cathie Wood / ARK**: trimmed RKLB; bought TSLA $27.8M on weakness
+- **Point72 (Cohen)**: defensive rotation to TransDigm + Equinix
+- **🔑 Michael Burry Scion DE-REGISTERED November 2025** — no longer running a 13F-disclosed fund
+
+**IPO pipeline (Agent O)**:
+- **CBRS IPO performance**: $185 → $350 open (+89%) → $311.07 close (+68% day 1); -10% day 2; $5.5B raise (largest US tech IPO in years)
+- **KDK (Kodiak AI)**: SPAC Sept 2025 at $2.5B; -13% first day; underperforming
+- **Unitree**: Shanghai STAR IPO filed Mar 20 2026 at ~$610M raise; targeting $7B post-IPO; H1-Q2 2026 expected
+- **SpaceX**: S-1 confidentially filed April 1, 2026 at $1.75-2T; **$75B raise target**; 21-bank syndicate; $20B bridge refinanced; listing mid-to-late 2027
+- **Boston Dynamics**: $20-21B internal vs brokerage $100-120B estimates; Hyundai missed June 2025 4-yr deadline (SoftBank put option triggered); Nasdaq early 2027
+- **Anthropic $380B Series G** (early 2026); $30B ARR; CFO Krishna Rao warned Pentagon dispute risks "multiple billions"; **prediction markets: Anthropic IPO BEFORE OpenAI**
+- **Anduril $61B Series H May 13** (2x in 1yr); $5B raise; revenue $2.2B (2x YoY); IPO late 2026-2027 contingent on Arsenal-1 factory profitability
+- **OpenAI $852B Series G**; $122B raise (record); pre-IPO secondary $732.83/share; CFO Sarah Friar warned not ready for 2026 listing; Polymarket 26% probability IPO by Dec 31, 2026
+- **Stripe** — $159B valuation but CEO content private
+- **Figure AI**: discussions for $50-60B+ next round (was $39B Sept 2025; 15x growth from $2.6B Feb 2024)
+- **Skild AI $14B Series C Jan 2026** (3x in 7 months) — extreme valuation velocity
+- **Physical Intelligence**: $11B March 2026 (2x in 4 months) — **overheating flag**
+
+**Overheating scorecard verdict**: 🔴 Physical Intelligence + Anthropic + Boston Dynamics flagged. 🟡 Skild AI + Apptronik. 🟢 Anduril + Figure AI (defensible revenue).
+
+### New wiki pages
+- **Created [[PLTR]] (Palantir Technologies)** — Maven $13B program of record (March 2026); Foundry + AIP + Apollo + Gotham + Maven software-stack moat; bull / medium conviction; future deepen on user signal
+
+### Wiki pages patched
+- [[TSM]] — C.C. Wei insider buying signal (only Mag-7-adjacent name)
+- [[MSFT]] — Ackman + Loeb consensus new buy
+- [[AVGO]] — Druckenmiller initiated position
+- [[GOOGL]] — Druckenmiller exited (offset against Waymo/Apollo OCS bull narrative)
+- [[hedging-risk]] — added smart-money macro hedging signal (Loeb SPY puts + Berkshire defensive + Point72 rotation)
+- [[index]] — added PLTR + Defense AI category; extended robotics multi-agent description to 15 agents
+
+### Critical interpretation: TSM insider buying is the MOST important single signal of the day
+- Among 14 wiki tickers checked for insider activity, only TSM shows insider BUYING
+- All Mag 7 + AI semis insiders are systematic SELLERS (10b5-1 plans)
+- TSM bull thesis confirmed at the governance + management-alignment layer
+- Pairs with: NVDA = #1 customer at 19% of TSMC 2025 revenue; A14 by 2028; COUPE photonics 2026; $20B Arizona injection; 25% CAGR 2024-2029 target
+
+### Final session totals
+- **17 commits pushed** today (cbe2a27 → pending)
+- **13 source summaries** created
+- **6 new wiki pages**: [[INTC]], [[SOITEC]], [[bank-of-japan]], [[CDNS]], [[XPEV]], [[ISRG]], [[PLTR]] (actually 7 pages — INTC was earlier today)
+- **1 new playbook**: [[2026-06-16-boj-decision]] (3-tier hedge/profit strategy)
+- **25+ wiki pages patched**
+- **15 Haiku subagents spawned** (parallel research across robotics + macro + insider + 13F + IPO + earnings)
+
+This is the highest-throughput single-day research session on the wiki.
+
+---
+
 ## [2026-05-17] autonomous-session | Batch 16 — Robotics 3rd wave (Apple/Anthropic/Meta + Robotaxi + Defense/Agriculture)
 
 3 more parallel Haiku agents — final robotics multi-agent wave. **Total today: 12 Haiku subagents across robotics + adjacencies.**

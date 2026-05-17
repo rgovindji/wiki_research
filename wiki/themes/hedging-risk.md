@@ -114,6 +114,19 @@ Total ~6-9% of portfolio in hedges + ~3-5% in cash = ~10% defensive sleeve
 | **VIX July 22/30 call spread** | 0.5-1% | Vol-spike insurance | Through July |
 | **GLD** | 1-2% | Fed credibility tail hedge | Structural |
 
+## Smart-money macro hedging signal (NEW 2026-05-17 PM)
+
+Per Q1 2026 13F filings (via [[2026-05-17-robotics-multi-agent-batch]] context):
+- **Dan Loeb (Third Point) established large SPY PUT position** — portfolio-level macro hedge
+- **Berkshire Hathaway max-defensive**: portfolio $274B → $263B; trimmed Apple; exited Amazon + UnitedHealth + Domino's + heavy Chevron sells; top 5 holdings now 68% of portfolio = **cash hoarding**
+- **Point72 (Steve Cohen) rotating defensive**: bought TransDigm (aerospace) + Equinix (defensive data center)
+
+**Which means**: 3+ tier-1 fundamental smart-money funds are positioning **defensively** for Q2 2026. Combined with our [[bank-of-japan]] June 16-17 catalyst + [[ai-bubble-debate]] Damodaran "AI correction worse than dotcom" framework + the NVDA 280x forward PE + insider selling cluster — the **risk-asymmetry tilt is toward more hedging, not less, into June**.
+
+**Add to falsifiable triggers** for hedge sizing-up:
+- Q2 2026 13F filings (filed mid-August) show *more* smart-money defensive positioning = raise hedge sizing
+- Q2 13Fs show smart money UNWINDING SPY puts = lighten hedges
+
 ## BoJ June 16-17, 2026 hedge overlay (NEW 2026-05-17 PM)
 
 Per new [[bank-of-japan]] page + [[2026-05-17-boj-carry-trade-risk]]: **BoJ rate decision June 16-17 is the most-actionable scheduled tail-risk catalyst in 2026**. Carry-trade unwind probability ~65-70% per subagent research; +90% of pre-Aug-2024 yen-carry positions remain (~$500B per MS). USD/JPY at 158.76 (May 17); meeting consensus 25bp hike (priced in via swaps). Path-risk = a faster path (50bp) or hawkish forward guidance.
