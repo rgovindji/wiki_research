@@ -9,6 +9,84 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session-summary | End-of-day rollup
+
+User had flu and granted autonomous control for the day. Working via authenticated Chrome MCP session on SemiWiki forum + blog. Five batches successfully committed and pushed.
+
+### Sources added today (9 total, all 2026-05-17)
+1. [[2026-05-16-dylan-patel-invest-like-best]] — Dylan Patel ILTB podcast (DRAM 2-3x, GPU 7-8yr, Anthropic 30%→72% margins, TSMC $100B 2028, 6-18mo robotics, copper foil sold out)
+2. [[2026-05-16-john-arnold-invest-like-best]] — John Arnold ILTB podcast (China decoupling quantified, permitting reform 2026, solar PPA +50%, SMR 10-15yr horizon)
+3. [[2026-05-15-semiwiki-tsmc-tool-orders-capex]] — Daniel Nenni article on TSMC record $21B Advanced Node equipment authorization
+4. [[2026-05-17-semiwiki-kuo-apple-intel]] — Ming-Chi Kuo Apple-Intel partnership thread (lifecycle 2026 test → 2029 decline; TSMC 90%+ retention)
+5. [[2026-05-17-semiwiki-cpu-shortage-intel-18a]] — Combined source: AI-driven CPU shortage + Lip-Bu Tan Intel strategy (Q1 10-Q quoted; AMD +38% vs Intel +7%; insider "no grand strategy")
+6. [[2026-05-17-semiwiki-cxmt-ddr5]] — CXMT shipping DDR5 in commercial volumes; STAR IPO; DRAM bifurcation
+7. [[2026-05-17-semiwiki-forum-sweep-2]] — Combined: Trump-Xi summit + MRC supercomputer + TSMC Apple modem on N2 + TSMC Board Resolutions + TSMC-VIS divestiture. **TSMC $20B Arizona injection** is the headline data point.
+8. [[2026-05-17-semiwiki-forum-sweep-3]] — Cerebras IPO ($150-$160, 20x oversubscribed); **MATCH Act**; GPU lifespan controversy
+9. [[2026-05-17-semiwiki-nenni-blog-sweep]] — 3 Nenni articles: 2nm Crunch + Mii TSMC roadmap (A14 2028, COUPE) + SNPS-TSMC alliance
+
+### New wiki pages created today (2)
+- [[INTC]] — Intel Corporation. Stance neutral / low conviction. Multiple bull (gov 9.9% stake, Apple/Tesla/Terafab, +200% YTD, CPU shortage ASP benefit) and bear (-16.61% post-Xi, 18A yields slip to 2027, $125.5B capex forensics, insider "no strategy") factors surfaced with equal weight.
+- [[SOITEC]] — Soitec S.A. (SOI.PA). Stance bull / low-medium conviction. Photonics-SOI substrate monopoly play; iPhone 17 mmWave already on FD-SOI confirmed by Yole/TechInsights; CPO transition is the 2026-2028 inflection. Stock has rallied 6x off Dec 2025 lows so valuation tension is the main pushback.
+
+### Wiki pages patched today (15+ unique)
+**Companies**: NVDA, AAPL, GOOGL, AMD, ARM, INTC, MU, TSM, ASML, SNPS, SOITEC, CBRS
+**Themes**: bottleneck-roadmap, datacenter-construction, copper-thesis, nvda-supply-chain, ai-infrastructure-debt, ai-bubble-debate, ai-capex-cycle
+**Sectors**: semiconductors, robotics
+**Macro**: us-china-relations
+
+### Highest-leverage findings (sorted by investment significance)
+
+**Sharpens existing positions**:
+1. **TSMC $20B Arizona capital injection** (primary source: TSMC board resolutions May 17) — ~1/3 of FY26 CapEx earmarked for Arizona alone. Read-through to FIX/EME/PWR.
+2. **TSMC A14 by 2028** (Mii R&D roadmap) — 10-15% speed gain vs N2; aligns with bottleneck-roadmap EUV constraint period
+3. **SOITEC = third independent confirmation** of TSMC's CPO push (COUPE photonic engine in Mii roadmap + SNPS-TSMC alliance + the iPhone 17 mmWave validation)
+4. **DRAM market is bifurcating** (CXMT commodity vs Big 3 HBM) — MU HBM moat intact
+5. **AI-driven CPU shortage** (Intel Q1 10-Q verbatim: ASP +27% / volume -5%); AMD +38% vs Intel +7% YoY → AMD bull thesis sharpens; ARM cross-cycle beneficiary
+
+**New investment angles surfaced**:
+6. **INTC binary trade** opened (neutral / low conviction) — Apple/Tesla/Terafab/+200% YTD bull vs $125.5B capex forensics + insider "no strategy" bear
+7. **MATCH Act** as material structural risk to ASML China service revenue (~40% of sales)
+8. **GPU lifespan contradiction surfaced** (Dylan 7-8 yr vs forum 1-3 yr) — empirical test = NVDA Q1 FY27 warranty reserve % (May 20)
+9. **SOITEC FD-SOI in iPhone 17 mmWave** — Mobile segment per-device content growth offsets volume decline
+10. **Rapidus Japan** sovereign-AI foundry: $11.3B raised / $32B needed by 2027
+
+### Contradictions surfaced (per house rule)
+- GPU useful life: Dylan 7-8 yr (physical) vs forum/Google architect 1-3 yr (operational)
+- Intel strategy: Nenni's "GO INTEL" bull view vs BlueOne's insider "no grand strategy" multi-employee sourcing
+- TSMC Apple priority: Apple-Intel diversification narrative (Kuo) vs Apple modem stays at TSMC on N2 (TSMC Apple win)
+
+### Process notes / what worked
+- **Chrome MCP authenticated session** enabled access to forum-member commentary that WebFetch could not reach — most valuable for: BlueOne insider Intel sources, the Intel 10-Q quoted verbatim, the Lip-Bu Tan management critique
+- **Sequential thread fetches + grep/awk on snapshots** kept working context manageable
+- **Combined source summaries** (forum-sweep-2, forum-sweep-3, nenni-blog-sweep) more efficient than one-source-per-thread for related material
+- **House rule discipline** (contradictions surfaced not resolved) preserved across all batches
+
+### Commits pushed today
+- 40e3ff8 (DeepSeek V4 Flash) — pre-existing on entry
+- 424125e (... earlier commits)
+- c60d23c (Dylan + Arnold ingest)
+- dc659a9 (SOITEC creation)
+- a2ed32d (SemiWiki Nenni TSMC tool orders)
+- cbe2a27 (Batch 1: INTC + 4 forum threads)
+- 0a12c5f (Batch 2: TSMC $20B Arizona + INTC reversal + Apple modem)
+- 17f442a (Batch 3: Cerebras IPO + MATCH Act + GPU lifespan)
+- d3a0842 (Batch 4: Nenni blog articles)
+- pending (Batch 5 wrap + iPhone 17 SOITEC validation + this summary)
+
+### What NOT done today (transparency)
+- T-Glass / MediaTek thread (paywalled, skipped)
+- Intel-McLaren / Keysight CSR / Synopsys VC Connect / Weebit Nano (PR fluff, skipped per quality bar)
+- TSMC monthly revenue reports (deferred — would have been hard primary data)
+- Deeper TSMC / Soitec subforum traversal (diminishing returns)
+- No formal lint pass (wiki has grown by 9+ sources; a lint is overdue per CLAUDE.md schema)
+
+### Get-well-soon notes for the user
+- NVDA Q1 FY27 earnings is Tuesday May 20 — see [[2026-05-20-nvda-earnings]] playbook
+- Two unresolved contradictions on the wiki (GPU lifespan + Intel strategy) — both will be empirically tested in coming weeks
+- SOITEC stance is bull / low-medium conviction (you said you might start a small position) — May 27 FY26 earnings is the binary catalyst there
+
+---
+
 ## [2026-05-17] autonomous-session | SemiWiki blog sweep #4 — Nenni articles (Global 2nm Crunch + Mii TSMC roadmap + SNPS-TSMC AI alliance)
 
 Pivot from forum threads to Daniel Nenni's published articles. Three articles read via authenticated Chrome MCP.

@@ -76,6 +76,25 @@ The CPO transition is *upstream* of the optical-module layer ([[COHR]] / [[LITE]
 - **Smartphone RF-SOI bottom** — Mobile Communications has fallen 30%+ YoY; even stabilizing at current levels would shift the mix story dramatically.
 - **LNOI commercialization timing** — beyond 2027 but worth tracking.
 
+## iPhone 17 mmWave commercial validation (NEW 2026-05-17 PM)
+
+Per SemiWiki / Yole Group / TechInsights teardown analysis ([[2026-05-17-semiwiki-nenni-blog-sweep]] companion article):
+
+- **Apple iPhone 17, iPhone 17 Pro, iPhone 17 Pro Max** mmWave antenna-in-package (AiP) module is the **Qualcomm QTM565 (HG11-34443-2)**
+- Manufactured on **GlobalFoundries' 22FDX RF process** — which is **built on Soitec FD-SOI substrates**
+- Independent confirmation from BOTH Yole Group and TechInsights (industry intelligence firms with teardown labs)
+- Daniel Nenni: *"The findings highlight a major industry shift toward highly integrated 5G mmWave Systems-on-Chip (SoCs), where phased array element spacing and area constraints are highly critical."*
+
+**Which means**: Soitec's Mobile Communications segment (52% of H1 FY26 revenue, currently flagged in bear case as "declining -30% YoY") is **NOT** in pure secular decline. **Content per device is rising** as mmWave moves from bulk CMOS to FD-SOI — partly offsetting smartphone unit-volume decline.
+
+**Strategic significance**:
+- Apple iPhone 17 = **hundreds of millions of units of high-volume consumer 5G validation** for Soitec FD-SOI
+- Mobile RF transition from bulk CMOS → FD-SOI on mmWave is a per-device content-growth dynamic the wiki had not fully captured
+- Apple already validates Soitec FD-SOI = strong industry credibility *also* for the photonics expansion (related substrate platform)
+- GlobalFoundries (GFS) is the foundry partner here — not directly on the wiki but worth noting as a Soitec channel partner
+
+**Adjust bear case**: Mobile Communications volume decline is real, but FD-SOI mmWave content growth provides a partial offset. The "race against time" framing on the page should be moderated.
+
 ## Recent developments
 - **2026-02-03** — Q3 FY26 revenue €160M; Edge & Cloud AI €54M (+27% YoY organic). Q4 guided to ~20% organic revenue growth QoQ.
 - **2026-05-08** — Stock traded €171.35 intraday (~+213% YTD); subsequently consolidated to ~€148.
