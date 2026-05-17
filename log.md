@@ -9,6 +9,40 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] daily | Anthropic 2028 paper + NVDA Q1 FY27 preview + HBM market update
+
+**Workflow**: 8-step daily update ritual. Saturday — markets closed but new sources from May 14-16 emerged.
+
+### Net-new material (ingested)
+1. **Anthropic "2028: Two Scenarios for Global AI Leadership" (May 14, 2026)** — frontier-lab policy paper with **first cleanly quantified US-China compute gap data**: Huawei = 4% of NVDA 2026, 2% 2027. DeepSeek R1 = 94% malicious-request compliance vs 8% US. 11× US/China compute ratio claim. Source summary: [[2026-05-14-anthropic-2028-ai-leadership]].
+
+### Material confirmations (small patches)
+2. **NVDA Q1 FY27 earnings preview** — Tuesday May 20. Consensus: $78.78B / $1.76 EPS (+78.8% YoY); Q2 consensus $86.08B (+9.3% seq). Goldman "major re-rating" call; BofA $320 PT. NVDA has fallen on 4 of last 5 earnings despite revenue beats. Added to [[NVDA]] recent developments.
+3. **HBM market update (TrendForce May 13)** — HBM3E +20% pricing for 2026; HBM4 production begins Q3 2026; Micron 1-2 quarters behind SK Hynix/Samsung but **fully sold out via advance contracts**. Added to [[MU]] recent developments.
+
+### Wiki touched
+- [[NVDA]] — Anthropic Huawei 4%/2% compute share bull bullet + Q1 FY27 preview in recent developments
+- [[us-china-relations]] — Anthropic 2028 paper section + both/and framing on Anthropic-as-regulatory-capture
+- [[ai-bubble-debate]] — same paper from bubble-debate lens; LeCun framing contextually validated
+- [[MU]] — HBM market update in recent developments
+- [[index]] — Anthropic paper listed in recent ingests
+
+### Skipped (low-value or already in wiki)
+- **Rubin platform** (announced Jan 2026 at CES, already in wiki)
+- **NVDA-Corning $3.2B deal** (May 6, already in wiki + [[GLW]])
+- **Iran conflict / oil shock** (ongoing context, already in wiki framing)
+- **Mag 7 earnings recap** (already ingested May 12-14)
+- **Stratechery / Dwarkesh / BG2** — nothing material-new in 48-hour window
+- **DeepSeek V4 release** (April 24, already in wiki)
+
+### Stance/conviction changes
+**None.** [[NVDA]] bull/high reinforced quantitatively by Anthropic data; no flips elsewhere.
+
+### Pending items to track
+- **NVDA Tuesday May 20 earnings** — primary catalyst this week. Wiki has framework ready.
+- **OpenRouter Chinese-token-share verification** (yesterday's 36% figure still community-cited, not officially disclosed)
+- **Copper price action** (Goldman expects H2 2026 dip from current ATH)
+
 ## [2026-05-16] research | New sector page initiated: copper-thesis
 
 - **Trigger**: User question about whether to elevate copper from stub to dedicated page given the AI capex / electrification / smart-money convergence.

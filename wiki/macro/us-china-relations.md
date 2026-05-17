@@ -1,9 +1,9 @@
 ---
 type: macro
 tags: [macro, geopolitics, us-china, tariffs, export-controls, taiwan, rare-earths]
-last_updated: 2026-05-16
+last_updated: 2026-05-17
 last_full_review: 2026-05-12
-sources: 1
+sources: 2
 ---
 
 # US-China Relations
@@ -131,6 +131,36 @@ Catalysts that historically move tech equities materially:
 5. **Chinese stimulus announcements** (especially property + consumer)
 6. **TSMC quarterly results / Taiwan strait incidents** (high-frequency)
 
+## Anthropic publishes "2028: Two Scenarios for Global AI Leadership" (NEW 2026-05-17 per [[2026-05-14-anthropic-2028-ai-leadership]])
+
+Anthropic (May 14, 2026) released a research/policy paper providing the cleanest quantitative framing of the US-China AI compute gap the wiki has captured:
+
+| Data point | Value |
+|---|---|
+| **Huawei compute as % of NVDA 2026** | **4%** |
+| **Huawei compute as % of NVDA 2027** | **2%** (gap widening) |
+| **US:China compute ratio with strong export controls** | **~11×** |
+| **DeepSeek R1 compliance with malicious requests** | **94%** (vs. 8% for US models) |
+| **Chinese AI labs publishing safety evals** | **3 of 13** |
+
+**Two 2028 scenarios**:
+- **Optimistic**: US maintains 12-24 month intelligence lead; American AI = global standard; democracies set norms
+- **Pessimistic**: Chinese models reach near-parity; PLA gains AI-enabled cyber; **China exports cheaper "good enough" AI globally** — *exactly the dynamic this wiki captured at the OpenRouter level (36% Chinese token share)*
+
+**Anthropic's policy asks**:
+1. Close chip smuggling + tighten semiconductor manufacturing equipment (SME) controls
+2. Restrict distillation attacks via legislation + threat-intel sharing
+3. Export US AI globally to lock in democratic infrastructure
+
+**Important framing nuance — both/and read**:
+- Anthropic IS the frontier lab most exposed to Chinese commoditization — they have commercial interest in tighter export controls. **LeCun's regulatory-capture accusation** ([[2026-05-16-yann-lecun-ame-labs]]) is contextually validated by this paper.
+- AND the 4%/2% Huawei compute data is empirically grounded — verifiable from chip production data. The compute moat is real.
+- Both are true: Anthropic's analysis is **empirically correct AND commercially self-serving**. Discount the policy recommendations accordingly, but the underlying gap data is the most useful single data point for the [[NVDA]] / [[ASML]] / [[AMAT]] / [[KLAC]] / [[LRCX]] supply-side moat thesis.
+
+**The dual reality the wiki should hold**:
+- **At the frontier-edge (compute, training)**: US dominates 25-50× by raw scale. Bullish for the US chip stack.
+- **At the commodity-inference layer**: China is winning via subsidized open weights (36% OpenRouter share). Bullish for cheaper AI deployment globally; bearish for US lab pricing premium on second-tier workloads.
+
 ## Chinese open-weight models winning the inference-commoditization layer (NEW 2026-05-17)
 
 Per HN community-cited OpenRouter data (May 2026), Chinese open-weight models (DeepSeek, Qwen) now constitute **~36% of all OpenRouter token volume**. OpenRouter itself just raised at a **$1.3B valuation backed by a16z**.
@@ -180,6 +210,7 @@ A new bilateral chokepoint is forming in parallel with the AI-chip story, and th
 ## Sources
 
 1. [[2026-05-16-sergey-levine-physical-intelligence]] — robotics supply-chain decoupling framing; "balanced robotics ecosystem" reinforcement
+2. [[2026-05-14-anthropic-2028-ai-leadership]] — Anthropic policy paper; Huawei = 4%/2% NVDA compute share; 11x US-China compute ratio claim; DeepSeek safety-compliance disparity (added 2026-05-17)
 
 ## Citations
 

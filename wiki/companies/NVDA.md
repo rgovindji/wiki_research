@@ -2,9 +2,9 @@
 type: company
 ticker: NVDA
 tags: [ai, semis, mag7]
-last_updated: 2026-05-16
+last_updated: 2026-05-17
 last_full_review: 2026-05-09
-sources: 6
+sources: 7
 conviction: high
 stance: bull
 ---
@@ -40,6 +40,7 @@ The dominant supplier of AI accelerators with a $1T confirmed demand backlog thr
 - **Robotics moat is deeper than chips (NEW 2026-05-16).** Per chief scientist Jim Fan ([[2026-05-16-jim-fan-nvda-robotics]]): NVIDIA leads the **VLA→WAM paradigm shift** with **Dream Zero** (world action model that learns physics from video). EgoScale discovered a **clean log-linear scaling law for dexterity** (21k hours egocentric video + only 4 hours teleop). **Dream Dojo** is a neural simulator (no physics engine, no graphics engine) enabling massively parallel robot RL. NVIDIA owns the model layer + data scaling law + simulator infrastructure — three additional moats stacked on the chip moat. Fan: **physical Turing test 2-3 years away; full robotics endgame by 2040 with 95% certainty**.
 - **Tensor Cores are a structural hardware moat, not just CUDA (NEW 2026-05-16).** Per Horace He (Meta PyTorch Compilers) [[2026-05-16-horace-he-ml-systems]]: on A100, matmul ops run **~15× faster** than non-matmul ops (1000 TFLOPS TF32 vs 67 TFLOPS FP32). If you're not doing matmuls on a GPU, you get **~7% of peak FLOP utilization** — full stop. This is *the* underlying reason transformers consolidated as the only architecture; non-matmul-heavy models literally cannot use modern Nvidia hardware efficiently. **Which means**: bear cases that lean on "AMD ROCm will catch up because software is converging" understate the depth of the moat — the architectural lock-in compounds at every precision drop (FP16 → FP8 → FP4), and the programming-model layer (CUDA, NVLink, FlexAttention, torch.compile) is a *separate* moat on top of the hardware. Each generation widens both.
 - **Hyperscaler engineering complexity is a customer-stickiness moat (NEW 2026-05-16).** Llama 3 paper data: at 16K GPUs, mean time between failures ≈ 1.8 hrs; at **131K GPUs ≈ 15 minutes**. Only hyperscalers + a handful of neoclouds have the systems-engineering depth to actually USE the GPUs they order at frontier scale. **Which means** NVDA's top customers are *captive* on engineering capability, not just contractual commitment — and tier-2 buyers (CRWV, NBIS) win by *renting* hyperscaler-grade engineering rather than replicating it.
+- **Huawei compute = 4% of NVDA 2026 / 2% 2027 (NEW 2026-05-17 per [[2026-05-14-anthropic-2028-ai-leadership]]).** Anthropic's "2028: Two Scenarios for Global AI Leadership" paper provides the cleanest quantitative data point on the US-China compute gap the wiki has captured: **Huawei will produce only 4% of NVIDIA's 2026 aggregate compute, dropping to 2% in 2027**. Anthropic also claims strengthened export controls could give the US access to **~11× more compute than China's AI sector**. **Which means**: the NVDA moat is not just CUDA ecosystem and Tensor Core hardware — it's *literal manufacturing-scale dominance* over the only credible chip-side competitor. The gap *widens* in 2027 absent Chinese SME breakthrough. This is the strongest quantitative refutation the wiki has of the "China will catch up" bear case, even acknowledging Anthropic's policy-advocacy bias. Reinforces [[ASML]] / [[AMAT]] / [[KLAC]] / [[LRCX]] supply-side moats (SME export controls preserve the gap).
 - **Drive Thor commercial deployment via Aurora (NEW 2026-05-16).** [[AUR]] launched **first US driverless commercial freight** for McLane (Berkshire Hathaway) on Dallas-Houston in April 2026 — powered by **dual NVIDIA Drive Thor SoCs (Blackwell architecture)**. Continental manufactures production hardware kit at scale starting 2027. Hirschbach 500-truck MOU = multi-year revenue pipeline. **Which means** Drive Thor is now a *commercial* revenue line, not just a development platform — Aurora is the flagship deployment outside robotaxi (Waymo) and consumer cars. Validates NVDA's automotive-AI compute moat, and if Aurora scales, pulls more design wins at Toyota / Mercedes-Benz / BYD (Drive Thor partners announced at CES 2025/2026).
 
 ## Bear case / risks
@@ -73,6 +74,7 @@ Per [[2026-05-16-druckenmiller-hard-lessons]]: Stan Druckenmiller bought NVDA at
 5. **Sovereign AI deal flow** — incremental demand or replacement?
 
 ## Recent developments
+- **2026-05-17** — Q1 FY27 earnings preview (Tuesday May 20). Street consensus: **$78.78B revenue, $1.76 adj EPS** (+78.8% YoY). Q2 consensus: **$86.08B** (+9.3% sequential). Goldman calling "major re-rating" pre-earnings; BofA $320 PT on $1.7T AI data center TAM forecast. **Historical pattern**: NVDA has fallen on 4 of last 5 earnings despite revenue beats of 3-4%; avg implied move 5-6%, realized 4.23%. **Tactical read**: forward guide on Q2 > $86B is what matters; Q1 beat is priced.
 - **2026-05-13** — Source ingest [[2026-05-13-semianalysis-value-capture]]. SemiAnalysis pricing model on Vera Rubin NVL72:
   - **Cost floor**: $4.92/GPU-hour (5-yr, 15% prepay, 15.6% IRR baseline)
   - **Value ceiling**: $12.25/GPU-hour ($/PFLOP parity with GB300); conservative $9.63
@@ -112,3 +114,4 @@ Per [[2026-05-16-druckenmiller-hard-lessons]]: Stan Druckenmiller bought NVDA at
 4. [[2026-05-16-jim-fan-nvda-robotics]] — NVDA chief scientist Jim Fan on robotics moat layers (VLA→WAM, EgoScale scaling law, Dream Dojo simulator)
 5. [[2026-05-16-horace-he-ml-systems]] — Meta PyTorch compilers lead Horace He: Tensor Core 15× moat, FP4 precision lever, 131K-GPU fault-tolerance ceiling
 6. [[2026-05-16-druckenmiller-hard-lessons]] — Druckenmiller "couldn't stand success" exit anti-pattern at $800 → $1,400; sizing-discipline wisdom anchor (~March 2026 dated, stale)
+7. [[2026-05-14-anthropic-2028-ai-leadership]] — Anthropic policy paper with Huawei = 4%/2% NVDA-compute data point + 11x US-China compute ratio claim (added 2026-05-17)

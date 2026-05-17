@@ -2,7 +2,7 @@
 type: company
 ticker: MU
 tags: [ai, semis, memory, hbm]
-last_updated: 2026-05-16
+last_updated: 2026-05-17
 last_full_review: 2026-05-09
 sources: 3
 conviction: high
@@ -91,6 +91,13 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the demand-destruction mechanism and 30%-of-capex-to-memory data
 2. [[2026-04-15-semianalysis-isscc-roundup]] — Samsung HBM4 closing the gap; LPDDR6 specs; primary source for the new competitive-risk addition to the bear case
 3. [[2026-05-16-damodaran-profg-markets]] — chip-sector top warning specifically citing MU; sizing-discipline prompt
+
+## Recent developments (2026-05-17)
+- **HBM3E pricing**: Samsung + SK Hynix reportedly raised HBM3E prices by **~20% for 2026 deliveries** (TrendForce, Digitimes)
+- **HBM4 ramp**: Production begins Q3 2026; 2026 HBM revenue mix forecast at ~55% HBM4 / 45% HBM3E
+- **Micron HBM4 production**: Lags SK Hynix + Samsung by 1-2 quarters; **entire 2026 HBM4 capacity already sold out via advance contracts** (confirmed CES 2026)
+- **Market share**: SK Hynix held 53% HBM share Q3 2025 vs Samsung 35%; Samsung custom HBM4E design completing May-June 2026
+- **Implication for [[MU]]**: HBM4 sold-out validates the structural-tightness thesis (good); MU's 1-2 quarter ramp lag means SK Hynix captures the biggest Q3 2026 share gains. The Q4 2026 picture is the catch-up window for MU.
 
 ## Citations
 - io-fund Micron HBM 2026 plan: https://io-fund.com/ai-stocks/micron-stock-up-100-hbm-leader-2026-plan
