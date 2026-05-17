@@ -139,6 +139,10 @@ The wiki tracks humanoid robotics as the canonical "physical AI" thesis (this pa
 
 The component-supplier thesis on this page (MP / OUST / ALGM / AMBA / VPG) is **agnostic** to humanoids vs. trucks — most of the same sensor / rare-earth / edge-AI content goes into both form factors. Autonomous trucking actually de-risks the component thesis by providing earlier-cycle revenue validation for the supply chain.
 
+## Adjacent commodity bottleneck — copper (NEW 2026-05-16)
+
+Per [[copper-thesis]]: humanoid robots are copper-intensive. Each humanoid contains copper-wound motors, batteries with copper current collectors, and high-density wiring harnesses — exact tonnages are not yet quantified for scaled deployment, but on the demand-curve compounding logic, robotics adds to the AI/EV/grid demand vectors already locking in a structural copper deficit by 2029+ (Goldman). For investors playing the robotics buildout, copper exposure (CPER futures or COPX miner ETF) is an indirect but high-conviction parallel position to the component-supplier basket on this page. **The Tier 1 robotics component stack (MP, OUST, ALGM, AMBA, VPG, ALNT) is the closest direct play; copper is the broader-market commodity expression of the same buildout.**
+
 ## Architecture contradiction — three top researchers disagree (NEW 2026-05-16)
 
 Per the wiki house rule (contradictions surfaced, not resolved): in a 72-hour window the wiki ingested three top researchers — one from NVIDIA, one from the leading independent robotics-foundation-model lab, one Turing Award winner who just left Meta to start his own lab — and they **disagree on the architecture** for robotics foundation models even while broadly agreeing on the 3-5 year timeline horizon.

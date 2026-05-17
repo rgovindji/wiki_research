@@ -68,6 +68,7 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 - [[cloud-hyperscalers]] — MSFT Azure, AMZN AWS, GOOGL GCP — capex and AI revenue scoreboards
 - [[robotics]] — Robotics & Humanoid Buildout; NdFeB rare-earth magnets, precision sensors, harmonic drives, edge-AI SoCs; bottleneck-roadmap framework applied to humanoid component supply chain
 - [[aerospace-defense]] — Aerospace & Defense; pure-play space (RKLB, ASTS) + defense primes (LMT, NOC, RTX) + supply chain (VELO, KTOS); $470B economy + DoD Space Force $40.2B FY26
+- [[copper-thesis]] — **NEW 2026-05-16** — Copper as primary AI capex / electrification / grid play; structural deficit 2029+; Friedland "$15K/tonne" thesis; smart money (Druckenmiller, Fink, Goldman) converging; vehicles: CPER (futures) / COPX (miners ETF) / TECK / BHP / FCX
 - *AI software sector page — not yet created; tracked under [[watchlist]] "Not yet covered" (PLTR, etc.)*
 
 ### Adjacent coverage (NEW 2026-05-14 — stub coverage to close framework gaps)

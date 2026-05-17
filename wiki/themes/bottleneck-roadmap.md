@@ -55,6 +55,20 @@ Per Horace He (Meta PyTorch Compilers) — see [[2026-05-16-horace-he-ml-systems
 
 **Cross-cycle note for robotics:** Sergey Levine ([[2026-05-16-sergey-levine-physical-intelligence]]) makes the same memory point in a different domain — π0 has only 1 second of visual context vs. human "hours to decades." Scaling robot context length requires the same memory hierarchy improvements that AI training does. Same vendors, same demand vector.
 
+## Copper: the parallel commodity bottleneck (NEW 2026-05-16)
+
+Per the new [[copper-thesis]] page: copper is the **2026-2035 structural commodity bottleneck** running in parallel to the chip-stack bottleneck cycle on this page. It has the same shape (binding constraint → pricing power) as ASML/EUV but in the physical-buildout layer.
+
+| Period | Binding constraint | Why | Beneficiaries |
+|---|---|---|---|
+| **2026-2028** | Copper futures price | AI data centers (400-572kt by 2028 per BNEF) + EV/grid demand outpaces mine supply ramp | Futures (CPER); diversified miners ETF (COPX) |
+| **2029-2035** | Refined copper supply | Goldman: demand outpaces supply from 2029. 15-20 yr permit cycles mean mines that don't break ground by ~2025 are too late | Existing tier-1 miners ([[TECK]], BHP, [[FCX]]); Anglo merger entity post-2026 |
+| **2035+** | Refining + smelting | Even with new mine supply, refining capacity may bottleneck. Chinese share of refining = 50%+ | Western refiners with capacity (limited) |
+
+**Smart-money positioning**: Druckenmiller (long futures via CPER-equivalent — see [[2026-05-16-druckenmiller-hard-lessons]]); Friedland (Ivanhoe, $15K/tonne thesis); Larry Fink (BlackRock); Goldman Sachs (2029+ deficit confirmed); Pierre Andurand.
+
+**Why this matters for the wiki framework**: pricing power lives at the binding constraint. The wiki has captured this pattern in the *digital* stack (memory 2025-26 → fabs 2027 → EUV 2028-30). The *physical* stack — copper, rare earths, transformers — runs on a slightly later cycle but with even longer lead times because mining permits take 15-20 years vs. fab construction at 2-3 years. The two cycles compound rather than substitute.
+
 ## What's NOT a bottleneck (per Dylan)
 
 - **Power.** 16+ vendors of gas-power generation; aeroderivatives, reciprocating engines, ship engines, fuel cells, solar+battery. Behind-the-meter could be ~50% of new capacity by EOD. Could unlock 20% of US grid (~200 GW) just with peak-shaving batteries. Cost spread (combined-cycle $1,500/kW vs. alternatives $3,500/kW) translates to **only +10c/hr on a $1.40/hr Hopper TCO** — easy to absorb.

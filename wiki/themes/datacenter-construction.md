@@ -44,6 +44,14 @@ Together: **~$76 B of contracted AI-infrastructure construction backlog** across
 - **Modularization tailwind** — Asia-shipped pre-assembled modules (per [[bottleneck-roadmap]]) reduce on-site labor needs but contractors capture the integration / installation revenue
 - **Diversified beyond AI** — utility grid modernization, electrification of transportation, building decarbonization all provide non-AI optionality
 
+## Copper is the physical-input bottleneck behind the construction layer (NEW 2026-05-16)
+
+Per the new [[copper-thesis]] page: every 1 GW of AI data center capacity = **~5,000 tonnes of copper** (busbars, cables, transformers, cooling lines, switchgear). The 20 GW of incremental US AI capacity for 2026 alone = 100kt of copper demand. The full 100-300 GW buildout by 2030 = **500kt – 1.5Mt of incremental copper demand** specifically for AI data centers, on top of EV/grid/robotics.
+
+**Which means** the FIX / EME / PWR backlogs ($76B+ contracted) translate directly into specific copper demand quantities. The data center contractors don't take the copper price risk (they pass it through), but the *availability* of copper at acceptable lead times is a tail risk to backlog burn-down — and there are real signs of it tightening. Per BNEF, by 2030 US data center demand = 75 GW vs 58 GW committed supply = **17 GW shortfall**, in part because supporting copper infrastructure can't keep pace.
+
+**For investors who want layered exposure**: holding FIX/EME/PWR (construction labor) + COPX or CPER (copper) gives exposure to both the labor and the input commodity bottleneck of the buildout.
+
 ## 2028-2030: will robots help with the buildout? (NEW 2026-05-16)
 
 Dwarkesh asked Sergey Levine (Physical Intelligence) the question this thesis turns on: *"By 2028, am I seeing a bunch of robots laying down solar panels and transformers and switchgear, or am I seeing humans?"*

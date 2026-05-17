@@ -9,6 +9,26 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-16] research | New sector page initiated: copper-thesis
+
+- **Trigger**: User question about whether to elevate copper from stub to dedicated page given the AI capex / electrification / smart-money convergence.
+- **Research dive completed** via WebSearch: Goldman/Trafigura/BNEF forecasts, FCX/SCCO/TECK/BHP earnings, Friedland commentary, geographic risk (Chile/Peru/DRC), ETF vehicles (CPER/COPX), Druckenmiller positioning context.
+- **New page**: `wiki/sectors/copper-thesis.md`
+  - Demand math: AI data centers 400-572kt/yr through 2028 (BNEF), peaking at 1.1Mt/yr by 2030 (Sprott); grid drives >60% of demand growth through 2030 (Goldman); EVs at 4x ICE copper content; robotics adds to compounding demand.
+  - Supply math: 15-20 yr mine permit cycles; $210B capex needed by 2035 vs only $76B in past 6 years; Chile +500kt/yr coming (positive); Peru political risk (Tía María revoked Mar 2026); DRC Chinese-funded expansion.
+  - **Smart money**: Druckenmiller long futures ([[2026-05-16-druckenmiller-hard-lessons]]); Friedland "dawn of the copper age" $15K/tonne; Larry Fink at BlackRock; Goldman confirms demand-outpaces-supply from 2029.
+  - **Vehicles**: CPER (futures, Druckenmiller-style); COPX (miners ETF, $8.2B AUM); single names FCX/SCCO/TECK/BHP/Anglo American with operational + geographic risk overlay.
+  - **Stance**: bull. **Conviction**: high for futures (CPER), medium for diversified miners (COPX/TECK/BHP), medium-low for FCX (Grasberg overhang) and SCCO (declining grades).
+  - **Caveat**: Goldman near-term surplus call (2026 average $12,650, drifting to $12,000 H2). Entry timing matters. Druckenmiller himself calls it a "big consensus trade."
+- **Cross-links added**:
+  - [[ai-capex-cycle]] — copper as physical-layer commodity bottleneck
+  - [[bottleneck-roadmap]] — copper as parallel commodity bottleneck (2026-2035)
+  - [[datacenter-construction]] — 5,000 tonnes copper / GW of data center capacity
+  - [[robotics]] — humanoid copper-intensity; CPER/COPX as broader-market expression
+  - [[commodity-producers]] — graduation pointer to dedicated copper page
+  - [[index]] — new sector listing
+- **No stance changes elsewhere**. Existing FIX/EME/PWR/MP positions reinforced by the copper-as-input framing.
+
 ## [2026-05-16] research | New coverage initiated: AUR (Aurora Innovation) + retail-FOMO behavioral indicator
 
 - **Trigger**: r/stocks "Next Big Sector" thread (275 upvotes, 301 comments) — AUR surfaced as one of the few applied-AI investable plays vs. mostly speculative micro-caps (HGRAF +2,650%, quantum, eVTOL).

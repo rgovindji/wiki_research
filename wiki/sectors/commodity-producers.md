@@ -41,6 +41,8 @@ This is **stub coverage** — built to prevent off-framework purchases the next 
 5. **Late-cycle 5/6 indicators firing** ✓ (current) — gold as low-correlation diversifier
 6. **AI data center copper-demand inflection** — 1 GW = ~5,000 tonnes copper; multiply by 20 GW US 2026 = 100kt incremental demand on a tight market
 
+> **NEW 2026-05-16**: Copper has graduated to its own page — see [[copper-thesis]] for the full thesis-grade treatment with bull/bear, vehicles, smart-money positioning, and stance/conviction matrix. The framing below is preserved for the Druckenmiller-specific framing on futures-vs-equities; the full copper thesis lives at the dedicated page.
+
 ## Druckenmiller's copper positioning — futures, NOT equities (NEW 2026-05-16, ~March 2026 dated)
 
 Per [[2026-05-16-druckenmiller-hard-lessons]]: Stan Druckenmiller (Duquesne Family Office) made a specific framing on copper that's worth noting for any investor weighing FCX / SCCO equity vs copper futures:
