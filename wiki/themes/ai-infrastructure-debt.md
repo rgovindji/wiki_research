@@ -110,6 +110,24 @@ Per Dylan Patel on Invest Like the Best ([[2026-05-16-dylan-patel-invest-like-be
 
 **Net**: the "GPU as collateral" specific bear leg weakens. The "complex financial plumbing" bear thesis remains intact. The contagion mechanism is now more about *deal structure* than *asset value*.
 
+### 🔄 But a contradicting forum signal (NEW 2026-05-17 PM, per [[2026-05-17-semiwiki-forum-sweep-3]])
+
+SemiWiki forum discussion (Cerebras IPO thread, May 11+) raised an unnamed Google architect citation: *"Datacenter GPU service life can be surprisingly short — only one to three years is expected."*
+
+Forum-member operational reality:
+- NVIDIA charges **3-5% of hardware cost yearly** for maintenance contracts
+- NVIDIA **warranty/maintenance reserves are ~1.8% of revenue and have "increased substantially in past few years"**
+- Hyperscalers assume "continuous failures as baseline operational state" — using mainframe-era techniques (three-level checkpointing, NVIDIA Dynamo shadow engine failover, state-machine replication)
+
+**Per house rule, contradictions are surfaced, not resolved**:
+- Dylan's frame: physical useful life 7-8 years (secondary-market resigning data)
+- Forum frame: operational service life 1-3 years (unnamed Google architect)
+- **Reconciliation hypothesis**: physical chip can run for 7-8 years but is economically retired earlier due to generational obsolescence + maintenance cost escalation + power-efficiency degradation
+
+**Empirical test**: NVDA warranty reserve % trajectory in upcoming 10-Q footnotes (Q1 FY27 earnings May 20). If reserves keep rising, the depreciation bear case is re-armed. If they stabilize, Dylan's frame wins.
+
+**Implication for this page's contagion thesis**: the GPU-collateral leg is *not as dead as it looked yesterday*. Watch warranty disclosures closely.
+
 ## Hyperscaler revenue concentration in OpenAI + Anthropic (NEW 2026-05-16)
 
 Per Aswath Damodaran [[2026-05-16-damodaran-profg-markets]] (citing a chart on the show), OpenAI + Anthropic spending commitments make up the following share of each hyperscaler's revenue backlog:

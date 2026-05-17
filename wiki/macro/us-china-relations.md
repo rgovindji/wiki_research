@@ -217,6 +217,40 @@ A new bilateral chokepoint is forming in parallel with the AI-chip story, and th
 - [[robotics]] Tier 1 component basket (OUST, ALGM, AMBA, VPG, ALNT) — reinforced as Western alternatives gain strategic weight
 - Chinese OEMs (Unitree, AgiBot, UBTECH) — face same trajectory as Huawei post-2019 if decoupling extends to robotics
 
+## MATCH Act: the next-stage equipment-export lever (NEW 2026-05-17 PM per [[2026-05-17-semiwiki-forum-sweep-3]])
+
+Pending US legislation introduced in House + Senate (April 2026) — **House Foreign Affairs committee voted to advance April 22**. Closes chipmaking-equipment export loopholes to China by:
+
+1. **Targeting equipment from US, Japan, Netherlands** (the three countries dominating semi tools)
+2. **Coercing allied countries** to limit exports — if they don't, US imposes extraterritorial controls
+3. **🔑 Requires LICENSES to SERVICE equipment** — even already-installed tools
+
+**Explicitly named targets**: [[ASML]], **Tokyo Electron**. Also covers US-domiciled [[AMAT]] / [[KLAC]] / [[LRCX]].
+
+**China's countermeasures**:
+- **April 13, 2026 decree**: created mechanism to add foreign companies to **"Malicious Entity List"** for "improper foreign extraterritorial measures" — explicit retaliation lever, opens door to legal action
+- MOFCOM summoned US chip industry reps to Chinese embassy in Washington (April)
+- Chinese gov summoned US embassy diplomats in China to complain
+- Countermeasures "prepared" if MATCH passes
+
+**Trump admin position**: has NOT publicly taken position. Week of Beijing summit, White House: *"We don't get ahead of the President on pending legislation."*
+
+**Why this matters**: 
+- ASML China revenue historically ~40% of sales; service revenue is highest-margin segment
+- Service-license requirement is the **highest-leverage lever** of the bill — turns recurring revenue into licensable revenue
+- China's preemptive decree treats passage as plausible
+- **Bipartisan committee vote** + bipartisan momentum suggest non-trivial passage probability
+- Was reportedly raised in Beijing summit pre-meetings
+
+**Investment read-through**:
+- [[ASML]] — most exposed; service-revenue compression risk; updated bear case
+- Tokyo Electron — same exposure (no wiki page; track via watch list)
+- [[AMAT]] / [[KLAC]] / [[LRCX]] — also covered; less concentrated China exposure but service segment still affected
+- [[bottleneck-roadmap]] EUV row (2028-2030) — China-specific service compression doesn't change the *constraint* but affects who captures the rent
+- China indigenous-equipment beneficiaries: NAURA, AMEC, SMEE (PRC-listed, not retail-accessible)
+
+**What to watch**: Senate Foreign Relations committee progress; Trump admin signaling post-Beijing-summit; any ASML/TEL Q2 2026 disclosures.
+
 ## Trump-Xi summit (May 13-14, 2026): market voted skeptical (NEW 2026-05-17 per [[2026-05-17-semiwiki-forum-sweep-2]] Thread A)
 
 Trump's first China visit in nearly a decade (May 13-14, 2026, Beijing). Two-day summit with state banquet at Great Hall of the People; Bessent had 3 hours of preparatory talks in South Korea. Agenda included trade, Iran war, US arms sales to Taiwan, China-Iran intermediation. Trade truce maintenance was the primary public objective.
@@ -280,6 +314,7 @@ ChangXin Memory Technologies (CXMT) — China's only domestic DRAM maker at mass
 3. [[2026-05-16-john-arnold-invest-like-best]] — Concrete decoupling metrics: flights -70%, expats -50-75%, US students in China -90% (added 2026-05-17)
 4. [[2026-05-17-semiwiki-cxmt-ddr5]] — CXMT DDR5 ramp + Shanghai STAR IPO; commodity DRAM bifurcation (added 2026-05-17)
 5. [[2026-05-17-semiwiki-forum-sweep-2]] — Trump-Xi summit market read; INTC/QCOM/MU post-trip moves; TSMC $20B Arizona injection (added 2026-05-17)
+6. [[2026-05-17-semiwiki-forum-sweep-3]] — MATCH Act details + China's April 13 "Malicious Entity List" decree countermeasure (added 2026-05-17)
 
 ## Citations
 

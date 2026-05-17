@@ -49,6 +49,8 @@ Newly-public wafer-scale AI accelerator company — May 13 2026 IPO at $48.8B fu
 - **G42 relationship** opens MENA + South Asia sovereign deployments
 
 ## Bear case / risks
+- **TCO blindspot in the S-1 (NEW 2026-05-17 per [[2026-05-17-semiwiki-forum-sweep-3]])** — forum technical commentary (KevinK on SemiWiki): *"Would love to see where they are on the Pareto frontiers for TCO (cost per million tokens) vs interactivity (TPS and TTFT latency)... The S-1 focuses in on speed and latency and steers clear of TCO."* **Which means**: CBRS likely defends a premium-latency niche but may not be competitive on **cost-per-token at scale** — the metric hyperscalers actually optimize for in their build-vs-buy decisions. Addressable market may be narrower than the $48.8B valuation implies.
+- **Wafer-scale chip durability under 24/7 ops is open question (NEW 2026-05-17)** — per same forum thread, monolithic wafer-scale systems (Cerebras runs 2 wafers/rack) could have more catastrophic failure modes than rack-of-GPU architectures with FRU swap-out. Unresolved but worth tracking if any chip-failure data emerges post-IPO.
 - **86% UAE concentration is the dominant risk.** Single-region, partially state-backed customer base. Geopolitical, CFIUS-adjacent, capital-flight risk all live.
 - **51x trailing revenue** at IPO is priced for perfection. A $48.8B valuation needs to grow into ~$25B+ revenue at industry-norm multiples — a 50x growth lift.
 - **20x oversubscription** is sentiment, not fundamentals. IPO-frenzy stocks often lock-up-expire 6-12 months later with material drawdowns.
@@ -71,6 +73,7 @@ Newly-public wafer-scale AI accelerator company — May 13 2026 IPO at $48.8B fu
 
 ## Sources
 1. [[2026-05-13-cerebras-ipo]] — primary source summary
+2. [[2026-05-17-semiwiki-forum-sweep-3]] — TCO blindspot + wafer-scale durability question from forum technical analysis (added 2026-05-17)
 
 ## Citations
 - CNBC IPO range raise: https://www.cnbc.com/2026/05/11/cerebras-raises-ipo-range.html

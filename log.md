@@ -9,6 +9,43 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | SemiWiki forum sweep #3 — Cerebras IPO + MATCH Act + GPU lifespan controversy
+
+Third autonomous batch. Combined source: [[2026-05-17-semiwiki-forum-sweep-3]].
+
+### Threads covered
+- **A**: Cerebras IPO raise to $150-$160 (30 replies, Nenni-started, 20x oversubscribed)
+- **B**: GPU lifespan controversy (within Cerebras thread) — Google architect 1-3 yr vs Dylan 7-8 yr
+- **C**: China criticizes MATCH Act (pending US chip equipment legislation)
+
+### Highest-impact findings
+- **MATCH Act**: pending US legislation specifically targeting **ASML + Tokyo Electron** equipment exports AND **service revenue** in China. House Foreign Affairs advanced April 22. China responded with April 13 "Malicious Entity List" decree. Trump admin "no public position." Bipartisan momentum + Chinese preemptive countermeasures = non-trivial passage probability. **Service-license requirement is the highest-leverage lever** — ASML China revenue ~40% of sales, service segment is highest-margin.
+- **GPU lifespan contradiction**: Forum thread cites unnamed Google architect saying GPU service life is **1-3 years**, directly contradicting Dylan Patel's 7-8 year claim ingested earlier today. NVDA warranty reserves at 1.8% of revenue and "increased substantially in past few years" — empirical signal supporting forum view. Per house rule, both views surfaced on [[NVDA]] and [[ai-infrastructure-debt]] without resolution. Empirical test = NVDA Q1 FY27 (May 20) warranty reserve trajectory.
+- **Cerebras IPO TCO blindspot**: Forum technical commentary (KevinK) notes the S-1 "focuses on speed and latency and steers clear of TCO." Implies CBRS has defensible premium-latency niche but may not be competitive on cost-per-token at hyperscaler scale. Addressable market potentially narrower than $48.8B valuation implies.
+
+### Wiki touched
+- [[CBRS]] — TCO blindspot + wafer-scale durability question added to bear case
+- [[NVDA]] — GPU lifespan contradiction surfaced (Dylan 7-8 yr vs forum 1-3 yr); empirical test = warranty reserves trajectory
+- [[ASML]] — **MATCH Act bear case added** (material new risk; service-license requirement specifically called out)
+- [[ai-infrastructure-debt]] — GPU lifespan contradiction surfaced; "depreciation bear case partially re-armed" framing
+- [[us-china-relations]] — MATCH Act + China "Malicious Entity List" decree section added
+- [[index]] + [[log]]
+
+### Skipped this round
+- T-Glass / MediaTek (paywalled)
+- Intel-McLaren Racing (PR fluff)
+- SiFive RISC-V (lower priority; would affect ARM bear case incrementally)
+- "Is AI the automobile" (speculative debate, no actionable data)
+- Keysight CSR / Synopsys VC connect (PR)
+
+### Cumulative session stats (batches 1-3)
+- **Source summaries created**: 7 (kuo-apple-intel, cpu-shortage-intel-18a, cxmt-ddr5, forum-sweep-2, forum-sweep-3, plus the earlier Dylan/Arnold/SemiWiki TSMC ingest)
+- **New wiki pages**: 2 (INTC, SOITEC earlier today)
+- **Wiki pages patched**: 12+ (TSM, NVDA, AAPL, AMD, ARM, MU, GOOGL, ASML, CBRS, INTC, ai-infrastructure-debt, bottleneck-roadmap, datacenter-construction, us-china-relations, plus minor index/log updates)
+- **Commits pushed**: 4 (a2ed32d, cbe2a27, 0a12c5f, pending batch 3)
+
+---
+
 ## [2026-05-17] autonomous-session | SemiWiki forum sweep #2 — TSMC $20B Arizona + INTC reversal + Apple modem
 
 Second batch of autonomous forum browsing. Combined source: [[2026-05-17-semiwiki-forum-sweep-2]].
