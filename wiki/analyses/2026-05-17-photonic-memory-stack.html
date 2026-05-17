@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photonic Memory: What's Actually Shipping in 2026 — and Who Gets Paid</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.7;
+  color: #1a1a1a;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+  background: #fafaf8;
+  font-size: 17px;
+}
+h1 {
+  font-family: "Cormorant Garamond", "Tiempos Headline", Garamond, "Times New Roman", serif;
+  font-size: 36px;
+  line-height: 1.18;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+.subtitle {
+  color: #6c6a64;
+  font-size: 16px;
+  margin: 0 0 36px;
+  font-style: italic;
+  line-height: 1.5;
+  border-bottom: 1px solid #e6dfd8;
+  padding-bottom: 28px;
+}
+h2 {
+  font-family: "Cormorant Garamond", "Tiempos Headline", Garamond, serif;
+  font-size: 26px;
+  margin: 52px 0 14px;
+  letter-spacing: -0.005em;
+  font-weight: 600;
+  color: #141413;
+}
+h3 {
+  font-size: 19px;
+  margin: 32px 0 10px;
+  color: #252523;
+  font-weight: 600;
+}
+p { margin: 14px 0; }
+em.lede {
+  font-style: italic;
+  color: #3d3d3a;
+  display: block;
+  font-size: 17px;
+  line-height: 1.55;
+}
+a {
+  color: #cc785c;
+  text-decoration: underline;
+  text-decoration-color: rgba(204, 120, 92, 0.4);
+  text-underline-offset: 2px;
+}
+a:hover { text-decoration-color: rgba(204, 120, 92, 1); }
+strong { color: #0a0a0a; font-weight: 600; }
+.tk {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.92em;
+  font-weight: 600;
+  color: #cc785c;
+  letter-spacing: 0.02em;
+}
+.callout {
+  background: #f5f0e8;
+  border-left: 4px solid #cc785c;
+  padding: 16px 20px;
+  margin: 22px 0;
+  border-radius: 0 6px 6px 0;
+  font-size: 16px;
+}
+.callout-title {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #a9583e;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 22px 0;
+  font-size: 14.5px;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+th, td {
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid #ebe6df;
+  vertical-align: top;
+}
+th {
+  background: #efe9de;
+  font-weight: 600;
+  font-size: 13px;
+  color: #252523;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+tr:last-child td { border-bottom: none; }
+hr {
+  border: none;
+  border-top: 1px solid #e6dfd8;
+  margin: 44px 0;
+}
+ul, ol { padding-left: 22px; margin: 14px 0; }
+li { margin: 8px 0; }
+.disclosure {
+  font-size: 13px;
+  color: #6c6a64;
+  border-top: 1px solid #e6dfd8;
+  padding-top: 28px;
+  margin-top: 56px;
+  line-height: 1.55;
+}
+.disclosure code {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 12px;
+  background: #efe9de;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+.posted {
+  text-align: center;
+  color: #8e8b82;
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 36px;
+}
+</style>
+</head>
+<body>
+
+<h1>Photonic Memory: What's Actually Shipping in 2026 — and Who Gets Paid</h1>
+<p class="subtitle">A layer-by-layer map of the AI memory + photonics stack, written for people tired of seeing "photonic memory" tickers thrown around with zero technical grounding.</p>
+
+<h2>The thing nobody admits</h2>
+
+<p>"Photonic memory" is one of the most-pitched, least-defined terms in AI infrastructure investing. The reason it gets pitched is that anyone who can credibly explain it sounds smart. The reason it stays vague is that <strong>photonic memory, as a discrete commercial product, does not yet exist.</strong></p>
+
+<p>What does exist — and what makes the term half-useful — is a stack of distinct technologies that are often jammed together when retail-facing accounts write tweets. Each layer of that stack has very different companies, very different unit economics, and very different time horizons. If you confuse the layers, you can buy a ticker that has nothing to do with the thesis you think you're playing.</p>
+
+<p>This post is the layer-by-layer map. By the end you should be able to (a) tell a friend what each piece actually is, (b) name the public ticker at each layer, and (c) recognize when someone on Twitter is conflating things.</p>
+
+<p>I am not an analyst at a firm and I do not issue ratings. The views below are research synthesis from a personal wiki I maintain. Not investment advice. I'll disclose my positions at the bottom.</p>
+
+<hr>
+
+<h2>What the stack actually looks like</h2>
+
+<p>Let me start with the punchline and then walk through the layers.</p>
+
+<div class="callout">
+<span class="callout-title">There are three separate problems people lump under "photonic memory"</span>
+<ol style="margin: 6px 0 0;">
+<li><strong>Moving data between chips fast enough</strong> (the interconnect problem). Solved with optical interconnects: pluggable transceivers today, co-packaged optics tomorrow. Not memory.</li>
+<li><strong>Bridging compute to memory at the package level</strong> (the memory-wall problem). This is where photonic interposers come in. Frontier territory; the most interesting "photonic-adjacent" memory architecture; barely commercial yet.</li>
+<li><strong>Pooling memory across servers</strong> (the inference-cost problem, especially for KV cache in LLMs). Solved electrically with CXL, not photonically. People confuse this with photonics constantly.</li>
+</ol>
+</div>
+
+<p>Below is the stack mapped layer by layer, with the public ticker that captures each piece. I'll explain each.</p>
+
+<table>
+<thead>
+<tr><th>Layer</th><th>What it does</th><th>Public ticker(s)</th><th>What it isn't</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Substrate</strong></td><td>Specialty wafer needed to fab silicon photonics chips</td><td><span class="tk">SOITEC</span> (SOI.PA)</td><td>Not a memory company</td></tr>
+<tr><td><strong>Foundry / process</strong></td><td>Manufactures silicon photonics ICs</td><td><span class="tk">TSM</span> (COUPE), <span class="tk">TSEM</span> (Tower), GlobalFoundries (private)</td><td>Not chip designers</td></tr>
+<tr><td><strong>EDA / design IP</strong></td><td>Software + IP to design photonic + electrical co-integration</td><td><span class="tk">SNPS</span>, <span class="tk">CDNS</span></td><td>Not hardware</td></tr>
+<tr><td><strong>Pluggable optical modules</strong></td><td>Today's optical interconnect product (800G, 1.6T transceivers)</td><td><span class="tk">COHR</span>, <span class="tk">LITE</span>, <span class="tk">FN</span></td><td>Not memory; replaced eventually by CPO</td></tr>
+<tr><td><strong>Co-packaged optics (CPO)</strong></td><td>Optics integrated into switch/compute package</td><td><span class="tk">AVGO</span> (Tomahawk 6 + Davisson), <span class="tk">NVDA</span> (Spectrum-X / Quantum-X), <span class="tk">MRVL</span> (Teralynx)</td><td>Still interconnect, not memory</td></tr>
+<tr><td><strong>Photonic fabric / interposer</strong></td><td>Optical bridge between compute and HBM at package level</td><td><span class="tk">MRVL</span> (acquired Celestial AI May 2026), Lightmatter (private)</td><td>Not standalone product yet</td></tr>
+<tr><td><strong>HBM (the actual memory)</strong></td><td>High-bandwidth electrical memory stacked next to GPU</td><td><span class="tk">MU</span>, SK Hynix (Korea), Samsung (Korea)</td><td>Not photonic</td></tr>
+<tr><td><strong>CXL memory pooling</strong></td><td>Shared DRAM pool across servers (electrical)</td><td><span class="tk">ALAB</span> (retimers), <span class="tk">MRVL</span> (controllers), Samsung/Micron CZ120-class modules</td><td>Not photonic</td></tr>
+<tr><td><strong>Photonic memory storage</strong></td><td>Storing bits as light (phase-change materials, etc.)</td><td>None public. IBM, Oxford research stage.</td><td>Doesn't exist commercially</td></tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2>Layer 1: The substrate — Soitec</h2>
+
+<p>Every silicon photonics chip starts with a specialty wafer called <strong>photonics-grade silicon-on-insulator (photonics-SOI)</strong>. It's not the same as regular SOI used for RF chips or FD-SOI used for low-power processors. The photonic version has a precisely-engineered thin buried-oxide layer that lets light propagate without leaking.</p>
+
+<p>There is essentially one company in the world qualified to supply this wafer at volume to all three major foundries (TSMC, GlobalFoundries, Tower Semiconductor): <strong>Soitec</strong>, a French company listed on Euronext Paris as <span class="tk">SOI.PA</span>. BofA estimates Soitec holds ~95% market share of photonics-grade SOI as of March 2026. Shin-Etsu has a license but minimal volume. GlobalWafers' license was terminated.</p>
+
+<p>If you want to play the photonics-substrate layer, this is the only public name. Note: SOI.PA is Paris-listed only — no US ADR. The stock has rallied ~6x off its December 2025 low, so you're not buying it cheap. Their FY26 earnings May 27 are binary — that's the visibility event.</p>
+
+<h2>Layer 2: The foundry — TSMC COUPE, Tower, GlobalFoundries</h2>
+
+<p>Once you have the substrate, you need a foundry to turn it into chips. Three players matter:</p>
+
+<p><strong>TSMC's COUPE</strong> — Compact Universal Photonic Engine. This is TSMC's silicon-photonics platform for co-packaged optics. Per TSMC SVP Y.J. Mii's April 30 Technology Symposium presentation, <strong>COUPE enters production in 2026 with approximately 2x power efficiency vs. pluggable optical modules</strong>. That's a real, public, technical claim. COUPE is part of why every NVDA, AVGO, and MRVL roadmap converges on co-packaged optics for 2026-2028.</p>
+
+<p><strong>Tower Semiconductor (TSEM)</strong> — Israeli specialty foundry, listed on NASDAQ. Long-time photonics fab. Intel attempted to acquire Tower in 2022; the deal collapsed on China regulatory delay in mid-2023. Tower fabs photonic ICs for a wide customer base — they're foundry to other people's designs, not a design house themselves.</p>
+
+<p><strong>GlobalFoundries (GFS)</strong> — runs their <strong>SCALE platform</strong> targeting $1B+ silicon photonics revenue by 2028. Less marketed than TSMC but real.</p>
+
+<p>All three buy substrate from Soitec. All three are foundries — they don't sell consumer-facing products; they sell wafer space to other companies.</p>
+
+<h2>Layer 3: The design layer — Synopsys + Cadence</h2>
+
+<p>You can't design a co-packaged optical chip without specialized EDA software. The two majors that matter are:</p>
+
+<p><strong>Synopsys (SNPS)</strong> — has silicon-proven IP validated on TSMC N2P (M-PHY v6.0); 64G UCIe IP and 224G high-speed interconnect IP. SNPS Fusion Compiler integrates with TSMC's A14 + COUPE design flow.</p>
+
+<p><strong>Cadence (CDNS)</strong> — Virtuoso Studio + Celsius Thermal Solver + Sigrity for signal/power integrity at the photonic-electrical interface. Cadence supports the same TSMC COUPE design flow.</p>
+
+<p>Neither is a "photonics pure-play." They're EDA duopoly names that capture rent at every node + every photonic design done at TSMC/GF/Tower. They're cleaner exposure than retail-pitched "photonic memory" tickers because they get paid regardless of which CPO architecture wins.</p>
+
+<h2>Layer 4: Today's optical interconnect — pluggables (COHR, LITE, FN)</h2>
+
+<p>For the last decade, optical communication between racks (and increasingly within racks) has used pluggable optical modules. They look like little cassettes that plug into a switch. The big public names:</p>
+
+<ul>
+<li><strong>Coherent (COHR)</strong> — NVDA made a $2B direct equity investment (alongside Lumentum) in March 2026.</li>
+<li><strong>Lumentum (LITE)</strong> — paired with Coherent in the same NVDA investment.</li>
+<li><strong>Fabrinet (FN)</strong> — contract manufacturer for transceivers across the industry.</li>
+</ul>
+
+<p>These are real businesses with real revenue and real growth. But the technology trajectory is replacing them with co-packaged optics over the next 3-5 years. Owning COHR/LITE/FN today is buying the late-cycle of the pluggable era. The thesis is roughly: pluggables expand into 1.6T and 3.2T data rates before being displaced; revenue compounds at attractive rates through 2027-2028; new growth post-2028 depends on whether they can pivot into CPO components.</p>
+
+<h2>Layer 5: Co-packaged optics (the actual present-tense innovation)</h2>
+
+<p>Co-packaged optics (CPO) is the architecture that replaces pluggables. Instead of plugging optical cassettes into a switch, the optical engine is integrated into the same package as the switch ASIC. Lower latency, lower power, higher density.</p>
+
+<p>The three companies that matter:</p>
+
+<ul>
+<li><strong>NVIDIA</strong> — Spectrum-X (Ethernet CPO) launched mid-2025; Quantum-X (InfiniBand CPO) earlier 2026. Both are in production.</li>
+<li><strong>Broadcom (AVGO)</strong> — Tomahawk 6 (102.4 Tbps) shipping with 200G/lane CPO. Counterpoint projects AVGO captures 60% of custom hyperscaler ASIC by 2027.</li>
+<li><strong>Marvell (MRVL)</strong> — Teralynx switching silicon plus the May 2026 acquisition of Celestial AI's Photonic Fabric (more on that below).</li>
+</ul>
+
+<p>All three buy photonic ICs fabbed on Soitec substrates at TSMC COUPE / Tower / GlobalFoundries. AVGO is the cleanest pure-AVGO-share exposure to non-NVDA AI silicon as well — owning AVGO is partially a CPO play and partially a custom-ASIC play.</p>
+
+<h2>Layer 6: The thing most retail-pitched "photonic memory" stocks are confused about</h2>
+
+<p>Here's where the term gets earned, or doesn't. <strong>Celestial AI</strong> is a private company (now Marvell, after the May 2026 acquisition) that built something called <strong>Photonic Fabric</strong>. It's an optical interposer that bridges compute (a GPU or AI accelerator) to memory (HBM) at the package level using light instead of copper traces.</p>
+
+<p>This is the closest commercial architecture to what people mean when they say "photonic memory." It's not photonic memory in the literal sense of "storing bits as photons." It's a photonic <em>interconnect to memory</em> at the package level. The reason it matters is the memory wall — modern AI inference is bottlenecked on how fast you can move data between compute and memory, and optical interposers do this faster and with lower energy than electrical interconnect at the same scale.</p>
+
+<div class="callout">
+<span class="callout-title">The under-discussed point</span>
+<strong>Marvell acquired Celestial AI in May 2026.</strong> That's a real, recent, fundamental change to the public market exposure for this layer. If you want to be long the photonic-memory-adjacency, MRVL is the ticker. Not some random ticker someone pitched you. The market hasn't fully priced this acquisition into MRVL's narrative yet — most analysts cover MRVL as "custom ASIC + DPU + storage" and treat the photonic fabric as optionality. That's where the alpha is.
+</div>
+
+<p>Lightmatter is the other private name. They focus more on optical compute than optical interconnect to memory, but the lines blur.</p>
+
+<h2>Layer 7: The actual memory (which is electrical)</h2>
+
+<p>In every AI system shipping in 2026, the actual memory is electrical. The two technologies that matter:</p>
+
+<p><strong>HBM (High-Bandwidth Memory)</strong> — stacked DRAM placed next to the GPU/accelerator on the same package. Three suppliers:</p>
+<ul>
+<li><strong>Micron (MU)</strong> — preferred supplier on NVDA Vera Rubin; shipping 12-high 36GB HBM4 in volume Q1 2026.</li>
+<li><strong>SK Hynix</strong> (Korean, accessible via Korea Stock Exchange or 000660.KS)</li>
+<li><strong>Samsung</strong> (Korean, 005930.KS) — closing the HBM4 gap fast per ISSCC 2026.</li>
+</ul>
+
+<p>HBM is sold-out for 2026; the market is pricing per generation, not per quarter. HBM4 specifically is the cycle most relevant for Vera Rubin and AMD Helios deployments through 2027.</p>
+
+<p><strong>CXL memory pooling</strong> — the parallel track most "photonic memory" confusion stems from. CXL (Compute Express Link) is an open standard that lets servers share a pool of DRAM. Critical for inference workloads, especially KV cache.</p>
+
+<p>For the un-initiated: <strong>KV cache</strong> is the memory store for attention computations in transformer inference. As context windows grow (10K → 100K → 1M tokens), the KV cache grows in proportion. At million-token contexts, you can't keep the KV cache in HBM — you need to offload to a larger but slower memory pool. CXL pools DDR5 across multiple servers; latency is higher than HBM but cost-per-GB is 3-5x lower.</p>
+
+<p>The public CXL plays:</p>
+<ul>
+<li><strong>Astera Labs (ALAB)</strong> — pure-play CXL retimers and switches. Pre-IPO darling, now public.</li>
+<li><strong>Marvell (MRVL)</strong> — CXL controllers (in addition to the photonic fabric piece).</li>
+<li><strong>Samsung / Micron / SK Hynix</strong> — CXL-class memory modules (Samsung's CZ120, Micron's CZ12x-line).</li>
+</ul>
+
+<p>CXL memory pooling is not photonic. Anyone pitching "photonic memory pooling" or similar buzzword constructs is confusing layers.</p>
+
+<h2>What about actual photonic memory storage?</h2>
+
+<p>There are research groups working on <strong>storing bits as light</strong> using phase-change materials with optical read/write — IBM, Oxford University, several startups. The technology is called photonic phase-change memory (P-PCM) or similar variants. It has theoretical bandwidth advantages but is not commercial. No public ticker. If someone pitches you a stock based on photonic memory storage, ask them whether the company has a shipping product. The answer in 2026 is no.</p>
+
+<p>This is the layer that gives the term "photonic memory" its mystique — the future where bits are stored as light — but it's a 2030+ commercial horizon, if ever.</p>
+
+<hr>
+
+<h2>So who actually gets paid in 2026-2028?</h2>
+
+<p>Three tiers, ranked by visibility of revenue:</p>
+
+<p><strong>Tier 1 — already getting paid (cleanest 2026 plays)</strong></p>
+<ul>
+<li>HBM cycle: <span class="tk">MU</span> (preferred) and SK Hynix/Samsung (Korean exposure)</li>
+<li>CXL ramp: <span class="tk">ALAB</span> (pure-play retimer leader)</li>
+<li>EDA backbone: <span class="tk">SNPS</span> + <span class="tk">CDNS</span> (every node, every design, photonic and electrical)</li>
+<li>Pluggable optics late cycle: <span class="tk">COHR</span>, <span class="tk">LITE</span> (NVDA-invested, but losing share to CPO over time)</li>
+</ul>
+
+<p><strong>Tier 2 — 2026-2027 production inflection</strong></p>
+<ul>
+<li>Substrate: <span class="tk">SOITEC</span> (95% photonics-SOI share; TSMC COUPE production starts 2026)</li>
+<li>CPO platform owners: <span class="tk">AVGO</span> (Tomahawk 6 + Davisson), <span class="tk">NVDA</span> (Spectrum-X/Quantum-X)</li>
+<li>Foundry exposure: <span class="tk">TSM</span> (the COUPE itself), <span class="tk">TSEM</span> (specialty foundry)</li>
+</ul>
+
+<p><strong>Tier 3 — frontier / under-priced (2027-2030 horizon)</strong></p>
+<ul>
+<li>Photonic interposer (the closest thing to "photonic memory"): <span class="tk">MRVL</span> (post-Celestial AI acquisition May 2026)</li>
+<li>True photonic memory storage: no public name</li>
+</ul>
+
+<div class="callout">
+<span class="callout-title">The single under-priced idea in this post</span>
+<strong>MRVL post-Celestial acquisition.</strong> Most sell-side coverage treats MRVL as "custom silicon + DPU + storage" and either ignores or applies modest optionality value to Photonic Fabric. If photonic interposers become the standard memory-bridge architecture for AI clusters by 2028 — which is what AVGO, NVDA, and TSMC's roadmaps all imply — Marvell's acquisition begins to look like a bargain. Risk: the integration takes longer, or AVGO/NVDA build internal photonic-interposer capability and bypass MRVL's IP.
+</div>
+
+<hr>
+
+<h2>How to spot bad pitches</h2>
+
+<p>A few patterns to recognize:</p>
+
+<ul>
+<li><strong>"$PENG is a photonic memory play"</strong> — Penguin Solutions (PENG) is a systems integrator and advanced memory module supplier. They sell AI factory systems and memory modules including CXL-capable products. They are not a photonic memory IP holder. Conflating systems integration with substrate or fabric IP is the most common confusion.</li>
+<li><strong>"$SMCI is photonics-adjacent"</strong> — Super Micro is an NVDA server integrator. They put GPUs in racks. They have nothing to do with photonics IP. Owning SMCI is owning the integrator margin on NVDA's growth, not photonic memory.</li>
+<li><strong>"$TSEM is the photonic memory play"</strong> — Tower is a foundry for photonic ICs. They fab other people's designs. They do not hold photonic memory IP. Owning TSEM is owning capacity rent on the foundry side, not the technology rent on the IP side.</li>
+<li><strong>"$RKLB is photonic memory"</strong> — Rocket Lab is a launch company. There is no photonic memory thesis on a launch company. Anyone making this claim is throwing buzzwords.</li>
+</ul>
+
+<p>The pattern: if a ticker doesn't fit into one of the boxes in the table above, that's because there's no actual thesis. Photonic memory does not run through random AI-adjacent tickers; it runs through specific layers with specific companies.</p>
+
+<hr>
+
+<h2>What I'd do with this</h2>
+
+<p>I'm not telling you what to buy. But here's how I'd think about it if I were positioning around the photonics + memory thesis:</p>
+
+<ol>
+<li><strong>HBM cycle</strong> is the highest-conviction near-term play. Own <span class="tk">MU</span> as the US-listed leverage to it.</li>
+<li><strong>Substrate-layer rent</strong> is captured by <span class="tk">SOITEC</span> (Paris-listed; valuation tight after 6x rally; May 27 earnings is the binary).</li>
+<li><strong>CPO leaders</strong> are <span class="tk">AVGO</span> (60% custom ASIC share + Tomahawk 6 CPO) and <span class="tk">NVDA</span> (vertical control via Spectrum-X).</li>
+<li><strong>Photonic fabric optionality</strong> is at <span class="tk">MRVL</span> post-Celestial acquisition — under-discussed on the sell side.</li>
+<li><strong>CXL memory pooling</strong> is at <span class="tk">ALAB</span>; cleanest pure-play.</li>
+<li><strong>Skip the buzzword tickers</strong> (PENG, SMCI, RKLB-as-photonics, etc.) — they don't capture the rent layer the marketing implies.</li>
+</ol>
+
+<div class="disclosure">
+<strong>Disclosures and disclaimers.</strong> I maintain a personal investing research wiki covering AI, semis, robotics, space, defense, and adjacent themes. I hold positions in some of the names mentioned above; I am considering a position in Soitec but have not yet bought it. I have no relationship with any of the companies covered. This post is research synthesis, not investment advice. Markets are dynamic; numbers move; theses break. Verify everything before any decision.<br><br>
+
+<strong>Sources for specific data points:</strong>
+<ul style="margin: 8px 0 0; font-size: 13px;">
+<li>Soitec photonics-SOI market share: BofA equity research (March 2026)</li>
+<li>TSMC COUPE production timing + 2x power efficiency: TSMC SVP Y.J. Mii Technology Symposium 2026, April 30</li>
+<li>Marvell-Celestial AI acquisition: multiple trade press confirmations May 2026</li>
+<li>AVGO Tomahawk 6 CPO: AVGO Q1 FY26 earnings commentary</li>
+<li>HBM4 Q1 2026 shipment to NVDA Vera Rubin: Micron disclosures + TrendForce</li>
+<li>ALAB role in CXL: Astera Labs S-1 + recent quarterly earnings</li>
+</ul><br>
+
+If you want the wiki entries on any of these, message me and I'll share the relevant page.
+</div>
+
+<p class="posted">Posted Sunday May 17, 2026.</p>
+
+</body>
+</html>
