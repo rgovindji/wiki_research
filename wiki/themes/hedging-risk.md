@@ -114,6 +114,26 @@ Total ~6-9% of portfolio in hedges + ~3-5% in cash = ~10% defensive sleeve
 | **VIX July 22/30 call spread** | 0.5-1% | Vol-spike insurance | Through July |
 | **GLD** | 1-2% | Fed credibility tail hedge | Structural |
 
+## BoJ June 16-17, 2026 hedge overlay (NEW 2026-05-17 PM)
+
+Per new [[bank-of-japan]] page + [[2026-05-17-boj-carry-trade-risk]]: **BoJ rate decision June 16-17 is the most-actionable scheduled tail-risk catalyst in 2026**. Carry-trade unwind probability ~65-70% per subagent research; +90% of pre-Aug-2024 yen-carry positions remain (~$500B per MS). USD/JPY at 158.76 (May 17); meeting consensus 25bp hike (priced in via swaps). Path-risk = a faster path (50bp) or hawkish forward guidance.
+
+**Add to hedge stack ahead of June 16-17**:
+
+| Hedge | Sizing | Purpose | Window |
+|---|---|---|---|
+| **FXY June 27 78/82 call spread** OR **YCS puts** | 0.5-1% | Direct yen-strength catalyst exposure | Through June 27 |
+| **VIX July 22/30 call spread expanded to July 30 expiry** | (raise existing 0.5-1% → 1-1.5%) | Multi-week vol risk if unwind extends past flash event | Through July 30 |
+| **Trim highest-multiple AI names**: NVDA (+32% off Mar low), MU (+154% YTD), CRWV/NBIS | 1-2% partial trim | Reduce duration-sensitive exposure pre-meeting | Pre June 16 |
+| **Long defensive ETF (XLU / XLP)** | 1% | Inverse-correlated rotation hedge | Through July |
+
+**Why this matters for the wiki**: positions are concentrated in high-multiple AI/tech ([[NVDA]] 280x forward, [[MU]] +154% YTD, [[CRWV]] / [[NBIS]] premium-growth, [[SOITEC]] +447% YTD). These are exactly the names that get sold first in a duration shock. The Japanese institutional holders (GPIF $1.8T, life insurers) are a meaningful second-order flow risk — repatriation on yen strength = forced selling of [[NVDA]] / [[MSFT]] / [[AAPL]] / [[GOOGL]] positions.
+
+**Catalyst-specific watch**:
+- USD/JPY < 150 ahead of June 16 = yen self-correcting; BoJ pressure releases; can lighten the FXY leg
+- USD/JPY > 158 ahead of June 16 = pressure builds; raise hedge sizing
+- BoJ Ueda or board member hawkish drift speech post-G7 = leading indicator
+
 **Adjusts to 5-6/6 indicators:** raise put-spread sizing 50%; add SPXS tactical layer; raise cash to 7-10%.
 **Adjusts back to 3-4/6 indicators:** close event hedges; reduce VIX to 0.25%.
 

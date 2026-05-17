@@ -9,6 +9,49 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | Batch 9: BoJ + yen carry trade unwind risk (user-flagged)
+
+User flagged BoJ June rate decision as a major 2026 macro decision. Spawned Haiku subagent to research. Created new macro coverage.
+
+### Key findings (subagent synthesis)
+- **BoJ rate now 0.75%** (held April 28, 2026); **6-3 vote with 3 dissenters for immediate 1.0% hike** — hawks gaining
+- **April BoJ inflation forecast upgraded to 2.8%** (from 1.9%) on Iran war energy + weak yen
+- **USD/JPY at 158.76** (May 17, 2026); BoJ comfort zone 145-155
+- **June 16-17 meeting consensus: 25bp hike to 1.0%** priced in via swaps
+- **MS estimates ~$500B in live yen-carry positions remain post-Aug 2024** (only 10% unwound; 90% remains)
+- **BCA total yen-related swaps/forwards: ¥2,281T** (size estimates vary widely — fuel for tail risk)
+- **GPIF $1.8T** has internal discussion to reduce foreign bonds + equities = repatriation flow risk on yen strength
+- **Subagent verdict: ~65-70% probability of carry unwind event** in June-July 2026
+- Flash crash risk LOWER than Aug 2024 (event is signaled); multi-week sustained unwind risk HIGHER (no Fed differential support + GPIF flows + higher tech multiples)
+
+### Why 2026 risk > 2024 (more sustained, not less)
+1. BoJ has less retreat room (after 2 years of yen weakness + accumulated inflation + 6-3 hawkish vote)
+2. 90% of pre-Aug-2024 carry positions remain rebuilt
+3. No automatic Fed cut differential support (Fed pause / re-cut uncertainty live)
+4. NVDA 280x forward PE vs ~50x in early 2024 = bigger drawdown for same vol shock
+5. GPIF rebalancing = slow-burn flow risk Aug 2024 didn't have
+
+### Wiki created / patched
+- **Created [[bank-of-japan]]** (new macro page) — current BoJ state, June decision tree, August 2024 reference event, wiki position exposure ranking, falsifiable watch triggers
+- **Patched [[hedging-risk]]** — added BoJ June 16-17 overlay with explicit hedge instrument suggestions (FXY call spread, expanded VIX, trim AI multiples, defensive long)
+- **Patched [[index]]** — added BoJ page + source link
+- **Sources**: [[2026-05-17-boj-carry-trade-risk]]
+
+### Position exposure (ranked highest first)
+- **Highest**: [[NVDA]] (280x forward), [[MU]] (+154% YTD), [[CRWV]], [[NBIS]], [[SOITEC]] (+447% YTD)
+- **High**: [[AAPL]], [[MSFT]], [[GOOGL]] — Japanese institutional holding overweight
+- **Medium-high**: [[TSM]], [[ASML]], [[AMD]]
+- **Medium**: [[INTC]] (gov-catalyst driven, less duration sensitive)
+- **Hedge legs**: defensive cohort (utilities, staples)
+
+### Watch list (BoJ-specific)
+- USD/JPY level into June 16-17 (below 150 = pressure releases; above 158 = pressure intensifies)
+- Ueda + board member speeches post-G7 (hawkish drift = leading indicator)
+- Shunto 2027 settlements (autumn 2026)
+- Fed September meeting interaction with BoJ June hike
+
+---
+
 ## [2026-05-17] autonomous-session | Multi-agent batch 7 — NVDA #1 at TSMC + SOITEC CEO transition + pre-NVDA-earnings consensus
 
 User pushed back on my premature "diminishing returns" framing. Pivoted to multi-agent + evaluate_script architecture for higher throughput.
