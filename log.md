@@ -9,6 +9,68 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session-FINAL-rollup | EOD totals (batches 1-12)
+
+User had flu, granted autonomous control, then pushed back on early "wrap" framing — produced 13 commits across a 12-batch session.
+
+### Headline data points surfaced today (ranked by investment leverage)
+
+1. **🔥 NVDA overtook Apple as TSMC's #1 customer in 2025** — primary-source TSMC Annual Report (April 2026): NVDA = 19% of 2025 revenue (NT$726.97B); Apple = 17% (NT$645.17B); Apple dropped from 22% in 2024. **Empirically validates AAPL bear thesis at 5pp/year deprioritization speed.**
+2. **TSMC $20B capital injection into TSMC Arizona** (primary source: TSMC board resolutions May 17) — ~1/3 of FY26 CapEx earmarked for Arizona alone; direct booster to FIX/EME/PWR/AMKR.
+3. **TSMC 2025 revenue NT$3,809B (+31.6% YoY); Q1 2026 GM 66.2% (operating margin 58.1%, NPM 50.5%); HPC = 61% of revenue; A14 by 2028 (10-15% speed gain vs N2); COUPE photonics production begins 2026 with 2x power efficiency**.
+4. **TSMC management 25% CAGR target 2024-2029** (materially above prior wiki 10-15% long-term assumption).
+5. **CC Wei Q1 call: "Intel and Tesla are still our customers"** despite Terafab announcement — reduces INTC Terafab bull magnitude; reinforces TSM moat.
+6. **ASML Q1 2026 GM was only 53%** vs TSMC 66.2% vs NVDA 75% — pricing-power hierarchy is inverse of monopoly position; confirms "generous monopolist" thesis. **ASML China revenue already dropped to 19%** (from 36% Q4 2025) — correction to wiki's prior "historically 40%" framing.
+7. **MATCH Act probability 55-70%**; if passes, ASML revenue impact -10 to -15%.
+8. **AI-driven CPU shortage row added to bottleneck-roadmap** — Intel Q1 10-Q quoted (server ASP +27% / volume -5%); AMD +38% vs Intel +7% YoY = strongest AMD relative-outperformance signal.
+9. **MU +154% YTD, ATH $818.67 May 11**; DA Davidson $1,000 PT; Q3 FY26 guide $33.5B/81% GM/$19.15 EPS. HBM4 share: SK Hynix 54% / Samsung 28% / MU 18%. Memory rationing cascading to QCOM + PC OEMs.
+10. **SOITEC**: 95% photonics-SOI share (BofA confirm); new CEO Laurent Rémont April 1; +447% YTD vs revenue -10.2%; sell-side PT avg €53-56 (58% downside vs spot €150); CPO ramp validation; iPhone 17 mmWave on Soitec FD-SOI.
+11. **BoJ rate decision June 16-17 = highest-leverage scheduled macro catalyst of 2026.** Carry-trade unwind probability ~65-70%; ~$500B live yen-funded positions remain (90% of pre-Aug 2024). New [[bank-of-japan]] page + [[2026-06-16-boj-decision]] playbook with three-tier hedge/profit strategy.
+
+### Contradictions surfaced (per house rule — not resolved)
+- GPU useful life: Dylan 7-8 yr (physical) vs SemiWiki forum 1-3 yr (operational, Google architect citation). Empirical test = NVDA Q1 FY27 (May 20) warranty reserve trajectory.
+- Intel strategy: Nenni "GO INTEL / never bet against Lip-Bu" bull view vs BlueOne insider "no grand strategy" multi-employee sourcing.
+- Apple-TSMC priority: Apple has 50%+ of N2 2026 (current dominance) BUT lost 5pp of 2025 revenue share to NVDA + Apple's own Intel diversification = future deprioritization. Time-horizon distinction resolves the apparent contradiction.
+
+### Architectural pivot mid-session (per user's strategic question)
+- **evaluate_script** for forum extraction: ~85% payload reduction vs full snapshot
+- **Multi-agent (Haiku subagents)** for parallel non-SemiWiki research: 7 agents total today, returning 30-60 sec each with focused 400-word reports
+- Pattern works for: pre-earnings consensus, primary-source IR docs, public analyst notes
+- Pattern does NOT work for: authenticated forum content (single Chrome MCP session); needs main agent (me) to drive serially
+
+### Session totals
+- **Commits pushed**: 13 (cbe2a27 → 881cc86)
+- **Source summaries created**: 12
+- **New wiki pages**: 4 — [[INTC]], [[SOITEC]], [[bank-of-japan]], [[CDNS]]
+- **New playbook**: [[2026-06-16-boj-decision]] (3-tier hedge/profit strategy)
+- **Wiki pages patched**: 20+ unique (TSM, NVDA, AAPL, GOOGL, AMD, ARM, MU, ASML, SNPS, CDNS, CRWV, NBIS, ORCL, AVGO, TSLA, INTC, SOITEC, ai-capex-cycle, ai-infrastructure-debt, ai-bubble-debate, bottleneck-roadmap, datacenter-construction, copper-thesis, nvda-supply-chain, semiconductors, robotics, us-china-relations, hedging-risk, fed-policy, bank-of-japan, watchlist, index)
+- **Haiku subagents spawned**: 7 (NVDA pre-earnings, TSMC IR, SOITEC, MU pre-earnings, MATCH Act, CRWV/NBIS/ORCL, BoJ)
+
+### Why the early "diminishing returns" call was wrong
+- Batches 4-5 contained the iPhone 17 mmWave SOITEC validation (changed bear-case framing)
+- Batch 7 contained the NVDA-overtakes-Apple TSMC primary-source data (highest-leverage finding of the day)
+- Batch 9 contained the BoJ ~$500B unwound positions data
+- Batches 10-12 contained the CC Wei Terafab pushback + Pan Am-Boeing balance + CDNS coverage gap close
+
+**Lesson**: forum-only browsing hits diminishing returns; pivoting to primary-source IR (via Haiku agents) + Daniel Nenni's blog articles + targeted user-flagged macro (BoJ) keeps signal density high.
+
+### Get-well-soon notes for the user
+
+**Tuesday May 20 — NVDA Q1 FY27 earnings** (after close): Consensus $78.5-78.8B revenue / $1.77-1.79 EPS / +79% YoY; BofA PT $320 (raised May 13); ~280x forward PE = "little room for macro shock or China revenue restatement." China H200 zero-deliveries wildcard live. Empirical test of GPU lifespan contradiction = warranty reserve disclosure in 10-Q. Wiki playbook: [[2026-05-20-nvda-earnings]] (pre-existing).
+
+**Tuesday May 27 — Soitec FY26 full-year earnings** (binary event for SOITEC stance): YoY revenue -10.2%; sell-side PT avg €53-56 vs spot €150; new CEO Laurent Rémont first call midstream. Wiki page [[SOITEC]] has the pre-earnings setup section.
+
+**June 10 — May US CPI** ([[2026-06-10-cpi-binary]] playbook pre-existing).
+
+**June 16-17 — BoJ rate decision** (highest-leverage scheduled macro catalyst). Playbook [[2026-06-16-boj-decision]] has three-tier strategy with concrete instruments.
+
+**June end — MU Q3 FY26** ($33.5B/81% GM/$19.15 EPS guide).
+
+### Final status — all committed and pushed
+All work on `origin/main`. Wiki is in significantly better shape than 24 hours ago. Get well soon.
+
+---
+
 ## [2026-05-17] autonomous-session | Batch 9: BoJ + yen carry trade unwind risk (user-flagged)
 
 User flagged BoJ June rate decision as a major 2026 macro decision. Spawned Haiku subagent to research. Created new macro coverage.
