@@ -52,6 +52,7 @@ The single point of truth for advanced AI chip manufacturing — every leading-e
 - **2026 Q1** — Revenue grew ~35% YoY; capex guidance raised to $52–56B
 - **2026 (ongoing)** — Arizona fabs progressing toward N3/N2 production milestones
 - **2026-05-17 — 2026 capex now tracking $57.4B** (above prior guide); per Dylan Patel SemiAnalysis ([[2026-05-16-dylan-patel-invest-like-best]]): **TSMC 2028 capex potentially $100B**. Quote: *"3 years from now TSMC is going to spend $100 billion on capex... 2028... a real real possibility."* If realized, this is roughly 2x 2026 spend and represents the largest single-vendor capex bet in semiconductor history. **Direct read-through to [[ASML]] (EUV), [[AMAT]], [[LRCX]], [[KLAC]] equipment vendors** — they all see proportional revenue if TSMC capex reaches that level.
+- **2026-05-15 — SemiWiki (Daniel Nenni): Q1 2026 board capital appropriations $31.3B** ([[2026-05-15-semiwiki-tsmc-tool-orders-capex]]). **Composition is the story**: $21.0B specifically for **Advanced Node equipment — the highest single-quarter authorization since tracking began Q4 2019**. **Trailing-twelve-month Advanced Node equipment approvals ≈ $55B**, nearly consuming TSMC's full 2026 $56B CapEx guide. Nenni's call: *"TSMC's current 2026 CapEx framework is already becoming too conservative"* — probability of a 2Q26 earnings CapEx upward revision is "increasing." **Which means** Dylan's qualitative "$100B by 2028" thesis now has hard tooling-order data backing it. Specialty Devices + Advanced Packaging $0 approvals in Q1 are attributed to *digestion* of prior massive allocations (silicon photonics, CoWoS, SoIC), not demand weakness — but worth monitoring [[AMKR]] / [[ASX]] / [[CAMT]] if Q2 also prints zero.
 
 ## Related
 [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[semiconductors]] · [[NVDA]] · [[ASML]] · [[AMAT]] · [[TER]] · [[ENTG]] · [[APD]] · [[AAPL]] · [[market-concentration]] · [[overview]]
@@ -59,6 +60,7 @@ The single point of truth for advanced AI chip manufacturing — every leading-e
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for CPU > GPU allocation discipline and A16-first-customer-is-AI dynamic
 2. [[2026-05-16-dylan-patel-invest-like-best]] — TSMC 2026 capex revised to $57.4B; 2028 potentially $100B (added 2026-05-17)
+3. [[2026-05-15-semiwiki-tsmc-tool-orders-capex]] — Daniel Nenni / SemiWiki: Q1 2026 board appropriations $31.3B with $21B advanced-node equipment (record since Q4 2019); TTM Advanced Node equipment $55B vs $56B 2026 CapEx guide → upward guide revision "increasing" (added 2026-05-17)
 
 ## Citations
 - Yahoo TSM quote/news: https://finance.yahoo.com/quote/TSM/

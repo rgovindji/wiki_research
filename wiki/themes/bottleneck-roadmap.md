@@ -3,7 +3,7 @@ type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
 last_updated: 2026-05-17
 last_full_review: 2026-05-09
-sources: 6
+sources: 7
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -61,6 +61,12 @@ This is the **single biggest upward revision** to the 2027 cleanroom-space bottl
 - **[[ENTG]] / [[APD]]** (fab consumables + industrial gases) — 15-20 yr BOO contracts capture the upside
 - **[[TSM]] capex intensity** shifts from "high but stable" to "structurally rising for 3+ years"
 - **Why TSMC can afford it**: per Dylan, "in five years TSMC will have a 100 billion dollar a year free cash flow business" — capex funded out of operating cash flow, not balance sheet stress
+
+**Independent corroboration from SemiWiki (Daniel Nenni, May 15) — see [[2026-05-15-semiwiki-tsmc-tool-orders-capex]]:**
+- TSMC Q1 2026 board capital appropriations: **$31.3B**, of which **$21.0B is Advanced Node equipment — the highest single-quarter authorization since tracking began Q4 2019**
+- **Trailing-twelve-month Advanced Node equipment approvals ≈ $55B**, nearly consuming TSMC's full 2026 $56B CapEx guide
+- Nenni's verdict: *"TSMC's current 2026 CapEx framework is already becoming too conservative"* — 2Q26 earnings (July 2026) upward revision probability "increasing"
+- **Which means** Dylan's qualitative "$100B by 2028" projection has now been independently corroborated with hard tooling-order data from a different source class (industry insider vs. supply-chain analyst). The 2027 cleanroom-space bottleneck row is now backed by *measurable* equipment order flow, not just narrative.
 
 **3. Independent supply-chain sold-out list (confirms multiple bottleneck rows)**
 > *"It's even like a PCB to make a PCB requires copper foil and that copper foil is sold out and people are making prepayments for it… [Glass fibers] are completely sold out. Anything and everything that has a pulse and is sold out."*
@@ -168,3 +174,4 @@ The previous version of this roadmap covered only the **physical** bottlenecks (
 4. [[2026-05-16-horace-he-ml-systems]] — memory-bandwidth sub-bottleneck; matmul/non-matmul 15× cliff; FP4 precision lever
 5. [[2026-05-16-sergey-levine-physical-intelligence]] — robot-context memory parallel; "robotics is software AND industrial" reinforcement
 6. [[2026-05-16-dylan-patel-invest-like-best]] — DRAM 2-3x pricing, TSMC 2028 ~$100B capex, supply-chain sold-out enumeration (added 2026-05-17)
+7. [[2026-05-15-semiwiki-tsmc-tool-orders-capex]] — Daniel Nenni / SemiWiki: TSMC Q1 2026 board appropriations $31.3B with record $21B Advanced Node equipment line; TTM equipment orders forcing upward CapEx guide revision (added 2026-05-17)

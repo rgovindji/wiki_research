@@ -9,6 +9,41 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] ingest | SemiWiki (Daniel Nenni) — TSMC Record Tool Orders / CapEx Shockwave
+
+User surfaced SemiWiki (semiwiki.com) as a new monitored source — industry-insider blog + forum run by Daniel Nenni, longtime semi industry analyst. Saved [[reference-semiwiki]] memory entry. **First article ingested**: Nenni's May 15 piece on TSMC's record Q1 2026 tool orders.
+
+### Source
+[[2026-05-15-semiwiki-tsmc-tool-orders-capex]] — Daniel Nenni, "TSMC's Record Tool Orders Hint at Another CapEx Shockwave" (May 15, 2026)
+
+### Why ingested (high-leverage data)
+- TSMC Q1 2026 board capital appropriations: **$31.3B** total (down from $45.0B Q4 2025 — but composition is the story)
+- Of that, **$21.0B is Advanced Node equipment** — **the highest single-quarter authorization since tracking began Q4 2019**
+- **Trailing twelve-month Advanced Node equipment approvals ≈ $55B** vs. TSMC's full 2026 CapEx guide of ~$56B → math forces either spending cadence drop or guide raise
+- Nenni's verdict: "TSMC's current 2026 CapEx framework is already becoming too conservative"; 2Q26 earnings (July 2026) upward revision probability "increasing"
+- **Specialty Devices + Advanced Packaging $0** Q1 approvals attributed to digestion of prior massive allocations (silicon photonics, CoWoS, SoIC), not demand weakness — but worth monitoring
+
+### Why this matters in context
+- Dylan Patel ([[2026-05-16-dylan-patel-invest-like-best]], ingested *earlier today*) qualitatively projected TSMC capex "approaching $100B by 2028"
+- Nenni provides the **hard tooling-order data** that mechanically validates Dylan's trajectory — first concrete corroboration from a different source class
+- The [[bottleneck-roadmap]] 2027 cleanroom-space row now has *quantitative* equipment-order data backing the framing, not just narrative
+- Reduces "this is one analyst's view" risk on the TSMC capex framework
+
+### Wiki touched
+- Created [[2026-05-15-semiwiki-tsmc-tool-orders-capex]] (source summary)
+- [[TSM]] — added 2026-05-15 recent development with $31.3B / $21B composition and Nenni framing; updated Sources list
+- [[bottleneck-roadmap]] — added Nenni corroboration section to the Dylan TSMC $100B 2028 update; bumped sources to 7
+- [[index]] — listed the new source in both Recent Ingests and Sources sections
+
+### Tooling notes (WebFetch depth testing)
+User asked how deep WebFetch can navigate.
+- **Works**: arbitrary public URLs (article pages, category pages); discovering article URLs from category index pages by stringing fetches together
+- **Limited**: SemiWiki **forum thread content is GATED** behind registration — guest users see thread titles + previews only, not full posts. Industry-insider commentary in forums is therefore inaccessible without an authenticated session
+- **No interactive navigation**: WebFetch can't click links, scroll, or maintain session state across fetches. Each fetch is independent
+- **Recommendation**: stick with manual triage (user flags articles → I WebFetch them). No scraper needed. If forum access becomes important later, consider Chrome devtools MCP with authenticated session
+
+---
+
 ## [2026-05-17] research | New coverage initiated: SOITEC (SOI.PA) — photonics-SOI substrate monopoly
 
 User flagged Soitec from a semiconductor forum mention and is considering starting a small position. Did batched web research and created [[SOITEC]] company page (stub-to-medium depth — full FY26 results May 27 will trigger upgrade or downgrade).
