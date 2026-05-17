@@ -75,6 +75,7 @@ Neocloud peer to [[CRWV]] — **NVDA invested $2B for 8.3% stake**, locked in **
   - 2026 revenue guide $3-3.4B per coverage; ARR target $7-9B EOY 2026 per coverage (these specific numbers not in the press release sourced; from earnings call coverage)
 - **2026-03** — **Microsoft $17.4B 5-year GPU infrastructure deal** (new, separate from Meta).
 - **2026-03** — Meta contract expanded from $3B initial to up to $27B (with $12B committed first 5 years).
+- **2026-05-17 PM — Total hyperscaler backlog ~$50B+; 75%+ of capacity now OWNED (vs leased)** ([[2026-05-17-multi-agent-research-batch]] Agent F). Backlog stack: $27B Meta + $17.4B MSFT + $1B Amazon + others = $50B+ committed. **CapEx guide raised to $20-25B for 2026**; $6B+ new capital raised. **Owned-vs-leased shift to 75%+** improves long-term FCF profile (capex front-loaded, no recurring lease drag). PA 1.2 GW site on track. **Stance reinforced (bull / high conviction)** — Meta deal de-risks single-customer concentration (was MSFT-heavy); owned capacity + $9.3B cash position de-risks 2027 ramp.
 - **2026-03** — **NVDA $2B investment for 8.3% stake.** Jensen Huang: "agentic era" framing.
 - **2026-04** — SemiAnalysis [[2026-04-01-semianalysis-gpu-rental-index]] featured comment: "Long NBIS." Now validated by Q1 print.
 

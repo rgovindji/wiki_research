@@ -142,6 +142,57 @@ Three parallel Haiku subagents spawned to research non-SemiWiki primary sources 
 - [Soitec IR](https://www.soitec.com/home/investors)
 - [Yahoo SOI.PA analysis](https://uk.finance.yahoo.com/quote/SOI.PA/analysis/)
 
+## Agent D: MU Q3 FY26 pre-earnings (late June print)
+- **Stock $715.80; ATH $818.67 (May 11); +154% YTD**
+- **Mizuho $740 PT (May 6); DA Davidson PT to $1,000 (May 11)**; consensus PT ~$481-530
+- Q2 2026: $23.86B revenue (+196% YoY)
+- **Q3 FY26 guide: $33.5B ± $750M, 81% GM, $19.15 EPS** — extraordinary numbers
+- MU shipping **12-high 36GB HBM4 to NVIDIA Vera Rubin in volume from Q1 2026**; 15K wafer/month HBM (30% of output) through 2026
+- **HBM4 market share 2026 (TrendForce): SK Hynix 54% / Samsung 28% / MU ~18%** — MU concentrated in NVDA Vera Rubin (marquee)
+- **Samsung capacity surge: 170K → 250K wpm by Dec 2026** + 1Cnm leadership; could erode MU's premium pricing
+- **DDR5 server contract prices +60-70%** — confirms Dylan's bifurcation thesis
+- $50B gross capex through 2030 (Idaho fabs DRAM 2027 start)
+
+## Agent E: MATCH Act probability + ASML China impact
+- **MATCH Act = "Multilateral Alignment of Technology Controls on Hardware" Act**
+- House sponsors: **Baumgartner, Moolenaar (R)**; Senate sponsors: **Risch, Ricketts, Kim, Schumer (D co-sponsor)** — bipartisan
+- House Foreign Affairs Committee advanced April 22 (had)
+- **No Senate floor vote or House floor vote currently scheduled** (May 17)
+- **Targets specific Chinese fabs**: CXMT, SMIC, YMTC, Huawei, Hua Hong
+- Mechanism includes **post-sale service licenses** for repairs/upgrades
+- **🔑 ASML Q1 2026 China revenue ALREADY dropped to 19%** (from 36% Q4 2025) — decline is happening regardless of MATCH passage
+- **Agent's verdict: 55-70% probability of MATCH passage in 2026**
+- **If passes, ASML revenue impact: -10 to -15% of total** (service restrictions hit margins more than top-line)
+- China response: April 13 "Malicious Entity List" decree; rare earth export controls suspended Oct 2025-Nov 2026 (retaliatory leverage preserved)
+
+## Agent F: CRWV / NBIS / ORCL pre-NVDA-earnings setup
+
+### CRWV
+- Q1 2026 (May 7): $2.078B (+112% YoY); **$99.4B backlog**
+- **Q2 guidance TRAILED consensus**: $2.53B vs $2.69B consensus
+- Stock +80% YTD despite guidance miss
+- Wells Fargo PT $155 (from $135); Deutsche Bank $135 (from $125); 33 analysts Buy
+- **10 customers committed $1B+**; 36% of backlog to be recognized in next 24 months
+- **NVDA bought another $2B in CRWV shares** post-Q1 earnings
+- Lock-up: IPO Mar 2025 → 6-month expired Sept 2025; no secondary flagged
+- **Agent recommends: NEUTRAL on conviction** (down from high) — execution strong but Q2 guidance miss offsets
+
+### NBIS
+- Q1 2026 (May 13): $399M (+684% YoY); Adj EBITDA $129.5M (32% margin); $9.3B cash; +20% post-earnings
+- **Total hyperscaler backlog now ~$50B+** ($27B Meta + $17.4B MSFT + $1B Amazon)
+- **PA 1.2GW owned site on track; 75%+ of capacity OWNED** (vs leased) — improves FCF
+- 2026 capex guide raised to **$20-25B**; $6B+ new capital raised
+- **Agent recommends: UPGRADE bullish** (was already high; confirms)
+
+### ORCL
+- **OpenAI missed FY26 user/revenue targets** (April 28 WSJ) → ORCL -8% one-week
+- ORCL at $195 (May); consensus PT $260 (33% upside) but sentiment tentative
+- $30B/yr OpenAI deal ($300B/5yr Stargate) "still on track" per Dec 2025 mgmt
+- **April miss signals slower OpenAI spend growth into 2H26**
+- $50B FY26 capex committed; **$38B DC debt distribution status unclear**
+- **Anthropic competitive threat per RBC**; Amazon's $8B Anthropic + kernel-mod could pull workloads off Oracle over 12mo
+- **Agent recommends: DOWNGRADE to medium** — wiki already has medium; confirmed
+
 ## Wiki updates planned from this batch
 - [[TSM]]: massive update — NVDA #1 at 19% / Apple #2 at 17%; 2025 revenue $3.8T NT (+31.6%); Q1 2026 GM 66.2%; HPC 61% of revenue; N2 tape-outs 20+ received / 70+ pipeline (1.5x faster adoption than N3); N2 capacity 140K wafers/month by EOY; A16 H2 2026 with SPR; **TSMC-COUPE production begins 2026 at 2x power efficiency vs pluggable**
 - [[AAPL]]: quantitative confirmation of TSMC deprioritization — share dropped 22% → 17% in one year; bear thesis SHARPENS not weakens

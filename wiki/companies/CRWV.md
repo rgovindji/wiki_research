@@ -63,6 +63,7 @@ The largest "neocloud" — leases out high-performance GPU compute to AI labs, h
 ## Recent developments
 - **2026-05-07** — **Q1 2026 EARNINGS BLOW-OUT.** Revenue **$2.078B (+112% YoY)**; **backlog $99.4B (+~50% QoQ)**; Adj EBITDA **$1.157B (56% margin)**; **Anthropic multi-year Claude contract** NEW disclosure; **Meta added $21B in March 2026** (incremental); operating cash flow $2.984B; capex $7.695B. NVDA $2B Class A placement + 5+ GW partnership by 2030. Active power >1 GW; contracted >3.5 GW; 2030 target 8+ GW. 2026 guide $12-13B; exit ARR $18-19B; >$30B ARR EOY 2027. NVIDIA Exemplar Cloud designation for GB200 NVL72 inference. See [[2026-05-07-CRWV-Q1-2026-earnings]].
 - **2026-05-13** — Wiki retroactively processed Q1 print after user flagged it had been missed. Triggered new always-on earnings retrieval workflow.
+- **2026-05-17 PM — Q2 2026 guidance TRAILED consensus** ([[2026-05-17-multi-agent-research-batch]] Agent F): **$2.53B guide vs $2.69B consensus** (-6% guide miss). Stock still +80% YTD despite miss. Wells Fargo PT raised to $155 (from $135); Deutsche Bank to $135 (from $125); 33 analysts Buy consensus. **NVDA bought another $2B in CRWV shares post-Q1**. 10 customers committed >$1B; 36% of $99.4B backlog to recognize in next 24 months. **Bull tension**: extraordinary backlog growth + NVDA capital commitment + customer diversification (10 $1B+ customers) vs guidance miss + premium valuation. **Agent recommended conviction NEUTRAL** (down from high). **House view**: keeping bull / high pending Q2 actual print and any updated 2026 ARR exit trajectory — but the Q2 miss is a yellow flag that warrants closer monitoring on capex execution and customer ramp pace.
 
 ## Related
 [[NVDA]] · [[nvda-supply-chain]] · [[NBIS]] · [[ORCL]] · [[AMD]] · [[META]] · [[ai-capex-cycle]] · [[fed-policy]] · [[2026-05-13-ppi-cpi-shock-positioning]] · [[overview]]
@@ -70,6 +71,7 @@ The largest "neocloud" — leases out high-performance GPU compute to AI labs, h
 ## Sources
 1. [[2026-05-07-CRWV-Q1-2026-earnings]] — official Q1 2026 press release; backlog $99.4B; Anthropic Claude deal disclosure
 2. [[2026-04-01-semianalysis-gpu-rental-index]] — H100 1-yr rental price index, +40% in 5 months, all capacity booked through Sep 2026, sentiment-vs-fundamentals disconnect
+3. [[2026-05-17-multi-agent-research-batch]] — Q2 2026 guidance miss ($2.53B vs $2.69B consensus); NVDA $2B additional share buy; 10 $1B+ customers; agent recommended neutral conviction (added 2026-05-17 PM)
 3. [[2026-04-20-semianalysis-gpu-cluster-cost]] — ClusterMAX 2.1 framework; goodput-based differentiation refutes commoditization bear case
 4. [[2026-05-16-sergey-levine-physical-intelligence]] — off-board robot inference as latent 2028-2030 demand vector
 
