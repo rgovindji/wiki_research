@@ -277,6 +277,62 @@ Accessible only via Stock Connect or wrapper ETFs.
 - **China is the supply chain.** Cleanest design-in suppliers (Sanhua, Leader Drive, Inovance) are PRC-listed. Cheapest unit-economics OEMs (Unitree, AgiBot, UBTECH) are Chinese. A reciprocal US export-control regime restricting Western component sales into Chinese humanoid programs damages Tier 1 names alongside Chinese OEMs.
 - **Sensors have substitutes; magnets don't.** Force-torque, position, and vision sensors face competing chemistries (capacitive vs. magnetic, lidar vs. camera-only vs. radar). Bottleneck rents diffuse. NdFeB magnets have no equivalent substitute path — concentration favors rare-earth plays over sensor plays.
 
+## Adjacent: Robotaxi / autonomous driving (NEW 2026-05-17 PM)
+
+The autonomous-driving leg of physical AI scaled meaningfully in 2025-2026. State of public-market plays:
+
+| Ticker | Listing | Why exposed | Q1 2026 / latest data |
+|---|---|---|---|
+| **[[GOOGL]] (Waymo via "Other Bets")** | NASDAQ | Dominant scaled robotaxi | **500K paid trips/week (May 2026)** — 10x from 50K May 2024; targeting 1M/wk EOY; cost-per-mile $1.98 → $0.99 by 2027; 2026 losses $4.5-6B; **Waymo Ojai (Geely Zeekr partnership) Feb 2026** |
+| **[[TSLA]] (Cybercab)** | NASDAQ | Robotaxi 2-seater | Production started April 2026; **70+ Cybercabs visible at Giga Texas mid-May 2026**; FSD unsupervised Q4 2026 target |
+| **MBLY (Mobileye)** | NASDAQ | Chauffeur OEM-supplier | Q1 2026 rev $558M (+27% YoY); China OEM exports driving; Chauffeur progressing |
+| **WRD (WeRide)** | NASDAQ ADR | Chinese robotaxi US-listed | Q1 2026 rev **$16.5M (+58% YoY)**; ~1,000 vehicles in China; expanding Dubai/Abu Dhabi/Singapore |
+| **PONY (Pony.ai)** | NASDAQ ADR | Chinese robotaxi US-listed | **3,000-vehicle fleet target EOY**; 20+ global cities |
+| **[[AUR]] (Aurora Innovation)** | NASDAQ | Autonomous trucking | Q1 2026: $1M rev / $223M loss; 2026 guide $14-16M; **Hirschbach 500-truck order**; 200+ driverless trucks EOY target |
+| **KDK (Kodiak AI)** | NASDAQ | Autonomous trucking | Sept 2025 SPAC at $2.5B; 8 trucks delivered to Atlas; scaling to hundreds EOY |
+| **Cruise (GM)** | -- | Cruise robotaxi shut Dec 2024 — no longer a story |
+
+**Investability take**:
+- **Cleanest scaled play**: Waymo via [[GOOGL]] (but opaque inside Other Bets)
+- **Cleanest growth-story**: WRD + PONY (Chinese AV plays, US-listed, real revenue) — but **HFCAA delisting risk**
+- **Best US trucking play**: AUR (Hirschbach 500-truck order; only US autonomous-trucking pure-play with real revenue)
+
+**Source**: [[2026-05-17-robotics-multi-agent-batch]] Agent J.
+
+## Adjacent: Defense AI + military robotics (NEW 2026-05-17 PM)
+
+| Ticker | Listing | Why exposed | Recent data |
+|---|---|---|---|
+| **PLTR (Palantir)** | NASDAQ | **Maven AI for DoD** | **Maven designated formal Pentagon program of record March 2026**; contract value $480M (May 2024) → **$13B+ cumulative ceilings**; multi-year budget line item |
+| **AVAV (AeroVironment)** | NASDAQ | Switchblade loitering munitions | $186M Switchblade 600 Block 2 order Feb 2026; Ukraine revenue 38% → 17% (diversification spook); FY26 guide $1.95-2.0B with net loss; Salt Lake City production expansion |
+| **[[KTOS]] (Kratos)** | NASDAQ | XQ-58 Valkyrie + hypersonic | Already on wiki — see [[KTOS]] |
+| **Anduril (private)** | -- | **$5B Series H May 2026 at $61B valuation**; revenue **$2.25B (doubling YoY)**; **$20B US Army Lattice OS contract**; CCA Fury (YFQ-44A) autonomy platform | Largest private defense AI valuation |
+| **Shield AI (private)** | -- | Hivemind autonomous fighter AI; $2B raise March 2026 at $12.7B | USAF selected Hivemind for CCA |
+
+**Top defense AI public pick (agent verdict)**: **PLTR — Maven program-of-record protected $13B cumulative ceilings makes it the most defensible AI revenue stream in public defense markets**. Should be a wiki page (currently a gap — flagged for future).
+
+**Source**: [[2026-05-17-robotics-multi-agent-batch]] Agent L.
+
+## Adjacent: Smart agriculture (NEW 2026-05-17 PM)
+
+| Ticker | Listing | Why exposed |
+|---|---|---|
+| **DE (John Deere)** | NYSE | **Full autonomy corn/soybean by 2030**; See & Spray Gen 2 (77% herbicide reduction); 2026 ships autonomy-ready 2730 ripper + 2230 cultivator; **SaaS-on-tractors recurring revenue buried in ag earnings** — most under-priced AI robotics play per agent |
+| **AGCO** | NYSE | **PTx Trimble OutRun** retrofit autonomy; won Davidson Prize twice |
+| **CNH (CNH Industrial)** | NYSE | Raven Industries autonomy subsidiary |
+
+**Agent verdict**: **DE is overlooked because its AI narrative is buried inside ag earnings**. Investors focus on margin pressure, not the recurring-revenue software moat forming. As autonomous adoption compounds 2027-2030, this becomes a major SaaS-on-tractors story. **Public markets have yet to reprice DE's long-tail software TAM**.
+
+**Source**: [[2026-05-17-robotics-multi-agent-batch]] Agent L.
+
+## Adjacent: Apple home robot + Meta V-JEPA 2 + Anthropic Project Fetch (NEW 2026-05-17 PM)
+
+- **[[AAPL]] tabletop robot**: 7-inch iPad-scale display on robotic arm; 2026-2027 launch; ~$1K price target; new product category (not humanoid competition); see [[AAPL]] page
+- **[[META]] V-JEPA 2**: 65-80% success on pick-and-place in unseen environments; open-source with Droid benchmark; **Meta announced dedicated humanoid robotics division under Reality Labs**; **Yann LeCun's AMI Labs raised $3.5B for world-model research** targeting robotics + healthcare + wearables
+- **Anthropic Project Fetch (2025)**: Claude team did **7/8 quadruped fetch tasks vs 6/8 without; 9x more code; half the time**. NO standalone Anthropic robotics lab. Claude positioned as **robot programming productivity uplift** rather than first-party robotics company.
+
+**Source**: [[2026-05-17-robotics-multi-agent-batch]] Agent K.
+
 ## Adjacent: Warehouse + Industrial Automation (NEW 2026-05-17 PM)
 
 | Ticker | Listing | Why exposed |

@@ -9,6 +9,61 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | Batch 16 — Robotics 3rd wave (Apple/Anthropic/Meta + Robotaxi + Defense/Agriculture)
+
+3 more parallel Haiku agents — final robotics multi-agent wave. **Total today: 12 Haiku subagents across robotics + adjacencies.**
+
+### Headline findings (alphabetized by impact)
+- **🏆 Palantir Maven = $13B Pentagon program of record** (March 2026 designation). Contract value grew $480M (May 2024) → $13B+ cumulative ceilings. **Most defensible AI revenue stream in public defense markets.** Future wiki page candidate.
+- **Anduril Industries $5B Series H May 2026 at $61B valuation** (revenue $2.25B doubling YoY); **$20B US Army Lattice OS contract**; CCA Fury (YFQ-44A) autonomy platform. Largest private defense AI valuation.
+- **Apple tabletop robot 2026-2027 launch at ~$1K** (Bloomberg / Mark Gurman): 7-inch iPad-scale display on robotic arm; new product category vs humanoid; Vision Pro as robotics training platform validated by NVIDIA + MIT
+- **Meta V-JEPA 2 (2026)** — open-source world model; **65-80% success pick-and-place in UNSEEN environments** with only 62 hrs robot data + 1M hrs video. **Meta announced dedicated humanoid robotics division under Reality Labs** (Llama-powered); **Yann LeCun's AMI Labs raising $3.5B**
+- **Anthropic Project Fetch (2025)** — Claude team did 7/8 quadruped fetch tasks vs 6/8; **9x more code, half the time**. NO standalone Anthropic robotics lab — Claude as robot programming uplift.
+- **Waymo: 500K paid trips/week May 2026** (vs 50K May 2024 = 10x in 2 years); 1M/wk EOY target; **$4.5-6B 2026 losses** within Alphabet Other Bets; cost-per-mile $1.98 → $0.99 by 2027
+- **WeRide (WRD) Q1 2026: $16.5M +58% YoY**; **Pony.ai (PONY) targeting 3K-vehicle fleet EOY** — US-listed Chinese AV plays
+- **Tesla Cybercab 70+ visible at Giga Texas mid-May 2026** — production started April 2026
+- **AUR Hirschbach 500-truck order** confirmed (matches earlier wiki)
+- **John Deere (DE) full autonomy corn/soybean by 2030**; See & Spray Gen 2 (77% herbicide reduction); SaaS-on-tractors recurring revenue "buried inside ag earnings" — most under-priced AI robotics play per agent
+- **NVDA Jetson Thor customer wins**: LEM Surgical Dynamis + LG Electronics + Neura Robotics + Richtech + AgiBot (CES 2026); Archer Aviation IGX Thor; Advantech edge platforms
+- **NVDA Project DIGITS ($3K Blackwell desktop) started shipping May 2026** — "Android of robotics" per TechCrunch
+- **NVDA Jetson T4000 ($1,999, 4x prior-gen, 70W)** launched
+
+### New wiki page
+- **Created [[ISRG]] (Intuitive Surgical)** — Q1 2026 rev $2.77B (+23% YoY); 86% recurring; 85% US system share; 40% EBIT growth; **the ONLY operationally-proven structurally-moated robotics public play today**. Stance bull / medium-high conviction. Cleanest cash-flow-validated AI-robotics theme play; cleaner risk-reward than humanoid bets.
+
+### Wiki pages patched
+- [[AAPL]] — tabletop robot 2026-2027 product category
+- [[GOOGL]] — Waymo 500K trips/week scaling data
+- [[META]] — V-JEPA 2 + Reality Labs humanoid division + LeCun AMI Labs
+- [[NVDA]] — Jetson Thor customer wins + Project DIGITS shipping
+- [[robotics]] — added Robotaxi + Defense AI + Smart Agriculture + Apple/Meta/Anthropic sections (4 new adjacent sections in single update)
+- [[index]] + [[log]]
+
+### Public-market plays surfaced this batch
+1. **PLTR** — $13B Maven program of record (future page)
+2. **WRD + PONY** — US-listed Chinese AV (HFCAA delisting risk)
+3. **AVAV** — public defense AI (Switchblade)
+4. **DE (John Deere)** — overlooked AI play with SaaS-on-tractors revenue
+5. **AGCO** — autonomous tractors via PTx Trimble OutRun
+
+### Cumulative robotics multi-agent today: 12 subagents
+1. Tesla Optimus production state
+2. Figure AI funding + deployments
+3. Apptronik / Agility / Boston Dynamics OEMs
+4. Skild / Pi / 1X / Sanctuary foundation models
+5. China humanoid suppliers + Foxconn manufacturing
+6. NVIDIA GR00T / Isaac / Cosmos ecosystem
+7. Robotic surgery + medical robotics
+8. Warehouse + industrial automation
+9. Japanese robotics component suppliers
+10. Apple / Anthropic / Meta robotics
+11. Robotaxi / autonomous driving state
+12. Drone AI / smart agriculture / NVIDIA new chips
+
+**This is the deepest single-day robotics research base on the wiki.** Combined with new ISRG page + XPEV page + extensive sector + theme updates, the AI robotics research base is now genuinely comprehensive.
+
+---
+
 ## [2026-05-17] autonomous-session | Batch 15 — Robotics adjacencies (medical / warehouse / Japanese components)
 
 3 more parallel Haiku agents for robotics depth: surgical robotics + warehouse automation + Japanese components.
