@@ -184,6 +184,12 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 ### Humanoid robotics (NEW 2026-05-17 PM)
 - [[XPEV]] — XPeng Motors NYSE ADR; **¥100B IronMan/IRON humanoid commitment**; 1K+/month late 2026 mass production target; in-house Turing AI chip; former NVIDIA Android manager leads robotics; only US-listed pure-play humanoid OEM at scale outside Tesla; **stance: bull (low-medium conviction)** — speculative 2026-2028
 
+### Cybersecurity AI (NEW 2026-05-17 PM)
+- [[CRWD]] — CrowdStrike; AI-native EDR; $5.25B ARR; **record $1.01B net new ARR FY26**; AIDR +5x QoQ post-Pangea; 23% YoY at scale; **stance: bull (medium-high conviction)** — data flywheel moat at scale
+
+### Healthcare AI (NEW 2026-05-17 PM)
+- [[TEM]] — Tempus AI; Q4 2025 rev $367M (+83% YoY); **first adj-EBITDA-positive**; 2026 guide $1.59B (+25%); **ARK +24% Q1 2026 (3.2% of ARKK flagship)**; Medtronic + Gilead enterprise; **stance: bull (medium conviction)**
+
 ### Defense AI + Aerospace + Hypersonic (NEW 2026-05-17 PM)
 - [[PLTR]] — Palantir Technologies;
 - [[AVAV]] — AeroVironment NYSE; **Switchblade loitering munitions + JUMP 20 + Quantix**; combat-validated Ukraine + Israel deployments; **+143.4% revenue growth most recent quarter; 45x forward P/E vs PLTR 82-97x**; **$3.9B backlog**; analyst PT $316.88 vs spot $158 (100% upside); **stance: bull (medium conviction)** — most attractive valuation-friendly defense AI hardware play

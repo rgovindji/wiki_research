@@ -28,6 +28,7 @@ Solid-oxide fuel cell maker for data center primary power. **Dylan Patel / SemiA
 - AI capex cycle pulls fuel cells in alongside combined-cycle as supply response
 - Cost premium absorbable: combined-cycle ~$1,500/kW vs. alternatives up to $3,500/kW translates to **+10c/hr Hopper TCO** — easy to pay
 - Fits the 800V DC architecture push (NVIDIA Beam Rubin DSX ecosystem)
+- **🔥 2026-05-17 PM update — Q1 2026 +130% YoY rev $751M; $5B Brookfield partnership; Oracle 2.8 GW supply** (per [[2026-05-17-quantum-energy-smr-accelerator-multi-agent]] Agent X). **2 GW annual capacity target**; **80% of first nine months 2026 fuel cell deal volume locked to Oracle alone**. SOFC tech delivers 60% electrical efficiency + 90% combined heat/power. Brookfield partnership = utility-scale deployment vehicle. **Which means**: BE has moved from "AI data center fuel-cell hopeful" to "operationally validated at hyperscale" — Oracle Project Jupiter 2.8 GW + Brookfield $5B = multi-year revenue visibility.
 
 ## Bear case / risks
 - **Higher cost** than combined-cycle baseline — adoption depends on supply-chain urgency
