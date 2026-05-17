@@ -9,6 +9,63 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | Batch 19 — Quantum + Energy + SMR + AI Accelerator (4 more Haiku = 24 total today)
+
+4 more parallel Haiku subagents extending wiki coverage to quantum + energy storage + SMR nuclear + AI accelerator competitive landscape.
+
+### 🔥 Headline finding: NVIDIA acquired Groq for $20B Dec 2025
+- Largest NVDA M&A ever (assets only; cloud excluded)
+- Effectively removes leading LPU inference competitor
+- **SambaNova being acquired Intel $1.6B down-round** (from $5B 2021)
+- **Tenstorrent: AMD/Intel acquisition expected**
+- Graphcore: SoftBank acquired
+- **Pure-play AI accelerator IPO market is DEAD** post-CBRS — CBRS was anomaly
+- NVDA owns inference IP layer; AVGO owns custom hyperscaler ASIC; TSMC fabs both
+
+### Other major findings
+- **CBRS week 1**: $185 → $350 open (+89%) → $311 (+68% close day 1) → ~$280 day 2 (-10%); ~$95B mcap; **lock-up Nov 16, 2026** material supply pressure into Q4
+- **AVGO 60% custom AI chip share by 2027**; $100B+ AI chip TAM (Counterpoint, AVGO CEO)
+- **Quantum: MSFT + Atom Computing first commercial fault-tolerant system to Novo Nordisk Denmark mid-2026** (watershed)
+- **Quantinuum (QNT) IPO S-1 filed May 2026** by Honeywell (majority owner) — IPO mid-2026 likely
+- **IonQ Q1 2026 +755% YoY revenue**; Rigetti Lyra 336-qubit H2 2026; D-Wave bookings +1,994% Q1
+- **Lithium price +197.67% YoY May 2026** (bottom in); ALB Q1 +148% EBITDA; reduced debt $1.3B
+- **QuantumScape (QS) Eagle Line pilot Feb 2026** + QSE-5 B1 samples shipping — 2-3 years ahead of Solid Power
+- **CATL 46.64% China share April 2026** vs BYD declining (16.83%)
+- **Oklo (OKLO) late 2027 / early 2028 Aurora criticality target** — earliest SMR commercial deployment
+- **X-energy IPO April 2026 $1B raise + 31% pop**; Amazon 5 GW deal by 2039
+- **Vistra (VST) Meta 2,609 MW 20-yr PPA**; **Constellation (CEG) Microsoft TMI 1,600 MW** — nuclear-for-AI duopoly
+
+### New wiki pages (this batch)
+- **[[GE]]** — GE Aerospace; AI predictive maintenance $500M-$1B by 2028 opportunity; 21.8% Q1 OM
+- **[[TDG]]** — TransDigm; aftermarket compounder; Cohen Q1 13F position
+- **[[PL]]** — Planet Labs; $900M defense backlog NGA + DIA
+
+### Wiki pages patched (this batch)
+- [[NVDA]] — Groq acquisition $20B; SambaNova/Tenstorrent acquisitions; reinforces inference moat
+- [[CBRS]] — Week 1 trading; Nov 16 lock-up; competitive landscape post-Groq
+- [[index]] — added GE + TDG + PL; multi-agent source entry
+
+### Deferred new pages (would deepen on user signal)
+- **OKLO** (Oklo) — SMR fastest-commercial
+- **VST** (Vistra) — nuclear + AI PPAs
+- **CEG** (Constellation) — Microsoft TMI restart
+- **ALB** (Albemarle) — lithium recovery beneficiary
+- **IONQ** (IonQ) — quantum pure-play
+- **HON** (Honeywell) — Quantinuum IPO majority + diversified
+- **QS** (QuantumScape) — solid-state battery winner
+
+### Cumulative session totals (final final)
+- **Commits**: 22+ pushed
+- **Source summaries**: 17
+- **New wiki pages today**: INTC, SOITEC, bank-of-japan, CDNS, XPEV, ISRG, PLTR, HWM, AVAV, GE, TDG, PL = **12 new pages**
+- **New playbook**: 2026-06-16-boj-decision
+- **Wiki pages patched**: 35+ unique
+- **Haiku subagents spawned**: **24** total (12 robotics + 3 insider/13F/IPO + 5 space/aerospace + 4 quantum/energy/SMR/accelerator)
+
+This is the deepest single-day research session by an order of magnitude. Wiki now covers AI + Robotics + Semi + Aerodynamics + Space + Defense + Nuclear + Quantum + Energy + Critical Minerals.
+
+---
+
 ## [2026-05-17] autonomous-session | Batch 18 — Space + Aerospace multi-agent (5 more Haiku agents = 20 total today)
 
 User expanded scope to AI + Robotics + Semi + Aerodynamics + Space. 5 parallel Haiku agents on space + aerospace + defense.
