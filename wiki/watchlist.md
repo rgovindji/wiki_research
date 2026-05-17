@@ -46,7 +46,7 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 | [[LITE]] | bull / high conviction | NVDA $2B (paired with COHR); EML supplier; OCS backlog $400M+ | EML production capacity |
 | [[DELL]] | bull / high conviction | First-mover Vera Rubin + GB300; enterprise AI channel moat | ISG segment growth |
 | [[JBL]] | bull / medium conviction | AI rev $13.1B FY26 (+46%); NC facility mid-2026 | Intelligent Infra segment growth |
-| [[ARM]] | bull / medium conviction | Royalty stream scales with Vera Rubin volumes 2H 2026 | Vera Rubin volume ramp |
+| [[ARM]] | bull / medium conviction | Royalty stream scales with Vera Rubin volumes 2H 2026; **NEW cross-cycle CPU-shortage beneficiary** as x86 constraints push hyperscalers to custom Arm-based servers | Vera Rubin volume ramp; AWS Graviton / GCP Axion / MSFT Cobalt growth |
 | [[SNPS]] | bull / medium conviction | EDA duopoly + NVDA $2B for AI-accelerated tools | NVDA-co-developed product traction |
 | [[NBIS]] | bull / **HIGH** conviction *(upgraded from medium 2026-05-13 on Q1 blow-out)* | NVDA $2B (8.3% stake); **MSFT $17.4B + Meta $27B = $44.4B contracted**; **Q1 2026: rev +684% YoY to $399M; Adj EBITDA $129.5M (profitability inflection); op cash flow $2.26B; cash $9.3B; guide $3-3.4B; ARR $7-9B EOY**. **MOVED TO LONG-TERM CORE candidate.** | Q2 print sustainability; third hyperscaler customer; PA 1.2GW ramp |
 | [[CRWV]] | bull / **HIGH** conviction *(upgraded from medium 2026-05-13 on Q1 blow-out)* | **Q1 2026: rev $2.078B (+112% YoY); BACKLOG $99.4B (~50% QoQ); Adj EBITDA $1.157B (56% margin); Anthropic Claude deal NEW; Meta +$21B March**; NVDA $2B + 5+GW partnership. 2026 guide $12-13B; exit ARR $18-19B; >$30B EOY 2027. **Largest AI infra backlog in public markets. MOVED TO LONG-TERM CORE candidate.** | Q2 Adj op income expansion ($30-90M guide); capex pace sustainability; rate-refi risk |
@@ -75,11 +75,13 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 | [[LMT]] | bull / medium conviction | **NEW 2026-05-13.** Largest US defense prime; F-35 + Sentinel + Aegis + Golden Dome co-prime; Q1 $18.0B rev (+9.1% YoY); ~3% dividend yield. Mature compounder. | F-35 sustainment renegotiation; Sentinel cost overruns; Golden Dome contract structure |
 | [[NOC]] | bull / medium conviction | **NEW 2026-05-13.** B-21 Raider + Sentinel ICBM primes; record $95.7B backlog FY25; FCF +26% YoY to $3.3B; 2026 guide $43.5-44B; +29% YTD 2026. | Q2 print; B-21 production rate disclosure; Sentinel program milestones |
 | [[KTOS]] | bull / medium conviction | **NEW 2026-05-13.** Mid-cap defense specialist; XQ-58 Valkyrie autonomous drones + Mako hypersonic + Space Force training systems. ~$5B cap. Anduril (private) is the competition. | CCA program contract structure; Mako test milestones; Q2 print |
+| [[SOITEC]] | bull / low-medium conviction | **NEW 2026-05-17.** Sole qualified photonics-SOI substrate supplier to TSMC/GF/Tower; NVDA Spectrum-X + AVGO Davisson + MRVL Celestial CPO substrates; iPhone 17 mmWave on FD-SOI (Yole/TechInsights confirmed); stock has rallied 6x off Dec 2025 lows so valuation tension is the main pushback. Paris-listed only (SOI.PA). | May 27 FY26 earnings binary event; Photonics-SOI absolute revenue print; any CPO ramp commentary from NVDA/AVGO |
 
 ## Hold / monitor
 
 | Ticker | Stance | One-line thesis | Trigger to watch |
 |---|---|---|---|
+| [[INTC]] | neutral / low conviction | **NEW 2026-05-17.** Binary 18-24 month event-driven trade. Bull: gov 9.9% stake, Apple/Tesla/Terafab wins, +200% YTD, CPU-shortage ASP benefit, Nenni's "GO INTEL" demand-side view. Bear: -16.61% post-Xi summit, AMD outperforming 5x, 18A yields slip to 2027, $125.5B capex forensics, insider "no strategy" + Apple flagship modem went to TSMC not Intel. | May 27+ 18A yield data; AMD Q2 print (early Aug); Apple-Intel any official confirmation; Terafab construction milestones |
 | [[STM]] | neutral / medium conviction | 800V DC partner but auto downturn caps near-term torque | Auto + industrial trough |
 | [[ON]] | bull / medium conviction *(UPGRADED neutral → bull 2026-05-13)* | **Q1 2026: AI data center +30% QoQ, on track to DOUBLE YoY 2026**; broad adoption across XPU vendors + hyperscalers. SiC auto leg intact. Long-term targets 10-12% CAGR, 53% GM. | AI DC quarterly progression; auto cycle recovery; named hyperscaler design wins |
 | [[SMCI]] | neutral / low conviction | Strong Blackwell support but accounting/legal overhang | Quarterly filing cleanliness |
