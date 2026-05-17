@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
-last_updated: 2026-05-16
+last_updated: 2026-05-17
 last_full_review: 2026-05-09
-sources: 5
+sources: 6
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -42,6 +42,38 @@ Synthesized from the May 2026 Dwarkesh × Dylan Patel interview ([[2026-05-09-dw
 - Elon wants 100 GW/yr → 50% share is implausible
 - Tool cost: **$300-400M** each
 - $50B of data center CapEx per GW vs. only **$1.2B of EUV tooling** per GW → enormous leverage
+
+## Dylan Patel update: memory 2-3x and TSMC $100B 2028 capex (NEW 2026-05-17)
+
+Per [[2026-05-16-dylan-patel-invest-like-best]] (Dylan's second deep podcast in a week — Invest Like the Best, mid-May 2026), two anchor numbers sharpen the memory + fab sequence on this page:
+
+**1. DRAM pricing structurally 2-3x where it was**
+> *"You can't make HBM with [non-extreme UV] tools. So the only way you make HBM is taking down DRAM capacity to convert it to HBM, which has been happening for the last two years, but the demand for DRAM keeps growing… So a lot of DRAM has been left to make HBM — that's part of why DRAM pricing has been 2-3x where it was."*
+
+This *sharpens* the existing 2025-2026 memory-bottleneck row: it's not just HBM tightness anymore — **conventional DRAM is structurally re-priced** because the wafer-conversion math is one-way (you can't quickly re-allocate back to commodity DRAM). Reinforces [[MU]] medium-term thesis well beyond the HBM4 ramp.
+
+**2. TSMC 2028 capex could approach $100B**
+> *"TSMC's capex is increasing massively. It's like 56 billion this year. Wei said it'd go up next year. By 2028, the numbers I'm running, it's nearing 100 billion of capex from TSMC alone — almost as much as Nvidia is spending."*
+
+This is the **single biggest upward revision** to the 2027 cleanroom-space bottleneck row. Prior wiki framing assumed TSMC capex flattening at the $55-65B range; Dylan's projection implies a 70-80% increase. Direct read-through:
+- **[[KLAC]] / [[LRCX]] / [[AMAT]] / [[TER]]** addressable spend ~doubles vs. prior baseline
+- **[[ENTG]] / [[APD]]** (fab consumables + industrial gases) — 15-20 yr BOO contracts capture the upside
+- **[[TSM]] capex intensity** shifts from "high but stable" to "structurally rising for 3+ years"
+- **Why TSMC can afford it**: per Dylan, "in five years TSMC will have a 100 billion dollar a year free cash flow business" — capex funded out of operating cash flow, not balance sheet stress
+
+**3. Independent supply-chain sold-out list (confirms multiple bottleneck rows)**
+> *"It's even like a PCB to make a PCB requires copper foil and that copper foil is sold out and people are making prepayments for it… [Glass fibers] are completely sold out. Anything and everything that has a pulse and is sold out."*
+
+Dylan's enumerated "sold out" list maps directly onto this page's bottleneck rows:
+| Sold out (per Dylan) | Wiki row |
+|---|---|
+| HBM / DRAM | 2025-2026 |
+| TSMC packaging | 2026-2027 |
+| ASML EUV | 2028-2030 |
+| Glass fiber substrates | 2027 (fab consumables) |
+| **Copper foil for PCBs** | [[copper-thesis]] (independent confirmation) |
+
+**Which means:** the wiki's bottleneck sequence has now been independently validated by Dylan in two separate appearances (this one + [[2026-05-09-dwarkesh-dylan-semianalysis]]) within 2 weeks. The numbers are sharpening upward, not downward. The 2027-2028 fab-equipment trade window is **wider** than this page previously implied.
 
 ## Sub-bottleneck: memory bandwidth (always-on within compute) — NEW 2026-05-16
 
@@ -134,3 +166,4 @@ The previous version of this roadmap covered only the **physical** bottlenecks (
 3. [[2026-05-16-jim-fan-nvda-robotics]] — model + data layer extension; WAM paradigm; dexterity scaling law; 2040 endgame framing
 4. [[2026-05-16-horace-he-ml-systems]] — memory-bandwidth sub-bottleneck; matmul/non-matmul 15× cliff; FP4 precision lever
 5. [[2026-05-16-sergey-levine-physical-intelligence]] — robot-context memory parallel; "robotics is software AND industrial" reinforcement
+6. [[2026-05-16-dylan-patel-invest-like-best]] — DRAM 2-3x pricing, TSMC 2028 ~$100B capex, supply-chain sold-out enumeration (added 2026-05-17)

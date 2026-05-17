@@ -235,6 +235,22 @@ Damodaran: 10 years ago chips were **3% of S&P 500**; today **17%**. Sector up *
 
 **Discount**: Damodaran is a long-horizon valuation expert, not a near-term tactician (he admits he was lucky on Intel). But the data points — 17% S&P share, 60% in 2 months — are real and notable. Treat as a *position-sizing prompt* for [[NVDA]] / [[MU]] / [[AMAT]] / [[KLAC]] / [[LRCX]] / [[ASML]], not a stance-change prompt. The long-term theses remain intact regardless of a near-term correction.
 
+## Anthropic gross margins: 30% → 72% in 5 months (NEW 2026-05-17)
+
+Per Dylan Patel ([[2026-05-16-dylan-patel-invest-like-best]]): Anthropic's gross margins started 2026 at "30-something %" per a leaked funding-round document, and now floor at **72%** per Dylan's math. ARR has grown $9B → $30B → $40-45B "by airtime."
+
+> *"Where on earth does a business like this grow margins like that? In principle their demand is so high they're able to cut back on usage limits, rate limits, all these things... Even if you assume all incremental compute they've got went to inference, their margins are at a floor of 72%."*
+
+**Bull-case implications:**
+- The "labs are unprofitable money pits" framing the wiki has tracked via Zitron/Kedrosky is being empirically falsified at the per-token level. Inference IS profitable; training is the cost center, and Anthropic is funding both through accelerating ARR growth.
+- Token pricing power means Anthropic can keep margins expanding while OpenAI catches up to capability tier — OpenAI then captures the second-tier demand at 50% gross margins (still healthy).
+- **For [[NVDA]]**: lab margin expansion = more capex labs can fund = more GPU orders. The compute-capacity-constrained narrative (Anthropic compute-constrained per Dylan) is supportive of NVDA demand visibility.
+
+**Bear-case nuance:**
+- The training/research compute still doesn't show up in unit margins — Anthropic still spends billions on next-generation model research not allocated to current inference revenue.
+- "Big consensus trade" applies — if lab profitability becomes consensus, the value-capture moves to compute providers (NVDA + neoclouds) rather than the labs themselves.
+- Dylan's prediction: "**large-scale protests against Anthropic and OpenAI in 3 months**" (Sam Altman's house Molotov'd twice in two weeks per Dylan) — sentiment risk is a real near-term overhang on lab equity/IPO valuations regardless of profitability.
+
 ## Anthropic's 2028 paper: LeCun regulatory-capture framing contextually validated (NEW 2026-05-17)
 
 Per [[2026-05-14-anthropic-2028-ai-leadership]]: Anthropic published a research/policy paper (May 14, 2026) explicitly advocating tighter US chip export controls + restrictions on distillation attacks, with detailed quantitative claims:
@@ -353,3 +369,4 @@ LeCun goes further — he argues LLMs are *not the path* to human-level intellig
 3. [[2026-05-16-damodaran-profg-markets]] — macro spillover thesis + chip-sector top warning + "AI is still net expense for non-chip Mag 7"
 4. [[2026-05-16-druckenmiller-hard-lessons]] — Druckenmiller reduced (not shorted) AI on '99 rhyme; rotated to biotech/copper/Japan-Korea; ~2 months stale
 5. [[2026-05-14-anthropic-2028-ai-leadership]] — Anthropic policy paper providing both/and framing: empirical compute-gap data + commercially-motivated policy advocacy (added 2026-05-17)
+6. [[2026-05-16-dylan-patel-invest-like-best]] — Anthropic margin expansion 30%→72%; protest prediction; productivity reset framing (added 2026-05-17)

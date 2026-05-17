@@ -126,6 +126,14 @@ Three independent demand vectors are rotating upward simultaneously — AI data 
 - **Ivanhoe Mines (IVN.TO)** — Friedland's company; Kamoa-Kakula in DRC is one of the world's best new mines. Political risk.
 - **Hudbay Minerals (HBM)** — Canada/Peru; smaller scale.
 
+## Dylan Patel: copper foil sold out across the AI supply chain (NEW 2026-05-17)
+
+Per [[2026-05-16-dylan-patel-invest-like-best]]: when Dylan listed the AI infrastructure inputs that are currently sold out, **copper foil for PCBs made the list alongside memory, TSMC capacity, ASML, and glass fibers**:
+
+> *"It's even like a PCB to make a PCB requires copper foil and that copper foil is sold out and people are making prepayments for it. It's like anything and everything that has a pulse and is sold out. People are jumping to get more incremental supply and fighting over the supply for the years after."*
+
+**Independent validation** of the copper-thesis on this page from a tier-1 industry source (Dylan tracks every AI infrastructure input). Notable that copper foil for PCBs is a *much narrower* application than the broader copper demand drivers (data centers, EVs, grid) — meaning the supply tightness shows up even at sub-segments of demand. **Reinforces the structural-shortage framing**.
+
 ## Smart-money positioning (May 2026)
 
 | Source | Position | Time horizon | Notes |

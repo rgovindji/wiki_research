@@ -131,6 +131,28 @@ Catalysts that historically move tech equities materially:
 5. **Chinese stimulus announcements** (especially property + consumer)
 6. **TSMC quarterly results / Taiwan strait incidents** (high-frequency)
 
+## Decoupling now quantified — John Arnold China trip data (NEW 2026-05-17 per [[2026-05-16-john-arnold-invest-like-best]])
+
+Legendary energy trader John Arnold spent a week in China (May 2026) and brought back concrete metrics that quantify the decoupling the wiki has been framing qualitatively:
+
+| Metric | Value (since 2019) |
+|---|---|
+| US-China commercial flights | **Down 70%** |
+| Western expats in Shanghai | **Down 50-75%** |
+| American students studying in China | **Down 90%** |
+| China EV manufacturer count | **100+** |
+| NEO factory build time (first shovel to first car) | **17 months** |
+| Average age of US auto plant | ~40 years (one Chicago-area plant: 100 years) |
+| China robotics company count | **100+** (subsidized at province level) |
+
+Arnold's framing: *"China doesn't need the West anymore... they used to try to copy the West. Now they're world leaders in many of these things."*
+
+Combined with Anthropic's 2028 paper (Huawei = 4%/2% NVDA compute) + HN-thread (36% OpenRouter Chinese tokens) + Levine's "balanced robotics ecosystem" framing, the wiki now has **converging multi-source data** showing:
+- **Decoupling is well underway and accelerating** (people-flow metrics)
+- **China is winning the commodity inference / robotics OEM layers** despite chip constraints (open-weight tokens + EV/robotics manufacturing capacity)
+- **US holds the frontier-edge moat** (compute scale, frontier model capability)
+- **Speed-of-execution gap is the strategic vulnerability** — NEO factory in 17 months vs US plants 40 years old
+
 ## Anthropic publishes "2028: Two Scenarios for Global AI Leadership" (NEW 2026-05-17 per [[2026-05-14-anthropic-2028-ai-leadership]])
 
 Anthropic (May 14, 2026) released a research/policy paper providing the cleanest quantitative framing of the US-China AI compute gap the wiki has captured:
@@ -211,6 +233,7 @@ A new bilateral chokepoint is forming in parallel with the AI-chip story, and th
 
 1. [[2026-05-16-sergey-levine-physical-intelligence]] — robotics supply-chain decoupling framing; "balanced robotics ecosystem" reinforcement
 2. [[2026-05-14-anthropic-2028-ai-leadership]] — Anthropic policy paper; Huawei = 4%/2% NVDA compute share; 11x US-China compute ratio claim; DeepSeek safety-compliance disparity (added 2026-05-17)
+3. [[2026-05-16-john-arnold-invest-like-best]] — Concrete decoupling metrics: flights -70%, expats -50-75%, US students in China -90% (added 2026-05-17)
 
 ## Citations
 

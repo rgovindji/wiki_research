@@ -92,6 +92,24 @@ Per Mitchell Hashimoto + corroborating HN discussion (May 2026): FAANG companies
 
 The wiki's existing coverage of [[CRWV]] and [[NBIS]] is relevant here — both raise capital aggressively, both have significant debt + lease components. Their refinancing risk increases materially if the private credit channel tightens.
 
+## GPU depreciation bear case structurally weakens (NEW 2026-05-17)
+
+Per Dylan Patel on Invest Like the Best ([[2026-05-16-dylan-patel-invest-like-best]]): the Burry-style "GPUs depreciate in 3-5 years → hyperscaler asset write-downs imminent → SPV defaults → contagion" thesis the wiki tracks is empirically refuted by secondary-market resigning data:
+
+> *"There are people who have argued GPU full lives are less than 5 years — complete nonsense. There are clusters now resigning three or four-year old Hopper clusters resigning for 3 or 4 more years. There are A100 clusters that are resigning for another couple years. So the useful life is clearly not 5 years. It's maybe even 7 or 8 years."*
+
+**Implications for the contagion thesis on this page:**
+- The "GPU collateral worthlessness" leg of the SPV-default thesis weakens significantly. 7-8 yr useful life vs 3-5 yr assumed in the bear case fundamentally changes the math of GPU-backed loan workouts.
+- Cluster gross margins are *higher* than reported (longer amortization period) → infrastructure operators have more cash cushion.
+- Reinforces the [[2026-04-01-semianalysis-gpu-rental-index]] "H100-worth-more-today" framing.
+
+**What doesn't change** in the bear case:
+- SRT/distribution mechanism risk (independent of GPU value) still applies
+- Hyperscaler revenue concentration in OpenAI + Anthropic still applies
+- Private credit redemption gating still applies
+
+**Net**: the "GPU as collateral" specific bear leg weakens. The "complex financial plumbing" bear thesis remains intact. The contagion mechanism is now more about *deal structure* than *asset value*.
+
 ## Hyperscaler revenue concentration in OpenAI + Anthropic (NEW 2026-05-16)
 
 Per Aswath Damodaran [[2026-05-16-damodaran-profg-markets]] (citing a chart on the show), OpenAI + Anthropic spending commitments make up the following share of each hyperscaler's revenue backlog:

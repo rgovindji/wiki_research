@@ -139,6 +139,29 @@ The wiki tracks humanoid robotics as the canonical "physical AI" thesis (this pa
 
 The component-supplier thesis on this page (MP / OUST / ALGM / AMBA / VPG) is **agnostic** to humanoids vs. trucks — most of the same sensor / rare-earth / edge-AI content goes into both form factors. Autonomous trucking actually de-risks the component thesis by providing earlier-cycle revenue validation for the supply chain.
 
+## Dylan Patel: Few-shot learning breakthrough in 6-18 months (NEW 2026-05-17)
+
+Per [[2026-05-16-dylan-patel-invest-like-best]]: Dylan Patel's robotics timeline is **more aggressive than Levine (5yr) or Fan (2-3yr Turing test)**:
+
+> *"In the next 6 to 18 months we'll start seeing real breakthroughs in robotics that enable few-shot learning... there's a pre-trained robot model and now there's a robot that you have hired or bought or whatever. You show it a few examples and it's able to do it."*
+
+Dylan's view of the architecture race:
+- **VLA models are dead-end** ("inefficient in data") — aligns with LeCun's framing
+- **Large-scale pre-training of robot models** is the unlock — same way humans are sample-efficient because of accumulated experience
+- **Software-only singularity** is "a blip" — once software automation is mature, physical world catches up because models can now write the firmware and microcontroller code that previously bottlenecked robotics development
+- **Robots become "a model package you download onto your standard robot"** — i.e., commoditized SaaS-like distribution
+
+**The four-way researcher contradiction now sharpens to a near-consensus**:
+
+| Source | Timeline | Architecture view |
+|---|---|---|
+| Jim Fan (NVIDIA) [[2026-05-16-jim-fan-nvda-robotics]] | 2-3yr physical Turing test | VLA→WAM (generative) |
+| Levine (Physical Intelligence) [[2026-05-16-sergey-levine-physical-intelligence]] | 5yr fully autonomous | VLA + action expert (pragmatic) |
+| LeCun (AME Labs) [[2026-05-16-yann-lecun-ame-labs]] | 5yr paradigm shift | JEPA only |
+| **Dylan Patel (SemiAnalysis) NEW** | **6-18mo for few-shot breakthrough** | **Large-scale pre-train + sample-efficient transfer** |
+
+**Implication for the wiki's stance**: The compression of the 6-18mo timeline by Dylan (most aggressive yet) reinforces the 2026-2030 component supply chain buildout window. **Bullish for [[MP]], [[OUST]], [[ALGM]], [[AMBA]], [[VPG]] timing.** The component cohort is being chosen *right now* by OEMs for the breakthrough wave that Dylan thinks lands in 18 months.
+
 ## Adjacent commodity bottleneck — copper (NEW 2026-05-16)
 
 Per [[copper-thesis]]: humanoid robots are copper-intensive. Each humanoid contains copper-wound motors, batteries with copper current collectors, and high-density wiring harnesses — exact tonnages are not yet quantified for scaled deployment, but on the demand-curve compounding logic, robotics adds to the AI/EV/grid demand vectors already locking in a structural copper deficit by 2029+ (Goldman). For investors playing the robotics buildout, copper exposure (CPER futures or COPX miner ETF) is an indirect but high-conviction parallel position to the component-supplier basket on this page. **The Tier 1 robotics component stack (MP, OUST, ALGM, AMBA, VPG, ALNT) is the closest direct play; copper is the broader-market commodity expression of the same buildout.**
@@ -223,6 +246,7 @@ Accessible only via Stock Connect or wrapper ETFs.
 2. [[2026-05-16-jim-fan-nvda-robotics]] — NVIDIA Robotics chief scientist on VLA→WAM, dexterity scaling law, 2040 endgame
 3. [[2026-05-16-sergey-levine-physical-intelligence]] — Physical Intelligence co-founder + Berkeley professor: 5-yr timeline anchor, 100× arm cost decline, data flywheel framing, "no Nvidia of robotics"
 4. [[2026-05-16-yann-lecun-ame-labs]] — Turing Award winner + AME Labs founder: VLA = failure, generative video world models = losing proposition, only JEPA / joint-embedding works — completes the 3-way architecture contradiction
+5. [[2026-05-16-dylan-patel-invest-like-best]] — Dylan Patel: 6-18 month few-shot learning breakthrough timeline (most aggressive yet); large-scale pre-train + sample-efficient transfer (added 2026-05-17)
 2. ABI Research — *Humanoid Robot Market Size, 2024 to 2030*. URL: https://www.abiresearch.com/news-resources/chart-data/humanoid-robot-market-size-outlook
 3. MarketsandMarkets — *Humanoid Robot Market Size, Share & Trends, 2025 To 2030*. URL: https://www.marketsandmarkets.com/Market-Reports/humanoid-robot-market-99567653.html
 4. Counterpoint Research — January 2026 humanoid robot installation report (cited in third-party coverage).

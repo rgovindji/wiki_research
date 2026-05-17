@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, datacenter, construction, contractors, labor]
-last_updated: 2026-05-16
+last_updated: 2026-05-17
 last_full_review: 2026-05-12
-sources: 1
+sources: 2
 ---
 
 # Data Center Construction Layer
@@ -69,6 +69,22 @@ Not yet investable as a thesis pivot. Worth tracking — if FIX or EME mentions 
 
 See [[robotics]] for the underlying Levine framework. See [[2026-05-16-sergey-levine-physical-intelligence]] for the source.
 
+## John Arnold: federal permitting reform plausible in 2026 (NEW 2026-05-17)
+
+Per [[2026-05-16-john-arnold-invest-like-best]]: John Arnold (former Enron / Centaurus, now major climate-philanthropy infrastructure backer with direct DC engagement) said he is **"reasonably optimistic" that comprehensive federal permitting reform passes Congress in 2026**, citing:
+
+> *"There's a bill that's brewing right now that has bipartisan support… It is incredible — Senator Schumer says it's the most important piece of energy legislation in the last 50 years and Senator Lee says it's the most important piece of energy legislation in the last 50 years. So the fact that you have those two together saying we need to do this and we need to do it now suggests that this is going to be a really meaningful piece of legislation."*
+
+**Mechanism:** NEPA reform + faster interconnect approvals would specifically compress the **substation + transmission lead-time** which is the single longest pole in datacenter delivery (interconnection queues currently 4-7 years). Without permitting reform, [[PWR]]'s grid build backlog is supply-constrained by federal review; *with* reform, the bottleneck pivots to mechanical-electrical labor (where [[FIX]] / [[EME]] live).
+
+**Which means:**
+- **Bull catalyst** for [[PWR]] (transmission), [[GEV]] (substation equipment), and broadly the datacenter-build cohort — backlog could expand faster than already projected
+- **Probability-weighted** rather than a stance change: Arnold is biased optimistic (he's an advocate), but the Schumer + Lee co-sponsorship is genuinely unusual
+- **What to watch**: a Senate vote in Q3-Q4 2026. If it passes, the 2027 backlog updates from FIX/EME/PWR should show acceleration
+- **Downside if it fails**: status quo (4-7 yr interconnect queues), which still implies massive backlog growth at current rates — just not accelerated
+
+This is the **single largest near-term political catalyst** for the construction-layer thesis. Track via Arnold's commentary and congressional energy committee output. See [[us-china-relations]] for adjacent Arnold thesis context.
+
 ## Bear case
 - **Cyclical at heart** — construction is cyclical; if AI capex pauses, the new-bookings rate falls fast even if the backlog burns down
 - **Already-run stocks** — FIX +47% YTD 2026, EME and PWR both with strong runs; valuation premium real
@@ -90,6 +106,7 @@ See [[robotics]] for the underlying Levine framework. See [[2026-05-16-sergey-le
 
 ## Sources
 1. [[2026-05-16-sergey-levine-physical-intelligence]] — 2028-2030 robot-assisted construction framing; arm-cost-curve thesis input
+2. [[2026-05-16-john-arnold-invest-like-best]] — federal permitting reform 2026 prediction; Schumer + Lee bipartisan bill (added 2026-05-17)
 
 ## Citations
 - Comfort Systems Q1 2026 backlog: https://www.tikr.com/blog/comfort-systems-stock-climbs-47-in-2026-as-data-center-demand-drives-record-11-94-billion-backlog

@@ -9,6 +9,52 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] ingest | Dylan Patel + John Arnold — Invest Like the Best dual ingest
+
+User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_best.txt + john_arnold.txt). Both ingested in one workflow pass.
+
+### Source 1: Dylan Patel — Invest Like the Best (2026-05-16)
+- Source summary: [[2026-05-16-dylan-patel-invest-like-best]]
+- **Second deep podcast in 8 days** (with [[2026-05-09-dwarkesh-dylan-semianalysis]]) — Dylan is now the highest-frequency source in the wiki. Confirms ongoing primary-source status.
+- **Highest-impact new claims:**
+  1. **DRAM pricing structurally 2-3x** — HBM wafer-conversion drains DRAM capacity one-way → conventional DRAM repriced, not just HBM. *Sharpens [[MU]] medium-term thesis.*
+  2. **GPU useful life 7-8 years** (with software stack assumption) — directly refutes Burry's 1-3 year depreciation framing. *Strengthens [[NVDA]] bull case.*
+  3. **Anthropic gross margins 30% → 72% in 5 months** — compute price decline + frontier-model premium drives the curve. *Updates [[ai-bubble-debate]] productivity-reset claim.*
+  4. **TSMC 2028 capex approaching $100B** — 70-80% upward revision vs prior wiki framing ($55-65B). *Major upgrade for [[KLAC]] / [[LRCX]] / [[AMAT]] / [[TER]] / [[ENTG]] / [[APD]] addressable market.*
+  5. **Few-shot robotics learning 6-18 months out** — most aggressive timeline of any source. 4-way researcher contradiction now (Fan 2-3yr / Levine 5yr / LeCun >>5yr / Dylan 6-18mo for narrow tasks).
+  6. **Copper foil for PCBs is sold out** — independent confirmation of [[copper-thesis]] supply-tightness framing.
+  7. **Anthropic ARR $40-45B run-rate, compute-constrained, growing 10%/month** — beyond the $30B Krishna Rao number from May 13.
+
+### Source 2: John Arnold — Invest Like the Best (2026-05-16)
+- Source summary: [[2026-05-16-john-arnold-invest-like-best]]
+- **John Arnold context**: former Enron / Centaurus (largest hedge-fund payday at age 38), now major climate-philanthropy infrastructure backer with direct congressional engagement. Higher signal than a typical macro pundit because he's *in the rooms* shaping policy.
+- **Highest-impact new claims:**
+  1. **China decoupling now quantified** (from personal trip): flights -70%, expats -50-75%, students -90%. Apocalypse-Now-like personal account is the visceral data point the [[us-china-relations]] page was missing.
+  2. **Federal permitting reform plausibly passes 2026** — Schumer + Lee bipartisan; Arnold "reasonably optimistic." Single largest near-term political catalyst for [[datacenter-construction]] / [[PWR]] / [[GEV]].
+  3. **Solar PPA pricing +50%** — broader productivity-reset evidence beyond just AI compute pricing.
+  4. **SMRs are 10-15 year horizon, NOT 2030** — tempers near-term framing on small modular nuclear thesis.
+
+### Wiki touched
+- [[MU]] — added DRAM doubling/tripling thesis section (Dylan attribution)
+- [[NVDA]] — added GPU 7-8yr useful life + Anthropic compute-constrained bullets; source #8
+- [[TSM]] — added 2028 $100B capex possibility in recent developments
+- [[ai-infrastructure-debt]] — added GPU depreciation bear case structural weakening section
+- [[ai-bubble-debate]] — added Anthropic 30%→72% margins section
+- [[ai-capex-cycle]] — added productivity-reset evidence bullet + Anthropic ARR
+- [[us-china-relations]] — added quantified China decoupling section (Arnold trip data)
+- [[robotics]] — added Dylan 6-18mo few-shot section; updated researcher-contradiction to 4-way
+- [[copper-thesis]] — added Dylan independent confirmation of copper foil sold out
+- [[datacenter-construction]] — added Arnold permitting reform 2026 catalyst section
+- [[bottleneck-roadmap]] — added Dylan DRAM 2-3x + TSMC $100B 2028 + sold-out enumeration
+
+### Notes
+- **No stance changes from this ingest** — all sharpens existing positions rather than flipping them. [[MU]] and [[NVDA]] bull thesis sharpens; [[TSM]] capex intensity revises up; [[copper-thesis]] gets independent third-party validation.
+- **Connect-the-dots writing style maintained** throughout — every analytical claim paired with implication.
+- **Contradictions surfaced**: Dylan 6-18mo robotics timeline now creates 4-way contradiction with Fan/Levine/LeCun. Logged on [[robotics]] without resolution per house rule.
+- **Watch items added**: Senate energy committee output Q3-Q4 2026 (permitting reform vote); FIX/EME 2027 earnings calls for robotic-assisted labor mentions; TSMC FY26-FY27 capex guidance updates against Dylan's $100B trajectory.
+
+---
+
 ## [2026-05-17] daily | Anthropic 2028 paper + NVDA Q1 FY27 preview + HBM market update
 
 **Workflow**: 8-step daily update ritual. Saturday — markets closed but new sources from May 14-16 emerged.

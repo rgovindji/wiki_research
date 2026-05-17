@@ -51,12 +51,14 @@ The single point of truth for advanced AI chip manufacturing — every leading-e
 ## Recent developments
 - **2026 Q1** — Revenue grew ~35% YoY; capex guidance raised to $52–56B
 - **2026 (ongoing)** — Arizona fabs progressing toward N3/N2 production milestones
+- **2026-05-17 — 2026 capex now tracking $57.4B** (above prior guide); per Dylan Patel SemiAnalysis ([[2026-05-16-dylan-patel-invest-like-best]]): **TSMC 2028 capex potentially $100B**. Quote: *"3 years from now TSMC is going to spend $100 billion on capex... 2028... a real real possibility."* If realized, this is roughly 2x 2026 spend and represents the largest single-vendor capex bet in semiconductor history. **Direct read-through to [[ASML]] (EUV), [[AMAT]], [[LRCX]], [[KLAC]] equipment vendors** — they all see proportional revenue if TSMC capex reaches that level.
 
 ## Related
 [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[semiconductors]] · [[NVDA]] · [[ASML]] · [[AMAT]] · [[TER]] · [[ENTG]] · [[APD]] · [[AAPL]] · [[market-concentration]] · [[overview]]
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for CPU > GPU allocation discipline and A16-first-customer-is-AI dynamic
+2. [[2026-05-16-dylan-patel-invest-like-best]] — TSMC 2026 capex revised to $57.4B; 2028 potentially $100B (added 2026-05-17)
 
 ## Citations
 - Yahoo TSM quote/news: https://finance.yahoo.com/quote/TSM/

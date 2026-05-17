@@ -91,6 +91,7 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the demand-destruction mechanism and 30%-of-capex-to-memory data
 2. [[2026-04-15-semianalysis-isscc-roundup]] — Samsung HBM4 closing the gap; LPDDR6 specs; primary source for the new competitive-risk addition to the bear case
 3. [[2026-05-16-damodaran-profg-markets]] — chip-sector top warning specifically citing MU; sizing-discipline prompt
+4. [[2026-05-16-dylan-patel-invest-like-best]] — DRAM 2-3x doubling/tripling thesis (added 2026-05-17)
 
 ## Recent developments (2026-05-17)
 - **HBM3E pricing**: Samsung + SK Hynix reportedly raised HBM3E prices by **~20% for 2026 deliveries** (TrendForce, Digitimes)
@@ -98,6 +99,24 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 - **Micron HBM4 production**: Lags SK Hynix + Samsung by 1-2 quarters; **entire 2026 HBM4 capacity already sold out via advance contracts** (confirmed CES 2026)
 - **Market share**: SK Hynix held 53% HBM share Q3 2025 vs Samsung 35%; Samsung custom HBM4E design completing May-June 2026
 - **Implication for [[MU]]**: HBM4 sold-out validates the structural-tightness thesis (good); MU's 1-2 quarter ramp lag means SK Hynix captures the biggest Q3 2026 share gains. The Q4 2026 picture is the catch-up window for MU.
+
+## DRAM doubling/tripling thesis (NEW 2026-05-17 per [[2026-05-16-dylan-patel-invest-like-best]])
+
+Dylan Patel (SemiAnalysis) on Invest Like the Best (recorded ~May 16, 2026 post-Opus-4.7 launch) made the most emphatic DRAM call the wiki has captured:
+
+> *"DRAM will double or triple from here still because that's how much capacity is required... The only way to steal capacity from somewhere else in a capitalist economy is demand destruction via higher pricing. We're not rationing stuff here."*
+
+Key supporting framework:
+- Memory capacity growth limit: ~20-30%/yr DRAM, less for NAND (structural constraint)
+- True incremental new capacity arrival: **"early-late 2027 at best, more realistically 2028"**
+- Counter to consensus: *"People are like 'oh the memory storage is overplayed. Everyone gets it.' And it's like no no no. You don't get it."*
+
+**Which means** for [[MU]]: the existing wiki framing (memory tightness through 2028) is *under-pricing the magnitude*. Dylan's call is for DRAM contract prices to 2-3x from current already-elevated levels, which would propagate to:
+- MU revenue per bit doubling/tripling (offset by share dynamics with SK Hynix/Samsung)
+- Gross margin expansion well beyond current 66% (HBM-driven) framing
+- The 2028 catch-up window is the structural ceiling — but until then, pricing power compounds
+
+**Caveat preserved from existing bear case**: this thesis assumes Samsung HBM4 doesn't disrupt MU's "preferred supplier" pricing premium, and that 70% commodity DRAM revenue holds up. The Dylan call sharpens *upside* but doesn't address the cycle-peak-P/E paradox that remains the primary sizing constraint.
 
 ## Citations
 - io-fund Micron HBM 2026 plan: https://io-fund.com/ai-stocks/micron-stock-up-100-hbm-leader-2026-plan
