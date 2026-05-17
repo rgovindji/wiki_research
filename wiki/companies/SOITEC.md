@@ -76,6 +76,51 @@ The CPO transition is *upstream* of the optical-module layer ([[COHR]] / [[LITE]
 - **Smartphone RF-SOI bottom** — Mobile Communications has fallen 30%+ YoY; even stabilizing at current levels would shift the mix story dramatically.
 - **LNOI commercialization timing** — beyond 2027 but worth tracking.
 
+## Pre-May 27 earnings setup (NEW 2026-05-17 PM per [[2026-05-17-multi-agent-research-batch]] Agent C)
+
+**Stock action and street disconnect**:
+- **Spot €148-171** as of May 17; intraday high €171.35 (May 8); single-day +30.8% (May 4)
+- **YTD: +447%** — massive run
+- **Fundamentals**: Revenue **-10.2% YoY**, net income **-23.5% YoY** in 9M FY26
+- **Disconnect**: Stock up 447% while fundamentals decline — the entire thesis is in the forward 2-3 year photonics ramp story
+- **Sell-side PT average: €53-56** vs spot ~€150 = **58% implied downside per consensus**
+- **JPMorgan reaffirmed Hold** May 14
+- Consensus: 6 buy / 3 sell
+
+**🔑 NEW CEO transition (important pre-earnings context)**:
+- **Laurent Rémont started as CEO April 1, 2026** — **enters first earnings call (May 27) midstream**
+- New-CEO disclosure / guide-reset risk is real; sometimes new CEOs use first call to clear the deck with conservative guide
+
+**Earnings setup**:
+- **FY26 full-year guidance WITHDRAWN Nov 2025** — only Q4'26 sequential guide given (~20% QoQ at constant FX)
+- Q3'26 revenue €160M (-29% YoY); 9M organic -26%
+- Drag: RF-SOI smartphone inventory correction + auto weakness
+
+**Market share confirmed**:
+- **~95% market share of photonics-grade SOI** per BofA March 2026 estimate (sharpens the "sole qualified supplier" wiki framing — 95% is precise market-share data)
+- Photonics-SOI ~17% of total revenue, growing 20-30%+
+
+**External CPO timing data (Agent C synthesis)**:
+- **NVIDIA Quantum-X InfiniBand: early 2026 production** ramping NOW
+- **NVIDIA Spectrum-X Ethernet: 2H 2026** — uses TSMC 3D hybrid bonding + photonics
+- **Broadcom Tomahawk 6 (102.4 Tbps)**: shipping with 200G/lane CPO
+- **Marvell acquired Celestial AI's Photonic Fabric** (confirmed acquisition; was earlier just "Celestial partnership")
+- **GlobalFoundries SCALE platform**: targeting **$1B+ silicon photonics revenue by 2028**
+- **Goldman call: silicon photonics revenue DOUBLING in 2026** across foundries (Trendforce May 7)
+- **TSMC-COUPE production begins 2026** with **2x power efficiency vs pluggable** (per [[2026-05-17-multi-agent-research-batch]] Agent B TSMC IR data)
+
+**RF-SOI demand-side risk**:
+- Qualcomm + MediaTek cut 4nm smartphone AP orders by **15-20M units**
+- Smartphone production -10% YoY to **1.135B units**
+- Memory inflation pressuring handset BOM economics
+- iPhone 17 mmWave thesis intact but no new datapoints
+
+**Conviction-change triggers**:
+- **Upgrade**: photonics >20% of revenue run-rate; new customer announcement (NVIDIA official Soitec credit; ASML or Intel partnership)
+- **Downgrade**: further RF-SOI guidance cut; photonics margin compression; smartphone weakness bleeding into 2027
+
+**Net pre-earnings view**: Bull case technologically validated (95% market share + CPO ramp + COUPE 2026 + Goldman doubling thesis + GFS SCALE $1B+ by 2028). Bear case is valuation (58% sell-side discount) + execution risk + new CEO uncertainty. **May 27 is the binary event** — sizing as a small starter pre-print remains the recommended approach.
+
 ## iPhone 17 mmWave commercial validation (NEW 2026-05-17 PM)
 
 Per SemiWiki / Yole Group / TechInsights teardown analysis ([[2026-05-17-semiwiki-nenni-blog-sweep]] companion article):
@@ -113,6 +158,7 @@ This is a **low-medium conviction starter**, not a high-conviction allocation. T
 ## Sources
 1. [[2026-05-16-dylan-patel-invest-like-best]] — supply-chain sold-out enumeration (indirect confirmation of substrate tightness)
 2. [[2026-05-17-semiwiki-nenni-blog-sweep]] — TSMC's COUPE (Compact Universal Photonic Engine) explicitly confirmed in Y.J. Mii R&D roadmap; Synopsys-TSMC COUPE design flow integration + 224G IP. **Third independent wiki confirmation of Soitec's substrate position** in TSMC's CPO program (added 2026-05-17 PM)
+3. [[2026-05-17-multi-agent-research-batch]] — Pre-May 27 setup: CEO Laurent Rémont start April 1; 95% photonics-SOI share (BofA); +447% YTD vs revenue -10.2%; sell-side PT avg €53-56 (58% downside); CPO timing (NVDA Quantum-X early 2026, Spectrum-X 2H 2026; AVGO Tomahawk 6 with 200G CPO; MRVL acquired Celestial Photonic Fabric; GFS SCALE $1B+ by 2028; Goldman: silicon photonics doubles 2026); TSMC-COUPE production begins 2026 (added 2026-05-17 PM)
 
 ## Citations
 - [Soitec Q3 FY26 Press Release](https://www.globenewswire.com/news-release/2026/02/03/3231393/0/en/SOITEC-REPORTS-Q3-26-REVENUE.html)

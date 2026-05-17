@@ -9,6 +9,69 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | Multi-agent batch 7 — NVDA #1 at TSMC + SOITEC CEO transition + pre-NVDA-earnings consensus
+
+User pushed back on my premature "diminishing returns" framing. Pivoted to multi-agent + evaluate_script architecture for higher throughput.
+
+### Architecture changes (per user's strategic question)
+- **evaluate_script**: tested on Nvidia jobs thread — extracted 10 posts as compact JSON (~10KB) vs estimated 75KB full snapshot = **~85% payload reduction**. Will use for remaining forum work.
+- **Multi-agent parallelism**: spawned 3 Haiku subagents simultaneously, each researching a different non-SemiWiki primary source. Returned in 35-65 seconds with high-leverage findings. **Worked exactly as designed** — they handled the heavy WebSearch/WebFetch work without polluting my context.
+
+### Headline finding from this batch
+🔥 **NVIDIA overtook Apple as TSMC's #1 customer in 2025** per TSMC 2025 Annual Report (April 2026):
+- NVDA: 19% of 2025 revenue (NT$726.97B)
+- Apple: 17% of 2025 revenue (NT$645.17B)
+- 2024: Apple was 22% — **Apple lost 5pp of TSMC share in a single year**
+
+**This is the empirical proof of the [[AAPL]] bear thesis** that the wiki framed qualitatively from [[2026-05-09-dwarkesh-dylan-semianalysis]]. Stance reinforced — bear / medium conviction; deprioritization is now observable at 5pp/year speed.
+
+### Other findings from Agent A (NVDA Q1 FY27 preview)
+- Q1 FY27 consensus: $78.5-78.8B revenue; $1.77-1.79 EPS; +79% YoY; DC growth +35% YoY; DC GM 75% +/- 50bps guide
+- **BofA Vivek Arya raised PT to $320** (from $300, May 13) on AI accelerator TAM raised $1.0T → $1.2T — **citing hyperscaler ASICs (Google TPU, AWS Trainium) as tailwinds NOT headwinds** (paradigm shift in framing)
+- Goldman $250 PT; MS ~$250; UBS/RBC/Cantor consensus ~$291.67
+- Stock $224-225 (-5% from May 14 peak $236, profit-taking); +32% off March low
+- ~280x forward PE = "little room for macro shock or China revenue restatement"
+- China H200: cleared to 10 Chinese firms but **zero deliveries to date**
+- Culper Research short thesis claims >20% NVDA FY26 compute revenue tied to China diversion networks
+
+### Other findings from Agent B (TSMC primary IR)
+- TSMC 2025 consolidated revenue NT$3,809B (+31.6% YoY)
+- Q1 2026 gross margin 66.2% (beat; +3.9pp QoQ)
+- HPC = 61% of revenue (up 20% QoQ); 3nm = 25% wafer revenue; 5nm = 36%; 7nm+ = 74%
+- N2: 20+ tape-outs received, 70+ in pipeline — **1.5x more tape-outs than 3nm at equivalent stage**
+- N2 capacity target: **140K wafers/month by EOY 2026**
+- **A16 on track for H2 2026 with SPR (Super Power Rail) backside power delivery**
+- **TSMC-COUPE production begins 2026 with 2x power efficiency vs pluggable** ← massive for [[SOITEC]]
+- C.C. Wei named Time 100 Pioneers
+
+### Other findings from Agent C (Soitec May 27 setup)
+- **New CEO Laurent Rémont started April 1, 2026** — enters first earnings call midstream
+- **FY26 guidance withdrawn Nov 2025** — only Q4 sequential guide given
+- **+447% YTD** vs revenue -10.2% YoY (massive disconnect)
+- **Sell-side PT avg €53-56** vs spot ~€150 = **58% implied downside**
+- **95% market share of photonics-grade SOI** (BofA March 2026 confirmation)
+- **Marvell acquired Celestial AI's Photonic Fabric** (confirmed; previously partnership-only)
+- **GlobalFoundries SCALE platform**: $1B+ revenue target by 2028
+- **Goldman: silicon photonics revenue DOUBLING in 2026 across foundries**
+- Q-COM + MediaTek cut 4nm smartphone AP orders by 15-20M units; smartphone production -10% YoY to 1.135B
+
+### Wiki touched
+- [[TSM]] — NVDA #1 customer 2025; 2025 rev $3.8T (+31.6%); Q1 GM 66.2%; HPC 61%; N2 tape-outs; A16 H2 2026; COUPE production 2026
+- [[AAPL]] — quantitative bear validation (22% → 17%); 5pp/year deprioritization speed
+- [[NVDA]] — TSMC #1 customer 19%; Q1 FY27 consensus refresh; BofA $320; China H200 wildcard
+- [[SOITEC]] — new CEO Rémont; 95% share confirmed; 58% PT downside; CPO ramp timing; GFS SCALE $1B+
+- [[AVGO]] — Tomahawk 6 + 200G/lane CPO + photonic substrates
+- [[index]] + [[log]]
+
+### Process notes
+- Each Haiku subagent ~$0.001-0.002 cost equivalent (rough estimate); returned 400-word focused reports
+- Total parallel research throughput: equivalent of 30+ minutes serial work compressed to ~1 minute wall-clock
+- Pattern works for: pre-earnings consensus, primary-source IR docs, public analyst notes
+- Pattern does NOT work for: authenticated forum content (single Chrome MCP session); needs me to drive serially
+- **For rest of session**: continue multi-agent for parallel non-SemiWiki work + selective forum browsing via evaluate_script
+
+---
+
 ## [2026-05-17] autonomous-session-summary | End-of-day rollup
 
 User had flu and granted autonomous control for the day. Working via authenticated Chrome MCP session on SemiWiki forum + blog. Five batches successfully committed and pushed.

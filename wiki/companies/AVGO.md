@@ -70,6 +70,7 @@ The non-Nvidia AI infrastructure pure play — designs custom AI accelerators (X
 - **2026-Q1** — Project Titan disclosed: OpenAI custom inference XPU; mass production late 2026; 10 GW by 2029
 - **2026-Q1** — AI revenue $8.4B (+106% YoY)
 - **2026-Q1** — Tomahawk 6 (102.4 Tbps) shipping in volume
+- **2026-05-17 — Tomahawk 6 shipping with 200G/lane CPO + photonic substrates** per [[2026-05-17-multi-agent-research-batch]] Agent C. The networking-silicon stack now has full optical integration — direct read-through to [[SOITEC]] photonics-SOI substrates supplying the CPO module beneath the switch silicon. Goldman: silicon photonics revenue doubling in 2026 across foundries. **Which means**: AVGO's network-silicon moat is compounding with the optical-integration moat; Tomahawk 6 is a generation ahead of the MRC industry consortium (which Google's Apollo/Palomar already obsoleted per [[2026-05-17-semiwiki-forum-sweep-2]] Thread B).
 
 ## Related
 [[NVDA]] · [[nvda-supply-chain]] · [[GOOGL]] · [[META]] · [[CRWV]] · [[NBIS]] · [[ai-capex-cycle]] · [[cloud-hyperscalers]] · [[bottleneck-roadmap]] · [[overview]]
