@@ -191,6 +191,45 @@ Per the wiki house rule (contradictions surfaced, not resolved): in a 72-hour wi
 - **Spatial awareness.** Lidar + stereo cameras + IMU sensor fusion for navigation and obstacle avoidance. [[OUST]] is the highest-quality Western pure-play.
 - **Edge AI inference latency.** Control loops require sub-10ms inference at single-digit-watt power budgets — a different stack than autonomous-driving compute. Favors low-power FPGA + DSP/NPU IP licensing over bulk GPU.
 
+## OEM landscape May 2026 — production-rate data (NEW per [[2026-05-17-robotics-multi-agent-batch]])
+
+**Quantitative production-rate snapshot (most current data — May 2026)**:
+
+| OEM | Listing | Valuation | Production rate (2025-2026) | Customer base | Foundation model |
+|---|---|---|---|---|---|
+| **Unitree** (Hangzhou) | Shanghai STAR IPO ~$610M filed | Private | **5,500 units 2025 → 20K target 2026** ($13.5-73.9K/unit) | Researcher + consumer + early industrial | Proprietary |
+| **AgiBot** (Shanghai) | Private | Unicorn (>$1B) | **5,000 units by end 2025** + multi-fold 2026 | China industrial; gov-backed (Xi visited Apr 2025) | Proprietary |
+| **Figure AI** (US) | Private | **$39B Sept 2025** | **150 units 2025 → 240/month April 2026 → 100K over 4 yrs** | BMW Spartanburg (30K+ X3 vehicles in 11mo pilot); Leipzig expansion summer 2026 | Helix VLA (in-house, ended OpenAI 2/2025) |
+| **Tesla Optimus** | TSLA NASDAQ | (parent) | **Gen 3 July-Aug 2026; 50-100K target 2026; 1M/yr by EOY** | Zero external; "primarily for learning" Q4 2025 | Proprietary on AI5/Samsung Texas |
+| **UBTECH** | 9880.HK | (listed) | **800M yuan+ Walker S/S2 orders 2025** | BYD + Geely factories | Proprietary |
+| **XPENG IRON** | XPEV NYSE | (parent) | **1,000+/month late 2026 target**; ¥100B commit | China automotive | Proprietary on Turing AI chip |
+| **Apptronik** (Austin) | Private | **$5B Feb 2026** ($935M Series A total) | Roadmap: commercial scale 2026 | Mercedes-Benz factories + GXO Logistics | NVIDIA Jetson AGX Orin |
+| **Agility Robotics** | Private | **$1.75-2.12B** | **<1,000 shipped** vs 10K/yr capacity target | Amazon (narrow R&D), Toyota, Mercado Libre, GXO, Schaeffler | Proprietary |
+| **Boston Dynamics** | Hyundai 005380.KS subsidiary | $20-21B internal | 2026 production reserved for Hyundai + Google DeepMind | Hyundai factories (2028 deploy); Spot + Stretch enterprise | **Google Gemini Robotics (NOT GR00T)** |
+| **1X Technologies** | OpenAI portfolio | Private | Neo pre-orders $20K + $499/mo; **2026 units rely on human teleoperators (NOT autonomous yet)** | Consumer pre-orders | Proprietary |
+| **Sanctuary AI** (Vancouver) | Private | ~$140M total raised | Gen-8 Phoenix; "candidate for acquisition" | None disclosed | Magna manufacturing partner |
+| **Fourier Intelligence** | Private | (China) | GR-2 (53 DOF) targeting 2026 mass production | Industrial | Proprietary |
+
+**Cross-cutting observations**:
+- **Unitree is the world's TOP humanoid producer 2025** (5.5K) — more than Tesla + Figure + Agility combined
+- **Figure is operationally ahead of Tesla in commercial deployment** (30K+ BMW vehicles delivered in 11mo pilot)
+- **Tesla's prediction-market consumer-launch probability: ONLY 6%** for June 2026
+- **Bank of America forecasts: 90K humanoid units shipped 2026 → 1.2M by 2030**
+
+## Foundation-model layer (NEW 2026-05-17 PM)
+
+The robotics foundation-model space is bifurcating into **closed-proprietary** vs **open-ecosystem**:
+
+| Player | Valuation | Funding | Strategy | Commercial state |
+|---|---|---|---|---|
+| **Skild AI** (Pittsburgh) | **$14B** Jan 2026 Series C ($1.4B) | NVDA + Lightspeed + Coatue + SoftBank + Bezos | Closed-model platform | **$30M+ ARR**; Foxconn/NVIDIA, ABB, Universal Robots deployments |
+| **Physical Intelligence (π)** | $11B (in talks for $1B raise; $600M Series B late 2025) | Bezos + OpenAI + Thrive | **Open-source (Gemma3 backbone)** | π0.6 with 1000+ citations; no named commercial customers yet |
+| **NVIDIA GR00T** | (NVDA segment) | N/A | **Hybrid (N1.7 commercial license; N2 open)** | Partners: Figure, Skild, ABB, FANUC, KUKA, Universal Robots, Franka, AGIBOT, YASKAWA |
+| **Google Gemini Robotics** | (GOOGL segment) | N/A | Proprietary | Boston Dynamics Atlas runs on this |
+| **Tesla Optimus** | (TSLA segment) | N/A | Closed vertical | Internal only |
+
+**"Linux of robotics" hypothesis**: π0's open Gemma-based stack is the most likely commoditizer. Skild's $14B valuation is **threatened by open-source adoption** — 11+ commercial VLA deployments by Q1 2026 signal moat narrowing.
+
 ## Beneficiaries
 
 **Tier 1 — Real bottleneck (small/mid-cap, humanoid demand is material):**
@@ -207,6 +246,17 @@ Per the wiki house rule (contradictions surfaced, not resolved): in a 72-hour wi
 **Tier 2 — Coincidental exposure (mega-caps, humanoid is a rounding error):**
 
 [[NVDA]], [[AMD]], [[QCOM]], [[TXN]], [[ON]], [[CSCO]], [[ABB]], [[ROK]], [[PH]], [[STM]], [[AMBA]], [[RBC]]. Real component sales into humanoid programs but immaterial revenue contribution through at least 2028. Own these on their primary theses, not as humanoid plays.
+
+**Tier 1.5 — Humanoid-specific public-market plays (NEW 2026-05-17 PM)**:
+
+| Ticker | Listing | Why exposed |
+|---|---|---|
+| **[[XPEV]]** | NYSE ADR | **¥100B IronMan commitment; 1K+/month late 2026 mass production target**; vertical-integrated Turing AI chip; only US-listed pure-play humanoid OEM at scale (outside Tesla) |
+| **HMG (Hyundai)** | NYSE ADR | Boston Dynamics owner; 30K Atlas units/yr factory 2028; Atlas uses Google DeepMind Gemini Robotics |
+| **HNHPF (Foxconn)** | OTC US | Industrial humanoid manufacturing partner (revealed at NVIDIA GTC 2026); Vietnam/Mexico expansion |
+| **MGA (Magna)** | NYSE | Sanctuary AI manufacturing + equity partner |
+| **[[JBL]] (Jabil)** | NYSE | **Apptronik manufacturing partner** — humanoid revenue layer beyond AI servers |
+| **KOID / KSTR** | NYSE ETFs | KraneShares Humanoid Robotics + STAR Market ETFs — diversified A-share exposure (Leader Drive 300695.SZ, Inovance 300124.SZ, Estun 002747.SZ) without QFII requirement |
 
 **Tier 3 — Stretch / narrative inclusion:**
 
@@ -227,6 +277,17 @@ Accessible only via Stock Connect or wrapper ETFs.
 - **China is the supply chain.** Cleanest design-in suppliers (Sanhua, Leader Drive, Inovance) are PRC-listed. Cheapest unit-economics OEMs (Unitree, AgiBot, UBTECH) are Chinese. A reciprocal US export-control regime restricting Western component sales into Chinese humanoid programs damages Tier 1 names alongside Chinese OEMs.
 - **Sensors have substitutes; magnets don't.** Force-torque, position, and vision sensors face competing chemistries (capacitive vs. magnetic, lidar vs. camera-only vs. radar). Bottleneck rents diffuse. NdFeB magnets have no equivalent substitute path — concentration favors rare-earth plays over sensor plays.
 
+## 🔥 Rare earth validation event (NEW 2026-05-17 PM)
+
+**Musk publicly confirmed May 2026**: Tesla Optimus production HIT BY China rare earth export controls; Tesla seeking licenses.
+
+**Hard demand math** (each Optimus = 3.5kg NdFeB):
+- Tesla Optimus alone: **50-100K units 2026 = 175-350 tonnes NdFeB**
+- At 1M units/yr by EOY 2026: **3,500 tonnes NdFeB annual** (Tesla alone)
+- Add Figure (240/month → BotQ 12K/yr target), Apptronik (Mercedes commercial), Agility (10K/yr capacity), Unitree (20K target 2026): **multi-OEM stacked demand**
+
+**Which means**: the rare-earth bottleneck has moved from theoretical to actively-blocking-production at the marquee customer. [[MP]] thesis sharpens materially.
+
 ## Open questions
 
 - Does [[MP]]'s Stillwater plant hit commercial NdFeB magnet production on the H1 2026 schedule, or slip into late 2026? First-shipment confirmation is the single most material near-term datapoint for Tier 1.
@@ -241,6 +302,9 @@ Accessible only via Stock Connect or wrapper ETFs.
 [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[semiconductors]] · [[market-concentration]]
 
 ## Sources
+- [[2026-05-17-robotics-multi-agent-batch]] — May 17 PM comprehensive update: 6 parallel Haiku subagents covering Tesla Optimus production state, Figure AI deployments, Apptronik/Agility/Boston Dynamics OEMs, Skild/Pi/1X/Sanctuary foundation models, China supply chain + Foxconn, NVIDIA GR00T ecosystem. Quantitative OEM production rates, valuations, customer wins, foundation-model bifurcation, rare-earth validation event
+
+## Earlier sources
 
 1. `sources/2026-05-13-x-stack-map-humanoid-robotics.md` — viral X "humanoid stack" thread and stock screenshots that prompted this primer.
 2. [[2026-05-16-jim-fan-nvda-robotics]] — NVIDIA Robotics chief scientist on VLA→WAM, dexterity scaling law, 2040 endgame

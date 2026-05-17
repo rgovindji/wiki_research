@@ -9,6 +9,51 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | Batch 14 — Robotics multi-agent deep-dive (6 parallel Haiku agents)
+
+User asked for "best research base for AI robotics" with multi-agent setup. Spawned 6 parallel Haiku subagents.
+
+### Headline findings
+- **🔥 Musk publicly confirmed May 2026: Tesla Optimus production HIT BY China rare earth export controls** — 3.5kg NdFeB per Optimus; **direct validation of [[MP]] thesis**
+- **Prediction markets: ONLY 6% probability of Optimus consumer sales June 2026** — extreme skepticism vs Tesla 178x 2026 EPS
+- **Figure AI is operationally AHEAD of Tesla** — 30,000+ BMW X3 vehicles built in 11-month Spartanburg pilot; 240 units/month April 2026 production rate
+- **Apptronik $5B Feb 2026 Series A extension ($935M total)** — Google + Mercedes-Benz + AT&T + John Deere + Qatar; **Jabil ([[JBL]]) is the manufacturing partner** = direct robotics revenue layer for JBL
+- **Boston Dynamics 2026 Atlas production reserved for Hyundai + DeepMind**; uses **Google Gemini Robotics (NOT GR00T)**; 3.5x revenue burn ratio; $20-21B internal valuation; Nasdaq IPO expected early 2027
+- **Skild AI $14B Jan 2026 / $30M+ ARR** — first credible commercial revenue at the foundation-model layer; closed-model platform
+- **Physical Intelligence (π) $11B** in talks; π0.6 open-source Gemma-based; **most likely "Linux of robotics" commoditizer** — threatens Skild
+- **🔑 1X Technologies Neo "humanoid": 2026 units RELY ON HUMAN TELEOPERATORS** (not autonomous yet) — critical caveat lost in marketing
+- **Unitree filed Shanghai STAR IPO at ~$610M** — world's TOP humanoid producer (5,500 units 2025; 20K target 2026 at $13.5-73.9K)
+- **XPENG (XPEV) committed ¥100B (~$13.7B) to IronMan humanoid**; 1K+/month late 2026 mass production target; vertical Turing AI chip; former NVIDIA Android manager leads robotics
+- **NVIDIA Automotive segment (includes robotics) = $2.35B = 1.09% of NVDA revenue FY26** — robotics is LONG-DURATION call option, not 2026 P&L story
+- **BofA forecast: 90K humanoid units shipped 2026 → 1.2M by 2030**
+
+### New wiki page
+- **Created [[XPEV]]** — Xpeng Motors (NYSE ADR); humanoid pivot; stance bull / low-medium conviction. Closes a major US-listed humanoid coverage gap.
+
+### Wiki pages patched
+- [[TSLA]] — Optimus prediction-market 6% + Figure-ahead + 2026 FCF -$5.1B + ARK target excludes Optimus
+- [[MP]] — Musk-confirmed rare earth constraint May 2026 + 3.5kg NdFeB/unit + Optimus alone implies 175-350 tonnes 2026
+- [[JBL]] — Apptronik humanoid manufacturing partner = direct robotics revenue layer
+- [[NVDA]] — GR00T N2 end-2026 catalyst; Jetson Thor $1,999/130W; Automotive 1.09% of revenue (don't overweight robotics today)
+- [[robotics]] — comprehensive OEM landscape table with production rates, valuations, customer wins, foundation models; rare-earth validation event; Tier 1.5 public-market humanoid plays
+- [[index]] — added [[XPEV]] + new humanoid robotics category
+
+### Multi-agent architecture validation
+- 6 parallel Haiku agents returned in 40-65 seconds each
+- Each focused on a single dimension (Tesla / Figure / Apptronik-Agility-Boston Dynamics / Foundation-models / China-supply / NVDA-GR00T)
+- Returned 400-700 word focused reports with URLs
+- Multi-agent paradigm pattern firmly validated for parallel non-SemiWiki research
+
+### Most-actionable new public-market plays surfaced
+1. **XPEV** (Xpeng) — humanoid scale + EV; biggest under-covered position
+2. **HNHPF** (Foxconn ADR) — industrial humanoid manufacturing layer
+3. **MGA** (Magna) — Sanctuary AI manufacturing
+4. **HMG** (Hyundai ADR) — Boston Dynamics ownership
+5. **KOID + KSTR** ETFs — diversified China robotics supply chain (Leader Drive + Inovance + Estun) without QFII
+6. **JBL** — humanoid revenue layer surfaced (Apptronik) beyond AI-server thesis
+
+---
+
 ## [2026-05-17] autonomous-session-FINAL-rollup | EOD totals (batches 1-12)
 
 User had flu, granted autonomous control, then pushed back on early "wrap" framing — produced 13 commits across a 12-batch session.

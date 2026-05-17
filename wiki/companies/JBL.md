@@ -28,6 +28,7 @@ The "silent giant" of AI infrastructure — Intelligent Infrastructure segment *
 - **Mid-2026 NC capacity** comes online into demand
 - **Infrastructure Margin expansion** as AI mix grows
 - **Quiet compounder narrative** — less analyst coverage than Mag 7 names
+- **🔥 Apptronik humanoid manufacturing partner (NEW 2026-05-17 PM)** per [[2026-05-17-robotics-multi-agent-batch]] Agent C: **Jabil announced as Apptronik's manufacturing partner** for the Apollo humanoid robot. Apptronik just raised Series A extension to $5B valuation (Feb 2026; $935M total Series A) with Google + Mercedes-Benz + AT&T Ventures + John Deere + Qatar Investment Authority as backers. Apollo runs on NVIDIA Jetson AGX Orin (275+ TOPS); deployed at Mercedes-Benz factories + GXO Logistics. **Which means**: JBL gains direct humanoid-manufacturing exposure beyond the AI-server thesis — a second-leg revenue vector at the most concrete edge of physical AI buildout. Production scale data not yet disclosed but Apptronik's 2026-2027 commercial roadmap implies meaningful volume contribution to JBL Intelligent Infrastructure segment.
 
 ## Bear case / risks
 - **Hyperscaler concentration** — 4-5 customers drive most AI growth
@@ -44,7 +45,7 @@ The "silent giant" of AI infrastructure — Intelligent Infrastructure segment *
 5. **Backlog visibility**
 
 ## Related
-[[NVDA]] · [[nvda-supply-chain]] · [[DELL]] · [[SMCI]] · [[FLEX]] · [[ai-capex-cycle]] · [[cloud-hyperscalers]] · [[overview]]
+[[NVDA]] · [[nvda-supply-chain]] · [[DELL]] · [[SMCI]] · [[FLEX]] · [[robotics]] · [[humanoid-oems]] · [[ai-capex-cycle]] · [[cloud-hyperscalers]] · [[overview]]
 
 ## Citations
 - FinancialContent Q2 2026 deep dive: https://markets.financialcontent.com/siliconvalley.com/article/finterra-2026-3-18-the-silent-giant-of-ai-a-deep-dive-into-jabils-jbl-strategic-transformation-and-q2-2026-results

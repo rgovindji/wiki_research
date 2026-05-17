@@ -63,6 +63,7 @@ The only fully integrated rare-earth producer in the US, with H1 2026 commercial
 - **2026-05** — Morgan Stanley lowered PT to $62 from $71, maintains Overweight.
 - **2025–2026** — DoD multi-billion-dollar investment in MP Materials.
 - **2026** — Apple committed $500M rare-earth partnership.
+- **🔥 2026-05-17 PM — Musk publicly confirmed: Tesla Optimus production HIT BY China rare earth export controls; seeking licenses** ([[2026-05-17-robotics-multi-agent-batch]] Agent A). **Hard demand data**: each Optimus needs **3.5kg NdFeB magnets**; China controls 85% of NdFeB refining. **Which means**: MP's "only fully integrated US NdFeB producer" thesis just got a marquee customer pain-point validation. With Gen 3 Optimus targeting 50-100K units in 2026 + 1M/yr run-rate by late 2026, **Optimus alone implies 175-350 tonnes of NdFeB in 2026** scaling to **3,500 tonnes annual** at 1M units. Add Figure (240 units/month → BotQ 12K/yr target), Apptronik (Mercedes deployment), Agility, plus the broader humanoid cohort = **structural NdFeB demand explosion specifically constrained by Chinese export controls** — exactly the MP thesis. **Bull case sharpens**: this is no longer speculative future demand; it's actively-blocked production today.
 
 ## Related
 
@@ -71,6 +72,7 @@ The only fully integrated rare-earth producer in the US, with H1 2026 commercial
 ## Sources
 
 1. `sources/2026-05-13-x-stack-map-humanoid-robotics.md`
+2. [[2026-05-17-robotics-multi-agent-batch]] — Tesla Optimus 3.5kg NdFeB/unit + Musk-confirmed China export controls hitting production May 2026 (added 2026-05-17 PM)
 2. [[2026-05-16-sergey-levine-physical-intelligence]] — "balanced robotics ecosystem" framing; reinforces strategic-asset trajectory
 3. Stocktitan — *The 2027 Defense Deadline That Is Forcing the U.S. to Rebuild* (May 2026)
 4. 24/7 Wall St. — *Wedbush Projects $90 for MP Materials* (April 20, 2026)
