@@ -37,6 +37,7 @@ EDA (electronic design automation) duopoly with Cadence — every advanced AI ch
   - **Mean verification engineers per project surpassed design engineers between 2007 and 2016 — gap widening**
   
   **Which means:** the only way to close the productivity-vs-complexity gap is more EDA + AI automation. This is the structural compounder thesis for SNPS / CDNS / Siemens EDA — not just AI tailwind but a forcing function. SemiAnalysis's forthcoming Part 3 will cover NVDA agentic chip design flows + Synopsys DSO.ai — exactly where the NVDA $2B investment is positioned.
+- **TSMC alliance deepening — agentic AI in Fusion Compiler on A14 (NEW 2026-05-17)** per [[2026-05-17-semiwiki-nenni-blog-sweep]] Article 3. SNPS validated on TSMC N2P (M-PHY v6.0 silicon bring-up); **64G UCIe IP + 224G high-speed interconnect IP** tapeouts complete. **Fusion Compiler with agentic AI** running on TSMC A14 + NanoFlex Pro — paradigm shift from passive AI assistance to "decision-guiding" tools. **3DIC Compiler enables CoWoS at 5.5x reticle limit** (massive multi-die designs). **Co-packaged optics integration with TSMC's COUPE design flow** + 224G IP for optical Ethernet/UALink. **Automotive: UCIe IP ASIL B compliant on N5A** — chiplet TAM expansion into safety-critical applications. **Which means**: SNPS lock-in with TSMC at the most advanced nodes creates compounding switching costs for chip designers — competitive moat that's hard to displace by CDNS or Siemens EDA (which are not as deeply integrated with TSMC at A14).
 
 ## Bear case / risks
 - **Premium multiple** — EDA always trades expensive
@@ -57,6 +58,7 @@ EDA (electronic design automation) duopoly with Cadence — every advanced AI ch
 
 ## Sources
 1. [[2026-05-11-semianalysis-eda-primer]] — Part 1 of 3-part series on EDA; design-bottleneck structural thesis; verification = 70% of effort
+2. [[2026-05-17-semiwiki-nenni-blog-sweep]] — Synopsys-TSMC AI design alliance deepening: agentic Fusion Compiler on A14; 3DIC at 5.5x reticle; automotive UCIe ASIL B; COUPE photonics integration (added 2026-05-17 PM)
 
 ## Citations
 - Synopsys NVDA partnership at GTC 2026: https://news.synopsys.com/2026-03-16-Synopsys-Showcases-NVIDIA-Partnership-Impact-and-Ecosystem-Innovation-at-GTC-2026

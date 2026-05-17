@@ -93,6 +93,7 @@ This is a **low-medium conviction starter**, not a high-conviction allocation. T
 
 ## Sources
 1. [[2026-05-16-dylan-patel-invest-like-best]] — supply-chain sold-out enumeration (indirect confirmation of substrate tightness)
+2. [[2026-05-17-semiwiki-nenni-blog-sweep]] — TSMC's COUPE (Compact Universal Photonic Engine) explicitly confirmed in Y.J. Mii R&D roadmap; Synopsys-TSMC COUPE design flow integration + 224G IP. **Third independent wiki confirmation of Soitec's substrate position** in TSMC's CPO program (added 2026-05-17 PM)
 
 ## Citations
 - [Soitec Q3 FY26 Press Release](https://www.globenewswire.com/news-release/2026/02/03/3231393/0/en/SOITEC-REPORTS-Q3-26-REVENUE.html)

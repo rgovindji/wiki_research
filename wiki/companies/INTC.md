@@ -44,6 +44,7 @@ Intel is a **binary bet**: bull if 18A yields hit industry-standard by 2027 AND 
 - **Q1 2026 beat**: $13.6B vs $12.3B consensus; DCAI +22% YoY; stock +24% single-day in April (best since 1987); +114% April. Jensen Huang's "CPUs play major role in AI data centers" remark cited as driver.
 - **AI-driven CPU shortage benefits Intel**: Server ASPs +27% YoY in Q1 (per Intel 10-Q). Supply constraints persist through 2026 — pricing power for as long as demand exceeds supply.
 - **Lip-Bu Tan as CEO**: Daniel Nenni's view (SemiWiki founder, longtime Intel watcher): *"Never bet against Lip-Bu, absolutely. GO INTEL!"*
+- **Nenni's broader 2nm-crunch framing (March 2026, [[2026-05-17-semiwiki-nenni-blog-sweep]] Article 1)**: *"Intel was first to production quality GAA and first to BSPD, semiconductor innovation at its finest. With Lip-Bu Tan as CEO that has changed of course. The semiconductor Made in America brand has never been stronger, Intel will sign wafer agreements for 18A and 14A from the top semiconductor companies, without a doubt."* **Which means**: Nenni's bullish bet is **demand-side** (Made in America brand + customer wins) — independent of the yield-execution unknown that anchors the bear case.
 - **18A is INTEL-ONLY** — capacity expansion can't be diverted to AI accelerators/GPUs; entire 18A capacity backstops Intel product franchise.
 
 ## Bear case / risks
@@ -85,6 +86,7 @@ Intel is a **binary bet**: bull if 18A yields hit industry-standard by 2027 AND 
 2. [[2026-05-17-semiwiki-cpu-shortage-intel-18a]] — CPU shortage + Lip-Bu Tan strategic reset (combined source)
 3. [[2026-05-09-dwarkesh-dylan-semianalysis]] — Dylan Patel context on Intel foundry as a TSMC alternative
 4. [[2026-05-17-semiwiki-forum-sweep-2]] — Post-Xi-summit market reversal (-16.61% / +200% YTD); Apple modem stays at TSMC N2 (added 2026-05-17)
+5. [[2026-05-17-semiwiki-nenni-blog-sweep]] — Nenni's bull-side framing on Lip-Bu Tan + Made in America + customer wins (added 2026-05-17 PM)
 
 ## Citations
 - Intel Q1 2026 10-Q (DCAI disclosure quoted in forum thread)

@@ -9,6 +9,45 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | SemiWiki blog sweep #4 — Nenni articles (Global 2nm Crunch + Mii TSMC roadmap + SNPS-TSMC AI alliance)
+
+Pivot from forum threads to Daniel Nenni's published articles. Three articles read via authenticated Chrome MCP.
+
+### Articles covered
+- **Article 1**: "Global 2nm Supply Crunch" (March 2026) — TSM/INTC/Samsung/Rapidus foundry landscape
+- **Article 2**: "Dr. Y.J. Mii on TSMC Technology Leadership in 2026" (April 30) — TSMC R&D roadmap (A14 2028, CFET, COUPE, SoW)
+- **Article 3**: "Synopsys and TSMC Deepen AI Design Alliance" (May 5) — SNPS/TSMC ecosystem deepening
+
+### Key findings
+- **TSMC A14 timing 2028** with 10-15% speed gain / 25-30% power reduction vs N2 — confirms [[bottleneck-roadmap]] EUV constraint period
+- **TSMC's COUPE (Compact Universal Photonic Engine)** explicitly named in BOTH Mii roadmap AND SNPS-TSMC alliance = **third independent wiki confirmation of [[SOITEC]] photonic substrate thesis**. The CPO transition is real, at-scale, ecosystem-supported. Reinforces SOITEC's structural position.
+- **Rapidus (Japan)**: $11.3B raised / **$32B needed** by 2027 mass production target. Funding gap = potential IPO/strategic investor event. Sovereign-AI foundry hedge.
+- **Samsung's foundry credibility issue** — Nenni: *"Samsung is not a viable alternative to TSMC for high-volume 2nm orders. Trust is the foundation of the semiconductor industry."* — explains why Samsung doesn't show up in TSMC alternative analysis on the wiki
+- **Synopsys agentic AI in Fusion Compiler** on A14 = paradigm shift in EDA (passive AI assistance → decision-guiding tools); 3DIC Compiler at **5.5x reticle limit** CoWoS — massive multi-die future; ASIL B chiplet TAM expansion into automotive
+
+### Wiki touched
+- [[TSM]] — Mii roadmap + N2 sold out + COUPE / SoW / CFET
+- [[SOITEC]] — third confirmation of COUPE thesis
+- [[SNPS]] — TSMC alliance deepening (agentic Fusion Compiler, 3DIC, automotive ASIL B)
+- [[INTC]] — Nenni's bullish demand-side framing added for bull/bear balance
+- [[us-china-relations]] — Rapidus Japan sovereign-AI foundry section
+
+### Why this batch was lower-leverage than batches 1-3
+These articles confirmed and sharpened existing wiki positions rather than introducing wholly new theses. The SOITEC COUPE confirmation is the highest-leverage incremental data point (third independent source = thesis hardening). No stance changes; primarily depth-of-coverage improvement.
+
+### Cumulative session stats (batches 1-4)
+- **Source summaries created**: 8 (including this batch)
+- **New wiki pages**: 2 (INTC, SOITEC)
+- **Wiki pages patched**: 14+ unique pages
+- **Commits pushed**: 5 (a2ed32d, cbe2a27, 0a12c5f, 17f442a, pending)
+
+### Process notes / context management
+- ~60% of context still available; cleaned snapshot tmp between batches
+- Considering whether to wrap or continue — diminishing returns becoming visible (this batch added depth but no new alpha)
+- Next high-value targets if continuing: TSMC monthly revenue reports (primary financial data), Soitec subforum activity, or specific NVDA/AMD/MU subforum threads beyond What's New
+
+---
+
 ## [2026-05-17] autonomous-session | SemiWiki forum sweep #3 — Cerebras IPO + MATCH Act + GPU lifespan controversy
 
 Third autonomous batch. Combined source: [[2026-05-17-semiwiki-forum-sweep-3]].

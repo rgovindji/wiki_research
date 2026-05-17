@@ -217,6 +217,21 @@ A new bilateral chokepoint is forming in parallel with the AI-chip story, and th
 - [[robotics]] Tier 1 component basket (OUST, ALGM, AMBA, VPG, ALNT) — reinforced as Western alternatives gain strategic weight
 - Chinese OEMs (Unitree, AgiBot, UBTECH) — face same trajectory as Huawei post-2019 if decoupling extends to robotics
 
+## Rapidus (Japan): sovereign-AI foundry alternative (NEW 2026-05-17 per [[2026-05-17-semiwiki-nenni-blog-sweep]])
+
+Japan-based foundry **Rapidus**, government-backed:
+- 2nm-class chip production target **around 2027**
+- Recently raised **$1.7B more → $11.3B total** in government subsidies + private investment
+- Represents **~40% of the $32B Rapidus estimates needed** for full-scale 2027 mass production
+- Strategy: **short turnaround + tailored services**, NOT volume competition with TSMC
+- Daniel Nenni (March 2026): *"there is little doubt in my mind that they will succeed"*
+
+**Why it matters for this page**:
+- Rapidus is **Japan's sovereign-AI foundry hedge** — adds to the supply-chain diversification thesis the wiki has been building (TSMC Arizona + CXMT + Soitec France-based + Intel US)
+- Funding gap ($32B - $11.3B = $20.7B still needed) = potential **IPO or strategic investor event** in 2026-2027 — track for when announced
+- Not directly investable from public markets (privately held, sovereign-backed)
+- Aligned with Japan's broader effort to rebuild semiconductor manufacturing presence post-1990s decline
+
 ## MATCH Act: the next-stage equipment-export lever (NEW 2026-05-17 PM per [[2026-05-17-semiwiki-forum-sweep-3]])
 
 Pending US legislation introduced in House + Senate (April 2026) — **House Foreign Affairs committee voted to advance April 22**. Closes chipmaking-equipment export loopholes to China by:
@@ -315,6 +330,7 @@ ChangXin Memory Technologies (CXMT) — China's only domestic DRAM maker at mass
 4. [[2026-05-17-semiwiki-cxmt-ddr5]] — CXMT DDR5 ramp + Shanghai STAR IPO; commodity DRAM bifurcation (added 2026-05-17)
 5. [[2026-05-17-semiwiki-forum-sweep-2]] — Trump-Xi summit market read; INTC/QCOM/MU post-trip moves; TSMC $20B Arizona injection (added 2026-05-17)
 6. [[2026-05-17-semiwiki-forum-sweep-3]] — MATCH Act details + China's April 13 "Malicious Entity List" decree countermeasure (added 2026-05-17)
+7. [[2026-05-17-semiwiki-nenni-blog-sweep]] — Rapidus $11.3B raised / $32B needed; Japan sovereign-AI foundry hedge (added 2026-05-17 PM)
 
 ## Citations
 
