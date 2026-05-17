@@ -9,6 +9,40 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-17] autonomous-session | Batch 15 — Robotics adjacencies (medical / warehouse / Japanese components)
+
+3 more parallel Haiku agents for robotics depth: surgical robotics + warehouse automation + Japanese components.
+
+### Headline findings
+- **ISRG (Intuitive Surgical) is the ONLY operationally proven, 86%-recurring, structurally-moated robotics public play today** — Q1 2026 rev $2.77B +23%, procedures +17%, da Vinci 5 +58% YoY placements, 85% US system share. Surgical robotics TAM $13.69B → $27-30B by 2030 (14.7-16.7% CAGR). Future page candidate.
+- **SYM (Symbotic)** Walmart anchor + SoftBank 37.25% stake; **GreenBox JV $11B 6-yr backlog**; but SoftBank dilution Dec 2025 → -28.7%; Goldman downgraded to Sell. Highest-upside warehouse name but volatile.
+- **ROK CEO publicly called humanoids "overkill for most factories"** — orchestration software moat; ROK is humanoid-agnostic safer play.
+- **FANUY (FANUC ADR)** — post-inventory correction; $90M Michigan + NVIDIA AI partnership; H2 2026 order recovery
+- **Harmonic Drive (6324.T) +99.7% YoY** — Tesla Optimus V3 uses harmonic reducers in 14 of 28 actuators; 70%+ precision reducer share; ~$6.6B market cap; **highest-conviction Japanese humanoid play**
+- **Japan Airlines adopted Unitree G1 + UBTECH Walker E** — Japan losing robot OEM game to Chinese; Japanese suppliers winning components game only
+- **BoJ June 16-17 rate hike: yen strength → 2-5% gross margin compression for Japanese robotics exporters** — added to [[2026-06-16-boj-decision]] playbook as tactical short candidates (RNECY/FANUY puts)
+
+### Wiki touched
+- [[robotics]] — added Warehouse automation section (SYM/ROK/FANUY/AUTO.OL/GXO/CGNX); Japanese components section (Harmonic Drive/Nabtesco/Renesas/Nidec/TDK); Medical robotics section (ISRG/SYK/MDT/JNJ + NVIDIA Holoscan/GR00T-H/Cosmos-H surgical stack)
+- [[2026-06-16-boj-decision]] — added Japanese-exporter robotics cohort exposure to playbook
+- [[index]] — updated extended robotics multi-agent description
+
+### Cumulative robotics multi-agent (9 agents total)
+Across batches 13+14, 9 parallel Haiku agents covering:
+1. Tesla Optimus production state
+2. Figure AI funding + deployments
+3. Apptronik / Agility / Boston Dynamics OEMs
+4. Skild / Pi / 1X / Sanctuary foundation models
+5. China humanoid suppliers + Foxconn manufacturing
+6. NVIDIA GR00T / Isaac / Cosmos ecosystem
+7. Robotic surgery + medical robotics
+8. Warehouse + industrial automation
+9. Japanese robotics component suppliers
+
+This is now the deepest single-day robotics research base on the wiki.
+
+---
+
 ## [2026-05-17] autonomous-session | Batch 14 — Robotics multi-agent deep-dive (6 parallel Haiku agents)
 
 User asked for "best research base for AI robotics" with multi-agent setup. Spawned 6 parallel Haiku subagents.

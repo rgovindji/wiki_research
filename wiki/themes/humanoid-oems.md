@@ -68,19 +68,55 @@ Per Levine, the manipulation-arm cost curve has been faster than almost any othe
 | **Funding** | DCVC, Playground Global, Amazon Industrial Innovation Fund |
 | **Stock implication** | Closest thing to a "real revenue" Western humanoid story (logistics customers paying for hours of work). If Digit hits unit-economics inflection by 2027, sensor/actuator suppliers benefit first. |
 
-### Apptronik
+### Apptronik (UPDATED 2026-05-17 PM)
 
 | Item | Detail |
 |---|---|
 | **Form factor** | Apollo — bipedal, general-purpose |
-| **Manufacturing** | Austin, TX |
-| **Deployment** | **Mercedes-Benz** partnership (light assembly); Magna logistics pilots |
-| **Funding** | $350M Series A in early 2025; Google as strategic investor |
-| **Stock implication** | Google's investment is the most material signal — embeds Apollo into the GCP/DeepMind robotics roadmap. Watch for [[GOOGL]] AI cluster (Gemini Robotics) named as Apollo's brain. |
+| **Manufacturing** | **[[JBL\|Jabil]] is manufacturing partner** (announced) — direct public-market exposure layer |
+| **Deployment** | Mercedes-Benz factories + GXO Logistics |
+| **Compute** | **NVIDIA Jetson AGX Orin (275+ TOPS)** |
+| **Valuation** | **$5B Feb 2026 Series A extension ($520M); $935M total Series A** |
+| **Backers** | Google + Mercedes-Benz + AT&T Ventures + John Deere + Qatar Investment Authority + (prior: Microsoft, NVIDIA, Capital Factory) |
+| **Roadmap** | Commercial-scale deployment 2026; fine manipulation + multi-step tasks 2027 |
+| **Stock implication** | **[[JBL]] is the cleanest direct exposure**; Google's repeat investment validates Gemini Robotics integration roadmap; NVIDIA Jetson dependency = [[NVDA]] embedded |
 
-### Boston Dynamics (Hyundai-owned)
+### Agility Robotics (UPDATED 2026-05-17 PM)
 
-Atlas humanoid is the most technically advanced bipedal robot but **commercial humanoid deployments lag the others**. Hyundai listing on KRX gives indirect public exposure. Not a primary watch.
+| Item | Detail |
+|---|---|
+| **Form factor** | Digit — bipedal, designed for warehouse logistics |
+| **Manufacturing** | RoboFab Salem Oregon — 10K units/yr capacity target; **<1,000 units actually shipped** |
+| **Deployment** | **Amazon (narrow "tote recycling" R&D pilot only — NOT broad warehouse)** + Toyota (Feb 2026), Mercado Libre (Dec 2025), GXO, Schaeffler |
+| **Valuation** | **$1.75-2.12B Series C** ($400M Jun-Sep 2025, tranched reports) |
+| **Amazon stake** | $150M |
+| **2026 milestone** | CEO Peggy Johnson: Digit "interoperate near humans" by mid-2026 |
+| **Stock implication** | **Amazon's narrow Digit pilot contradicts "soon at scale" hype** — slower commercial trajectory than other OEMs |
+
+### Boston Dynamics (UPDATED 2026-05-17 PM, Hyundai-owned 005380.KS)
+
+| Item | Detail |
+|---|---|
+| **Form factor** | Atlas Gen 3 — most technically advanced bipedal |
+| **2026 production** | **Entirely reserved for Hyundai RMAC + Google DeepMind** — no external commercial sales |
+| **Manufacturing** | Hyundai $26B US investment; **30K units/yr factory by 2028** (Savannah Metaplant); Atlas deployment 2028-2030 |
+| **Compute** | **Google DeepMind Gemini Robotics — NOT NVIDIA GR00T** |
+| **Financials (BDX standalone)** | Revenue ~$100M (150.1B won); **loss 528.4B won = 3.5x revenue burn ratio** |
+| **Internal valuation** | $20-21B (24x since 2021 acquisition) — appears promotional |
+| **IPO** | **Nasdaq listing expected early 2027** |
+| **Stock implication** | **Hyundai ADR (HMG)** for indirect exposure; **[[GOOGL]] gets Atlas as Gemini Robotics customer**; BDX IPO at $20B may be a sell-the-news given burn rate |
+
+### XPENG IRON (NEW 2026-05-17 PM — promoted to Western/global category)
+
+| Item | Detail |
+|---|---|
+| **Form factor** | IronMan/IRON humanoid; 5th-generation |
+| **Listed parent** | **XPEV (NYSE ADR)** — see [[XPEV]] |
+| **Commitment** | **¥100B (~$13.7B) to IronMan program** |
+| **Compute** | **Vertical: in-house Turing AI chip** (parallels Tesla AI5) |
+| **Production target** | **1,000+ units/month by late 2026 mass production** |
+| **Leadership** | Former NVIDIA Android manager leads robotics |
+| **Stock implication** | **Only US-listed pure-play humanoid OEM at scale outside Tesla**; significantly under-covered in US financial media; speculative bull / low-medium conviction |
 
 ## The Chinese OEM landscape (much larger market share than US)
 

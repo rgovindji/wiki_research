@@ -82,6 +82,19 @@ The market has priced a vanilla 25bp hike. **The trade is in the *path*, not the
 **Trigger to add**: USD/JPY remains above 158 going into June 10
 **Trigger to lighten**: USD/JPY breaks below 150 ahead of meeting
 
+### NEW 2026-05-17 PM — Japanese-exporter robotics cohort exposure
+
+Per [[2026-05-17-robotics-multi-agent-batch]] Agent I: BoJ rate hike to 1.0% expected June 16-17 will strengthen yen by 2-5% → **2-5% gross margin compression for Japanese exporters absent price pass-through**.
+
+**Most exposed Japanese robotics exporters**:
+- **Harmonic Drive Systems (6324.T)** — +99.7% YoY May 2026; Tesla Optimus V3 in 14/28 actuators; 70%+ precision reducer share — **highest beta to yen strength + valuation re-rating risk**
+- **Nabtesco (6268.T)** — RV reducer specialist; 60% global share
+- **RNECY (Renesas ADR)** — most US-accessible Japanese robotics name
+- **FANUC (FANUY ADR)** — industrial robot leader; already in post-correction recovery
+- **NJDCY (Nidec OTC)** — motor leader
+
+**Tactical add to Tier 2/3 playbook**: short selected Japanese robotics exporters via ADR puts (RNECY, FANUY) or trim long positions if held; **the BoJ rate decision is structurally bearish for these names** even if the broader carry-trade unwind is signaled (not shock).
+
 ### Tier 2 — Asymmetric Profit (moderate cost, larger upside, ~3-4% portfolio cost)
 
 Building on Tier 1, ADD:

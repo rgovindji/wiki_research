@@ -253,3 +253,70 @@ User requested "best research base for AI robotics" via multi-agent. Six paralle
 - Patched [[TSLA]], [[MP]], [[JBL]], [[NVDA]], [[OUST]], [[ALGM]], [[AMBA]]
 - [[us-china-relations]] — Unitree IPO + Stock Connect access
 - [[bottleneck-roadmap]] — rare earth confirmation
+
+## Agent G: Robotic surgery + medical robotics
+
+### Market sizing
+- **Global surgical robotics: $13.69B (2025) → $27-30B by 2030 at 14.7-16.7% CAGR**
+- Urology: 80%+ already robotic; general surgery: 15% (massive runway)
+
+### Public-market plays
+- **🏆 ISRG (Intuitive Surgical)** — DOMINANT and ACCELERATING
+  - Q1 2026: rev $2.77B (+23% YoY); procedures +17%
+  - **da Vinci 5 placements: 232 in Q1 (+58% YoY)**; capturing 85% of US system placements
+  - **86% recurring revenue**; 40% EBIT growth
+  - 2026 procedure growth guide: 13.5-15.5%
+  - Moat: surgeon training hours + procedural libraries + workflow integration over 2 decades
+  - Threat: Medtronic Hugo (FDA cleared Feb 2026) + JNJ Ottava — both greenfield, NOT incumbent-capture
+- **SYK (Stryker)** — Mako orthopedic robotic arm; 3,000+ systems globally; 2M+ procedures; **handheld Mako RPS launched Feb 2026** (lower-barrier ortho play)
+- **MDT (Medtronic)** — Hugo FDA cleared Feb 2026
+- **JNJ** — Ottava in development; not yet revenue
+
+### NVIDIA surgical AI stack
+- **Holoscan, GR00T-H, Open-H (700-hour surgical video dataset), Cosmos-H synthetic-data generation**
+- Partners: CMR Surgical, JNJ MedTech, Moon Surgical
+- Live in ORs (ORSI Academy Belgium real-time AR-augmented kidney removal)
+
+### Agent verdict for AI-robotics-adjacent medical play
+1. **ISRG** — only operationally proven, 86%-recurring, structurally-moated robotics public play
+2. **SYK** — orthopedic-specific carve-out
+3. **MDT, JNJ** — smaller robotics share within conglomerates
+
+## Agent H: Warehouse + industrial automation
+
+### Top public plays
+- **SYM (Symbotic)** — Walmart anchor + SoftBank 37.25%; Q2 FY26 rev $676M (+23%); $2B cash; **GreenBox JV $11B six-year backlog**. **Risk**: SoftBank dilution Dec 2025 (10M shares at $55) → stock -28.7%; Goldman downgraded to Sell post-raise.
+- **ROK (Rockwell Automation)** — Q2 FY26 EPS $3.30 beat; FY guide raised $12.50-13.10; **CEO publicly: humanoids are "overkill for most factories"**; OTTO 600/1200 AMRs; AWS cloud-connected factory.
+- **FANUY (FANUC ADR)** — Post-inventory correction; $90M Michigan expansion; NVIDIA AI partnership; sales -16% on China weakness; FY26 H2 order recovery.
+- **AUTO.OL (AutoStore)** — Norwegian cube-storage; **CubeVerse AI platform Q1 2026**.
+- **GXO Logistics** — third-party warehouse; **Apptronik humanoid pilots** (R&D hedge).
+- **CGNX (Cognex)** — machine vision.
+
+### TAM
+- Warehouse automation: **$27.5B (2026) → $47B (2030)** at 14.4% CAGR
+- **80% of US warehouses still lack automation** = greenfield runway
+
+### Agent verdict
+- **ROK** safest (software orchestration moat; humanoid-agnostic)
+- **SYM** highest upside if Walmart leverage holds + SoftBank pressure clears
+- **FANUY** value recovery post-correction
+
+## Agent I: Japanese robotics component suppliers
+
+### Strongest humanoid attach
+- **Harmonic Drive Systems (6324.T)** — **Tesla Optimus V3 uses harmonic reducers in 14 of 28 actuators**; **70%+ market share** in precision reducers; **stock +99.7% YoY** to ~7,100 JPY May 17; ~$6.6B market cap. **Highest-conviction Japanese humanoid play.**
+- **Nabtesco (6268.T)** — RV reducer specialist; 60% global share medium/large industrial joints + 28% miniature for humanoids; doubling RV production by 2026
+- **RNECY (Renesas ADR)** — **RZ/V2H robotics dev kit (May 2026)** + RA8T2 motor MCU (1GHz Cortex-M85); 10 TOPS/W AI efficiency. **Most accessible Japanese name for US investors.**
+- **NJDCY (Nidec OTC)** — motor/actuator leader; $3.36-4.88 May 2026 range
+- **TTDKY (TDK OTC)** — **6-axis IMU + sensor ecosystem for humanoid balance/fall**; acquired InvenSense (3rd largest MEMS)
+
+### 🔥 Strategic caveat (Japan losing the robot game while winning components)
+**Japan Airlines just adopted Unitree G1 + UBTECH Walker E** — Japan itself choosing Chinese robotics over domestic brands.
+- Japanese suppliers winning the COMPONENT game (Harmonic Drive, Nabtesco)
+- Japanese OEMs (FANUC, Yaskawa) losing the ROBOT game to Chinese competitors
+
+### BoJ June 16-17 rate hike risk
+- Expected hike to 1.0% will strengthen yen
+- **2-5% gross margin compression for Japanese exporters** absent price pass-through
+- Most exposed: Harmonic Drive, Nabtesco, FANUC, Renesas — all selling into Tesla US factories + global OEMs
+- **Tactical (per [[2026-06-16-boj-decision]] playbook)**: trim Japanese-exporter robotics exposure pre-meeting

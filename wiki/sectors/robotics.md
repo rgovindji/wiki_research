@@ -277,6 +277,67 @@ Accessible only via Stock Connect or wrapper ETFs.
 - **China is the supply chain.** Cleanest design-in suppliers (Sanhua, Leader Drive, Inovance) are PRC-listed. Cheapest unit-economics OEMs (Unitree, AgiBot, UBTECH) are Chinese. A reciprocal US export-control regime restricting Western component sales into Chinese humanoid programs damages Tier 1 names alongside Chinese OEMs.
 - **Sensors have substitutes; magnets don't.** Force-torque, position, and vision sensors face competing chemistries (capacitive vs. magnetic, lidar vs. camera-only vs. radar). Bottleneck rents diffuse. NdFeB magnets have no equivalent substitute path — concentration favors rare-earth plays over sensor plays.
 
+## Adjacent: Warehouse + Industrial Automation (NEW 2026-05-17 PM)
+
+| Ticker | Listing | Why exposed |
+|---|---|---|
+| **SYM (Symbotic)** | NASDAQ | **Walmart anchor + SoftBank 37.25% stake**; Q2 FY26 rev $676M (+23%); $2B cash; **GreenBox JV $11B six-year backlog**. **Risk**: SoftBank sold 3.5M shares Dec 2025 → 10M total dilution at $55; Goldman downgraded to Sell post-raise; stock -28.7% on news |
+| **ROK (Rockwell Automation)** | NYSE | Q2 FY26 EPS $3.30 beat; FY guide raised $12.50-13.10; **CEO publicly called humanoids "overkill for most factories"** = orchestration moat (humanoid-agnostic); OTTO 600/1200 AMRs; AWS cloud-connected factory |
+| **FANUY (FANUC ADR)** | OTC US | Post-inventory correction; **$90M Michigan expansion**; NVIDIA AI partnership; sales -16% YoY on China weakness; FY26 H2 order recovery expected |
+| **AUTO.OL (AutoStore)** | Oslo | Cube-storage moat refreshed with **CubeVerse AI platform Q1 2026** |
+| **GXO Logistics (GXO)** | NYSE | Third-party warehouse; **Apptronik humanoid pilots** = hedging traditional AMR with humanoid optionality |
+| **HON, EMR, ABB** | NYSE / Swiss | Industrial automation incumbents; less humanoid-direct but software orchestration plays |
+| **CGNX (Cognex)** | NASDAQ | Machine vision specialist |
+
+**TAM**: Warehouse automation $27.5B (2026) → $47B (2030) at 14.4% CAGR. **80% of US warehouses still lack automation** = greenfield runway.
+
+**Key strategic insight (Rockwell CEO)**: humanoids are NOT replacing traditional AMRs in most factories — they're overkill. The orchestration/software layer wins regardless of which hardware ultimately scales. **Which means**: ROK is a humanoid-agnostic bet vs. SYM (humanoid-disruption-vulnerable warehouse cube-storage) vs. FANUY (humanoid-complementary industrial arms).
+
+**Top 3 picks (agent verdict)**: ROK (safest, software moat), SYM (highest upside if Walmart leverage holds), FANUY (value recovery post-correction).
+
+**Source**: [[2026-05-17-robotics-multi-agent-batch]] Agent H.
+
+## Adjacent: Japanese components — winning the supply game, losing the robot game (NEW 2026-05-17 PM)
+
+**Strongest humanoid attach** (Tesla Optimus V3 uses harmonic reducer in 14 of 28 actuators):
+
+| Ticker | Listing | Why exposed | Recent data |
+|---|---|---|---|
+| **Harmonic Drive Systems (6324.T)** | TSE | **Tesla Optimus V3 uses harmonic reducers**; 70%+ market share precision reducers | **+99.7% YoY**; ~7,100 JPY May 17; ~$6.6B mkt cap; global TAM $3.6B by 2033 |
+| **Nabtesco (6268.T)** | TSE | RV reducer specialist; **60% global share medium/large industrial robot joints; 28% miniature reducers for humanoids**; doubling RV production by 2026 | Confidence in humanoid demand |
+| **RNECY (Renesas ADR)** | NASDAQ | **RZ/V2H robotics dev kit May 2026** (AI vision + real-time motor control; 10 TOPS/W); RA8T2 motor control MCU (1GHz Cortex-M85) | US-listed ADR (most accessible) |
+| **NJDCY (Nidec OTC)** | OTC US | Motor/actuator leader; broad robotics portfolio | $3.36-4.88 May 2026; 52-week $1.84-5.70 |
+| **TTDKY (TDK OTC)** | OTC US | **6-axis IMU + sensor ecosystem** for humanoid balance/fall detection; acquired InvenSense (3rd largest MEMS) | CES 2026 AI haptics showcase |
+| **Sony Semiconductor (SONY parent)** | NYSE/TSE | IMX series image sensors for humanoid vision | Already known via SONY |
+
+**🔥 Strategic caveat**: **Japan Airlines just adopted Unitree G1 + UBTECH Walker E** — Japan itself choosing Chinese robotics over domestic OEMs. **Japanese suppliers are winning the COMPONENT game, NOT the ROBOT game**. Harmonic Drive + Nabtesco are must-haves for any humanoid maker, but TAM scales only if Tesla / Figure / Apptronik win share from Unitree (which is currently outpacing them on units).
+
+**BoJ June 16-17 rate hike risk** (cross-link to [[bank-of-japan]] + [[2026-06-16-boj-decision]] playbook): expected hike to 1.0% will strengthen yen → **2-5% gross margin compression for Japanese exporters absent price pass-through**. Harmonic Drive, Nabtesco, FANUC, Renesas all selling into Tesla US factories + global OEMs are most exposed. Q2 2026 earnings guidance should reflect this. **Tactical**: trim Japanese-exporter robotics exposure ahead of June 16-17 BoJ meeting.
+
+**Source**: [[2026-05-17-robotics-multi-agent-batch]] Agent I.
+
+## Adjacent: Medical robotics (NEW 2026-05-17 PM)
+
+Robotic surgery is an **adjacent AI-robotics theme** with structurally established public-market exposure (vs the still-nascent humanoid theme). Key data:
+
+| Ticker | Listing | Why exposed | Stance candidate |
+|---|---|---|---|
+| **ISRG (Intuitive Surgical)** | NASDAQ | Dominant; Q1 2026 rev $2.77B +23% YoY; procedures +17%; da Vinci 5 232 placements Q1 (+58% YoY); **86% recurring revenue**; 40% EBIT growth; **85% US system placements**; 2026 procedure growth guide 13.5-15.5% | **bull / medium-high conviction** (not yet on wiki — flag for future page) |
+| **SYK (Stryker)** | NYSE | **Mako orthopedic robotic arm**; 3,000+ systems installed globally; 2M+ procedures completed; **handheld Mako RPS launched Feb 2026** (lower-barrier ortho play) | bull / medium (separate from ISRG TAM) |
+| **MDT (Medtronic)** | NYSE | Hugo surgical robot FDA cleared Feb 2026; greenfield threat to ISRG but not incumbent-capture | bull / low (smaller robotics share in conglomerate) |
+| **JNJ (Johnson & Johnson)** | NYSE | Ottava robotic surgery system **in development** — not yet revenue contributor | n/a (not investable for robotics theme yet) |
+
+**Market sizing**: Global surgical robotics **$13.69B (2025) → $27-30B by 2030 at 14.7-16.7% CAGR**. Urology already 80%+ robotic; general surgery only 15%. Room for 2-3x growth within 5-10 years.
+
+**NVIDIA surgical AI stack**:
+- **Holoscan**, **GR00T-H**, **Open-H (700-hour surgical video dataset)**, **Cosmos-H synthetic-data generation**
+- Partners: CMR Surgical, JNJ MedTech, Moon Surgical
+- Live in ORs (e.g., ORSI Academy Belgium real-time AR-augmented kidney removal)
+
+**Why ISRG belongs on the AI-robotics watchlist**: it's the only **operationally proven, 86%-recurring, structurally-moated** robotics play in public markets today. Humanoids are 5-10 years from comparable economics. Investors wanting AI-robotics exposure with cash-flow visibility should consider [[ISRG]] (future page).
+
+**Source**: [[2026-05-17-robotics-multi-agent-batch]] Agent G (medical robotics specialist subagent).
+
 ## 🔥 Rare earth validation event (NEW 2026-05-17 PM)
 
 **Musk publicly confirmed May 2026**: Tesla Optimus production HIT BY China rare earth export controls; Tesla seeking licenses.
