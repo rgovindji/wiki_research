@@ -180,7 +180,8 @@ li { margin: 8px 0; }
 <tr><th>Layer</th><th>What it does</th><th>Public ticker(s)</th><th>What it isn't</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Substrate</strong></td><td>Specialty wafer needed to fab silicon photonics chips</td><td><span class="tk">SOITEC</span> (SOI.PA)</td><td>Not a memory company</td></tr>
+<tr><td><strong>Substrate (passive)</strong></td><td>Photonic-SOI wafer for silicon photonic ICs (waveguides, modulators)</td><td><span class="tk">SOITEC</span> (SOI.PA)</td><td>Not a memory company</td></tr>
+<tr><td><strong>Substrate (active)</strong></td><td>InP wafer for laser sources (silicon can't emit light)</td><td><span class="tk">AXTI</span> (~36% share, China-mfg), <span class="tk">SMTOY</span> parent (~42%, conglomerate-diluted), JX Nippon (~13%, not separately tradeable)</td><td>Not the silicon chip itself</td></tr>
 <tr><td><strong>Foundry / process</strong></td><td>Manufactures silicon photonics ICs</td><td><span class="tk">TSM</span> (COUPE), <span class="tk">TSEM</span> (Tower), GlobalFoundries (private)</td><td>Not chip designers</td></tr>
 <tr><td><strong>EDA / design IP</strong></td><td>Software + IP to design photonic + electrical co-integration</td><td><span class="tk">SNPS</span>, <span class="tk">CDNS</span></td><td>Not hardware</td></tr>
 <tr><td><strong>Pluggable optical modules</strong></td><td>Today's optical interconnect product (800G, 1.6T transceivers)</td><td><span class="tk">COHR</span>, <span class="tk">LITE</span>, <span class="tk">FN</span></td><td>Not memory; replaced eventually by CPO</td></tr>
@@ -201,6 +202,37 @@ li { margin: 8px 0; }
 <p>There is essentially one company in the world qualified to supply this wafer at volume to all three major foundries (TSMC, GlobalFoundries, Tower Semiconductor): <strong>Soitec</strong>, a French company listed on Euronext Paris as <span class="tk">SOI.PA</span>. BofA estimates Soitec holds ~95% market share of photonics-grade SOI as of March 2026. Shin-Etsu has a license but minimal volume. GlobalWafers' license was terminated.</p>
 
 <p>If you want to play the photonics-substrate layer, this is the only public name. Note: SOI.PA is Paris-listed only — no US ADR. The stock has rallied ~6x off its December 2025 low, so you're not buying it cheap. Their FY26 earnings May 27 are binary — that's the visibility event.</p>
+
+<h2>Layer 1B: The OTHER substrate — InP for active light sources</h2>
+
+<p><em>Added after initial publication on reader feedback. The original post covered photonic-SOI but skipped the laser-source substrate layer — that was a gap.</em></p>
+
+<p>Soitec's photonic-SOI is the substrate for the <strong>passive</strong> silicon photonic chip — waveguides, modulators, couplers. But silicon is an indirect-bandgap material, which means it cannot efficiently emit light. <strong>Every silicon photonics system needs an external laser source, and the substrate for those lasers is InP — Indium Phosphide.</strong></p>
+
+<p>Three companies control ~91% of the global InP substrate market (per Mordor Intelligence / Yole 2024 data):</p>
+
+<ul>
+<li><strong>Sumitomo Electric (parent ~$31.7B; ADR: <span class="tk">SMTOY</span>)</strong> — ~42% share, ~800K wafers/year capacity. Japanese conglomerate; InP is one product in their Compound Semiconductor segment.</li>
+<li><strong>AXT Inc (<span class="tk">AXTI</span>; ~$700M cap)</strong> — ~36% share, ~300K wafers/year, <strong>manufactures entirely in China through Beijing Tongmei</strong>. Stock up 600%+ YTD 2026 to ATH. Q1 2026: InP backlog $100M+; InP &gt;50% of revenue for first time.</li>
+<li><strong>JX Nippon Mining &amp; Metals</strong> — ~13% share, ~200K wafers/year. Japanese; subsidiary of ENEOS Holdings, not separately tradeable.</li>
+</ul>
+
+<p>InP-based lasers (CW, DFB, EML) power 800G/1.6T optical transceivers, future 3.2T modules, NVIDIA Spectrum-X/Quantum-X CPO, AVGO Tomahawk 6, and the laser arrays inside every TSMC COUPE photonic engine. Goldman projects 800G shipments &gt;34M units in 2026 and 1.6T modules &gt;25M units in 2026 — each needs InP laser chips.</p>
+
+<div class="callout">
+<span class="callout-title">The bottleneck is real but capacity is responding</span>
+Sumitomo expanding +40% by 2026; JX +20%; AXT doubling Q1 2026 → end-2026, then doubling again to $65-70M quarterly InP run-rate by late-2027/early-2028. <strong>Heterogeneous integration (III-V-on-Si bonding at TSMC, Intel, AVGO) also reduces InP material consumption per device by orders of magnitude.</strong> The "could freeze the AI buildout" framing seen on Twitter is overheated — real bottleneck, but the market is responding over 18-24 months.
+</div>
+
+<p><strong>The investable nuance:</strong></p>
+
+<ul>
+<li><strong><span class="tk">AXTI</span></strong> is the pure-play public name but carries severe China-manufacturing geopolitical risk. China imposed indium export controls on Feb 4, 2025; AXT's Tongmei subsidiary needed (and received in June 2025) export permits to resume shipments. Q4 2025 revenue was constrained by permit delays. The stock has already 6x'd YTD 2026 — the "ignored micro-cap" entry point is gone. Risk-reward from $700M: bull case ~$1.5-2B (~2-3x) if 2027-2028 demand outruns capacity; bear case 40-60% drawdown if China export regime tightens further.</li>
+<li><strong><span class="tk">SMTOY</span> is a poor way to play this.</strong> InP is &lt;2% of the consolidated Sumitomo Electric business; you're buying a $31.7B conglomerate (power cables, automotive, infocomm) to get exposure to one product line. Conglomerate dilution overwhelms the thesis.</li>
+<li><strong>JX Nippon is not separately tradeable</strong> — wrapped inside ENEOS Holdings (parent).</li>
+</ul>
+
+<p>If you must own InP exposure: AXT at small position size (2-3%) treating the China risk as a binary; otherwise skip and own the downstream beneficiaries (AVGO, COHR, LITE, NVDA) who get paid regardless of which InP vendor supplies them.</p>
 
 <h2>Layer 2: The foundry — TSMC COUPE, Tower, GlobalFoundries</h2>
 
@@ -311,7 +343,8 @@ li { margin: 8px 0; }
 
 <p><strong>Tier 2 — 2026-2027 production inflection</strong></p>
 <ul>
-<li>Substrate: <span class="tk">SOITEC</span> (95% photonics-SOI share; TSMC COUPE production starts 2026)</li>
+<li>Passive substrate: <span class="tk">SOITEC</span> (95% photonics-SOI share; TSMC COUPE production starts 2026)</li>
+<li>Active substrate (laser sources): <span class="tk">AXTI</span> (~36% InP share; up 600%+ YTD but real demand; China-mfg risk is the binary)</li>
 <li>CPO platform owners: <span class="tk">AVGO</span> (Tomahawk 6 + Davisson), <span class="tk">NVDA</span> (Spectrum-X/Quantum-X)</li>
 <li>Foundry exposure: <span class="tk">TSM</span> (the COUPE itself), <span class="tk">TSEM</span> (specialty foundry)</li>
 </ul>
@@ -350,11 +383,12 @@ li { margin: 8px 0; }
 
 <ol>
 <li><strong>HBM cycle</strong> is the highest-conviction near-term play. Own <span class="tk">MU</span> as the US-listed leverage to it.</li>
-<li><strong>Substrate-layer rent</strong> is captured by <span class="tk">SOITEC</span> (Paris-listed; valuation tight after 6x rally; May 27 earnings is the binary).</li>
+<li><strong>Passive-substrate rent</strong> is captured by <span class="tk">SOITEC</span> (Paris-listed; valuation tight after 6x rally; May 27 earnings is the binary).</li>
+<li><strong>Active-substrate rent (laser sources)</strong> is captured by <span class="tk">AXTI</span> if you can stomach the China-manufacturing binary; otherwise let downstream beneficiaries (AVGO/COHR/LITE) capture it for you.</li>
 <li><strong>CPO leaders</strong> are <span class="tk">AVGO</span> (60% custom ASIC share + Tomahawk 6 CPO) and <span class="tk">NVDA</span> (vertical control via Spectrum-X).</li>
 <li><strong>Photonic fabric optionality</strong> is at <span class="tk">MRVL</span> post-Celestial acquisition — under-discussed on the sell side.</li>
 <li><strong>CXL memory pooling</strong> is at <span class="tk">ALAB</span>; cleanest pure-play.</li>
-<li><strong>Skip the buzzword tickers</strong> (PENG, SMCI, RKLB-as-photonics, etc.) — they don't capture the rent layer the marketing implies.</li>
+<li><strong>Skip the buzzword tickers</strong> (PENG, SMCI, RKLB-as-photonics, SMTOY-for-InP, etc.) — they don't capture the rent layer the marketing implies.</li>
 </ol>
 
 <div class="disclosure">
@@ -368,7 +402,12 @@ li { margin: 8px 0; }
 <li>AVGO Tomahawk 6 CPO: AVGO Q1 FY26 earnings commentary</li>
 <li>HBM4 Q1 2026 shipment to NVDA Vera Rubin: Micron disclosures + TrendForce</li>
 <li>ALAB role in CXL: Astera Labs S-1 + recent quarterly earnings</li>
+<li>InP substrate market shares (Sumitomo 42% / AXT 36% / JX 13%): Mordor Intelligence + Yole Développement industry data 2024-2025</li>
+<li>AXT Q1 2026 InP backlog $100M+ and 600%+ YTD run: AXT Q1 2026 earnings + Insider Monkey</li>
+<li>China indium export controls Feb 4 2025 + AXT Tongmei permit cycle: Semiconductor Today, June + Aug 2025</li>
 </ul><br>
+
+<em>Update note (added 2026-05-17 PM):</em> Layer 1B InP-substrate section added after reader feedback. The original publication covered photonic-SOI but did not address the active-substrate layer where AXTI and Sumitomo operate. The omission was a gap; this version corrects it.<br><br>
 
 If you want the wiki entries on any of these, message me and I'll share the relevant page.
 </div>

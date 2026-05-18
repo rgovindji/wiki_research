@@ -1820,3 +1820,25 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
 - **ARBE** (neutral / low): Penny stock with real product. 4D imaging radar (2,304-channel array). CES 2026 NVIDIA partnership real but technical-only. 2025 revenue $1.0M; 2026 guide $4-6M revenue / $28-31M EBITDA loss against $128M market cap at $1.05/share. Binary tail option — design win 5-10x's, otherwise dilutes. Max 0.5-1% position only if you want speculative radar exposure.
 - Investment-framing synthesis: For robotics-broadening to the 8-stock portfolio: MBLY + SONY > MDA > OUST > ARBE. MBLY/SONY have real revenue + real moats; OUST/ARBE are story-stocks needing policy or design-win catalysts.
 - index.md updated; log.md updated. Wiki now has 62+ company pages.
+
+## [2026-05-17] ingest | InP-substrate bottleneck (AXTI) + photonic memory Substack addendum
+- Trigger: user flagged a tweet identifying AXTI + SMTOY as the InP substrate bottleneck for AI photonics (TPU v7, 800G/1.6T transceivers, CPO, etc.)
+- Validated the tweet's core claim: InP IS the substrate for active light sources (silicon can't emit light efficiently); ~91% share is held by 3 suppliers (Sumitomo ~42% / AXT ~36% / JX Nippon ~13%) per Mordor + Yole industry data
+- Tweet had specific corrections needed:
+  - Combined share is ~91%, not 75% (the 2021 Yole reference was stale)
+  - SMTOY is a poor way to play it (InP <2% of consolidated Sumitomo Electric)
+  - "Could freeze AI buildout" framing is overheated — capacity is expanding (Sumitomo +40% by 2026; JX +20%; AXT 2x in 2026 then 2x again in 2027) and heterogeneous integration reduces InP per device
+- This was a gap in my photonic memory Substack — I covered Soitec (passive photonic-SOI substrate) but skipped InP (active laser-source substrate)
+- Updated `wiki/analyses/2026-05-17-photonic-memory-stack.md` + `.html`:
+  - Added Layer 1B section ("The OTHER substrate — InP for active light sources")
+  - Added InP row to the master stack table
+  - Updated Tier 2 to include AXTI alongside SOITEC
+  - Added InP source citations + "update note" disclosure that this section was added post-publication
+- Created `wiki/companies/AXTI.md`:
+  - Stance: bull / conviction MEDIUM (NOT high — China manufacturing binary + 600% prior run)
+  - Q1 2026 step-change: revenue $26.9M (+39% YoY) / InP $13.6M / >50% of revenue first time / $100M+ backlog / GM recovery 29.6% from -6.4%
+  - Capacity path: $35M/qtr end-2026 → $65-70M/qtr late-2027 ($260-280M annualized)
+  - Critical risk: 100% China manufacturing (Beijing Tongmei); Feb 4 2025 China indium export controls; permit cycle constrained Q4 2025 rev
+  - Position sizing recommendation: 2-3% maximum as satellite, NOT core
+  - Pairs with [[SOITEC]] for full substrate-layer exposure; pairs with [[AVGO]] / [[COHR]] / [[LITE]] for downstream photonics demand
+- index.md updated; log.md updated. Wiki now 63 company pages.

@@ -41,7 +41,8 @@ Below is the stack mapped layer by layer, with the public ticker that captures e
 
 | Layer | What it does | Public ticker(s) | What it isn't |
 |---|---|---|---|
-| **Substrate** | Specialty wafer needed to fab silicon photonics chips | **SOITEC** (SOI.PA) | Not a memory company |
+| **Substrate (passive)** | Photonic-SOI wafer for silicon photonic ICs (waveguides, modulators) | **SOITEC** (SOI.PA) | Not a memory company |
+| **Substrate (active)** | InP wafer for laser sources (silicon can't emit light) | **AXTI** (~36% share, China-mfg), **SMTOY** parent (~42% share, conglomerate-diluted), JX Nippon (~13%, not separately tradeable) | Not the silicon chip itself |
 | **Foundry / process** | Manufactures silicon photonics ICs | **TSM** (COUPE), **TSEM** (Tower), GlobalFoundries (private) | Not chip designers |
 | **EDA / design IP** | Software + IP to design photonic + electrical co-integration | **SNPS**, **CDNS** | Not hardware |
 | **Pluggable optical modules** | Today's optical interconnect product (800G, 1.6T transceivers) | **COHR**, **LITE**, **FN** | Not memory; replaced eventually by CPO |
@@ -60,6 +61,34 @@ Every silicon photonics chip starts with a specialty wafer called **photonics-gr
 There is essentially one company in the world qualified to supply this wafer at volume to all three major foundries (TSMC, GlobalFoundries, Tower Semiconductor): **Soitec**, a French company listed on Euronext Paris as **SOI.PA**. BofA estimates Soitec holds ~95% market share of photonics-grade SOI as of March 2026. Shin-Etsu has a license but minimal volume. GlobalWafers' license was terminated.
 
 If you want to play the photonics-substrate layer, this is the only public name. Note: SOI.PA is Paris-listed only — no US ADR. The stock has rallied ~6x off its December 2025 low, so you're not buying it cheap. Their FY26 earnings May 27 are binary — that's the visibility event.
+
+---
+
+---
+
+## Layer 1B: The OTHER substrate — InP for active light sources
+
+*Added after initial publication on reader feedback. The original post covered photonic-SOI but skipped the laser-source substrate layer — that was a gap.*
+
+Soitec's photonic-SOI is the substrate for the **passive** silicon photonic chip — waveguides, modulators, couplers. But silicon is an indirect-bandgap material, which means it cannot efficiently emit light. **Every silicon photonics system needs an external laser source, and the substrate for those lasers is InP — Indium Phosphide.**
+
+Three companies control ~91% of the global InP substrate market (per Mordor Intelligence / Yole 2024 data):
+
+- **Sumitomo Electric (parent ~$31.7B; ADR: SMTOY)** — ~42% share, ~800K wafers/year capacity. Japanese conglomerate; InP is one product in their Compound Semiconductor segment.
+- **AXT Inc (AXTI; ~$700M cap)** — ~36% share, ~300K wafers/year, **manufactures entirely in China through Beijing Tongmei**. Stock up 600%+ YTD 2026 to ATH. Q1 2026: InP backlog $100M+; InP >50% of revenue for first time.
+- **JX Nippon Mining & Metals** — ~13% share, ~200K wafers/year. Japanese; subsidiary of ENEOS Holdings, not separately tradeable.
+
+InP-based lasers (CW, DFB, EML) power 800G/1.6T optical transceivers, future 3.2T modules, NVIDIA Spectrum-X/Quantum-X CPO, AVGO Tomahawk 6, and the laser arrays inside every TSMC COUPE photonic engine. Goldman projects 800G shipments >34M units in 2026 and 1.6T modules >25M units in 2026 — each needs InP laser chips.
+
+**The bottleneck is real but capacity is responding.** Sumitomo expanding +40% by 2026; JX +20%; AXT doubling Q1 2026 → end-2026, then doubling again to $65-70M quarterly InP run-rate by late-2027/early-2028. Heterogeneous integration (III-V-on-Si bonding at TSMC, Intel, AVGO) also reduces InP material consumption per device by orders of magnitude.
+
+**The investable nuance:**
+
+- **AXTI** is the pure-play public name but carries severe China-manufacturing geopolitical risk. China imposed indium export controls on Feb 4, 2025; AXT's Tongmei subsidiary needed (and received in June 2025) export permits to resume shipments. Q4 2025 revenue was constrained by permit delays. The stock has already 6x'd YTD 2026 — the "ignored micro-cap" entry point is gone. Risk-reward from $700M: bull case ~$1.5-2B (~2-3x) if 2027-2028 demand outruns capacity; bear case 40-60% drawdown if China export regime tightens further.
+- **SMTOY is a poor way to play this.** InP is <2% of the consolidated Sumitomo Electric business; you're buying a $31.7B conglomerate (power cables, automotive, infocomm) to get exposure to one product line. Conglomerate dilution overwhelms the thesis.
+- **JX Nippon is not separately tradeable** — wrapped inside ENEOS Holdings (parent).
+
+If you must own InP exposure: AXT at small position size (2-3%) treating the China risk as a binary; otherwise skip and own the downstream beneficiaries (AVGO, COHR, LITE, NVDA) who get paid regardless of which InP vendor supplies them.
 
 ---
 
@@ -170,7 +199,8 @@ Three tiers, ranked by visibility of revenue:
 - Pluggable optics late cycle: **COHR**, **LITE** (NVDA-invested, but losing share to CPO over time)
 
 **Tier 2 — 2026-2027 production inflection**:
-- Substrate: **SOITEC** (95% photonics-SOI share; TSMC COUPE production starts 2026)
+- Passive substrate: **SOITEC** (95% photonics-SOI share; TSMC COUPE production starts 2026)
+- Active substrate (laser sources): **AXTI** (~36% InP share; up 600%+ YTD but real demand; China-mfg risk is the binary)
 - CPO platform owners: **AVGO** (Tomahawk 6 + Davisson), **NVDA** (Spectrum-X/Quantum-X)
 - Foundry exposure: **TSM** (the COUPE itself), **TSEM** (specialty foundry)
 
@@ -203,11 +233,12 @@ The pattern: if a ticker doesn't fit into one of the boxes in the table above, t
 I'm not telling you what to buy. But here's how I'd think about it if I were positioning around the photonics + memory thesis:
 
 1. **HBM cycle** is the highest-conviction near-term play. Own **MU** as the US-listed leverage to it.
-2. **Substrate-layer rent** is captured by **SOITEC** (Paris-listed; valuation tight after 6x rally; May 27 earnings is the binary).
-3. **CPO leaders** are **AVGO** (60% custom ASIC share + Tomahawk 6 CPO) and **NVDA** (vertical control via Spectrum-X).
-4. **Photonic fabric optionality** is at **MRVL** post-Celestial acquisition — under-discussed on the sell side.
-5. **CXL memory pooling** is at **ALAB**; cleanest pure-play.
-6. **Skip the buzzword tickers** (PENG, SMCI, RKLB-as-photonics, etc.) — they don't capture the rent layer the marketing implies.
+2. **Passive-substrate rent** is captured by **SOITEC** (Paris-listed; valuation tight after 6x rally; May 27 earnings is the binary).
+3. **Active-substrate rent (laser sources)** is captured by **AXTI** if you can stomach the China-manufacturing binary; otherwise let downstream beneficiaries (AVGO/COHR/LITE) capture it for you.
+4. **CPO leaders** are **AVGO** (60% custom ASIC share + Tomahawk 6 CPO) and **NVDA** (vertical control via Spectrum-X).
+5. **Photonic fabric optionality** is at **MRVL** post-Celestial acquisition — under-discussed on the sell side.
+6. **CXL memory pooling** is at **ALAB**; cleanest pure-play.
+7. **Skip the buzzword tickers** (PENG, SMCI, RKLB-as-photonics, SMTOY-for-InP, etc.) — they don't capture the rent layer the marketing implies.
 
 ---
 
@@ -222,6 +253,11 @@ Sources for specific data points:
 - AVGO Tomahawk 6 CPO: AVGO Q1 FY26 earnings commentary
 - HBM4 Q1 2026 shipment to NVDA Vera Rubin: Micron disclosures + TrendForce
 - ALAB role in CXL: Astera Labs S-1 + recent quarterly earnings
+- InP substrate market shares (Sumitomo 42% / AXT 36% / JX 13%): Mordor Intelligence + Yole Développement industry data 2024-2025
+- AXT Q1 2026 InP backlog $100M+ and 600%+ YTD run: AXT Q1 2026 earnings + Insider Monkey
+- China indium export controls Feb 4 2025 + AXT Tongmei permit cycle: Semiconductor Today, June + Aug 2025
+
+*Update note (added 2026-05-17 PM):* Layer 1B InP-substrate section added after reader feedback. The original publication covered photonic-SOI but did not address the active-substrate layer where AXTI and Sumitomo operate. The omission was a gap; this version corrects it.
 
 If you want the wiki entries on any of these, message me and I'll share the relevant page.
 
