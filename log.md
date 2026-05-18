@@ -1842,3 +1842,43 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
   - Position sizing recommendation: 2-3% maximum as satellite, NOT core
   - Pairs with [[SOITEC]] for full substrate-layer exposure; pairs with [[AVGO]] / [[COHR]] / [[LITE]] for downstream photonics demand
 - index.md updated; log.md updated. Wiki now 63 company pages.
+
+## [2026-05-17] ingest | ABF substrate bottleneck (AJINY + UNIMICRON) — third substrate-layer addendum of the day
+- Trigger: user flagged a tweet citing Taiwanese media expectation that NVIDIA will lock up ABF substrates via LTAs / prepayments / strategic collaborations / equity investments
+- Validated the core claim with fresh DigiTimes + industry research:
+  - Ajinomoto Build-up Film (ABF) is the dielectric in EVERY advanced AI chip substrate (Blackwell, Rubin, MI series, hyperscaler ASICs)
+  - Ajinomoto holds 95%+ market share of the film itself
+  - AI accelerators use 15-18x more ABF than ordinary PC substrates
+  - Supply shortfall projected 10% H2 2026 → 21% 2027 → 42% 2028 (US investment bank coverage)
+  - Ajinomoto RAISING ABF film prices 30% effective Q3 2026 (DigiTimes May 13 2026) — first major price action in years
+  - NVDA CoWoP architecture (Chip-on-Wafer-on-Platform, late 2026) explicitly targets ABF substrates with Zhen Ding + Unimicron + Compeq as named suppliers (per DigiTimes)
+  - UMC took equity stake in Unimicron capital raise Dec 17 2025 — strategic supply-chain validation
+  - AI ABF substrate orders SOLD OUT 2026 per DigiTimes Apr 2026
+  - Pattern of NVDA equity-investing into supply-chain bottlenecks is established (COHR $2B + LITE $2B + GLW $3.2B + NBIS $2B + SNPS $2B + NOK $1B)
+- Created `wiki/companies/AJINY.md`:
+  - Stance: bull / conviction medium-high (highest in the substrate-monopoly trio since cleanest geopolitics)
+  - The film-monopolist; 30% Q3 2026 price action is the inflection
+  - Conglomerate dilution bear case explicit (food/seasonings primary business)
+  - Pairs with UNIMICRON for end-to-end ABF rent capture
+  - ADR access is OTC AJINY; cleaner via 2802.T directly
+- Created `wiki/companies/UNIMICRON.md`:
+  - Stance: bull / conviction medium
+  - The #1 substrate maker downstream; AI orders sold out 2026
+  - Most likely NVDA equity-investment target next per Taiwan media expectations
+  - CRITICAL ACCESS FRICTION: 3037.TW only, NO US ADR
+  - Yangmei facility pivoting EMIB → CoWoS; Guangfu plant ahead of schedule
+  - CoWoP supplier confirmed alongside Zhen Ding + Compeq
+- Updated `wiki/themes/bottleneck-roadmap.md`:
+  - Added InP substrate row (AXTI, ~36% share) — synchronizes wiki theme with market_overview_ai.html
+  - Added ABF substrate row (AJINY + UNIMICRON) — first wiki entry for this layer
+- Updated `market_overview_ai.html`:
+  - Added ABF row to bottleneck-roadmap table
+  - "Four shifts" paragraph: substrate layer now described as splitting into THREE parallel bottlenecks (photonic-SOI + InP + ABF); total constraint plays now 6 (was 5; was 4 in original)
+  - TOOLTIPS: added AJINY + UNIMICRON entries
+  - Footer: rev 3 marker
+- NOT updated: photonic memory Substack — ABF is the advanced-IC-packaging layer, not the photonics-laser layer; deliberately scoped out to keep the Substack tight
+- The wiki now identifies 3 distinct substrate monopolists at 3 layers of the AI hardware stack:
+  - Photonic-SOI passive substrate: SOITEC (~95% share, Paris-listed)
+  - InP active substrate (laser sources): AXTI (~36% pure-play, China-mfg)
+  - ABF film for IC packaging: AJINY/Ajinomoto (~95% share, Japan-listed) + UNIMICRON downstream substrate maker (~25% share, Taiwan-listed)
+- Three substrate-layer addendums in a single day (SOITEC was already in place + AXTI + AJINY/UNIMICRON) is unusual depth on a single thematic
