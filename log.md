@@ -1895,3 +1895,19 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
 - Updated market_overview_ai.html ABF row + added IBDXY/SSEHY/ATSAY tooltips
 - Wiki now has 4 distinct ABF-ecosystem pages: AJINY (upstream film monopolist) + UNIMICRON + IBDXY + SSEHY + ATSAY (downstream substrate makers)
 - Cleanest US-investor access ranking for ABF substrate makers: IBDXY (ADR, primary NVDA) > SSEHY (ADR, NVDA Groq3 + AMD) > ATSAY (ADR, Western + AMD) > UNIMICRON (Taiwan only, no ADR)
+
+## [2026-05-17] ingest | Goldman data center infrastructure 6-stock basket (NVT + STRL + MOD + IESC + POWL + AGX)
+- User flagged a Goldman Sachs-cited basket of data center infrastructure stocks
+- Note: user wrote "SIESC" — this is a typo for IESC (IES Holdings); $3.9B backlog number confirms identity
+- All 6 names validated with fresh data:
+  - **NVT** (bull / medium-high): Q1 2026 +53% YoY revenue $1.242B; $2.3B backlog 3x prior year; liquid-cooling penetration <10% today; FY26 guide 26-28% sales growth, $4.45-4.55 EPS. The strongest pure-play liquid-cooling story.
+  - **STRL** (bull / medium-high): Q1 2026 total +92% / E-Infrastructure +174% YoY $597.7M; >90% mission-critical backlog; $6.5B pool of work; hyperscaler campus civil pure-play. Stock +88.7% on print + raised guide.
+  - **MOD** (bull / medium-high): FY26 guide 20-25% total / Data Center 60%+; FY28 $2B+ Data Center target (3x); Performance Technologies SPINOFF catalyst announced; dedicated DC segment Apr 1 2026 w/ Art Laszlo; >$100M capacity expansion. Catalyst-driven pure-play emergence.
+  - **IESC** (bull / medium): Q2 FY26 rev $974M (+17% YoY) EPS $5.44 (+56% YoY); backlog $3.9B (+62% since FY25 end); Communications +35% YoY; Gulf Island acquired Jan 2026. Best data center electrical contractor pure-play but stock has run.
+  - **POWL** (bull / medium): $400M+ greenfield data center mega-order (LARGEST in company history); record $1.60B backlog; Q1 + Q2 both 1.7x book-to-bill; $70-100M capacity expansion option. Smaller-cap specialist switchgear play.
+  - **AGX** (bull / medium): Q1 FY26 (ending April 30, 2025) rev $193.7M (+23%); record $1.9B backlog (+36% YoY); $546.5M cash + $315M net liquidity + ZERO DEBT; $150M buyback; 1.2GW Sandow Lakes gas plant notice to proceed. User cited $2.9B backlog from a later quarter that I couldn't directly verify; trajectory supports it.
+- All 6 are part of the data center INFRASTRUCTURE layer (electrical + cooling + construction + power gen) — DIFFERENT bottleneck class than chip substrates (ABF, InP, photonic-SOI)
+- Highly correlated as a basket — all benefit from same AI capex curve; would draw down together in Damodaran "worse than dotcom" scenario
+- Position-sizing recommendation: 1-3% each as data-center-infrastructure satellite; not core long-term holdings
+- Cross-links: each page links to existing wiki names (VRT, ETN, GEV, FIX, EME, PWR, datacenter-construction, ai-capex-cycle)
+- index.md updated; log.md appended. Wiki now has 130+ company pages.
