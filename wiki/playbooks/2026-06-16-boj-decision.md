@@ -14,6 +14,42 @@ status: active-pre-event
 
 > See [[bank-of-japan]] for the full framework, [[2026-05-17-boj-carry-trade-risk]] for the source synthesis.
 
+## ⚠️ 2026-05-18 ACCELERATION NOTE — market is front-running this trade by 30 days
+
+**The playbook's deploy-by-June-10 timeline is already late.** Today's cross-asset data:
+
+- **JGB 10Y jumped +9bps to 2.793%** — highest in years; that's the BoJ-anticipation move arriving 30 days early
+- **30Y UST at 1-year high** — global duration is repricing
+- **USD/JPY still ~158** — the playbook's "full Tier 2 sizing" trigger is already active
+- **Memory cohort selloff**: MU -6%, SEAG -7%, WDC -4.8%, SNDK -5.3% on Seagate CEO "factories take too long" comment at JPM conference
+  - **The crowd is misreading this as bear**; the wiki's [[bottleneck-roadmap]] framework reads "capacity can't keep up" as **bull for HBM pricing**, not bear for demand
+  - **This is exactly the cross-asset rates-driven selloff pre-positioning the BoJ trade would predict** — memory is duration-sensitive and high-multiple
+- **NVDA -4.4% to $225** on the same rates move + pre-earnings de-risking
+
+**Revised scenario probabilities after today's data:**
+- Scenario A (vanilla + dovish): 30% (was 35%) — less likely as market keeps pricing hawkish path
+- **Scenario B (vanilla + hawkish path): 35-40% (was 30%)** — biggest probability shift; market is pricing this now
+- Scenario C (50bp or aggressive path): 15-20% (was 15%) — slightly higher given JGB momentum
+- Scenarios D + E (hold): 10% combined (was 20%) — getting harder to argue BoJ holds at this JGB level
+
+**Calendar acceleration — pull Tier 1 deployment forward**:
+- Original playbook timing: "Establish all Tier 1 positions by June 5"
+- **Updated timing: deploy Tier 1 this week (May 19-23)** — premium is cheaper now than after another 5-10bps of JGB drift
+- Tier 2 sizing was conditional on USD/JPY > 158 — that condition is met TODAY
+
+**New trigger watches (added 2026-05-18)**:
+| Trigger | What it means | Action |
+|---|---|---|
+| JGB 10Y crosses 3.0% | Scenario C front-running confirmed | Activate Tier 3 (full aggressive); cap NVDA structural at current size |
+| USD/JPY breaks 155 before June 16 | Yen strengthening ahead of meeting | Take half profits on FXY positions; let runner go |
+| MU bounces +5% in next 5 days | Memory misread reverses | Add to MU on the read-through; reinforces bottleneck thesis |
+| Trump-Xi summit explicit H200 framework | Removes one BoJ-compounding risk | Slightly reduce Tier 3 sizing |
+
+**The connection between NVDA earnings (May 20) and BoJ (June 16)**:
+NVDA's reaction Wednesday will be filtered through rates positioning regardless of print quality. If JGB 10Y keeps climbing through earnings, even a beat-and-raise NVDA print may only deliver +5% (not the +5-15% [[2026-05-20-nvda-earnings]] Scenario A modeled). **The two events are no longer independent — they're being traded as one rates story.**
+
+---
+
 ## Pre-event setup
 
 | Variable | Value | As of |
@@ -23,8 +59,11 @@ status: active-pre-event
 | Vote at last meeting | **6-3** (3 dissenters for immediate 1.0%) | April 28 |
 | Consensus expectation | **25bp hike to 1.00%** priced into swaps | May 17 |
 | USD/JPY spot | **¥158.76** | May 17 |
+| **JGB 10Y yield** | **2.793% (+9bps in one day; highest in years)** | **May 18** |
+| **30Y UST yield** | **1-year high** | **May 18** |
 | MS estimate of live yen-carry positions | **~$500B** (~90% of pre-Aug 2024 still on) | post-Aug 2024 |
 | Subagent unwind-event probability | **65-70%** in June-July 2026 | this playbook source |
+| **Front-run signal** | **Market pricing Scenario B already** | **May 18** |
 
 ## Scenario matrix — what to do in each case
 

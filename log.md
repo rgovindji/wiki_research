@@ -1935,3 +1935,14 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
   - SOITEC FY26 earnings May 27 — binary catalyst for the photonic-SOI substrate thesis
   - BoJ June 16-17 rate decision — see [[2026-06-16-boj-decision]] playbook
 - Commit: yes; push: deferred per workflow (wait for user confirmation)
+
+## [2026-05-18] note | Playbook pressure-test + acceleration: BoJ + NVDA playbooks updated
+- Trigger: user flagged broad bearish positioning shift on financial Twitter ahead of NVDA Wed May 20 earnings; asked for critical thinking + two-steps-ahead analysis
+- Cross-asset data check (vs Twitter sentiment): NVDA -4.4% to $225; memory cohort -5-7% (MU -6%, SEAG -7%, WDC -4.8%, SNDK -5.3%) on Seagate "factories take too long" comment; **JGB 10Y +9bps to 2.793% (highest in years)**; 30Y UST at 1-year high
+- Critical-thinking finding: the **Seagate comment is structurally BULL for HBM pricing** (capacity can't keep up = pricing power per [[bottleneck-roadmap]]), but crowd is misreading as bear via pattern-match to commodity DRAM cycles. MU at -6% today is contrarian buy, not warning
+- Macro-overlay finding: market is **front-running the BoJ trade by 30 days** — playbook's deploy-by-June-10 timeline is already late
+- Wiki updates:
+  - [[2026-06-16-boj-decision]] — added 2026-05-18 acceleration note at top: revised scenario probabilities (Scenario B 35-40% from 30%; A 30% from 35%; C 15-20% from 15%); pull Tier 1 deployment forward from June 5 → May 19-23; added JGB 10Y + 30Y UST tracking to pre-event setup table; new trigger watches (JGB 3.0% → Scenario C activation; USD/JPY 155 → take half FXY profits; MU bounce → reinforces bottleneck thesis)
+  - [[2026-05-20-nvda-earnings]] — added 2026-05-18 macro-overlay update: revised scenario probabilities (Scenario A 25-30% from 40%; B 45-50% from 35%; C 20-25% from 20%); NVDA $240C YOLO expected value now negative; MU contrarian add; hedge-instrument shift to FXY (from BoJ playbook) over NVDA puts
+- Stance / conviction changes: NONE — all updates are tactical / event-positioning, not structural
+- The connection: NVDA earnings + BoJ are no longer independent events; they're being traded as one rates story

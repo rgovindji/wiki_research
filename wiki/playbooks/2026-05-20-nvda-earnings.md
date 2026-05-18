@@ -36,6 +36,30 @@ status: active-pre-event
 - Anthropic ARR $9B → $30B in one quarter (May 13 CFO disclosure) — model-lab demand is accelerating
 - Trump-Xi summit cleared H200 sales to 10 Chinese firms (May 14) — China commentary on call is critical
 
+## ⚠️ 2026-05-18 MACRO-OVERLAY UPDATE — rates are now the dominant variable
+
+**Today's cross-asset move materially changes the expected NVDA reaction**:
+- **JGB 10Y +9bps to 2.793%** (highest in years) — BoJ trade is front-running by 30 days
+- **30Y UST at 1-year high** — global duration repricing
+- **Memory cohort -5 to -7%** on capacity-tightness comment misread as bear
+- **NVDA -4.4% to $225** on rates + pre-earnings de-risking, not on fundamentals
+- See [[2026-06-16-boj-decision]] acceleration note dated 2026-05-18
+
+**Implication: Scenario A becomes harder to realize even on a strong beat.**
+
+| Original probability | Revised 2026-05-18 | Driver |
+|---|---|---|
+| Scenario A: 40% | **25-30%** | Strong beat may only get +5% (not +5-15%) if rates climb through the print |
+| Scenario B: 35% | **45-50%** | Most likely outcome; chop dominated by macro |
+| Scenario C: 20% | 20-25% | Downside dampened by pre-positioning (crowd already short) |
+| Scenario D: 5% | 5% | Unchanged |
+
+**What this changes about the playbook**:
+- **NVDA $240C May 22 (YOLO position)**: expected value materially negative now. Don't add. If holding, set -50% hard stop and forget.
+- **MU at -6% today is a contrarian add** (consistent with [[bottleneck-roadmap]]) — Seagate "factories can't keep up" comment is structurally bull for HBM, not bear.
+- **Hedge selection shift**: FXY July call spread (from BoJ playbook) is now structurally cheaper than NVDA puts for the same expected dollar payoff. Use BoJ hedge stack, not NVDA-specific event hedge.
+- **The Scenario A → B probability shift is rates-driven, not fundamentals-driven.** If Jensen confirms Vera Rubin demand strong + Q2 guide $87B+, the *fundamentals* are still Scenario A even if the *stock reaction* is muted by macro.
+
 ## What to watch on the call
 
 1. **Gross margin trajectory.** Q4 FY26 GAAP GM was 73.0%. Any guide below 72.5% = bearish; >74% = bullish.
