@@ -1911,3 +1911,27 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
 - Position-sizing recommendation: 1-3% each as data-center-infrastructure satellite; not core long-term holdings
 - Cross-links: each page links to existing wiki names (VRT, ETN, GEV, FIX, EME, PWR, datacenter-construction, ai-capex-cycle)
 - index.md updated; log.md appended. Wiki now has 130+ company pages.
+
+## [2026-05-18] news | Daily update — TSMC raises 2030 outlook to $1.5T; SK Hynix near $1T; LITE Nasdaq-100
+- Sources ingested:
+  - `sources/2026-05-18-tsmc-1.5T-2030-outlook.md` — TSMC raised 2030 global semi market outlook from $1T → $1.5T; AI/HPC 55% (~$825B); 9 wafer fab phases + advanced packaging in 2026; 1.8x Arizona output YoY by year-end
+  - `sources/2026-05-18-sk-hynix-near-1T.md` — SK Hynix ~$942B Thursday close, ~$50B from $1T; +200% YTD on top of +274% in 2025; ~60% HBM market share; Q1 op margin 72% record; Samsung 18-day strike from May 21 = HBM4 risk
+  - `sources/2026-05-18-lite-nasdaq-100.md` — Lumentum joins Nasdaq-100 May 18 (today), replacing CoStar; +16% to ~$1,053 on announcement; photonics re-rated as core AI infra
+- Wiki updates:
+  - [[TSM]] Recent developments — $1.5T 2030 outlook + 9 wafer fab phases + 1.8x Arizona output (top of list)
+  - [[LITE]] Recent developments — Nasdaq-100 inclusion + price update (top of list)
+- HTML artifact refresh:
+  - market_overview_ai.html — new 2026-05-18 daily update card prepended to collapsed log; TSM + LITE tooltips refreshed; header + colophon dates updated to 2026-05-18
+  - dashboard.html — TSM + LITE tooltips refreshed; header + footer dates updated; footer summary expanded to include all changes since 2026-05-14 (ABF + InP + DC infra + robotics ticker batches)
+- Stance / conviction changes: NONE — all updates are data refreshes on existing high-conviction theses
+- Skipped (low-value):
+  - Trump-Xi Beijing summit (no new specific NVDA H200 sales decision yet — pending)
+  - Brent oil +3.4% to $109 on Iran/Strait of Hormuz (relevant tail but no specific wiki ticker action)
+  - "Samsung, Intel, Apple test foundry alternatives" DigiTimes — early signal of TSMC competitive pressure but no contracted shifts yet
+  - AMAT Q2 FY26 print (May 15 release) — already in wiki as [[2026-05-14-AMAT-Q2-2026-earnings]] from prior session
+- Calendar awareness:
+  - NVDA Q1 FY27 Wednesday May 20 — playbook in [[2026-05-20-nvda-earnings]]
+  - WMT Thursday May 21 — not in wiki tickers, no action needed
+  - SOITEC FY26 earnings May 27 — binary catalyst for the photonic-SOI substrate thesis
+  - BoJ June 16-17 rate decision — see [[2026-06-16-boj-decision]] playbook
+- Commit: yes; push: deferred per workflow (wait for user confirmation)

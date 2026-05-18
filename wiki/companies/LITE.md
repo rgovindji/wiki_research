@@ -43,6 +43,7 @@ Photonics leader paired with [[COHR]] in **NVDA's $4B March 2026 commitment** (s
 4. **Margin trajectory** — does scale flow through?
 
 ## Recent developments
+- **2026-05-18 — 🆕 Lumentum joins Nasdaq-100 Index** (effective open Monday May 18, replacing CoStar Group). Stock surged **+16% to ~$1,053** on the announcement Monday May 12 on index-tracking forced buying. Market cap now ~$70B+. **Which means**: market re-rating photonics as core AI infrastructure (not optical niche); passive QQQ flows now add to LITE demand alongside thesis-driven buyers. Per `2026-05-18-lite-nasdaq-100` source summary.
 - **2026-05 (Q3 print)** — **Revenue +90% YoY to $808M** (historic high); EPS beat; **Q3 guidance +85% YoY** beat Wall Street estimates. Stock fell ~5-7% on May 7 ("sell the news" + dilution concerns from financing) then rallied **+17% on May 11** in the optics-trade rebound.
 
 ## Related
