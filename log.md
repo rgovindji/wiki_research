@@ -1882,3 +1882,16 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
   - InP active substrate (laser sources): AXTI (~36% pure-play, China-mfg)
   - ABF film for IC packaging: AJINY/Ajinomoto (~95% share, Japan-listed) + UNIMICRON downstream substrate maker (~25% share, Taiwan-listed)
 - Three substrate-layer addendums in a single day (SOITEC was already in place + AXTI + AJINY/UNIMICRON) is unusual depth on a single thematic
+
+## [2026-05-17] ingest | ABF substrate ecosystem expansion (IBDXY + SSEHY + ATSAY)
+- User follow-up question: "Are there any other stocks in the ABF space?"
+- Mapped complete ABF value chain: upstream film makers + midstream substrate makers + adjacent CCL/CoWoP suppliers
+- Created 3 new wiki pages for the missing top-tier ABF substrate makers:
+  - **IBDXY** (Ibiden, 4062.T / IBDXY ADR; bull / HIGH conviction): 80%+ NVDA AI GPU exposure; ¥500B FY26-28 capex (largest in company history); BofA 35% 5yr op profit CAGR forecast; the highest-NVDA-leverage stock outside NVDA itself; ADR access solves Unimicron's friction
+  - **SSEHY** (Samsung Electro-Mechanics, 009150.KS / SSEHY ADR; bull / medium-high): the RISING CHALLENGER — confirmed first vendor for NVDA Groq3 LPU FC-BGA (Vera Rubin platform); active AMD data center substrate partnership; Samsung Foundry 4nm symbiosis
+  - **ATSAY** (AT&S, AT.VI / ATSAY ADR; bull / medium): the only Western public ABF substrate pure-play; AMD-primary; 5-country manufacturing footprint; Deutsche Bank Buy €50 PT; glass-core substrate optionality for next-gen
+- Confirmed Shinko Electric (6967.T) PRIVATIZED June 6, 2025 — JIC + DNP + Mitsui Chemicals consortium acquisition. No longer publicly tradable; eventual re-listing intent but no timeline
+- Updated bottleneck-roadmap.md ABF row to include all 5 substrate makers + Shinko privatization note
+- Updated market_overview_ai.html ABF row + added IBDXY/SSEHY/ATSAY tooltips
+- Wiki now has 4 distinct ABF-ecosystem pages: AJINY (upstream film monopolist) + UNIMICRON + IBDXY + SSEHY + ATSAY (downstream substrate makers)
+- Cleanest US-investor access ranking for ABF substrate makers: IBDXY (ADR, primary NVDA) > SSEHY (ADR, NVDA Groq3 + AMD) > ATSAY (ADR, Western + AMD) > UNIMICRON (Taiwan only, no ADR)
