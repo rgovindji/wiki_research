@@ -4,7 +4,7 @@ A personal LLM-maintained knowledge base for **long-term equity research**, focu
 
 The pattern is from [the LLM Wiki idea](https://chrlschn.dev/blog/2025/01/llm-wiki/): an LLM agent maintains a persistent, interlinked collection of markdown files instead of re-discovering knowledge on every query. The wiki compounds as new sources arrive; cross-references stay current; contradictions are flagged rather than silently overwritten.
 
-> **Not investment advice.** This is a research artifact, not a recommendation system. Stances are research stances. Numbers are dated and should be verified before any decision. See [DISCLAIMER.md](./DISCLAIMER.md).
+> **Not investment advice.** This is a research artifact, not a recommendation system. Stances are research stances. Numbers are dated and should be verified before any decision. See [DISCLAIMER.md](./DISCLAIMER.md). 
 
 ## Quick start
 
