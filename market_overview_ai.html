@@ -496,11 +496,11 @@
   <div class="brandbar">
     <span class="spike"></span>
     <span>Investing Wiki</span>
-    <span class="right"><strong style="color:var(--ink)">Updated 2026-05-18 · AM</strong> · 130+ files</span>
+    <span class="right"><strong style="color:var(--ink)">Updated 2026-05-19 · PM</strong> · 131 files</span>
   </div>
 
   <!-- Title block -->
-  <div class="eyebrow">Research synthesis · May 2026 · Updated 2026-05-18</div>
+  <div class="eyebrow">Research synthesis · May 2026 · Updated 2026-05-19</div>
   <h1>Investing in the AI Capex Cycle</h1>
   <p class="lede">
     A reading-mode synthesis of the wiki's investment view — what we're betting on, what we're worried about, and which names the market hasn't caught onto yet.
@@ -568,6 +568,17 @@
   <details style="margin: 24px 0 32px;">
     <summary style="cursor:pointer; font-family:var(--body-font); font-size:13px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:1.5px; padding: 8px 0;">Daily update log (collapsed — click to expand for week-by-week ingest history)</summary>
     <div style="margin-top:16px; padding-left:20px; border-left:2px solid var(--hairline);">
+
+  <div class="update-card">
+    <span class="date-badge">2026-05-19 · PM</span>
+    <h3>Divergence signal — ALAB +12.58% while NVDA/AVGO/TSM all down; new ALAB wiki entry</h3>
+    <ul class="findings">
+      <li><strong>🔥 <span class="t" data-tip="ALAB">ALAB</span> +12.58% today</strong> on Evercore ISI PT raise (Outperform maintained). Diverged hard UP while NVDA -1.4%, AVGO -1.1%, TSM -2.1%. <strong>This is a meaningful divergence signal</strong> — in real cycle tops, correlation goes to 1 and nothing rallies; ALAB rallying on company-specific catalysts suggests today's broad semis weakness is rates-driven (BoJ / pre-NVDA), not demand-driven.</li>
+      <li><strong>ALAB Q1 2026 fundamentals</strong> the market is re-pricing: revenue <strong>$308.4M (+93% YoY, +14% QoQ)</strong> record; EPS $0.61 beat; GAAP GM <strong>76.3%</strong> (monopoly-grade); op margin 20.1%; <strong>PCIe Gen 6 now >1/3 of revenue</strong>; <strong>Scorpio X-Series 320-lane Smart Fabric Switch shipping to hyperscalers</strong> (competes directly with NVDA NVLink at rack-fabric layer). Q2 guide $355-365M.</li>
+      <li><strong>New wiki entry</strong>: <code>wiki/companies/ALAB.md</code> at bull / medium-high conviction. Pairs with [[MRVL]] / [[MU]] / [[NVDA]] for end-to-end AI interconnect + memory-fabric exposure. Bear case is NVDA NVLink existential competition at the rack-fabric layer and valuation already elevated post-IPO run.</li>
+      <li><strong>Tomorrow (May 20) NVDA Q1 FY27 print is the binary event of the week.</strong> See [[2026-05-20-nvda-earnings]] playbook with 2026-05-18 macro-overlay update (Scenario A probability cut from 40% to 25-30% on rates dominance; B raised to 45-50%).</li>
+    </ul>
+  </div>
 
   <div class="update-card">
     <span class="date-badge">2026-05-18 · AM</span>
@@ -1207,6 +1218,7 @@ const TOOLTIPS = {
   IBDXY: { kind: "ticker", name: "Ibiden Co.", cap: "~$8-10B (¥1.2-1.5T)", bull_2027: "—", bull_2028: "—", stance: "bull", conv: "high", thesis: "NEW 2026-05-17 PM. TSE: 4062.T / US ADR: IBDXY (OTC). PRIMARY NVDA AI GPU SUBSTRATE SUPPLIER — 80%+ of Ibiden's ABF substrate revenue is NVDA. ¥500B (~$3.3B) FY26-28 capex plan — LARGEST in company history. Capacity expanding 60-70% in 2024-2026. BofA models 35% CAGR operating profit growth over 5 years. The highest NVDA-leverage stock outside NVDA itself. IBDXY OTC ADR solves the US-investor access problem Unimicron has. RISK: 80% NVDA concentration cuts both ways; if AI capex digests, Ibiden takes worst of it.", as_of: "2026-05-17" },
   SSEHY: { kind: "ticker", name: "Samsung Electro-Mechanics (SEMCO)", cap: "~$7-9B (₩9-12T)", bull_2027: "—", bull_2028: "—", stance: "bull", conv: "medium-high", thesis: "NEW 2026-05-17 PM. Korea: 009150.KS / US ADR: SSEHY (OTC, thin). The RISING CHALLENGER taking share at NVDA + AMD simultaneously. CONFIRMED first vendor for NVDA Groq3 LPU FC-BGA (Vera Rubin platform chip) with Q2 2026 mass production. ALSO AMD data center substrate partnership (Busan + new Vietnam factory). Samsung Foundry 4nm symbiosis (Groq3 LPU fabbed at Samsung Foundry). RISK: Samsung Foundry execution on Groq3; first-vendor ≠ sole-vendor; Korean geopolitical tail.", as_of: "2026-05-17" },
   ATSAY: { kind: "ticker", name: "AT&S", cap: "~$1.1-1.7B (€1-1.5B)", bull_2027: "—", bull_2028: "—", stance: "bull", conv: "medium", thesis: "NEW 2026-05-17 PM. Vienna: AT.VI / US ADR: ATSAY (OTC, thin). The ONLY Western public ABF substrate pure-play. AMD data center processor + accelerator substrate supplier. Manufacturing footprint across 5 countries (Austria + China + Malaysia + India). Kulim Malaysia high-volume manufacturing started; K2 idle building drawing customer interest = signal of tightening supply. Leoben Austria ramping. Deutsche Bank Buy upgrade €50 PT Feb 2026 on AI substrate demand. Also pioneering glass-core substrates for next-gen AI/HPC/photonics. RISK: smaller scale (~8%); AMD customer concentration; historical profitability inconsistency.", as_of: "2026-05-17" },
+  ALAB: { kind: "ticker", name: "Astera Labs", cap: "~$30-35B (post-IPO)", bull_2027: "—", bull_2028: "—", stance: "bull", conv: "medium-high", thesis: "NEW 2026-05-19. The cleanest public pure-play on hyperscaler AI connectivity (PCIe retimers + CXL controllers + Scorpio AI fabric switches). Q1 2026: revenue $308.4M (+93% YoY / +14% QoQ) record; EPS $0.61 beat; GAAP GM 76.3% / op margin 20.1%; PCIe Gen 6 >1/3 of revenue. Scorpio X-Series 320-lane Smart Fabric Switch SHIPPING to hyperscalers — competes directly with NVDA NVLink at the rack-fabric layer. Q2 guide $355-365M / EPS $0.68-0.70. May 19 +12.58% on Evercore PT raise; diverged UP while NVDA/AVGO/TSM all down = strong divergence signal. RISK: NVDA NVLink existential competitor at rack fabric; hyperscaler customer concentration; valuation already elevated post-IPO run.", as_of: "2026-05-19" },
   INTC: { kind: "ticker", name: "Intel Corp.", cap: "~$240B", bull_2027: "~$270B", bull_2027_pct: "+12%", bull_2028: "~$290B", bull_2028_pct: "+20%", stance: "neutral", conv: "low", thesis: "Binary 18-24mo event-driven trade. +114% April; +200% YTD; -16.61% during Xi summit. US gov 9.9% stake (~$36B). Apple 18A-P (small share, secondary to TSMC) + Tesla/xAI Terafab ($55-119B). 18A yields hit industry-standard only 2027. Q1 server ASP +27% YoY but volume -5%. Insider 'no grand strategy' tension vs Nenni 'GO INTEL' bull view. AMD +38% Q1 vs Intel +7% (relative loser of AI CPU cycle).", as_of: "2026-05-17" },
   XPEV: { kind: "ticker", name: "XPENG Motors", cap: "~$18B", bull_2027: "~$27B", bull_2027_pct: "+50%", bull_2028: "~$34B", bull_2028_pct: "+90%", stance: "bull", conv: "low-medium", thesis: "NYSE ADR. ¥100B (~$13.7B) IronMan/IRON humanoid commitment; 1K+/month late 2026 mass production target. In-house Turing AI chip (vertical integration like Tesla AI5). Former NVIDIA Android manager leads robotics. Only US-listed pure-play humanoid OEM at scale outside Tesla. Speculative.", as_of: "2026-05-17" },
   ISRG: { kind: "ticker", name: "Intuitive Surgical", cap: "~$170B", bull_2027: "~$220B", bull_2027_pct: "+30%", bull_2028: "~$255B", bull_2028_pct: "+50%", stance: "bull", conv: "medium-high", thesis: "The ONLY operationally-proven, 86%-recurring, structurally-moated robotics public play. Q1 2026 rev $2.77B (+23% YoY); procedures +17%; da Vinci 5 placements 232 in Q1 (+58% YoY); 85% US system share; 40% EBIT growth. Surgical robotics TAM $13.69B (2025) → $27-30B (2030). Cleaner risk-reward than humanoid bets.", as_of: "2026-05-17" },

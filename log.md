@@ -1946,3 +1946,19 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
   - [[2026-05-20-nvda-earnings]] — added 2026-05-18 macro-overlay update: revised scenario probabilities (Scenario A 25-30% from 40%; B 45-50% from 35%; C 20-25% from 20%); NVDA $240C YOLO expected value now negative; MU contrarian add; hedge-instrument shift to FXY (from BoJ playbook) over NVDA puts
 - Stance / conviction changes: NONE — all updates are tactical / event-positioning, not structural
 - The connection: NVDA earnings + BoJ are no longer independent events; they're being traded as one rates story
+
+## [2026-05-19] note | New ALAB wiki entry — fills photonic-memory-Substack reference gap
+- Trigger: user asked why ALAB up +12.58% today; discovered ALAB lacked dedicated wiki page despite being referenced in [[2026-05-17-photonic-memory-stack]] Substack as "cleanest CXL pure-play"
+- New `wiki/companies/ALAB.md`:
+  - Stance: bull / conviction medium-high
+  - Q1 2026: rev $308.4M (+93% YoY, +14% QoQ) record; EPS $0.61 beat; GAAP GM 76.3%; op margin 20.1%; PCIe Gen 6 >1/3 of revenue
+  - Scorpio X-Series 320-lane Smart Fabric Switch shipping to hyperscalers (NEW — competes directly with NVDA NVLink at rack-fabric layer)
+  - Q2 guide $355-365M (sustained ~80% YoY)
+  - Today (May 19) +12.58% on Evercore ISI PT raise (Outperform maintained)
+  - Bear case: NVDA NVLink existential competitor at rack-fabric layer; hyperscaler customer concentration; valuation elevated post-IPO run
+  - Position sizing: 2-4% as AI interconnect satellite
+- Critical-thinking note for the user: ALAB diverging UP while NVDA -1.4% / AVGO -1.1% / TSM -2.1% is a divergence signal — in real cycle tops correlation goes to 1; ALAB rallying on company-specific catalyst suggests today's broad weakness is rates-driven, not demand-driven
+- Updated `market_overview_ai.html`: new 2026-05-19 daily update card prepended; ALAB tooltip added; header + colophon dates bumped to 2026-05-19
+- Updated `dashboard.html`: ALAB tooltip added
+- Updated `index.md`
+- Stance / conviction changes: NONE — new ticker addition
