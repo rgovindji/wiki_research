@@ -36,6 +36,30 @@ status: active-pre-event
 - Anthropic ARR $9B → $30B in one quarter (May 13 CFO disclosure) — model-lab demand is accelerating
 - Trump-Xi summit cleared H200 sales to 10 Chinese firms (May 14) — China commentary on call is critical
 
+## ⚠️ 2026-05-19 EOD UPDATE — Iran MOU + Cantor/Susquehanna PT raises + 30Y UST 2-decade high
+
+**Three new variables since the 05-18 update**:
+
+1. **US-Iran near 14-point MOU** (terms: Iran nuclear enrichment moratorium for US sanctions lift + frozen funds release). Brent fell to ~$100 from $109. Probability framework: 45% deal / 25% reject + escalate / 30% extended negotiation. **This dominates the NVDA reaction direction independent of print quality** — if MOU lands Wed/Thu, AI/tech rallies regardless; if rejected and Trump escalates, AI/tech compresses regardless. Per `2026-05-19-iran-mou-near` source summary.
+
+2. **NVDA sell-side PT raises (May 19)**:
+   - **Cantor Fitzgerald**: $300 → **$350** (Overweight) — implies ~57% upside from $222
+   - **Susquehanna**: $250 → **$275** (positive)
+   - Both raises hours before the print — sell-side positioning for beat-and-raise. **Bullish setup confirmation.**
+
+3. **30Y UST yield at 2-decade high** today — Russell 2000 + Nasdaq -1%; MAGS -1.40%; NVDA closed -1.3% to ~$222. **Validates yesterday's BoJ acceleration thesis** — duration repricing continuing. **The +5% beat reaction modeled in Scenario A might compress further if Iran MOU doesn't land BEFORE Wednesday's AC release.**
+
+**Combined scenario probability update (vs 05-18 update)**:
+- Scenario A (strong beat + raised guide): 25-30% **unchanged** — but the upside CEILING is higher if Iran MOU lands; lower if rates dominate
+- Scenario B (in-line / chop): 40-45% (was 45-50%) — slight reduction; Iran outcome will tilt one direction or another
+- Scenario C (disappointment): 25-30% (was 20-25%) — increased on 30Y UST trajectory
+- Scenario D: 5% unchanged
+
+**Add to "Three questions to answer NOW" section**:
+4. **Has the Iran MOU been signed BEFORE NVDA's AC release?** YES → bias toward Scenario A upside. NO → rates dominate; trade Scenario B/C.
+
+---
+
 ## ⚠️ 2026-05-18 MACRO-OVERLAY UPDATE — rates are now the dominant variable
 
 **Today's cross-asset move materially changes the expected NVDA reaction**:

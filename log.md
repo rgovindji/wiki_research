@@ -1962,3 +1962,19 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
 - Updated `dashboard.html`: ALAB tooltip added
 - Updated `index.md`
 - Stance / conviction changes: NONE — new ticker addition
+
+## [2026-05-19] news | EOD daily update — Iran MOU near, 30Y UST 2-decade high, NVDA PT raises
+- Source ingested: `sources/2026-05-19-iran-mou-near.md` — US-Iran reportedly near a 14-point MOU (Iran nuclear enrichment moratorium for US sanctions lift + frozen funds release). Brent fell from $109 last week → $100 today. Probability matrix: 45% deal signed / 25% reject + Trump escalation / 30% extended negotiation
+- Market data:
+  - 30Y UST yield hit 2-decade high (duration repricing spreading from JGBs to global long-end)
+  - Russell 2000 + Nasdaq -1%; MAGS (Mag 7 ETF) -1.40%
+  - NVDA closed -1.3% to ~$222 ahead of Wednesday's print
+- NVDA sell-side: **Cantor Fitzgerald raised PT $300 → $350** (Overweight); Susquehanna $250 → $275 (positive). Both hours before the print = positioning for beat-and-raise.
+- Wiki updates:
+  - [[2026-05-20-nvda-earnings]] playbook: added 2026-05-19 EOD update block with Iran MOU + PT raises + 30Y UST context; revised probability matrix (A: 25-30% with higher ceiling if Iran lands; B: 40-45%; C: 25-30% increased on rates trajectory); new "question 4" — has Iran MOU signed BEFORE Wed AC release?
+  - [[2026-06-16-boj-decision]] playbook: added 30Y UST 2-decade high + Iran cross-current note; action to take FXY profits early on Iran-deal news
+  - market_overview_ai.html: consolidated the 2026-05-19 daily update card to include ALL today's developments (ALAB divergence + Iran MOU + 30Y UST + PT raises + HD print) — single comprehensive EOD card
+- Earnings noted (not in wiki, not ingested):
+  - HD Q1 2026: EPS $3.43 beat, rev $41.8B +4.8% YoY, comps +0.6%, FY26 guide reaffirmed — consumer/housing softer but holding
+- Stance / conviction changes: NONE — tactical positioning only
+- The Iran MOU is the biggest macro variable for the next 7-14 days; tomorrow's NVDA reaction will be partly determined by whether MOU is signed BEFORE the AC release

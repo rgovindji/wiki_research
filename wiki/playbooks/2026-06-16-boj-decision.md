@@ -37,6 +37,12 @@ status: active-pre-event
 - **Updated timing: deploy Tier 1 this week (May 19-23)** — premium is cheaper now than after another 5-10bps of JGB drift
 - Tier 2 sizing was conditional on USD/JPY > 158 — that condition is met TODAY
 
+**2026-05-19 EOD update — 30Y UST yield at 2-decade high**:
+- The duration repricing has spread beyond JGBs to the global long-end
+- Russell 2000 + Nasdaq -1%; MAGS -1.40%; NVDA -1.3% to ~$222
+- **Iran 14-point MOU is the cross-current variable**: if signed (45% probability), oil drops to $80-85, BoJ has less cover to hike hard, Scenario A probability rises and Tier 1 hedge stops paying. If rejected + escalated (25%), oil $130-150, BoJ Scenario C activates. **The Iran outcome may invalidate or amplify this whole playbook within 7-14 days.**
+- Action: keep Tier 1 deployed but be ready to take FXY profits early on Iran-deal signing news (lock in 1-2x gain before reversal)
+
 **New trigger watches (added 2026-05-18)**:
 | Trigger | What it means | Action |
 |---|---|---|
