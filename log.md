@@ -1991,3 +1991,20 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
   - `market_overview_robotics.html` — robotics-specific deep memo with unique content (humanoid bottleneck roadmap, X stack map sorting, robotics TAM picture)
   - `wiki/analyses/2026-05-17-photonic-memory-stack.html` — published Substack (different artifact category)
 - Net: 7 HTML files → 4 HTML files. Maintenance burden materially reduced.
+
+## [2026-05-20] note | HTML artifact retirement round 2 — dashboard.html + tooltips.js
+- Per user direction "retire the dashboard":
+  - **`dashboard.html`** (1477 lines) — retired; scan-mode companion gets stale (proved with yesterday's footer fix); tooltips duplicated with market_overview_ai.html; "scan mode" was useful at 90 files, less so at 131
+  - **`tooltips.js`** (546 lines) — retired as orphan; not referenced from any HTML file (tooltips are inlined directly into market_overview_ai.html); last meaningful update 2026-05-12
+- Updated cross-references:
+  - `README.md` — quick-start dropped dashboard.html mention; repository-structure section cleaned up (removed dashboard.html + tooltips.js lines; added market_overview_robotics.html line)
+  - `market_overview_ai.html` colophon — removed dashboard.html reference
+- Final HTML artifact inventory (3 files):
+  - `market_overview_ai.html` — primary read-mode memo
+  - `market_overview_robotics.html` — robotics-specific deep memo
+  - `wiki/analyses/2026-05-17-photonic-memory-stack.html` — published Substack
+- Cumulative cleanup (both rounds):
+  - HTML files: 7 → 3 (-4)
+  - JS files: 1 → 0
+  - Lines deleted: ~3,500 lines of dead/redundant code
+  - Daily-update touch surface: market_overview_ai.html only (was 2-3 files)

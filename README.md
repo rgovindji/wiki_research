@@ -11,7 +11,7 @@ The pattern is from [the LLM Wiki idea](https://chrlschn.dev/blog/2025/01/llm-wi
 1. **Read [`wiki/overview.md`](./wiki/overview.md)** — top-level synthesis (current macro stance + leading theses).
 2. **Browse [`wiki/watchlist.md`](./wiki/watchlist.md)** — active buy / hold / avoid candidates.
 3. **Drill into [`wiki/companies/`](./wiki/companies/)** — one page per ticker.
-4. **Open `market_overview_ai.html` or `dashboard.html`** in any browser — self-contained HTML artifacts with hover/tap tooltips, market caps, and bull-case scenarios for 2027/2028.
+4. **Open `market_overview_ai.html`** in any browser — self-contained HTML artifact with hover/tap tooltips, market caps, and bull-case scenarios for 2027/2028. A robotics-specific memo is at `market_overview_robotics.html`.
 
 ## Repository structure
 
@@ -35,9 +35,8 @@ sources/
 
 raw/                     — (gitignored) source material; not redistributed
 
-market_overview_ai.html  — research memo (Claude design)
-dashboard.html           — scan-mode dashboard (Linear design)
-tooltips.js              — shared tooltip data + runtime (inlined into both HTML files)
+market_overview_ai.html       — research memo (Claude design); tooltips inlined
+market_overview_robotics.html — robotics-specific deep memo (humanoid stack)
 ```
 
 ## How it works
