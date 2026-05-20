@@ -178,10 +178,27 @@ Hedging is not free. Conservative estimates:
 3. **Take profits on hedges that work.** If VIX call spread goes +400%, take it — don't let "what if more" greed turn a winning hedge into a round trip.
 4. **Don't hedge a position you should just sell.** If conviction on a name is medium → low, the answer is trim, not hedge.
 
+## Options pricing + education tools (reference)
+
+Free tools for pricing the specific contracts the playbooks reference (FXY call spreads, VIX call spreads, QQQ put spreads, NVDA YOLO calls, etc.). **These are reference resources, not signal services.**
+
+| Tool | URL | What it's good for | Caveat |
+|---|---|---|---|
+| **Options Industry Council (OIC)** | optionseducation.org | Free options calculator (Black-Scholes based); expected-move calculator; clean education content; industry-standard reference (funded by US options exchanges including CBOE / NYSE / Nasdaq) | UX is dated; not real-time pricing during market hours; theoretical-pricing focus |
+| **OptionStrat** | optionstrat.com | Visual multi-leg strategy builder with payoff diagrams; quick scenario modeling for spreads + butterflies; best UX for complex structures | Free tier limited; paid tier ~$25/mo unlocks more features |
+| **OptionsProfitCalculator** | optionsprofitcalculator.com | Quick P/L table for any single-leg or multi-leg trade; tabular output | Single-purpose; no education content |
+| **CBOE** | cboe.com | Exchange-direct product specs, VIX settlement details, SPX vs SPY contract differences | Information, not calculation |
+| **OptionCharts** | optioncharts.io | IV rank, expected move, put/call ratios for individual tickers (the data populating the playbook pre-event tables) | Free tier limited; paid tier for full features |
+
+**House rule**: for any playbook trade that names a specific contract (e.g., "FXY July 31 80/84 call spread" in [[2026-06-16-boj-decision]] or "NVDA $240C May 22" in [[2026-05-20-nvda-earnings]]), price it on OIC or OptionStrat **before** deploying. Implied vol changes daily — the strike/expiry that made sense at playbook authoring may not at deploy time. OIC's expected-move calculator specifically is useful for sizing: it tells you the 1σ move the options market is pricing into the contract.
+
+**What these tools do NOT do**: predict direction. They calculate fair value + payoffs based on inputs (IV, time, rate, strike, underlying). Trade *theses* still come from the wiki + playbooks; tools just make the execution math correct.
+
 ## Related
-[[ai-bubble-debate]] · [[fed-policy]] · [[2026-05-20-nvda-earnings]] · [[2026-06-10-cpi-binary]] · [[overview]] · [[valuation-environment]]
+[[ai-bubble-debate]] · [[fed-policy]] · [[2026-05-20-nvda-earnings]] · [[2026-06-10-cpi-binary]] · [[2026-06-16-boj-decision]] · [[overview]] · [[valuation-environment]]
 
 ## Sources
 - OptionCharts (NVDA / QQQ IV + expected move data, May 14, 2026)
+- Options Industry Council — optionseducation.org (free calculator + education)
 - CBOE VIX historical context
 - Wiki internal: [[ai-bubble-debate]] late-cycle warning indicators framework

@@ -114,6 +114,8 @@ The market has priced a vanilla 25bp hike. **The trade is in the *path*, not the
 - VIX: slight elevation
 - **Wiki position action**: hold hedge stack; June was a feint, the real catalyst is the next meeting
 
+> **Pricing the contracts**: see [[hedging-risk]] "Options pricing + education tools" section for the free calculators (OIC, OptionStrat, OptionsProfitCalculator) to price specific strikes/expiries at deploy time. IV changes daily — re-price before executing.
+
 ## Pre-event positioning (deploy BY June 10, 2026)
 
 ### Tier 1 — Pure Hedge (defensive, ~2% portfolio cost, all-or-nothing payoff)

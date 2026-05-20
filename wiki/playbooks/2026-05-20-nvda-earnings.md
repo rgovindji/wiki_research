@@ -94,6 +94,8 @@ status: active-pre-event
 6. **Q&A: pricing power.** If analysts press on Blackwell pricing vs Hopper and answers are evasive = bearish setup for Q2.
 7. **Bill-and-hold / revenue recognition (NEW 2026-05-15 per Zitron Tech Report).** Zitron alleges NVDA may be counting revenue on GPUs sitting in warehouses awaiting DC commissioning. SEC ASC 606 has specific rules on bill-and-hold (customer must request delay; title transferred; no obligation to repurchase). **Watch the call for:** (a) any analyst question about deferred-delivery / un-deployed shipped inventory; (b) any change in language around "delivered but not deployed"; (c) deferred revenue line item in the 10-Q. Material if true — could mean revenue is overstated. **Bullish signal:** clear language that all shipped revenue is deployed and operational. **Bearish signal:** evasive or technical language about delivery vs deployment.
 
+> **Pricing the YOLO call**: see [[hedging-risk]] "Options pricing + education tools" section for free calculators (OIC, OptionStrat) to price the $240C May 22 contract at deploy time. NVDA IV will be elevated into the print — use the OIC expected-move calculator to confirm sizing makes sense vs the implied 1σ move.
+
 ## Pre-committed scenarios
 
 ### Scenario A — Strong beat + raised guide (probability ~40%)

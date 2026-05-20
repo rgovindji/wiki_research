@@ -2008,3 +2008,17 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
   - JS files: 1 → 0
   - Lines deleted: ~3,500 lines of dead/redundant code
   - Daily-update touch surface: market_overview_ai.html only (was 2-3 files)
+
+## [2026-05-20] note | Added Options Industry Council + options-tools reference to hedging-risk
+- Per user question on whether OIC (optionseducation.org) is helpful: yes, moderately — primarily for pricing the specific contracts the playbooks reference
+- Added "Options pricing + education tools" section to [[hedging-risk]]:
+  - OIC (free Black-Scholes calculator + expected-move calculator; industry-standard reference)
+  - OptionStrat (visual multi-leg strategy builder; best UX for complex structures)
+  - OptionsProfitCalculator (quick P/L tables)
+  - CBOE (exchange-direct product specs)
+  - OptionCharts (IV rank + expected move data; already cited in playbook pre-event tables)
+- Cross-linked from playbooks:
+  - [[2026-06-16-boj-decision]] — added pricing note before "Pre-event positioning" section
+  - [[2026-05-20-nvda-earnings]] — added pricing note before "Pre-committed scenarios" section
+- House rule documented: price specific contracts on these tools BEFORE deploying (IV drift makes playbook-authoring strikes/expiries stale)
+- Honest framing: these are reference tools, not signal services — they calculate fair value + payoffs, theses still come from the wiki
