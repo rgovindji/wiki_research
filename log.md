@@ -1978,3 +1978,16 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
   - HD Q1 2026: EPS $3.43 beat, rev $41.8B +4.8% YoY, comps +0.6%, FY26 guide reaffirmed — consumer/housing softer but holding
 - Stance / conviction changes: NONE — tactical positioning only
 - The Iran MOU is the biggest macro variable for the next 7-14 days; tomorrow's NVDA reaction will be partly determined by whether MOU is signed BEFORE the AC release
+
+## [2026-05-20] note | HTML artifact retirement — removed 3 redundant files
+- Per user direction "retire any files we don't need," audited all HTML files and removed:
+  - **`dashboard-previews.html`** (399 lines) — one-off "Dashboard Design Comparison" experiment file; no ongoing value
+  - **`portfolio_synthesis_2026-05-14.html`** (1221 lines) — dated portfolio synthesis from May 14; locked to that day's snapshot; every metric stale; redundant with current market_overview_ai.html
+  - **`wiki/analyses/2026-05-17-friend-overview.html`** (294 lines) — shareable friend-readable summary; redundant with market_overview_ai.html for the same audience purpose
+- Updated `market_overview_ai.html` colophon to remove the friend-overview reference
+- KEPT (still active artifacts):
+  - `market_overview_ai.html` — primary read-mode memo
+  - `dashboard.html` — scan-mode companion (flagged for user decision; still actively maintained)
+  - `market_overview_robotics.html` — robotics-specific deep memo with unique content (humanoid bottleneck roadmap, X stack map sorting, robotics TAM picture)
+  - `wiki/analyses/2026-05-17-photonic-memory-stack.html` — published Substack (different artifact category)
+- Net: 7 HTML files → 4 HTML files. Maintenance burden materially reduced.
