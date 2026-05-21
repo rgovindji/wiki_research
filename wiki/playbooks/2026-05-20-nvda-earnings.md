@@ -1,11 +1,57 @@
 ---
 type: analysis
-tags: [playbook, nvda, earnings, may-2026, pre-mortem]
-last_updated: 2026-05-14
-last_full_review: 2026-05-14
-sources: 0
+tags: [playbook, nvda, earnings, may-2026, pre-mortem, post-event]
+last_updated: 2026-05-20
+last_full_review: 2026-05-20
+sources: 1
 event_date: 2026-05-20
-status: active-pre-event
+status: post-event-resolved
+outcome: scenario-A-confirmed
+---
+
+## ✅ POST-EVENT UPDATE (2026-05-20 AC) — SCENARIO A CONFIRMED
+
+**Q1 FY27 actuals vs playbook triggers** (every Scenario A trigger hit):
+
+| Trigger | Threshold | Actual | Met? |
+|---|---|---|---|
+| Revenue | > $80B | **$81.6B** | ✅ |
+| Non-GAAP EPS | > $1.85 | **$1.87** | ✅ |
+| Q2 guide | > $85B | **$91.0B** (beat whisper by $4B) | ✅✅ |
+| Gross margin | > 73% | **74.9%** | ✅ |
+| Vera Rubin commits | Named customers | **Samples shipped + production H2 FY27 + 10x inference cost reduction claim** | ✅ |
+| China H200 | Revenue confirmed | **Explicitly ZERO; "uncertain whether any imports allowed"** | n/a (China off table per Kress) |
+
+**Additional bullish surprises NOT in the playbook**:
+- **Vera CPU = new $200B TAM** Q3 2026 production (separate growth vector not previously sized)
+- **Networking +199% YoY to $14.8B** — third-largest segment globally and growing fastest
+- **$80B fresh buyback authorization + 25x dividend hike** (capital return signal)
+- Jensen verbatim: "Demand has gone parabolic. Agentic AI has arrived."
+- Sovereign AI +80% YoY across 40 countries / $50T GDP
+- H100 rentals +20% YTD, A100 +15% — pricing power empirically confirmed
+- GB300/NVL72 = fastest product launch in NVDA history; "hundreds of thousands of units" per hyperscaler
+
+**Actions to execute per Scenario A pre-commitment** (see "Pre-committed scenarios" section below):
+- NVDA structural (7%): **HOLD** ✓
+- NVDA $240C May 22 YOLO: **trim 50% at +100%** when stock opens up
+- Downstream beneficiaries (AMAT, KLAC, LRCX, TSM, CRWV, NBIS): **HOLD structural** ✓
+- China-exposed (AVGO, TSM): **positive read-through; consider adds on pullback** ✓
+- Memory (MU, SNDK): **HOLD; do NOT add at peak P/E** (SK Hynix already near $1T)
+- Hedges: **close out QQQ/NVDA put spreads at next AM open** (lock in residual time-value)
+- Cheap VIX hedges: let expire
+
+**Implications for other wiki frameworks**:
+- [[ai-capex-cycle]] — empirically refutes Damodaran "worse than dotcom" digestion thesis
+- [[bottleneck-roadmap]] — Networking +199% directly validates CPO transition; [[SOITEC]] + [[AXTI]] + [[LITE]] + [[COHR]] + [[ALAB]] all benefit
+- [[nvda-supply-chain]] — Vera Rubin H2 FY27 shipping confirms 2027 demand for [[AJINY]] + [[IBDXY]] + [[UNIMICRON]] + [[MU]]
+- [[ai-bubble-debate]] — Damodaran demand-side bear weakened materially
+- The macro overlay variables (Iran MOU, BoJ, 30Y UST) still matter for stock REACTION direction but no longer threaten the fundamentals
+
+**Probability framework retrospective**:
+- Playbook had Scenario A at 25-30% (revised down from 40% on 2026-05-18 macro overlay)
+- Fundamentals delivered the bull case despite macro headwind
+- **Lesson**: when underlying demand acceleration is structurally validated (TSMC $1.5T 2030; AMAT >30% CY26; SK Hynix near $1T; AGX $1.9B backlog), macro overlays compress the price reaction but do not break the cycle thesis
+
 ---
 
 # Playbook: NVDA Q1 FY27 Earnings — May 20, 2026 (AC)

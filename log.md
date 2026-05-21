@@ -2022,3 +2022,34 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
   - [[2026-05-20-nvda-earnings]] — added pricing note before "Pre-committed scenarios" section
 - House rule documented: price specific contracts on these tools BEFORE deploying (IV drift makes playbook-authoring strikes/expiries stale)
 - Honest framing: these are reference tools, not signal services — they calculate fair value + payoffs, theses still come from the wiki
+
+## [2026-05-20] earnings | NVDA Q1 FY27 — SCENARIO A CONFIRMED, beat whisper across every line
+- Print (AC, quarter ended April 27 2026):
+  - Revenue $81.6B (+85% YoY, +20% QoQ) vs $78-79B consensus = BEAT $2.6-3.6B
+  - Non-GAAP EPS $1.87 vs $1.77 = BEAT $0.10
+  - Q2 FY27 guide $91.0B ±2% vs $85-87B consensus / $90B whisper = BEAT whisper by $4-6B
+  - GAAP GM 74.9% (in line)
+  - Data Center $75.2B (+92% YoY); Compute $60.4B (+77%); **Networking $14.8B (+199% YoY)** ← the under-discussed number
+  - Edge Computing $6.4B (+29% YoY) — new reporting structure
+- Major surprises beyond consensus model:
+  - **Vera CPU = new $200B TAM** Jensen explicitly; Q3 2026 production shipments
+  - **Vera Rubin samples already shipped to customers**; production H2 FY27; **10x inference token cost reduction vs Blackwell**
+  - **$80B fresh buyback authorization + 25x dividend hike** ($0.01 → $0.25)
+  - Sovereign AI +80% YoY across 40 countries / $50T GDP
+  - GB300/NVL72 = fastest product launch in NVDA history; hyperscalers each deploying "hundreds of thousands of units"
+  - H100 rentals +20% YTD; A100 +15% — pricing power empirically confirmed
+  - **Jensen verbatim: "Demand has gone parabolic. Agentic AI has arrived."**
+- China: STILL ZERO REVENUE per Kress: "uncertain whether any imports will be allowed" — H200 China revenue OFF the FY27 books
+- Files updated:
+  - `sources/2026-05-20-NVDA-Q1-FY27-earnings.md` — full source summary with quotes + implications matrix
+  - `wiki/companies/NVDA.md` — major Recent developments entry with "Which means" implications
+  - `wiki/playbooks/2026-05-20-nvda-earnings.md` — post-event update at top: Scenario A confirmed; every trigger hit; actions executed per pre-commitment
+  - `market_overview_ai.html` — new 2026-05-20 AC daily update card prepended; NVDA tooltip refreshed; header + eyebrow dated 2026-05-20 AC
+- Playbook outcome: ✅ Scenario A — fundamentals delivered the bull case despite macro overlay (Iran MOU pending, 30Y UST 2-decade high, BoJ front-running)
+- Implications:
+  - [[ai-capex-cycle]] empirically refutes Damodaran "worse than dotcom" digestion thesis
+  - [[bottleneck-roadmap]] Networking +199% validates CPO transition directly
+  - [[nvda-supply-chain]] Vera Rubin H2 FY27 shipping = 2027 demand for AJINY + IBDXY + UNIMICRON + SOITEC + AXTI + MU
+  - [[ai-bubble-debate]] Damodaran demand-side bear weakened materially
+- No stance / conviction changes — NVDA remains bull/high; this print validates the existing thesis at every layer
+- Industry synthesis: AI capex cycle is mid-cycle, not late-cycle by demand reading; Sovereign AI is the new growth vector; Vera CPU $200B TAM is the most underpriced single data point; pricing power confirmed empirically refutes "commoditization" bears
