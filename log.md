@@ -2053,3 +2053,21 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
   - [[ai-bubble-debate]] Damodaran demand-side bear weakened materially
 - No stance / conviction changes — NVDA remains bull/high; this print validates the existing thesis at every layer
 - Industry synthesis: AI capex cycle is mid-cycle, not late-cycle by demand reading; Sovereign AI is the new growth vector; Vera CPU $200B TAM is the most underpriced single data point; pricing power confirmed empirically refutes "commoditization" bears
+
+## [2026-05-20] note | Filling gaps: Sovereign AI theme + MS VR200 BOM analysis
+- User asked to (a) fill gaps flagged in NVDA earnings synthesis and (b) find recent Morgan Stanley research on NVDA referenced in a Twitter thread (Aaron Wei + Daniel Wu) about VR200 "BOM" analysis
+- MS PDF itself is paywalled; synthesized from public references (Tom's Hardware, MS cooling cost note, JPM vertical-integration framing) + the Twitter discussion which actually contained the critical analytical insight
+- New files:
+  - `wiki/themes/sovereign-ai.md` — first dedicated coverage of the +80% YoY / 40-country / $50T-GDP sovereign AI growth vector that's materially underpriced in current sell-side models. Tier 1 (NVDA, AMD, TSM, ASML), Tier 2 (CRWV, NBIS), Tier 3 (infrastructure cohort), Tier 4 (private sovereign AI labs). Open questions on contracted-vs-LOI revenue, US-export-control tightening risk, eventual domestic-chip alternatives
+  - `sources/2026-05-20-MS-VR200-BOM-analysis.md` — synthesis of MS rack pricing analysis. Key analytical takeaways: (1) "BOM" is a misnomer — it's per-component pricing the CSP pays, not NVDA's input cost; (2) Vertical integration is restructuring supply chain margin pool; (3) **NVDA passes HBM through at full margin = cyclical revenue exposure to memory pricing** (the Daniel Wu insight); (4) Networking +199% YoY validates substrate stack; (5) Vera CPU $200B TAM is natural HBM-pass-through hedge once Q3 2026 ramp
+- Wiki page updates:
+  - [[NVDA]] bear case — added HBM pass-through revenue exposure (the critical new insight from MS analysis)
+  - [[MU]] bear case — added cross-correlation note (NVDA downcycle reaction will be simultaneous with MU's; use NVDA stock weakness as secondary MU exit signal alongside SK Hynix margin compression)
+  - [[index.md]] — both entries logged
+- Critical thinking framing for the user:
+  - The Aaron Wei thread + Daniel Wu reply is more analytically valuable than the raw MS table
+  - "BOM" naming is misleading (MS chose imprecise language)
+  - The HBM pass-through model means NVDA is cyclically exposed to memory pricing in BOTH directions on the revenue line
+  - This is the cyclical-revenue argument that the Q1 FY27 print does NOT address
+  - Vera CPU $200B TAM provides natural hedge but doesn't ramp until Q3 2026
+- Stance / conviction changes: NONE; tactical context added to existing high-conviction names
