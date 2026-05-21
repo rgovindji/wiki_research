@@ -103,13 +103,30 @@ Per Jensen Q1 FY27 call: Vera standalone CPU = $200B TAM. This CPU revenue is NO
 - [[nvda-supply-chain]] — server-maker margin compression as NVDA goes vertical
 - New theme page candidate: [[ai-rack-economics]] (deferred — covered adequately by this source summary + NVDA page updates)
 
+## Additional MS context (Joseph Moore framework, May 2026)
+
+Beyond the VR200 rack pricing, MS analyst Joseph Moore's broader NVDA framework includes:
+
+- **CY2025 trajectory**: ~$25B legacy Hopper compute + ~$30B networking + ~$155B Blackwell/Rubin = ~$210B Data Center revenue
+- **2026-2027 combined**: ~$845B Data Center revenue implied (Hopper + networking + Blackwell/Rubin) — **the base case before adding new product categories**
+- **"Substantial upside" categories above $845B**: Vera standalone CPU ($200B TAM per Jensen Q1 FY27), Groq rack-scale inference, ICMS (Industrial Compute Manufacturing Systems)
+- **CUDA + NVLink + rack-scale ecosystem lock-in**: Moore argues this is the multi-year moat that chip-spec comparisons miss
+- **Vera Rubin schedule**: on track; "normal startup challenges" could push rack deliveries a few weeks beyond initial estimates; samples already shipped; full production H2 2026
+
+**Cross-check against NVDA Q1 FY27 actuals**:
+- Q1 FY27 Data Center $75.2B annualized = $300B implied 2026 (4x Q1) — above Moore's $210B 2025 baseline by 43%
+- If Q2 guide $91B + Q3/Q4 continue ramping at 20% QoQ, 2026 DC revenue could be $370-400B
+- That's already $400B+ vs Moore's combined 2026-2027 base of $845B — implying 2027 alone needs $445B+ to validate the framework
+
 ## Honest caveat
 
 I could not access the original Morgan Stanley research PDF (paywalled MS Research product). This source summary synthesizes:
-- Public MS references (cooling cost analysis, demand forecast)
+- Public MS references (cooling cost analysis, demand forecast, Joseph Moore framework via The Street / Yahoo Finance coverage)
 - Tom's Hardware coverage of rack pricing
 - Twitter discussion from Aaron Wei + Daniel Wu (May 20)
 - JPM cross-reference on NVDA vertical integration
 - Q1 FY27 print confirmation of the framework
 
 Numbers in the "approximately" range should be treated as directionally correct; precise line items would require access to the MS PDF itself. The analytical takeaways (HBM pass-through risk, vertical integration margin capture) are robust to small calibration changes.
+
+**Standing watch item**: full MS PDF sometimes leaks to Substack / Seeking Alpha 2-3 weeks after publication. Recheck mid-June for the original document and refresh this source summary if surfaced.
