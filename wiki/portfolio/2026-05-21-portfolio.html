@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio · May 21, 2026 · $250K</title>
+<style>
+  /* ============ RESET + BASE ============ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    /* Deep blue + metallic palette */
+    --bg-0: #050816;
+    --bg-1: #0a1128;
+    --bg-2: #0f1e3d;
+    --bg-3: #142852;
+    --glass-bg: rgba(15, 30, 60, 0.4);
+    --glass-border: rgba(140, 180, 230, 0.15);
+    --glass-border-bright: rgba(180, 210, 255, 0.3);
+    --metal-1: #2d4a8a;
+    --metal-2: #4a78c4;
+    --metal-3: #7ba3e0;
+    --shimmer-1: rgba(100, 160, 255, 0.0);
+    --shimmer-2: rgba(160, 200, 255, 0.4);
+    --shimmer-3: rgba(220, 235, 255, 0.6);
+
+    --accent: #5b9bf8;
+    --accent-bright: #7eb5ff;
+    --gold: #f5d177;
+    --green: #34d399;
+    --green-bright: #6ee7b7;
+    --red: #f87171;
+    --red-bright: #fca5a5;
+    --orange: #fbbf24;
+
+    --text: #e2e8f0;
+    --text-bright: #f8fafc;
+    --text-muted: #94a3b8;
+    --text-dim: #64748b;
+
+    --layer-core: #5b9bf8;
+    --layer-substrate: #a78bfa;
+    --layer-robotics: #34d399;
+    --layer-anthropic: #f59e0b;
+    --layer-cyclical: #fb923c;
+    --layer-leaps: #ec4899;
+    --layer-hedge: #94a3b8;
+
+    --mono: 'SF Mono', 'JetBrains Mono', 'Roboto Mono', Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+  }
+
+  html { background: var(--bg-0); }
+
+  body {
+    font-family: var(--sans);
+    color: var(--text);
+    min-height: 100vh;
+    background: radial-gradient(ellipse at top, var(--bg-2) 0%, var(--bg-1) 35%, var(--bg-0) 100%);
+    overflow-x: hidden;
+    padding: 24px;
+    line-height: 1.5;
+  }
+
+  /* Animated metallic shimmer bar at top */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--shimmer-2) 30%, var(--shimmer-3) 50%, var(--shimmer-2) 70%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 8s linear infinite;
+    z-index: 100;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* Subtle background grid */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+      linear-gradient(rgba(100, 130, 200, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(100, 130, 200, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* ============ LAYOUT ============ */
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    gap: 24px;
+  }
+
+  /* ============ GLASS PANEL ============ */
+  .glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glass::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--glass-border-bright) 50%, transparent 100%);
+    pointer-events: none;
+  }
+
+  .glass-card {
+    background: linear-gradient(135deg, rgba(20, 40, 80, 0.4) 0%, rgba(10, 20, 50, 0.5) 100%);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .glass-card:hover {
+    border-color: var(--glass-border-bright);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 30px rgba(91, 155, 248, 0.1);
+  }
+
+  /* ============ HEADER ============ */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 4px;
+  }
+
+  .header-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .header-subtitle {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-top: 4px;
+  }
+
+  .portfolio-value {
+    font-family: var(--mono);
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    background: linear-gradient(180deg, #ffffff 0%, #a8c5e8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 4px 0;
+  }
+
+  .badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .badge {
+    padding: 6px 12px;
+    background: rgba(91, 155, 248, 0.1);
+    border: 1px solid rgba(91, 155, 248, 0.25);
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent-bright);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .badge-day1 {
+    background: linear-gradient(135deg, rgba(91, 155, 248, 0.2), rgba(120, 180, 255, 0.1));
+    border-color: rgba(120, 180, 255, 0.4);
+    color: #c7dcff;
+  }
+
+  .badge-status {
+    color: var(--green-bright);
+    background: rgba(52, 211, 153, 0.1);
+    border-color: rgba(52, 211, 153, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .pulse-dot {
+    width: 6px; height: 6px;
+    background: var(--green-bright);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--green-bright);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* ============ STATS GRID ============ */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .stat-card .label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .stat-card .value {
+    font-family: var(--mono);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-bright);
+    margin-bottom: 4px;
+  }
+
+  .stat-card .sub {
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+
+  .accent-blue { color: var(--accent-bright); }
+  .accent-green { color: var(--green-bright); }
+  .accent-red { color: var(--red-bright); }
+  .accent-gold { color: var(--gold); }
+  .accent-orange { color: var(--orange); }
+
+  /* ============ CHART ============ */
+  .chart-container {
+    height: 320px;
+    position: relative;
+  }
+
+  .chart-svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ============ SECTION HEADER ============ */
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  .section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-bright);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-title::before {
+    content: '';
+    width: 3px;
+    height: 18px;
+    background: linear-gradient(180deg, var(--accent), var(--accent-bright));
+    border-radius: 2px;
+  }
+
+  .section-meta {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: var(--mono);
+  }
+
+  /* ============ HOLDINGS TABLE ============ */
+  .holdings-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 16px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  thead th {
+    text-align: left;
+    padding: 12px 14px;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-bottom: 1px solid var(--glass-border);
+    background: rgba(15, 30, 60, 0.3);
+  }
+
+  thead th.num { text-align: right; }
+  thead th.center { text-align: center; }
+
+  tbody tr {
+    border-bottom: 1px solid rgba(140, 180, 230, 0.05);
+    transition: background 0.2s ease;
+  }
+
+  tbody tr:hover {
+    background: rgba(91, 155, 248, 0.04);
+  }
+
+  tbody td {
+    padding: 14px;
+    vertical-align: middle;
+  }
+
+  tbody td.num {
+    text-align: right;
+    font-family: var(--mono);
+    font-weight: 500;
+  }
+
+  tbody td.center { text-align: center; }
+
+  .ticker {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--text-bright);
+  }
+
+  .ticker-name {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: 2px;
+  }
+
+  /* Layer badge dot */
+  .layer-dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  .layer-core .layer-dot { background: var(--layer-core); box-shadow: 0 0 6px var(--layer-core); }
+  .layer-substrate .layer-dot { background: var(--layer-substrate); box-shadow: 0 0 6px var(--layer-substrate); }
+  .layer-robotics .layer-dot { background: var(--layer-robotics); box-shadow: 0 0 6px var(--layer-robotics); }
+  .layer-anthropic .layer-dot { background: var(--layer-anthropic); box-shadow: 0 0 6px var(--layer-anthropic); }
+  .layer-cyclical .layer-dot { background: var(--layer-cyclical); box-shadow: 0 0 6px var(--layer-cyclical); }
+  .layer-leaps .layer-dot { background: var(--layer-leaps); box-shadow: 0 0 6px var(--layer-leaps); }
+  .layer-hedge .layer-dot { background: var(--layer-hedge); box-shadow: 0 0 4px var(--layer-hedge); }
+
+  .conv {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .conv-high { background: rgba(52, 211, 153, 0.15); color: var(--green-bright); border: 1px solid rgba(52, 211, 153, 0.3); }
+  .conv-mediumhigh { background: rgba(91, 155, 248, 0.15); color: var(--accent-bright); border: 1px solid rgba(91, 155, 248, 0.3); }
+  .conv-medium { background: rgba(251, 191, 36, 0.12); color: var(--orange); border: 1px solid rgba(251, 191, 36, 0.3); }
+  .conv-low { background: rgba(248, 113, 113, 0.12); color: var(--red-bright); border: 1px solid rgba(248, 113, 113, 0.3); }
+
+  /* P&L coloring (Day 1 = 0% but support display) */
+  .pnl-pos { color: var(--green-bright); }
+  .pnl-neg { color: var(--red-bright); }
+  .pnl-zero { color: var(--text-muted); }
+
+  /* Action zone indicators */
+  .zone-hold { color: var(--text-muted); }
+  .zone-watch { color: var(--orange); }
+  .zone-trim { color: var(--red-bright); }
+  .zone-buy { color: var(--green-bright); }
+
+  /* ============ ALLOCATION DONUT ============ */
+  .allocation-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .donut-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+  }
+
+  .donut-center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .donut-total-label {
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .donut-total {
+    font-family: var(--mono);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-bright);
+    margin-top: 4px;
+  }
+
+  .allocation-legend {
+    display: grid;
+    gap: 8px;
+  }
+
+  .legend-row {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .legend-label {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .legend-value {
+    font-family: var(--mono);
+    color: var(--text-muted);
+    font-size: 11px;
+  }
+
+  /* ============ CATALYST TIMELINE ============ */
+  .timeline {
+    position: relative;
+    padding-left: 32px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 8px;
+    width: 2px;
+    background: linear-gradient(180deg,
+      var(--accent) 0%,
+      var(--accent) 30%,
+      rgba(91, 155, 248, 0.3) 100%);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding: 12px 0 12px 16px;
+    border-bottom: 1px solid rgba(140, 180, 230, 0.05);
+  }
+
+  .timeline-item:last-child { border-bottom: none; }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 18px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--bg-2);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 12px rgba(91, 155, 248, 0.5);
+  }
+
+  .timeline-item.urgent::before {
+    background: var(--orange);
+    border-color: var(--orange);
+    box-shadow: 0 0 16px rgba(251, 191, 36, 0.7);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  .timeline-item.critical::before {
+    background: var(--red);
+    border-color: var(--red);
+    box-shadow: 0 0 16px rgba(248, 113, 113, 0.8);
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+
+  .timeline-date {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent-bright);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .timeline-event {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-bright);
+    margin-bottom: 2px;
+  }
+
+  .timeline-detail {
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+
+  .timeline-tickers {
+    display: inline-flex;
+    gap: 6px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+  }
+
+  .timeline-tickers .ticker {
+    font-size: 10px;
+    padding: 1px 5px;
+    background: rgba(91, 155, 248, 0.1);
+    border-radius: 3px;
+  }
+
+  .countdown {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--orange);
+    margin-left: 8px;
+  }
+
+  /* ============ TRIGGER ROW ============ */
+  .trigger {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 14px;
+    padding: 12px 14px;
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background: rgba(15, 30, 60, 0.25);
+    transition: all 0.2s ease;
+  }
+
+  .trigger:hover {
+    background: rgba(15, 30, 60, 0.5);
+    border-color: var(--glass-border-bright);
+  }
+
+  .trigger-icon {
+    font-family: var(--mono);
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, rgba(91, 155, 248, 0.2), rgba(120, 180, 255, 0.05));
+    border: 1px solid rgba(91, 155, 248, 0.3);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-bright);
+  }
+
+  .trigger-text {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .trigger-text strong { color: var(--text-bright); }
+  .trigger-text .condition { color: var(--orange); font-family: var(--mono); font-size: 11px; }
+
+  .trigger-action {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  /* ============ TWO COLUMN ============ */
+  .two-col {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+  }
+
+  /* ============ FOOTER ============ */
+  .footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 11px;
+    padding: 20px 0;
+    border-top: 1px solid var(--glass-border);
+    margin-top: 8px;
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 900px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .two-col { grid-template-columns: 1fr; }
+    .holdings-grid { grid-template-columns: 1fr; }
+    .portfolio-value { font-size: 44px; }
+    .allocation-grid { grid-template-columns: 1fr; justify-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ============ HEADER ============ -->
+  <div class="header">
+    <div>
+      <div class="header-title">Portfolio · May 21 2026 · v1.0</div>
+      <div class="portfolio-value">$250,000.00</div>
+      <div class="header-subtitle">22 positions · Day 1 of deployment · Post-NVDA Q1 FY27 print</div>
+    </div>
+    <div>
+      <div class="badges">
+        <span class="badge badge-status"><span class="pulse-dot"></span>Live</span>
+        <span class="badge badge-day1">Day 1</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ STATS GRID ============ -->
+  <div class="stats-grid">
+    <div class="glass-card stat-card">
+      <div class="label">Total Deployed <span class="accent-blue">⬢</span></div>
+      <div class="value accent-blue">$227,500</div>
+      <div class="sub">91.0% of portfolio</div>
+    </div>
+    <div class="glass-card stat-card">
+      <div class="label">Cash + Hedges <span class="accent-gold">◆</span></div>
+      <div class="value accent-gold">$30,000</div>
+      <div class="sub">12% hedge + cash discipline</div>
+    </div>
+    <div class="glass-card stat-card">
+      <div class="label">High Conviction <span class="accent-green">▲</span></div>
+      <div class="value accent-green">62%</div>
+      <div class="sub">Core 5 + IBDXY + ISRG + SONY</div>
+    </div>
+    <div class="glass-card stat-card">
+      <div class="label">Day P&amp;L <span class="accent-blue">●</span></div>
+      <div class="value">$0.00</div>
+      <div class="sub">Just deployed · Day 1</div>
+    </div>
+  </div>
+
+  <!-- ============ PORTFOLIO VALUE CHART ============ -->
+  <div class="glass">
+    <div class="section-header">
+      <div class="section-title">Portfolio Value · Projection Tracker</div>
+      <div class="section-meta">Day 1 · Live tracking · USD</div>
+    </div>
+    <div class="chart-container">
+      <svg class="chart-svg" viewBox="0 0 1000 320" preserveAspectRatio="none">
+        <!-- Grid -->
+        <defs>
+          <linearGradient id="bullGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(52, 211, 153, 0.3)" />
+            <stop offset="100%" stop-color="rgba(52, 211, 153, 0.0)" />
+          </linearGradient>
+          <linearGradient id="bearGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(248, 113, 113, 0.2)" />
+            <stop offset="100%" stop-color="rgba(248, 113, 113, 0.0)" />
+          </linearGradient>
+          <linearGradient id="baseGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(91, 155, 248, 0.4)" />
+            <stop offset="100%" stop-color="rgba(91, 155, 248, 0.0)" />
+          </linearGradient>
+          <linearGradient id="metallicLine" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="rgba(91, 155, 248, 0.8)" />
+            <stop offset="50%" stop-color="rgba(180, 210, 255, 1)" />
+            <stop offset="100%" stop-color="rgba(91, 155, 248, 0.8)" />
+          </linearGradient>
+        </defs>
+
+        <!-- Grid lines -->
+        <g stroke="rgba(140, 180, 230, 0.08)" stroke-width="1">
+          <line x1="0" y1="60" x2="1000" y2="60" />
+          <line x1="0" y1="120" x2="1000" y2="120" />
+          <line x1="0" y1="180" x2="1000" y2="180" />
+          <line x1="0" y1="240" x2="1000" y2="240" />
+        </g>
+
+        <!-- Y-axis labels -->
+        <g fill="rgba(148, 163, 184, 0.6)" font-size="10" font-family="SF Mono, monospace">
+          <text x="10" y="65">$320K</text>
+          <text x="10" y="125">$290K</text>
+          <text x="10" y="185">$260K</text>
+          <text x="10" y="245">$230K</text>
+          <text x="10" y="305">$200K</text>
+        </g>
+
+        <!-- BULL scenario (Scenario A — AI capex accelerates + Anthropic IPO + BoJ benign) -->
+        <path d="M 80 180 L 200 175 L 320 168 L 440 155 L 560 138 L 680 115 L 800 88 L 920 65"
+              fill="none" stroke="rgba(52, 211, 153, 0.4)" stroke-width="2" stroke-dasharray="4,4" />
+        <path d="M 80 180 L 200 175 L 320 168 L 440 155 L 560 138 L 680 115 L 800 88 L 920 65 L 920 320 L 80 320 Z"
+              fill="url(#bullGrad)" opacity="0.3" />
+
+        <!-- BASE scenario (in-line cycle continues, modest gains) -->
+        <path d="M 80 180 L 200 178 L 320 174 L 440 168 L 560 162 L 680 155 L 800 148 L 920 140"
+              fill="none" stroke="url(#metallicLine)" stroke-width="3" />
+        <path d="M 80 180 L 200 178 L 320 174 L 440 168 L 560 162 L 680 155 L 800 148 L 920 140 L 920 320 L 80 320 Z"
+              fill="url(#baseGrad)" opacity="0.5" />
+
+        <!-- BEAR scenario (HBM cycle turn + BoJ shock) -->
+        <path d="M 80 180 L 200 185 L 320 195 L 440 210 L 560 225 L 680 235 L 800 245 L 920 250"
+              fill="none" stroke="rgba(248, 113, 113, 0.4)" stroke-width="2" stroke-dasharray="4,4" />
+
+        <!-- Day 1 marker -->
+        <circle cx="80" cy="180" r="6" fill="url(#metallicLine)" stroke="white" stroke-width="2" />
+        <text x="80" y="160" fill="rgba(180, 210, 255, 0.9)" font-size="11" font-family="SF Mono, monospace" text-anchor="middle">Today · $250K</text>
+
+        <!-- Forward markers -->
+        <g fill="rgba(148, 163, 184, 0.6)" font-size="10" font-family="SF Mono, monospace" text-anchor="middle">
+          <text x="200" y="310">JUN 16 · BoJ</text>
+          <text x="440" y="310">JUL · NATO?</text>
+          <text x="680" y="310">AUG · NVDA Q2</text>
+          <text x="920" y="310">OCT · ANTH IPO</text>
+        </g>
+
+        <!-- End-state labels -->
+        <text x="930" y="68" fill="var(--green-bright)" font-size="11" font-family="SF Mono, monospace">BULL +25%</text>
+        <text x="930" y="148" fill="var(--accent-bright)" font-size="11" font-family="SF Mono, monospace">BASE +12%</text>
+        <text x="930" y="258" fill="var(--red-bright)" font-size="11" font-family="SF Mono, monospace">BEAR -8%</text>
+      </svg>
+    </div>
+    <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--glass-border); font-size: 11px; color: var(--text-muted); display: flex; gap: 24px; flex-wrap: wrap;">
+      <span><span style="display: inline-block; width: 16px; height: 2px; background: var(--green-bright); margin-right: 6px; vertical-align: middle;"></span>Bull: AI capex accelerates + Anthropic IPO + Iran MOU lands</span>
+      <span><span style="display: inline-block; width: 16px; height: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-bright)); margin-right: 6px; vertical-align: middle;"></span>Base: Cycle continues at modest pace</span>
+      <span><span style="display: inline-block; width: 16px; height: 2px; background: var(--red-bright); margin-right: 6px; vertical-align: middle;"></span>Bear: HBM cycle turn + BoJ Scenario C</span>
+    </div>
+  </div>
+
+  <!-- ============ ALLOCATION DONUT + LEGEND ============ -->
+  <div class="two-col">
+    <div class="glass">
+      <div class="section-header">
+        <div class="section-title">Allocation by Layer</div>
+        <div class="section-meta">7 layers · 22 positions</div>
+      </div>
+      <div class="allocation-grid">
+        <div class="donut-container">
+          <svg viewBox="0 0 100 100" class="chart-svg">
+            <!-- Background ring -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(140, 180, 230, 0.08)" stroke-width="14" />
+            <!-- Layer segments (% based, total 100) -->
+            <!-- Core: 55% (0-198 of 360deg, perimeter 251.3) -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="var(--layer-core)" stroke-width="14"
+                    stroke-dasharray="138.2 113.1" stroke-dashoffset="0" transform="rotate(-90 50 50)" />
+            <!-- Substrate: 7% (198-223deg) -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="var(--layer-substrate)" stroke-width="14"
+                    stroke-dasharray="17.6 233.7" stroke-dashoffset="-138.2" transform="rotate(-90 50 50)" />
+            <!-- Robotics: 12% (223-266deg) -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="var(--layer-robotics)" stroke-width="14"
+                    stroke-dasharray="30.2 221.1" stroke-dashoffset="-155.8" transform="rotate(-90 50 50)" />
+            <!-- Anthropic: 2% (266-273deg) -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="var(--layer-anthropic)" stroke-width="14"
+                    stroke-dasharray="5.03 246.3" stroke-dashoffset="-186" transform="rotate(-90 50 50)" />
+            <!-- Cyclical: 7% (273-298deg) -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="var(--layer-cyclical)" stroke-width="14"
+                    stroke-dasharray="17.6 233.7" stroke-dashoffset="-191" transform="rotate(-90 50 50)" />
+            <!-- LEAPS: 5% (298-316deg) -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="var(--layer-leaps)" stroke-width="14"
+                    stroke-dasharray="12.6 238.7" stroke-dashoffset="-208.6" transform="rotate(-90 50 50)" />
+            <!-- Hedges + Cash: 12% (316-360deg) -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="var(--layer-hedge)" stroke-width="14"
+                    stroke-dasharray="30.2 221.1" stroke-dashoffset="-221.2" transform="rotate(-90 50 50)" />
+          </svg>
+          <div class="donut-center">
+            <div class="donut-total-label">Total</div>
+            <div class="donut-total">$250K</div>
+          </div>
+        </div>
+        <div class="allocation-legend">
+          <div class="legend-row"><span class="layer-core"><span class="layer-dot"></span></span><span class="legend-label">Core (Mag-7 + AI infra)</span><span class="legend-value">55% · $137.5K</span></div>
+          <div class="legend-row"><span class="layer-substrate"><span class="layer-dot"></span></span><span class="legend-label">Substrate adjacency</span><span class="legend-value">7% · $17.5K</span></div>
+          <div class="legend-row"><span class="layer-robotics"><span class="layer-dot"></span></span><span class="legend-label">Robotics + AI #2</span><span class="legend-value">12% · $30K</span></div>
+          <div class="legend-row"><span class="layer-anthropic"><span class="layer-dot"></span></span><span class="legend-label">Anthropic concentrated</span><span class="legend-value">2% · $5K</span></div>
+          <div class="legend-row"><span class="layer-cyclical"><span class="layer-dot"></span></span><span class="legend-label">Cyclical optionality</span><span class="legend-value">7% · $17.5K</span></div>
+          <div class="legend-row"><span class="layer-leaps"><span class="layer-dot"></span></span><span class="legend-label">LEAPS sleeve</span><span class="legend-value">5% · $12.5K</span></div>
+          <div class="legend-row"><span class="layer-hedge"><span class="layer-dot"></span></span><span class="legend-label">Hedges + cash</span><span class="legend-value">12% · $30K</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass">
+      <div class="section-header">
+        <div class="section-title">Anthropic Exposure</div>
+        <div class="section-meta">Multi-layered</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <div style="font-size: 13px; color: var(--text);">Via GOOGL (14% stake)</div>
+          <div style="font-family: var(--mono); font-size: 14px; color: var(--accent-bright); font-weight: 500;">11%</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <div style="font-size: 13px; color: var(--text);">Via AMZN (16-18% stake)</div>
+          <div style="font-family: var(--mono); font-size: 14px; color: var(--accent-bright); font-weight: 500;">5%</div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <div style="font-size: 13px; color: var(--text);">Via ZM (concentrated bet)</div>
+          <div style="font-family: var(--mono); font-size: 14px; color: var(--gold); font-weight: 500;">2%</div>
+        </div>
+        <div style="border-top: 1px solid var(--glass-border); padding-top: 12px; display: flex; justify-content: space-between;">
+          <div style="font-size: 13px; color: var(--text-bright); font-weight: 600;">Total Anthropic-exposed</div>
+          <div style="font-family: var(--mono); font-size: 16px; color: var(--gold); font-weight: 600;">18%</div>
+        </div>
+        <div style="margin-top: 8px; padding: 12px; background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 8px;">
+          <div style="font-size: 11px; color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Catalyst</div>
+          <div style="font-size: 12px; color: var(--text); line-height: 1.5;">$900B round closing 2-4 weeks · IPO Oct 2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HOLDINGS TABLE ============ -->
+  <div class="glass">
+    <div class="section-header">
+      <div class="section-title">Holdings · Entries &amp; Triggers</div>
+      <div class="section-meta">22 positions · all entered May 21 2026</div>
+    </div>
+    <div style="overflow-x: auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>Ticker</th>
+            <th>Layer</th>
+            <th>Conv</th>
+            <th class="num">Weight</th>
+            <th class="num">Dollars</th>
+            <th class="num">Entry Px</th>
+            <th class="num">Shares</th>
+            <th class="num">Day P&amp;L</th>
+            <th>Trim Trigger</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="layer-core">
+            <td><span class="layer-dot"></span><span class="ticker">NVDA</span><div class="ticker-name">NVIDIA · AI compute</div></td>
+            <td><span style="color: var(--layer-core); font-size: 11px; font-weight: 600;">CORE</span></td>
+            <td><span class="conv conv-high">High</span></td>
+            <td class="num">14%</td>
+            <td class="num">$35,000</td>
+            <td class="num">$220.66</td>
+            <td class="num">159</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-watch">Stock breaks $200 → trim 20%</td>
+          </tr>
+          <tr class="layer-core">
+            <td><span class="layer-dot"></span><span class="ticker">TSM</span><div class="ticker-name">Taiwan Semi · foundry monopoly</div></td>
+            <td><span style="color: var(--layer-core); font-size: 11px; font-weight: 600;">CORE</span></td>
+            <td><span class="conv conv-high">High</span></td>
+            <td class="num">11%</td>
+            <td class="num">$27,500</td>
+            <td class="num">$401.62</td>
+            <td class="num">69</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-watch">Wei insider buying stops → trim 9%</td>
+          </tr>
+          <tr class="layer-core">
+            <td><span class="layer-dot"></span><span class="ticker">GOOGL</span><div class="ticker-name">Alphabet · Anthropic 14% + SpaceX</div></td>
+            <td><span style="color: var(--layer-core); font-size: 11px; font-weight: 600;">CORE</span></td>
+            <td><span class="conv conv-high">High</span></td>
+            <td class="num">11%</td>
+            <td class="num">$27,500</td>
+            <td class="num">$382.00</td>
+            <td class="num">72</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-hold">Hold through Anthropic IPO</td>
+          </tr>
+          <tr class="layer-core">
+            <td><span class="layer-dot"></span><span class="ticker">AVGO</span><div class="ticker-name">Broadcom · custom ASIC + CPO</div></td>
+            <td><span style="color: var(--layer-core); font-size: 11px; font-weight: 600;">CORE</span></td>
+            <td><span class="conv conv-high">High</span></td>
+            <td class="num">10%</td>
+            <td class="num">$25,000</td>
+            <td class="num">$416.35</td>
+            <td class="num">60</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-watch">Q2 print Jun 3 · misses → trim 6%</td>
+          </tr>
+          <tr class="layer-core">
+            <td><span class="layer-dot"></span><span class="ticker">AMZN</span><div class="ticker-name">Amazon · Anthropic 16-18% stake</div></td>
+            <td><span style="color: var(--layer-core); font-size: 11px; font-weight: 600;">CORE</span></td>
+            <td><span class="conv conv-mediumhigh">Med-High</span></td>
+            <td class="num">5%</td>
+            <td class="num">$12,500</td>
+            <td class="num">~$200</td>
+            <td class="num">~62</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-hold">Hold through Anthropic mark-up</td>
+          </tr>
+          <tr class="layer-core">
+            <td><span class="layer-dot"></span><span class="ticker">MSFT</span><div class="ticker-name">Microsoft · Azure AI compute</div></td>
+            <td><span style="color: var(--layer-core); font-size: 11px; font-weight: 600;">CORE</span></td>
+            <td><span class="conv conv-high">High</span></td>
+            <td class="num">4%</td>
+            <td class="num">$10,000</td>
+            <td class="num">$421.06</td>
+            <td class="num">24</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-hold">Hold</td>
+          </tr>
+          <tr class="layer-substrate">
+            <td><span class="layer-dot"></span><span class="ticker">IBDXY</span><div class="ticker-name">Ibiden ADR · 80% NVDA substrate</div></td>
+            <td><span style="color: var(--layer-substrate); font-size: 11px; font-weight: 600;">SUBSTRATE</span></td>
+            <td><span class="conv conv-high">High</span></td>
+            <td class="num">4%</td>
+            <td class="num">$10,000</td>
+            <td class="num">verify</td>
+            <td class="num">OTC ADR</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-hold">Hold</td>
+          </tr>
+          <tr class="layer-substrate">
+            <td><span class="layer-dot"></span><span class="ticker">ALAB</span><div class="ticker-name">Astera Labs · PCIe + Scorpio fabric</div></td>
+            <td><span style="color: var(--layer-substrate); font-size: 11px; font-weight: 600;">SUBSTRATE</span></td>
+            <td><span class="conv conv-mediumhigh">Med-High</span></td>
+            <td class="num">3%</td>
+            <td class="num">$7,500</td>
+            <td class="num">$287.48</td>
+            <td class="num">26</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-watch">Below $260 → reassess</td>
+          </tr>
+          <tr class="layer-robotics">
+            <td><span class="layer-dot"></span><span class="ticker">ISRG</span><div class="ticker-name">Intuitive Surgical · proven robotics</div></td>
+            <td><span style="color: var(--layer-robotics); font-size: 11px; font-weight: 600;">ROBOTICS</span></td>
+            <td><span class="conv conv-mediumhigh">Med-High</span></td>
+            <td class="num">4%</td>
+            <td class="num">$10,000</td>
+            <td class="num">$438.49</td>
+            <td class="num">23</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-hold">Hold</td>
+          </tr>
+          <tr class="layer-robotics">
+            <td><span class="layer-dot"></span><span class="ticker">SONY</span><div class="ticker-name">Sony · image sensor 63.6% share</div></td>
+            <td><span style="color: var(--layer-robotics); font-size: 11px; font-weight: 600;">ROBOTICS</span></td>
+            <td><span class="conv conv-high">High</span></td>
+            <td class="num">4%</td>
+            <td class="num">$10,000</td>
+            <td class="num">$22.80</td>
+            <td class="num">439</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-hold">Hold for SSS spin-out optionality</td>
+          </tr>
+          <tr class="layer-robotics">
+            <td><span class="layer-dot"></span><span class="ticker">AMD</span><div class="ticker-name">AMD · NVDA #2 + MI400 Helios</div></td>
+            <td><span style="color: var(--layer-robotics); font-size: 11px; font-weight: 600;">ROBOTICS</span></td>
+            <td><span class="conv conv-medium">Medium</span></td>
+            <td class="num">2%</td>
+            <td class="num">$5,000</td>
+            <td class="num">$447.58</td>
+            <td class="num">11</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-hold">Helios Q3 2026 catalyst</td>
+          </tr>
+          <tr class="layer-robotics">
+            <td><span class="layer-dot"></span><span class="ticker">MDA</span><div class="ticker-name">MDA Space · only public space-robotics</div></td>
+            <td><span style="color: var(--layer-robotics); font-size: 11px; font-weight: 600;">ROBOTICS</span></td>
+            <td><span class="conv conv-medium">Medium</span></td>
+            <td class="num">2%</td>
+            <td class="num">$5,000</td>
+            <td class="num">$34.66</td>
+            <td class="num">144</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-hold">Hold</td>
+          </tr>
+          <tr class="layer-anthropic">
+            <td><span class="layer-dot"></span><span class="ticker">ZM</span><div class="ticker-name">Zoom · 0.5% Anthropic + $7.8B cash</div></td>
+            <td><span style="color: var(--layer-anthropic); font-size: 11px; font-weight: 600;">ANTHROPIC</span></td>
+            <td><span class="conv conv-medium">Medium</span></td>
+            <td class="num">2%</td>
+            <td class="num">$5,000</td>
+            <td class="num">$99.42</td>
+            <td class="num">50</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-watch">No insider buying = lower conv</td>
+          </tr>
+          <tr class="layer-cyclical">
+            <td><span class="layer-dot"></span><span class="ticker">MP</span><div class="ticker-name">MP Materials · rare earth + Optimus</div></td>
+            <td><span style="color: var(--layer-cyclical); font-size: 11px; font-weight: 600;">CYCLICAL</span></td>
+            <td><span class="conv conv-mediumhigh">Med-High</span></td>
+            <td class="num">3%</td>
+            <td class="num">$7,500</td>
+            <td class="num">verify</td>
+            <td class="num">~68</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-hold">Hold for sovereign-stake catalyst</td>
+          </tr>
+          <tr class="layer-cyclical">
+            <td><span class="layer-dot"></span><span class="ticker">MU</span><div class="ticker-name">Micron · HBM cycle</div></td>
+            <td><span style="color: var(--layer-cyclical); font-size: 11px; font-weight: 600;">CYCLICAL</span></td>
+            <td><span class="conv conv-medium">Medium</span></td>
+            <td class="num">2%</td>
+            <td class="num">$5,000</td>
+            <td class="num">~$700</td>
+            <td class="num">7</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-trim">SK Hynix op margin &lt;60% → trim</td>
+          </tr>
+          <tr class="layer-cyclical">
+            <td><span class="layer-dot"></span><span class="ticker">AGX</span><div class="ticker-name">Argan · gas plant EPC · debt-free</div></td>
+            <td><span style="color: var(--layer-cyclical); font-size: 11px; font-weight: 600;">CYCLICAL</span></td>
+            <td><span class="conv conv-medium">Medium</span></td>
+            <td class="num">2%</td>
+            <td class="num">$5,000</td>
+            <td class="num">$660</td>
+            <td class="num">7</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-hold">Hold</td>
+          </tr>
+          <tr class="layer-leaps">
+            <td><span class="layer-dot"></span><span class="ticker">NVDA Jan28 $200C</span><div class="ticker-name">NVDA LEAPS · ITM call</div></td>
+            <td><span style="color: var(--layer-leaps); font-size: 11px; font-weight: 600;">LEAPS</span></td>
+            <td><span class="conv conv-high">High</span></td>
+            <td class="num">4%</td>
+            <td class="num">$10,000</td>
+            <td class="num">verify OIC</td>
+            <td class="num">1-2 ct</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-trim">-50% premium = hard stop</td>
+          </tr>
+          <tr class="layer-leaps">
+            <td><span class="layer-dot"></span><span class="ticker">AMD Jan28 $500C</span><div class="ticker-name">AMD LEAPS · OTM call</div></td>
+            <td><span style="color: var(--layer-leaps); font-size: 11px; font-weight: 600;">LEAPS</span></td>
+            <td><span class="conv conv-medium">Medium</span></td>
+            <td class="num">1%</td>
+            <td class="num">$2,500</td>
+            <td class="num">verify OIC</td>
+            <td class="num">~1 ct</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-trim">-50% premium = hard stop</td>
+          </tr>
+          <tr class="layer-hedge">
+            <td><span class="layer-dot"></span><span class="ticker">FXY 80/84 July</span><div class="ticker-name">FXY call spread · BoJ hedge</div></td>
+            <td><span style="color: var(--layer-hedge); font-size: 11px; font-weight: 600;">HEDGE</span></td>
+            <td><span class="conv conv-medium">Tactical</span></td>
+            <td class="num">1%</td>
+            <td class="num">$2,500</td>
+            <td class="num">verify OIC</td>
+            <td class="num">5-15 sp</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-buy">Close at +200% premium</td>
+          </tr>
+          <tr class="layer-hedge">
+            <td><span class="layer-dot"></span><span class="ticker">VIX 22/30 July</span><div class="ticker-name">VIX call spread · vol insurance</div></td>
+            <td><span style="color: var(--layer-hedge); font-size: 11px; font-weight: 600;">HEDGE</span></td>
+            <td><span class="conv conv-medium">Tactical</span></td>
+            <td class="num">1%</td>
+            <td class="num">$2,500</td>
+            <td class="num">verify OIC</td>
+            <td class="num">5-15 sp</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-buy">Close at +400% premium</td>
+          </tr>
+          <tr class="layer-hedge">
+            <td><span class="layer-dot"></span><span class="ticker">GLD</span><div class="ticker-name">SPDR Gold Shares · structural hedge</div></td>
+            <td><span style="color: var(--layer-hedge); font-size: 11px; font-weight: 600;">HEDGE</span></td>
+            <td><span class="conv conv-medium">Structural</span></td>
+            <td class="num">1%</td>
+            <td class="num">$2,500</td>
+            <td class="num">$413.66</td>
+            <td class="num">6</td>
+            <td class="num pnl-zero">$0.00</td>
+            <td class="zone-hold">Hold structurally</td>
+          </tr>
+          <tr class="layer-hedge">
+            <td><span class="layer-dot"></span><span class="ticker">SGOV</span><div class="ticker-name">iShares 0-3M Treasury · dry powder</div></td>
+            <td><span style="color: var(--layer-hedge); font-size: 11px; font-weight: 600;">CASH</span></td>
+            <td><span class="conv conv-high">Safety</span></td>
+            <td class="num">9%</td>
+            <td class="num">$22,500</td>
+            <td class="num">~$100</td>
+            <td class="num">~225</td>
+            <td class="num pnl-zero">+4.75% yield</td>
+            <td class="zone-buy">Deploy on -10% pullback</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ============ CATALYST TIMELINE + RISK TRIGGERS ============ -->
+  <div class="two-col">
+
+    <div class="glass">
+      <div class="section-header">
+        <div class="section-title">Catalyst Timeline</div>
+        <div class="section-meta">Next 90 days · auto-tracking</div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item urgent">
+          <div class="timeline-date">May 27 · 6 days <span class="countdown">⏰</span></div>
+          <div class="timeline-event">SOITEC FY26 Earnings</div>
+          <div class="timeline-detail">Binary catalyst for photonic-SOI substrate thesis</div>
+          <div class="timeline-tickers"><span class="ticker">SOITEC</span><span class="ticker">substrate-stack</span></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jun 3 · 13 days</div>
+          <div class="timeline-event">AVGO Q2 FY26 Earnings</div>
+          <div class="timeline-detail">Independent test of custom-ASIC + CPO thesis on different customer base</div>
+          <div class="timeline-tickers"><span class="ticker">AVGO</span><span class="ticker">10% position</span></div>
+        </div>
+
+        <div class="timeline-item critical">
+          <div class="timeline-date">Jun 16-17 · 26 days <span class="countdown">🔥 binary</span></div>
+          <div class="timeline-event">BoJ Rate Decision</div>
+          <div class="timeline-detail">Consensus 25bp hike priced; path is the trade. FXY + VIX hedges activated.</div>
+          <div class="timeline-tickers"><span class="ticker">FXY</span><span class="ticker">VIX</span><span class="ticker">NVDA</span><span class="ticker">MU</span></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jun 18-30 · 28-40 days</div>
+          <div class="timeline-event">SpaceX IPO</div>
+          <div class="timeline-detail">~$100B GOOGL stake realization (5% of SpaceX at $2T = $100B)</div>
+          <div class="timeline-tickers"><span class="ticker">GOOGL</span><span class="ticker">~$100B optionality</span></div>
+        </div>
+
+        <div class="timeline-item urgent">
+          <div class="timeline-date">May-Jun · imminent</div>
+          <div class="timeline-event">Anthropic $900B Round Closes</div>
+          <div class="timeline-detail">Mark-to-market write-up for GOOGL, AMZN, ZM balance sheets</div>
+          <div class="timeline-tickers"><span class="ticker">GOOGL</span><span class="ticker">AMZN</span><span class="ticker">ZM</span></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Jul · TBD</div>
+          <div class="timeline-event">NATO Hormuz Decision</div>
+          <div class="timeline-detail">Iran MOU resolution; oil $80 or $130+ depending on outcome</div>
+          <div class="timeline-tickers"><span class="ticker">AGX</span><span class="ticker">GLD</span><span class="ticker">defense</span></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Aug · 90+ days</div>
+          <div class="timeline-event">NVDA Q2 FY27 + SK Hynix Q2</div>
+          <div class="timeline-detail">Tests whether $91B guide is conservative; SK Hynix op margin compression signal for MU exit</div>
+          <div class="timeline-tickers"><span class="ticker">NVDA</span><span class="ticker">MU</span><span class="ticker">substrate-stack</span></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Oct · 140 days</div>
+          <div class="timeline-event">Anthropic IPO Target</div>
+          <div class="timeline-detail">Realization event; ZM most concentrated proxy; cumulative re-rating across GOOGL/AMZN/ZM</div>
+          <div class="timeline-tickers"><span class="ticker">ZM</span><span class="ticker">GOOGL</span><span class="ticker">AMZN</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass">
+      <div class="section-header">
+        <div class="section-title">Risk Triggers</div>
+        <div class="section-meta">Auto-executing</div>
+      </div>
+
+      <div class="trigger">
+        <div class="trigger-icon">⚠</div>
+        <div class="trigger-text"><strong>JGB 10Y crosses 3.0%</strong><br>BoJ Scenario C activating<br><span class="condition">→ trim NVDA/MU 20%; add FXY</span></div>
+      </div>
+
+      <div class="trigger">
+        <div class="trigger-icon">⏱</div>
+        <div class="trigger-text"><strong>NVDA closes &lt; $200</strong><br>Scenario C playbook<br><span class="condition">→ structural trim 20%</span></div>
+      </div>
+
+      <div class="trigger">
+        <div class="trigger-icon">⛏</div>
+        <div class="trigger-text"><strong>SK Hynix Q2 op margin &lt; 60%</strong><br>HBM cycle turning<br><span class="condition">→ cut MU to 1%; trim NVDA</span></div>
+      </div>
+
+      <div class="trigger">
+        <div class="trigger-icon">🛢</div>
+        <div class="trigger-text"><strong>Iran MOU rejected</strong><br>Oil → $130+<br><span class="condition">→ add GLD; upsize AGX</span></div>
+      </div>
+
+      <div class="trigger">
+        <div class="trigger-icon">📉</div>
+        <div class="trigger-text"><strong>AVGO Q2 misses Jun 3</strong><br>Custom ASIC TAM in doubt<br><span class="condition">→ trim AVGO to 6%</span></div>
+      </div>
+
+      <div class="trigger">
+        <div class="trigger-icon">👤</div>
+        <div class="trigger-text"><strong>C.C. Wei stops insider buying</strong><br>Quality signal degraded<br><span class="condition">→ trim TSM to 9%</span></div>
+      </div>
+
+      <div class="trigger">
+        <div class="trigger-icon">⬇</div>
+        <div class="trigger-text"><strong>ALAB drops below $260</strong><br>Scorpio adoption slower<br><span class="condition">→ reassess thesis</span></div>
+      </div>
+
+      <div class="trigger">
+        <div class="trigger-icon">✦</div>
+        <div class="trigger-text"><strong>Anthropic IPO delayed past Q4</strong><br>Realization event slips<br><span class="condition">→ trim ZM to 0.5% or exit</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <div class="footer">
+    Generated 2026-05-21 · Personal research dashboard · <strong>NOT INVESTMENT ADVICE</strong> · All numbers verified May 21 2026 · Refresh prices before trade execution
+  </div>
+
+</div>
+
+</body>
+</html>
