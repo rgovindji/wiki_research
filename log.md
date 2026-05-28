@@ -9,6 +9,61 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-27] daily | Multi-vector AI infrastructure rerating week — SOITEC FY26 + MU $1T + Anthropic $900B
+
+Four-day catchup daily update covering May 24-27. The week delivered confirming data points across every layer of the AI infrastructure stack. All three indexes set records May 27 on Iran ceasefire-extension report (**S&P 500 +0.02% to 7,520.36 record close · Nasdaq +0.07% to 26,674.73 · Dow +0.36% to 50,644.28 record close**).
+
+### 4 source summaries created
+
+- [[2026-05-27-soitec-fy26-earnings]] — **[[SOITEC]] FY26 binary event CONFIRMED BULLISH**. Photonics-SOI revenue >$100M FY26, achieved earlier than anticipated (CEO Laurent Rémont first-print disclosure). Q4 FY26 €202M (+25% QoQ above 20% guide). FCF €63M positive vs −€23M FY25. FY27 Q1 +15% YoY guide. Stock +20.7% gap (€154.20 → €186.05). **Conviction upgraded low-medium → medium**, flagged per house rules.
+- [[2026-05-26-micron-1T-ubs-1625-pt]] — **MU crosses $1T market cap May 26**. UBS PT $535 → $1,625 (3x raise; implied $1.8T mcap). UBS reframes MU as AI infrastructure stock (TSMC-like multiple), not cyclical commodity. EPS >$100/share through 2027-2029 even in moderate downcycle per UBS LTA framework. Hyperscaler forward-funded capacity signal (MSFT/GOOGL/AMZN proposing to fund SK Hynix expansion). Active framework contradiction with [[2026-05-16-damodaran-profg-markets]] flagged for [[feedback-log]] eventual verdict.
+- [[2026-05-27-anthropic-900B-surpasses-openai]] — **Anthropic closes $30B at $900B+ valuation, SURPASSES OpenAI ($852B)** — first time in history. 2.4x rerating in 90 days (Feb 2026 $380B → May 2026 $900B+). Sequoia + Dragoneer + Altimeter + Greenoaks each ~$2B. Corroborates Gavin Baker May 21 "Anthropic added $11B ARR in March alone." Capital-efficiency reframing now priced in by buy-side.
+- [[2026-05-27-daily-iran-hbm-cbrs-meta]] — Daily roundup: Iran "largely negotiated" but Trump-Oman tension on proposed Hormuz transit fee (WTI under $90; Brent ~$98); **Samsung HBM4 qualified at NVDA + AMD, supply begins June 2026** (validates [[MU]] bear case bullet); CBRS −25% from IPO peak ($350 → $242, May 26); Meta 2026 capex raised to $125-145B (+87% YoY midpoint); **NVDA -2% drift over 7 days post Scenario A confirmation** (exhausted-buyer signal flag for [[feedback-log]]).
+
+### Wiki pages touched
+
+- [[SOITEC]] — Recent developments updated with FY26 print; conviction frontmatter upgraded low-medium → medium; subtitle banner added flagging the upgrade per house rules
+- [[MU]] — Recent developments updated with UBS reframing + Samsung HBM4 qualification; Mizuho $740 PT bear bullet marked superseded
+- [[NVDA]] — Recent developments updated with post-earnings drift + Anthropic/Samsung read-throughs
+- [[CBRS]] — Recent developments section added (page had none) covering -25% from IPO peak + "sell-the-news" pattern; tactical-trade framing validating
+- [[ai-bubble-debate]] — New "May 26-27 multi-vector validation week" section at top; Damodaran-vs-UBS framework contradiction flagged
+- [[ai-capex-cycle]] — Top items refreshed with Anthropic $900B + hyperscaler forward-funded capacity
+- [[overview]] — New "May 27 multi-vector rerating week" lead section
+- [[index]] — Recent source ingests entry added
+
+### Stance / conviction changes
+
+- **[[SOITEC]]: conviction low-medium → medium** (first-print confirmation of Photonics-SOI > $100M ahead of plan; FCF swing positive; Q4 sequential beat). **Flagged per house rules.** Stance unchanged at bull.
+- All other stances and convictions unchanged.
+
+### Active framework contradictions (for [[feedback-log]] eventual verdict)
+
+1. **UBS MU $1,625 PT (May 26)** vs. **Damodaran chip-sector top call (May 16)** — directionally opposed; May 27 record closes tilt directionally toward UBS but Damodaran's "consolidation" has a longer time window
+2. **NVDA Scenario A confirmed (May 20)** but stock −2% over 7 days — playbook thesis right, trade outcome flat — "right but timing wrong" vs. "process gap" verdict pending
+
+### Skipped (low-value)
+
+- Generic Mag 7 underperformance articles (GOOGL +28.4% YTD vs MSFT −16.2% YTD is intra-divergence covered in Anthropic source; generic articles add no data)
+- Generic semiconductor rally pieces (covered structurally by UBS/MU source summary)
+- Tesla Optimus production reports (already comprehensively covered May 17 multi-agent batches)
+- NBIS depreciation concerns (covered per Q1 source [[2026-05-13-NBIS-Q1-2026-earnings]]; price-action narrative without new data)
+- Claude Opus 4.x release commentary (no May 2026 release — most recent was Opus 4.7 April 2026)
+
+### Next session priorities
+
+- **June 2 — PANW earnings** (CyberArk integration progress; Pangea/AIDR conversion)
+- **June 3 — AVGO + CRWD earnings** (AVGO custom XPU revenue; CRWD ARR; both wiki bull)
+- **June 10 — May CPI print** (per [[2026-06-10-cpi-binary]] playbook)
+- **June 16-17 — BoJ rate decision** (per [[2026-06-16-boj-decision]] playbook)
+- Watch: whether MU UBS rerating gets sold over next 2-3 weeks (exhausted-buyer thesis confirmation/refutation)
+- Watch: SOITEC first sell-side PT raise post-print — €53-56 average is ~3.5x below post-print spot
+
+### Process gap note
+
+Last logged daily entry was 2026-05-23 (RDW page). The May 21 (Gavin Baker), May 22 (rare earths), and May 23 (RDW) entries are committed to log.md but the associated file modifications remain uncommitted in git (12 page modifications + 3 untracked new files). This commit folds them in alongside today's daily update; future sessions should commit each day's work same-session per the workflow.
+
+---
+
 ## [2026-05-17] autonomous-session | Batch 20 — FINAL — Cybersecurity + Healthcare AI + Climate (3 more agents = 27 total today)
 
 3 final parallel Haiku agents on cybersecurity AI, healthcare AI, hydrogen/climate. Plus created OKLO + VST + IONQ pages from existing data.
@@ -2071,3 +2126,69 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
   - This is the cyclical-revenue argument that the Q1 FY27 print does NOT address
   - Vera CPU $200B TAM provides natural hedge but doesn't ramp until Q3 2026
 - Stance / conviction changes: NONE; tactical context added to existing high-conviction names
+
+## [2026-05-21] ingest | Gavin Baker (Atreides) on Invest Like the Best
+- Source: `sources/2026-05-21-gavin-baker-invest-like-best.md` (raw: `raw/podcasts/new_podcast.txt`)
+- Baker's 6th appearance on Invest Like the Best with Patrick O'Shaughnessy. Recorded ~mid-May 2026 (just before Google I/O).
+- Wiki touched: ai-bubble-debate, ai-infrastructure-debt, space-economy, ALAB, MSFT, AMZN, TSM, INTC, NVDA, index, log
+- **Highest-signal net-new framings:**
+  1. **TSMC capacity discipline = the single AI-cycle bubble-prevention mechanism.** Quote: "if TSMC did what Jensen wanted, NVDA could sell $2-3T of GPUs in '26-'27." Risk vector to watch: Intel or Samsung emerging as a credible >30% second source, forcing TSMC to expand. Added to [[ai-bubble-debate]] as a leading indicator for cycle peak.
+  2. **GPU useful life 10-15 years via prefill/decode disaggregation.** Mechanism-level argument complementing Dylan's empirical resigning data. Implication: AI buildout financing cost falls from ~7% to 5-6%; "saves private credit." Added to [[ai-infrastructure-debt]].
+  3. **Orbital compute reframed as "racks in space"** — single Blackwell-sized rack with 500ft solar wings + radiator in sun-synchronous orbit, connected via free-space lasers. SpaceX uniquely positioned. Added to [[space-economy]].
+  4. **TerraFab bull thesis** — Elon recruits A-teams + semicap A-team rotation + Intel institutional knowledge. Strongest bullish TerraFab framing on wiki. Added to [[INTC]] (page stance unchanged at neutral — Baker's framing balances against CC Wei's "no shortcuts" pushback).
+  5. **ALAB miscategorized as copper loser** — explicit Baker example of systematic mispricing. Added to [[ALAB]] recent developments; raises ALAB conviction at the margin.
+  6. **Satya's $800-stock decision** — using MSFT compute internally vs reselling to OpenAI. Reframes MSFT bear case from execution failure to deliberate capital allocation for a model-API-cutoff endgame. Added to [[MSFT]].
+  7. **Trainium 3 switched scale-up network** as AWS architectural inflection. Robotics-retail P&L efficiencies in next 18 months. Added to [[AMZN]].
+  8. **Pareto frontier reshuffle** — Anthropic + OpenAI now dominate (was Google 9 months ago); Grok 4.3 on the frontier; Gemini 3.1 "hanging on." Google lost cost leadership via conservative TPU v8 design.
+  9. **Anthropic added $11B ARR in a single month** — most evocative articulation of AI demand inflection captured on the wiki. Cross-reference to [[2026-05-13-anthropic-cfo-podcast]] $9B→$30B quarterly framing.
+  10. **Diversity-breakdown self-check from Baker** — "I don't know anyone like me who's not really bullish on DRAM. No one." Even the wiki's loudest bull is flagging late-cycle sentiment. Added to [[ai-bubble-debate]] late-cycle indicators.
+- Notable contradictions surfaced:
+  - **Baker vs Druckenmiller** ([[2026-05-16-druckenmiller-hard-lessons]]): Druckenmiller rotated AWAY from AI in mid-2025 on '99 rhyme; Baker leaned IN during the March-April 2026 selloff. Two veteran investors positioned opposite. Both held as framework anchors; the wiki neither chooses nor reconciles — it surfaces both.
+  - **Baker vs LeCun** ([[2026-05-16-yann-lecun-ame-labs]]): Baker much more confident on continued bitter-lesson scaling and explicitly opens to ASI itself temporarily violating it. LeCun thinks LLMs are capped period.
+- Stance / conviction changes:
+  - **ALAB conviction**: stays at medium-high but at the higher end of the band; Baker's explicit example reinforces the existing wiki thesis
+  - **MSFT bear case framing sharpens** — the "Copilot underwhelms" risk is now also "Satya's bet on internal models doesn't pay off." No stance change but bear-case texture improves
+  - All other stances unchanged
+- Quotes worth carrying forward in any synthesis writing: "in the history of capitalism" (Anthropic); "we need to throw a party for them" (TSMC); "tugging on Superman's cape" (Trainium); "racks in space" (orbital compute); "$800-stock" (MSFT); "1% market share = $100B" (chip startup framework); "master the machine gun" (Last Samurai analogy on AI adaptation)
+
+## [2026-05-22] note | New sector page — rare earths
+- Source: User-curated X/Twitter stack post — *"The Complete Rare Earth Industry Stack"* — provided 2026-05-22 as starting framework.
+- Wiki added: `wiki/sectors/rare-earths.md` (new sector page)
+- Wiki touched: [[MP]] (Related links expanded to include [[rare-earths]] + [[aerospace-defense]] + [[us-china-relations]] + downstream tickers), `index.md` (Sectors section)
+- **Page architecture**: Source-to-end-market stack mapping with wiki-coverage status per ticker, conviction-tiered beneficiary list (top tier = integrated REE producers; second tier = high-intensity end products; third tier = substrate-level diversified), risks / counter-thesis section the original stack post did NOT cover (substitution risk, Chinese price warfare, recycling supply, demand-side overstatement, permitting risk, NdPr volatility).
+- **Net-new framings added by the wiki:**
+  1. Rare earths as **"physical-stack analog to AI capex cycle"** — same [[bottleneck-roadmap]] framework where value capture concentrates at the binding constraint
+  2. **Value capture concentrates at separation + magnet manufacturing, not at mining ore** — China dominates because of separation capacity, not ore availability
+  3. **Tier classification** for investable cohort vs demand-mapping reference (downstream ticker lists are informational, not buy lists)
+  4. **Substitution risk surface** — Tesla rare-earth-free motor R&D, ferrite upgrades, NdFeB recycling — all bear-case angles the stack post omitted
+  5. **Demand math caveat on AI infrastructure** — REE exposure is real but second-order; don't double-count the AI thesis through this lens
+  6. **Open work flagged** — UUUU, USAR (and possibly CRML, NB) need individual ticker pages; second-tier conviction requires earnings anchoring
+- Stance / conviction:
+  - **rare-earths sector**: bull / high conviction on structural demand, medium conviction on Western producer equities (most are pre-commercial)
+  - **MP**: unchanged at bull / high; sector page reinforces existing thesis with broader stack context
+- Source-quality flag: the user's stack post is **not independently verified**; treat per-ticker REE exposure as directional inventory, not precise revenue attribution. Page explicitly notes this in the Sources footer.
+- Followups (recorded in the page's "Open work" section): create UUUU + USAR pages; add REE cross-references to GLW / COHR / LITE / AMAT; verify recent earnings for MP / UUUU / USAR to anchor second-tier conviction
+
+## [2026-05-23] ingest | New company page — Redwire (RDW)
+- Source: Multi-source synthesis (Q1 2026 10-Q, Motley Fool earnings call transcript, BusinessWire IR releases, SpaceNews, StocksToTrade, AE Industrial Partners press, Public.com/TipRanks analyst consensus). No single canonical source ingest file; cited inline in the wiki page Citations section.
+- Wiki added: `wiki/companies/RDW.md` (new company page)
+- Wiki touched: `index.md` (Aerospace & Defense cluster), [[space-economy]] (Tier 1 pure-play space list + Redwire bullet expanded), [[aerospace-defense]] (RDW promoted from stub to full bullet with Q1 numbers + Golden Dome positioning)
+- **Headline framing**: Multi-domain space + defense platform built by AE Industrial Partners roll-up (2020 → SPAC 2021), transformed in June 2025 via $925M Edge Autonomy acquisition into a scaled, profitable space + tactical-UAS supplier. Now the ONLY mid-cap with simultaneous VLEO prime + GEO-refuel prime + tactical-UAS exposure.
+- **Bull thesis pillars:**
+  1. Golden Dome positioning: prime lead in VLEO (SabreSat / DARPA Otter $44M Phase 2) + prime lead in highly-maneuverable, refuelable GEO (Mako / USSF Tetra-5) + merchant supplier in LEO. CEO verbatim per Q1 call.
+  2. Andromeda IDIQ: 1 of 14 vendors on $1.8B ceiling with Space Systems Command notice of intent to raise to $6B+. Catalyst-rich on task-order awards.
+  3. Edge Autonomy: combat-proven Penguin (Ukraine), repeat US Army Stalker buys (3 in 8 months), NATO multi-year high-8-figure contract. Tactical UAS = one of fastest-growing defense categories.
+  4. Gross margin expansion 14.7% → 26.6% in one year (+11.9pp). Adj EBITDA guide positive.
+  5. FY26 revenue guide $450-500M REAFFIRMED post-Q1 (+41.6% YoY at midpoint).
+  6. Debt refinanced May 2029 at SOFR+375 (vs SOFR+700). $175M liquidity.
+- **Bear thesis pillars:**
+  1. **146% YoY share-count dilution** from Edge Autonomy stock consideration ($775M of $925M deal was stock at $15.07 VWAP).
+  2. AE Industrial Partners continuing to sell down via Form 4 filings (April 2026 cadence).
+  3. Net loss still $76.5M Q1 (even discounting $42.5M one-time SBC).
+  4. Stock at $17.49 trades ~22% above sell-side average PT of $14.33 (consensus 8 buy / 1 hold / 1 sell).
+  5. Andromeda IDIQ has 14 competing vendors → headline ceiling number is misleading until RDW captures meaningful task orders.
+  6. Related-party governance flag: Edge Autonomy seller and Redwire controlling sponsor are both AE Industrial Partners.
+- Stance / conviction: **bull / medium** — operational momentum is real (revenue, margin, backlog all moving the right direction), structural concerns are governance + dilution + multiple-already-stretched. Asymmetric: small-to-medium position with explicit trim rules on either valuation extension OR accelerated AE Industrial selling.
+- Wiki cohort placement: between [[RKLB]] (launch + spacecraft) and [[KTOS]] / [[AVAV]] (defense tech with drones). Pairs with [[ASTS]] for diversified-vs-concentrated space-defense exposure choice.
+- Key catalysts to watch: Andromeda task-order disclosures; Tetra-5 + Otter milestone hits; AE Industrial selling cadence; net loss trajectory toward GAAP profitability; Andromeda ceiling raise to $6B+.
+- Followups: file dedicated source summary if a sell-side report or podcast episode is ingested specifically on RDW; revisit conviction post Q2 2026 earnings (Aug 2026) for evidence of GM trajectory + AE Industrial selling deceleration.

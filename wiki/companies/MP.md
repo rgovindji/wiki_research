@@ -2,7 +2,7 @@
 type: company
 ticker: MP
 tags: [rare-earths, robotics, humanoid, defense, ev]
-last_updated: 2026-05-16
+last_updated: 2026-05-22
 last_full_review: 2026-05-13
 sources: 2
 conviction: high
@@ -67,7 +67,7 @@ The only fully integrated rare-earth producer in the US, with H1 2026 commercial
 
 ## Related
 
-[[robotics]] · [[bottleneck-roadmap]] · [[ai-capex-cycle]]
+[[rare-earths]] · [[robotics]] · [[bottleneck-roadmap]] · [[ai-capex-cycle]] · [[aerospace-defense]] · [[us-china-relations]] · [[TSLA]] · [[GEV]] · [[LMT]] · [[NOC]]
 
 ## Sources
 

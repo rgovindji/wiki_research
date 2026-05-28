@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, capex, hyperscalers]
-last_updated: 2026-05-16
+last_updated: 2026-05-27
 last_full_review: 2026-05-09
-sources: 8
+sources: 11
 ---
 
 # AI Capex Cycle
@@ -13,6 +13,8 @@ The multi-year, hundreds-of-billions-of-dollars buildout of AI compute infrastru
 
 ## Why it matters now
 
+- **🔥 2026-05-26-27 — Anthropic closes $30B at $900B+ valuation, surpasses OpenAI ($852B).** 2.4x rerating in 90 days (Feb 2026 $380B → May 2026 $900B+). Sequoia + Dragoneer + Altimeter + Greenoaks co-lead, each ~$2B. **Which means** the model-lab demand-pull at the top of the capex cycle now embeds ~$1.75T+ combined Anthropic+OpenAI private value backing forward compute purchases. Per Gavin Baker May 21: Anthropic added $11B ARR in March alone. Sustained 100%+ growth required to defend valuation = sustained capex demand pull through 2027. Per [[2026-05-27-anthropic-900B-surpasses-openai]]. **Hyperscaler revenue concentration risk strengthens** (Damodaran: MSFT 50%, ORCL 50%+, GOOGL 43%, AMZN 51% of cloud-AI revenue is at OpenAI+Anthropic).
+- **🔥 2026-05-26 — Hyperscaler forward-funded capacity signal.** MSFT, GOOGL, AMZN reportedly proposing to fund SK Hynix capacity expansion in exchange for guaranteed HBM allocation through late 2020s. UBS reframes MU to $1,625 PT (3x), valuing memory as AI infrastructure not cyclical commodity. **Which means** capex regime is shifting from spot-pricing to contracted-pricing for the supply chain — bottleneck rents are now being prepaid. Per [[2026-05-26-micron-1T-ubs-1625-pt]].
 - AI investment is driving **~40% of S&P 500 earnings growth** in 2026 (Inc. / FactSet).
 - **Big 4 hyperscaler 2026 capex = $725B (REVISED UP, May 2026; see [[2026-05-12-hyperscaler-capex-q1-revisions]])** — up **+77% YoY from $410B in 2025**. Breakdown: [[MSFT]] $190B (vs $152B consensus; CFO Hood explicitly attributes **$25B to rising memory chip costs**), [[GOOGL]] $190B (raised $5B; **cloud contract backlog doubled to $460B in one quarter**), [[AMZN]] $200B (held flat — only one not raising), [[META]] $125-145B (raised on "component pricing"). Including secondary hyperscalers (Oracle, ByteDance, Alibaba), **total ~$830B**.
 

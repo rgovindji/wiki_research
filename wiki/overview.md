@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-05-14
+last_updated: 2026-05-27
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,25 @@ sources: 0
 # Overview — May 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## 🔥 May 27, 2026 — Multi-vector AI infrastructure rerating week
+
+Records on all three indexes today: **S&P 500 +0.02% to 7,520.36 record close · Nasdaq +0.07% to 26,674.73 · Dow +0.36% to 50,644.28 record close** on Iran ceasefire-extension report.
+
+The week of May 26-27 delivered confirming data points across every layer of the AI infrastructure stack:
+
+| Layer | Event | Wiki impact |
+|---|---|---|
+| **Model lab** | Anthropic closes $30B at $900B+, surpasses OpenAI ($852B). 2.4x rerating in 90 days. | [[ai-capex-cycle]] demand pull at top of cycle. Per [[2026-05-27-anthropic-900B-surpasses-openai]] |
+| **Memory** | **MU crosses $1T mcap; UBS PT $535→$1,625 (3x).** Structural-vs-cyclical reframing. Hyperscaler forward-funded capacity signal. | [[MU]] bull/high validated; bear "cycle-peak-P/E paradox" needs reframing. Per [[2026-05-26-micron-1T-ubs-1625-pt]] |
+| **Substrates** | **SOITEC FY26: Photonics-SOI >$100M earlier than anticipated.** Q4 +25% QoQ above 20% guide. Stock +20.7% post-print. | [[SOITEC]] conviction upgraded low-medium → medium. Per [[2026-05-27-soitec-fy26-earnings]] |
+| **HBM supply** | Samsung HBM4 qualified by NVDA + AMD; supply begins June 2026; logic die prices +40-50%. | [[MU]] bear-case bullet "Samsung closing gap" validated. Per [[2026-05-27-daily-iran-hbm-cbrs-meta]] |
+| **Hyperscaler capex** | Meta 2026 capex raised to $125-145B (from $115-135B). 2026 midpoint +87% YoY. | [[META]] / [[ai-capex-cycle]] / [[ai-infrastructure-debt]] |
+| **Macro** | Iran "largely negotiated" but Trump-Oman tension on Hormuz transit fee. WTI under $90, Brent ~$98. | [[hedging-risk]] oil-vol lighter; new transit-fee wrinkle to monitor |
+| **NVDA** | -2% drift over 7 days post Scenario A confirmation. "Garden variety beat priced in." | Exhausted-buyer signal flag for [[feedback-log]] |
+| **CBRS** | -25% from IPO peak ($350 → $242 May 26). Index inclusion sold. | [[CBRS]] bull / tactical stance validating; lock-up Nov 16 still the structural overhang |
+
+**Active framework contradiction**: Damodaran ([[2026-05-16-damodaran-profg-markets]]) called near-term chip-sector top May 16; UBS reframed MU as $1.8T candidate May 26. **May 27 record closes tilt directionally toward UBS** but Damodaran's "consolidation" call has a longer time window. Flagged for [[feedback-log]] eventual verdict.
 
 ## Current macro stance
 

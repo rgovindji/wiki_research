@@ -37,7 +37,7 @@ Three structural drivers converging in 2026:
 - [[RKLB]] — **Rocket Lab.** Small/medium-lift launch + space systems. Q1 2026 record $200M rev (+63.5% YoY), $2.2B backlog (~2x YoY). Neutron debut later 2026. Department of War Golden Dome win.
 - [[ASTS]] — **AST SpaceMobile.** Direct-to-cell satellite-to-unmodified-smartphone. Q1 $14.7M rev; 2026 guide $150-200M. 98.9 Mbps to unmodified phone validated. $3.5B cash.
 - LUNR — Intuitive Machines (lunar landers; NASA Artemis customer)
-- RDW — Redwire (space infrastructure)
+- [[RDW]] — **Redwire.** Multi-domain space + defense. Q1 2026 $97M rev (+57.9% YoY), $498M backlog, book-to-bill 1.92; FY26 guide $450-500M. SabreSat (VLEO prime / DARPA Otter) + Mako (refuelable GEO / USSF Tetra-5) = Golden Dome prime lead in two of three orbit tiers. Edge Autonomy acquired June 2025 ($925M) → Penguin + Stalker tactical UAS. Dedicated wiki page added 2026-05-23.
 - BKSY — BlackSky (Earth observation)
 - IRDM — Iridium Communications (legacy satcom; competing position vs ASTS)
 - SATS — EchoStar / Hughes (satellite + 5G spectrum)

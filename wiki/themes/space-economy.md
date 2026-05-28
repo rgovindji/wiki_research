@@ -1,9 +1,9 @@
 ---
 type: theme
-tags: [space, economy, satellites, launch, defense, dod]
-last_updated: 2026-05-16
+tags: [space, economy, satellites, launch, defense, dod, orbital-compute]
+last_updated: 2026-05-21
 last_full_review: 2026-05-13
-sources: 3
+sources: 4
 ---
 
 # Space Economy
@@ -78,7 +78,7 @@ The space economy crossed **$470B in 2026** with **78% commercial revenue** (Mor
 
 See [[aerospace-defense]] for the full tiered framework. Summary:
 
-- **Tier 1 pure-play space:** [[RKLB]], [[ASTS]], LUNR, RDW, BKSY, IRDM, **PL** (Planet Labs), **SPIR** (Spire Global)
+- **Tier 1 pure-play space:** [[RKLB]], [[ASTS]], [[RDW]], LUNR, BKSY, IRDM, **PL** (Planet Labs), **SPIR** (Spire Global)
 - **Tier 2 defense primes:** [[LMT]], [[NOC]], RTX, GD, BA, [[HWM]] (titanium structural)
 - **Tier 3 supply chain:** [[VELO]] (additive mfg), [[KTOS]] (drones + space), [[AVAV]] (loitering munitions + counter-UAS)
 - **Tier 4 private:** **SpaceX (IPO June 18-30, 2026)**, Anduril ($61B Series H May 2026), Blue Origin
@@ -121,7 +121,7 @@ See [[aerospace-defense]] for the full tiered framework. Summary:
 **Top 3 cleanest revenue paths (2026-2028)**:
 - **Planet Labs (PL)**: $66.3M Q1 (+10% YoY); **$900M defense backlog**; 59% non-GAAP GM climbing; NGA + DIA multi-year visibility — new wiki page candidate
 - **Spire Global (SPIR)**: $15.8M Q1 (+13% YoY); **76% of 2026 guide already contracted**; $150M NOAA pipeline; 5 new US RF Geolocation orders — new wiki page candidate
-- **Redwire (RDW)**: **$498M backlog; book-to-bill 1.92**; 2026 guide $450-500M; GEO refuelable Mako program; ELSA solar production — new wiki page candidate
+- **Redwire ([[RDW]])**: **$498M backlog; book-to-bill 1.92**; 2026 guide $450-500M (+41.6% YoY midpoint); GEO refuelable Mako (Tetra-5); VLEO SabreSat (DARPA Otter $44M); Andromeda IDIQ 1-of-14 vendors ($1.8B → potentially $6B ceiling); Edge Autonomy (Penguin/Stalker UAS) acquired $925M June 2025 → multi-domain platform; **dedicated wiki page added 2026-05-23**. Bull-case differentiator: only mid-cap with simultaneous VLEO prime + GEO refuel prime + tactical-UAS exposure. Bear case: 146% YoY dilution from Edge Autonomy + AE Industrial sponsor selling.
 
 **Iridium vs Starlink/ASTS**:
 - Iridium Project Stardust = NB-IoT narrowband (NOT broadband threat); survives niche (voice, emergency SOS, IoT)
@@ -132,6 +132,33 @@ See [[aerospace-defense]] for the full tiered framework. Summary:
 - **ROKT (SPDR S&P Kensho Space)**: +29% YTD, **100% 12-month**; 54% aerospace/defense primes dilution
 - **ARKX (ARK Space Exploration)**: +11% YTD — lags
 - **AVOID**: DFEN (3x leveraged daily reset; volatility decay)
+
+## Orbital compute — reframed as "racks in space" (NEW 2026-05-21)
+
+Per Gavin Baker on Invest Like the Best [[2026-05-21-gavin-baker-invest-like-best]] — the most useful single reframing of orbital compute the wiki has captured:
+
+> *"I do want to like reframe orbital compute because I think when people hear 'data centers in space' they picture a Pentagon-sized building in space. They're like 'well, we can't do that.' That's not what it is. A Blackwell rack weighs 3,000 lbs. It's 8 ft high, 4 ft deep, 3 ft wide. It's racks in space."*
+
+**The architecture Baker describes:**
+- **The satellite IS the rack.** Each "data center node" is approximately the size of a Blackwell rack (~100 kW today, scaling to 120+ kW)
+- **Solar wings ~500 ft on each side**, kept in a **sun-synchronous orbit** so the panels are always in sun
+- **Radiator extends hundreds of feet behind** the rack; sun-synchronous orientation keeps it in shadow → can radiate continuously
+- **Racks connected via free-space lasers through vacuum** (same tech every Starlink satellite already uses for inter-sat links). Eliminates copper/optics cabling cost and the rack-density constraint that exists on Earth
+- **In space, you optimize for weight, not size** — racks can be physically larger than on Earth where copper interconnect length is a cost driver
+
+**Why SpaceX is uniquely positioned:**
+- Operates the **world's largest satellite fleet** (~98-99% of orbiting satellites)
+- Already cools 20 kW satellites today (Starlink V3); going to 60 kW soon, then 100–120 kW
+- Already runs **the world's largest terrestrial data center** (xAI Colossus) — same company has both the hardware engineering and the space ops
+- The two big skeptic objections — radiator heat-rejection and on-orbit maintenance — are real engineering problems, but SpaceX engineers Baker has talked to are "very confident they have solved this"; the maintenance answer is "until you have floating Optimuses, you don't" repair them, you replace cheaply at $500/kg Starship lift cost
+
+**Timing:** Watts shortage on Earth alleviates 2027–28 via terrestrial capacity ramps; orbital compute "really solves it" thereafter — particularly if regulatory blowback constrains terrestrial DC siting. **Workload split:** inference is well-suited for orbital; training stays on Earth for the foreseeable future.
+
+**Implication for terrestrial DC build:** Baker explicitly says this is **not** super bearish for terrestrial data centers ("they're going to be valuable for my lifetime"). The framing is "America will suck as hard as it can on every energy source it can get" — both terrestrial and orbital compute get built to their respective limits.
+
+> **What this means:** The "data centers in space" narrative isn't science fiction. The closest analog is what SpaceX already does at scale with Starlink — they're just adding more solar, more radiator, and matrix multiplication hardware. The investable question over a 3–5 year horizon: who is in the **orbital-compute supply chain** that isn't yet priced as such? Power semiconductors, radiation-hard chips, optical inter-sat link components, advanced solar (gallium arsenide multi-junction cells), thin-film radiator materials. Watch [[GLW]] (specialty optics) and [[COHR]] (laser components) for early signal.
+
+**TerraFab cross-reference:** SpaceX is also reportedly involved (with Tesla) in **TerraFab**, the new US fab JV with Intel partnership — see [[INTC]]. The thesis is the same Elon playbook: recruit the world's best hardware engineers, supplement with relocated supply-chain talent, get A-team attention from ASML/KLA/LRCX/AMAT for anti-monopsony reasons, leverage Intel's 50 years of institutional knowledge. First chips probably 2028+; bullish for the long-term US foundry diversification thesis.
 
 ## Open questions
 
@@ -151,6 +178,7 @@ See [[aerospace-defense]] for the full tiered framework. Summary:
 2. [[2026-05-11-ASTS-Q1-2026-earnings]] — AST SpaceMobile Q1 2026 print
 3. [[2026-05-14-space-economy-budget-sources]] — **consolidated source summary** for Aerospace Corp FY26 budget brief (Golden Dome breakdown + MTI satellites $500M → $8.8B), CSIS commercial services gap, Morgan Stanley ecosystem framing
 4. [[2026-05-16-damodaran-profg-markets]] — Damodaran SpaceX intrinsic value DCF anchor at $1.2T
+5. [[2026-05-21-gavin-baker-invest-like-best]] — orbital compute "racks in space" reframing; TerraFab JV thesis (added 2026-05-21)
 4. Morgan Stanley Global Space Economy — https://www.morganstanley.com/Themes/global-space-economy
 5. SpaceNews FY26 defense appropriations + Space Force $26B — https://spacenews.com/defense-appropriations-bill-for-2026-funds-space-force-at-26-billion-presses-pentagon-on-golden-dome/
 6. Sacra SpaceX revenue + valuation — https://sacra.com/c/spacex/

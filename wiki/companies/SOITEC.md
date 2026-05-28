@@ -2,16 +2,18 @@
 type: company
 ticker: SOI.PA
 tags: [semis, photonics, soi, cpo, ai-infrastructure, europe]
-last_updated: 2026-05-17
+last_updated: 2026-05-27
 last_full_review: 2026-05-17
-sources: 1
-conviction: low-medium
+sources: 2
+conviction: medium
 stance: bull
 ---
 
 # Soitec S.A. (SOI.PA)
 
-**Stance:** bull · **Conviction:** low-medium · **Time horizon:** long-term + tactical (May 27 FY26 earnings)
+**Stance:** bull · **Conviction:** medium *(upgraded 2026-05-27 from low-medium on FY26 print confirming Photonics-SOI >$100M ahead of plan)* · **Time horizon:** long-term
+
+> **2026-05-27 print recap:** FY26 results delivered the data point that mattered most — **Photonics-SOI revenue exceeded $100M, achieved earlier than originally anticipated**, with Edge & Cloud AI segment growing +8% YoY through a horrific mobile/auto downturn. **Stock gapped +20.7% from €154 (May 26 close) to €186** post-print. Q1 FY27 guide +15% YoY at constant currency confirms the sequential inflection. Sell-side average PT (€53-56) is now ~3.5x below spot — the analyst-catch-up trade is active. **Conviction upgraded low-medium → medium**, flagged per house rules. Stance unchanged at bull. See [[2026-05-27-soitec-fy26-earnings]] for full source summary.
 
 > **Listing note:** Soitec is **Paris-listed (Euronext, SOI.PA)** — no US ADR. US investors trade via international brokers, EUR exposure, lower liquidity than US semi names. Filename uses SOITEC.md to disambiguate from "SOI" (the technology).
 
@@ -141,10 +143,19 @@ Per SemiWiki / Yole Group / TechInsights teardown analysis ([[2026-05-17-semiwik
 **Adjust bear case**: Mobile Communications volume decline is real, but FD-SOI mmWave content growth provides a partial offset. The "race against time" framing on the page should be moderated.
 
 ## Recent developments
+- **🔥 2026-05-27 — FY26 RESULTS — BINARY EVENT CONFIRMED BULLISH** (per [[2026-05-27-soitec-fy26-earnings]]):
+  - FY26 revenue €592M (−34% reported / −30% cc/scope) — in line with downturn expectations
+  - **Q4 FY26 revenue €202M (−38% YoY but +25% QoQ vs. ~20% guide)** — sequential beat; mobile bottom forming
+  - **🔥 Photonics-SOI revenue >$100M FY26 — achieved EARLIER than anticipated** (CEO Laurent Rémont's first-print disclosure). Edge & Cloud AI segment +8% YoY through downturn (€214M FY26).
+  - EBITDA €151M (25.4% margin); Free Cash Flow €63M (vs. −€23M FY25, swing of +€86M); Cash €562M; Net debt €56M (−40% YoY); Net Debt/EBITDA 0.4x
+  - **FY27 Q1 guide: +15% YoY at constant currency and scope** — sequential acceleration confirmed
+  - FY27 capex €100M (vs. €135M FY26) — capacity buildout phase ending, operating leverage flips on
+  - **Stock reaction: +20.7% gap** from €154.20 (May 26 close) to €186.05 (May 28 open) on "FY26 cash flow beat and AI photonics growth"
+  - **Conviction upgraded low-medium → medium** (flagged per house rules) — first-print confirmation of Photonics-SOI ahead-of-plan + Q4 sequential beat + FY27 guide
+  - **What it doesn't say:** no named CPO customers (NVDA / AVGO / Marvell unnamed); Photonics-SOI is ~15-17% of revenue, not yet >20% (strict upgrade trigger to "high" not met)
 - **2026-02-03** — Q3 FY26 revenue €160M; Edge & Cloud AI €54M (+27% YoY organic). Q4 guided to ~20% organic revenue growth QoQ.
 - **2026-05-08** — Stock traded €171.35 intraday (~+213% YTD); subsequently consolidated to ~€148.
 - **2025-03-19** — Coincident with NVDA Spectrum-X / Quantum-X CPO unveil at GTC, Soitec issued statement confirming photonics-SOI role in NVDA, AVGO Davisson, MRVL Celestial chiplet substrates.
-- **2026-05-27 (upcoming)** — FY26 full-year results + FY27 outlook.
 
 ## Position sizing considerations (for a small starter position)
 This is a **low-medium conviction starter**, not a high-conviction allocation. The thesis is genuinely interesting *and* the entry-point is uncomfortable.
@@ -159,6 +170,7 @@ This is a **low-medium conviction starter**, not a high-conviction allocation. T
 1. [[2026-05-16-dylan-patel-invest-like-best]] — supply-chain sold-out enumeration (indirect confirmation of substrate tightness)
 2. [[2026-05-17-semiwiki-nenni-blog-sweep]] — TSMC's COUPE (Compact Universal Photonic Engine) explicitly confirmed in Y.J. Mii R&D roadmap; Synopsys-TSMC COUPE design flow integration + 224G IP. **Third independent wiki confirmation of Soitec's substrate position** in TSMC's CPO program (added 2026-05-17 PM)
 3. [[2026-05-17-multi-agent-research-batch]] — Pre-May 27 setup: CEO Laurent Rémont start April 1; 95% photonics-SOI share (BofA); +447% YTD vs revenue -10.2%; sell-side PT avg €53-56 (58% downside); CPO timing (NVDA Quantum-X early 2026, Spectrum-X 2H 2026; AVGO Tomahawk 6 with 200G CPO; MRVL acquired Celestial Photonic Fabric; GFS SCALE $1B+ by 2028; Goldman: silicon photonics doubles 2026); TSMC-COUPE production begins 2026 (added 2026-05-17 PM)
+4. [[2026-05-27-soitec-fy26-earnings]] — **FY26 binary event confirmed bullish**. Photonics-SOI >$100M FY26 (earlier than anticipated). Q4 +25% QoQ above 20% guide. FCF €63M positive (vs −€23M). FY27 Q1 +15% YoY guide. Stock +20.7% post-print (added 2026-05-27)
 
 ## Citations
 - [Soitec Q3 FY26 Press Release](https://www.globenewswire.com/news-release/2026/02/03/3231393/0/en/SOITEC-REPORTS-Q3-26-REVENUE.html)

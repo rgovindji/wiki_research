@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [debt, private-credit, srt, ai-data-centers, systemic-risk, contagion]
-last_updated: 2026-05-16
+last_updated: 2026-05-21
 last_full_review: 2026-05-15
-sources: 1
+sources: 2
 conviction: high
 ---
 
@@ -127,6 +127,35 @@ Forum-member operational reality:
 **Empirical test**: NVDA warranty reserve % trajectory in upcoming 10-Q footnotes (Q1 FY27 earnings May 20). If reserves keep rising, the depreciation bear case is re-armed. If they stabilize, Dylan's frame wins.
 
 **Implication for this page's contagion thesis**: the GPU-collateral leg is *not as dead as it looked yesterday*. Watch warranty disclosures closely.
+
+### Gavin Baker: prefill/decode disaggregation extends GPU lives to 10–15 years (NEW 2026-05-21)
+
+Per Gavin Baker on Invest Like the Best [[2026-05-21-gavin-baker-invest-like-best]] — a *mechanism-level* argument for longer GPU lives, complementary to Dylan Patel's empirical secondary-market data:
+
+> *"The disaggregation of inference means that I think these GPUs are going to have 10 or 15 year lives... You can put a Cerebras system or Groq LPUs that Nvidia acquired effectively in front of a Hopper or even an Ampere — use that Hopper and Ampere for prefill — and extend the useful life of that GPU until it melts."*
+
+**The mechanism:**
+- **Prefill** (model ingesting the prompt + building KV cache) is **memory-capacity-bound** — older GPUs with large memory work fine here
+- **Decode** (token generation) is **memory-bandwidth-bound** — wants the newest accelerators or specialized chips (Cerebras WSE, Groq LPU)
+- Architecturally splitting the two means the *older* generation is repurposed indefinitely for prefill rather than being decommissioned
+- Even if the chip eventually fails ("they do melt"), the *effective* useful life on operator P&L extends far beyond the 3–5-year depreciation schedule used in SPV underwriting
+
+**Financing implication Baker explicitly draws:**
+
+> *"This is going to be really good for the whole private credit industry. It's going to help finance the AI buildout because if you can start to finance GPUs at more like 5% or 6% instead of — I think CoreWeave's lowest financing was like low sevens — that actually mathematically changes the cost to finance this buildout."*
+
+**Translating to this page's contagion framework:**
+
+| Layer | Pre-Baker frame | Post-Baker mechanism |
+|---|---|---|
+| GPU collateral value | Bear says ~0 in 3–5 yrs | Floor higher — usable for prefill for 10+ yrs |
+| SPV debt cost | ~7% (CoreWeave's reported floor) | Theoretical 5–6% if longer amortization holds |
+| Refinancing risk | Acute on each 3–5yr cycle | Less acute if collateral life extends to the loan term |
+| Cluster gross margin | Compresses with each rebuild | Cushion from amortizing over longer life |
+
+**CPU sub-claim worth tracking** (also from Baker): in an agentic world, CPU orchestration matters more — *"CPUs are way more important than they were in an agentic world. They do all these things around orchestration, tool calls, etc. The biggest CPU fleets in the world sit at the hyperscalers."* This is a side benefit to hyperscaler installed bases that doesn't appear in NVDA-only AI investment models.
+
+> **What this means:** Baker's argument doesn't kill the contagion thesis — the SRT plumbing and OpenAI/Anthropic revenue concentration risks remain intact — but it does materially reduce the *GPU-collateral-worthless* tail. If you can refinance an H100 cluster at 5–6% instead of 7% because lenders now believe the asset lives 10+ years for prefill duty, the spread compresses and the refinancing-wall scenario becomes less binary. The bear case shifts from "GPUs become worthless" to "OpenAI/Anthropic revenue trajectory disappoints" — which is a much narrower, more lab-specific failure mode.
 
 ## Hyperscaler revenue concentration in OpenAI + Anthropic (NEW 2026-05-16)
 

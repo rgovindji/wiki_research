@@ -2,9 +2,9 @@
 type: company
 ticker: INTC
 tags: [semis, foundry, cpu, mag7-adjacent, government-stake]
-last_updated: 2026-05-17
+last_updated: 2026-05-21
 last_full_review: 2026-05-17
-sources: 3
+sources: 4
 conviction: low
 stance: neutral
 ---
@@ -72,6 +72,14 @@ Intel is a **binary bet**: bull if 18A yields hit industry-standard by 2027 AND 
 - **CPU shortage duration** — Intel 10-Q says "throughout remainder of 2026"; any pull-forward to Q3/Q4 normalization changes the ASP story
 
 ## Recent developments
+- **2026-05-21 — Gavin Baker (Atreides): "TerraFab will succeed because Elon recruits A-teams"** on Invest Like the Best [[2026-05-21-gavin-baker-invest-like-best]]. Baker's frame is structurally bullish on TerraFab's odds, complementing the wiki's existing tension between Tan/Musk's Pan-Am-Boeing analogy and CC Wei's "no shortcuts" pushback. Key Baker arguments:
+  1. **Elon's labor pull is the real moat.** *"The best engineers want to work for Elon, especially in hardware engineering."* Combined with Tesla/SpaceX-style relocation of supply-chain talent (Taiwan Town, Korea Town, Japan Town next to TerraFab in Texas, complete with restaurant relocations) = a US-soil version of the dense semiconductor ecosystem that TSMC built around Hsinchu Science Park.
+  2. **Semicap A-teams will rotate to TerraFab** for the same anti-monopsony reason ASML / KLA / LRCX / AMAT once rotated A-teams to TSMC. *"They didn't like having a monopsony, and so the A-teams were in Taiwan working. Intel made some mistakes and presto."* If TerraFab becomes the credible 2nd-source the equipment makers want, the A-teams flow.
+  3. **Intel partnership = 50 years of institutional knowledge.** Counters the "TerraFab is starting from zero" framing — they're starting "3 to 5 quarters behind the frontier" via the Intel relationship.
+  4. **Elon's pace differential.** *"Everybody else has taken three years to build a data center. He built one in 122 days. Samsung had to give him an office in their fab in Texas because he was so unhappy about the pace at which they're expanding."*
+  5. **Politically aligned with any administration's manufacturing goals** — Baker frames this as a structural durability advantage independent of 2026 election outcomes.
+
+  **Which means**: Baker's framing is the strongest *bullish* TerraFab signal the wiki has ingested — but doesn't resolve the CC Wei timing concern (multi-year build + ramp). Bull case modestly strengthens; binary remains binary; INTC stance unchanged at neutral / low-conviction. Worth watching for: first ASML/AMAT tool installation at TerraFab Texas as the empirical "A-teams arrive" signal.
 - **2026-05-17 — Post-Xi-summit reversal + Apple modem clarification** ([[2026-05-17-semiwiki-forum-sweep-2]]). **INTC -16.61% one-week** during Trump's Beijing summit despite **+200% YTD** (larger than the +114% April figure cited above). **Lip-Bu Tan conspicuously absent** from the CEO entourage (Musk, Huang, Cook, Mehrotra, Fink, Amon, Schwarzman, Solomon all went) — politically curious given INTC's 9.9% government stake and Apple/Tesla customer ambitions. Separately, **Apple's flagship 5G modem (C2) is going to TSMC on N2**, not Intel — meaning Intel's eventual Apple wallet share is likely **secondary AP shares** (Samsung-style role) rather than the marquee modem work the Kuo lifecycle implied ([[2026-05-17-semiwiki-kuo-apple-intel]]). **Which means**: the wiki's neutral / low-conviction stance is reinforced; both bull (+200% YTD, AI CPU shortage ASP benefit) and bear (-16.61% one-week, Lip-Bu absent, Apple's marquee work stays at TSMC) signals continue to balance.
 - **2026-05-17 — Forum sweep (this entry)** — surfaced via [[2026-05-17-semiwiki-cpu-shortage-intel-18a]] (Lip-Bu Tan thread + CPU shortage thread) and [[2026-05-17-semiwiki-kuo-apple-intel]] (Apple diversification thread). Key tension: Intel +7% Q1 vs AMD +38%; insider commentary points to "no strategy" while Daniel Nenni is bullish on Lip-Bu. Government 9.9% stake (~$36B) acts as backstop.
 - **2026-04 — Stock +114% in single month** (best in 55 years); +24% single-day move (best since 1987)
@@ -89,6 +97,7 @@ Intel is a **binary bet**: bull if 18A yields hit industry-standard by 2027 AND 
 3. [[2026-05-09-dwarkesh-dylan-semianalysis]] — Dylan Patel context on Intel foundry as a TSMC alternative
 4. [[2026-05-17-semiwiki-forum-sweep-2]] — Post-Xi-summit market reversal (-16.61% / +200% YTD); Apple modem stays at TSMC N2 (added 2026-05-17)
 5. [[2026-05-17-semiwiki-nenni-blog-sweep]] — Nenni's bull-side framing on Lip-Bu Tan + Made in America + customer wins (added 2026-05-17 PM)
+6. [[2026-05-21-gavin-baker-invest-like-best]] — Baker's "TerraFab succeeds because Elon recruits A-teams + semicap A-team rotation + Intel institutional knowledge" framework (added 2026-05-21)
 
 ## Citations
 - Intel Q1 2026 10-Q (DCAI disclosure quoted in forum thread)

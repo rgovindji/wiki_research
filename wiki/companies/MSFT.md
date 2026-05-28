@@ -2,9 +2,9 @@
 type: company
 ticker: MSFT
 tags: [ai, mag7, cloud, software]
-last_updated: 2026-05-12
+last_updated: 2026-05-21
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -48,6 +48,13 @@ The enterprise AI distribution leader — Azure scale + tight OpenAI partnership
 5. **Maia silicon traction** — does internal silicon reduce NVDA dependence?
 
 ## Recent developments
+- **2026-05-21 — Gavin Baker (Atreides) frames Satya's compute-deployment decision as the central MSFT bull/bear pivot** on Invest Like the Best [[2026-05-21-gavin-baker-invest-like-best]]. Baker's claim: *"Microsoft probably would be an $800 stock today if they were using their GPUs to serve OpenAI and Anthropic's capacity instead of using them for their own products. So I give him a lot of credit for making a great decision."* The framing:
+  - Microsoft "flinched" in early 2025 — capex algorithm went off, lost position, lost allocation slots that are hard to recover
+  - Satya is now making a "risky, courageous" decision to use Microsoft's compute INTERNALLY (training own models, improving Copilot) rather than reselling to OpenAI at high-margin
+  - Forgoes near-term stock-price upside (Baker's hypothetical "$800") to position for a world where frontier models are NO longer API-accessible
+  - Baker is "a little skeptical they have the right team to succeed" on internal models, but credits the decision to position for the prisoner's-dilemma endgame (see "Mythos 3/4" framing in [[ai-bubble-debate]])
+  - Notes: *"Satya is a really brilliant man, but in investor conversations, people just don't talk about him the way they did. He did go from 'we're going to make Google dance' to being the product manager of Copilot in three years."*
+  > **What this means:** Baker's framing reframes the bear case "Copilot underwhelms / Azure growth lags" from a *failure-of-execution* concern to a *deliberate-capital-allocation-choice* concern. If you take Baker at his word, MSFT is foregoing measurable near-term revenue to insulate against a model-access cutoff that may or may not materialize. The risk-adjusted bull case requires conviction that (a) frontier labs DO eventually stop API access, AND (b) MSFT's internal model effort succeeds. If either fails, MSFT carries the cost without the offsetting benefit. **Wiki addition to "key questions to watch": MSFT internal-model capability disclosures + Azure AI revenue trajectory vs OpenAI-resale counterfactual.**
 - **🔥 2026-05-17 PM — MSFT = consensus smart-money NEW BUY in Q1 2026 13Fs** ([[2026-05-17-robotics-multi-agent-batch]] context). **Bill Ackman (Pershing Square) initiated +$2.09B MSFT stake**; **Dan Loeb (Third Point) +175% to existing MSFT position**; multiple other funds loaded aggressively post-earnings dislocation. **Which means**: when 2+ tier-1 fundamental-driven hedge funds make the SAME large move in the SAME quarter, that's the cleanest possible "smart money agrees" data point. Azure + AI infrastructure positioning at attractive entry. MSFT bull case sharpens at the institutional-positioning layer.
 - **2026-05-12** — MSFT set 2026 capex at **$190B** (vs $152B analyst consensus — a $38B beat). **CFO Amy Hood explicitly attributed $25B of the figure to rising memory chip and component costs** (see [[2026-05-12-hyperscaler-capex-q1-revisions]]). **Which means:** the memory inflation thesis that the wiki tracks via [[MU]] / [[SNDK]] / [[WDC]] is now flowing through to a hyperscaler P&L statement as an explicit line item, not just a supply-chain anecdote. This is direct validation of the AI memory supercycle thesis with hyperscalers absorbing the price. Cross-reference: SemiAnalysis Memory Model (per [[2026-04-01-semianalysis-gpu-rental-index]]) called for LPDDR5 +4x YoY and DDR5 +5x YoY in Q1 2026; MSFT's $25B attribution is the corporate-finance translation of that price action.
 
@@ -56,6 +63,7 @@ The enterprise AI distribution leader — Azure scale + tight OpenAI partnership
 
 ## Sources
 1. [[2026-05-12-hyperscaler-capex-q1-revisions]] — MSFT 2026 capex $190B (+$38B vs consensus); $25B memory-cost attribution from CFO Hood
+2. [[2026-05-21-gavin-baker-invest-like-best]] — Satya's internal-compute-use decision framed as the central MSFT bull/bear pivot; "$800-stock" counterfactual
 
 ## Citations
 - Motley Fool Mag 7 ranking: https://www.fool.com/investing/2026/04/17/rank-magnificent-seven-stocks-best-worst-buys/

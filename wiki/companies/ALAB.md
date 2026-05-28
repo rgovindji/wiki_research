@@ -2,9 +2,9 @@
 type: company
 ticker: ALAB
 tags: [ai, cxl, pcie, retimer, fabric-switch, hyperscaler, ai-infrastructure]
-last_updated: 2026-05-19
+last_updated: 2026-05-21
 last_full_review: 2026-05-19
-sources: 0
+sources: 1
 conviction: medium-high
 stance: bull
 ---
@@ -85,6 +85,7 @@ stance: bull
 
 ## Recent developments
 
+- **2026-05-21 — Gavin Baker (Atreides) explicitly flags ALAB as "miscategorized as a copper loser"** on Invest Like the Best [[2026-05-21-gavin-baker-invest-like-best]]. Direct quote: *"Astera was in a lot of copper-loser baskets. Astera's biggest product is going to be a switch. You use both copper and optics to connect switches to accelerators. So definitionally, if you're a switch company or an accelerator company, you cannot be a copper loser because you're going to be on the other side of that connection."* Baker uses ALAB as the *exemplar* of his broader thesis — that systematic-basket mispricings exist as quants categorize names by partial-feature taxonomy that doesn't survive contact with the actual product roadmap. He's been long ALAB since Series C. **Which means:** the wiki's existing "Scorpio is the bull-case multiplier" framing is now corroborated by one of the most influential AI-focused public-market investors. The market mispricing he names is *exactly* the gap between (a) the "copper loser" optical-substitution narrative and (b) the reality that Scorpio is a switch — a topology layer that sits between accelerators and consumes both copper AND optics on every connection. Adds conviction to the medium-high stance.
 - **2026-05-19 — +12.58% on Evercore ISI PT raise (Outperform maintained)** — sell-side incorporating Scorpio + PCIe Gen 6 trajectory into models. Note: stock diverged UP while NVDA -1.4%, AVGO -1.1%, TSM -2.1% — strong divergence signal that company-specific catalysts are still being rewarded even during macro-driven semis selloff.
 - **2026-05-05 — Q1 2026 earnings**: revenue **$308.4M (+93% YoY, +14% QoQ)** record; EPS $0.61 beat; GAAP GM 76.3%; op margin 20.1%; **PCIe Gen 6 >1/3 of revenue**; Scorpio X-Series 320-lane Smart Fabric Switch initial shipments to hyperscalers; Q2 guide $355-365M revenue / $0.68-0.70 EPS.
 - **2026 — Scorpio P-Series + X-Series expanded** — full lineup 32-320 lanes; the broadest AI fabric switch portfolio in market.

@@ -1,15 +1,31 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-05-17
+last_updated: 2026-05-27
 last_full_review: 2026-05-09
-sources: 10
+sources: 14
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side.
+
+## May 26-27, 2026 — Multi-vector validation week
+
+The week of May 26-27 delivered confirming data points across every layer of the AI infrastructure stack — flagging here as a coherent macro event for the debate:
+
+| Layer | Event | Bull / Bear read |
+|---|---|---|
+| **Model lab** | Anthropic closes $30B at $900B+ valuation, **surpasses OpenAI** ($852B). 2.4x rerating in 90 days (Feb $380B → May $900B+). Sequoia/Dragoneer/Altimeter/Greenoaks each ~$2B. | **Both/and** — real ARR (~$30B) backs real valuation (bull) BUT $900B+ embeds heroic growth assumptions (bear). Per [[2026-05-27-anthropic-900B-surpasses-openai]] |
+| **Memory** | MU crosses $1T mcap; UBS PT $535→$1,625 (3x). UBS reframes MU as AI infrastructure stock (TSMC-like multiple), not cyclical commodity. EPS >$100/share through 2027-29 even in moderate downcycle per UBS LTA framework. | **Bull leg** — institutional reframing of cycle-peak-P/E paradox; hyperscaler forward-funded capacity signal. Per [[2026-05-26-micron-1T-ubs-1625-pt]] |
+| **Substrates** | SOITEC FY26 print: Photonics-SOI >$100M (earlier than anticipated); Q4 +25% QoQ above 20% guide. Stock +20.7% post-print. | **Bull leg** — substrate bottleneck thesis first-print-confirmed. Per [[2026-05-27-soitec-fy26-earnings]] |
+| **Hyperscaler capex** | Meta 2026 capex raised to $125-145B (from $115-135B initial) on "higher component pricing." 2026 midpoint = +87% YoY vs. 2025 actuals ($72B). | **Both/and** — bullish for suppliers (memory, substrates, power) but stretches the capex/revenue ratio further (bear concern). Per [[2026-05-27-daily-iran-hbm-cbrs-meta]] |
+| **Macro** | Iran "largely negotiated" — WTI under $90, Brent ~$98. Records on S&P + Dow + Nasdaq May 27 on ceasefire-extension report. | **Bull leg** — oil tailwind for US manufacturing/electricity competitiveness (per Gavin Baker May 21) |
+
+**Damodaran-vs-UBS framework contradiction.** Damodaran ([[2026-05-16-damodaran-profg-markets]]) called near-term top on chip sector May 16; UBS reframed MU as $1.8T candidate May 26. **Flag for [[feedback-log]] eventual verdict** — these are two of the most credible single calls on the wiki this month, and they're directionally opposed. The May 27 closes (records) tilt directionally toward UBS, but Damodaran's "consolidation" call has a longer time window.
+
+**NVDA "exhausted buyer" caveat.** Despite Scenario A confirmation on May 20 ([[2026-05-20-NVDA-Q1-FY27-earnings]]), NVDA has drifted -2% over 7 days. Cantor's $350 / Susquehanna's $275 PTs (both raised May 19) haven't been realized. **Which means** — even with the bull leg's quantitative wins, the marginal buyer is showing fatigue. Worth tracking whether MU's UBS rerating gets sold over the next 2-3 weeks; that would be a tier-1 confirmation of the exhausted-buyer dynamic.
 
 ## The bull case (this is real, multi-year, and not a bubble)
 - **AI is productivity-positive** — software dev, customer service, R&D, drug discovery are all measurably faster
@@ -136,6 +152,52 @@ Track each of these against outcomes. If any fire → bear case activates → ex
 
 ### Jim Chanos warning
 Chanos has flagged that AI capex itself is **boosting S&P 500 EPS estimates** — i.e., the spending shows up as customers' revenue, juicing earnings on the way up. The risk is that if capex slows, the EPS impulse reverses on the way down.
+
+### Gavin Baker: "TSMC is the bubble-prevention mechanism" (NEW 2026-05-21)
+
+Per Gavin Baker on Invest Like the Best [[2026-05-21-gavin-baker-invest-like-best]] — the most useful single mental model the wiki has captured for thinking about cycle timing:
+
+> *"If Taiwan Semi did what Jensen wanted, Nvidia could sell $2 trillion of GPUs in 2026 or 2027, maybe $2.5 trillion, maybe $3 trillion, but there is a limit where consumers would consume so much that you probably would be in an overbuild. And so Taiwan Semi, if we don't get a bubble, like we need to throw a party for them because they will have single-handedly prevented a bubble."*
+
+**The framework:**
+- Every major foundational-technology cycle (railroads, canals, electrification, dot-com) **had a bubble** because supply got ahead of demand. Carlota Perez territory — already a wiki anchor.
+- The reason the AI cycle has *not yet* produced 1999-style overbuild is **wafer-side supply discipline at TSMC**, not demand-side restraint by buyers
+- If TSMC ramped capacity to match what Nvidia wants, NVDA could sell ~$2–3T of GPUs in 26–27. That volume *would* generate the classic supply-overshoot bubble pattern
+- TSMC's "flinty older Taiwanese engineers" treat capacity decisions as multi-generational stewardship, not Wall Street optimization. That cultural fact is the actual bubble-prevention mechanism
+
+**The risk vector Baker explicitly calls out:** the cycle ends when **Intel or Samsung breaks discipline** on capacity expansion. Once one of those two emerges as a credible second source at >30% market share, TSMC will be forced to expand to defend share, and the supply discipline that prevented the bubble collapses.
+
+> *"There's a Goldilocks zone where they expand enough they make it hard for Intel or Samsung to really truly emerge as an at-scale second source with something well north of 30% market share. And yet they also keep this fundamental constraint on wafers that helps us avoid a bubble."*
+
+**Tracker — what to watch to call the cycle:**
+1. **TSMC quarterly capex guidance vs Nvidia order intent** — gap widening = discipline maintained, gap closing = bubble setup begins
+2. **Intel 18A / 14A yield trajectory + first leading-edge external customer at scale** — if Nvidia or AMD ever ships meaningful volume on Intel Foundry, that's the discipline-breaker signal
+3. **Samsung Foundry leading-edge customer wins** — same logic
+4. **TerraFab (SpaceX + Tesla + Intel JV)** — Baker thinks this will succeed because Elon recruits A-teams + Intel partnership = institutional knowledge transfer + semicap A-teams rotate to it for the same anti-monopsony reason they once helped TSMC catch up to Intel. First chips probably 2028+. See [[INTC]].
+
+> **What this means:** This is a much more usable cycle-peak indicator than "watch hyperscaler capex" or "watch valuations." Both of those are demand-side and arrive late. The supply-discipline signal at TSMC arrives early — it's a leading indicator. Wiki should add this to the cycle-peak watch checklist in [[hedging-risk]].
+
+### Baker on Anthropic's $11B-in-one-month ARR (NEW 2026-05-21)
+
+> *"Anthropic added $11 billion of ARR... The three highest profile SaaS companies founded in the last 10–12 years are Palantir, Snowflake, and Databricks. And these three companies spent 10 years building their businesses. Anthropic added their combined businesses in one month."*
+
+Consistent with Krishna Rao's $9B → $30B Q1 framing from [[2026-05-13-anthropic-cfo-podcast]] — Baker's $11B-in-a-single-month figure breaks out the in-quarter pace. The directional point: **this is the strongest single piece of evidence against the "AI demand is over-extrapolated hyperscaler intent" bear leg.** Anthropic alone — a single buyer of compute — produced more new SaaS ARR in one month than the combined market caps of three category leaders that took a decade.
+
+### Baker's "diversity breakdown" worry (NEW 2026-05-21)
+
+Baker's own bear-side concern — important to record because he is otherwise the wiki's most bullish ingested source:
+
+> *"I'm getting a little bit worried — the diversity breakdown thing. I don't know anyone like me who's not really bullish on DRAM. No one."*
+
+He pairs it with two specific cross-sectional valuation anomalies that he can't reconcile:
+
+| Anomaly | Detail |
+|---|---|
+| **Semicap equipment vs DRAM multiples** | Semicap at ~40× next-quarter annualized earnings, DRAM at mid-single-digit. At the peak of the last cycle that ratio was 5× vs 12×; at one point even 3× vs 45×. "Those can't both be true." |
+| **NVDA vs GE Vernova** | Cross-sectional: NVDA priced as cheap-vs-market as any point in 10–12 years while [[GEV]] priced for *unfathomable share loss at NVDA*. The two valuations imply opposite worlds. |
+| **Lowest-quality cyclical companies outperform** | Classic late-cycle commodity-bull dynamic: high-cost producers (the ones nearest bankruptcy) gain the most when shortages widen. Baker explicitly cites this happening across multiple AI-adjacent industries currently. |
+
+**Which means:** even Baker — the wiki's loudest bull — is flagging a positioning-sentiment late-cycle pattern. Not yet a stance-change signal but worth adding to the late-cycle indicator basket. **A wiki contradiction note:** he simultaneously holds that AI fundamentals are stronger than ever AND that low-quality cyclical names ripping is a textbook late-cycle marker. Both can be true; the resolution is *position sizing*, not *binary in/out*.
 
 ### GQG channel-check (May 2026) — prior-gen secondary market softening
 GQG (Rajiv Jain) channel checks across 12+ NVIDIA resellers in May 2026 report **H200 secondary-market discounts of >50% vs. a year ago** and **Blackwell units now appearing in secondary channels at smaller (but real) discounts**. GQG's bearish framing: industry sentiment shifting from buying to renting, but rental rates softening too → "emerging oversupply." Counter-framing: this is a **prior-gen depreciation** signal (H200), not a current-gen demand signal (Blackwell sold out, Rubin oversubscribed); it tensions Dylan Patel's "H100 worth more today than 3 yrs ago" framing for n-1 silicon specifically as Rubin ramps. Watch as an early-warning indicator, but not yet a stance-changer.
@@ -370,3 +432,4 @@ LeCun goes further — he argues LLMs are *not the path* to human-level intellig
 4. [[2026-05-16-druckenmiller-hard-lessons]] — Druckenmiller reduced (not shorted) AI on '99 rhyme; rotated to biotech/copper/Japan-Korea; ~2 months stale
 5. [[2026-05-14-anthropic-2028-ai-leadership]] — Anthropic policy paper providing both/and framing: empirical compute-gap data + commercially-motivated policy advocacy (added 2026-05-17)
 6. [[2026-05-16-dylan-patel-invest-like-best]] — Anthropic margin expansion 30%→72%; protest prediction; productivity reset framing (added 2026-05-17)
+7. [[2026-05-21-gavin-baker-invest-like-best]] — TSMC-discipline-as-bubble-prevention framing; cross-sectional valuation paradox; Baker's diversity-breakdown bearish self-check; $11B/month Anthropic ARR (added 2026-05-21)

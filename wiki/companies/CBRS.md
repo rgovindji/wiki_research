@@ -69,12 +69,17 @@ Newly-public wafer-scale AI accelerator company — May 13 2026 IPO at $48.8B fu
 6. **CFIUS / national security review** — any G42 / MBZUAI-related friction
 7. **Margin trajectory** — does 47% hold or compress with scale?
 
+## Recent developments
+
+- **2026-05-26 — CBRS down ~25% from IPO peak; "sell-the-news" reaction to S&P fast-track** (per [[2026-05-27-daily-iran-hbm-cbrs-meta]]). Closed May 26 at **$242.09 (-5.72% on day; -20.27% over 7 days)** — down from $350 day-1 IPO open (May 14), approximately **-30.8% from peak**. **S&P Global announced CBRS would be fast-tracked into relevant indices** (changes effective May 25), but the announcement triggered "sell the news" rather than passive-flow buying. Drivers per coverage: stretched valuation, fading IPO momentum, the rotation that follows blockbuster IPO debuts. **Which means**: the wiki's **"bull / medium / tactical"** framing is validating — CBRS was a trade for the May 13-14 IPO move, NOT a buy-and-hold. The **Nov 16, 2026 lock-up expiration** remains the main structural supply-side overhang. Stance unchanged; no action implied. **Cross-flag**: combined with NVDA's -2% post-Scenario-A drift (May 20-27), this is two consecutive bullish events being sold — worth watching as a potential exhausted-buyer pattern in semis.
+
 ## Related
 [[NVDA]] · [[AMD]] · [[AVGO]] · [[ai-capex-cycle]] · [[semiconductors]] · [[watchlist]] · [[overview]]
 
 ## Sources
 1. [[2026-05-13-cerebras-ipo]] — primary source summary
 2. [[2026-05-17-semiwiki-forum-sweep-3]] — TCO blindspot + wafer-scale durability question from forum technical analysis (added 2026-05-17)
+3. [[2026-05-27-daily-iran-hbm-cbrs-meta]] — Post-IPO price action; index fast-track sold; -25% from peak (added 2026-05-27)
 
 ## Citations
 - CNBC IPO range raise: https://www.cnbc.com/2026/05/11/cerebras-raises-ipo-range.html
