@@ -105,9 +105,9 @@ def _escape(s: str) -> str:
 def _render_inline(s: str) -> str:
     # 1. Escape first so we never inject raw HTML from the markdown.
     s = _escape(s)
-    # 2. [[wikilink]] → italicized chip
+    # 2. [[wikilink]] → italicized chip (class targeted by both CSS and inliner)
     s = re.sub(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]",
-               lambda m: f'<span class="wikilink">{m.group(2) or m.group(1)}</span>', s)
+               lambda m: f'<span class="wiki-wikilink">{m.group(2) or m.group(1)}</span>', s)
     # 3. [text](url) link
     s = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)",
                r'<a href="\2">\1</a>', s)
@@ -224,51 +224,102 @@ def markdown_to_html(md: str) -> str:
     return "\n".join(out)
 
 
-# ----------------- styled email template (dark glass aesthetic) -----------------
+# ----------------- styled email template (light, email-client-safe) -----------------
+#
+# Design notes:
+# - Light background + dark text — readable in both light AND dark mode email
+#   clients without inverting the user's expectations.
+# - Inlined critical styles on each element (in addition to the <style> block)
+#   because Gmail mobile and several other clients strip or limit <style>.
+# - No backdrop-filter, no rgba on backgrounds, no flexbox/grid — desktop and
+#   mobile webmail render these inconsistently.
+# - System font stack so Apple/Google clients use native typefaces.
+# - max-width 680px is the Stratechery/Substack convention; comfortable line
+#   length on desktop, doesn't break mobile.
+# - Code/wikilink chips use solid pastel backgrounds (not rgba) so they
+#   survive client-side CSS stripping.
 
 EMAIL_CSS = """
-body { margin: 0; padding: 0; background: #0a1a2f; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; color: #e8eef7; line-height: 1.55; }
-.wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 60px; }
-.card { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.10); border-radius: 14px; padding: 28px 28px 24px; backdrop-filter: blur(8px); }
-.kicker { color: #6da9ff; text-transform: uppercase; letter-spacing: 1.4px; font-size: 11px; font-weight: 600; margin-bottom: 8px; }
-.headline { color: #ffffff; font-size: 26px; line-height: 1.25; margin: 0 0 6px; font-weight: 700; }
-.meta { color: #8aa0c1; font-size: 13px; margin-bottom: 22px; }
-.content h2 { color: #ffffff; font-size: 22px; margin-top: 28px; margin-bottom: 10px; border-bottom: 1px solid rgba(255, 255, 255, 0.10); padding-bottom: 6px; }
-.content h3 { color: #f0f4fa; font-size: 18px; margin-top: 24px; margin-bottom: 8px; }
-.content h4 { color: #cad7ec; font-size: 15px; margin-top: 18px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.6px; }
-.content p, .content li { color: #dde6f3; font-size: 14.5px; }
-.content ul { padding-left: 22px; }
-.content blockquote { border-left: 3px solid #6da9ff; padding: 6px 14px; background: rgba(109, 169, 255, 0.06); margin: 14px 0; border-radius: 4px; }
-.content blockquote p { margin: 4px 0; color: #c9d6ea; font-style: italic; }
-.content code { background: rgba(255, 255, 255, 0.08); padding: 1px 6px; border-radius: 3px; font-size: 13px; color: #aed6ff; }
-.content pre { background: rgba(0, 0, 0, 0.35); padding: 12px 14px; border-radius: 6px; overflow-x: auto; }
-.content pre code { background: none; padding: 0; color: #c8d8ef; font-size: 12.5px; }
-.content table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13.5px; }
-.content th, .content td { padding: 8px 10px; text-align: left; border-bottom: 1px solid rgba(255, 255, 255, 0.10); vertical-align: top; }
-.content th { color: #aed6ff; font-weight: 600; }
-.content a { color: #6da9ff; text-decoration: none; border-bottom: 1px dotted rgba(109, 169, 255, 0.5); }
-.content a:hover { border-bottom-style: solid; }
-.wikilink { color: #ffd596; font-style: italic; background: rgba(255, 213, 150, 0.08); padding: 0 4px; border-radius: 3px; font-size: 13px; }
-.content hr { border: 0; height: 1px; background: rgba(255, 255, 255, 0.08); margin: 22px 0; }
-.footer { color: #6981a3; font-size: 11.5px; text-align: center; margin-top: 22px; }
-.footer a { color: #6da9ff; }
+body { margin: 0; padding: 0; background-color: #f6f7f9; color: #1f2933; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; line-height: 1.55; }
+.wiki-wrap { max-width: 680px; margin: 0 auto; padding: 28px 16px 40px; }
+.wiki-card { background-color: #ffffff; border: 1px solid #e2e6ec; border-radius: 8px; padding: 32px 32px 28px; }
+.wiki-kicker { color: #2563eb; text-transform: uppercase; letter-spacing: 1.2px; font-size: 11px; font-weight: 700; margin: 0 0 8px; }
+.wiki-headline { color: #0f172a; font-size: 24px; line-height: 1.3; margin: 0 0 8px; font-weight: 700; }
+.wiki-meta { color: #64748b; font-size: 13px; margin: 0 0 24px; padding-bottom: 16px; border-bottom: 1px solid #e2e6ec; }
+.wiki-content h2 { color: #0f172a; font-size: 20px; font-weight: 700; margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #e2e6ec; }
+.wiki-content h3 { color: #1e293b; font-size: 16.5px; font-weight: 700; margin: 22px 0 8px; }
+.wiki-content h4 { color: #334155; font-size: 13px; font-weight: 700; margin: 18px 0 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+.wiki-content p, .wiki-content li { color: #1f2933; font-size: 15px; }
+.wiki-content p { margin: 0 0 12px; }
+.wiki-content ul { padding-left: 22px; margin: 8px 0 14px; }
+.wiki-content li { margin: 0 0 6px; }
+.wiki-content blockquote { border-left: 3px solid #2563eb; padding: 10px 16px; background-color: #eff4ff; margin: 14px 0; border-radius: 0 4px 4px 0; }
+.wiki-content blockquote p { margin: 4px 0; color: #1e3a8a; font-style: italic; }
+.wiki-content code { background-color: #f1f5f9; padding: 1px 6px; border-radius: 3px; font-size: 13px; color: #0f172a; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.wiki-content pre { background-color: #f8fafc; padding: 14px 16px; border-radius: 6px; border: 1px solid #e2e6ec; overflow-x: auto; }
+.wiki-content pre code { background: none; padding: 0; font-size: 12.5px; color: #1e293b; }
+.wiki-content table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13.5px; }
+.wiki-content th, .wiki-content td { padding: 8px 10px; text-align: left; border: 1px solid #e2e6ec; vertical-align: top; color: #1f2933; }
+.wiki-content th { background-color: #f8fafc; color: #0f172a; font-weight: 700; }
+.wiki-content tr:nth-child(even) td { background-color: #fbfcfd; }
+.wiki-content a { color: #2563eb; text-decoration: underline; }
+.wiki-content a:hover { color: #1e40af; }
+.wiki-wikilink { color: #b45309; background-color: #fef3c7; padding: 0 5px; border-radius: 3px; font-size: 13px; font-style: italic; font-weight: 500; }
+.wiki-content hr { border: 0; height: 1px; background-color: #e2e6ec; margin: 22px 0; }
+.wiki-content strong { color: #0f172a; font-weight: 700; }
+.wiki-content em { color: #334155; }
+.wiki-footer { color: #94a3b8; font-size: 11.5px; text-align: center; margin-top: 18px; padding: 0 16px; }
+.wiki-footer a { color: #64748b; }
 """
 
 
+# Inline-style fallbacks for clients that strip <style>. Applied where they
+# matter most (the chip/wikilink/headline elements).
+_INLINE = {
+    "body":      'margin:0;padding:0;background-color:#f6f7f9;color:#1f2933;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;line-height:1.55;',
+    "wrap":      "max-width:680px;margin:0 auto;padding:28px 16px 40px;",
+    "card":      "background-color:#ffffff;border:1px solid #e2e6ec;border-radius:8px;padding:32px 32px 28px;",
+    "kicker":    "color:#2563eb;text-transform:uppercase;letter-spacing:1.2px;font-size:11px;font-weight:700;margin:0 0 8px;",
+    "headline":  "color:#0f172a;font-size:24px;line-height:1.3;margin:0 0 8px;font-weight:700;",
+    "meta":      "color:#64748b;font-size:13px;margin:0 0 24px;padding-bottom:16px;border-bottom:1px solid #e2e6ec;",
+    "footer":    "color:#94a3b8;font-size:11.5px;text-align:center;margin-top:18px;padding:0 16px;",
+}
+
+
+def _inline_wikilinks(html: str) -> str:
+    """Apply inline style to .wiki-wikilink chips for clients that strip CSS."""
+    return html.replace(
+        '<span class="wiki-wikilink">',
+        '<span class="wiki-wikilink" style="color:#b45309;background-color:#fef3c7;padding:0 5px;border-radius:3px;font-size:13px;font-style:italic;font-weight:500;">'
+    ).replace(
+        '<code>',
+        '<code style="background-color:#f1f5f9;padding:1px 6px;border-radius:3px;font-size:13px;color:#0f172a;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;">'
+    ).replace(
+        '<strong>',
+        '<strong style="color:#0f172a;font-weight:700;">'
+    )
+
+
 def render_html(entry: dict) -> str:
-    html_body = markdown_to_html(entry["body"])
+    html_body = _inline_wikilinks(markdown_to_html(entry["body"]))
     return f"""<!DOCTYPE html>
-<html><head><meta charset="utf-8"/><title>Wiki update — {entry['date']}</title>
-<style>{EMAIL_CSS}</style></head>
-<body>
-  <div class="wrap">
-    <div class="card">
-      <div class="kicker">Investing Wiki · {entry['type']}</div>
-      <h1 class="headline">{_escape(entry['title'])}</h1>
-      <div class="meta">{entry['date']} · auto-rendered from <code>log.md</code></div>
-      <div class="content">{html_body}</div>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="color-scheme" content="light only"/>
+<meta name="supported-color-schemes" content="light"/>
+<title>Wiki update — {entry['date']}</title>
+<style>{EMAIL_CSS}</style>
+</head>
+<body style="{_INLINE['body']}">
+  <div class="wiki-wrap" style="{_INLINE['wrap']}">
+    <div class="wiki-card" style="{_INLINE['card']}">
+      <div class="wiki-kicker" style="{_INLINE['kicker']}">Investing Wiki · {entry['type']}</div>
+      <h1 class="wiki-headline" style="{_INLINE['headline']}">{_escape(entry['title'])}</h1>
+      <div class="wiki-meta" style="{_INLINE['meta']}">{entry['date']} · auto-rendered from <code style="background-color:#f1f5f9;padding:1px 6px;border-radius:3px;font-size:13px;color:#0f172a;">log.md</code></div>
+      <div class="wiki-content">{html_body}</div>
     </div>
-    <div class="footer">Generated by <code>scripts/daily_email.py</code> · <a href="https://github.com/rgovindji/wiki_research">repo</a></div>
+    <div class="wiki-footer" style="{_INLINE['footer']}">Generated by <code style="background-color:#f1f5f9;padding:1px 6px;border-radius:3px;color:#0f172a;">scripts/daily_email.py</code> · <a href="https://github.com/rgovindji/wiki_research" style="color:#64748b;">repo</a></div>
   </div>
 </body></html>"""
 
