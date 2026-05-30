@@ -240,59 +240,61 @@ def markdown_to_html(md: str) -> str:
 # fmt: off
 THEMES: dict[str, dict] = {
     # -------------------------------------------------------------------------
-    # LIGHT — Stratechery / Axios / Morning Brew style.
-    # White card on soft gray, slate text, blue accents, amber wikilink chips.
+    # LIGHT — Newspaper / NYT print mode. White bg, TRUE BLACK body text,
+    # heavy bold weights, saturated newspaper accents (deep red kicker,
+    # rich navy links, deep amber wikilink chips). Designed for high contrast
+    # and readability — no washed-out grays.
     # -------------------------------------------------------------------------
     "light": {
-        "label":         "Light (Stratechery/Axios)",
+        "label":         "Newspaper (black + bold + saturated accents)",
         "color_scheme":  "light only",
         "css": """
-body { margin: 0; padding: 0; background-color: #f6f7f9; color: #1f2933; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; line-height: 1.55; }
-.wiki-wrap { max-width: 680px; margin: 0 auto; padding: 28px 16px 40px; }
-.wiki-card { background-color: #ffffff; border: 1px solid #e2e6ec; border-radius: 8px; padding: 32px 32px 28px; }
-.wiki-kicker { color: #2563eb; text-transform: uppercase; letter-spacing: 1.2px; font-size: 11px; font-weight: 700; margin: 0 0 8px; }
-.wiki-headline { color: #0f172a; font-size: 24px; line-height: 1.3; margin: 0 0 8px; font-weight: 700; }
-.wiki-meta { color: #64748b; font-size: 13px; margin: 0 0 24px; padding-bottom: 16px; border-bottom: 1px solid #e2e6ec; }
-.wiki-content h2 { color: #0f172a; font-size: 20px; font-weight: 700; margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #e2e6ec; }
-.wiki-content h3 { color: #1e293b; font-size: 16.5px; font-weight: 700; margin: 22px 0 8px; }
-.wiki-content h4 { color: #334155; font-size: 13px; font-weight: 700; margin: 18px 0 6px; text-transform: uppercase; letter-spacing: 0.5px; }
-.wiki-content p, .wiki-content li { color: #1f2933; font-size: 15px; }
+body { margin: 0; padding: 0; background-color: #ffffff; color: #0a0a0a; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; line-height: 1.55; }
+.wiki-wrap { max-width: 680px; margin: 0 auto; padding: 32px 16px 40px; }
+.wiki-card { background-color: #ffffff; border: 1px solid #d4d4d4; padding: 36px 36px 30px; border-radius: 0; }
+.wiki-kicker { color: #b91c1c; text-transform: uppercase; letter-spacing: 1.6px; font-size: 11px; font-weight: 700; margin: 0 0 10px; }
+.wiki-headline { color: #000000; font-size: 28px; line-height: 1.25; margin: 0 0 10px; font-weight: 800; letter-spacing: -0.01em; }
+.wiki-meta { color: #4b5563; font-size: 13px; margin: 0 0 26px; padding-bottom: 18px; border-bottom: 2px solid #000000; font-weight: 500; }
+.wiki-content h2 { color: #000000; font-size: 22px; font-weight: 800; margin: 30px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #000000; letter-spacing: -0.01em; }
+.wiki-content h3 { color: #000000; font-size: 17px; font-weight: 700; margin: 22px 0 8px; }
+.wiki-content h4 { color: #000000; font-size: 12.5px; font-weight: 800; margin: 18px 0 6px; text-transform: uppercase; letter-spacing: 0.8px; }
+.wiki-content p, .wiki-content li { color: #0a0a0a; font-size: 15px; }
 .wiki-content p { margin: 0 0 12px; }
 .wiki-content ul { padding-left: 22px; margin: 8px 0 14px; }
-.wiki-content li { margin: 0 0 6px; }
-.wiki-content blockquote { border-left: 3px solid #2563eb; padding: 10px 16px; background-color: #eff4ff; margin: 14px 0; border-radius: 0 4px 4px 0; }
-.wiki-content blockquote p { margin: 4px 0; color: #1e3a8a; font-style: italic; }
-.wiki-content code { background-color: #f1f5f9; padding: 1px 6px; border-radius: 3px; font-size: 13px; color: #0f172a; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
-.wiki-content pre { background-color: #f8fafc; padding: 14px 16px; border-radius: 6px; border: 1px solid #e2e6ec; overflow-x: auto; }
-.wiki-content pre code { background: none; padding: 0; font-size: 12.5px; color: #1e293b; }
+.wiki-content li { margin: 0 0 7px; }
+.wiki-content blockquote { border-left: 4px solid #b91c1c; padding: 10px 16px; background-color: #fafafa; margin: 14px 0; border-radius: 0; }
+.wiki-content blockquote p { margin: 4px 0; color: #000000; font-style: italic; font-weight: 500; }
+.wiki-content code { background-color: #f3f4f6; padding: 1px 6px; border-radius: 2px; font-size: 13px; color: #000000; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 600; }
+.wiki-content pre { background-color: #f9fafb; padding: 14px 16px; border-radius: 2px; border: 1px solid #d4d4d4; overflow-x: auto; }
+.wiki-content pre code { background: none; padding: 0; font-size: 12.5px; color: #000000; font-weight: 500; }
 .wiki-content table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13.5px; }
-.wiki-content th, .wiki-content td { padding: 8px 10px; text-align: left; border: 1px solid #e2e6ec; vertical-align: top; color: #1f2933; }
-.wiki-content th { background-color: #f8fafc; color: #0f172a; font-weight: 700; }
-.wiki-content tr:nth-child(even) td { background-color: #fbfcfd; }
-.wiki-content a { color: #2563eb; text-decoration: underline; }
+.wiki-content th, .wiki-content td { padding: 8px 10px; text-align: left; border: 1px solid #000000; vertical-align: top; color: #0a0a0a; }
+.wiki-content th { background-color: #000000; color: #ffffff; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; font-size: 11.5px; }
+.wiki-content tr:nth-child(even) td { background-color: #f9fafb; }
+.wiki-content a { color: #1e3a8a; text-decoration: underline; font-weight: 600; }
 .wiki-content a:hover { color: #1e40af; }
-.wiki-wikilink { color: #b45309; background-color: #fef3c7; padding: 0 5px; border-radius: 3px; font-size: 13px; font-style: italic; font-weight: 500; }
-.wiki-content hr { border: 0; height: 1px; background-color: #e2e6ec; margin: 22px 0; }
-.wiki-content strong { color: #0f172a; font-weight: 700; }
-.wiki-content em { color: #334155; }
-.wiki-footer { color: #94a3b8; font-size: 11.5px; text-align: center; margin-top: 18px; padding: 0 16px; }
-.wiki-footer a { color: #64748b; }
+.wiki-wikilink { color: #78350f; background-color: #fde68a; padding: 1px 6px; border-radius: 2px; font-size: 13px; font-style: normal; font-weight: 700; }
+.wiki-content hr { border: 0; height: 2px; background-color: #000000; margin: 24px 0; }
+.wiki-content strong { color: #000000; font-weight: 800; }
+.wiki-content em { color: #0a0a0a; font-style: italic; }
+.wiki-footer { color: #4b5563; font-size: 11.5px; text-align: center; margin-top: 22px; padding: 0 16px; font-weight: 500; }
+.wiki-footer a { color: #1e3a8a; font-weight: 600; }
 """,
         "inline": {
-            "body":      'margin:0;padding:0;background-color:#f6f7f9;color:#1f2933;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;line-height:1.55;',
-            "wrap":      "max-width:680px;margin:0 auto;padding:28px 16px 40px;",
-            "card":      "background-color:#ffffff;border:1px solid #e2e6ec;border-radius:8px;padding:32px 32px 28px;",
-            "kicker":    "color:#2563eb;text-transform:uppercase;letter-spacing:1.2px;font-size:11px;font-weight:700;margin:0 0 8px;",
-            "headline":  "color:#0f172a;font-size:24px;line-height:1.3;margin:0 0 8px;font-weight:700;",
-            "meta":      "color:#64748b;font-size:13px;margin:0 0 24px;padding-bottom:16px;border-bottom:1px solid #e2e6ec;",
-            "footer":    "color:#94a3b8;font-size:11.5px;text-align:center;margin-top:18px;padding:0 16px;",
-            "footer_link": "color:#64748b;",
-            "meta_code": "background-color:#f1f5f9;padding:1px 6px;border-radius:3px;font-size:13px;color:#0f172a;",
+            "body":      'margin:0;padding:0;background-color:#ffffff;color:#0a0a0a;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;line-height:1.55;',
+            "wrap":      "max-width:680px;margin:0 auto;padding:32px 16px 40px;",
+            "card":      "background-color:#ffffff;border:1px solid #d4d4d4;padding:36px 36px 30px;border-radius:0;",
+            "kicker":    "color:#b91c1c;text-transform:uppercase;letter-spacing:1.6px;font-size:11px;font-weight:700;margin:0 0 10px;",
+            "headline":  "color:#000000;font-size:28px;line-height:1.25;margin:0 0 10px;font-weight:800;letter-spacing:-0.01em;",
+            "meta":      "color:#4b5563;font-size:13px;margin:0 0 26px;padding-bottom:18px;border-bottom:2px solid #000000;font-weight:500;",
+            "footer":    "color:#4b5563;font-size:11.5px;text-align:center;margin-top:22px;padding:0 16px;font-weight:500;",
+            "footer_link": "color:#1e3a8a;font-weight:600;",
+            "meta_code": "background-color:#f3f4f6;padding:1px 6px;border-radius:2px;font-size:13px;color:#000000;font-weight:600;",
         },
         "chip_styles": {
-            "wikilink": "color:#b45309;background-color:#fef3c7;padding:0 5px;border-radius:3px;font-size:13px;font-style:italic;font-weight:500;",
-            "code":     "background-color:#f1f5f9;padding:1px 6px;border-radius:3px;font-size:13px;color:#0f172a;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;",
-            "strong":   "color:#0f172a;font-weight:700;",
+            "wikilink": "color:#78350f;background-color:#fde68a;padding:1px 6px;border-radius:2px;font-size:13px;font-style:normal;font-weight:700;",
+            "code":     "background-color:#f3f4f6;padding:1px 6px;border-radius:2px;font-size:13px;color:#000000;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:600;",
+            "strong":   "color:#000000;font-weight:800;",
         },
     },
 
