@@ -4,7 +4,7 @@
 Pulls the most recent `## [YYYY-MM-DD] daily|analysis|earnings|note | ...` block
 from log.md, converts it to HTML using a small stdlib markdown subset (enough
 for the kind of markdown the wiki produces), wraps it in a styled template,
-and sends it via Gmail SMTP using an App Password.
+and sends it via Gmail SMTP or AWS SES.
 
 Usage:
     python scripts/daily_email.py                  # send latest daily entry
@@ -12,11 +12,21 @@ Usage:
     python scripts/daily_email.py --date 2026-05-27 # send a specific entry
     python scripts/daily_email.py --type all       # include any entry, not just `daily`
     python scripts/daily_email.py --to other@example.com
+    python scripts/daily_email.py --backend ses    # force SES (default: env EMAIL_BACKEND, fallback smtp)
 
-Env (required for send):
-    GMAIL_USER             # the sending Gmail address
-    GMAIL_APP_PASSWORD     # https://myaccount.google.com/apppasswords
-    EMAIL_TO               # default recipient (overridden by --to)
+Env — pick ONE backend:
+
+  AWS SES (recommended; uses your default boto3 credentials chain):
+    EMAIL_BACKEND=ses
+    SES_SENDER          # verified SES identity, e.g. "wiki@decideai.xyz"
+    AWS_REGION          # optional, defaults to us-east-1
+    EMAIL_TO            # default recipient
+
+  Gmail SMTP:
+    EMAIL_BACKEND=smtp
+    GMAIL_USER          # the sending Gmail address
+    GMAIL_APP_PASSWORD  # https://myaccount.google.com/apppasswords
+    EMAIL_TO            # default recipient
 
 The script never logs the password and never writes secrets to disk.
 """
@@ -263,7 +273,7 @@ def render_html(entry: dict) -> str:
 </body></html>"""
 
 
-def send_email(html: str, subject: str, recipient: str) -> None:
+def send_email_smtp(html: str, subject: str, recipient: str) -> None:
     user = os.environ.get("GMAIL_USER")
     password = os.environ.get("GMAIL_APP_PASSWORD")
     if not user or not password:
@@ -274,13 +284,66 @@ def send_email(html: str, subject: str, recipient: str) -> None:
     msg["Subject"] = subject
     msg["From"] = user
     msg["To"] = recipient
-    # Plaintext fallback: just send the markdown
-    plain = MIMEText("HTML email — open in an HTML-capable client.", "plain", "utf-8")
-    msg.attach(plain)
+    msg.attach(MIMEText("HTML email — open in an HTML-capable client.", "plain", "utf-8"))
     msg.attach(MIMEText(html, "html", "utf-8"))
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as s:
         s.login(user, password)
         s.sendmail(user, [recipient], msg.as_string())
+    print(f"[email] smtp sent: from={user} to={recipient}")
+
+
+def send_email_ses(html: str, subject: str, recipient: str) -> None:
+    sender = os.environ.get("SES_SENDER")
+    if not sender:
+        raise SystemExit(
+            "[email] SES_SENDER must be set to a verified SES identity. "
+            "List your verified identities with: aws ses list-identities"
+        )
+    try:
+        import boto3  # type: ignore
+        from botocore.exceptions import ClientError  # type: ignore
+    except ImportError:
+        raise SystemExit(
+            "[email] boto3 not installed. Run: pip install boto3"
+        )
+    region = os.environ.get("AWS_REGION", "us-east-1")
+    client = boto3.client("sesv2", region_name=region)
+    try:
+        resp = client.send_email(
+            FromEmailAddress=sender,
+            Destination={"ToAddresses": [recipient]},
+            Content={
+                "Simple": {
+                    "Subject": {"Data": subject, "Charset": "UTF-8"},
+                    "Body": {
+                        "Html": {"Data": html, "Charset": "UTF-8"},
+                        "Text": {"Data": "HTML email — open in an HTML-capable client.", "Charset": "UTF-8"},
+                    },
+                }
+            },
+        )
+        message_id = resp.get("MessageId", "<unknown>")
+        print(f"[email] ses sent: from={sender} to={recipient} message_id={message_id}")
+    except ClientError as e:
+        code = e.response.get("Error", {}).get("Code", "?")
+        msg = e.response.get("Error", {}).get("Message", str(e))
+        if code == "MessageRejected" and "not verified" in msg.lower():
+            print(f"[email] SES rejected: {msg}", file=sys.stderr)
+            print(f"[email] verify the sender first:", file=sys.stderr)
+            print(f"  aws ses verify-email-identity --email-address {sender} --region {region}", file=sys.stderr)
+            print(f"  (or use sesv2 create-email-identity)", file=sys.stderr)
+        else:
+            print(f"[email] SES error [{code}]: {msg}", file=sys.stderr)
+        raise SystemExit(1)
+
+
+def send_email(html: str, subject: str, recipient: str, backend: str) -> None:
+    if backend == "ses":
+        send_email_ses(html, subject, recipient)
+    elif backend == "smtp":
+        send_email_smtp(html, subject, recipient)
+    else:
+        raise SystemExit(f"[email] unknown backend: {backend!r} (use 'ses' or 'smtp')")
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -289,6 +352,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--type", default="daily,analysis,earnings,ingest,research",
                    help="comma-separated entry types to include; use 'all' to include any")
     p.add_argument("--to", help="recipient email (overrides EMAIL_TO env)")
+    p.add_argument("--backend", choices=["ses", "smtp"], help="email backend (overrides EMAIL_BACKEND env; default ses)")
     p.add_argument("--dry-run", action="store_true", help="print HTML to stdout instead of sending")
     p.add_argument("--save", help="also save the HTML to this path")
     args = p.parse_args(argv)
@@ -324,9 +388,9 @@ def main(argv: list[str] | None = None) -> int:
     if not recipient:
         print("[email] no recipient (set EMAIL_TO or pass --to)", file=sys.stderr)
         return 1
-    print(f"[email] sending {subject!r} to {recipient}")
-    send_email(html, subject, recipient)
-    print("[email] sent")
+    backend = args.backend or os.environ.get("EMAIL_BACKEND", "ses")
+    print(f"[email] sending via {backend.upper()}: {subject!r} → {recipient}")
+    send_email(html, subject, recipient, backend)
     return 0
 
 
