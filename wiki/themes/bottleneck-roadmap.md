@@ -111,6 +111,22 @@ Per the new [[copper-thesis]] page: copper is the **2026-2035 structural commodi
 
 **Why this matters for the wiki framework**: pricing power lives at the binding constraint. The wiki has captured this pattern in the *digital* stack (memory 2025-26 → fabs 2027 → EUV 2028-30). The *physical* stack — copper, rare earths, transformers — runs on a slightly later cycle but with even longer lead times because mining permits take 15-20 years vs. fab construction at 2-3 years. The two cycles compound rather than substitute.
 
+## 🆕 MLCC layer — wiki coverage gap surfaced by DELL print (NEW 2026-05-29)
+
+Per [[2026-05-28-DELL-Q1-FY27-earnings]]: **each NVIDIA GB300 rack requires roughly 440,000 multilayer ceramic capacitors (MLCCs)** for power filtering and decoupling. Vera Rubin NVL72 is denser still. DELL's Q1 FY27 AI server revenue of $16.1B (+757% YoY) + $51.3B backlog implies billions of MLCCs/year from one OEM customer — and that's before counting [[HPE]] / [[SMCI]] / hyperscaler-direct ODM volumes.
+
+**Why this is a wiki gap**: the MLCC layer has had zero dedicated coverage despite being a structural bottleneck. Supply is **Japanese-dominated** with very high concentration:
+
+| Player | Listing | Wiki status | MLCC exposure |
+|---|---|---|---|
+| **Murata Manufacturing** | Japan (6981.T); US ADR MRAAY | NOT covered | ~40% global share; world's largest MLCC supplier |
+| **TDK Corp** | Japan (6762.T); US ADR TTDKY | NOT covered | Large diversified electronics; MLCC + battery + sensor |
+| **Samsung Electro-Mechanics** | Korea (009150.KS); US ADR [[SSEHY]] | **Covered for ABF substrates — DUAL-EXPOSED to MLCC** | Material global share; the under-priced single name |
+| **Taiyo Yuden** | Japan (6976.T) | NOT covered | Pure-play MLCC; smaller scale |
+| **Yageo** | Taiwan (2327.TW); KEMET acquired Q3 2020 | NOT covered | Growing global share; western channel via KEMET |
+
+**Verdict**: Open dedicated MLCC coverage as a future expansion. [[SSEHY]] dual exposure is the most-leveraged existing wiki name (already bull/medium-high for ABF; the MLCC angle adds optionality without requiring a new position).
+
 ## What's NOT a bottleneck (per Dylan)
 
 - **Power.** 16+ vendors of gas-power generation; aeroderivatives, reciprocating engines, ship engines, fuel cells, solar+battery. Behind-the-meter could be ~50% of new capacity by EOD. Could unlock 20% of US grid (~200 GW) just with peak-shaving batteries. Cost spread (combined-cycle $1,500/kW vs. alternatives $3,500/kW) translates to **only +10c/hr on a $1.40/hr Hopper TCO** — easy to absorb.

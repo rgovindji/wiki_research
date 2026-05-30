@@ -9,6 +9,67 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-29] analysis | DELL Q1 FY27 — largest single-quarter AI server print in corporate history + upstream second-derivative
+
+User-prompted question (2026-05-29): *"If you feel like you're late, there's a lot of implications to Dell's upstream suppliers that markets might not have priced in yet."* Anchored on DELL's May 28 print and the wiki's existing supply-chain framework. Today's work answers the question with a tiered synthesis + closes two wiki gaps.
+
+### 2 source summaries created
+
+- [[2026-05-28-DELL-Q1-FY27-earnings]] — **Revenue $43.84B (+88% YoY)**; diluted EPS $5.24 (+282% YoY); ISG $29B (+181% YoY); **🔥 AI server revenue $16.1B (+757% YoY); $24.4B Q1 orders + $51.3B backlog**; **FY27 guide raised 20% to $165-169B**; stock +40% AH. **Key supply-chain disclosure**: memory now 10-70% of Dell's BOM; HBM/DRAM prices +up to 414%; **each GB300 rack uses ~440,000 MLCCs** (new wiki bottleneck flagged for [[bottleneck-roadmap]]). UBS MU $1,625 PT (May 26) empirically validated by Dell's BOM economics.
+- [[2026-05-29-dell-upstream-second-derivative]] — Synthesis answering user's question with tiered framework. **Tier A (cleanest under-priced)**: [[ANET]] (new), [[CLS]] (new), [[ALAB]] (upgrade candidate). **Tier B (sympathetic partially priced)**: [[VRT]], [[MOD]], [[NVT]], [[JBL]], [[APH]]. **Tier C (already rerated this week — skip if late)**: [[MU]] (UBS rerating May 26), all substrate names, [[SOITEC]] (May 27 print). **Tier D (wiki gap)**: MLCC layer — Murata 40% global share + TDK + Taiyo Yuden + [[SSEHY]] dual-exposed.
+
+### 2 new wiki pages created
+
+- [[ANET]] — Arista Networks. The cleanest hyperscaler Ethernet AI fabric play. Q1 2026 +35% YoY; AI revenue target raised to $3.5B FY26; FY26 guide raised to $11.5B. EtherLink at 800G shipping at hyperscale today. **XPO MSA** (2027 first products) attacks pluggable-optics layer (COHR/LITE/FN). Stock $157.17 May 28; market cap $195.5B; P/E 52.84. **Post-Q1 -14% drop May 5 on raised guide = exhausted-buyer signal — but DELL print validates demand pull**. Stance bull / medium-high.
+- [[CLS]] — Celestica. The cleanest hyperscaler networking ODM pure-play. Q1 2026 rev $4.05B (+53% YoY); HPS $1.7B (+63%); CCS 80% of revenue; **10 active 1.6T networking programs**. FY26 guide raised by $2B to $19B; adj EPS $10.15. Google + Meta concentrated. ATH closing $422.21 April 27. Stance bull / medium-high.
+
+### Wiki pages touched
+
+- [[DELL]] — Recent developments updated with the historic print + supply-chain disclosure; conviction frontmatter sources count updated
+- [[ALAB]] — Recent developments — DELL volumes make Q2 guide conservative; conviction under active review for potential upgrade
+- [[VRT]] — Recent developments — direct liquid-cooling demand-side validation from DELL backlog
+- [[JBL]] — Recent developments — Recent developments section added (page had none); DELL-adjacent contract mfg validation
+- [[bottleneck-roadmap]] — **NEW MLCC layer added** (Murata + TDK + SSEHY + Taiyo Yuden + Yageo); flagged as the single biggest wiki coverage gap
+- [[index]] — Recent source ingests + new "Networking & ODM" section header containing ANET + CLS
+
+### Stance / conviction changes
+
+- [[ALAB]] — conviction medium-high UNCHANGED but flagged as "under active review for potential upgrade if Q2 print materially beats" (DELL volumes are the leading indicator)
+- All other stances and convictions unchanged
+- [[DELL]] sources count updated 0 → 1 with the new earnings source
+
+### The actionable framing (per user's "late" question)
+
+Three tiers of leverage to the DELL print's confirmed demand pull:
+
+1. **🥇 ANET — bull / medium-high** — -14% post-Q1 on raised guide is the exhausted-buyer signal; XPO MSA is the offensive optionality
+2. **🥈 CLS — bull / medium-high** — lower beta than ANET, locked-in 1.6T volume contracts
+3. **🥉 ALAB — bull / medium-high (upgrade candidate)** — DELL XE9812 rack content = dozens of Gen 6 retimers each; Q2 guide $355-365M likely conservative against DELL volumes
+
+Plus contrarian under-explored MLCC angle via TDK / Murata / [[SSEHY]] dual-exposure.
+
+### Active framework contradictions tracked (for [[feedback-log]] eventual verdict)
+
+Unchanged from May 27 entry:
+1. UBS MU $1,625 PT (May 26) vs. Damodaran chip-sector top (May 16) — DELL print May 28 **empirically tilts toward UBS** via the memory BOM disclosure
+2. NVDA Scenario A confirmed but flat stock — still pending
+
+### Skipped (low-value)
+
+- ANET post-Q1 trading dynamics in granular detail (the -14% drop is the key signal; doesn't need a daily tracker)
+- CLS individual customer disclosures beyond Google/Meta (limited public information; not worth speculating)
+- Generic DELL coverage pieces (covered structurally by the source summary)
+
+### Next session priorities
+
+- Watch ALAB Q2 print (early August 2026) — direct test of the DELL volume-pull thesis
+- Consider opening dedicated MLCC tracking note (Murata 6981.T / MRAAY) if user signals interest in the under-priced bottleneck
+- June 2 — PANW earnings
+- June 3 — AVGO + CRWD earnings (AVGO Tomahawk read-through to ANET; CRWD AI security)
+- June 10 — May CPI print (per [[2026-06-10-cpi-binary]] playbook)
+
+---
+
 ## [2026-05-27] daily | Multi-vector AI infrastructure rerating week — SOITEC FY26 + MU $1T + Anthropic $900B
 
 Four-day catchup daily update covering May 24-27. The week delivered confirming data points across every layer of the AI infrastructure stack. All three indexes set records May 27 on Iran ceasefire-extension report (**S&P 500 +0.02% to 7,520.36 record close · Nasdaq +0.07% to 26,674.73 · Dow +0.36% to 50,644.28 record close**).

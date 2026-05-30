@@ -46,6 +46,7 @@ The **only large player covering both power AND cooling** for AI data centers �
 5. **Geographic / customer mix** disclosure
 
 ## Recent developments
+- **🔥 2026-05-28 — DELL Q1 FY27 print = direct liquid-cooling demand-side validation** (per [[2026-05-28-DELL-Q1-FY27-earnings]]). DELL AI server revenue $16.1B (+757% YoY); **$51.3B AI backlog**; FY27 guide raised 20% to $165-169B. **Read-through to VRT**: every DELL PowerEdge XE9812 (Vera Rubin NVL72) shipping at scale = liquid-cooling pull at the highest density tier — GB300 racks run ~135 kW/rack at air-cooling thermal limit; Vera Rubin NVL72 is even denser. **Which means** VRT's high-density cooling product mix is structurally pulled by DELL's $51.3B backlog ramp over the next 4-6 quarters. Per [[2026-05-29-dell-upstream-second-derivative]] synthesis: VRT is one of the three cleanest "DELL-upstream not yet rerated" plays (with [[MOD]] and [[NVT]] — Goldman May 17 basket cohort). Stance unchanged at bull. Watch: Q2 print + any explicit DELL-AI-Factory design win disclosure.
 - **2026-05-13** — Feb 2026 detail surfaced: **$1B strategic acquisition** in high-density cooling solidified VRT's lead in GPU-cluster cooling. Market cap roughly **tripled since 2024**.
 - **2026-05-07** — **Citi raised PT to $414 from $353**, Buy maintained. Citi: expects Vertiv to raise long-term organic growth outlook to **12-24% range**. Multi-year visibility to sales and earnings growth on AI-driven data center spending cited.
 
