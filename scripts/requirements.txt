@@ -1,0 +1,4 @@
+# Optional dependency: only needed if you want ingest.py to call Anthropic
+# for source-summary generation. The other two tools (wikidb.py, daily_email.py)
+# work without any pip installs.
+anthropic>=0.40.0

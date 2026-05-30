@@ -23,3 +23,14 @@ node_modules/
 n8n-credentials.env
 *.env
 .semiwiki-tmp/
+
+# Python tooling (scripts/)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# SQLite FTS5 index built by scripts/wikidb.py
+wiki.db
+wiki.db-shm
+wiki.db-wal

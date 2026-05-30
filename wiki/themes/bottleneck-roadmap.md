@@ -111,7 +111,9 @@ Per the new [[copper-thesis]] page: copper is the **2026-2035 structural commodi
 
 **Why this matters for the wiki framework**: pricing power lives at the binding constraint. The wiki has captured this pattern in the *digital* stack (memory 2025-26 → fabs 2027 → EUV 2028-30). The *physical* stack — copper, rare earths, transformers — runs on a slightly later cycle but with even longer lead times because mining permits take 15-20 years vs. fab construction at 2-3 years. The two cycles compound rather than substitute.
 
-## 🆕 MLCC layer — wiki coverage gap surfaced by DELL print (NEW 2026-05-29)
+## 🆕 MLCC layer — wiki coverage gap CLOSED 2026-05-29 → see [[mlcc]]
+
+> **Coverage status (updated 2026-05-29 post-MLCC sector page open)**: full sector tracking now lives at [[mlcc]]. Below is the original DELL-print-surfaced framing; the dedicated sector page expands the investability framework.
 
 Per [[2026-05-28-DELL-Q1-FY27-earnings]]: **each NVIDIA GB300 rack requires roughly 440,000 multilayer ceramic capacitors (MLCCs)** for power filtering and decoupling. Vera Rubin NVL72 is denser still. DELL's Q1 FY27 AI server revenue of $16.1B (+757% YoY) + $51.3B backlog implies billions of MLCCs/year from one OEM customer — and that's before counting [[HPE]] / [[SMCI]] / hyperscaler-direct ODM volumes.
 
