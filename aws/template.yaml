@@ -1,0 +1,169 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: >
+  Wiki daily-update automation. EventBridge cron triggers a Lambda that calls
+  Anthropic for daily research, commits to GitHub via the Contents API, and
+  emails an overview via SES. Secrets live in Secrets Manager.
+
+Parameters:
+  GitHubRepo:
+    Type: String
+    Default: rgovindji/wiki_research
+    Description: owner/repo for the wiki
+  GitHubBranch:
+    Type: String
+    Default: main
+  SesSender:
+    Type: String
+    Default: wiki@decideai.xyz
+    Description: must be a verified SES identity
+  EmailToDefault:
+    Type: String
+    Default: rgovindji@gmail.com
+  AnthropicModel:
+    Type: String
+    Default: claude-opus-4-7
+  ScheduleExpression:
+    Type: String
+    Default: 'cron(0 22 ? * MON-FRI *)'
+    Description: EventBridge cron in UTC (default 22:00 UTC weekdays)
+  LambdaS3Bucket:
+    Type: String
+    Description: S3 bucket holding the Lambda deployment zip
+  LambdaS3Key:
+    Type: String
+    Default: wiki-daily/handler.zip
+  EnableSchedule:
+    Type: String
+    Default: 'false'
+    AllowedValues: ['true', 'false']
+    Description: set true AFTER populating secrets to start the daily cron
+
+Conditions:
+  ScheduleEnabled: !Equals [!Ref EnableSchedule, 'true']
+
+Resources:
+
+  # ----- Secrets -----
+  # Empty placeholders. Populate with:
+  #   aws secretsmanager update-secret --secret-id wiki/anthropic --secret-string '{"api_key":"sk-ant-..."}'
+  #   aws secretsmanager update-secret --secret-id wiki/github --secret-string '{"token":"ghp_..."}'
+  AnthropicSecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: wiki/anthropic
+      Description: Anthropic API key for the wiki daily-update Lambda
+      SecretString: '{"api_key":"PLACEHOLDER_REPLACE_ME"}'
+
+  GitHubSecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: wiki/github
+      Description: GitHub personal access token (contents:write on the wiki repo)
+      SecretString: '{"token":"PLACEHOLDER_REPLACE_ME"}'
+
+  # ----- IAM role -----
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: wiki-daily-lambda-role
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: wiki-daily-lambda-inline
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Sid: ReadWikiSecrets
+                Effect: Allow
+                Action:
+                  - secretsmanager:GetSecretValue
+                Resource:
+                  - !Ref AnthropicSecret
+                  - !Ref GitHubSecret
+              - Sid: SendSesEmail
+                Effect: Allow
+                Action:
+                  - ses:SendEmail
+                  - ses:SendRawEmail
+                Resource: '*'
+
+  # ----- Lambda function -----
+  DailyUpdateFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: wiki-daily-update
+      Runtime: python3.12
+      Handler: handler.handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      MemorySize: 512
+      Timeout: 600   # 10 minutes (Anthropic + web_search can take 2-5 min)
+      Code:
+        S3Bucket: !Ref LambdaS3Bucket
+        S3Key: !Ref LambdaS3Key
+      Environment:
+        Variables:
+          GITHUB_REPO: !Ref GitHubRepo
+          GITHUB_BRANCH: !Ref GitHubBranch
+          SES_SENDER: !Ref SesSender
+          EMAIL_TO_DEFAULT: !Ref EmailToDefault
+          ANTHROPIC_MODEL: !Ref AnthropicModel
+          SECRET_ANTHROPIC_ID: !Ref AnthropicSecret
+          SECRET_GITHUB_ID: !Ref GitHubSecret
+      LoggingConfig:
+        LogFormat: Text
+      Description: Daily wiki research sweep + overview email via SES
+
+  # ----- CloudWatch log group (explicit so we own retention) -----
+  LambdaLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub /aws/lambda/${DailyUpdateFunction}
+      RetentionInDays: 30
+
+  # ----- EventBridge schedule -----
+  DailyScheduleRule:
+    Type: AWS::Events::Rule
+    Condition: ScheduleEnabled
+    Properties:
+      Name: wiki-daily-update-schedule
+      Description: Triggers wiki daily update on weekdays
+      ScheduleExpression: !Ref ScheduleExpression
+      State: ENABLED
+      Targets:
+        - Arn: !GetAtt DailyUpdateFunction.Arn
+          Id: wiki-daily-update-target
+          Input: '{"send_email":true,"skip_update":false}'
+
+  ScheduleInvokePermission:
+    Type: AWS::Lambda::Permission
+    Condition: ScheduleEnabled
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !GetAtt DailyUpdateFunction.Arn
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt DailyScheduleRule.Arn
+
+Outputs:
+  FunctionName:
+    Value: !Ref DailyUpdateFunction
+    Description: Lambda function name (for manual invoke)
+  FunctionArn:
+    Value: !GetAtt DailyUpdateFunction.Arn
+  LogGroup:
+    Value: !Ref LambdaLogGroup
+  AnthropicSecretArn:
+    Value: !Ref AnthropicSecret
+  GitHubSecretArn:
+    Value: !Ref GitHubSecret
+  ManualInvokeCommand:
+    Value: !Sub |
+      aws lambda invoke --function-name ${DailyUpdateFunction} \
+        --payload '{"skip_update":true,"send_email":true}' \
+        --cli-binary-format raw-in-base64-out /tmp/wiki-out.json && cat /tmp/wiki-out.json

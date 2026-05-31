@@ -20,9 +20,14 @@ name: Daily wiki update
 #   AWS_REGION               # override default us-east-1
 
 on:
-  schedule:
-    # 22:00 UTC = 18:00 EDT / 17:00 EST. Mon-Fri only.
-    - cron: '0 22 * * 1-5'
+  # Scheduled cron DISABLED 2026-05-30 — daily automation is now AWS Lambda
+  # via aws/template.yaml (EventBridge → wiki-daily-update Lambda → SES).
+  # This workflow is kept around as a manual emergency fallback only.
+  # To re-enable cron here, uncomment the schedule block below and disable
+  # the EventBridge rule (aws/template.yaml EnableSchedule=false).
+  #
+  # schedule:
+  #   - cron: '0 22 * * 1-5'
   workflow_dispatch:
     inputs:
       send_email:

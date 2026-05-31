@@ -278,11 +278,9 @@ def _parse_md_table(md: str) -> list[dict]:
     return rows
 
 
-def parse_watchlist(path: Path = WATCHLIST_PATH) -> dict[str, list[dict]]:
-    """Return {tier_name: [row_dict, ...]} parsed from watchlist.md."""
-    if not path.exists():
-        return {}
-    text = path.read_text(encoding="utf-8")
+def parse_watchlist_text(text: str) -> dict[str, list[dict]]:
+    """Same as parse_watchlist() but takes raw text. Used by Lambda which fetches
+    via the GitHub Contents API rather than reading from disk."""
     # Split on level-2 headings; chunks alternate (preamble, name, body, name, body, ...).
     chunks = re.split(r"^## (.+)$", text, flags=re.MULTILINE)
     tiers: dict[str, list[dict]] = {}
@@ -293,6 +291,13 @@ def parse_watchlist(path: Path = WATCHLIST_PATH) -> dict[str, list[dict]]:
         if rows:
             tiers[name] = rows
     return tiers
+
+
+def parse_watchlist(path: Path = WATCHLIST_PATH) -> dict[str, list[dict]]:
+    """Return {tier_name: [row_dict, ...]} parsed from watchlist.md."""
+    if not path.exists():
+        return {}
+    return parse_watchlist_text(path.read_text(encoding="utf-8"))
 
 
 def _conviction_rank(conv: str) -> int:
@@ -357,13 +362,31 @@ def select_top_picks(tiers: dict, n: int = 7, log_text: str = "") -> list[dict]:
     return candidates[:n]
 
 
+def extract_pull_quote_from_text(name: str, text: str) -> dict | None:
+    """Extract one quote + attribution from a single source-file's text content.
+    Used by Lambda which fetches sources via GitHub API rather than disk glob."""
+    qm = re.search(r"##\s+Quotes worth keeping\s*\n(.*?)(?=\n##\s|\Z)", text, re.DOTALL)
+    if not qm:
+        return None
+    body = qm.group(1)
+    bq = re.search(r"^>\s*\*?(.+?)\*?\s*$", body, re.MULTILINE)
+    if not bq:
+        return None
+    quote = _strip_md_for_display(bq.group(1)).strip(' "—')
+    if len(quote) < 20 or len(quote) > 360:
+        return None
+    h1 = re.search(r"^#\s+(.+)$", text, re.MULTILINE)
+    attribution = h1.group(1).strip() if h1 else name
+    return {"quote": quote, "attribution": attribution}
+
+
 def extract_pull_quote(days_back: int = 14) -> dict | None:
     """Scan recent sources/ files for a '## Quotes worth keeping' section and
     pick the most striking single-line quote. Returns {quote, attribution} or None."""
     if not SOURCES_DIR.exists():
         return None
     cutoff = dt.date.today() - dt.timedelta(days=days_back)
-    candidates: list[tuple[dt.date, str, dict]] = []
+    candidates: list[tuple[dt.date, dict]] = []
     for p in sorted(SOURCES_DIR.glob("*.md"), reverse=True):
         m = re.match(r"^(\d{4}-\d{2}-\d{2})-", p.name)
         if not m:
@@ -374,27 +397,13 @@ def extract_pull_quote(days_back: int = 14) -> dict | None:
             continue
         if file_date < cutoff:
             continue
-        text = p.read_text(encoding="utf-8", errors="replace")
-        # Find "## Quotes worth keeping" section
-        qm = re.search(r"##\s+Quotes worth keeping\s*\n(.*?)(?=\n##\s|\Z)", text, re.DOTALL)
-        if not qm:
-            continue
-        body = qm.group(1)
-        # Grab the first blockquote line
-        bq = re.search(r"^>\s*\*?(.+?)\*?\s*$", body, re.MULTILINE)
-        if not bq:
-            continue
-        quote = _strip_md_for_display(bq.group(1)).strip(' "—')
-        if len(quote) < 20 or len(quote) > 360:
-            continue
-        # Source title from H1
-        h1 = re.search(r"^#\s+(.+)$", text, re.MULTILINE)
-        attribution = h1.group(1).strip() if h1 else p.stem
-        candidates.append((file_date, p.name, {"quote": quote, "attribution": attribution}))
+        result = extract_pull_quote_from_text(p.name, p.read_text(encoding="utf-8", errors="replace"))
+        if result is not None:
+            candidates.append((file_date, result))
     if not candidates:
         return None
-    candidates.sort(reverse=True)
-    return candidates[0][2]
+    candidates.sort(key=lambda c: c[0], reverse=True)
+    return candidates[0][1]
 
 
 # ----------------- email themes (all email-client-safe) -----------------

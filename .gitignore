@@ -34,3 +34,6 @@ venv/
 wiki.db
 wiki.db-shm
 wiki.db-wal
+
+# AWS Lambda build artifacts
+aws/build/
