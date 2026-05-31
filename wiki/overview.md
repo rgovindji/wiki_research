@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-05-27
+last_updated: 2026-05-31
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,23 @@ sources: 0
 # Overview — May 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## May 29-31, 2026 — Memorial Day weekend snapshot: 9-week streak, DELL +33% Friday, Burry escalation surfaces
+
+Per [[2026-05-29-record-week-dell-friday]]: **S&P 500 +0.22% to 7,580.06 (record close); Dow +0.72% to 51,032.46 (record close); Nasdaq +0.20% to 26,972.62.** **9th consecutive weekly gain — longest streak since 2023.** Nasdaq +8% in May. DELL +33% on the day = best single-day in DELL's history; YTD +290%. NVDA closed $211.14 — drift continues 8 trading days post-print (May 27 exhausted-buyer flag hardening).
+
+Two backfilled items surfaced by the May 31 weekend discovery sweep:
+
+- **NVIDIA × IREN 5 GW DSX partnership** (announced May 7) — third NVDA-equity-backed neocloud after CRWV + NBIS. 5-year warrant for ~$2.1B at $70/share strike; Sweetwater 2 GW campus flagship. Pattern: NVIDIA is *systematically* funding the non-hyperscaler compute layer via warrants. Per [[2026-05-07-nvda-iren-5gw-partnership]]. **Process-gap flag** for [[feedback-log]] — should have been ingested in real-time.
+- **Michael Burry Substack "jumped the shark" + Jan 2027 SOXX puts** (May 8) — first concrete options-structure short by a named investor in the AI cycle. Top-10 stocks +784% YoY vs +622% pre-dot-com peak; Shiller CAPE 40.1. Per [[2026-05-08-burry-jumped-the-shark-substack]]. **Process-gap flag** for [[feedback-log]] — should have been ingested in real-time.
+
+> **What this means:** Three record index closes + DELL +33% + 9-week winning streak is exactly the price-action signature you see at the end of a great structural cycle *and* at the late-cycle blow-off top. The wiki cannot adjudicate which from the inside. What it CAN do is two things at once: (1) acknowledge the bull leg has decisive empirical wins this month (UBS MU rerating; DELL print; sovereign-AI growth; Anthropic > OpenAI); (2) treat the 9-week streak as a late-cycle indicator firing alongside Burry's Jan 2027 SOXX puts and Damodaran's chip-sector-top call. Position discipline: don't add fresh size on Monday's open; hold structural compounders; treat any 5%+ pullback as a buy signal, not a panic signal. Memorial Day Monday = US markets closed.
+
+**Watch this week (post-Memorial Day):**
+
+- **June 2 (Tuesday) — PANW Q3 FY26 earnings** AMC (consensus $2.94B / $0.79 EPS; +28-29% YoY)
+- **June 3 (Wednesday) — AVGO Q2 + CRWD Q1 earnings** (both wiki bull; AVGO consensus $22.12B / $1.73 EPS; UBS PT $490)
+- **Iran deal:** Trump approval pending as of Friday close; tentative US-Iran 60-day ceasefire extension + nuclear-talks resume agreement awaiting final sign-off
 
 ## 🔥 May 27, 2026 — Multi-vector AI infrastructure rerating week
 

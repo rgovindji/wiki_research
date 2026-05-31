@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-05-27
+last_updated: 2026-05-31
 last_full_review: 2026-05-09
-sources: 14
+sources: 15
 ---
 
 # AI Bubble Debate
@@ -59,9 +59,26 @@ The week of May 26-27 delivered confirming data points across every layer of the
 - "Will the cycle generate adequate ROI on $1.6T?" → **uncertain**
 - "Are current valuations consistent with even the bull case?" → **borderline at index level, justified at NVDA/TSM, stretched at TSLA/AAPL**
 
-### Bear case strongmen — Kedrosky + Zitron + Hashimoto (UPDATED 2026-05-16)
+### Bear case strongmen — Kedrosky + Zitron + Hashimoto + Burry (UPDATED 2026-05-31)
 
-Three well-credentialed bears made the sharpest versions of the bubble case in May 2026. Cataloged here as the **falsifiable bear framework** the wiki tracks against outcomes.
+Four well-credentialed bears made the sharpest versions of the bubble case in May 2026. Cataloged here as the **falsifiable bear framework** the wiki tracks against outcomes.
+
+#### Michael Burry — "jumped the shark" + Jan 2027 SOXX puts (NEW 2026-05-31; source dated May 8 2026)
+
+Per [[2026-05-08-burry-jumped-the-shark-substack]]: Burry posted to his Substack ("Cassandra Unchained") May 8 calling the market "jumped the shark," and **disclosed an actual options-structure short position**: **January 2027 put options on the iShares SOXX ETF** — effectively a bet on roughly **−30% in semiconductor stocks within 8 months**. Backfilled by the May 31 daily-update workflow (post — should have been caught at the time, flagged for [[feedback-log]] process-gap entry).
+
+| Argument | Wiki integration |
+|---|---|
+| **Top 10 stocks +784% YoY vs +622% pre-dot-com peak** | Sharper version of [[market-concentration]] data; reinforces the regime-warning math |
+| **Shiller CAPE 40.1 on May 8** (wiki tracks 39.8 elsewhere — same vicinity, peak-vs-peak) | Confirms [[valuation-environment]] datum |
+| **"Nothing but AI on financial radio"** narrative-concentration observation | Behavioral late-cycle indicator analog to Druckenmiller's "rotated AWAY from AI" anchor |
+| **Jan 2027 SOXX put position — concrete, dated, falsifiable** | First options-structure short by a named investor in the AI cycle the wiki has tracked. **Falsifiable verdict trigger**: SOXX vs Jan 2027 strike → right / partially right / wrong on a known calendar date |
+
+**Burry's own hedge:** *"I'm not telling anyone to short these stocks. The rally could persist in the near term even if the fundamentals do not support current valuations."* He is betting on direction with calibrated calendar specificity, not making a near-term timing call. Even his bear thesis has a both-sides hedge.
+
+**Reconciliation with GPU-depreciation refutation:** Burry has been the canonical name for the "GPUs depreciate in 2-3 years → asset write-downs → contagion" thesis. Dylan Patel's [[2026-05-16-dylan-patel-invest-like-best]] empirically refuted this at the asset-economics level (H100 worth MORE today). **Burry has now MOVED the bet from depreciation-thesis-only to the broader macro-bubble-position thesis.** Even if depreciation is empirically weak, the bubble-position bet is investable in his actual book.
+
+**Implication for wiki users:** treat Burry's Jan 2027 SOXX puts as a **strengthened (not new) input to position-sizing discipline** — not actionable as a hedge-mirror (his sizing is unknown; SOXX puts are a costly hedge requiring defined-risk discipline). For wiki users already concentrated in semis, the move from "Burry de-registered" (Nov 2025; silence) to "Burry publicly long SOXX puts with date specificity" is a meaningful escalation.
 
 #### The Carlota Perez anchor (academic framework)
 

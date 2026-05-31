@@ -9,6 +9,58 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-05-31] daily | Memorial Day weekend snapshot + Burry/IREN process-gap backfills
+
+Headless daily update. Today is Saturday May 31 (Memorial Day weekend); US markets closed. The Friday May 29 session was the last live tape: **S&P 500 +0.22% to 7,580.06 record close, Dow +0.72% to 51,032.46 record close, Nasdaq +0.20% to 26,972.62, 9th consecutive weekly gain (longest since 2023), Nasdaq +8% May.** DELL +33% follow-through on Q1 FY27 print = best single-day in DELL's history; YTD +290%. NVDA closed $211.14 — exhausted-buyer drift continues 8 trading days post-print.
+
+Weekend discovery sweep surfaced two real-time misses worth backfilling:
+
+### 3 source summaries created
+
+- [[2026-05-29-record-week-dell-friday]] — Friday May 29 weekly recap: three record index closes, 9-week S&P streak, DELL +33% confirmation, NVDA exhausted-buyer drift, Iran deal still pending Trump approval, sector leadership maintained
+- [[2026-05-07-nvda-iren-5gw-partnership]] — **PROCESS-GAP BACKFILL** — NVIDIA × IREN announced May 7 a 5GW DSX AI infrastructure deployment partnership with a 5-yr right for NVDA to purchase up to 30M IREN shares at $70 strike = **~$2.1B warrant**; Sweetwater 2 GW Texas campus flagship; **IREN joins [[CRWV]] + [[NBIS]] as the third major NVDA-equity-backed neocloud customer** — structural pattern: NVIDIA *systematically* funding non-hyperscaler compute layer via warrants/equity in NVDA-architecture-only customers
+- [[2026-05-08-burry-jumped-the-shark-substack]] — **PROCESS-GAP BACKFILL** — Michael Burry posted to Substack May 8 calling the market "jumped the shark" and disclosed **Jan 2027 SOXX put options** (effectively a ~30% semi-decline bet within 8 months); top 10 stocks +784% YoY vs +622% pre-dot-com; Shiller CAPE 40.1; Burry's caveat: "the rally could persist." First concrete options-structure short by a named investor this cycle.
+
+### Wiki pages touched
+
+- [[DELL]] — Recent developments updated with May 29 +33% Friday close (best single-day ever; YTD +290%); sources count 1→2
+- [[NVDA]] — Recent developments updated with (a) IREN 5GW backfill and (b) May 29 exhausted-buyer drift continuation; sources count 8→10
+- [[ai-bubble-debate]] — Bear-case-strongmen section UPDATED 2026-05-31; **Burry added as the fourth strongman** alongside Kedrosky, Zitron, Hashimoto; full sub-section + falsifiable verdict trigger documented; sources count 14→15
+- [[overview]] — New "May 29-31, 2026 — Memorial Day weekend snapshot" section at the top above the May 27 multi-vector section; macro state captured with watch list for June 2 (PANW) / June 3 (AVGO + CRWD)
+- [[index]] — New 2026-05-31 entry in Recent source ingests covering all 3 source summaries with wiki touches
+
+### Stance / conviction changes
+
+- **None.** All wiki stances and convictions held unchanged. No earnings prints today.
+
+### Active framework contradictions tracked (for [[feedback-log]] eventual verdict)
+
+Unchanged from May 27/29 entries, plus new entries:
+
+1. UBS MU $1,625 PT (May 26) vs. Damodaran chip-sector top (May 16) — May 29 record closes tilt directionally toward UBS; verdict still pending
+2. NVDA Scenario A confirmed (May 20) but stock −2-3% over 8 trading days — "right but timing wrong" vs. "process gap" verdict pending; the May 29 close at $211.14 is now the cleanest empirical data point on this
+3. **NEW** — Burry's Jan 2027 SOXX puts (disclosed May 8, ingested May 31): falsifiable on a known calendar date — SOXX vs put strike → right / partially right / wrong
+4. **NEW** — Wiki process gap on Burry May 8 + IREN May 7 — both should have been ingested in real-time per the always-on workflow; flagging as a workflow improvement target for the daily-update prompt
+
+### Skipped (low-value)
+
+- TSMC May 30 staff bonus pledge — confirmatory of TSMC bull thesis but not net-new analytic; TSMC page last updated May 17 with full A14/CoWoP / Daniel Nenni context
+- General "AI stocks to buy" Motley Fool / Insider Monkey content — opinion pieces with no new evidence
+- Iran deal incremental — tentative agreement awaiting Trump approval; wiki already tracks the 14-point MOU and ceasefire-extension framework; no net new info
+- SoftBank €75B French AI investment — directionally interesting but no clear NVDA / wiki-ticker read-through with credible numbers in the open press; defer to a dedicated sovereign-AI ingest if European sources surface more detail next week
+
+### Next session priorities
+
+- **June 2 (Tuesday post-Memorial-Day) — PANW Q3 FY26 earnings** AMC; CyberArk integration progress
+- **June 3 (Wednesday) — AVGO Q2 + CRWD Q1 earnings**; AVGO Tomahawk read-through to [[ANET]]; CRWD AI security
+- Iran deal: Trump approval/rejection of the tentative 60-day-ceasefire-extension + nuclear-talks framework
+- ALAB Q2 print (early August) — direct test of DELL volume-pull thesis
+- June 10 — May CPI print (per [[2026-06-10-cpi-binary]] playbook)
+- June 16-17 — BoJ rate decision (per [[2026-06-16-boj-decision]] playbook)
+- Watch: NVDA exhausted-buyer test extending — if NVDA hasn't reclaimed $220+ by next NVDA earnings, the "right call / flat trade" framework contradiction may resolve as a process gap (sizing/entry discipline) rather than thesis error
+
+---
+
 ## [2026-05-29] analysis | DELL Q1 FY27 — largest single-quarter AI server print in corporate history + upstream second-derivative
 
 User-prompted question (2026-05-29): *"If you feel like you're late, there's a lot of implications to Dell's upstream suppliers that markets might not have priced in yet."* Anchored on DELL's May 28 print and the wiki's existing supply-chain framework. Today's work answers the question with a tiered synthesis + closes two wiki gaps.
