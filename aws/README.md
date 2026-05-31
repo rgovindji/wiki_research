@@ -1,5 +1,9 @@
 # aws/ — AWS Lambda daily-update automation
 
+> **As of 2026-05-31, the recommended setup is the hybrid local-cron + AWS-email flow** described in [`scripts/LOCAL_CRON.md`](../scripts/LOCAL_CRON.md). It uses your Anthropic Max plan for the daily Claude Code run (zero marginal cost) and reuses this Lambda for the email-only step. The pure-AWS pipeline below is still deployed and tested as a fallback, but the schedule is disabled by default.
+
+## Pure-AWS architecture (fallback)
+
 The daily wiki research sweep + overview email runs entirely on AWS:
 
 ```

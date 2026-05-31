@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  launchd job: wiki daily update.
+
+  Fires scripts/daily_claude.sh on weekdays at 17:00 LOCAL TIME (5 PM in
+  whatever timezone your Mac is set to). The script:
+    1. git pull
+    2. runs claude -p with the daily prompt (uses your Max plan)
+    3. commits + pushes any changes
+    4. invokes AWS Lambda for the email (SES)
+
+  Install:    bash scripts/install_daily_cron.sh
+  Uninstall:  bash scripts/install_daily_cron.sh --uninstall
+  Run now:    launchctl kickstart -k gui/$(id -u)/com.rgovindji.wiki-daily
+
+  Logs:       ~/Library/Logs/wiki-daily/
+
+  IMPORTANT: launchd uses LOCAL TIME (not UTC). If you're on PT and want
+  17:00 PT (= 00:00 UTC), this is correct. If you're on ET and want
+  17:00 ET, also correct.
+
+  If your Mac is asleep at the scheduled time, the job runs whenever the
+  Mac next wakes. To wake the Mac for the run, set up a wake schedule:
+
+    sudo pmset repeat wakeorpoweron MTWRF 16:55:00
+
+  (5 minutes before the launchd fires.) This requires admin and is
+  optional — the script also runs fine after manual wake.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.rgovindji.wiki-daily</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-lc</string>
+    <string>/Users/rgovindji/Projects/Investing/scripts/daily_claude.sh</string>
+  </array>
+
+  <!-- Working directory + env so claude/git/aws find everything they need -->
+  <key>WorkingDirectory</key>
+  <string>/Users/rgovindji/Projects/Investing</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/Users/rgovindji/.local/bin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>HOME</key>
+    <string>/Users/rgovindji</string>
+  </dict>
+
+  <!-- Schedule: Mon-Fri at 17:00 LOCAL TIME -->
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict>
+      <key>Hour</key><integer>17</integer>
+      <key>Minute</key><integer>0</integer>
+      <key>Weekday</key><integer>1</integer>
+    </dict>
+    <dict>
+      <key>Hour</key><integer>17</integer>
+      <key>Minute</key><integer>0</integer>
+      <key>Weekday</key><integer>2</integer>
+    </dict>
+    <dict>
+      <key>Hour</key><integer>17</integer>
+      <key>Minute</key><integer>0</integer>
+      <key>Weekday</key><integer>3</integer>
+    </dict>
+    <dict>
+      <key>Hour</key><integer>17</integer>
+      <key>Minute</key><integer>0</integer>
+      <key>Weekday</key><integer>4</integer>
+    </dict>
+    <dict>
+      <key>Hour</key><integer>17</integer>
+      <key>Minute</key><integer>0</integer>
+      <key>Weekday</key><integer>5</integer>
+    </dict>
+  </array>
+
+  <!-- Don't run when loaded; only on schedule -->
+  <key>RunAtLoad</key>
+  <false/>
+
+  <!-- Re-run if Mac was asleep when scheduled fire was missed -->
+  <key>StartCalendarIntervalAcceptsAsleep</key>
+  <true/>
+
+  <!-- Log destinations (script also writes its own structured log) -->
+  <key>StandardOutPath</key>
+  <string>/Users/rgovindji/Library/Logs/wiki-daily/launchd-stdout.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/rgovindji/Library/Logs/wiki-daily/launchd-stderr.log</string>
+
+  <!-- Single-instance: don't overlap runs -->
+  <key>AbandonProcessGroup</key>
+  <false/>
+
+  <!-- Nice priority — don't fight foreground apps -->
+  <key>Nice</key>
+  <integer>1</integer>
+</dict>
+</plist>
