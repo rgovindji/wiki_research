@@ -41,6 +41,9 @@ The IP / instruction-set layer underneath the entire mobile world AND now the da
 3. **Cloud / data center revenue disclosure** — what's the AI-attached share?
 4. **SoftBank monetization** — any secondary offerings affecting float
 
+## Recent developments
+- **🔥 2026-06-01 — RTX Spark PC superchip + Vera CPU "in full production" = cleanest royalty-stream pull-through of the year** (per [[2026-06-01-nvda-rtx-spark-computex-keynote]]). NVIDIA unveiled the **RTX Spark Arm-based PC superchip** with a **20-core Grace CPU co-designed with MediaTek** plus Blackwell RTX GPU, shipping fall 2026 in laptops/desktops from Microsoft Surface, Dell, HP, ASUS, Lenovo, MSI. Separately, Jensen confirmed **Vera CPU is "in full production"** with **Anthropic, OpenAI, and SpaceX AI named as early customers**, calling it "our new major growth driver." **Which means**: two of the three bull-case bullets the wiki tracks ("Data center penetration accelerating" + "Vera Rubin volume ramps in 2H 2026") just moved from forecast to commercially-shipping reality. The PC-side opens a **new royalty line ARM didn't previously have at NVIDIA scale** — the v9 architecture mix-shift bull thesis just got six new OEM design wins to compound on top of mobile/automotive/IoT. **Royalty-rate trajectory**: every premium AI-PC SKU shipping fall 2026 carries v9 royalty, structurally accretive to ASP/mix. Conviction held at **bull/medium** but the conviction-upgrade path now has cleaner triggers: (1) RTX Spark unit ship-rate disclosure 1H 2027 (2) ARM Holdings v9 mix % disclosure in 2027 earnings (3) MediaTek royalty-rate confirmation. Stance unchanged.
+
 ## Related
 [[NVDA]] · [[nvda-supply-chain]] · [[semiconductors]] · [[ai-capex-cycle]] · [[overview]]
 

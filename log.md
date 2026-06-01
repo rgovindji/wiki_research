@@ -9,6 +9,88 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-01] daily | NVIDIA Computex PM — RTX Spark PC superchip + Vera CPU in full production + Isaac GR00T humanoid reference + three index records
+
+Headless daily update PM session, post the GOOGL AM event ingest. Discovery sweep surfaced a tier-1 net-new event: **NVIDIA's Computex 2026 keynote in Taipei delivered the first NVDA PC system processor in company history (RTX Spark / N1X), confirmed Vera CPU is "in full production" with Anthropic / OpenAI / SpaceX AI as named early customers, and unveiled an Isaac GR00T humanoid reference design**. All three indexes set fresh record closes on the day.
+
+### Source summary
+
+- [[2026-06-01-nvda-rtx-spark-computex-keynote]] — full canonical artifact; RTX Spark spec sheet, MediaTek Grace CPU co-design, six-OEM Windows-on-Arm roster, Vera CPU production confirmation, Unitree H2 + Sharpa humanoid reference, Jensen quotes, market reaction, framework impact
+
+### Key facts
+
+- **RTX Spark** (formerly N1X): Arm-based **20-core Grace CPU (co-designed with MediaTek) + Blackwell RTX GPU with 6,144 CUDA cores + NPU + up to 128GB unified LPDDR5X**, all on a single **TSMC 3nm package**. Fall 2026 launch in Windows laptops/desktops from **Microsoft Surface, Dell, HP, ASUS, Lenovo, MSI**.
+- **Vera CPU**: "in full production," called "our new major growth driver." Early customers: **Anthropic, OpenAI, SpaceX AI**. This is the structural pull-through of the May 20 Q1 FY27 sovereign-AI thesis — from $200B TAM roadmap to revenue-bearing in a single Computex cycle.
+- **Isaac GR00T humanoid reference design**: ~6ft, **Unitree H2 chassis + Sharpa five-fingered hands**.
+- **Market reaction**: NVDA +2-4% to $220.67; **DELL +10%, HP Inc +8%, INTC -3%+, AMD -3%+**. Three index records: **S&P 500 +0.26% to 7,599.96 · Nasdaq +0.42% to 27,086.81 · Dow +0.09% to 51,078.88**.
+- **Jensen quote**: "Microsoft and Nvidia are going to reinvent the PC. This is going to be the new PC. This is the first across the lineup of PC reinvention for 40 years."
+
+### Framework impact (tier-1 on NVDA bull case)
+
+| Page | Impact |
+|---|---|
+| [[NVDA]] | Three new structural moats: PC TAM (Arm-based AI-PC), Vera CPU in production with named lab customers, Isaac GR00T physical robot reference. NVDA now has CPU + GPU + DPU + PC + automotive + robotics revenue lines under one Blackwell→Rubin→Feynman roadmap. Conviction held at bull/high (ceiling) |
+| [[ARM]] | Cleanest royalty-stream pull-through of 2026 — RTX Spark v9 PC SKUs across six OEMs + Vera CPU full production. Conviction-upgrade triggers now have cleaner empirical tests (RTX Spark unit ship-rate disclosure 1H 2027; ARM v9 mix % disclosure in 2027 earnings) |
+| [[DELL]] | First-mover AI-server channel thesis extends into consumer/SMB AI-PC; +10% close confirms |
+| [[INTC]] | AI-CPU-shortage bull leg compressed at premium AI-PC tier; foundry binary intact. Stance unchanged at neutral/low |
+| [[AMD]] | Ryzen AI PC leg compressed; Helios MI400/MI450 data-center thesis intact. Stance unchanged at bull/high |
+| [[AAPL]] | M-series premium-laptop architectural lead no longer uniquely Apple's. Bear thesis sharpens marginally |
+| [[TSM]] | N3 leadership validated across three NVDA product families. Stance held at bull/high |
+| [[humanoid-oems]] | Unitree H2 confirmed as NVDA Isaac GR00T reference chassis — Shanghai STAR IPO valuation backstopped |
+
+### Wiki touched (10 files)
+
+- 1 new source summary
+- [[NVDA]] Recent developments (RTX Spark + Vera CPU + Isaac GR00T)
+- [[DELL]] Recent developments (RTX Spark partner, +10%)
+- [[INTC]] Recent developments (PC headwind, -3%+)
+- [[AMD]] Recent developments (PC headwind, -3%+)
+- [[ARM]] Recent developments (new section — page had none; royalty pull-through)
+- [[AAPL]] Recent developments (M-series competitive landscape compressed)
+- [[TSM]] Recent developments (N3 leadership validated)
+- [[humanoid-oems]] Unitree H2 row updated with NVDA Isaac GR00T reference
+- [[overview]] new June 1 PM section appended above the June 1 AM (GOOGL) section
+- [[index]] new top entry in Recent source ingests
+
+### Stance / conviction changes
+
+- **NONE applied unilaterally** per house rules.
+- No stance flip warranted; this is a structural reinforcement of existing positions, not a thesis-changing event for any wiki ticker.
+
+### Other June 1 signals (not separate source summaries — flagged in overview + source summary "Other signals")
+
+- **MRVL hit ATH** post Q1 FY27 print: rev $2.4B (+28% YoY); Q2 guide $2.7B (+35% YoY); ~70x trailing P/E; +130% YTD. **Second consecutive material print arguing MRVL should be promoted from "not yet covered" to a full wiki page.** Custom-silicon companion to [[AVGO]] + optical-DSP layer. Flagged for user to confirm coverage promotion.
+- **ServiceNow (NOW) +8.6% to ~$91.49** on BofA reinstated Buy / $130 PT; record 40% rally in four sessions. AI-software bellwether; not in wiki — surfaced for awareness only (lower priority than picks-and-shovels stack).
+- **IBM +9%** on bullish analyst initiation. Not in wiki — surfaced for awareness only.
+- **WTI +5% to $92** on US-Iran peace-talk uncertainty (tentative 60-day ceasefire extension awaiting Trump approval). [[hedging-risk]] / [[commodity-producers]] unchanged.
+
+### Active framework contradictions tracked (for [[feedback-log]] eventual verdict)
+
+Unchanged from earlier entries, plus:
+
+1. NVDA Scenario A confirmed (May 20) but **stock fully recovered today** to ~$220 — the "right but timing wrong" framing of the May 27 / May 29 / May 31 exhausted-buyer flag may be resolving favorably. Computex announcement is a clean upside catalyst at the structural-moats layer. Verdict will sharpen over the next 2-3 weeks (Q2 FY27 print July/August).
+2. **MediaTek coverage gap** (Grace CPU co-design partner): wiki has zero MediaTek coverage despite material AI-supplier role. Flagged for user signal on whether to promote.
+
+### Skipped (low-value)
+
+- Sell-side analyst PT updates issued in the hour after the Computex keynote (premature; will gather Q2 read after more time)
+- MRVL Q1 print article-level reads (the headline numbers are sufficient for the watchlist flag; defer full coverage write-up until user signals promotion)
+- ServiceNow / IBM coverage write-ups (out of wiki scope today)
+- Generic Computex keynote color (Storage Review, Tom's Hardware, etc. — covered structurally by the source summary)
+- Iran ceasefire incremental — same Trump-approval-pending state as Friday; no net new info
+
+### Next session priorities
+
+- **June 2 (Tuesday) — PANW Q3 FY26 earnings** AMC (consensus $2.94B / $0.79 EPS; +28-29% YoY); CyberArk integration progress
+- **June 3 (Wednesday) — AVGO Q2 + CRWD Q1 earnings**; AVGO Tomahawk read-through to [[ANET]]; CRWD AI security
+- **Iran deal**: Trump approval/rejection of the tentative 60-day-ceasefire-extension + nuclear-talks framework
+- **MRVL coverage decision** (user signal needed): Q1 FY27 print + Q2 guide make MRVL the cleanest second-leg-custom-silicon name not in the wiki
+- **MediaTek coverage decision** (user signal needed): NVDA Grace CPU co-design partner — needs at minimum a stub page
+- June 10 — May CPI print (per [[2026-06-10-cpi-binary]] playbook)
+- June 16-17 — BoJ rate decision (per [[2026-06-16-boj-decision]] playbook)
+
+---
+
 ## [2026-06-01] event | GOOGL $80B equity raise + Berkshire $10B placement — tier-1 framework event
 
 User-prompted ingest of Alphabet's morning press release. **Largest tech equity capital raise in history**. Multi-agent execution: 3 parallel general-purpose subagents handled the 25 ticker read-through pages while I wrote the source summary + 5 high-leverage theme/overview updates.

@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-05-31
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -27,7 +27,35 @@ Two backfilled items surfaced by the May 31 weekend discovery sweep:
 - **June 3 (Wednesday) — AVGO Q2 + CRWD Q1 earnings** (both wiki bull; AVGO consensus $22.12B / $1.73 EPS; UBS PT $490)
 - **Iran deal:** Trump approval pending as of Friday close; tentative US-Iran 60-day ceasefire extension + nuclear-talks resume agreement awaiting final sign-off
 
-## 🔥 June 1, 2026 — GOOGL $80B equity raise + Berkshire $10B stamp
+## 🔥 June 1, 2026 PM — NVIDIA Computex keynote: RTX Spark PC superchip + Vera CPU in full production + records on all three indexes
+
+Per [[2026-06-01-nvda-rtx-spark-computex-keynote]]: Jensen Huang unveiled the **RTX Spark superchip** (formerly N1X) at Computex Taipei — an **Arm-based 20-core Grace CPU (co-designed with MediaTek) + Blackwell RTX GPU with 6,144 CUDA cores + NPU + 128GB unified LPDDR5X, on a single TSMC 3nm package**. Ship fall 2026 in Windows laptops from **Microsoft Surface, Dell, HP, ASUS, Lenovo, MSI**. Separately, **Vera CPU is now "in full production"** with **Anthropic, OpenAI, SpaceX AI** named as early customers — "our new major growth driver" per Jensen. Also unveiled the **Isaac GR00T humanoid reference design** (~6ft, Unitree H2 chassis + Sharpa five-fingered hands).
+
+**Three index records on the day:** S&P 500 +0.26% to **7,599.96** · Nasdaq +0.42% to **27,086.81** · Dow +0.09% to **51,078.88**. 10th consecutive S&P weekly gain in progress.
+
+**Cross-currents:** [[NVDA]] **+2-4% intraday → $220.67**; **[[DELL]] +10%**; HP Inc +8%; [[INTC]] and [[AMD]] both **-3%+** on the structural PC headwind. [[GOOGL]] **-2.51% to $380.34** on AM equity-raise dilution. **The picks-and-shovels supply side rallied while the platform that funds the build sold off** — the cleanest single-day expression of the wiki's "supply discipline vs. demand-funding mechanism" framework all year.
+
+**Framework impact:**
+
+| Wiki page | Read |
+|---|---|
+| [[NVDA]] | Three new structural moats: PC TAM (Arm-based AI-PC), Vera CPU in production (Anthropic/OpenAI/SpaceX AI), Isaac GR00T physical robot reference. Conviction held at bull/high (ceiling) |
+| [[ARM]] | Cleanest royalty-stream pull-through of the year — RTX Spark v9 PC SKUs + Vera CPU full production. Conviction-upgrade triggers now have cleaner empirical tests |
+| [[DELL]] | First-mover AI-server channel thesis extends into consumer/SMB AI-PC; +10% close confirms |
+| [[INTC]] | One of the bull legs (AI CPU shortage ASP power) compressed at premium AI-PC tier; foundry binary intact. Stance unchanged at neutral/low |
+| [[AMD]] | Ryzen AI PC leg compressed; Helios MI400/MI450 data-center thesis intact. Stance unchanged at bull/high |
+| [[AAPL]] | M-series premium-laptop architectural lead is no longer uniquely Apple's — Windows side now has system equivalent. Bear thesis sharpens marginally |
+| [[TSM]] | N3 leadership validated across three NVDA product families (data-center GPU + Vera CPU + RTX Spark PC). Stance unchanged at bull/high |
+| [[robotics]] / [[humanoid-oems]] | Unitree H2 confirmed as NVDA's reference chassis-design partner; structural validation for the Chinese humanoid OEM layer (Shanghai STAR IPO) |
+| Adjacency flag | **MediaTek (2454.TW / MDTKF)** is the Grace CPU co-design partner; not in wiki — flagged for coverage promotion |
+
+**Other June 1 market signals (no separate source summaries):**
+- **MRVL hit ATH** post Q1 FY27 print: rev $2.4B (+28% YoY); Q2 guide $2.7B (+35% YoY); ~70x trailing P/E; +130% YTD. Wiki has MRVL on "not yet covered" list — **second consecutive material print** that argues for promotion. Custom-silicon companion to [[AVGO]] + optical-DSP layer.
+- **ServiceNow (NOW) +8.6% to ~$91.49** on BofA reinstated Buy / $130 PT; record 40% rally in four sessions. AI-software bellwether worth tracking; not in wiki.
+- **IBM +9%** on bullish analyst initiation. Not in wiki.
+- **WTI +5% to $92** on US-Iran peace-talk uncertainty (60-day ceasefire extension awaiting Trump approval).
+
+## 🔥 June 1, 2026 AM — GOOGL $80B equity raise + Berkshire $10B stamp
 
 Per [[2026-06-01-googl-80B-equity-raise-berkshire]]: Alphabet announced the **largest equity capital raise in tech history** — $80B total, anchored by Berkshire Hathaway's **$10B private placement** at $351.81 (Class A) / $348.20 (Class C). Berkshire has been building a GOOGL position since Q3 2025 (newly disclosed). Structure: $30B underwritten + $40B ATM (Q3 2026 start) + $10B Berkshire. ~$30B of the ATM is earmarked for RSU vesting tax obligations; the *new AI capex* tranche is closer to ~$50B.
 

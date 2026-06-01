@@ -135,8 +135,9 @@ Chinese OEMs collectively hold the majority of installed humanoid units globally
 | Item | Detail |
 |---|---|
 | **Market share** | ~27% globally |
-| **Famous for** | Quadrupeds (Go1, Go2); now expanding to humanoids (H1, G1) |
+| **Famous for** | Quadrupeds (Go1, Go2); now expanding to humanoids (H1, G1, **H2**) |
 | **Pricing** | **Aggressive — Unitree G1 humanoid priced at ~$16,000**, vastly undercutting Western OEMs |
+| **2026-06-01 update** | **🔥 Unitree H2 chassis named as NVIDIA's Isaac GR00T reference design chassis at Computex 2026 keynote** (per [[2026-06-01-nvda-rtx-spark-computex-keynote]]). NVIDIA combined the H2 chassis with Sharpa five-fingered dexterous hands to ship a ~6ft humanoid reference architecture. **Which means**: Unitree's structural credibility as a Western-supplier-compatible chassis just got the strongest possible institutional stamp; backstops the Shanghai STAR IPO valuation and may pull Western component partners (Sharpa-style) into the Unitree ecosystem rather than competing OEM chassis. |
 | **Stock implication** | If Unitree's price-point becomes the global anchor, Western OEM unit economics get squeezed — bad for *Western* component suppliers betting on Western OEM scale |
 
 ### UBTECH
