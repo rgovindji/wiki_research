@@ -944,7 +944,7 @@ def send_email(html: str, subject: str, recipient: str, backend: str) -> None:
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description="Render+email the latest daily log entry")
     p.add_argument("--date", help="YYYY-MM-DD — pick a specific entry instead of latest")
-    p.add_argument("--type", default="daily,analysis,earnings,ingest,research",
+    p.add_argument("--type", default="daily,analysis,earnings,ingest,research,event,note",
                    help="comma-separated entry types to include; use 'all' to include any")
     p.add_argument("--to", help="recipient email (overrides EMAIL_TO env)")
     p.add_argument("--backend", choices=["ses", "smtp"], help="email backend (overrides EMAIL_BACKEND env; default ses)")
