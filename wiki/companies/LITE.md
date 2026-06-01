@@ -2,9 +2,9 @@
 type: company
 ticker: LITE
 tags: [ai, networking, optical, cpo, nvda-direct]
-last_updated: 2026-05-09
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 0
+sources: 1
 conviction: high
 stance: bull
 ---
@@ -43,11 +43,15 @@ Photonics leader paired with [[COHR]] in **NVDA's $4B March 2026 commitment** (s
 4. **Margin trajectory** — does scale flow through?
 
 ## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** LITE is the direct beneficiary on the OCS (optical switching) backlog vector — already running >$400M OCS backlog with confirmed CPO orders, paired with COHR in NVDA's $4B March 2026 commitment (per [[2026-06-01-googl-80B-equity-raise-berkshire]]). GOOGL's Apollo/Palomar OCS expansion is one of the most optical-intensive hyperscaler fabrics in production, and the $30-50B incremental AI capex tranche above GOOGL's 2026 guide is structurally biased toward optical scale-out content. **Which means**: LITE's pure-play AI exposure (less consumer ballast than COHR) is now levered to two simultaneous funded demand pulls — NVDA's $2B share commitment + GOOGL's equity-funded OCS expansion. Reinforces the OCS backlog as the leading indicator; the Nasdaq-100 inclusion's passive flow tailwind compounds with externally-funded demand validation. Bull thesis sharpens.
 - **2026-05-18 — 🆕 Lumentum joins Nasdaq-100 Index** (effective open Monday May 18, replacing CoStar Group). Stock surged **+16% to ~$1,053** on the announcement Monday May 12 on index-tracking forced buying. Market cap now ~$70B+. **Which means**: market re-rating photonics as core AI infrastructure (not optical niche); passive QQQ flows now add to LITE demand alongside thesis-driven buyers. Per `2026-05-18-lite-nasdaq-100` source summary.
 - **2026-05 (Q3 print)** — **Revenue +90% YoY to $808M** (historic high); EPS beat; **Q3 guidance +85% YoY** beat Wall Street estimates. Stock fell ~5-7% on May 7 ("sell the news" + dilution concerns from financing) then rallied **+17% on May 11** in the optics-trade rebound.
 
 ## Related
 [[NVDA]] · [[nvda-supply-chain]] · [[COHR]] · [[GLW]] · [[FN]] · [[APH]] · [[SOITEC]] · [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[overview]]
+
+## Sources
+1. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 - CNBC NVDA $4B COHR + LITE: https://www.cnbc.com/2026/03/02/nvidia-investment-coherent-lumentum.html

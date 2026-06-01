@@ -1,12 +1,23 @@
 ---
 type: theme
 tags: [risk, concentration, mag7]
-last_updated: 2026-05-16
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 ---
 
 # Market Concentration
+
+## 🔥 2026-06-01 — Berkshire now overweight two of Mag 7 (AAPL + GOOGL)
+
+Per [[2026-06-01-googl-80B-equity-raise-berkshire]]: Alphabet's $80B raise included a **$10B Berkshire Hathaway private placement** at $351.81 (Class A) / $348.20 (Class C). The press release also disclosed for the first time that **Berkshire has been building a GOOGL position since Q3 2025**. After today, Berkshire is overweight two of the seven Mag-7 names (AAPL legacy holding + GOOGL new position).
+
+**Which means** for the concentration dynamic at the top:
+
+- Berkshire's GOOGL build (Q3 2025–today) was *unobservable* from 13F-quarterly snapshots until today's company disclosure — illustrating how the wiki's smart-money tracking framework underweighs *private*-side build-up vs. public disclosure
+- Top-2 Mag-7 weight in Berkshire's portfolio increases (AAPL ~25%+ historically + the new GOOGL position ~$15-30B prior + $10B placement)
+- The concentration question shifts: it's not just *"the index is 35% Mag 7"* — it's *"Berkshire is concentrating into 2 of those 7 names while smart money exited GOOGL specifically (Druckenmiller Q1 2026)"*. The contradictory smart-money signals at the most-watched name in the index are the active framework contradiction worth tracking
+- For the broader concentration math, GOOGL's $80B raise *increases* GOOGL's float by ~228M shares (~1.9% gross dilution), modestly *reducing* per-share concentration but only at the margin
 
 ## What this is
 The S&P 500 is a cap-weighted index, and the top 10 names — almost all Mag 7 plus adjacent — now account for an unprecedented share of total index weight. This makes the index, and the "market" by extension, a leveraged bet on a small number of AI-tilted companies.

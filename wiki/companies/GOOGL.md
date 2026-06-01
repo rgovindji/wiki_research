@@ -2,9 +2,9 @@
 type: company
 ticker: GOOGL
 tags: [ai, mag7, cloud, advertising]
-last_updated: 2026-05-16
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 3
+sources: 6
 conviction: high
 stance: bull
 ---
@@ -48,6 +48,15 @@ The most under-priced Mag 7 stock entering 2026 — vertically integrated AI sta
 5. **Ad-business margin** under economic pressure (tariffs, consumer spending — see [[inflation-tariffs]])
 
 ## Recent developments
+
+- **🔥 2026-06-01 — $80B EQUITY RAISE + BERKSHIRE HATHAWAY $10B PRIVATE PLACEMENT** (per [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Largest equity capital raise in tech history.** Structure: $30B underwritten ($15B mandatory convertible preferred + $15B common) + $40B ATM (Q3 2026 start) + **$10B Berkshire ($5B Class A @ $351.81, $5B Class C @ $348.20)**. Berkshire's prior position — built since Q3 2025 — was *first disclosed today*. ~$30B of the ATM is earmarked for 2026 RSU vesting tax obligations (administrative change in how RSUs are funded); the *new AI capex* tranche is closer to ~$50B. Stock −2.51% to $380.34 (dilution-driven; Berkshire stamp limited downside). **Which means** for the wiki:
+  - The **"capex burden" bear bullet is partially refuted** — the raise resolves the near-term cash question through 2027; the bear concern is now dilution math (~1.9% gross / ~3.6% with preferred conversion) not cash exhaustion
+  - **Berkshire stamp is the single cleanest institutional validation of the GOOGL bull case the wiki has ever captured** — Berkshire has been Apple-only Mag-7 holder for a decade; choosing GOOGL as the second Mag-7 position is a higher-confidence signal than any sell-side rating
+  - **The Druckenmiller-exit signal (Q1 2026, per [[2026-05-17-multi-agent-research-batch]]) should be flagged as superseded** — Druckenmiller sold; Buffett bought *more*; the smart-money read on GOOGL has flipped
+  - **The 2027 capex curve is steeper than wiki framing** — $185-190B (2026 guide) + $80B raise = ~$220-250B 2027 capex run-rate read
+  - **The contrast with [[ai-infrastructure-debt]] is bullish for the *cleanest* names**: GOOGL chose dilution over levered project finance — the *opposite* of the Oracle/SRT/private-credit pattern. The systemic-risk vector concentrates further at ORCL + tier-2 names that *can't* tap equity markets at scale
+  - **Read-through positives**: [[NVDA]] (top GOOGL customer), [[AVGO]] (TPU custom silicon partner), [[MU]] (HBM for TPU + GCP NVDA fleet), [[TSM]] (TPU foundry), [[VRT]] / [[ETN]] / [[GEV]] (power + cooling), [[COHR]] / [[LITE]] / [[FN]] / [[GLW]] (optical for Apollo/Palomar OCS), [[ALAB]] / [[ANET]] / [[CLS]] (networking + ODM)
+  - **Stance unchanged at bull / high conviction**; entry near Berkshire's marks ($348-$352) is the structurally-anchored level
 - **🔥 2026-05-17 PM — GOOGL holds ~5% SpaceX stake worth ~$100B at expected June 2026 IPO** (Agent S via [[2026-05-17-robotics-multi-agent-batch]] context). **Original $500M GOOGL investment in 2015 → ~$100B at $2T SpaceX IPO valuation = ~200x return**. **SpaceX IPO timeline**: S-1 public May 15-22, 2026; Roadshow June 8; **IPO June 18-30, 2026**. Lead banks: Goldman, BofA, Citi, JPM, MS. **Which means**: Alphabet's "Other Bets" segment has a **massive hidden mark-to-market** that will be crystallized at IPO. Even at conservative SpaceX trading valuation post-IPO ($1.2T), Google's stake is worth $60B+ — not currently reflected in GOOGL valuation models. Cleanest material near-term catalyst for GOOGL beyond Waymo + TPU + Apollo OCS. Adjacent: Google has orbital data center partnership talks with SpaceX (early 2026 rumors).
 - **2026-05-17 PM — Druckenmiller EXITED GOOGL Q1 2026** (385K shares; reverses Q4 2025 expansion) AND initiated Broadcom position simultaneously. Major rotation signal from one of the wiki's tracked smart-money names. **Which means**: Druckenmiller's pivot is sending a sentiment-changing signal about Alphabet specifically (might reflect TPU competitive concerns, or pure rotation to chip-equipment infrastructure). Bull thesis remains intact (Waymo + GCP + TPU + ASIC commoditization data points) but **a tier-1 smart-money exit is meaningful — track whether other smart money follows in Q2 2026 13Fs**.
 - **2026-05-17 PM — Waymo scaling: 500K paid trips/week May 2026** ([[2026-05-17-robotics-multi-agent-batch]] Agent J). **10x growth in 2 years** (was 50K/week May 2024); targeting **1M trips/week by EOY 2026**. Cost-per-mile improving: **$1.98 (2025) → $0.99 (2027)** at scale. **Waymo Ojai (Geely Zeekr partnership)** launched Feb 2026 with 6th-gen hardware. **2026 Waymo losses projected $4.5-6B** within Alphabet "Other Bets" — but unit-profitability target 2027. **Which means**: Waymo is **the cleanest scaled robotaxi business globally** (Cruise exited Dec 2024; Tesla Cybercab still development-stage). Hidden inside Alphabet "Other Bets" — segment disclosure remains opaque; but the operational trajectory (10x trips/week growth) is the cleanest GOOGL bull data point for the autonomous-driving / physical-AI theme. Companion to GR00T-N2 + Apollo/Palomar OCS — Google's vertical-stack moat extends beyond data center compute to autonomous driving.
@@ -71,6 +80,7 @@ The most under-priced Mag 7 stock entering 2026 — vertically integrated AI sta
 3. [[2026-05-16-sergey-levine-physical-intelligence]] — Gemma open-source VLM is the substrate for Physical Intelligence's π0 robotics foundation model
 4. [[2026-05-17-semiwiki-forum-sweep-2]] — Apollo/Palomar OCS one generation ahead of MRC industry consortium (added 2026-05-17)
 5. [[2026-05-17-semiwiki-forum-sweep-4]] — Google CFO 60/40 capex split disclosure (servers vs long-duration data center assets); important for FCF modeling (added 2026-05-17 PM)
+6. [[2026-06-01-googl-80B-equity-raise-berkshire]] — **$80B equity raise + Berkshire $10B private placement; largest tech equity raise in history; tier-1 framework event** (added 2026-06-01)
 
 ## Citations
 - Motley Fool Mag 7 #1 pick: https://www.fool.com/investing/2025/12/30/ranking-the-best-magnificent-seven-stocks-to-buy-1/

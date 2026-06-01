@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, capex, hyperscalers]
-last_updated: 2026-05-27
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 11
+sources: 12
 ---
 
 # AI Capex Cycle
@@ -13,6 +13,7 @@ The multi-year, hundreds-of-billions-of-dollars buildout of AI compute infrastru
 
 ## Why it matters now
 
+- **🔥 2026-06-01 — GOOGL announces $80B equity raise (largest in tech history) + Berkshire Hathaway $10B private placement** anchoring at $351.81 (Class A) / $348.20 (Class C). Berkshire's position has been building since Q3 2025 — first disclosed today. **Which means** for the AI capex cycle: (1) **the 2027 GOOGL capex curve is materially steeper than wiki framing** — $185-190B (2026 guide) + $80B raise implies a 2027 run-rate of $220-250B at GOOGL alone; (2) **the "internally funded capex" bull pillar of [[ai-bubble-debate]] is broken at GOOGL specifically** — the cycle has exceeded what monopoly-search cash flow can fund; (3) **the funding mechanism is now the differentiator across hyperscalers** — MSFT self-funds, GOOGL self-funds + dilutes, META self-funds + cuts costs, ORCL leverages. Read-throughs to [[NVDA]], [[AVGO]], [[MU]], [[TSM]], [[VRT]], [[ETN]] and the rest of the GOOGL supplier stack are uniformly positive. Per [[2026-06-01-googl-80B-equity-raise-berkshire]].
 - **🔥 2026-05-26-27 — Anthropic closes $30B at $900B+ valuation, surpasses OpenAI ($852B).** 2.4x rerating in 90 days (Feb 2026 $380B → May 2026 $900B+). Sequoia + Dragoneer + Altimeter + Greenoaks co-lead, each ~$2B. **Which means** the model-lab demand-pull at the top of the capex cycle now embeds ~$1.75T+ combined Anthropic+OpenAI private value backing forward compute purchases. Per Gavin Baker May 21: Anthropic added $11B ARR in March alone. Sustained 100%+ growth required to defend valuation = sustained capex demand pull through 2027. Per [[2026-05-27-anthropic-900B-surpasses-openai]]. **Hyperscaler revenue concentration risk strengthens** (Damodaran: MSFT 50%, ORCL 50%+, GOOGL 43%, AMZN 51% of cloud-AI revenue is at OpenAI+Anthropic).
 - **🔥 2026-05-26 — Hyperscaler forward-funded capacity signal.** MSFT, GOOGL, AMZN reportedly proposing to fund SK Hynix capacity expansion in exchange for guaranteed HBM allocation through late 2020s. UBS reframes MU to $1,625 PT (3x), valuing memory as AI infrastructure not cyclical commodity. **Which means** capex regime is shifting from spot-pricing to contracted-pricing for the supply chain — bottleneck rents are now being prepaid. Per [[2026-05-26-micron-1T-ubs-1625-pt]].
 - AI investment is driving **~40% of S&P 500 earnings growth** in 2026 (Inc. / FactSet).

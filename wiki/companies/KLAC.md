@@ -2,9 +2,9 @@
 type: company
 ticker: KLAC
 tags: [ai, semis, equipment, process-control]
-last_updated: 2026-05-09
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 0
+sources: 1
 conviction: high
 stance: bull
 ---
@@ -40,8 +40,14 @@ Process-control monopoly in semiconductors — as AI chip complexity drives up y
 3. **Service revenue** — recurring / installed-base annuity
 4. **Process control share** — does KLA continue gaining?
 
+## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** KLAC is the indirect (one step up the chain) beneficiary — every incremental TPU wafer at TSMC AND every HBM stack at SK Hynix / Micron / Samsung funded by the GOOGL raise lands in fabs running KLAC process-control + metrology + inspection on every advanced node lot (per [[2026-06-01-googl-80B-equity-raise-berkshire]]). The $30-50B incremental AI capex tranche above the 2026 guide is additive WFE demand on top of the $145B 2026 → $156B 2027 industry trajectory the Jefferies $1,500 PT was already pricing. **Which means**: process-control intensity rises with chip complexity AND volume — GOOGL just equity-funded both. The "already priced for the cycle" bear bullet is partially refuted by externally-funded demand validation; bull thesis holds.
+
 ## Related
 [[NVDA]] · [[nvda-supply-chain]] · [[LRCX]] · [[AMAT]] · [[TER]] · [[ASML]] · [[TSM]] · [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[semiconductors]] · [[overview]]
+
+## Sources
+1. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 - 24/7 Wall St on KLA share gain: https://247wallst.com/technology-3/2026/05/04/kla-is-gaining-share-as-ai-chip-complexity-drives-up-yield-costs/

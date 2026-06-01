@@ -2,9 +2,9 @@
 type: company
 ticker: MSFT
 tags: [ai, mag7, cloud, software]
-last_updated: 2026-05-21
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 2
+sources: 3
 conviction: high
 stance: bull
 ---
@@ -48,6 +48,7 @@ The enterprise AI distribution leader — Azure scale + tight OpenAI partnership
 5. **Maia silicon traction** — does internal silicon reduce NVDA dependence?
 
 ## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** [[GOOGL]] just announced the **largest equity raise in tech history** ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81/$348.20), explicitly to fund AI compute on top of its $185-190B 2026 capex guide ([[2026-06-01-googl-80B-equity-raise-berkshire]]). MSFT is now **the comparison case**: still self-funding its own $190B 2026 capex from operating cash flow, with no equivalent dilution or capital signal. **Which means:** in the near term, MSFT's "internally funded capex" framing strengthens by contrast — a bull pillar of the [[ai-bubble-debate]] that just broke at GOOGL still holds at MSFT and the differentiation becomes more visible to the market. **But the 2026-2027 watch item sharpens:** if hyperscaler capex curves keep ramping (GOOGL's raise signals the 2027 line is materially higher than the 2026 guide), the question becomes whether MSFT's operating cash flow can keep absorbing it without a similar move. Stance/conviction unchanged at bull/high; flagging as a structural watch item — any MSFT equity raise hint in FY27 commentary would be a tier-1 signal to reframe the bull case.
 - **2026-05-21 — Gavin Baker (Atreides) frames Satya's compute-deployment decision as the central MSFT bull/bear pivot** on Invest Like the Best [[2026-05-21-gavin-baker-invest-like-best]]. Baker's claim: *"Microsoft probably would be an $800 stock today if they were using their GPUs to serve OpenAI and Anthropic's capacity instead of using them for their own products. So I give him a lot of credit for making a great decision."* The framing:
   - Microsoft "flinched" in early 2025 — capex algorithm went off, lost position, lost allocation slots that are hard to recover
   - Satya is now making a "risky, courageous" decision to use Microsoft's compute INTERNALLY (training own models, improving Copilot) rather than reselling to OpenAI at high-margin
@@ -64,6 +65,7 @@ The enterprise AI distribution leader — Azure scale + tight OpenAI partnership
 ## Sources
 1. [[2026-05-12-hyperscaler-capex-q1-revisions]] — MSFT 2026 capex $190B (+$38B vs consensus); $25B memory-cost attribution from CFO Hood
 2. [[2026-05-21-gavin-baker-invest-like-best]] — Satya's internal-compute-use decision framed as the central MSFT bull/bear pivot; "$800-stock" counterfactual
+3. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 - Motley Fool Mag 7 ranking: https://www.fool.com/investing/2026/04/17/rank-magnificent-seven-stocks-best-worst-buys/

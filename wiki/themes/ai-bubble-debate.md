@@ -1,15 +1,43 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-05-31
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 15
+sources: 16
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side.
+
+## 🔥 June 1, 2026 — GOOGL $80B equity raise breaks the "internally funded capex" bull pillar
+
+Per [[2026-06-01-googl-80B-equity-raise-berkshire]]: Alphabet announced an **$80B equity raise** (largest in tech history) anchored by **Berkshire Hathaway's $10B private placement** at $351.81 (Class A) / $348.20 (Class C). Berkshire's prior position — built since Q3 2025 — was disclosed for the first time.
+
+**What this changes in the debate:**
+
+The wiki's bull case includes this line (verbatim from below):
+> *"Capex is internally funded — hyperscalers are spending out of operating cash flow, not debt — this is not a 1999 telco / dot-com leverage bubble"*
+
+**That claim is no longer true at GOOGL specifically.** Alphabet's 2026 capex guide of $185-190B + the $80B raise means the AI buildout has exceeded what even Google's monopoly-search cash flow can fund. The bull case framing needs sharpening:
+
+| Hyperscaler | 2026 capex funding mechanism (post-June 1) |
+|---|---|
+| MSFT | Internally funded (operating cash flow) |
+| AAPL | N/A (not a hyperscale-AI buyer at the same scale) |
+| GOOGL | **Internally funded + $80B equity dilution** |
+| META | Internally funded + ~10% layoffs to maintain margin |
+| AMZN | Internally funded; AWS slower growth than GCP this cycle |
+| ORCL | **Levered project finance** — the closest analog to the [[ai-infrastructure-debt]] systemic-risk vector |
+
+**Both sides sharpen, not just the bear side:**
+
+- **Bull leg sharpens** because Berkshire's anchoring at $351.81 is the cleanest institutional signal the wiki has ever captured. Buffett has been Apple-only Mag-7 holder for a decade; choosing GOOGL as the second position is a higher-confidence read than any sell-side rating. The Druckenmiller-exited-GOOGL signal (Q1 2026, per [[2026-05-17-multi-agent-research-batch]]) should now be flagged as superseded.
+- **Bear leg sharpens** because GOOGL — the cheapest forward-P/E Mag 7 — *needed to dilute* to fund the cycle. If GOOGL needs $80B at peak multiple, the bear case "capex/revenue ratio is structurally unsustainable" now has a concrete data point.
+- **GOOGL chose equity over debt = the *anti-bubble* signal at the high-credit-quality end** of the capex curve. Per [[ai-infrastructure-debt]], the systemic-risk pattern (Oracle DC debt distribution to private credit) concentrates further at tier-2 names that *can't* tap equity markets at this scale. The contagion vector is narrowing in cause, not broadening.
+
+**Updated bear-strongmen lineup:** the Damodaran / Burry / Kedrosky / Zitron framework gets *one* of its core claims (internally-funded) partially validated and *one* (levered project finance everywhere) partially refuted. Net: the debate gets *more* nuanced, not resolved.
 
 ## May 26-27, 2026 — Multi-vector validation week
 

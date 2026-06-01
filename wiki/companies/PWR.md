@@ -2,9 +2,9 @@
 type: company
 ticker: PWR
 tags: [ai, datacenter, construction, electrical, transmission, utility]
-last_updated: 2026-05-12
+last_updated: 2026-06-01
 last_full_review: 2026-05-12
-sources: 0
+sources: 1
 conviction: high
 stance: bull
 ---
@@ -61,6 +61,7 @@ The **upstream-of-the-data-center play** — Quanta builds the **transmission li
 6. **Transmission permitting** — regulatory environment direction
 
 ## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Alphabet announced the largest equity raise in tech history ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81 / $348.20) to fund "AI compute infrastructure to meet unprecedented customer demand," with ~$50B net-new AI capex above the $185-190B 2026 guide (see [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Which means** [[PWR]] is the cleanest direct beneficiary in the construction stack: Google is a named PWR customer for utility / power-infrastructure interconnect, and incremental GCP campuses funded by Berkshire-backed equity need transmission lines + substations + generation interconnect well *before* the data center hall is energized. Transmission has 2-5 year build cycles, so the GOOGL raise commits PWR demand into 2028-2030 — the company's $48.5B record backlog likely steps up another leg. NiSource ~3 GW generation precedent shows the contracting mechanic for hyperscaler load customers. Stance unchanged at bull / high. Watch: Q2 backlog direction; any named GCP transmission program disclosure.
 - **2026 Q1 print** — record backlog **$48.5B** (up from $39.2B Q3 2025)
 - **FY26 guide raised** — adj EPS to **$13.55-$14.25** (from $12.65-$13.35); revenue to $33.25-$33.75B
 - **NiSource engagement** — Quanta to design and construct **~3 GW of generation capacity** for a major load customer (data center)
@@ -68,6 +69,9 @@ The **upstream-of-the-data-center play** — Quanta builds the **transmission li
 
 ## Related
 [[datacenter-construction]] · [[FIX]] · [[EME]] · [[GEV]] · [[ETN]] · [[VRT]] · [[BE]] · [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[overview]]
+
+## Sources
+1. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 - Quanta Q3 2025 press release (records context): https://investors.quantaservices.com/news-events/press-releases/detail/385/quanta-services-reports-third-quarter-2025-results

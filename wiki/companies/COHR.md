@@ -2,9 +2,9 @@
 type: company
 ticker: COHR
 tags: [ai, networking, optical, cpo, nvda-direct]
-last_updated: 2026-05-09
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 0
+sources: 1
 conviction: high
 stance: bull
 ---
@@ -43,11 +43,15 @@ Optical-networking and photonics leader, **direct $2B NVDA investment** (March 2
 4. **Customer concentration disclosure** — NVDA share of revenue
 
 ## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** COHR is the direct beneficiary on the Apollo/Palomar OCS (optical circuit switch) expansion vector — GOOGL's OCS deployment is the canonical proof-point for production-scale optical switching in hyperscaler fabric, and COHR has the joint NVDA Spectrum-X / Quantum-X CPO position from the March 2026 $2B NVDA investment (per [[2026-06-01-googl-80B-equity-raise-berkshire]]). The $30-50B incremental AI capex tranche above GOOGL's 2026 guide is structurally optical-heavy because every additional GW of GCP capacity pulls EMLs + DSP-coherent transceivers + CPO content. **Which means**: the >4x data center book-to-bill that COHR is already running just got an equity-funded forward demand pull from one of the optical-densest hyperscaler architectures — Apollo OCS at GOOGL is the live commercial reference for the entire CPO transition. Bull thesis sharpens; ties COHR to two simultaneous funding rounds (NVDA $2B in March + GOOGL $80B equity in June).
 - **2026-05 (Q3 print)** — **Non-GAAP EPS $1.41 vs $1.39 consensus** (slight beat); revenue **$1.81B**. Critical line: **Datacenter & Communications revenue +41% YoY to $1.36B = 75% of total revenue** (AI mix-shift validated). Stock briefly slid 10% on May 7 ("sell the news") but rallied **+13% on May 11** as the optics trade re-caught fire.
 - **Reported book-to-bill** remains >4x; orders booked through 2028.
 
 ## Related
 [[NVDA]] · [[nvda-supply-chain]] · [[LITE]] · [[GLW]] · [[FN]] · [[APH]] · [[SOITEC]] · [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[overview]]
+
+## Sources
+1. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 - CNBC NVDA $4B Coherent + Lumentum: https://www.cnbc.com/2026/03/02/nvidia-investment-coherent-lumentum.html

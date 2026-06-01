@@ -2,9 +2,9 @@
 type: company
 ticker: CLS
 tags: [ai, contract-manufacturing, ems, hyperscaler, networking, ai-infrastructure]
-last_updated: 2026-05-29
+last_updated: 2026-06-01
 last_full_review: 2026-05-29
-sources: 2
+sources: 3
 conviction: medium-high
 stance: bull
 ---
@@ -99,6 +99,10 @@ This is a **medium-high conviction bull** with **valuation discipline** required
 
 **Hedging-risk framework**: CLS + ANET + AVGO + JBL + NVDA = all hyperscaler capex factor exposure. Per [[hedging-risk]], a portfolio overweighting this stack should explicitly size the correlation.
 
+## Recent developments
+
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Alphabet announced the largest equity raise in tech history ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81 / $348.20) to fund "AI compute infrastructure to meet unprecedented customer demand," with ~$50B net-new AI capex above the $185-190B 2026 guide (see [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Which means** the read for [[CLS]] is **positive but smaller than the META/AWS-driven legs of the thesis** — Google is a top-two named customer for Celestica historically, but GCP's contract-mfg spend is more weighted toward custom networking + TPU support hardware (where Google IP + Apollo/Palomar OCS reduce the third-party ODM attach at the scale-up layer) than the NVDA-rack ODM mix that Meta and AWS drive. The 10 active 1.6T networking programs still benefit at the perimeter / leaf-spine layer. Net: incremental positive, but don't overstate — the META capex revision (+$125-145B) is a larger CLS pull than the GOOGL incremental tranche. Stance unchanged at bull / medium-high. Watch: Q2 print HPS mix; any GCP-specific program disclosure.
+
 ## Related
 
 [[ANET]] · [[AVGO]] · [[DELL]] · [[JBL]] · [[FLEX]] · [[GOOGL]] · [[META]] · [[NVDA]] · [[SMCI]] · [[ai-capex-cycle]] · [[nvda-supply-chain]] · [[semiconductors]] · [[hedging-risk]] · [[overview]] · [[watchlist]]
@@ -107,6 +111,7 @@ This is a **medium-high conviction bull** with **valuation discipline** required
 
 1. [[2026-05-28-DELL-Q1-FY27-earnings]] — DELL print as upstream demand anchor for the CLS thesis
 2. [[2026-05-29-dell-upstream-second-derivative]] — synthesis of unre-rated Dell-upstream plays
+3. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 

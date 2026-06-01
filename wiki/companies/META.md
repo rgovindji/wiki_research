@@ -2,9 +2,9 @@
 type: company
 ticker: META
 tags: [ai, mag7, advertising]
-last_updated: 2026-05-16
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 3
+sources: 4
 conviction: medium
 stance: bull
 ---
@@ -54,6 +54,7 @@ The ad-funded AI hyperscaler — pivoted from metaverse to "personal superintell
 
 ## Recent developments
 
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** The Mag 7 capital-allocation paradigm just split, and **META is the name where the contrast is most uncomfortable** ([[2026-06-01-googl-80B-equity-raise-berkshire]]). Today: META −3% to ~$611 (Q1 capex shock still unwinding); [[GOOGL]] −2.5% to $380 BUT with the **Berkshire Hathaway stamp at $351.81/$348.20** as an institutional floor and the cleanest external validation of the GCP + TPU thesis the wiki has captured. The structural reads against META are the painful ones: **no Berkshire position, no cloud revenue catch, no equivalent capital signal, no equity-raise option without confirming a worse capex trajectory than the market already feared.** META is funding $115-145B 2026 capex from ad cash flow plus the 10% layoff narrative — that reads *defensively* next to GOOGL's signal-of-confidence raise. **Which means:** the bear case sharpens — META carries hyperscaler-tier capex obligations without the (a) cloud revenue offset, (b) Berkshire-validated equity-market access, or (c) Llama-as-API-revenue stream that GCP enjoys via Anthropic/etc. The PyTorch + Llama + WhatsApp distribution bull pillars are intact and the ad-cash-flow self-funding remains a real moat — but META is now the most exposed Mag 7 name to the "who's still self-funding cleanly?" investor question. **Stance/conviction unchanged at bull/medium per [[watchlist]], but flagging this as the most uncomfortable wiki position right now** and the highest-priority candidate for full re-review at the next earnings print.
 - **2026-05-17 PM — V-JEPA 2 world model + Reality Labs humanoid robotics division** ([[2026-05-17-robotics-multi-agent-batch]] Agent K). **V-JEPA 2 released 2026**: achieves **65-80% success on pick-and-place in UNSEEN environments** using only 62 hrs robot data + 1M hrs video. **Open-sourced** with Droid benchmark dataset — surpasses language-based baselines. **Habitat 3.0** simulation platform: 211 scenes, 18K objects for human-robot collaborative tasks. **Meta announced dedicated humanoid robotics division under Reality Labs** aiming for household-task robots powered by Llama; initiated talks with Unitree + Figure AI (no branded launch yet). **Yann LeCun left as Chief AI Scientist (Dec 2025)** and launched **AMI Labs raising ~$3.5B at $3.5B valuation** for world-model research targeting robotics + healthcare + wearables (Meta will partner but not invest). **Which means**: Meta's robotics play is **multi-vector**: V-JEPA 2 open-source frames Meta as the academic-friendly Linux of robotics foundation models (parallel to Llama in LLMs); Reality Labs Humanoid Division creates branded hardware play; AMI Labs spin-out preserves long-term relationship with LeCun. Reinforces [[GOOGL]] vs Meta competition for "open foundation model" robotics commodity layer. Bull thesis sharpens.
 - **2026-05-13 — Two-part WhatsApp AI strategy update.** (a) **Incognito Chat launched** — private-processing tech makes conversations invisible even to Meta, messages disappear by default; built-in safety guardrails; text-only for now. (b) **"Side Chat" announced for coming months** — embedded Meta AI in any WhatsApp conversation; this is the AI-in-messaging distribution mechanism for the "personal superintelligence" pivot. (c) **EU concession** — Meta conceded one-month free access to competing AI chatbots on the WhatsApp Business API while EU antitrust investigation continues. **Stock reaction: $599 → $608 → $605 intraday** (~+1% net) — market reading this as "interesting, not transformational" which matches the wiki's modest-bullish read. No stance/conviction change.
 
@@ -69,3 +70,4 @@ The ad-funded AI hyperscaler — pivoted from metaverse to "personal superintell
 1. [[2026-05-16-horace-he-ml-systems]] — Meta PyTorch compilers lead on programming-model ownership as durable moat
 2. [[2026-05-16-sergey-levine-physical-intelligence]] — robotics labs build on PyTorch even when using Google's Gemma model
 3. [[2026-05-16-yann-lecun-ame-labs]] — outgoing Meta Chief AI Scientist: PyTorch dominance confirmed; FAIR isolation + Llama 4 disappointment + Meta strategic LLM-catch-up refocus
+4. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)

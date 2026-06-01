@@ -2,9 +2,9 @@
 type: company
 ticker: AVGO
 tags: [ai, semis, custom-silicon, networking, hyperscaler]
-last_updated: 2026-05-14
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 0
+sources: 1
 conviction: high
 stance: bull
 ---
@@ -65,6 +65,7 @@ The non-Nvidia AI infrastructure pure play — designs custom AI accelerators (X
 6. **6th hyperscaler customer** — public disclosure?
 
 ## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** AVGO is the **single most direct public-market beneficiary** of the raise — co-designer of every TPU generation (including Anthropic's Ironwood TPU v7) with the 5GW Anthropic-TPU contract starting 2027 already locked, plus the broader 6-hyperscaler XPU pipeline (per [[2026-06-01-googl-80B-equity-raise-berkshire]]). The implied 2027 GOOGL capex step-up of ~$30-50B above the $185-190B 2026 guide flows disproportionately into TPU silicon volume because GOOGL is structurally biasing GCP capacity toward TPU vs NVDA. **Which means**: the path to Hock Tan's $100B 2027 AI revenue target just got a hard, externally-funded demand anchor — the raise resolves the "can GOOGL afford to scale TPU procurement" question that was the only real bear bullet on AVGO's TPU line. Bull thesis sharpens; Project Titan timing slip matters less because the TPU leg is now over-funded.
 - **2026-04** — Broadcom shares +6% on **Alphabet + Anthropic multi-year deals** (custom silicon revenue lock-in)
 - **2026-04** — Meta announced **expanded co-development of custom AI silicon** with Broadcom (1 GW+ first phase)
 - **2026-Q1** — Project Titan disclosed: OpenAI custom inference XPU; mass production late 2026; 10 GW by 2029
@@ -75,6 +76,9 @@ The non-Nvidia AI infrastructure pure play — designs custom AI accelerators (X
 
 ## Related
 [[NVDA]] · [[nvda-supply-chain]] · [[GOOGL]] · [[META]] · [[CRWV]] · [[NBIS]] · [[ai-capex-cycle]] · [[cloud-hyperscalers]] · [[bottleneck-roadmap]] · [[overview]]
+
+## Sources
+1. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 - FinancialContent on Alphabet + Anthropic deals: https://markets.financialcontent.com/stocks/article/marketminute-2026-4-7-broadcoms-custom-silicon-strategy-propels-shares-6-as-alphabet-and-anthropic-lock-in-multi-year-ai-deals

@@ -2,9 +2,9 @@
 type: company
 ticker: ALAB
 tags: [ai, cxl, pcie, retimer, fabric-switch, hyperscaler, ai-infrastructure]
-last_updated: 2026-05-21
+last_updated: 2026-06-01
 last_full_review: 2026-05-19
-sources: 1
+sources: 2
 conviction: medium-high
 stance: bull
 ---
@@ -85,6 +85,7 @@ stance: bull
 
 ## Recent developments
 
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Alphabet announced the largest equity raise in tech history ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81 / $348.20) explicitly to fund "AI compute infrastructure to meet unprecedented customer demand," with ~$50B net-new AI capex above the $185-190B 2026 guide (see [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Which means** every incremental GCP-side NVDA Rubin / Blackwell rack funded by this raise pulls dozens of [[ALAB]] PCIe Gen 6 retimers per rack — and because GCP's NVDA fleet is the third-largest hyperscaler NVDA deployment, this is the cleanest GCP-specific demand signal ALAB has captured. The Scorpio bull case is less directly affected (GCP TPU clusters use Apollo/Palomar OCS for scale-up rather than Ethernet fabric switches), but the PCIe Gen 6 retimer pull on the NVDA-rack side of the GCP fleet is unambiguously positive. Stance unchanged at bull / medium-high. Watch: Q2 PCIe Gen 6 mix; GCP-specific design-win disclosure.
 - **🔥 2026-05-28 — DELL Q1 FY27 print = the largest single-quarter ALAB demand-side validation in the wiki** (per [[2026-05-28-DELL-Q1-FY27-earnings]]). DELL revenue $43.84B (+88% YoY); **AI server revenue $16.1B (+757% YoY)**; **$24.4B AI orders booked + $51.3B backlog**; FY27 guide raised 20% to $165-169B. **Read-through to ALAB**: every DELL PowerEdge XE9812 (Vera Rubin NVL72) and XE9880L / XE9882L / XE9885L (HGX Rubin NVL8) uses PCIe Gen 6 retimers extensively — **dozens per rack**. DELL's $16.1B AI server revenue this quarter implies ~50K-100K racks shipped depending on mix, which translates to **multi-million-unit PCIe retimer pull from one OEM customer in a single quarter**. Per [[2026-05-29-dell-upstream-second-derivative]] synthesis, this single print likely makes ALAB's Q2 guide of $355-365M look **conservative**. **Stance unchanged at bull / medium-high**; conviction under active review for potential upgrade if Q2 ALAB print materially beats. Watch: hyperscaler-specific Scorpio design-win disclosures + Q2 earnings (early August 2026).
 - **2026-05-21 — Gavin Baker (Atreides) explicitly flags ALAB as "miscategorized as a copper loser"** on Invest Like the Best [[2026-05-21-gavin-baker-invest-like-best]]. Direct quote: *"Astera was in a lot of copper-loser baskets. Astera's biggest product is going to be a switch. You use both copper and optics to connect switches to accelerators. So definitionally, if you're a switch company or an accelerator company, you cannot be a copper loser because you're going to be on the other side of that connection."* Baker uses ALAB as the *exemplar* of his broader thesis — that systematic-basket mispricings exist as quants categorize names by partial-feature taxonomy that doesn't survive contact with the actual product roadmap. He's been long ALAB since Series C. **Which means:** the wiki's existing "Scorpio is the bull-case multiplier" framing is now corroborated by one of the most influential AI-focused public-market investors. The market mispricing he names is *exactly* the gap between (a) the "copper loser" optical-substitution narrative and (b) the reality that Scorpio is a switch — a topology layer that sits between accelerators and consumes both copper AND optics on every connection. Adds conviction to the medium-high stance.
 - **2026-05-19 — +12.58% on Evercore ISI PT raise (Outperform maintained)** — sell-side incorporating Scorpio + PCIe Gen 6 trajectory into models. Note: stock diverged UP while NVDA -1.4%, AVGO -1.1%, TSM -2.1% — strong divergence signal that company-specific catalysts are still being rewarded even during macro-driven semis selloff.
@@ -117,3 +118,4 @@ stance: bull
 6. [Astera Labs Q1 FY 2026 Earnings: Scale-Up Switching Ramp — Futurum](https://futurumgroup.com/insights/astera-labs-q1-fy-2026-earnings-highlight-scale-up-switching-ramp/)
 7. [Astera Labs Q1 2026 Earnings Transcript — Motley Fool](https://www.fool.com/earnings/call-transcripts/2026/05/05/astera-labs-alab-q1-2026-earnings-transcript/)
 8. [Astera Labs Q2 2026 Investor Conferences Announcement — Stocktitan](https://www.stocktitan.net/news/ALAB/astera-labs-announces-second-quarter-2026-financial-conference-yehx851199re.html)
+9. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)

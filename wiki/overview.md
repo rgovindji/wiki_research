@@ -27,6 +27,23 @@ Two backfilled items surfaced by the May 31 weekend discovery sweep:
 - **June 3 (Wednesday) — AVGO Q2 + CRWD Q1 earnings** (both wiki bull; AVGO consensus $22.12B / $1.73 EPS; UBS PT $490)
 - **Iran deal:** Trump approval pending as of Friday close; tentative US-Iran 60-day ceasefire extension + nuclear-talks resume agreement awaiting final sign-off
 
+## 🔥 June 1, 2026 — GOOGL $80B equity raise + Berkshire $10B stamp
+
+Per [[2026-06-01-googl-80B-equity-raise-berkshire]]: Alphabet announced the **largest equity capital raise in tech history** — $80B total, anchored by Berkshire Hathaway's **$10B private placement** at $351.81 (Class A) / $348.20 (Class C). Berkshire has been building a GOOGL position since Q3 2025 (newly disclosed). Structure: $30B underwritten + $40B ATM (Q3 2026 start) + $10B Berkshire. ~$30B of the ATM is earmarked for RSU vesting tax obligations; the *new AI capex* tranche is closer to ~$50B.
+
+**Stock reaction:** GOOGL **−2.51% to $380.34** on dilution; [[META]] also weak (−3% to ~$611) on the contrast. [[NVDA]] +2.1% on new PC processor reveal; [[DELL]] / HP +1.7-4%. **The supply side is rallying; the platforms funding the build are getting sold differently.**
+
+**Framework impact (tier-1):**
+
+| Wiki page | Read |
+|---|---|
+| [[GOOGL]] | Stance unchanged at bull/high; Berkshire stamp is the cleanest institutional validation the wiki has captured; Druckenmiller Q1 2026 exit flagged as superseded |
+| [[ai-bubble-debate]] | "Internally funded capex" bull pillar broken at GOOGL specifically; both bull AND bear sharpen |
+| [[ai-capex-cycle]] | 2027 GOOGL capex curve steeper (~$220-250B run-rate read); funding-mechanism is now the differentiator across hyperscalers |
+| [[ai-infrastructure-debt]] | GOOGL chose equity over debt — contagion vector concentrates further at ORCL + tier-2 names; bear case at *named* exposures sharpens, not weakens |
+| [[market-concentration]] | Berkshire overweight two of Mag-7 (AAPL + GOOGL); smart-money contradiction signals at top index name worth tracking |
+| Supplier reads | [[NVDA]] / [[AVGO]] / [[MU]] / [[TSM]] / [[VRT]] / [[ETN]] / [[ALAB]] / [[ANET]] / [[CLS]] all positive read-through; META negative on contrast |
+
 ## 🔥 May 27, 2026 — Multi-vector AI infrastructure rerating week
 
 Records on all three indexes today: **S&P 500 +0.02% to 7,520.36 record close · Nasdaq +0.07% to 26,674.73 · Dow +0.36% to 50,644.28 record close** on Iran ceasefire-extension report.

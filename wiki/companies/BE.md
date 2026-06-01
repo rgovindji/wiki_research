@@ -2,9 +2,9 @@
 type: company
 ticker: BE
 tags: [ai, power, fuel-cells, data-center, energy]
-last_updated: 2026-05-11
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -45,6 +45,7 @@ Solid-oxide fuel cell maker for data center primary power. **Dylan Patel / SemiA
 5. **Cost-per-kW** trajectory vs. combined-cycle alternatives
 
 ## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Alphabet announced the largest equity raise in tech history ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81 / $348.20) explicitly to fund "AI compute infrastructure to meet unprecedented customer demand," with ~$50B net-new AI capex above the $185-190B 2026 guide (see [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Which means** [[BE]] gains a second hyperscaler tailwind beyond ORCL Project Jupiter: GCP needs fast-deploy primary power to convert this raise into operational compute within the dilution window, and gas-turbine lead times beyond 2030 ([[GEV]] backlog) make solid-oxide fuel cells one of the few near-term supply responses. SemiAnalysis's "fast payback period for production expansion" thesis applies directly — Bloom can scale MW deliveries against a 12-24 month horizon that turbines structurally cannot. The Brookfield $5B partnership becomes the utility-scale deployment vehicle for any GOOGL-side deal. Stance unchanged at bull / high. Watch: any GOOGL-Bloom MOU or fuel-cell campus announcement.
 - **2026-04 (disclosed May 2026)** — **Oracle Project Jupiter** — Oracle's NM data center campus to be **powered entirely by Bloom fuel cells**, capacity **up to 2.45 GW**. Oracle contracted for **up to 2.8 GW from BE across multiple deployments**. This is a **category-defining deal** for a fuel cell vendor — moves BE from "alternative power option" to "primary power supplier at AI factory scale." **Conviction upgraded medium → high.**
 
 ## Related
@@ -52,3 +53,4 @@ Solid-oxide fuel cell maker for data center primary power. **Dylan Patel / SemiA
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for SemiAnalysis stance
+2. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)

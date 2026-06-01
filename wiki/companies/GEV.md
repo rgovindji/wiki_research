@@ -2,9 +2,9 @@
 type: company
 ticker: GEV
 tags: [ai, power, gas-turbines, data-center, energy]
-last_updated: 2026-05-09
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -45,6 +45,7 @@ One of three Western combined-cycle gas turbine OEMs (with Mitsubishi and Siemen
 5. **Mix of grid vs. behind-the-meter orders**
 
 ## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Alphabet announced the largest equity raise in tech history ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81 / $348.20) explicitly to fund "AI compute infrastructure to meet unprecedented customer demand," with ~$50B net-new AI capex above the prior $185-190B 2026 guide (see [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Which means** the raise is most directly a 2027-2030 power-demand commitment because gas-turbine slots are already extending beyond 2030 — every incremental gigawatt of GCP campus power funded by Berkshire-backed equity is a turbine reservation that pushes [[GEV]]'s 7HA.02 lead times further out, locking pricing power deeper into the decade. The Blue Energy Texas gas-plus-nuclear FID precedent shows the contracting mechanic; GCP's incremental Q3 2026+ deployments add to that queue. Stance unchanged at bull / high. Watch: any GOOGL-specific turbine slot reservation announcement; Q2 backlog direction.
 - **2026-05-13** — Q1 2026 hard data:
   - **Total Q1 orders $18.3B (+71% organically)**
   - **Q1 Electrification orders for data centers alone: $2.4B — MORE than all of 2025**
@@ -56,3 +57,4 @@ One of three Western combined-cycle gas turbine OEMs (with Mitsubishi and Siemen
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for backlog and 16-vendor power-vendor analysis
+2. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)

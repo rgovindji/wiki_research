@@ -2,9 +2,9 @@
 type: company
 ticker: MU
 tags: [ai, semis, memory, hbm]
-last_updated: 2026-05-27
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 5
+sources: 6
 conviction: high
 stance: bull
 ---
@@ -98,9 +98,11 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 7. [[2026-05-17-multi-agent-research-batch]] — MU +154% YTD; DA Davidson $1,000 PT; Q3 guide $33.5B/81% GM/$19.15 EPS; HBM4 share 54/28/18; Samsung 250K wpm capacity surge; DDR5 server +60-70% (added 2026-05-17 PM)
 8. [[2026-05-26-micron-1T-ubs-1625-pt]] — **MU crosses $1T mcap May 26; UBS PT $535→$1,625; structural-vs-cyclical reframing; hyperscaler forward-funded capacity signal** (added 2026-05-27)
 9. [[2026-05-27-daily-iran-hbm-cbrs-meta]] — Samsung HBM4 qualified by NVDA + AMD; supply begins June 2026; logic die prices +40-50% (added 2026-05-27)
+10. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Recent developments
 
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** GOOGL is dual-track HBM demand for MU — HBM for TPU silicon (where AVGO + GOOGL co-design and TSMC fabs) AND HBM for the GCP-deployed NVDA Blackwell/Vera Rubin fleet (per [[2026-06-01-googl-80B-equity-raise-berkshire]]). The $30-50B incremental AI capex tranche above the 2026 guide flows directly into both lines simultaneously. **Which means**: the "hyperscaler forward-funded capacity" signal already flagged in the May 26 UBS $1,625 PT thesis (MSFT/GOOGL/AMZN proposing to fund SK Hynix capacity expansion) just got concrete behind it — GOOGL has now literally raised the cash to fund that capacity. Reinforces the structural-vs-cyclical reframing UBS used to justify the $1.8T implied mcap; tightens HBM supply through 2027-2028 against an even larger demand backdrop. Bull thesis sharpens at the demand-pull layer.
 - **🔥 2026-05-26 — MU CROSSES $1T MARKET CAP; UBS PT $535 → $1,625 (3x raise, implied $1.8T mcap)** (per [[2026-05-26-micron-1T-ubs-1625-pt]]). Stock closed +19.29% at $895.88 on the day. **UBS thesis is structural, not cyclical**: long-term agreements with hyperscaler customers support EPS >$100/share through 2027-2029 even in a moderate downcycle. **Which means** UBS is valuing MU as an AI infrastructure company (TSMC-like multiple), not as a memory commodity supplier. **The "Mizuho $740 PT is below current price" bear bullet (added 2026-05-17) is now SUPERSEDED** — Street is rapidly catching up. **Separately reported this week**: MU has overtaken Samsung in HBM total market share (becoming #2 globally behind SK Hynix at ~62%). **Hyperscaler forward-funded capacity signal**: MSFT, GOOGL, AMZN reportedly proposing to fund SK Hynix capacity expansion in exchange for guaranteed HBM allocation through the late 2020s — first time in history of memory industry. **Stance unchanged at bull / high conviction** (UBS reframing validates rather than upgrades, but the cycle-peak-P/E paradox bear bullet now needs re-framing: the "structural floor" argument is what the Street is now pricing in). **Active framework contradiction with [[2026-05-16-damodaran-profg-markets]]** — Damodaran called chip-sector top May 16; UBS called $1.8T mcap May 26. Flag for [[feedback-log]] eventual verdict.
 - **2026-05-26-27 — Samsung HBM4 qualified by NVDA + AMD; supply begins June 2026**. Samsung raised 4nm HBM4 logic die foundry prices 40-50% — direct signal of supplier pricing power. SK Hynix HBM share at NVDA reportedly dropped from ~70% to ~62%. **Which means** the bear bullet "Samsung HBM4 closing the gap" (added 2026-05-17) is **validated** — the most actionable thing to watch on MU specifically has now resolved with Samsung qualified. Net read: NVDA now has 3 working HBM suppliers (SK Hynix 62% / MU ~18% / Samsung newly qualified) → NVDA has *more* pricing leverage with memory makers, which puts a soft ceiling on MU's HBM premium pricing. Doesn't break the bull case (industry sold-out 2026-2027 either way) but validates the bear-case caveat. Per [[2026-05-27-daily-iran-hbm-cbrs-meta]].
 

@@ -2,9 +2,9 @@
 type: company
 ticker: TSM
 tags: [ai, semis, foundry, international, taiwan]
-last_updated: 2026-05-21
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 8
+sources: 9
 conviction: high
 stance: bull
 ---
@@ -49,6 +49,7 @@ The single point of truth for advanced AI chip manufacturing — every leading-e
 5. **Customer concentration disclosures** — NVDA share of revenue
 
 ## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Every wafer in the GOOGL AI fleet — TPU (AVGO co-design) AND the Blackwell/Vera Rubin NVDA fleet running in GCP — flows through TSMC fabs at N3/N2 (per [[2026-06-01-googl-80B-equity-raise-berkshire]]). The implied $30-50B incremental AI capex tranche above the $185-190B 2026 guide is directly additive to leading-edge wafer demand into the 2027-2028 window where TSMC's $52-56B 2026 capex (likely revised toward Dylan Patel's $100B 2028 framing) is already sold out. **Which means**: the [[ai-bubble-debate]] "TSMC capacity discipline IS the bubble-prevention mechanism" framing per [[2026-05-21-gavin-baker-invest-like-best]] sharpens further — GOOGL just locked in funding for demand that mechanically exceeds what TSMC is choosing to make available. Bull thesis on TSMC pricing power compounds; the marginal customer is now equity-funded with a Berkshire stamp behind it.
 - **2026-05-18 — 🔥 TSMC raises 2030 global semi market outlook from $1T to $1.5T** (50% upward revision in management's anchor multi-year demand framework). **AI + HPC = 55% of the $1.5T (~$825B); smartphones 20% (~$300B); automotive 10% (~$150B)**. TSMC building **9 wafer fab phases + advanced packaging facilities in 2026**; **1.8x year-on-year increase in Arizona output by year-end** with yields comparable to Taiwan. **Which means**: the AI/HPC bull case now has a much higher demand ceiling — $825B 2030 TAM for AI-HPC is 50%+ larger than the prior $1T baseline implied. Direct read-through to all downstream beneficiaries: NVDA, AVGO, AMD, MU, SOITEC, AXTI, AJINY, IBDXY. Per `2026-05-18-tsmc-1.5T-2030-outlook` source summary.
 - **2026 Q1** — Revenue grew ~35% YoY; capex guidance raised to $52–56B
 - **2026 (ongoing)** — Arizona fabs progressing toward N3/N2 production milestones
@@ -82,6 +83,7 @@ The single point of truth for advanced AI chip manufacturing — every leading-e
 6. [[2026-05-17-semiwiki-forum-sweep-4]] — TSMC April 2026 revenue +17.5% YoY; 25% CAGR management target 2024-2029; Apple = 22% of 2024 revenue; Nenni debunking the "Apple lockout" narrative (added 2026-05-17 PM)
 7. [[2026-05-17-multi-agent-research-batch]] — TSMC primary IR via Haiku subagent: NVDA = #1 customer 2025 (19%, NT$726.97B); Apple #2 (17%, NT$645.17B); FY25 rev +31.6%; Q1 GM 66.2%; HPC 61%; N2 adoption record; A16 H2 2026 with SPR; **COUPE production begins 2026 at 2x power efficiency** (added 2026-05-17 PM)
 8. [[2026-05-21-gavin-baker-invest-like-best]] — TSMC capacity discipline as the cycle bubble-prevention mechanism; Intel/Samsung break-discipline risk vector (added 2026-05-21)
+9. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 - Yahoo TSM quote/news: https://finance.yahoo.com/quote/TSM/

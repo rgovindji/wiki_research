@@ -2,9 +2,9 @@
 type: company
 ticker: JBL
 tags: [ai, server-oem, contract-manufacturing]
-last_updated: 2026-05-09
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 0
+sources: 1
 conviction: medium
 stance: bull
 ---
@@ -46,10 +46,14 @@ The "silent giant" of AI infrastructure — Intelligent Infrastructure segment *
 
 ## Recent developments
 
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Alphabet announced the largest equity raise in tech history ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81 / $348.20) to fund "AI compute infrastructure to meet unprecedented customer demand," with ~$50B net-new AI capex above the $185-190B 2026 guide (see [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Which means** [[JBL]] benefits at the AI server / liquid-cooled rack contract-manufacturing layer — Google is one of the named hyperscaler customers driving the Intelligent Infrastructure segment, and the incremental GCP build pulled forward by this raise pulls JBL's mid-2026 NC megafactory ramp directly into demand. The contrast with [[CLS]]: JBL's hyperscaler mix is less networking-concentrated and more compute-platform / liquid-cooled-rack, so the GCP-side NVDA Rubin fleet expansion (where JBL participates) is the cleaner attach. Stance unchanged at bull / medium. Watch: Intelligent Infrastructure segment growth Q3 print; NC facility ramp.
 - **2026-05-29 — DELL print read-through** (per [[2026-05-28-DELL-Q1-FY27-earnings]]). DELL Q1 FY27: revenue $43.84B (+88% YoY); **AI server revenue $16.1B (+757% YoY)**; **$24.4B AI orders booked + $51.3B backlog**; FY27 guide raised 20% to $165-169B. **Direct read-through to JBL**: Jabil's AI/data-center contract-manufacturing pipeline overlaps with the DELL-adjacent customer base; the $13.1B AI revenue FY26 disclosure (+46%) is structurally validated by DELL's $51.3B backlog as a leading indicator of downstream contract-mfg demand. **Which means**: JBL's "Intelligent Infrastructure" segment guide should be biased upward through FY27. **Position context**: JBL trades at a discount to the AI-CM peer set ([[CLS]] just printed +53% YoY and raised guide $2B to $19B; ANET +35% YoY) — the JBL "diversified through humanoids + medical" framing gives it lower beta than CLS but higher embedded optionality (Apptronik, NC megafactory). For the "DELL upstream not yet rerated" framing: JBL is one of the cleanest mid-beta plays. See also [[2026-05-29-dell-upstream-second-derivative]].
 
 ## Related
 [[NVDA]] · [[nvda-supply-chain]] · [[DELL]] · [[CLS]] · [[ANET]] · [[SMCI]] · [[FLEX]] · [[robotics]] · [[humanoid-oems]] · [[ai-capex-cycle]] · [[cloud-hyperscalers]] · [[overview]]
+
+## Sources
+1. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 - FinancialContent Q2 2026 deep dive: https://markets.financialcontent.com/siliconvalley.com/article/finterra-2026-3-18-the-silent-giant-of-ai-a-deep-dive-into-jabils-jbl-strategic-transformation-and-q2-2026-results

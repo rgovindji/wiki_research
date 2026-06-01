@@ -2,9 +2,9 @@
 type: company
 ticker: ETN
 tags: [ai, power, electrical, data-center]
-last_updated: 2026-05-09
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -44,11 +44,15 @@ Power management leader collaborating directly with [[NVDA]] on the **Beam Rubin
 4. **Operating margin** in Electrical Americas segment
 5. **Backlog conversion**
 
+## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Alphabet announced the largest equity raise in tech history ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81 / $348.20) explicitly to fund "AI compute infrastructure to meet unprecedented customer demand" — ~$50B is net-new AI capex above the prior $185-190B 2026 guide (see [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Which means** every incremental GCP campus megawatt funded by this raise is a direct pull on [[ETN]]'s switchgear / busway / UPS book — and because Eaton co-developed the **Beam Rubin DSX 800V DC architecture** with NVDA (the reference design for next-gen GCP NVDA fleet expansion), ETN sits at the highest-content-per-rack tier of that incremental demand. The contrast with [[ORCL]]'s debt-funded buildout (per [[ai-infrastructure-debt]]) is the *opposite* read for ETN: equity funding from the highest-credit-quality hyperscaler is a more durable order-book signal than levered project finance. Stance unchanged at bull / high. Watch: Q2 order growth in Data Centers segment; named Beam Rubin DSX hyperscaler deployments.
+
 ## Related
 [[NVDA]] · [[nvda-supply-chain]] · [[VRT]] · [[GEV]] · [[BE]] · [[FLEX]] · [[NVTS]] · [[STM]] · [[ON]] · [[datacenter-construction]] · [[EME]] · [[PWR]] · [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[overview]]
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the "power is not the binding constraint" tempering note
+2. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 - Eaton on next-gen 800V DC architecture: https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-unveils-next-generation-architecture.html

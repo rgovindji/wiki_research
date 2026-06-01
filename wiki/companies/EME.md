@@ -2,9 +2,9 @@
 type: company
 ticker: EME
 tags: [ai, datacenter, construction, electrical, mechanical]
-last_updated: 2026-05-12
+last_updated: 2026-06-01
 last_full_review: 2026-05-12
-sources: 0
+sources: 1
 conviction: high
 stance: bull
 ---
@@ -59,12 +59,16 @@ The **largest US electrical + mechanical contractor** by revenue — Q1 2026 RPO
 6. **UK segment** — drag or contributor
 
 ## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Alphabet announced the largest equity raise in tech history ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81 / $348.20) to fund "AI compute infrastructure to meet unprecedented customer demand," with ~$50B net-new AI capex above the $185-190B 2026 guide (see [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Which means** [[EME]] is pulled directly at both the electrical (switchgear, busway, conduit) and mechanical (HVAC, cooling, controls) layers — the largest US MEP contractor by revenue captures incremental GCP campus build at both segments simultaneously. The "unprecedented activity in Network and Communications" language in EME's own Q1 guide is structurally extended by this raise; FY27 EPS visibility "well into 2027 and beyond" gets a Berkshire-backed funding source attached. Stance unchanged at bull / high. Watch: Q2 RPO direction; Network & Communications segment mix.
 - **2026 Q1 print** — record RPOs **$15.62B**, EPS **$6.84 (+30%)**, revenue $4.63B (+19.7%), operating margin **8.7% (+50 bps)**
 - **2026 FY guide raised** — EPS to $28.25-$29.75; revenue to $18.50-$19.25B
 - **AI commentary** — Management cited AI infrastructure + digital transformation as primary drivers of "unprecedented activity"; visibility "well into 2027 and beyond"
 
 ## Related
 [[datacenter-construction]] · [[FIX]] · [[PWR]] · [[VRT]] · [[ETN]] · [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[NVDA]] · [[overview]]
+
+## Sources
+1. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 - Barchart on EME data center backlog: https://www.barchart.com/story/news/1572207/emcor-s-data-center-backlog-the-question-is-whether-margins-can-keep-pace

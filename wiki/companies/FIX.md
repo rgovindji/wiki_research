@@ -2,9 +2,9 @@
 type: company
 ticker: FIX
 tags: [ai, datacenter, construction, mechanical, hvac]
-last_updated: 2026-05-12
+last_updated: 2026-06-01
 last_full_review: 2026-05-12
-sources: 0
+sources: 1
 conviction: high
 stance: bull
 ---
@@ -61,12 +61,16 @@ The pure-play **mechanical / HVAC contractor** for AI data center construction �
 6. **M&A appetite** — net-cash balance sheet enables consolidation
 
 ## Recent developments
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Alphabet announced the largest equity raise in tech history ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81 / $348.20) to fund "AI compute infrastructure to meet unprecedented customer demand," with ~$50B net-new AI capex above the $185-190B 2026 guide (see [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Which means** [[FIX]] is pulled directly: every additional GCP campus funded by this raise needs mechanical / HVAC / liquid-cooling installation inside the data center hall, and FIX's record $12.46B backlog (+81% YoY) is structurally extended by the GCP build pull at the highest-density tier (140 kW/rack liquid-cooled NVDA Rubin halls). The labor moat (24,000+ skilled trade workers) gets more valuable as the GCP timeline compresses against the dilution window — campuses funded today need to be operational within ~24 months for the equity raise to pay back. Stance unchanged at bull / high. Watch: Q2 bookings; mechanical segment margin direction.
 - **2026 Q1 print** — backlog **$12.46B (+81% YoY)**, EPS $10.51 (+121%), mechanical margin **26.9%**, same-store rev +51%. CEO Brian Lane: "We had a fantastic quarter and a strong start to 2026."
 - **2026 YTD** — Stock **+47%** on data-center-driven thesis
 - **Guide** — 2026 same-store revenue growth mid-to-high 20%
 
 ## Related
 [[datacenter-construction]] · [[EME]] · [[PWR]] · [[VRT]] · [[ETN]] · [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[NVDA]] · [[overview]]
+
+## Sources
+1. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 - TipRanks Comfort Systems backlog announcement: https://www.tipranks.com/news/company-announcements/comfort-systems-highlights-strong-backlog-and-financial-resilience

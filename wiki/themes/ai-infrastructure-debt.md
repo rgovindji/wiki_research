@@ -1,11 +1,32 @@
 ---
 type: theme
 tags: [debt, private-credit, srt, ai-data-centers, systemic-risk, contagion]
-last_updated: 2026-05-21
+last_updated: 2026-06-01
 last_full_review: 2026-05-15
-sources: 2
+sources: 3
 conviction: high
 ---
+
+# AI Infrastructure Debt — The Contagion Mechanism
+
+## 🔥 June 1, 2026 — GOOGL chose equity over debt: the *anti-bubble* signal at the top of the credit curve
+
+Per [[2026-06-01-googl-80B-equity-raise-berkshire]]: Alphabet announced an **$80B equity raise** anchored by Berkshire Hathaway's $10B private placement at $351.81 / $348.20. This is the **largest equity capital raise in tech history**.
+
+**Why this matters for the contagion thesis:**
+
+The wiki's framework on this page treats AI infrastructure debt as the contagion mechanism. The two highest-credit-quality buyers in the cycle (GOOGL + MSFT) had two paths to fund the buildout: (a) levered project finance — the SRT / private-credit / Oracle DC pattern this page warns about, or (b) equity dilution.
+
+**GOOGL just chose (b).** Explicitly. Publicly. With Berkshire as the institutional stamp.
+
+**Which means** for the [[ai-infrastructure-debt]] contagion thesis:
+
+1. **The systemic-risk vector concentrates further at tier-2 names.** The thesis was never that *every* hyperscaler is loading the contagion machine — it was that the *aggregate* AI DC debt is being shifted from banks to private credit / insurance / pension. With GOOGL explicitly funding *its* AI capex via equity, the $120B+ off-bank-balance-sheet exposure is concentrated at ORCL + tier-2 buyers + neoclouds + tower / colo operators. **The bear case becomes sharper, not weaker, at those specific names.**
+2. **MSFT's choice becomes the next watch item.** If MSFT continues to self-fund from operating cash flow (which it has so far), the contagion concentrates further. If MSFT *also* does an equity raise at some point, the equity-over-debt pattern becomes the Mag 7 norm — and the contagion vector is *isolated* to ORCL + neoclouds + private credit. Either way, the framework gets clearer.
+3. **The "GOOGL didn't tap the bank-debt distribution machine" data point is itself bullish for the bear thesis on the *named* exposures** ($38B Oracle DC debt distributed by JPM + MUFG; the $120B off-balance-sheet shift; the named bank exposures). If the highest-credit name had to dilute to fund capex, *every name that's using bank debt to do the same* is doing so under more competitive pressure — meaning the debt is more likely to be mispriced (in the lender's favor) than would be the case if internal funding were universally available.
+4. **The Berkshire stamp is independent of the debt thesis.** Buffett's $10B private placement is a signal about GOOGL specifically, not about the broader AI debt structure. Don't conflate the two.
+
+**Net read:** the GOOGL equity raise is *bullish for the [[ai-infrastructure-debt]] thesis as a bear case at named exposures* — not bearish for it. It demonstrates that the smartest credit-quality borrowers are *avoiding* the contagion vector that this page warns about. The bear thesis on ORCL / tier-2 / private credit is now structurally more defensible.
 
 # AI Infrastructure Debt — The Contagion Mechanism
 

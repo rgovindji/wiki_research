@@ -2,9 +2,9 @@
 type: company
 ticker: ANET
 tags: [ai, networking, ethernet, hyperscaler, ai-infrastructure]
-last_updated: 2026-05-29
+last_updated: 2026-06-01
 last_full_review: 2026-05-29
-sources: 2
+sources: 3
 conviction: medium-high
 stance: bull
 ---
@@ -98,6 +98,10 @@ This is a **medium-high conviction bull** with a **post-earnings tactical caveat
 
 **Hedging-risk framework**: ANET trades >50x P/E and is hyperscaler-concentrated. Per [[hedging-risk]] tier-1 indicators, a portfolio that's bull NVDA + bull MU + bull ANET is over-concentrated in the same AI capex factor — sizing should reflect the correlation, not just the standalone thesis.
 
+## Recent developments
+
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Alphabet announced the largest equity raise in tech history ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81 / $348.20) explicitly to fund "AI compute infrastructure to meet unprecedented customer demand," with ~$50B net-new AI capex above the $185-190B 2026 guide (see [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Which means** the read for [[ANET]] is **mild positive but bounded** — unlike [[META]] and [[MSFT]], GCP has historically lower direct Arista attach because Google's TPU scale-up uses **Apollo/Palomar optical circuit switching** (Google-internal OCS) rather than third-party Ethernet at the scale-up tier; however, the leaf-spine layer *outside* the OCS bubble (frontend networking, storage networking, NVDA-rack interconnect at the cluster perimeter) still pulls Arista 7800-series. Net: incremental GCP capex from this raise translates to incremental ANET demand, but at a lower attach rate than equivalent META / MSFT spend. Stance unchanged at bull / medium-high. Watch: Q2 AI revenue mix; any disclosure of GCP-specific design wins outside the OCS fabric.
+
 ## Related
 
 [[NVDA]] · [[AVGO]] · [[DELL]] · [[HPE]] · [[CLS]] · [[COHR]] · [[LITE]] · [[FN]] · [[ALAB]] · [[ai-capex-cycle]] · [[nvda-supply-chain]] · [[semiconductors]] · [[hedging-risk]] · [[overview]] · [[watchlist]]
@@ -106,6 +110,7 @@ This is a **medium-high conviction bull** with a **post-earnings tactical caveat
 
 1. [[2026-05-28-DELL-Q1-FY27-earnings]] — DELL print establishing the demand-side anchor for ANET upstream
 2. [[2026-05-29-dell-upstream-second-derivative]] — synthesis of unre-rated Dell-upstream second-derivative plays
+3. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
 
 ## Citations
 

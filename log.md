@@ -9,6 +9,78 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-01] event | GOOGL $80B equity raise + Berkshire $10B placement — tier-1 framework event
+
+User-prompted ingest of Alphabet's morning press release. **Largest tech equity capital raise in history**. Multi-agent execution: 3 parallel general-purpose subagents handled the 25 ticker read-through pages while I wrote the source summary + 5 high-leverage theme/overview updates.
+
+### The deal
+
+- **$80B total raise** = largest in tech history
+- $30B underwritten ($15B mandatory convertible preferred + $15B Class A/Class C common)
+- $40B ATM beginning Q3 2026 — **~$30B earmarked for 2026 RSU vesting tax obligations** (administrative change in funding mechanism); net new AI capex tranche ~$50B
+- **$10B Berkshire Hathaway private placement** at **$351.81 (Class A) / $348.20 (Class C)** — ~10% below prior-day close
+- **Berkshire has been building a GOOGL position since Q3 2025** — first publicly disclosed today
+- Stock: GOOGL −2.51% to $380.34 on dilution; Berkshire stamp limited downside
+
+### Source summary
+
+- [[2026-06-01-googl-80B-equity-raise-berkshire]] — full canonical artifact; framework breaks; underpriced $30B RSU mechanism; dilution math; quotes; wiki update list
+
+### Framework impact (tier-1 — affects 4 theme pages)
+
+| Page | Impact |
+|---|---|
+| [[ai-bubble-debate]] | **"Internally funded capex" bull pillar broken at GOOGL specifically.** Both bull AND bear sharpen. Funding-mechanism table added: MSFT self-funds; GOOGL self-funds + dilutes; META self-funds + cuts; ORCL leverages |
+| [[ai-capex-cycle]] | **2027 GOOGL capex curve materially steeper** (~$220-250B run-rate read vs. wiki's prior $190-210B). Funding mechanism is now the differentiator across hyperscalers |
+| [[ai-infrastructure-debt]] | **GOOGL chose equity over debt — the *anti-bubble* signal at the top of the credit curve.** Contagion vector concentrates further at ORCL + tier-2 names. Bear case at *named* exposures sharpens, not weakens |
+| [[market-concentration]] | **Berkshire now overweight two of Mag-7** (AAPL + GOOGL). Q3 2025–today build was unobservable from 13F snapshots — smart-money tracking gap flagged for [[feedback-log]] |
+
+### Wiki touched (32 files total)
+
+- 1 new source summary
+- [[GOOGL]] frontmatter + Recent dev (conviction reinforced; Druckenmiller Q1 exit flagged as superseded)
+- 4 theme pages with 🔥 lead sections (ai-bubble-debate, ai-capex-cycle, ai-infrastructure-debt, market-concentration)
+- [[overview]] new June 1 lead section above existing May 27 section
+- [[index]] new top entry
+- **25 ticker read-throughs** via 3 parallel subagents:
+  - **Suppliers** (Agent A): [[NVDA]], [[AVGO]], [[MU]], [[TSM]], [[AMAT]], [[KLAC]], [[LRCX]], [[COHR]], [[LITE]], [[GLW]]
+  - **Beneficiaries** (Agent B): [[VRT]], [[ETN]], [[GEV]], [[BE]], [[ALAB]], [[ANET]], [[CLS]], [[JBL]], [[FIX]], [[EME]], [[PWR]]
+  - **Competitors** (Agent C): [[MSFT]], [[AMZN]], [[META]], [[ORCL]]
+
+### Stance / conviction changes
+
+- **NONE applied unilaterally** per house rules
+- [[GOOGL]] conviction reinforced at high (no upgrade — already at ceiling). Druckenmiller Q1 2026 exit signal flagged as superseded by Berkshire entry; needs user verdict on [[feedback-log]]
+- Several pages flagged competitive tensions for user review:
+  - [[META]] — **the most uncomfortable wiki position right now.** GOOGL contrast widens (META has no Berkshire, no cloud revenue catch, no capital signal). Stance held at bull/medium per watchlist; recommend explicit user decision at next META earnings on whether to hold conviction or downgrade
+  - [[ORCL]] — bear case has crystallized. Stance held at bull/medium but [[ai-infrastructure-debt]] contagion mechanism is now clearer; bull/bear gap narrowed
+  - [[MSFT]] — bull pillar of "internally funded" strengthens by contrast in the near term, but any future MSFT equity-raise hint would be a tier-1 signal
+
+### Active framework contradictions tracked
+
+1. **Druckenmiller (GOOGL exit Q1 2026) vs. Berkshire (GOOGL build since Q3 2025)** — directly opposed smart-money signals at the most-watched index name. Berkshire timing + price points + size suggest higher confidence. Flag for [[feedback-log]] verdict
+2. **Damodaran chip-sector top (May 16) vs. UBS MU $1,625 PT (May 26)** — unchanged; GOOGL raise adds a third data point (externally-funded incremental AI capex demand) that tilts toward UBS
+
+### Process gap flagged
+
+Berkshire's Q3 2025–today build was unobservable from 13F-quarterly snapshots. The wiki's smart-money tracking framework needs a systematic 13F monitoring layer to catch this kind of position-building in real time. Flagged for [[feedback-log]] as a process improvement.
+
+### Skipped (low-value)
+
+- Generic equity-raise coverage articles (covered structurally by the source summary)
+- Sell-side analyst PT updates issued in the hour after the announcement (premature; will gather Q2 read after underwriter pricing)
+- Speculation on which underwriters got the mandate (not yet disclosed)
+
+### Next session priorities
+
+- **MSFT 2026-2027 capex trajectory** — does Microsoft also need to raise equity? Watch for any hint
+- **AMZN strategic response** — capex revision upward in 2H 2026 would signal discipline bending
+- **META Q2 earnings** — explicit reckoning point for the wiki's bull/medium stance
+- **ORCL credit spreads + SRT pricing** — leading indicators of contagion-vector pressure
+- **Berkshire 13F Q2 2026** (filed mid-August) — first confirmation of position size including the placement
+
+---
+
 ## [2026-05-31] daily | Memorial Day weekend snapshot + Burry/IREN process-gap backfills
 
 Headless daily update. Today is Saturday May 31 (Memorial Day weekend); US markets closed. The Friday May 29 session was the last live tape: **S&P 500 +0.22% to 7,580.06 record close, Dow +0.72% to 51,032.46 record close, Nasdaq +0.20% to 26,972.62, 9th consecutive weekly gain (longest since 2023), Nasdaq +8% May.** DELL +33% follow-through on Q1 FY27 print = best single-day in DELL's history; YTD +290%. NVDA closed $211.14 — exhausted-buyer drift continues 8 trading days post-print.

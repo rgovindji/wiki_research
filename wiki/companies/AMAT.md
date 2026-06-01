@@ -2,9 +2,9 @@
 type: company
 ticker: AMAT
 tags: [ai, semis, equipment, deposition, hbm]
-last_updated: 2026-05-14
+last_updated: 2026-06-01
 last_full_review: 2026-05-09
-sources: 2
+sources: 3
 conviction: high
 stance: bull
 ---
@@ -71,6 +71,7 @@ The largest US wafer fab equipment vendor — Applied provides solutions for **1
 
 ## Recent developments
 
+- **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** AMAT is the indirect (one step up the chain) beneficiary — every incremental TPU wafer (TSMC) AND every incremental HBM stack (Micron, SK Hynix, Samsung) funded by the GOOGL raise lands in fabs that use AMAT for >50% of HBM-step equipment value and 15-of-19 incremental HBM process steps (per [[2026-06-01-googl-80B-equity-raise-berkshire]]). The $30-50B incremental AI capex tranche above the 2026 guide flows into the same TSMC + memory fab capacity that AMAT just raised its CY26 equipment growth guide to >30% on. **Which means**: the CY26 ">30%" guide that Dickerson moved to on May 14 just got an externally-funded demand backstop — GOOGL is now equity-funding the back end of the 2027 fab buildout sweet spot the [[bottleneck-roadmap]] thesis is centered on. Bull thesis holds; the read-through is "stay-the-course confirmation" rather than re-rate.
 - **2026-05-14 — Q2 FY26 print (RAISED CY26 GUIDE).** Rev $7.91B record (+11% YoY), non-GAAP EPS $2.86 beat $2.68 cons (+20% YoY), GAAP EPS $3.51 (+33% YoY). Non-GAAP GM 50.0%. **CEO Gary Dickerson explicitly raised the CY26 semi equipment growth guide from ">20%" to ">30%"** — first explicit annual-outlook upgrade this cycle. **CFO Brice Hill: "AI demand is now in full force."** Semi Systems $5.97B with mix Foundry/Logic 67% / DRAM 29% / Flash 4% (DRAM share expansion = HBM ramp embedded). AGS $1.67B, 29.2% OpMar. 15% dividend hike to $0.53/share (9th consecutive raise). Q3 guide $8.95B ± $500M. **Acquiring ASMPT NEXX advanced packaging business**. EPIC Center partnerships with TSMC, SK hynix, Micron announced. See [[2026-05-14-AMAT-Q2-2026-earnings]] for full breakdown.
 - **2026-Q1 FY** — CEO Gary Dickerson guided **equipment business growth >20% in calendar 2026** (superseded by May 14 raise to >30%)
 - **2026 (ongoing)** — Industry $126B WFE forecast; HBM intensity (3-4x wafer per bit) sustaining DRAM equipment demand through 2028+
@@ -93,3 +94,4 @@ The largest US wafer fab equipment vendor — Applied provides solutions for **1
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — references Applied Materials in equipment expansion context (Dylan: "Applied Materials, Lam Research, and all these other companies expanding capacity a lot as well")
 2. [[2026-05-14-AMAT-Q2-2026-earnings]] — Q2 FY26 print, record revenue + CY26 guide raise from >20% to >30%
+3. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
