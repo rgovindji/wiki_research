@@ -137,8 +137,9 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 - [[AAPL]] — [[TSM|TSMC]] deprioritizing; smartphone volume collapse incoming; **stance: bear (changed 2026-05-09)**
 - [[TSLA]] — 178x 2026 earnings; Samsung Texas robot chip deal nuance; **stance: avoid (bear)**
 
-### IP
+### IP / Arm-licensee SoC (AI-PC + custom ASIC + connectivity)
 - [[ARM]] — Vera Rubin CPUs are Arm v9.2-A; royalty stream; **stance: bull**
+- [[MEDIATEK]] — MediaTek (2454.TW / MDTKF ADR); **NEW 2026-06-01** — co-designed NVIDIA Grace CPU for GB10 DGX Spark (CES Jan 2025) + RTX Spark Windows AI-PC superchip (Computex June 2026) + Dimensity Auto Cockpit C-X1 paired with NVIDIA DRIVE Thor (Shanghai April 2025) = **three concurrent NVDA platform partnerships**; first AI accelerator ASIC for unnamed US hyperscaler guided to **~$2B Q4 FY2026 revenue**; Dimensity 9500 has >40% Chinese premium smartphone share; #1 Wi-Fi 7 connectivity; Q1 FY2026 rev NT$149.2B (−2.7% YoY) but Smart Edge +13% YoY; ~NT$7.27T (~$218B USD) mcap; **stance: bull (medium-high)** — entry-price discipline matters at TWD 4,310 (13% above TWD 3,327 consensus PT)
 
 ### Foundry
 - [[TSM]] — Taiwan Semi; sole leading-edge foundry; **stance: bull**
@@ -146,6 +147,7 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 ### AI accelerators (NVDA competitors)
 - [[AMD]] — MI400/MI450/Helios on TSMC 2nm; OpenAI 6GW + Meta 6GW + Oracle 50K MI450 deals; **stance: bull**
 - [[AVGO]] — Broadcom; custom XPU for 6 hyperscalers (OpenAI Project Titan 10GW by 2029); Tomahawk 6 (102.4 Tbps); **stance: bull**
+- [[MRVL]] — Marvell; **NEW 2026-06-01**; second-leg custom-silicon (AWS Trainium3 + Microsoft Maia + Google Axion) + optical DSP (Inphi-heritage 1.6T PAM4) + Photonic Fabric (Celestial AI $3.25B Feb 2026) + Polariton plasmonics (3.2T+ roadmap) + NVDA $2B + NVLink Fusion partnership (Mar 2026). Q1 FY27 ATH $218.26 May 27; rev $2.418B (+28% YoY); FY27 outlook raised $5B to $11.5B (+40% YoY); **stance: bull (medium-high)**
 - [[CBRS]] — Cerebras; wafer-scale AI chip; IPO May 13 2026 at $48.8B; OpenAI $10B/750MW commitment; 86% UAE concentration risk; **stance: bull (medium / tactical)**
 
 ### Memory

@@ -9,6 +9,48 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-01] event | Computex follow-on — 2 new wiki pages (MEDIATEK + MRVL) + multi-agent execution
+
+Follow-on to the AM GOOGL ingest + the launchd PM Computex daily entry above. User-prompted: "open a MediaTek page, write the NVDA Computex source summary, promote MRVL." 3 parallel general-purpose subagents each handled one promotion in ~5 minutes wall clock.
+
+### What was produced
+
+- **[[MEDIATEK]]** (new page, 2454.TW / MDTKF) — three concurrent NVDA co-design partnerships (GB10 DGX Spark Jan 2025 / RTX Spark Windows AI-PC June 2026 / Dimensity Auto Cockpit + DRIVE Thor April 2025) + first-revenue $2B Q4 FY2026 custom AI ASIC ramp with a named (undisclosed) US hyperscaler + #1 Wi-Fi 7 share + >40% Chinese premium-tier Dimensity share. **Stance bull / conviction medium-high.** Caveats keeping it from high: Q1 FY2026 OM compressed 420bps, smartphone segment −15% YoY at 49% of revenue, stock TWD 4,310 is 13% above TWD 3,327 consensus PT after +281% trough-to-peak rally, no NVDA equity stake yet. Filed under [[index]] "IP / Arm-licensee SoC" subsection alongside [[ARM]].
+- **[[MRVL]]** (new page, promoted from "not yet covered") — Q1 FY27 print on **May 27, 2026** (the agent caught a date correction — was the same day as SOITEC and Anthropic events): **rev $2.418B (+28% YoY), Data Center $1.833B (76%, +27%), Q2 guide $2.7B (+35%), FY27 outlook RAISED BY $5B to $11.5B (+40% YoY)** — one of the largest single-quarter guide raises in semis. Three custom-silicon anchors: AWS Trainium (through Trainium3), Microsoft Maia, Google Axion. Celestial AI $3.25B closed Feb 2026 + Polariton acquisition April 2026 + NVDA $2B + NVLink Fusion partnership March 2026. ATH **$218.26 May 27**, market cap ~$179B, +130%+ YTD, ~70x trailing. **Stance bull / conviction medium-high.** Caveats: AVGO dominates 6/3 custom-silicon scoreboard, momentum entry, NVLink Fusion positions as complement to NVDA (caps "non-NVDA hedge" multiple ceiling). Filed under [[index]] "AI accelerators (NVDA competitors)" subsection.
+- **[[2026-06-01-nvda-rtx-spark-computex-keynote]]** — Computex source summary deepened. The launchd daily cron had written an initial version; this agent rewrote with extra detail. **Surprise data points beyond what the user's overview captured**: Vera Rubin supply chain doubled vs. Grace Blackwell (350+ factories / 30 countries / 150 in Taiwan); rack assembly time compressed from ~2 hours to ~5 minutes via cable-free modular trays; **six Vera CPU customers** named (Anthropic + OpenAI + SpaceX AI + Oracle + CoreWeave + Dell) not just three; **QCOM −7% intraday** = single largest single-name loser (Windows-on-Arm exclusivity expired late 2025 / early 2026 → RTX Spark drops into Qualcomm's vacated socket); **RTX Spark starting price $1,499**; Satya Nadella appeared on stage with Jensen confirming Windows-on-Arm with native CUDA arrives October 2026.
+
+### Wiki pages touched (5 + 2 new)
+
+- New: [[MEDIATEK]], [[MRVL]]
+- [[SOITEC]] — Marvell Celestial AI reference line updated with [[MRVL]] wikilink + $3.25B / Feb 2026 close detail + cross-reference
+- [[watchlist]] — MRVL added to Tactical tier with thesis + trigger; "Not yet covered" entry struck through
+- [[index]] — both new entries added
+- [[overview]] — no further edits (user's PM Computex section + my AM GOOGL section already in place)
+- [[log]] — this entry + the prior two June 1 entries
+
+### Stance / conviction changes
+
+- **NONE applied unilaterally** per house rules
+- 2 new pages opened at bull / medium-high based on honest agent assessment
+- **Flagged for user review** (NOT applied):
+  - [[ARM]] — conviction-upgrade candidate medium → high *if* RTX Spark 1H 2027 unit ship-rate confirms v9 mix-shift. Wait for empirical test (~Q4 FY27 ARM earnings)
+  - [[QCOM]] — open a wiki page if user wants to track the loser side of the AI-PC platform shift
+  - [[INTC]] / [[AMD]] / [[AAPL]] — one bull leg compressed at each (premium AI-PC tier); core thesis intact
+
+### Multi-agent execution recap
+
+3 general-purpose subagents in parallel — ~5 minutes wall clock. Tokens: 118K + 119K + 134K = ~371K total across all three. Each agent reported honest judgment calls (MediaTek FY2025 full-year data not surfaced; MRVL print date correction May 27 not June 1; SOITEC Celestial line cross-update). All clean — no agent reported a contradiction with existing wiki content that needed user resolution.
+
+### Next session priorities (unchanged from AM entry)
+
+- **PANW Q3 FY26 earnings** (Tuesday June 2 AMC)
+- **AVGO Q2 + CRWD Q1 earnings** (Wednesday June 3)
+- **Watch MRVL post-print** — any 5%+ pullback from $218 ATH is a sizing opportunity per page framing
+- **MediaTek (2454.TW) sell-side reaction** to Grace CPU partnership announcement
+- **META + ORCL** — open positions where the GOOGL contrast widens the bear case; user verdict still pending
+
+---
+
 ## [2026-06-01] daily | NVIDIA Computex PM — RTX Spark PC superchip + Vera CPU in full production + Isaac GR00T humanoid reference + three index records
 
 Headless daily update PM session, post the GOOGL AM event ingest. Discovery sweep surfaced a tier-1 net-new event: **NVIDIA's Computex 2026 keynote in Taipei delivered the first NVDA PC system processor in company history (RTX Spark / N1X), confirmed Vera CPU is "in full production" with Anthropic / OpenAI / SpaceX AI as named early customers, and unveiled an Isaac GR00T humanoid reference design**. All three indexes set fresh record closes on the day.

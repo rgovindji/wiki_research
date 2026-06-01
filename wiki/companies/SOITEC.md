@@ -106,7 +106,7 @@ The CPO transition is *upstream* of the optical-module layer ([[COHR]] / [[LITE]
 - **NVIDIA Quantum-X InfiniBand: early 2026 production** ramping NOW
 - **NVIDIA Spectrum-X Ethernet: 2H 2026** — uses TSMC 3D hybrid bonding + photonics
 - **Broadcom Tomahawk 6 (102.4 Tbps)**: shipping with 200G/lane CPO
-- **Marvell acquired Celestial AI's Photonic Fabric** (confirmed acquisition; was earlier just "Celestial partnership")
+- **[[MRVL|Marvell]] acquired Celestial AI's Photonic Fabric** (confirmed acquisition; closed Feb 2026 at $3.25B cash + 27.2M MRVL shares; up to $5.5B w/ revenue earnouts; was earlier just "Celestial partnership"). See [[MRVL]] page opened 2026-06-01.
 - **GlobalFoundries SCALE platform**: targeting **$1B+ silicon photonics revenue by 2028**
 - **Goldman call: silicon photonics revenue DOUBLING in 2026** across foundries (Trendforce May 7)
 - **TSMC-COUPE production begins 2026** with **2x power efficiency vs pluggable** (per [[2026-05-17-multi-agent-research-batch]] Agent B TSMC IR data)

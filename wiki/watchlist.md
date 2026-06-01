@@ -76,6 +76,7 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 | [[NOC]] | bull / medium conviction | **NEW 2026-05-13.** B-21 Raider + Sentinel ICBM primes; record $95.7B backlog FY25; FCF +26% YoY to $3.3B; 2026 guide $43.5-44B; +29% YTD 2026. | Q2 print; B-21 production rate disclosure; Sentinel program milestones |
 | [[KTOS]] | bull / medium conviction | **NEW 2026-05-13.** Mid-cap defense specialist; XQ-58 Valkyrie autonomous drones + Mako hypersonic + Space Force training systems. ~$5B cap. Anduril (private) is the competition. | CCA program contract structure; Mako test milestones; Q2 print |
 | [[SOITEC]] | bull / low-medium conviction | **NEW 2026-05-17.** Sole qualified photonics-SOI substrate supplier to TSMC/GF/Tower; NVDA Spectrum-X + AVGO Davisson + MRVL Celestial CPO substrates; iPhone 17 mmWave on FD-SOI (Yole/TechInsights confirmed); stock has rallied 6x off Dec 2025 lows so valuation tension is the main pushback. Paris-listed only (SOI.PA). | May 27 FY26 earnings binary event; Photonics-SOI absolute revenue print; any CPO ramp commentary from NVDA/AVGO |
+| [[MRVL]] | bull / medium-high conviction | **NEW 2026-06-01.** Custom-silicon companion to [[AVGO]] (AWS Trainium3 + Microsoft Maia + Google Axion) + optical-DSP companion to [[COHR]] / [[LITE]] / [[FN]] (Inphi-heritage 1.6T PAM4) + Celestial AI Photonic Fabric ($3.25B closed Feb 2026; up to $5.5B w/ earnouts) + Polariton plasmonics (3.2T+ roadmap) + NVDA $2B + NVLink Fusion partnership (Mar 2026). Q1 FY27 ATH $218.26 May 27; rev $2.418B (+28% YoY); Q2 guide $2.7B (+35% YoY); **FY27 outlook raised $5B to $11.5B (+40% YoY)**. +130% YTD = momentum entry, not dislocation. | Q2 FY27 print (late August) — does $2.7B+35% YoY actually print + does $11.5B FY27 outlook get raised again; named-customer commentary on Trainium3 / Axion / Maia; Celestial integration milestones |
 
 ## Hold / monitor
 
@@ -98,7 +99,7 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 
 ## Not yet covered (next research targets)
 
-- **MRVL (Marvell)** — second-leg custom silicon and optical (AWS Trainium 2, optical DSPs); the AVGO pair
+- ~~**MRVL (Marvell)**~~ — **PROMOTED 2026-06-01** to full page [[MRVL]] (Tactical / bull / medium-high conviction). Q1 FY27 ATH print confirmed second consecutive material print; Celestial AI ($3.25B Feb 2026) + Polariton (Apr 2026) + NVDA $2B + NVLink Fusion (Mar 2026) trifecta validated the second-leg-custom-silicon + optical-DSP + Photonic-Fabric thesis.
 - **CDNS (Cadence)** — EDA duopoly companion to [[SNPS]]. **PRIORITY BUMPED 2026-05-12** after [[2026-05-11-semianalysis-eda-primer]] quantified the structural design-bottleneck thesis (67K worker shortage, $300M+ 3nm design cost, verification = 70% of project effort, design-productivity gap widening every node). CDNS deserves co-leader coverage with SNPS.
 - **CEG / VST / TLN** — nuclear utilities with hyperscaler PPAs (well-followed but no wiki pages yet)
 - **LIN (Linde)** — industrial-gas peer to [[APD]]; would complete the duopoly
