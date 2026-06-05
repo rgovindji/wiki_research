@@ -2,9 +2,9 @@
 type: company
 ticker: AVGO
 tags: [ai, semis, custom-silicon, networking, hyperscaler]
-last_updated: 2026-06-01
+last_updated: 2026-06-05
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -12,6 +12,8 @@ stance: bull
 # Broadcom (AVGO)
 
 **Stance:** bull · **Conviction:** high · **Time horizon:** long-term
+
+> **🔴 DEVELOPMENT 2026-06-03/05 (strong print, stock −18% in two days — expectations, not fundamentals):** Q2 FY26 (June 3) beat — rev **$22.2B (+48% YoY)**, non-GAAP EPS **$2.44**, **AI semi revenue $10.8B (+143% YoY)**, **AI bookings >$30B**, Q3 total guide **~$29.4B (+84%)**, FY26 AI **reaffirmed ~$56B (~180%)**, FY27 **reiterated >$100B**. *Yet the stock fell −12.6% June 4 (steepest since Jan 2025) + −6.27% June 5.* The trigger: the **Q3 AI-chip line (~$16B) came in below the ~$17.2B buy-side whisper** — a miss vs. *elevated expectations*, not vs. guidance (the ~$16B is consistent with the reaffirmed $56B FY). **Net read:** the structural thesis is fully intact and arguably strengthened ($30B+ bookings); this was a positioning/sentiment unwind amplified by the June 5 macro rate shock (hot jobs report). A +143% AI quarter getting sold this hard is itself a late-cycle tell — see [[overview]] exhausted-buyer watch + [[2026-06-03-AVGO-Q2-FY26-earnings]]. Conviction held bull/high. *(Note: this print was tracked as a June-3 calendar item but missed in real time — earnings-workflow process gap, flagged in [[feedback-log]].)*
 
 > **DEVELOPMENT 2026-05-14 (mildly bearish near-term, thesis intact):** Reports indicate **Broadcom's custom AI hardware plan with OpenAI hit a financing roadblock** — Broadcom will only finance Project Titan's first phase if **Microsoft commits to buying ~40% of the chips**. **OpenAI's first-gen XPU with Broadcom now expected to deploy in volume in 2027 at >1 GW** (was previously framed as mass production late 2026 — material timing slip). **Stock dropped ~3% on the report.** Net read: doesn't change the structural bull case (Anthropic's 5 GW TPU + Broadcom partnership and existing 5-customer pipeline are intact) but materially de-emphasizes Project Titan as the near-term catalyst the wiki was tracking. Watch for: (a) MSFT commitment language on Project Titan, (b) Q3 2026 update on OpenAI XPU deployment timeline.
 
@@ -32,8 +34,14 @@ The non-Nvidia AI infrastructure pure play — designs custom AI accelerators (X
 ## Snapshot (as of May 2026; verify before any decision)
 | Metric | Value | As of |
 |---|---|---|
-| Q1 FY2026 AI revenue | **$8.4B (+106% YoY)** | Q1 FY2026 |
-| 2027 AI revenue target (CEO Hock Tan) | **~$100B** | management commentary |
+| Q2 FY2026 revenue | **$22.2B (+48% YoY)** | Q2 FY2026 (June 3) |
+| Q2 FY2026 non-GAAP EPS | **$2.44** | Q2 FY2026 |
+| Q2 FY2026 AI semi revenue | **$10.8B (+143% YoY)**, ~49% of rev | Q2 FY2026 |
+| AI bookings backlog | **>$30B** | Q2 FY2026 |
+| Q3 FY2026 revenue guide | **~$29.4B (+84% YoY)** | guidance |
+| FY2026 AI revenue guide | **~$56B (~180% growth)** reaffirmed | guidance |
+| FY2027 AI revenue target (Hock Tan) | **>$100B** reiterated | management commentary |
+| Q1 FY2026 AI revenue | $8.4B (+106% YoY) | Q1 FY2026 |
 | Confirmed custom XPU customers | **6 hyperscalers** | early 2026 |
 | OpenAI Project Titan target | 10 GW by 2029 | 2026 |
 | Meta XPU deal | 1+ GW first phase | Q2 2026 |
@@ -79,6 +87,7 @@ The non-Nvidia AI infrastructure pure play — designs custom AI accelerators (X
 
 ## Sources
 1. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
+2. [[2026-06-03-AVGO-Q2-FY26-earnings]] — Q2 FY26 print: strong (AI rev +143%, $30B+ bookings) but stock −18% in 2 days on AI-guide-vs-whisper (added 2026-06-05)
 
 ## Citations
 - FinancialContent on Alphabet + Anthropic deals: https://markets.financialcontent.com/stocks/article/marketminute-2026-4-7-broadcoms-custom-silicon-strategy-propels-shares-6-as-alphabet-and-anthropic-lock-in-multi-year-ai-deals

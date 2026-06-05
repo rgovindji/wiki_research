@@ -9,6 +9,14 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-05] daily | Worst S&P day of 2026 — hot jobs report + AVGO AI-guide scare + META −7% dilution fear; 9-week streak snaps
+- Sources: [[2026-06-05-jobs-selloff-rate-fears]], [[2026-06-03-AVGO-Q2-FY26-earnings]]
+- Wiki touched: [[overview]] (new lead section), [[META]] (Recent dev + bear-case equity-raise leg + sources 4→5), [[AVGO]] (top dev box + snapshot Q2 actuals + sources 1→2), [[feedback-log]] (late-cycle "5 of 6 firing" partial validation), [[index]], market_overview_ai.html (prepended June 5 update card)
+- Key facts: S&P −2.2% / Nasdaq −3.7% (worst since Apr 2025) / Dow −510. May payrolls +172K vs ~80K consensus → Fed-cut hopes dead; 10Y +5bp to 4.534%, dollar ~99.9. AVGO Q2 strong (AI rev +143%, $30B bookings, FY26 AI reaffirmed $56B) but −12.6% (Jun 4) + −6.27% (Jun 5) on Q3 AI-chip guide ~$16B vs ~$17.2B whisper. META −7% on FT equity-raise report, ~21% off ATH.
+- Stance/conviction changes: NONE. META held bull/medium (flagged as highest-priority re-review name; equity-raise = new bear leg). AVGO held bull/high.
+- Framework read: rates/sentiment-driven late-cycle drawdown the wiki has flagged for weeks — NOT a break in AI demand (AVGO *raised* its FY AI number). Next binary: June 10 CPI.
+- Process gap: AVGO Q2 (Jun 3) was a known calendar item but ingested 2 days late — logged in [[feedback-log]].
+
 ## [2026-06-01] event | Computex follow-on — 2 new wiki pages (MEDIATEK + MRVL) + multi-agent execution
 
 Follow-on to the AM GOOGL ingest + the launchd PM Computex daily entry above. User-prompted: "open a MediaTek page, write the NVDA Computex source summary, promote MRVL." 3 parallel general-purpose subagents each handled one promotion in ~5 minutes wall clock.

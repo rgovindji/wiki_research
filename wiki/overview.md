@@ -1,14 +1,27 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-01
+last_updated: 2026-06-05
 last_full_review: 2026-05-09
 sources: 0
 ---
 
-# Overview — May 2026
+# Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## 🔴 June 5, 2026 — Worst S&P day of the year: hot jobs report kills cut hopes; AVGO AI-guide scare + META dilution fear; 9-week streak snaps
+
+Per [[2026-06-05-jobs-selloff-rate-fears]]: **S&P 500 −2.2% (red for the week), Nasdaq −3.7% (worst day since April 2025, 3rd straight down day), Dow −510 / −1%.** The **9-week S&P winning streak — longest since 2023 — is snapping.** Worst S&P session of 2026. **Two triggers stacked on the same day:**
+
+1. **Macro — "good news is bad news."** The May jobs report printed **+172K nonfarm payrolls vs ~80K consensus** (unemployment 4.3%, AHE +3.4% y/y). A hot labor market **washes out near-term Fed-cut hopes**. 10Y UST **+5bp to 4.534%** (highest since May 21); 2Y **+7bp to 4.115%**; dollar index **~99.9** (highest since April 7). Risk-off; duration-sensitive AI multiples repriced.
+2. **Semis — a 3-day cascade off [[AVGO]].** Broadcom's Q2 print (June 3) was *strong* — rev $22.2B (+48%), AI semi rev **$10.8B (+143%)**, $30B+ AI bookings — but **Q3 AI-chip guide ~$16B came in below the ~$17.2B buy-side whisper.** AVGO **−12.6% June 4** (steepest since Jan 2025) + **−6.27% June 5** dragged NVDA, AMD, MU. See [[2026-06-03-AVGO-Q2-FY26-earnings]].
+
+**[[META]] −7% — a separate, company-specific hit.** FT reported Meta is *weighing* a multi-billion equity raise to fund AI capex, following [[GOOGL]]'s $85B raise. It hasn't hired banks and may not issue — but the *dilution signal* landed on top of the Q1 capex shock ($125–145B 2026 capex). **META is now ~21% off its all-time high** and is the Mag 7 name most exposed to the "who's still self-funding cleanly?" question (the June 1 GOOGL-raise read-through, now playing out).
+
+> **What this means:** This is the 5–15% drawdown the wiki has been flagging for weeks — the "9-week streak = late-cycle indicator," Burry's Jan-2027 SOXX puts, Damodaran's chip-top call, and the "5 of 6 late-cycle indicators firing" verdict in [[feedback-log]]. Crucially, **nothing in today's tape is a break in AI *demand*.** AVGO *raised* its full-year AI number; the stock fell on positioning vs. an elevated whisper plus a rate shock — the textbook signature of a sentiment top, not a fundamentals top. A +143% AI quarter getting sold 12.6% IS the exhausted-buyer signal. Position discipline holds exactly as written: **don't panic-sell structural compounders into a rates-driven selloff; don't add fresh size yet; treat the June 10 CPI as the next binary** (cool = relief rally; hot = the drawdown extends). META is the one *idiosyncratic* worry — not because the business broke, but because an equity raise would confirm the capex trajectory the market fears. The hedge book is mixed today: VIX firmer (helps) but a strong dollar pressures FXY (yen) and higher yields pressure GLD — **SGOV/cash is the clean shock-absorber in this particular selloff, not the carry/gold hedges.**
+
+**Next binary:** **June 10 (Wednesday) — May CPI** ([[2026-06-10-cpi-binary]] playbook). A cool print is the relief valve; a hot print stacks on today's rate fear.
 
 ## May 29-31, 2026 — Memorial Day weekend snapshot: 9-week streak, DELL +33% Friday, Burry escalation surfaces
 

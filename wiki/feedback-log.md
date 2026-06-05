@@ -1,7 +1,7 @@
 ---
 type: feedback-log
 tags: [meta, accountability, framework, lessons]
-last_updated: 2026-05-14
+last_updated: 2026-06-05
 last_full_review: 2026-05-14
 sources: 0
 ---
@@ -273,7 +273,7 @@ Each entry follows this structure:
 - **[[ASTS]] 45 BlueBird satellites in orbit by EOY 2026** — Execution-heavy target. Verdict: Q4 2026.
 - **[[CRWV]] / [[NBIS]] high-conviction upgrades** — Both upgraded on Q1 print magnitude. Verdict on Q2 prints: do margins sustain? Profitability hold?
 - **Trump-Xi summit Scenario A outcome translates to durable de-escalation** — Or does Taiwan flare again before 2028 election? Verdict: 6-12 months.
-- **Late-cycle warning indicators (5 of 6 firing)** — If June 10 CPI confirms regime, indicator framework predicts 5-15% drawdown is on the table. Verdict: by July 2026.
+- **Late-cycle warning indicators (5 of 6 firing)** — If June 10 CPI confirms regime, indicator framework predicts 5-15% drawdown is on the table. Verdict: by July 2026. **🟡 PARTIAL VALIDATION 2026-06-05:** the drawdown began *ahead* of CPI — S&P −2.2% / Nasdaq −3.7% (worst day of 2026) on a hot jobs print (+172K vs ~80K) + the [[AVGO]] AI-guide-vs-whisper unwind, snapping the 9-week streak. Per [[2026-06-05-jobs-selloff-rate-fears]]. The framework's *direction* and *mechanism* (rates/sentiment, not demand) were right; the trigger was the jobs report, not (yet) CPI. **Tell worth recording:** AVGO posted +143% AI revenue + $30B bookings and fell −12.6% — the wiki's "great print sold off = exhausted buyer" pattern fired exactly as flagged. Verdict stays open pending whether June 10 CPI extends this into the full 5–15% or relieves it.
 - **June 10 CPI probability framework** (initially set 2026-05-13): cool 25% / stable hot 45% / accelerate 30%. **Refined 2026-05-14 PM:** OPEC+ quota hikes + IMF anchored expectations = relief-valve evidence. **Cooling scenario nudged to ~30-35%**, accelerate scenario nudged down. Verdict: June 10.
 
 ## Lessons accumulated
