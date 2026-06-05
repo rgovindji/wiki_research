@@ -9,6 +9,20 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-05] note | EOD follow-on — final close worse than intraday; AI-bubble *doubt* becomes a named selloff driver
+
+Same-day follow-on to the daily entry below (which was written off the intraday tape). The discovery sweep on the EOD numbers surfaced three net-new, well-corroborated refinements — handled as a correction/append, NOT a new source ingest (no discrete citable report could be pinned down for the "skeptical AI report" the wire services referenced; per house rules I did not fabricate a citation).
+
+- **Final close superseded the intraday figures**: **S&P 500 −2.64% / Nasdaq Composite −4%+ (closed ~25,725) / Dow −1.35%** — ~$1T of market cap wiped from semis. Prior entry had the intraday −2.2% / −3.7% / −510.
+- **Long end broke back above 5%** (20Y + 30Y both >5%) — sharper duration repricing than the 4.534% 10Y noted intraday.
+- **Third driver entered the narrative by the close**: **AI-bubble skepticism itself** ("AI faith crumbling" / "market questioning Jensen Huang" framing) — the **first 2026 session where bubble doubt, not just rates, was an explicit selloff cause.** Semi cascade ran broad (MU −6.3%, MRVL −8%, AMD −6.3%), not just AVGO-specific.
+- Wiki touched: [[overview]] (EOD-update box appended to the June 5 section), [[ai-bubble-debate]] (new 🔴 June 5 lead section — "first session where bubble skepticism itself was a named selloff driver"; last_updated 06-01→06-05).
+- Stance/conviction changes: **NONE.** This is a sentiment inflection, not a fundamentals inflection — AVGO *raised* its FY26 AI number (~$56B) two days prior; no demand print has broken. Burden of proof has shifted toward the bears for the first time in 9 weeks, but the bull rebuttal holds on fundamentals.
+- Falsifiable test (dated): **June 10 CPI** (cool = rate-driven head-fake; hot = bear narrative compounds) + next supplier prints (a *guide cut* — not a below-whisper guide — would convert sentiment doubt into fundamentals doubt).
+- Did NOT create a source summary or touch index.md (no new source). Did NOT re-ingest the AVGO/jobs/META content already covered below.
+
+---
+
 ## [2026-06-05] daily | Worst S&P day of 2026 — hot jobs report + AVGO AI-guide scare + META −7% dilution fear; 9-week streak snaps
 - Sources: [[2026-06-05-jobs-selloff-rate-fears]], [[2026-06-03-AVGO-Q2-FY26-earnings]]
 - Wiki touched: [[overview]] (new lead section), [[META]] (Recent dev + bear-case equity-raise leg + sources 4→5), [[AVGO]] (top dev box + snapshot Q2 actuals + sources 1→2), [[feedback-log]] (late-cycle "5 of 6 firing" partial validation), [[index]], market_overview_ai.html (prepended June 5 update card)

@@ -1,7 +1,7 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-01
+last_updated: 2026-06-05
 last_full_review: 2026-05-09
 sources: 16
 ---
@@ -10,6 +10,12 @@ sources: 16
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side.
+
+## 🔴 June 5, 2026 — first session where bubble *skepticism itself* was a named selloff driver
+
+Per [[2026-06-05-jobs-selloff-rate-fears]] + EOD tape: the worst S&P day of 2026 (S&P −2.64% / Nasdaq −4%+ / Dow −1.35% on the close; ~$1T wiped from semis) was triggered by a hot jobs report (rate fear), the AVGO Q3 AI-guide miss, and the META dilution scare — but by the close a **third, qualitatively new driver** had entered the narrative: **AI-bubble doubt cited as an explicit catalyst** ("AI faith crumbling" / "market questioning Jensen Huang" framing in the tape). The long end broke back above 5% (20Y + 30Y), and the semi cascade ran broad (MU −6.3%, MRVL −8%, AMD −6.3%) rather than AVGO-specific.
+
+**Why this matters for the debate:** every prior 2026 drawdown on the wiki was attributable to *rates / positioning / idiosyncratic* causes — the bull thesis on the *underlying AI-capex engine* was never the named reason stocks fell. June 5 is the first session where the market repriced **the thesis itself**, not just the discount rate applied to it. **Which means:** the bear strongmen (Burry's Jan-2027 SOXX puts, Damodaran's chip-top call, the Shiller-CAPE-40 backdrop) now have a tape that *behaves like they're right* for one session — the burden of proof has visibly shifted for the first time in nine weeks. The bull rebuttal remains intact on fundamentals (AVGO *raised* its FY26 AI number to ~$56B two days prior; no demand print has broken) — so this is a **sentiment inflection, not yet a fundamentals inflection.** The falsifiable test is near and dated: **June 10 CPI** (cool = the doubt was a rate-driven head-fake; hot = the bear narrative compounds) and the next batch of hyperscaler/supplier prints (any *guide cut* — not just a below-whisper guide — would convert sentiment doubt into fundamentals doubt).
 
 ## 🔥 June 1, 2026 — GOOGL $80B equity raise breaks the "internally funded capex" bull pillar
 
