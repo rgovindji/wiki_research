@@ -9,6 +9,13 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-06] query | "Don't buy today? Could I buy the broader market?" → new analysis page
+- Question: should the user add into the June 5 selloff, and is "the broader market" (SPY/QQQ) the right vehicle, given an AI/semis + Mag 7-heavy book.
+- Filed: [[2026-06-06-buying-the-dip-broader-market]] (wiki/analyses/)
+- Key synthesis: drawdown-from-peak math — S&P closed 7,383.74 = −2.8% off June 1 record (below wiki's 5% buy-signal threshold); Nasdaq closed 25,709.43 = −5.1% off peak (threshold hit). SPY = ~35% the same Mag 7 the user already owns → not diversification, a diluted echo. Framework leans patience/small-tranches over full-size lump-sum: S&P below threshold + June 10 CPI binary 2 sessions out + selloff character turned toward AI-bubble-sentiment at the close. Index is the right vehicle (avoids META/AVGO idiosyncratic risk) for a waiting tranche.
+- Wiki touched: new analysis page, [[index]] (Analyses section), log.
+- No stance/conviction changes. House-rule note: framed as research synthesis, not advice.
+
 ## [2026-06-05] note | EOD follow-on — final close worse than intraday; AI-bubble *doubt* becomes a named selloff driver
 
 Same-day follow-on to the daily entry below (which was written off the intraday tape). The discovery sweep on the EOD numbers surfaced three net-new, well-corroborated refinements — handled as a correction/append, NOT a new source ingest (no discrete citable report could be pinned down for the "skeptical AI report" the wire services referenced; per house rules I did not fabricate a citation).

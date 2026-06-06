@@ -277,6 +277,7 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 
 ## Analyses (`wiki/analyses/`)
 
+- [[2026-06-06-buying-the-dip-broader-market]] — **NEW 2026-06-06** — tactical: should you add into the June 5 selloff, and is "the broader market" (SPY/QQQ) the right vehicle? Drawdown-from-peak math (S&P −2.8% vs Nasdaq −5.1% off June 1 record → only Nasdaq hit the wiki's 5% buy-signal threshold); SPY = ~35% the same AI names you already own (not diversification); bull/bear cases; tranche-vs-wait logic; June 10 CPI binary condensed. Research synthesis, not advice.
 - [[2026-05-15-weekly-synthesis]] — first weekly synthesis instance; "The week the supply chain raised its hand — and the bond market raised it higher"; AMAT guide raise + 30y auction above 5%; ~1,300 words; internal draft for Saturday May 17 publication (NEW 2026-05-14)
 
 ## Sources (`sources/`)
