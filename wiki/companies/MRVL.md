@@ -2,9 +2,9 @@
 type: company
 ticker: MRVL
 tags: [ai, semis, custom-silicon, optical, hyperscaler, dsp, photonic-fabric]
-last_updated: 2026-06-01
+last_updated: 2026-06-08
 last_full_review: 2026-06-01
-sources: 1
+sources: 2
 conviction: medium-high
 stance: bull
 ---
@@ -144,6 +144,7 @@ This is a **medium-high conviction bull with valuation discipline required**. Th
 
 ## Recent developments
 
+- **2026-06-08 — S&P 500 inclusion (effective June 22) + +9.6% rebound** (per [[2026-06-08-mrvl-flex-sp500-inclusion]]): S&P Dow Jones Indices announced (after Friday's close) that MRVL joins the S&P 500 on **June 22, 2026**, replacing Pool Corp; [[FLEX]] also joins (replacing Campbell's). MRVL **+9.6% Monday** as part of a semis-led rebound off Friday's worst-day-of-2026 rout ([[MU]] +9.9%, SMH +~5%). Jensen Huang floated MRVL as a potential **"next trillion-dollar company."** **Which means:** index-fund trackers must mechanically buy a ~$179B name around June 22 — a multi-billion-dollar one-time forced bid — but this is a *lagging confirmation* of the Q1 FY27 rerating already in the price, not a new bull leg. **No stance/conviction change**; the +130% YTD valuation-discipline caveat is unchanged, and the standalone tactical event remains the **Q2 FY27 print (~late August)**, not the inclusion flow.
 - **🔥 2026-05-27 — Q1 FY27 ATH print + $5B FY27 guide raise** (per Q1 FY27 8-K + earnings call coverage): rev **$2.418B (+28% YoY)** record; **Data Center $1.833B (+27% YoY, 76% of revenue)**; non-GAAP EPS **$0.80** (beat midpoint $0.01); non-GAAP gross margin **58.9%**; operating cash flow **$638.8M record**. **Q2 guide $2.7B (+35% YoY midpoint)** with non-GAAP EPS **$0.93**. **FY27 outlook raised $5B to $11.5B (+40% YoY)** — one of the largest single-quarter guide raises in semis. **Interconnect growth raised from 50% → 70%+ YoY**. Stock hit ATH **$218.26** on the print. **Which means** the AI mix shift is now driving both top-line acceleration AND margin expansion concurrently — the structural rerating the bull case requires is happening live. Conviction medium-high; pairs with [[AVGO]] as the custom-silicon duopoly framing.
 - **2026-04-22 — Polariton Technologies acquisition** — plasmonics-based silicon photonics modulation enabling 3.2T+ optical performance. Adds 3rd device-technology leg (Inphi PAM4 + Innovium switch + now plasmonic modulation) to the optical stack. **Which means** the optical-DSP roadmap is extended one generation beyond the current 1.6T cycle.
 - **🔥 2026-03 — NVIDIA $2B strategic investment + NVLink Fusion partnership announced.** MRVL joins the inner ring of NVDA equity-backed AI-infrastructure suppliers ([[COHR]] / [[LITE]] / [[GLW]] / [[SNPS]] / [[NOK]] / [[CRWV]] / [[NBIS]]). NVLink Fusion is NVDA's partner architecture for third-party silicon to connect into the NVIDIA AI factory. **Which means** structural validation by NVDA of MRVL's role at the connectivity / custom-silicon layer; double-edged because the partnership terms position MRVL as a complement, not an alternative.

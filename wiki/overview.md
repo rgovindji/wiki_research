@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-05
+last_updated: 2026-06-08
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,14 @@ sources: 0
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 8, 2026 — Partial rebound off the Friday rout; Marvell + Flex added to the S&P 500
+
+Per [[2026-06-08-mrvl-flex-sp500-inclusion]]: Monday clawed back part of Friday's worst-day-of-2026 selloff. **S&P 500 +0.30% to 7,405.73 · Nasdaq +0.86% to 25,929.66 · Dow −0.16% to 50,786.01.** Semis led the bounce: **[[MU]] +9.9%** (after −13.3% Friday, the index's biggest loser), **[[MRVL]] +9.6%**, [[NVDA]] and [[AVGO]] higher, VanEck Semiconductor ETF (SMH) **+~5%**. Friday had wiped ~$1T from semis; Monday recovered a meaningful slice.
+
+**The net-new event: [[MRVL]] and [[FLEX]] join the S&P 500 effective June 22** (announced after Friday's close), replacing Pool Corp and Campbell's — part of a 20+ company reshuffle. Both are wiki tickers. Jensen Huang separately floated MRVL as a potential "next trillion-dollar company."
+
+> **What this means:** The Marvell/Flex S&P 500 addition is a real, datable demand event — index funds must mechanically buy a ~$179B name (MRVL) around June 22 — but it's a *lagging confirmation* of a rerating already in the price, not new information about AI demand. Don't read Monday's green tape as an all-clear: no fresh demand print landed, and the June 5 inflection (burden of proof shifting toward the bears for the first time in nine weeks, per [[ai-bubble-debate]]) is not resolved by one dip-buy session. **The week's real tests are still ahead** — **May CPI (June 10, 8:30am ET; [[2026-06-10-cpi-binary]] playbook)** + **[[ORCL]] Q4 earnings (June 10 AMC)** + **Adobe Q2 (June 11)**. A cool CPI is the relief valve; a hot CPI stacks on Friday's rate fear. **No stance/conviction changes** on the day.
 
 ## 🔴 June 5, 2026 — Worst S&P day of the year: hot jobs report kills cut hopes; AVGO AI-guide scare + META dilution fear; 9-week streak snaps
 

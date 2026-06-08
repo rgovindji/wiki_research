@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FinTwit Accountability Terminal — Leaderboard</title>
+<link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+<div class="wrap">
+<div class="masthead">
+  <div class="brand">
+    <span class="logo">FinTwit<span class="dot">.</span>Terminal</span>
+    <span class="tag">Accountability Index</span>
+  </div>
+  <p class="subhead">A leaderboard of finance Twitter voices ranked by <strong>realized,
+  benchmark-adjusted track record</strong> — not followers. Every number links to the
+  source post.</p>
+  <p class="method-note">Ranked by benchmark-adjusted (vs SPY) realized excess return on explicit, time-bound calls. Entry = next session after the call; exit = at the stated horizon. Followers are shown for context but are never used in the ranking.
+  <a href="#methodology" id="positioning-lean-note">Positioning lean &amp; methodology &rarr;</a></p>
+</div>
+<div class="table-wrap">
+<table id="lb">
+  <thead>
+    <tr>
+      <th class="left sortable" title="Benchmark-adjusted rank">Rank <span class="arrow">&#9650;</span></th>
+      <th class="left sortable">Account</th>
+      <th class="sortable" title="Number of explicit, scored calls">Calls <span class="arrow"></span></th>
+      <th class="sortable" title="Share of calls that beat SPY">Hit Rate <span class="arrow"></span></th>
+      <th class="sortable" title="Avg return in excess of SPY — THE ranking metric">Avg Excess <span class="arrow"></span></th>
+      <th class="sortable" title="Avg raw return, before benchmark adjustment">Avg Raw <span class="arrow"></span></th>
+      <th class="left"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="rank-cell rank-1" data-sort="1">1</td>
+      <td class="left" data-sort="permabearpete">
+        <a href="u/permabearpete.html" class="handle"><span class="at">@</span>permabearpete</a>
+        <span class="dname">Permabear Pete</span>
+      </td>
+      <td data-sort="3">3</td>
+      <td data-sort="1.0">100.0%</td>
+      <td data-sort="0.20804618860498472"><span class="pos">+20.8%</span></td>
+      <td data-sort="0.17760599674097818"><span class="pos">+17.8%</span></td>
+      <td class="left"><a href="u/permabearpete.html">view &rarr;</a></td>
+    </tr>
+    <tr>
+      <td class="rank-cell" data-sort="2">2</td>
+      <td class="left" data-sort="shortsellersam">
+        <a href="u/shortsellersam.html" class="handle"><span class="at">@</span>shortsellersam</a>
+        <span class="dname">Short Seller Sam</span>
+      </td>
+      <td data-sort="3">3</td>
+      <td data-sort="0.3333333333333333">33.3%</td>
+      <td data-sort="0.051036115886371324"><span class="pos">+5.1%</span></td>
+      <td data-sort="0.12478913284364894"><span class="pos">+12.5%</span></td>
+      <td class="left"><a href="u/shortsellersam.html">view &rarr;</a></td>
+    </tr>
+    <tr>
+      <td class="rank-cell" data-sort="3">3</td>
+      <td class="left" data-sort="macrohawk">
+        <a href="u/macrohawk.html" class="handle"><span class="at">@</span>macrohawk</a>
+        <span class="dname">Macro Hawk</span>
+      </td>
+      <td data-sort="3">3</td>
+      <td data-sort="0.6666666666666666">66.7%</td>
+      <td data-sort="0.021516231197524882"><span class="pos">+2.2%</span></td>
+      <td data-sort="0.011077573449845057"><span class="pos">+1.1%</span></td>
+      <td class="left"><a href="u/macrohawk.html">view &rarr;</a></td>
+    </tr>
+    <tr>
+      <td class="rank-cell" data-sort="4">4</td>
+      <td class="left" data-sort="swingqueen">
+        <a href="u/swingqueen.html" class="handle"><span class="at">@</span>swingqueen</a>
+        <span class="dname">Swing Queen</span>
+      </td>
+      <td data-sort="3">3</td>
+      <td data-sort="0.6666666666666666">66.7%</td>
+      <td data-sort="0.016812428995878943"><span class="pos">+1.7%</span></td>
+      <td data-sort="0.002607662567047142"><span class="pos">+0.3%</span></td>
+      <td class="left"><a href="u/swingqueen.html">view &rarr;</a></td>
+    </tr>
+    <tr>
+      <td class="rank-cell" data-sort="5">5</td>
+      <td class="left" data-sort="cryptocarl">
+        <a href="u/cryptocarl.html" class="handle"><span class="at">@</span>cryptocarl</a>
+        <span class="dname">Crypto Carl</span>
+      </td>
+      <td data-sort="3">3</td>
+      <td data-sort="0.3333333333333333">33.3%</td>
+      <td data-sort="-0.055073514185608574"><span class="neg">-5.5%</span></td>
+      <td data-sort="-0.024017901072678094"><span class="neg">-2.4%</span></td>
+      <td class="left"><a href="u/cryptocarl.html">view &rarr;</a></td>
+    </tr>
+    <tr>
+      <td class="rank-cell" data-sort="6">6</td>
+      <td class="left" data-sort="chartsniper">
+        <a href="u/chartsniper.html" class="handle"><span class="at">@</span>chartsniper</a>
+        <span class="dname">Chart Sniper</span>
+      </td>
+      <td data-sort="4">4</td>
+      <td data-sort="0.0">0.0%</td>
+      <td data-sort="-0.06446835333897258"><span class="neg">-6.4%</span></td>
+      <td data-sort="-0.08675812261262988"><span class="neg">-8.7%</span></td>
+      <td class="left"><a href="u/chartsniper.html">view &rarr;</a></td>
+    </tr>
+    <tr>
+      <td class="rank-cell rank-unranked" data-sort="9999">—</td>
+      <td class="left" data-sort="chipsandsalsa">
+        <a href="u/chipsandsalsa.html" class="handle"><span class="at">@</span>chipsandsalsa</a>
+        <span class="dname">Chips &amp; Salsa</span>
+      </td>
+      <td data-sort="2">2</td>
+      <td data-sort="1.0">100.0%</td>
+      <td data-sort="0.587845424612029"><span class="pos">+58.8%</span></td>
+      <td data-sort="0.6072992293328909"><span class="pos">+60.7%</span></td>
+      <td class="left"><a href="u/chipsandsalsa.html">view &rarr;</a></td>
+    </tr>
+    <tr>
+      <td class="rank-cell rank-unranked" data-sort="9999">—</td>
+      <td class="left" data-sort="aibull2030">
+        <a href="u/aibull2030.html" class="handle"><span class="at">@</span>aibull2030</a>
+        <span class="dname">AI Bull 2030</span>
+      </td>
+      <td data-sort="2">2</td>
+      <td data-sort="0.5">50.0%</td>
+      <td data-sort="-0.029655241840816693"><span class="neg">-3.0%</span></td>
+      <td data-sort="-0.018190764878670718"><span class="neg">-1.8%</span></td>
+      <td class="left"><a href="u/aibull2030.html">view &rarr;</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div id="methodology" class="footer">
+  <p><strong>Methodology.</strong> Ranked by benchmark-adjusted (vs SPY) realized excess return on explicit, time-bound calls. Entry = next session after the call; exit = at the stated horizon. Followers are shown for context but are never used in the ranking.</p>
+  <p><strong>Headline vs positioning lean.</strong> The headline rank above counts only
+  <em>explicit</em> calls — those with a clear direction AND a stated horizon or price target.
+  Directional-but-open-ended takes ("I'm constructive on X") are tracked separately as a
+  <em>positioning lean</em> at 30 / 90 / 180-day windows on each account page. Leans never
+  enter the headline ranking.</p>
+  <p>Followers are shown but <strong>not used in ranking</strong>.</p>
+</div>
+<div class="footer">
+  FinTwit Accountability Terminal &middot; ranked by realized, benchmark-adjusted track record &middot;
+  followers shown for context only, never used in ranking &middot; 2026
+</div>
+</div>
+<script>(function(){
+  var table = document.getElementById('lb');
+  if(!table) return;
+  var ths = table.tHead.rows[0].cells;
+  var dir = {};
+  function val(cell){
+    var d = cell.getAttribute('data-sort');
+    if(d === null || d === '') return null;
+    var n = parseFloat(d);
+    return isNaN(n) ? d.toLowerCase() : n;
+  }
+  for(var i=0;i<ths.length;i++){
+    (function(idx){
+      var th = ths[idx];
+      if(!th.classList.contains('sortable')) return;
+      th.addEventListener('click', function(){
+        var asc = !dir[idx];
+        dir = {}; dir[idx] = asc;
+        var tb = table.tBodies[0];
+        var rows = Array.prototype.slice.call(tb.rows);
+        rows.sort(function(a,b){
+          var av = val(a.cells[idx]), bv = val(b.cells[idx]);
+          if(av === null) return 1; if(bv === null) return -1;
+          if(av < bv) return asc ? -1 : 1;
+          if(av > bv) return asc ? 1 : -1;
+          return 0;
+        });
+        rows.forEach(function(r){ tb.appendChild(r); });
+        for(var j=0;j<ths.length;j++){
+          var a = ths[j].querySelector('.arrow'); if(a) a.textContent='';
+        }
+        var arr = th.querySelector('.arrow'); if(arr) arr.textContent = asc ? '\u25B2' : '\u25BC';
+      });
+    })(i);
+  }
+})();
+</script>
+</body>
+</html>

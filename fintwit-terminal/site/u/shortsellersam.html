@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>@shortsellersam — FinTwit Terminal</title>
+<link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+<div class="wrap">
+<div class="masthead">
+  <div class="brand">
+    <span class="logo">FinTwit<span class="dot">.</span>Terminal</span>
+    <span class="tag">Accountability Index</span>
+  </div>
+  <p class="subhead">A leaderboard of finance Twitter voices ranked by <strong>realized,
+  benchmark-adjusted track record</strong> — not followers. Every number links to the
+  source post.</p>
+  <p class="method-note">Ranked by benchmark-adjusted (vs SPY) realized excess return on explicit, time-bound calls. Entry = next session after the call; exit = at the stated horizon. Followers are shown for context but are never used in the ranking.
+  <a href="#methodology" id="positioning-lean-note">Positioning lean &amp; methodology &rarr;</a></p>
+</div><div class="acct-head">
+  <div>
+    <div class="acct-title"><span class="at">@</span>shortsellersam</div>
+    <div class="acct-dname">Short Seller Sam</div>
+    <div class="acct-bio">Forensic shorts. Skin in the game disclosed.</div>
+  </div>
+  <div class="followers-badge">
+      <span class="num">54K</span>
+      <span class="lbl">followers &middot; not used in ranking</span>
+    </div>
+</div>
+<div class="backlink"><a href="../index.html">&larr; leaderboard</a> &middot; <a class="share-link" href="../card/shortsellersam.html" target="_blank" rel="noopener">share card &#8599;</a></div><div class="statgrid">
+  <div class="stat"><div class="k">Rank</div><div class="v ">#2</div></div>
+  <div class="stat"><div class="k">Explicit calls</div><div class="v">3</div></div>
+  <div class="stat"><div class="k">Hit rate (vs SPY)</div><div class="v">33.3%</div></div>
+  <div class="stat"><div class="k">Avg excess return</div><div class="v pos">+5.1%</div></div>
+  <div class="stat"><div class="k">Avg raw return</div><div class="v pos">+12.5%</div></div>
+</div><div class="highlight-row">
+  <div class="hl-card best">
+  <div class="lbl">Best call</div>
+  <div class="tk">SMCI <span class="dir-pill pos">bull</span></div>
+  <div class="val"><span class="pos">+36.4%</span> <span class="muted" style="font-size:11px;">excess</span></div>
+  <div class="muted" style="font-size:11px;margin-top:4px;">raw +47.1% &middot; <a href="https://x.com/shortsellersam/status/2083" target="_blank" rel="noopener">source &#8599;</a></div>
+</div>
+  <div class="hl-card worst">
+  <div class="lbl">Worst call</div>
+  <div class="tk">COIN <span class="dir-pill neg">short</span></div>
+  <div class="val"><span class="neg">-11.3%</span> <span class="muted" style="font-size:11px;">excess</span></div>
+  <div class="muted" style="font-size:11px;margin-top:4px;">raw -8.1% &middot; <a href="https://x.com/shortsellersam/status/2081" target="_blank" rel="noopener">source &#8599;</a></div>
+</div>
+</div>
+<div class="section-title">Headline calls <span class="section-note">— explicit, time-bound, benchmark-adjusted</span></div>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th class="left">Ticker</th>
+      <th>Dir</th>
+      <th class="left">Type</th>
+      <th>Stated</th>
+      <th>Window</th>
+      <th>Entry</th>
+      <th>Exit</th>
+      <th title="Direction-adjusted price return">Raw</th>
+      <th title="SPY over same window">Bench</th>
+      <th title="Raw minus benchmark">Excess</th>
+      <th>Result</th>
+      <th class="left">Evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="left"><span class="handle">SMCI</span></td>
+      <td><span class="dir-pill pos">bull</span></td>
+      <td class="left muted">explicit</td>
+      <td class="muted">2026-03-04</td>
+      <td class="muted">90d</td>
+      <td>$32.24</td>
+      <td>$47.42</td>
+      <td><span class="pos">+47.1%</span></td>
+      <td><span class="pos">+10.7%</span></td>
+      <td><span class="pos">+36.4%</span></td>
+      <td><span class="hit-badge hit">HIT</span></td>
+      <td class="left"><a href="https://x.com/shortsellersam/status/2083" target="_blank" rel="noopener">source &#8599;</a></td>
+    </tr>
+    <tr>
+      <td class="left"><span class="handle">PLTR</span></td>
+      <td><span class="dir-pill neg">short</span></td>
+      <td class="left muted">explicit</td>
+      <td class="muted">2026-02-16</td>
+      <td class="muted">90d</td>
+      <td>$133.02</td>
+      <td>$135.14</td>
+      <td><span class="neg">-1.6%</span></td>
+      <td><span class="pos">+8.2%</span></td>
+      <td><span class="neg">-9.8%</span></td>
+      <td><span class="hit-badge miss">MISS</span></td>
+      <td class="left"><a href="https://x.com/shortsellersam/status/2082" target="_blank" rel="noopener">source &#8599;</a></td>
+    </tr>
+    <tr>
+      <td class="left"><span class="handle">COIN</span></td>
+      <td><span class="dir-pill neg">short</span></td>
+      <td class="left muted">explicit</td>
+      <td class="muted">2026-01-30</td>
+      <td class="muted">90d</td>
+      <td>$187.86</td>
+      <td>$202.99</td>
+      <td><span class="neg">-8.1%</span></td>
+      <td><span class="pos">+3.2%</span></td>
+      <td><span class="neg">-11.3%</span></td>
+      <td><span class="hit-badge miss">MISS</span></td>
+      <td class="left"><a href="https://x.com/shortsellersam/status/2081" target="_blank" rel="noopener">source &#8599;</a></td>
+    </tr>
+    <tr>
+      <td class="left"><span class="handle">SMCI</span></td>
+      <td><span class="dir-pill neg">short</span></td>
+      <td class="left muted">explicit</td>
+      <td class="muted">2025-12-20</td>
+      <td class="muted">—</td>
+      <td>—</td>
+      <td>—</td>
+      <td><span class="muted">—</span></td>
+      <td><span class="muted">—</span></td>
+      <td><span class="muted">—</span></td>
+      <td><span class="hit-badge open">OPEN</span></td>
+      <td class="left"><a href="https://x.com/shortsellersam/status/2080" target="_blank" rel="noopener">source &#8599;</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="section-title">Positioning lean <span class="section-note">— directional takes, tracked at 30 / 90 / 180-day windows. Not used in the headline ranking.</span></div>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th class="left">Ticker</th>
+      <th>Dir</th>
+      <th class="left">Type</th>
+      <th>Stated</th>
+      <th>Window</th>
+      <th>Entry</th>
+      <th>Exit</th>
+      <th title="Direction-adjusted price return">Raw</th>
+      <th title="SPY over same window">Bench</th>
+      <th title="Raw minus benchmark">Excess</th>
+      <th>Result</th>
+      <th class="left">Evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="left"><span class="handle">TSLA</span></td>
+      <td><span class="dir-pill neg">bear</span></td>
+      <td class="left muted">lean</td>
+      <td class="muted">2026-03-19</td>
+      <td class="muted">30d</td>
+      <td>$367.96</td>
+      <td>$392.50</td>
+      <td><span class="neg">-6.7%</span></td>
+      <td><span class="pos">+9.3%</span></td>
+      <td><span class="neg">-15.9%</span></td>
+      <td><span class="hit-badge miss">MISS</span></td>
+      <td class="left"><a href="https://x.com/shortsellersam/status/2084" target="_blank" rel="noopener">source &#8599;</a></td>
+    </tr>
+    <tr>
+      <td class="left"><span class="handle">SMCI</span></td>
+      <td><span class="dir-pill neg">short</span></td>
+      <td class="left muted">lean</td>
+      <td class="muted">2026-03-04</td>
+      <td class="muted">30d</td>
+      <td>$32.24</td>
+      <td>$22.05</td>
+      <td><span class="pos">+31.6%</span></td>
+      <td><span class="neg">-3.3%</span></td>
+      <td><span class="pos">+34.9%</span></td>
+      <td><span class="hit-badge hit">HIT</span></td>
+      <td class="left"><a href="https://x.com/shortsellersam/status/2083" target="_blank" rel="noopener">source &#8599;</a></td>
+    </tr>
+    <tr>
+      <td class="left"><span class="handle">SMCI</span></td>
+      <td><span class="dir-pill neg">short</span></td>
+      <td class="left muted">lean</td>
+      <td class="muted">2026-03-04</td>
+      <td class="muted">90d</td>
+      <td>$32.24</td>
+      <td>$47.42</td>
+      <td><span class="neg">-47.1%</span></td>
+      <td><span class="pos">+10.7%</span></td>
+      <td><span class="neg">-57.8%</span></td>
+      <td><span class="hit-badge miss">MISS</span></td>
+      <td class="left"><a href="https://x.com/shortsellersam/status/2083" target="_blank" rel="noopener">source &#8599;</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="footer">
+  FinTwit Accountability Terminal &middot; ranked by realized, benchmark-adjusted track record &middot;
+  followers shown for context only, never used in ranking &middot; 2026
+</div>
+</div>
+</body>
+</html>

@@ -9,6 +9,21 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-08] daily | Marvell + Flex join S&P 500 (June 22); semis lead partial rebound
+
+Headless daily update. Discovery sweep surfaced one curated net-new event: **[[MRVL]] and [[FLEX]] were announced (after Friday's close, June 5) for S&P 500 inclusion effective June 22**, replacing Pool Corp and Campbell's in a 20+ company reshuffle. Both are wiki tickers — the mechanical index-fund bid into a ~$179B MRVL (+130% YTD) is a real, datable demand event but a *lagging confirmation* of the Q1 FY27 rerating already in the price, not a new bull leg.
+
+- **Monday June 8 = partial rebound** off Friday's worst-day-of-2026: S&P +0.30% to 7,405.73 / Nasdaq +0.86% to 25,929.66 / Dow −0.16% to 50,786.01. Semis led: [[MU]] +9.9% (after −13.3% Fri), MRVL +9.6%, [[NVDA]] / [[AVGO]] higher, SMH +~5%. ~$1T wiped from semis Friday; part clawed back Monday.
+- Jensen Huang floated MRVL as a potential "next trillion-dollar company" — sentiment tailwind on the inclusion bid.
+- **Framework read:** one green dip-buy session does NOT resolve the June 5 inflection (burden of proof shifted toward bears for the first time in 9 weeks, per [[ai-bubble-debate]]). No fresh AI-demand print landed. Treat Monday as noise relative to this week's binaries.
+- Source: [[2026-06-08-mrvl-flex-sp500-inclusion]]
+- Wiki touched: [[MRVL]] (Recent dev + sources 1→2 + last_updated), [[FLEX]] (new Recent-dev section + sources 0→1 + last_updated; flagged for fuller review — page predates AI-server-power thesis), [[overview]] (new June 8 lead section), [[index]], [[log]].
+- **Stance/conviction changes: NONE.**
+- Skipped (low-value): Dylan Patel BG2/Dwarkesh podcast results all March 2026 (already ingested); Micron HBM "sold-out" coverage = restatement (MU earnings June 24 noted); CPI (June 10) already in [[2026-06-10-cpi-binary]] playbook.
+- **Next session priorities:** **May CPI (June 10, 8:30am ET)** — the week's load-bearing binary; **[[ORCL]] Q4 earnings (June 10 AMC)** — wiki bull, OpenAI/OCI concentration read; **Adobe Q2 (June 11)** — enterprise-software demand read; **[[MU]] Q3 earnings (~June 24)**.
+
+---
+
 ## [2026-06-06] query | "Don't buy today? Could I buy the broader market?" → new analysis page
 - Question: should the user add into the June 5 selloff, and is "the broader market" (SPY/QQQ) the right vehicle, given an AI/semis + Mag 7-heavy book.
 - Filed: [[2026-06-06-buying-the-dip-broader-market]] (wiki/analyses/)
