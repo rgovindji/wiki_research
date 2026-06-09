@@ -18,12 +18,12 @@
     "spx_resistance": [7405, 7500],
     "notes": "7297 = June 9 midday flush low that buyers defended; 7405 = June 8 close. Record high ~7575. Levels from price action, not gamma — gamma levels not yet collected.",
     "gamma": {
-      "zero_gamma_flip": null,
-      "call_wall": null,
-      "put_wall": null,
+      "zero_gamma_flip": 7440,
+      "call_wall": 7600,
+      "put_wall": 7300,
       "net_gex": null,
-      "source": null,
-      "note": "COLLECT NEXT RUN: search SpotGamma / Menthor Q / OptionCharts / volland commentary for SPX zero-gamma flip level, call wall, put wall. Below zero-gamma = dealers short gamma = moves amplify; above = moves dampen. Changes how to read any selloff."
+      "source": "WebSearch snippets (Barchart/InsiderFinance/OptionCharts index), collected 2026-06-09 ~16:15 CT; exact as-of time unverifiable — see playbook data-source notes",
+      "note": "SPX closed 7386.65 = BELOW the 7440 flip: dealers short gamma, moves amplify — consistent with today's 1.5% midday whipsaw. Corroboration: today's 7297 low was defended within 3 points of the 7300 put wall. Reclaiming 7440+ would flip dealers back to dampening moves (a different, calmer tape)."
     }
   },
   "rates_commodities": {
@@ -34,11 +34,13 @@
     "note": "10Y from early-session read; oil eased on ceasefire optimism and HELD below $90 through the helicopter headline — that divergence is the de-escalation tell."
   },
   "volatility_flow": {
-    "vix": null,
+    "vix": 20.45,
+    "vix_note": "20.45 was the 11:31 ET intraday read (+8% on the day, June 8 closed 18.92); close not confirmed — likely faded with the afternoon equity recovery. VIX back above 20 with SPX below the gamma flip = a twitchier tape than last week.",
     "vix_term_structure": null,
-    "put_call_ratio": null,
+    "put_call_ratio": 0.67,
+    "put_call_note": "CBOE equity P/C, June 5 print (data lags 1-2 days) — 0.67 is complacent-side-of-neutral; notable that the worst day of the year produced no put rush.",
     "notable_options_flow": null,
-    "note": "COLLECT NEXT RUN: VIX level + whether front-month is above/below 30-day (inverted term structure = acute fear). Unusual options activity / large prints in SPY, QQQ, portfolio names — search 'unusual options activity' + ticker; treat as weak evidence unless corroborated."
+    "note": "Flow data not reliably sourceable same-day from free aggregators (paywalled) — see playbook data-source notes. Leave null rather than guess."
   },
   "technicals": {
     "spx_vs_50dma": null,
@@ -54,8 +56,8 @@
     {"date": "2026-06-26", "event": "May PCE (approx)", "why": "Fed's preferred gauge; confirm date."}
   ],
   "open_questions": [
-    "Is the afternoon dip-buying systematic (vol-control / CTA re-leveraging) or discretionary? Gamma + flow data would answer this.",
-    "Where is the zero-gamma flip — are we trading above or below it?",
-    "Did today's MRVL -7.6% come with unusual put volume, or was it just inclusion-pop profit taking?"
+    "ANSWERED 2026-06-09: we're trading BELOW the zero-gamma flip (7386 vs 7440) — short-gamma regime, moves amplify both ways. The afternoon dip-buy found support almost exactly at the 7300 put wall, suggesting mechanical hedging flows, not just discretionary buyers.",
+    "Does SPX reclaim 7440 (gamma flip) on a tame core CPI? That's the line between a twitchy tape and a pinned one into June 19 triple-witching.",
+    "Did today's MRVL -7.6% come with unusual put volume, or was it just inclusion-pop profit taking? (Flow data unavailable free — drop unless it makes news.)"
   ]
 }

@@ -29,8 +29,12 @@ As of 2026-06-09: 0 resolved (ledger seeded today). Update this line whenever `p
 
 ## Data-source notes
 
-- Gamma levels (zero-gamma flip, call/put walls): not yet sourced. Try SpotGamma/Menthor Q/OptionCharts commentary via search; log here which source actually yields numbers, and at what time of day they're fresh.
-- Unusual options activity: treat single-source flow reports as weak evidence; they're often stale or misread. Two corroborating sources or it stays out of the reasoning.
+*(Live-tested 2026-06-09, ~16:15 CT)*
+
+- **Gamma levels (zero-gamma flip, call/put walls): WORKS via WebSearch snippets, not direct fetch.** Query shape that worked: "SPX zero gamma flip level call wall put wall {date}" — Barchart/InsiderFinance/OptionCharts pages get indexed and the snippet carries the numbers. Direct WebFetch of those pages is paywalled/JS-blocked; don't bother. **Mandatory sanity check before using a level:** it must cohere with the tape (2026-06-09: put wall 7300 vs defended low 7297 — pass). A level that doesn't line up with recent price action is stale; drop it.
+- **VIX: level findable same-day via search** (intraday reads from StreetStats and similar get indexed); closing value sometimes lags to next morning. Term structure (front vs 3-month) rarely surfaces in snippets — treat as a bonus, not a required field.
+- **Put/call ratio: lags 1-2 trading days** in free sources (ycharts/MacroMicro index CBOE data late). Use it as positioning *context*, never as a same-day signal.
+- **Unusual options activity: NOT reliably sourceable free.** Aggregators (OptionStrat, Barchart UOA, OptionCharts trending) are paywalled or JS-rendered; fetch returns navigation shells. Searches return education pages, not trades. Only include flow when a specific large trade made the *news* (e.g., a reported Burry-style position) — and then it's one corroborated fact, not a feed. Revisit if a paid source is added.
 
 ## Retired
 
