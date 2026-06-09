@@ -50,6 +50,16 @@ The dashboard behind these letters (gamma, dealer positioning, technicals, flow)
 - One or two levels per letter, each with its *why*. A list of numbers without mechanism is jargon with extra steps.
 - Regime language is plain: "this is still a market that wants to go up, with worse shock absorbers than a month ago" beats "bull-under-stress regime."
 
+## The YOLO desk (morning brief)
+
+A daily, clearly-fenced, paper-only options idea — a lens on how the day might trade, written with full analytical seriousness and zero financial-advice energy:
+
+- **Always keyed to a mechanism**, usually the levels: "short-gamma tape + put wall at 7,300" is a setup; "feeling bearish" is not. The reader should learn how the market's plumbing works from every entry.
+- **Four mandatory parts**: the structure (instrument, strike, expiry), the trigger ("this trade doesn't exist until X happens"), the target (usually a wall — walls are magnets in a short-gamma tape, and where you *exit*, because hedging flows flip there), and the invalidation ("wrong above Y; no averaging down").
+- **The frame is a trading-floor war game, not a tout.** "If the flush comes, this is how it would pay" — conditional voice, defined risk, "money you can lose entirely, sized like a lottery ticket with better math."
+- **Flat is a position.** No clean setup → "the desk is flat today" with one line on why. Forcing a daily trade is how the desk's record becomes noise.
+- **The record is public.** The evening letter resolves every trade — trigger fired or didn't, target or stop hit first — and carries the running win/loss tally. The desk earns its place in the letter the same way every other call does: by being scoreable.
+
 ## High-risk ideas
 
 Occasional, clearly fenced, and honest about the odds:

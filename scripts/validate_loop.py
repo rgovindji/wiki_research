@@ -158,6 +158,47 @@ def check_market_state() -> None:
         warn(f"latest market_state snapshot is {age} days old ({latest.name})")
 
 
+YOLO_STATUSES = {"open", "win", "loss", "no-trigger", "expired"}
+
+
+def check_yolo() -> None:
+    path = NL / "yolo.json"
+    if not path.exists():
+        warn("yolo.json missing (YOLO desk not initialized)")
+        return
+    try:
+        data = json.loads(path.read_text())
+    except json.JSONDecodeError as e:
+        err(f"yolo.json: invalid JSON — {e}")
+        return
+    trades = data.get("trades", [])
+    seen: set[str] = set()
+    wins = losses = no_trig = 0
+    for t in trades:
+        tid = t.get("id", "<no id>")
+        ctx = f"yolo trade {tid}"
+        if tid in seen:
+            err(f"{ctx}: duplicate id")
+        seen.add(tid)
+        for field in ("date", "structure", "thesis", "trigger", "target", "invalidation", "status"):
+            if not t.get(field):
+                err(f"{ctx}: missing or empty '{field}'")
+        status = t.get("status")
+        if status not in YOLO_STATUSES:
+            err(f"{ctx}: status {status!r} not in {sorted(YOLO_STATUSES)}")
+        if status in ("win", "loss", "no-trigger") and not (t.get("resolution_note") or "").strip():
+            err(f"{ctx}: resolved as {status} but resolution_note is empty")
+        if status == "open" and t.get("date") and t["date"] < dt.date.today().isoformat():
+            warn(f"{ctx}: open trade from {t['date']} — the close run should have resolved it")
+        wins += status == "win"
+        losses += status == "loss"
+        no_trig += status == "no-trigger"
+    sc = data.get("scorecard", {})
+    for name, actual in (("wins", wins), ("losses", losses), ("no_trigger", no_trig)):
+        if sc.get(name) != actual:
+            err(f"yolo.json scorecard.{name} = {sc.get(name)} but actual count is {actual}")
+
+
 def check_playbook() -> None:
     path = NL / "playbook.md"
     if not path.exists():
@@ -235,6 +276,7 @@ def main() -> int:
     check_market_state()
     check_playbook()
     check_portfolio()
+    check_yolo()
     check_issues()
 
     for e in errors:

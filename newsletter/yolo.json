@@ -1,0 +1,25 @@
+{
+  "_doc": "The YOLO desk ledger. One defined-risk intraday options idea per morning brief, keyed to the day's levels (gamma walls, flip, event triggers). PAPER ONLY, lottery-ticket framing — but analyzed and scored with full seriousness. Morning run appends the day's trade (status: open). Close run resolves it against the actual tape: did the trigger fire, did it reach target or invalidation, honest payoff estimate. Statuses: open | win | loss | no-trigger | expired. Resolved trades need a resolution_note with the mechanism. 'No clean setup, desk is flat' is a valid morning outcome — don't force a trade; flat days are not logged.",
+  "scorecard": {
+    "wins": 1,
+    "losses": 0,
+    "no_trigger": 0,
+    "notes": "Seeded 2026-06-09 with the desk's origin trade (taken live in the curator's paper account before the desk existed)."
+  },
+  "trades": [
+    {
+      "id": "2026-06-09-spx-7300p",
+      "date": "2026-06-09",
+      "issue": null,
+      "structure": "SPX 0DTE 7,300 put",
+      "direction": "bearish",
+      "thesis": "Short-gamma regime (SPX below the 7,440 flip): once a flush starts, dealer hedging accelerates it toward the put wall at 7,300. The wall is the magnet and the target.",
+      "trigger": "Iran-headline flush breaking SPX lower with momentum while below the gamma flip",
+      "target": "Tag of the 7,300 put wall",
+      "invalidation": "SPX reclaiming the morning range (flush failed)",
+      "status": "win",
+      "resolved": "2026-06-09",
+      "resolution_note": "Origin trade, taken live (paper) by the curator. SPX flushed from the open to 7,297 by midday — the put wall tagged within 3 points — before the afternoon recovery to 7,387. The 7,300 puts captured the full leg down. Mechanism lesson: in a short-gamma tape the put wall is the TARGET of a flush, not the entry signal; the entry is the break of momentum below the flip. Also note the exit discipline this implies — the wall is where you sell, because that's where hedging flows turn from tailwind to headwind (today they did, violently: +90 points off the wall into the close)."
+    }
+  ]
+}

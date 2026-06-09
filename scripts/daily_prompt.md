@@ -19,6 +19,7 @@ You are running the daily close-of-market job for rgovindji's Investing wiki in 
 8. **newsletter/predictions.json** — the prediction ledger (what's open, what resolves today)
 9. **newsletter/playbook.md** — accumulated lessons; these shape today's reasoning
 10. **The most recent `newsletter/market_state/*.json`** — yesterday's snapshot, for day-over-day deltas
+11. **newsletter/yolo.json** — the YOLO desk ledger (today's open trade to resolve, plus the running record)
 
 ## Part 1 — Wiki update
 
@@ -75,8 +76,9 @@ This is the loop that makes the letters get better. In `newsletter/predictions.j
 
 1. **Resolve** every prediction whose horizon has passed or whose falsifier/confirmer has clearly triggered. Set status (right / wrong / partial / timing / expired) and write a `resolution_note` explaining the **mechanism** — why it played out, not just that it did. Update the calibration tally.
 2. **Distill**: if a resolution (especially a wrong one) teaches something durable, add ONE lesson to `newsletter/playbook.md` per its rules — written as an operating instruction, citing the prediction id. Promote/retire hypotheses per the playbook rules.
-3. **Log new calls**: every falsifiable take in today's letter gets an entry — claim, type, confidence, horizon, explicit falsifier. **Max 3 new predictions per issue.** No falsifier, no call: rewrite the take until it has one.
-4. **Friday runs only**: do the weekly distillation — merge duplicate lessons, verify Active lessons against the week's resolutions, keep Active under ~20, update the calibration snapshot line (including hit rate by confidence tier).
+3. **Resolve the YOLO desk**: if `newsletter/yolo.json` has an open trade from this morning, resolve it against the actual tape — did the trigger fire, did price reach the target or the invalidation first, and an honest payoff sketch (direction and rough magnitude; never invent precise option prices). Statuses: win / loss / no-trigger. Update the desk scorecard tally and write the mechanism in `resolution_note`.
+4. **Log new calls**: every falsifiable take in today's letter gets an entry — claim, type, confidence, horizon, explicit falsifier. **Max 3 new predictions per issue.** No falsifier, no call: rewrite the take until it has one.
+5. **Friday runs only**: do the weekly distillation — merge duplicate lessons, verify Active lessons against the week's resolutions, keep Active under ~20, update the calibration snapshot line (including hit rate by confidence tier) and the YOLO desk's running record.
 
 ## Part 4 — The After Hours letter
 
@@ -105,10 +107,10 @@ subtitle: "<one or two sentences that sell the letter>"
 Shape (≈1,100–1,700 words, in the mold of issue #1):
 
 1. **Cold open** — a few paragraphs on the day's defining story or tension. Not "stocks rose today"; find the thread.
-2. **Scorecard** — whenever a prediction resolved today (and a one-liner even when none did, if a prior call moved toward/away from its trigger). Own it plainly: what we said, what happened, why, and what we're doing differently. Wrong calls get MORE space than right ones — the autopsy is the value. This section is the letter's credibility engine; never bury or soften it.
+2. **Scorecard** — whenever a prediction resolved today (and a one-liner even when none did, if a prior call moved toward/away from its trigger). Own it plainly: what we said, what happened, why, and what we're doing differently. Wrong calls get MORE space than right ones — the autopsy is the value. This section is the letter's credibility engine; never bury or soften it. Include the YOLO desk resolution here when the morning brief carried a trade: trigger fired or not, how the levels behaved, the running desk record (e.g., "the desk is 3-1").
 3. **One to three main stories** with story-headline `##` sections. What happened, the mechanics in plain English, what it means, our take. Earnings prints from names we own or track always make the cut.
 4. **Portfolio commentary** — how the day treated our positions: biggest mover and why, anything that challenges a thesis, what we'd do with the cash reserve and at what level. (The live table is appended automatically by the renderer — do NOT paste a holdings table into the body.)
-5. **Tomorrow's setup** — the predictive close: where the market sits in the regime (bullish / bearish / sideways, in plain words), the one or two price levels that matter and *why* they matter (translate gamma/technicals into mechanism: "below ~X, the machines that normally lean against moves start chasing them"), and what we expect — as a logged, falsifiable call when conviction warrants it. This is where the market_state work surfaces, distilled to what a smart non-professional can use.
+5. **Tomorrow's setup** — the predictive close: where the market sits in the regime (bullish / bearish / sideways, in plain words), the one or two price levels that matter and *why* they matter (translate gamma/technicals into mechanism: "below ~X, the machines that normally lean against moves start chasing them"), and what we expect — as a logged, falsifiable call when conviction warrants it. Put the literal line `{{LEVELS_CHART}}` on its own line at the top of this section — the renderer replaces it with the SPX-vs-levels chart built from today's market_state. This is where the market_state work surfaces, distilled to what a smart non-professional can use.
 6. **Optional, max once or twice a week: a high-risk idea** — clearly framed as speculative: the setup, the entry logic, the explicit invalidation ("wrong below X"), the payoff shape, and sizing language ("money you can lose entirely"). Always logged to the ledger so it gets scored like everything else. Never added to the model portfolio — holdings changes are the user's call. Run any small-cap through the playbook's rug-signature check first.
 7. **Things to watch** — a small markdown table of tomorrow/this week's catalysts (When | What | Why it matters). Only rows that matter.
 8. **Optional: One Concept Worth Knowing** — when the day's news used a mechanic worth unpacking (include it most days; skip when forced).
@@ -142,7 +144,7 @@ Keep the summary under 30 lines.
 - **No interactive prompts.** Make conservative calls and flag them in the log entry.
 - **Tool budget.** Up to ~32 WebSearch and ~10 WebFetch calls total across all parts.
 - **Time budget.** Under 35 minutes wall-clock total.
-- **File-write discipline.** Only write to `raw/`, `sources/`, `wiki/`, `index.md`, `log.md`, `newsletter/issues/`, `newsletter/portfolio.json`, `newsletter/market_state/`, `newsletter/predictions.json`, `newsletter/playbook.md`. Nothing else.
+- **File-write discipline.** Only write to `raw/`, `sources/`, `wiki/`, `index.md`, `log.md`, `newsletter/issues/`, `newsletter/portfolio.json`, `newsletter/market_state/`, `newsletter/predictions.json`, `newsletter/playbook.md`, `newsletter/yolo.json`. Nothing else.
 - **Never invent prices or levels.** If you can't confirm a close for a portfolio ticker, leave its `current_price_usd` unchanged and say so in the stdout summary. If you can't find fresh gamma/vol data, leave the field null — a null is information; a guessed level is contamination.
 - **Resolution honesty.** Never mark a prediction "right" on a technicality its mechanism didn't earn; "partial" and "timing" exist for a reason. The loop only improves if the scoring is harsh.
 - If today was a US market holiday, skip parts 2-4 (no letter) and write a one-line log entry noting the holiday; the wiki sweep (part 1) still runs if there's news.

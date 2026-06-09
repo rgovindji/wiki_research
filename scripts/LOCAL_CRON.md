@@ -34,6 +34,7 @@ Three files make the letters compound instead of drift:
 - **`newsletter/predictions.json`** — every falsifiable call a letter makes is logged (claim, confidence, horizon, explicit falsifier; max 3/issue). The evening run resolves due calls with a mechanism-level explanation and keeps a calibration tally.
 - **`newsletter/market_state/DATE.json`** — the daily dashboard (SPX/SPY gamma levels, VIX + term structure, put/call, unusual options flow, technicals, regime call, key levels, event calendar). Reasoning fuel only — the reader sees conclusions, never the dashboard.
 - **`newsletter/playbook.md`** — operating lessons distilled from resolutions, read by both prompts before writing. Hypotheses promote to Active after two confirmations; falsified lessons retire with evidence. Friday runs consolidate.
+- **`newsletter/yolo.json`** — the YOLO desk: one defined-risk, paper-only intraday options idea per morning brief, keyed to the levels; the close run resolves it against the tape and keeps the public win/loss record. The renderer turns a `{{LEVELS_CHART}}` token in any issue into a QuickChart PNG of SPX vs the gamma walls/flip and support/resistance from `market_state/`.
 
 Reader-facing effects: a Scorecard section when calls resolve (wrong calls get the autopsy), a plain-English "tomorrow's setup" with levels-and-why, and occasional clearly-fenced high-risk ideas — logged and scored like everything else, never added to the model portfolio.
 

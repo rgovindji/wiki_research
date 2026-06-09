@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-09] note | Levels chart + YOLO desk added to the letters
+
+Two reader-facing upgrades wired into the loop:
+
+- **SPX levels chart**: `render_newsletter.py` now replaces a `{{LEVELS_CHART}}` token with a QuickChart PNG of S&P closes (built from accumulating `market_state/` snapshots) against the gamma call wall / flip / put wall and price-action support/resistance, with near-duplicate levels deduped (gamma label wins). Both prompts place the token (morning: Game plan; close: Tomorrow's setup). Tested end-to-end — valid PNG, levels coherent.
+- **The YOLO desk** (`newsletter/yolo.json`): one defined-risk paper-only intraday options idea per morning brief — structure, trigger, target (walls are magnets/exits), invalidation — resolved by the close run against the actual tape with a public running record. Seeded with the curator's live 2026-06-09 SPX 7,300P origin trade (win; mechanism lesson: in short-gamma the put wall is the target, not the entry). Style-guide rules added; validator extended to yolo.json schema + scorecard tally.
+- Paid-data research for the curator: SpotGamma Essential $99/mo / Alpha $299/mo; Unusual Whales $48/mo (includes API + GEX endpoints); MenthorQ $39-89/mo; Polygon options API ~$79/mo.
+
+---
+
 ## [2026-06-09] daily | Iran whipsaw bought back; US strikes after the close; AAPL WWDC day 2
 
 First headless 17:00 run with the full loop. One source ingested: [[2026-06-09-iran-whipsaw-aapl-wwdc]] — the June 9 session (S&P −0.26% to 7,386.65 after a −1.46% Iran-headline flush was bought back; Dow green at 50,872.11; WTI −2.3% to $89.22 *through* the war headline), the **~5 PM EDT after-close CENTCOM retaliatory strikes on Iran** (material new event post-close), [[AAPL]]'s second straight post-WWDC down day (ATH $317 June 8 → −3%+ on Siri AI no-ship-date / no-monetization — bear-thesis third leg), and [[MRVL]]'s one-day round-trip of the inclusion pop (−7.6% to $266.88).

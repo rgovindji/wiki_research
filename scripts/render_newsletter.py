@@ -256,6 +256,143 @@ def render_portfolio_chart(p: dict) -> str:
     )
 
 
+MARKET_STATE_DIR = REPO_ROOT / "newsletter" / "market_state"
+
+# Muted level colors: warm reds above price (resistance-flavored), greens
+# below (support-flavored), blue for the gamma flip.
+LEVEL_STYLES = [
+    ("call_wall",  "Call wall",  "#c64545", [6, 4]),
+    ("zero_gamma", "Gamma flip", "#5577aa", [2, 3]),
+    ("put_wall",   "Put wall",   "#0f7c4a", [6, 4]),
+    ("resistance", "Resistance", "#b8956e", [1, 3]),
+    ("support",    "Support",    "#6b8f88", [1, 3]),
+]
+
+
+def _collect_levels(latest: dict) -> list[tuple[str, float, str, list]]:
+    """Pull plottable levels out of a market_state snapshot, deduping
+    price-action levels that sit within 0.5% of a gamma level (the gamma
+    label wins — it carries the mechanism)."""
+    kl = latest.get("key_levels", {})
+    gamma = kl.get("gamma", {}) or {}
+    levels: list[tuple[str, float, str, list]] = []
+    style = {k: (label, color, dash) for k, label, color, dash in LEVEL_STYLES}
+
+    for key, field in (("call_wall", "call_wall"), ("zero_gamma", "zero_gamma_flip"), ("put_wall", "put_wall")):
+        v = gamma.get(field)
+        if isinstance(v, (int, float)):
+            label, color, dash = style[key]
+            levels.append((f"{label} {v:,.0f}", float(v), color, dash))
+
+    gamma_vals = [v for _, v, _, _ in levels]
+
+    def near_gamma(x: float) -> bool:
+        return any(abs(x - g) / g < 0.005 for g in gamma_vals)
+
+    for key, field in (("resistance", "spx_resistance"), ("support", "spx_support")):
+        for v in (kl.get(field) or []):
+            if isinstance(v, (int, float)) and not near_gamma(float(v)):
+                label, color, dash = style[key]
+                levels.append((f"{label} {v:,.0f}", float(v), color, dash))
+    return levels
+
+
+def render_levels_chart() -> str:
+    """SPX closes (from market_state history) against gamma walls / flip and
+    price-action support/resistance, as a QuickChart PNG. Returns "" when
+    there's nothing trustworthy to plot."""
+    import urllib.parse
+
+    snaps = sorted(MARKET_STATE_DIR.glob("*.json"))[-15:] if MARKET_STATE_DIR.exists() else []
+    if not snaps:
+        return ""
+    history: list[tuple[str, float | None]] = []
+    for s in snaps:
+        try:
+            d = json.loads(s.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        close = (d.get("indexes", {}).get("spx") or {}).get("close")
+        history.append((s.stem[5:], float(close) if isinstance(close, (int, float)) else None))
+    try:
+        latest = json.loads(snaps[-1].read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return ""
+    levels = _collect_levels(latest)
+    if not levels:
+        return ""
+
+    labels = [h[0] for h in history]
+    closes = [h[1] for h in history]
+    if len(labels) < 2:
+        labels.append("next")
+        closes.append(None)
+
+    datasets = [{
+        "label": "S&P 500 close",
+        "data": closes,
+        "borderColor": "#cc785c",
+        "backgroundColor": "rgba(204,120,92,0.08)",
+        "borderWidth": 3,
+        "pointRadius": 4,
+        "pointBackgroundColor": "#cc785c",
+        "spanGaps": False,
+        "fill": False,
+        "lineTension": 0,
+    }]
+    for label, value, color, dash in levels:
+        datasets.append({
+            "label": label,
+            "data": [value] * len(labels),
+            "borderColor": color,
+            "borderWidth": 1.5,
+            "borderDash": dash,
+            "pointRadius": 0,
+            "fill": False,
+            "lineTension": 0,
+        })
+
+    all_vals = [v for v in closes if v] + [v for _, v, _, _ in levels]
+    pad = (max(all_vals) - min(all_vals)) * 0.08 or 50
+    config = {
+        "type": "line",
+        "data": {"labels": labels, "datasets": datasets},
+        "options": {
+            "legend": {"position": "bottom", "labels": {"boxWidth": 18, "fontSize": 10, "fontFamily": "sans-serif"}},
+            "scales": {
+                "yAxes": [{"ticks": {"min": round(min(all_vals) - pad), "max": round(max(all_vals) + pad), "fontSize": 10}}],
+                "xAxes": [{"ticks": {"fontSize": 10}, "gridLines": {"display": False}}],
+            },
+            "plugins": {"datalabels": {"display": False}},
+        },
+    }
+    chart_url = (
+        "https://quickchart.io/chart?bkg=%23faf9f5&w=620&h=340&c="
+        + urllib.parse.quote(json.dumps(config, separators=(",", ":")))
+    )
+    as_of = latest.get("date", "")
+    return (
+        '<div style="margin:26px 0 6px;">'
+        f'<img src="{chart_url}" width="620" alt="S&P 500 vs options-positioning levels" style="display:block;margin:0 auto;max-width:100%;height:auto;border:1px solid #ebe6df;border-radius:4px;"/>'
+        f'<div style="font-family:\'Inter\',-apple-system,sans-serif;font-size:11.5px;color:#6c6a64;font-style:italic;text-align:center;margin-top:8px;max-width:58ch;margin-left:auto;margin-right:auto;">'
+        f'Where the S&amp;P sits against the levels that matter (as of {as_of}). Walls and the flip line come from options-market positioning — where dealer hedging tends to slow or accelerate moves. Zones, not lines.'
+        '</div></div>'
+    )
+
+
+LEVELS_TOKEN = "{{LEVELS_CHART}}"
+
+
+def inject_levels_chart(body_html: str) -> str:
+    """Replace the {{LEVELS_CHART}} placeholder with the chart block (or
+    remove it when no data). The markdown engine wraps a lone token in <p>."""
+    if LEVELS_TOKEN not in body_html:
+        return body_html
+    chart = render_levels_chart()
+    body_html = body_html.replace(f"<p>{LEVELS_TOKEN}</p>", chart)
+    return body_html.replace(LEVELS_TOKEN, chart)
+
+
 def render_portfolio_summary_card(p: dict) -> str:
     """Small at-a-glance card showing capital + inception + cash policy.
     Renders ABOVE the portfolio table in the email."""
@@ -380,6 +517,7 @@ def render_html(fm: dict, body_md: str, portfolio: dict) -> str:
     # is older.
     body_html = de.markdown_to_html(body_md)
     body_html = de._apply_chip_styles(body_html, CHIP_STYLES)
+    body_html = inject_levels_chart(body_html)
 
     # Live portfolio block: summary card + pie chart + wide table + theses dropdown
     live_portfolio_section = ""
