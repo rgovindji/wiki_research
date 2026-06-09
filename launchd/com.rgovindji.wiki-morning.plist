@@ -34,7 +34,7 @@
   <array>
     <string>/bin/bash</string>
     <string>-lc</string>
-    <string>/Users/rgovindji/Projects/Investing/scripts/daily_claude.sh --edition morning</string>
+    <string>/Users/rgovindji/Projects/Investing/scripts/daily_claude.sh --edition morning --allow-stash</string>
   </array>
 
   <key>WorkingDirectory</key>

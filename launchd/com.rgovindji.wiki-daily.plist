@@ -41,7 +41,7 @@
   <array>
     <string>/bin/bash</string>
     <string>-lc</string>
-    <string>/Users/rgovindji/Projects/Investing/scripts/daily_claude.sh --edition close</string>
+    <string>/Users/rgovindji/Projects/Investing/scripts/daily_claude.sh --edition close --allow-stash</string>
   </array>
 
   <!-- Working directory + env so claude/git/aws find everything they need -->

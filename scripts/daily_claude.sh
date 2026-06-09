@@ -21,6 +21,7 @@
 #   bash scripts/daily_claude.sh --dry-run           # claude runs but no commit/push/email
 #   bash scripts/daily_claude.sh --skip-email        # commit + push but don't send
 #   bash scripts/daily_claude.sh --skip-claude       # skip the LLM call (commit + email whatever's already on disk)
+#   bash scripts/daily_claude.sh --allow-stash       # auto-stash a dirty tree instead of aborting (launchd passes this)
 #
 # Environment:
 #   WIKI_REPO_DIR        — repo root (default: this script's parent's parent)
@@ -40,6 +41,7 @@ EDITION="close"
 DRY_RUN="false"
 SKIP_EMAIL="false"
 SKIP_CLAUDE="false"
+ALLOW_STASH="false"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -47,6 +49,7 @@ while [[ $# -gt 0 ]]; do
     --dry-run)      DRY_RUN="true"; shift ;;
     --skip-email)   SKIP_EMAIL="true"; shift ;;
     --skip-claude)  SKIP_CLAUDE="true"; shift ;;
+    --allow-stash)  ALLOW_STASH="true"; shift ;;
     --help|-h)
       grep '^#' "$0" | sed 's/^# \{0,1\}//'
       exit 0 ;;
@@ -83,9 +86,19 @@ log "log file:  $RUN_LOG"
 cd "$REPO_DIR" || fail "cannot cd to $REPO_DIR"
 
 # ----- 1. Pre-flight: clean working tree + git pull -----
+# Headless launchd runs pass --allow-stash and may safely shelve whatever is
+# lying around. Interactive/manual runs abort instead — a silent stash eats
+# uncommitted work (it bit us twice during testing on 2026-06-09).
 if [[ -n "$(git status --porcelain)" ]]; then
-  log "WARNING: working tree is dirty before run; stashing for safety"
-  git stash push -u -m "daily_claude.sh auto-stash $RUN_ID" >>"$RUN_LOG" 2>&1 || true
+  if [[ "$ALLOW_STASH" == "true" ]]; then
+    log "WARNING: working tree is dirty before run; stashing for safety"
+    git stash push -u -m "daily_claude.sh auto-stash $RUN_ID" >>"$RUN_LOG" 2>&1 || true
+  else
+    log "ERROR: working tree has uncommitted changes. Commit/stash them first,"
+    log "       or pass --allow-stash to shelve them automatically (launchd does)."
+    git status --short | tee -a "$RUN_LOG"
+    exit 7
+  fi
 fi
 
 log "git fetch + pull"
