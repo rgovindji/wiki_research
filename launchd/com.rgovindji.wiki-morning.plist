@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  launchd job: Before the Bell morning brief.
+
+  Fires scripts/daily_claude.sh - -edition morning on weekdays at 06:45 LOCAL
+  TIME — about 105 minutes before the 8:30 AM CT market open, so the brief
+  lands in the inbox around 7:00-7:10 after the Claude run finishes. The script:
+    1. git pull
+    2. runs claude -p with scripts/morning_prompt.md (uses your Max plan)
+    3. commits + pushes the issue file
+    4. renders + sends it via scripts/render_newsletter.py (SES)
+
+  Install:    bash scripts/install_daily_cron.sh
+  Uninstall:  bash scripts/install_daily_cron.sh --uninstall
+  Run now:    launchctl kickstart -k gui/$(id -u)/com.rgovindji.wiki-morning
+
+  Logs:       ~/Library/Logs/wiki-daily/
+
+  If your Mac is asleep at 06:45 the run fires on next wake. To wake the Mac
+  for it (optional, needs admin):
+
+    sudo pmset repeat wakeorpoweron MTWRF 06:40:00
+
+  NOTE: pmset supports only ONE repeating wake event — if you already wake the
+  Mac for the 17:00 job, pick whichever run is more likely to be missed.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.rgovindji.wiki-morning</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-lc</string>
+    <string>/Users/rgovindji/Projects/Investing/scripts/daily_claude.sh --edition morning</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/rgovindji/Projects/Investing</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/Users/rgovindji/.local/bin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>HOME</key>
+    <string>/Users/rgovindji</string>
+  </dict>
+
+  <!-- Schedule: Mon-Fri at 06:45 LOCAL TIME -->
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict>
+      <key>Hour</key><integer>6</integer>
+      <key>Minute</key><integer>45</integer>
+      <key>Weekday</key><integer>1</integer>
+    </dict>
+    <dict>
+      <key>Hour</key><integer>6</integer>
+      <key>Minute</key><integer>45</integer>
+      <key>Weekday</key><integer>2</integer>
+    </dict>
+    <dict>
+      <key>Hour</key><integer>6</integer>
+      <key>Minute</key><integer>45</integer>
+      <key>Weekday</key><integer>3</integer>
+    </dict>
+    <dict>
+      <key>Hour</key><integer>6</integer>
+      <key>Minute</key><integer>45</integer>
+      <key>Weekday</key><integer>4</integer>
+    </dict>
+    <dict>
+      <key>Hour</key><integer>6</integer>
+      <key>Minute</key><integer>45</integer>
+      <key>Weekday</key><integer>5</integer>
+    </dict>
+  </array>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>StartCalendarIntervalAcceptsAsleep</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/rgovindji/Library/Logs/wiki-daily/launchd-morning-stdout.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/rgovindji/Library/Logs/wiki-daily/launchd-morning-stderr.log</string>
+
+  <key>AbandonProcessGroup</key>
+  <false/>
+
+  <key>Nice</key>
+  <integer>1</integer>
+</dict>
+</plist>

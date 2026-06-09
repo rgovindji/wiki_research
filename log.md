@@ -9,6 +9,18 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-09] note | Two-edition newsletter pipeline: Before the Bell (06:45) + After Hours (17:00)
+
+Rebuilt the daily email system into two scheduled newsletter editions, replacing the Lambda email that forwarded raw log.md entries:
+
+- **Before the Bell** — new `launchd/com.rgovindji.wiki-morning.plist` fires `daily_claude.sh --edition morning` weekdays 06:45 CT. Light pre-market sweep (futures, overnight Asia/Europe, today's calendar) → writes `newsletter/issues/DATE-morning.md` → rendered + sent via SES. No wiki ingestion on morning runs.
+- **After Hours** — existing 17:00 job now runs the full wiki ritual *plus* writes `newsletter/issues/DATE-afterhours.md` (with closing-price refresh of `newsletter/portfolio.json`) and sends it through `render_newsletter.py` instead of invoking the Lambda.
+- New `scripts/newsletter_style.md` voice guide shared by both prompts: newsletter voice, zero wiki references in reader-facing copy, anti-AI-tell bans. Issue #1 (2026-06-01-inception) is the canonical example.
+- `render_newsletter.py` gained `edition: morning|close` frontmatter (masthead, subject, footer, portfolio block on/off) and the Day-1 footnote is now conditional on no price movement.
+- Both launchd jobs installed and loaded. Docs updated in `scripts/LOCAL_CRON.md`.
+
+---
+
 ## [2026-06-08] daily | Marvell + Flex join S&P 500 (June 22); semis lead partial rebound
 
 Headless daily update. Discovery sweep surfaced one curated net-new event: **[[MRVL]] and [[FLEX]] were announced (after Friday's close, June 5) for S&P 500 inclusion effective June 22**, replacing Pool Corp and Campbell's in a 20+ company reshuffle. Both are wiki tickers — the mechanical index-fund bid into a ~$179B MRVL (+130% YTD) is a real, datable demand event but a *lagging confirmation* of the Q1 FY27 rerating already in the price, not a new bull leg.

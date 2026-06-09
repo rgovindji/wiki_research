@@ -93,6 +93,7 @@ def render_portfolio_section(p: dict) -> str:
     the table) so the data row stays compact."""
     capital = float(p["starting_capital_usd"])
     rows: list[str] = []
+    any_movement = False
     for h in p["current_holdings"]:
         ticker = h["ticker"]
         company = h["company"]
@@ -105,6 +106,8 @@ def render_portfolio_section(p: dict) -> str:
             shares = invested / avg
             position_value = shares * cur
         chg_text, chg_color = _format_change(avg, cur)
+        if chg_text != "—":
+            any_movement = True
         rows.append(
             "<tr>"
             f'<td style="font-family:\'JetBrains Mono\',ui-monospace,SFMono-Regular,Menlo,monospace;color:#cc785c;font-weight:700;font-size:14px;white-space:nowrap;padding:13px 10px;border-bottom:1px solid #ebe6df;vertical-align:middle;">{de._escape(ticker)}</td>'
@@ -148,8 +151,9 @@ def render_portfolio_section(p: dict) -> str:
         f'</tr></thead><tbody>'
         + "".join(rows)
         + "</tbody></table>"
-        + '<div style="font-family:\'Inter\',-apple-system,sans-serif;font-size:11.5px;color:#6c6a64;font-style:italic;margin:0 0 26px;">Day 1 — positions opened at today\'s prices, so Change reads as &mdash;. Tomorrow\'s letter will show real movement.</div>'
     )
+    if not any_movement:
+        table_html += '<div style="font-family:\'Inter\',-apple-system,sans-serif;font-size:11.5px;color:#6c6a64;font-style:italic;margin:0 0 26px;">Day 1 — positions opened at today\'s prices, so Change reads as &mdash;. Tomorrow\'s letter will show real movement.</div>'
 
     # Append a compact thesis block below the table — one ticker per line.
     thesis_lines: list[str] = []
@@ -329,11 +333,45 @@ CHIP_STYLES = {
 }
 
 
+def edition_of(fm: dict) -> str:
+    """'morning' (Before the Bell) or 'close' (After Hours, the default)."""
+    return "morning" if str(fm.get("edition", "")).lower() == "morning" else "close"
+
+
 def render_html(fm: dict, body_md: str, portfolio: dict) -> str:
     title = fm.get("title", "Untitled")
     subtitle = fm.get("subtitle", "")
     issue_date = fm.get("date", dt.date.today().isoformat())
-    issue_num = fm.get("issue_number", "1")
+    issue_num = fm.get("issue_number")
+    edition = edition_of(fm)
+    is_morning = edition == "morning"
+
+    brand = "Before the Bell" if is_morning else "After Hours"
+    if is_morning:
+        brand_label = "✻ &nbsp;Before the Bell &nbsp;·&nbsp; Morning Brief"
+        eyebrow = "This morning"
+        footer_text = (
+            "Before the Bell is the morning edition of After Hours, a daily market letter. "
+            "Nothing here is personal financial advice — it's the work of a desk thinking out "
+            "loud, with every call disclosed so you can audit it. The full portfolio rides in "
+            "the evening letter. Reply to this email to subscribe a friend."
+        )
+    else:
+        issue_tag = f" &nbsp;·&nbsp; Issue #{issue_num}" if issue_num else ""
+        brand_label = f"✻ &nbsp;After Hours{issue_tag}"
+        eyebrow = "Today's letter"
+        footer_text = (
+            "After Hours is a daily market letter. The portfolio shown is a model portfolio "
+            "for educational purposes — track it with us, but it is not personal financial "
+            "advice. Every position, price, and trade is disclosed in real time so you can "
+            "audit the work. Reply to this email to subscribe a friend."
+        )
+
+    # Morning briefs skip the live portfolio block by default (holdings haven't
+    # moved overnight; the evening letter carries it). Frontmatter `portfolio:
+    # true/false` overrides either default.
+    portfolio_default = "false" if is_morning else "true"
+    show_portfolio = str(fm.get("portfolio", portfolio_default)).lower() not in ("false", "none", "no", "0")
 
     # Inject the portfolio AT THE PLACEHOLDER if present in markdown; otherwise
     # the markdown table that exists in the issue body is the source of truth.
@@ -344,16 +382,18 @@ def render_html(fm: dict, body_md: str, portfolio: dict) -> str:
     body_html = de._apply_chip_styles(body_html, CHIP_STYLES)
 
     # Live portfolio block: summary card + pie chart + wide table + theses dropdown
-    summary_card = render_portfolio_summary_card(portfolio)
-    chart_block = render_portfolio_chart(portfolio)
-    portfolio_table = render_portfolio_section(portfolio)
-    live_portfolio_section = (
-        '<hr/>'
-        '<div style="font-family:\'Inter\',-apple-system,sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#cc785c;font-weight:600;margin:32px 0 12px;">The After Hours portfolio</div>'
-        + summary_card
-        + chart_block
-        + portfolio_table
-    )
+    live_portfolio_section = ""
+    if show_portfolio:
+        summary_card = render_portfolio_summary_card(portfolio)
+        chart_block = render_portfolio_chart(portfolio)
+        portfolio_table = render_portfolio_section(portfolio)
+        live_portfolio_section = (
+            '<hr/>'
+            '<div style="font-family:\'Inter\',-apple-system,sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#cc785c;font-weight:600;margin:32px 0 12px;">The After Hours portfolio</div>'
+            + summary_card
+            + chart_block
+            + portfolio_table
+        )
 
     return f"""<!DOCTYPE html>
 <html lang="en"><head>
@@ -361,23 +401,23 @@ def render_html(fm: dict, body_md: str, portfolio: dict) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="color-scheme" content="light only"/>
 <meta name="supported-color-schemes" content="light"/>
-<title>After Hours — {de._escape(title)}</title>
+<title>{brand} — {de._escape(title)}</title>
 {GOOGLE_FONTS}
 <style>{NEWSLETTER_CSS}</style>
 </head>
 <body style="{INLINE['body']}">
   <div class="wrap" style="{INLINE['wrap']}">
     <div class="brandbar" style="{INLINE['brandbar']}">
-      <span>✻ &nbsp;After Hours &nbsp;·&nbsp; Issue #{issue_num}</span>
+      <span>{brand_label}</span>
       <span style="color:#6c6a64;font-weight:400;font-size:12.5px;float:right;">{issue_date}</span>
     </div>
-    <div class="eyebrow" style="{INLINE['eyebrow']}">Today's letter</div>
+    <div class="eyebrow" style="{INLINE['eyebrow']}">{eyebrow}</div>
     <h1 class="title" style="{INLINE['title']}">{de._escape(title)}</h1>
     <p class="subtitle" style="{INLINE['subtitle']}">{de._escape(subtitle)}</p>
     <div>{body_html}</div>
     {live_portfolio_section}
     <div class="footer" style="{INLINE['footer']}">
-      After Hours is a daily market letter. The portfolio shown is a model portfolio for educational purposes — track it with us, but it is not personal financial advice. Every position, price, and trade is disclosed in real time so you can audit the work. Reply to this email to subscribe a friend.
+      {footer_text}
     </div>
   </div>
 </body></html>"""
@@ -436,7 +476,8 @@ def main(argv: list[str] | None = None) -> int:
     portfolio = json.loads(PORTFOLIO_PATH.read_text(encoding="utf-8"))
 
     html = render_html(fm, body, portfolio)
-    subject = f"After Hours · {fm.get('date', dt.date.today().isoformat())} · {fm.get('title', 'Today')}"
+    brand = "Before the Bell" if edition_of(fm) == "morning" else "After Hours"
+    subject = f"{brand} · {fm.get('date', dt.date.today().isoformat())} · {fm.get('title', 'Today')}"
 
     if args.save:
         Path(args.save).write_text(html, encoding="utf-8")

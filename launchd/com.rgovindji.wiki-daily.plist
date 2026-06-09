@@ -3,12 +3,16 @@
 <!--
   launchd job: wiki daily update.
 
-  Fires scripts/daily_claude.sh on weekdays at 17:00 LOCAL TIME (5 PM in
-  whatever timezone your Mac is set to). The script:
+  Fires scripts/daily_claude.sh - -edition close on weekdays at 17:00 LOCAL
+  TIME (5 PM — two hours after the 3 PM CT close, late enough to catch
+  after-hours earnings prints). The script:
     1. git pull
-    2. runs claude -p with the daily prompt (uses your Max plan)
+    2. runs claude -p with the daily prompt (wiki update + After Hours letter)
     3. commits + pushes any changes
-    4. invokes AWS Lambda for the email (SES)
+    4. renders + sends the letter via scripts/render_newsletter.py (SES)
+
+  The morning sibling is com.rgovindji.wiki-morning.plist (06:45, Before the
+  Bell brief).
 
   Install:    bash scripts/install_daily_cron.sh
   Uninstall:  bash scripts/install_daily_cron.sh --uninstall
@@ -37,7 +41,7 @@
   <array>
     <string>/bin/bash</string>
     <string>-lc</string>
-    <string>/Users/rgovindji/Projects/Investing/scripts/daily_claude.sh</string>
+    <string>/Users/rgovindji/Projects/Investing/scripts/daily_claude.sh --edition close</string>
   </array>
 
   <!-- Working directory + env so claude/git/aws find everything they need -->

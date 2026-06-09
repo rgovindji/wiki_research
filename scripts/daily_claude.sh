@@ -1,45 +1,49 @@
 #!/usr/bin/env bash
-# Daily wiki update — uses Claude Code (Max plan) for research, AWS SES for email.
+# Daily newsletter runs — uses Claude Code (Max plan) for research + writing,
+# render_newsletter.py + AWS SES for the email.
 #
-# Architecture (Option C from the design discussion):
-#   1. launchd fires this script on schedule (configured in launchd/com.rgovindji.wiki-daily.plist)
+# Two editions, two launchd jobs:
+#   --edition morning  →  Before the Bell brief (launchd/com.rgovindji.wiki-morning.plist, ~6:45 AM)
+#                         light research sweep, writes newsletter/issues/DATE-morning.md
+#   --edition close    →  full wiki update + After Hours letter (com.rgovindji.wiki-daily.plist, 5 PM)
+#                         writes newsletter/issues/DATE-afterhours.md (default edition)
+#
+# Flow:
+#   1. launchd fires this script on schedule
 #   2. git pull --rebase to sync with any remote changes
-#   3. claude -p with the prompt template (uses your Anthropic Max plan, NOT API credits)
+#   3. claude -p with the edition's prompt template (uses your Anthropic Max plan, NOT API credits)
 #   4. If Claude wrote new content: git add + commit + push
-#   5. Invoke AWS Lambda with skip_update=true → Lambda emails the latest log entry via SES
-#
-# Why this beats the pure-API setup: zero marginal Anthropic cost (covered by Max plan).
-# Why this beats GitHub Actions: keeps secrets on your Mac and in AWS (not GitHub).
+#   5. Render + send the issue Claude wrote via scripts/render_newsletter.py (SES)
 #
 # Usage:
-#   bash scripts/daily_claude.sh                 # full run
-#   bash scripts/daily_claude.sh --dry-run       # claude runs but no commit/push/email
-#   bash scripts/daily_claude.sh --skip-email    # commit + push but don't trigger Lambda
-#   bash scripts/daily_claude.sh --skip-claude   # skip the LLM call (just commit + email anything that's already dirty)
+#   bash scripts/daily_claude.sh                     # full close-of-market run
+#   bash scripts/daily_claude.sh --edition morning   # morning brief run
+#   bash scripts/daily_claude.sh --dry-run           # claude runs but no commit/push/email
+#   bash scripts/daily_claude.sh --skip-email        # commit + push but don't send
+#   bash scripts/daily_claude.sh --skip-claude       # skip the LLM call (commit + email whatever's already on disk)
 #
 # Environment:
 #   WIKI_REPO_DIR        — repo root (default: this script's parent's parent)
 #   CLAUDE_BIN           — path to claude CLI (default: from PATH)
-#   AWS_LAMBDA_NAME      — Lambda function name (default: wiki-daily-update)
-#   AWS_REGION           — default us-east-1
+#   PYTHON_BIN           — python3 with boto3 (default: python3 from PATH)
 #   LOG_DIR              — log destination (default: ~/Library/Logs/wiki-daily)
-#   EMAIL_ON_LOW_SIGNAL  — "true" to send email even on low-signal days (default: true)
+#   EMAIL_TO / SES_SENDER / AWS_REGION — read by render_newsletter.py (or repo-root .env)
 
 set -uo pipefail
 
 REPO_DIR="${WIKI_REPO_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 CLAUDE_BIN="${CLAUDE_BIN:-$(command -v claude || echo /Users/rgovindji/.local/bin/claude)}"
-AWS_LAMBDA_NAME="${AWS_LAMBDA_NAME:-wiki-daily-update}"
-AWS_REGION="${AWS_REGION:-us-east-1}"
+PYTHON_BIN="${PYTHON_BIN:-$(command -v python3 || echo /usr/bin/python3)}"
 LOG_DIR="${LOG_DIR:-$HOME/Library/Logs/wiki-daily}"
-EMAIL_ON_LOW_SIGNAL="${EMAIL_ON_LOW_SIGNAL:-true}"
 
+EDITION="close"
 DRY_RUN="false"
 SKIP_EMAIL="false"
 SKIP_CLAUDE="false"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
+    --edition)      EDITION="${2:?--edition needs morning|close}"; shift 2 ;;
     --dry-run)      DRY_RUN="true"; shift ;;
     --skip-email)   SKIP_EMAIL="true"; shift ;;
     --skip-claude)  SKIP_CLAUDE="true"; shift ;;
@@ -50,17 +54,29 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+case "$EDITION" in
+  morning)
+    PROMPT_BASENAME="morning_prompt.md"
+    ISSUE_SLUG="morning"
+    COMMIT_TITLE="Morning brief" ;;
+  close)
+    PROMPT_BASENAME="daily_prompt.md"
+    ISSUE_SLUG="afterhours"
+    COMMIT_TITLE="Daily auto-update" ;;
+  *) echo "unknown edition: $EDITION (use morning|close)" >&2; exit 2 ;;
+esac
+
 mkdir -p "$LOG_DIR"
-RUN_ID="$(date -u +%Y%m%dT%H%M%SZ)"
+RUN_ID="$(date -u +%Y%m%dT%H%M%SZ)-${EDITION}"
 RUN_LOG="$LOG_DIR/run-${RUN_ID}.log"
 
 log() { printf "[%s] %s\n" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$*" | tee -a "$RUN_LOG"; }
 fail() { log "ERROR: $*"; exit 1; }
 
 log "=== daily_claude.sh started ==="
+log "edition:   $EDITION"
 log "repo:      $REPO_DIR"
 log "claude:    $CLAUDE_BIN"
-log "lambda:    $AWS_LAMBDA_NAME (region $AWS_REGION)"
 log "dry-run:   $DRY_RUN"
 log "log file:  $RUN_LOG"
 
@@ -86,7 +102,7 @@ log "starting at sha: $BEFORE_SHA"
 # ----- 2. Run Claude Code (unless skipped) -----
 if [[ "$SKIP_CLAUDE" == "false" ]]; then
   TODAY_UTC="$(date -u +%Y-%m-%d)"
-  PROMPT_FILE="$REPO_DIR/scripts/daily_prompt.md"
+  PROMPT_FILE="$REPO_DIR/scripts/$PROMPT_BASENAME"
   [[ -f "$PROMPT_FILE" ]] || fail "prompt template missing: $PROMPT_FILE"
 
   TMP_PROMPT="$LOG_DIR/prompt-${RUN_ID}.md"
@@ -134,9 +150,9 @@ if [[ "$DIRTY" == "true" ]]; then
     git add -A 2>&1 | tee -a "$RUN_LOG"
     git -c user.name="wiki-bot (local cron)" \
         -c user.email="wiki-bot@decideai.xyz" \
-        commit -m "Daily auto-update ${TODAY_UTC}
+        commit -m "${COMMIT_TITLE} ${TODAY_UTC}
 
-Automated daily research sweep via Claude Code (Max plan) + local launchd.
+Automated ${EDITION}-edition run via Claude Code (Max plan) + local launchd.
 Generated by scripts/daily_claude.sh.
 
 Co-Authored-By: Claude Code (local) <noreply@anthropic.com>" 2>&1 | tee -a "$RUN_LOG"
@@ -151,29 +167,29 @@ Co-Authored-By: Claude Code (local) <noreply@anthropic.com>" 2>&1 | tee -a "$RUN
   fi
 fi
 
-# ----- 5. Trigger AWS Lambda for email -----
+# ----- 5. Render + send the newsletter issue via SES -----
+TODAY_UTC="$(date -u +%Y-%m-%d)"
+ISSUE_FILE="$REPO_DIR/newsletter/issues/${TODAY_UTC}-${ISSUE_SLUG}.md"
+EMAILED="false"
 if [[ "$SKIP_EMAIL" == "true" ]]; then
   log "email skipped per --skip-email"
+elif [[ ! -f "$ISSUE_FILE" ]]; then
+  # The prompt skips writing an issue on market holidays; otherwise this is a failure.
+  log "WARNING: no issue file at $ISSUE_FILE — nothing to send (holiday, or Claude failed to write it)"
 elif [[ "$DRY_RUN" == "true" ]]; then
-  log "DRY-RUN: would invoke Lambda for email"
-elif [[ "$DIRTY" == "false" && "$EMAIL_ON_LOW_SIGNAL" != "true" ]]; then
-  log "no changes and EMAIL_ON_LOW_SIGNAL=false; skipping email"
+  log "DRY-RUN: would render + send $ISSUE_FILE"
+  "$PYTHON_BIN" "$REPO_DIR/scripts/render_newsletter.py" "$ISSUE_FILE" --dry-run 2>&1 | tee -a "$RUN_LOG"
 else
-  log "invoking Lambda for email"
-  if ! command -v aws >/dev/null 2>&1; then
-    fail "aws CLI not on PATH — install with: brew install awscli"
+  log "rendering + sending $ISSUE_FILE"
+  if "$PYTHON_BIN" "$REPO_DIR/scripts/render_newsletter.py" "$ISSUE_FILE" 2>&1 | tee -a "$RUN_LOG"; then
+    EMAILED="true"
+  else
+    log "ERROR: newsletter send failed — issue is on disk at $ISSUE_FILE; send manually with:"
+    log "    python3 scripts/render_newsletter.py $ISSUE_FILE"
+    exit 6
   fi
-  LAMBDA_OUT="$LOG_DIR/lambda-${RUN_ID}.json"
-  aws lambda invoke --region "$AWS_REGION" \
-    --function-name "$AWS_LAMBDA_NAME" \
-    --payload '{"skip_update":true,"send_email":true}' \
-    --cli-binary-format raw-in-base64-out \
-    "$LAMBDA_OUT" 2>&1 | tee -a "$RUN_LOG"
-  log "lambda response:"
-  cat "$LAMBDA_OUT" | tee -a "$RUN_LOG"
-  echo "" | tee -a "$RUN_LOG"
 fi
 
 log "=== daily_claude.sh completed ==="
-log "summary: dirty=$DIRTY pushed=$PUSHED"
+log "summary: edition=$EDITION dirty=$DIRTY pushed=$PUSHED emailed=$EMAILED"
 exit 0
