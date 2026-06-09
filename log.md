@@ -9,6 +9,17 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-09] note | First two-edition send: Before the Bell + After Hours issue #2
+
+Sent both editions to rgovindji@gmail.com as a live preview of the new pipeline (written interactively, not by the launchd jobs):
+
+- `newsletter/issues/2026-06-09-morning.md` — "The Market Wants to Believe the Iran Deal" (futures +0.4%, WTI −2.3% to ~$89 on ceasefire talk, Apple WWDC hangover, CPI-eve calendar)
+- `newsletter/issues/2026-06-09-afterhours.md` — issue #2, "The Selloff That Lost Its Nerve" (midday −1.46% Iran-helicopter lurch bought back to −0.26% close; Nasdaq −0.97% to 25,679; AAPL −3% day two post-WWDC; MRVL −7.6% round-trips inclusion pop; CPI preview: consensus 0.5% m/m / 4.2% y/y headline, 0.3% / 2.9% core)
+- **Portfolio correction (disclosed in issue #2):** seven cost bases in `newsletter/portfolio.json` were Day-One rounded placeholders; trued up to actual 2026-06-01 closes (TSM 435.63, AVGO 459.97, DELL 465.96, MAGS 69.86, VRT 323.39, ALAB 320.09, CRWV 124.82) and refreshed all 11 `current_price_usd` to today's 4:00 PM EDT closes. Portfolio value $96,438 (−3.56% since inception).
+- Note: the 17:00 launchd run today will regenerate/resend the afterhours issue unless skipped.
+
+---
+
 ## [2026-06-09] note | Two-edition newsletter pipeline: Before the Bell (06:45) + After Hours (17:00)
 
 Rebuilt the daily email system into two scheduled newsletter editions, replacing the Lambda email that forwarded raw log.md entries:

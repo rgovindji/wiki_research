@@ -9,7 +9,7 @@
       "company": "NVIDIA",
       "allocation_pct": 14,
       "avg_price_usd": 220.67,
-      "current_price_usd": 220.67,
+      "current_price_usd": 208.19,
       "shares": 63.44,
       "added_date": "2026-06-01",
       "thesis": "The most critical company in the AI build-out. Today's Computex reveal added two more revenue legs: PCs (RTX Spark) and humanoid robots (Isaac GR00T). Vera CPU now in full production."
@@ -19,7 +19,7 @@
       "company": "Alphabet",
       "allocation_pct": 11,
       "avg_price_usd": 380.34,
-      "current_price_usd": 380.34,
+      "current_price_usd": 364.26,
       "shares": 28.92,
       "added_date": "2026-06-01",
       "thesis": "Warren Buffett anchored an $80B equity raise at $351 with a $10B private placement. Quiet position-building since fall 2025. Cheapest mega-tech by P/E."
@@ -28,9 +28,9 @@
       "ticker": "TSM",
       "company": "Taiwan Semiconductor",
       "allocation_pct": 8,
-      "avg_price_usd": 250.00,
-      "current_price_usd": 250.00,
-      "shares": 32.00,
+      "avg_price_usd": 435.63,
+      "current_price_usd": 427.92,
+      "shares": 18.36,
       "added_date": "2026-06-01",
       "thesis": "Every advanced AI chip is built here. No second source. Today's NVIDIA keynote validated TSMC 3nm across three product families."
     },
@@ -39,7 +39,7 @@
       "company": "Micron Technology",
       "allocation_pct": 7,
       "avg_price_usd": 895.88,
-      "current_price_usd": 895.88,
+      "current_price_usd": 935.89,
       "shares": 7.81,
       "added_date": "2026-06-01",
       "thesis": "HBM memory shortage structural through 2028. UBS tripled their PT to $1,625 last week. AI servers can't ship without it."
@@ -48,9 +48,9 @@
       "ticker": "AVGO",
       "company": "Broadcom",
       "allocation_pct": 7,
-      "avg_price_usd": 180.00,
-      "current_price_usd": 180.00,
-      "shares": 38.89,
+      "avg_price_usd": 459.97,
+      "current_price_usd": 392.16,
+      "shares": 15.22,
       "added_date": "2026-06-01",
       "thesis": "Google's custom AI silicon partner. Captures the non-NVIDIA segment of the cycle. Multi-generation TPU contracts."
     },
@@ -58,9 +58,9 @@
       "ticker": "DELL",
       "company": "Dell Technologies",
       "allocation_pct": 6,
-      "avg_price_usd": 260.00,
-      "current_price_usd": 260.00,
-      "shares": 23.08,
+      "avg_price_usd": 465.96,
+      "current_price_usd": 381.78,
+      "shares": 12.88,
       "added_date": "2026-06-01",
       "thesis": "Last quarter: AI server revenue +757% YoY. $51B order backlog. +33% Friday alone. Now extending into AI PCs."
     },
@@ -68,9 +68,9 @@
       "ticker": "MAGS",
       "company": "Roundhill Mag 7 ETF",
       "allocation_pct": 6,
-      "avg_price_usd": 71.00,
-      "current_price_usd": 71.00,
-      "shares": 84.51,
+      "avg_price_usd": 69.86,
+      "current_price_usd": 65.66,
+      "shares": 85.89,
       "added_date": "2026-06-01",
       "thesis": "Balanced exposure to all seven mega-techs. Hedge against picking the wrong horse among the individual mega-tech picks."
     },
@@ -78,9 +78,9 @@
       "ticker": "VRT",
       "company": "Vertiv Holdings",
       "allocation_pct": 5,
-      "avg_price_usd": 120.00,
-      "current_price_usd": 120.00,
-      "shares": 41.67,
+      "avg_price_usd": 323.39,
+      "current_price_usd": 289.52,
+      "shares": 15.46,
       "added_date": "2026-06-01",
       "thesis": "Power and cooling for AI data centers. Every NVDA rack needs it; nobody else does it at scale."
     },
@@ -89,7 +89,7 @@
       "company": "Marvell Technology",
       "allocation_pct": 4,
       "avg_price_usd": 218.26,
-      "current_price_usd": 218.26,
+      "current_price_usd": 266.88,
       "shares": 18.33,
       "added_date": "2026-06-01",
       "thesis": "Raised full-year guidance by $5B in one quarter. Two AI roles in one company: custom silicon plus optical interconnect."
@@ -98,9 +98,9 @@
       "ticker": "ALAB",
       "company": "Astera Labs",
       "allocation_pct": 4,
-      "avg_price_usd": 140.00,
-      "current_price_usd": 140.00,
-      "shares": 28.57,
+      "avg_price_usd": 320.09,
+      "current_price_usd": 341.7,
+      "shares": 12.5,
       "added_date": "2026-06-01",
       "thesis": "The invisible chip connecting GPUs to everything else in an AI rack. 76% gross margins."
     },
@@ -108,21 +108,26 @@
       "ticker": "CRWV",
       "company": "CoreWeave",
       "allocation_pct": 3,
-      "avg_price_usd": 80.00,
-      "current_price_usd": 80.00,
-      "shares": 37.50,
+      "avg_price_usd": 124.82,
+      "current_price_usd": 98.45,
+      "shares": 24.03,
       "added_date": "2026-06-01",
-      "thesis": "AI cloud landlord. $99B in customer commitments. High debt — sizing reflects that."
+      "thesis": "AI cloud landlord. $99B in customer commitments. High debt \u2014 sizing reflects that."
     }
   ],
   "cash_pct": 25,
   "cash_usd": 25000,
-  "cash_rationale": "A 25% cash reserve is intentional. We're nine weekly closes into an S&P record streak (longest since 2023). Multiple late-cycle indicators are firing simultaneously. Cash is optionality — both a hedge if there's a pullback and dry powder to add on weakness.",
+  "cash_rationale": "A 25% cash reserve is intentional. We're nine weekly closes into an S&P record streak (longest since 2023). Multiple late-cycle indicators are firing simultaneously. Cash is optionality \u2014 both a hedge if there's a pullback and dry powder to add on weakness.",
   "history": [
     {
       "date": "2026-06-01",
       "action": "inception",
       "note": "Initial allocation. $100,000 notional. 11 individual positions + 1 ETF + 25% cash reserve."
+    },
+    {
+      "date": "2026-06-09",
+      "action": "correction",
+      "note": "Trued up seven cost bases (TSM, AVGO, DELL, MAGS, VRT, ALAB, CRWV) that were recorded as rounded placeholders at inception; now set to actual 2026-06-01 closing prices. Share counts recomputed. Disclosed in issue #2."
     }
   ]
 }
