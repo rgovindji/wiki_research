@@ -16,11 +16,26 @@ launchd  com.rgovindji.wiki-morning / com.rgovindji.wiki-daily
        ├─ claude -p with scripts/{morning_prompt,daily_prompt}.md  (Max plan — zero marginal cost)
        │    ├─ WebSearch / WebFetch
        │    ├─ (close only) source summaries → sources/, wiki page updates, index.md, log.md
+       │    ├─ (close only) market intelligence → newsletter/market_state/DATE.json
+       │    │     (gamma levels, VIX/flow, technicals, regime call, event calendar)
+       │    ├─ (close only) prediction accounting → newsletter/predictions.json + playbook.md
+       │    │     (resolve due calls, write WHY, distill lessons; Friday = weekly distillation)
        │    ├─ (close only) closing prices → newsletter/portfolio.json
        │    └─ writes newsletter/issues/DATE-{morning|afterhours}.md
        ├─ git commit + push
        └─ python3 scripts/render_newsletter.py <issue>   → SES email
+            (skipped if the issue file is unchanged from before the run — no duplicate sends)
 ```
+
+### The self-improvement loop
+
+Three files make the letters compound instead of drift:
+
+- **`newsletter/predictions.json`** — every falsifiable call a letter makes is logged (claim, confidence, horizon, explicit falsifier; max 3/issue). The evening run resolves due calls with a mechanism-level explanation and keeps a calibration tally.
+- **`newsletter/market_state/DATE.json`** — the daily dashboard (SPX/SPY gamma levels, VIX + term structure, put/call, unusual options flow, technicals, regime call, key levels, event calendar). Reasoning fuel only — the reader sees conclusions, never the dashboard.
+- **`newsletter/playbook.md`** — operating lessons distilled from resolutions, read by both prompts before writing. Hypotheses promote to Active after two confirmations; falsified lessons retire with evidence. Friday runs consolidate.
+
+Reader-facing effects: a Scorecard section when calls resolve (wrong calls get the autopsy), a plain-English "tomorrow's setup" with levels-and-why, and occasional clearly-fenced high-risk ideas — logged and scored like everything else, never added to the model portfolio.
 
 Voice rules for both letters live in `scripts/newsletter_style.md` (newsletter voice, no wiki references in the reader-facing copy, anti-AI-tell bans). `newsletter/issues/2026-06-01-inception.md` is the canonical voice example.
 
@@ -75,8 +90,8 @@ sudo pmset repeat cancel    # if you set the wake schedule
 **Evening run** (`scripts/daily_prompt.md`): the full wiki ritual plus the letter —
 
 - **Read**: CLAUDE.md, MEMORY.md, index.md, log.md, watchlist.md, newsletter style guide + recent issues
-- **Search/Fetch**: up to ~25 WebSearch / ~10 WebFetch calls
-- **Write**: source summaries, `## Recent developments` bullets on existing wiki pages, log.md entry, index.md, `newsletter/portfolio.json` closing prices, `newsletter/issues/DATE-afterhours.md`
+- **Search/Fetch**: up to ~32 WebSearch / ~10 WebFetch calls
+- **Write**: source summaries, `## Recent developments` bullets on existing wiki pages, log.md entry, index.md, `newsletter/portfolio.json` closing prices, `newsletter/market_state/DATE.json`, `newsletter/predictions.json`, `newsletter/playbook.md`, `newsletter/issues/DATE-afterhours.md`
 - **Not allowed**: stance flips (flag for sign-off), unilateral conviction changes on high-importance names, new top-level wiki pages, touching MEMORY.md / `.claude/`, changing portfolio holdings or cost bases, inventing prices, committing/pushing (wrapper does it)
 
 **Morning run** (`scripts/morning_prompt.md`): newsletter only —

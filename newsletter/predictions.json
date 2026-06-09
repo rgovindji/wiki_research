@@ -1,0 +1,91 @@
+{
+  "_doc": "Prediction ledger for the After Hours / Before the Bell letters. Every falsifiable call a letter makes gets one entry when made. Each close-of-market run MUST: (1) resolve any prediction whose horizon passed or whose falsifier/confirmer triggered, (2) write resolution_note explaining WHY it was right or wrong (mechanism, not just outcome), (3) distill a lesson into playbook.md when the resolution teaches something, (4) update the calibration tally. Verdicts: right | wrong | partial | timing (structurally right, timing off) | expired (unresolvable). Max 3 new predictions per issue; a call without a falsifier doesn't get logged, it gets rewritten until it has one.",
+  "calibration": {
+    "right": 0,
+    "partial": 0,
+    "timing": 0,
+    "wrong": 0,
+    "expired": 0,
+    "notes": "Seeded 2026-06-09; no resolutions yet."
+  },
+  "predictions": [
+    {
+      "id": "2026-06-01-supply-over-demand",
+      "made": "2026-06-01",
+      "issue": "2026-06-01-inception",
+      "type": "thesis",
+      "claim": "Supply-side AI (NVDA, AVGO, MRVL, TSM, MU, VRT, DELL equal-weight) outperforms demand-side platforms (GOOGL, META, AAPL, MSFT equal-weight) from 2026-06-01 baseline.",
+      "confidence": "high",
+      "horizon": "2026-09-01",
+      "falsifier": "Demand-side basket leads by >5pts at quarterly review, or two consecutive supply-side bellwether guides cut (AVGO June 3 was strike one).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-01-googl-buffett-floor",
+      "made": "2026-06-01",
+      "issue": "2026-06-01-inception",
+      "type": "single-name",
+      "claim": "GOOGL is a buy at $380.34; Berkshire's $350 entry acts as an effective floor and the raise overhang clears.",
+      "confidence": "medium",
+      "horizon": "2026-09-01",
+      "falsifier": "Sustained closes below $350 (the market rejecting Buffett's price) or underwriters pricing the public tranche materially below $350.",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-01-cash-gets-its-dip",
+      "made": "2026-06-01",
+      "issue": "2026-06-01-inception",
+      "type": "market-direction",
+      "claim": "The market gives us at least one 5-10% S&P pullback within a year of inception; 25% cash reserve gets deployed into it.",
+      "confidence": "high",
+      "horizon": "2027-06-01",
+      "falsifier": "S&P melts up for 12 months with no 5% drawdown; cash drag was pure cost.",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-09-cpi-core-asymmetry",
+      "made": "2026-06-09",
+      "issue": "2026-06-09-afterhours",
+      "type": "macro",
+      "claim": "Market looks through a hot headline May CPI (~4.2% y/y, energy-driven) IF core prints 0.3% m/m or below; equities end CPI day flat-to-up. A core print above 0.3% breaks the tape (>1% down day) by putting a June 17 hike in play.",
+      "confidence": "medium",
+      "horizon": "2026-06-10",
+      "falsifier": "Core <=0.3% and S&P still falls >1.5% (resilience thesis wrong), or core >0.3% and market rallies anyway (hike fear overstated).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-09-oil-is-the-tell",
+      "made": "2026-06-09",
+      "issue": "2026-06-09-afterhours",
+      "type": "market-direction",
+      "claim": "The market is trading the Iran deal, not the strikes: WTI stays below $95 and equities keep absorbing Iran headlines (no >2% down day attributable to Iran) unless the Strait of Hormuz actually closes.",
+      "confidence": "medium",
+      "horizon": "2026-06-16",
+      "falsifier": "WTI closes above $95 without Hormuz closure, or an Iran headline alone produces a >2% S&P down day that doesn't recover within two sessions.",
+      "status": "open",
+      "resolution_note": null,
+      "resolved": null
+    },
+    {
+      "id": "2026-06-09-mrvl-inclusion-bid",
+      "made": "2026-06-09",
+      "issue": "2026-06-09-afterhours",
+      "type": "single-name",
+      "claim": "The mechanical index-fund bid into June 22 S&P inclusion limits MRVL downside: stock holds above $250 through inclusion despite giving back 7.6% today.",
+      "confidence": "low",
+      "horizon": "2026-06-22",
+      "falsifier": "MRVL closes below $250 before June 22 (inclusion bids don't defend prices in a tape this twitchy).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "_doc": "Daily market-state snapshot. Written by the close-of-market run, read by the next morning run (and the next close run for day-over-day deltas). This is reasoning fuel — the reader never sees this file, only the conclusions drawn from it. Fields left null were not collected; collect them next run rather than guessing. Add fields freely as new data sources prove useful; note new sources in playbook.md.",
+  "date": "2026-06-09",
+  "as_of": "2026-06-09T16:00:00-04:00",
+  "indexes": {
+    "spx": {"close": 7386.65, "chg_pct": -0.26, "intraday_low_pct": -1.46},
+    "nasdaq_composite": {"close": 25678.82, "chg_pct": -0.97, "intraday_low_pct": -2.52},
+    "dow": {"close": null, "chg_pct": null, "note": "outperformed; close not confirmed"}
+  },
+  "regime": {
+    "call": "bull-under-stress",
+    "options": ["bull", "bull-under-stress", "sideways", "bear-rally", "bear"],
+    "rationale": "Uptrend intact (~2.5% off record highs set during a nine-week streak) but late-cycle warnings active: June 5 jobs-shock was worst S&P day of year, AVGO guidance disappointment, concentration extreme, rate-HIKE chatter returning, war headlines being absorbed but not yet tested by a hot core CPI. Dip-buyers showed up twice in three sessions (June 8, June 9 afternoon).",
+    "what_changes_it": "Core CPI >0.3% m/m on June 10 (-> sideways or worse). S&P reclaiming ~7500 on a cool core print (-> bull). Hormuz closure (-> bear-rally risk)."
+  },
+  "key_levels": {
+    "spx_support": [7297, 7150],
+    "spx_resistance": [7405, 7500],
+    "notes": "7297 = June 9 midday flush low that buyers defended; 7405 = June 8 close. Record high ~7575. Levels from price action, not gamma — gamma levels not yet collected.",
+    "gamma": {
+      "zero_gamma_flip": null,
+      "call_wall": null,
+      "put_wall": null,
+      "net_gex": null,
+      "source": null,
+      "note": "COLLECT NEXT RUN: search SpotGamma / Menthor Q / OptionCharts / volland commentary for SPX zero-gamma flip level, call wall, put wall. Below zero-gamma = dealers short gamma = moves amplify; above = moves dampen. Changes how to read any selloff."
+    }
+  },
+  "rates_commodities": {
+    "ust10y_pct": 4.54,
+    "wti_usd": 89.2,
+    "brent_usd": 92.5,
+    "gold": null,
+    "note": "10Y from early-session read; oil eased on ceasefire optimism and HELD below $90 through the helicopter headline — that divergence is the de-escalation tell."
+  },
+  "volatility_flow": {
+    "vix": null,
+    "vix_term_structure": null,
+    "put_call_ratio": null,
+    "notable_options_flow": null,
+    "note": "COLLECT NEXT RUN: VIX level + whether front-month is above/below 30-day (inverted term structure = acute fear). Unusual options activity / large prints in SPY, QQQ, portfolio names — search 'unusual options activity' + ticker; treat as weak evidence unless corroborated."
+  },
+  "technicals": {
+    "spx_vs_50dma": null,
+    "spx_vs_200dma": null,
+    "breadth_note": "Tech and energy were the only red sectors today — narrow damage, not broad distribution.",
+    "note": "COLLECT NEXT RUN: SPX vs 50/200-DMA, % of S&P above 50-DMA if findable, new highs vs new lows."
+  },
+  "calendar": [
+    {"date": "2026-06-10", "event": "May CPI, 8:30 ET", "why": "Consensus 0.5% m/m / 4.2% y/y headline, 0.3% / 2.9% core. The binary. Watch core."},
+    {"date": "2026-06-17", "event": "FOMC decision", "why": "Hike risk is live again; CPI decides the conversation."},
+    {"date": "2026-06-19", "event": "Triple-witching OpEx", "why": "Quarterly options/futures expiry — gamma pin effects into it, unclenching after. Largest OpEx of the quarter."},
+    {"date": "2026-06-22", "event": "MRVL + FLEX join S&P 500", "why": "Mechanical index-fund bid; MRVL prediction resolves."},
+    {"date": "2026-06-26", "event": "May PCE (approx)", "why": "Fed's preferred gauge; confirm date."}
+  ],
+  "open_questions": [
+    "Is the afternoon dip-buying systematic (vol-control / CTA re-leveraging) or discretionary? Gamma + flow data would answer this.",
+    "Where is the zero-gamma flip — are we trading above or below it?",
+    "Did today's MRVL -7.6% come with unusual put volume, or was it just inclusion-pop profit taking?"
+  ]
+}

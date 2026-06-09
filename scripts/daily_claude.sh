@@ -99,6 +99,13 @@ git pull --rebase --quiet origin main 2>&1 | tee -a "$RUN_LOG" || {
 BEFORE_SHA=$(git rev-parse HEAD)
 log "starting at sha: $BEFORE_SHA"
 
+# Snapshot the issue file's hash before Claude runs so we only email content
+# produced (or changed) by THIS run — never resend an identical letter.
+TODAY_UTC="$(date -u +%Y-%m-%d)"
+ISSUE_FILE="$REPO_DIR/newsletter/issues/${TODAY_UTC}-${ISSUE_SLUG}.md"
+issue_hash() { [[ -f "$ISSUE_FILE" ]] && shasum -a 256 "$ISSUE_FILE" | cut -d' ' -f1 || echo "absent"; }
+ISSUE_HASH_BEFORE="$(issue_hash)"
+
 # ----- 2. Run Claude Code (unless skipped) -----
 if [[ "$SKIP_CLAUDE" == "false" ]]; then
   TODAY_UTC="$(date -u +%Y-%m-%d)"
@@ -168,14 +175,14 @@ Co-Authored-By: Claude Code (local) <noreply@anthropic.com>" 2>&1 | tee -a "$RUN
 fi
 
 # ----- 5. Render + send the newsletter issue via SES -----
-TODAY_UTC="$(date -u +%Y-%m-%d)"
-ISSUE_FILE="$REPO_DIR/newsletter/issues/${TODAY_UTC}-${ISSUE_SLUG}.md"
 EMAILED="false"
 if [[ "$SKIP_EMAIL" == "true" ]]; then
   log "email skipped per --skip-email"
 elif [[ ! -f "$ISSUE_FILE" ]]; then
   # The prompt skips writing an issue on market holidays; otherwise this is a failure.
   log "WARNING: no issue file at $ISSUE_FILE — nothing to send (holiday, or Claude failed to write it)"
+elif [[ "$SKIP_CLAUDE" == "false" && "$(issue_hash)" == "$ISSUE_HASH_BEFORE" ]]; then
+  log "issue file unchanged by this run — already sent previously; skipping email to avoid a duplicate"
 elif [[ "$DRY_RUN" == "true" ]]; then
   log "DRY-RUN: would render + send $ISSUE_FILE"
   "$PYTHON_BIN" "$REPO_DIR/scripts/render_newsletter.py" "$ISSUE_FILE" --dry-run 2>&1 | tee -a "$RUN_LOG"

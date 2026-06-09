@@ -9,6 +9,20 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-09] note | Self-improving newsletter loop: prediction ledger + market state + playbook
+
+Built the auto-improvement loop for the two daily letters:
+
+- **`newsletter/predictions.json`** — falsifiable-call ledger, seeded with 6 calls from issues #1-2 (supply-over-demand thesis, GOOGL Buffett floor, cash-gets-its-dip, CPI core asymmetry, oil-is-the-tell, MRVL inclusion bid). Evening run resolves due calls with mechanism-level notes + calibration tally; max 3 new calls/issue; no falsifier = no call.
+- **`newsletter/market_state/`** — daily reasoning dashboard (gamma flip/walls, VIX + term structure, put/call, options flow, technicals, regime call, key levels, calendar). Seeded with today's snapshot (regime: bull-under-stress; null fields marked COLLECT NEXT RUN). Reader never sees raw data.
+- **`newsletter/playbook.md`** — operating lessons from resolutions; seeded with 4 active lessons (guidance>beats, one-bounce-resolves-nothing, POET rug signature, no-falsifier-no-call) + 3 hypotheses under test. Friday runs distill; falsified lessons retire with evidence.
+- **Prompts updated**: close run = wiki → intelligence sweep → prediction accounting → letter (new Scorecard + Tomorrow's Setup + optional fenced high-risk idea sections). Morning run consumes the dashboard ("On the line today" + "Game plan" sections). Style guide: scorecard voice, levels-in-English, high-risk framing.
+- **Wrapper**: skips the email when the issue file is unchanged by the run (no duplicate sends); prompt handles the already-sent-today case.
+
+Tonight's 17:00 run is the first live test of the full loop. CPI tomorrow resolves `2026-06-09-cpi-core-asymmetry` — first scorecard entry due in tomorrow's letters.
+
+---
+
 ## [2026-06-09] note | First two-edition send: Before the Bell + After Hours issue #2
 
 Sent both editions to rgovindji@gmail.com as a live preview of the new pipeline (written interactively, not by the launchd jobs):

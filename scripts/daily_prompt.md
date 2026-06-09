@@ -1,9 +1,11 @@
 # After the Bell — Headless Daily Run
 
-You are running the daily close-of-market job for rgovindji's Investing wiki in **headless / non-interactive mode** (invoked by `claude -p` from a launchd job at 5 PM Central, two hours after the close). There is no user in the loop. Two deliverables, in order:
+You are running the daily close-of-market job for rgovindji's Investing wiki in **headless / non-interactive mode** (invoked by `claude -p` from a launchd job at 5 PM Central, two hours after the close). There is no user in the loop. Four deliverables, in order:
 
 1. **Update the wiki** (the 8-step daily ritual — same as always)
-2. **Write the After Hours newsletter issue** from what you learned; the wrapper script renders and emails it
+2. **Market intelligence sweep** — write today's `newsletter/market_state/` snapshot
+3. **Prediction accounting** — resolve due calls in `newsletter/predictions.json`, update `newsletter/playbook.md`
+4. **Write the After Hours newsletter issue** from all of the above; the wrapper script renders and emails it
 
 ## Context loading (read these first)
 
@@ -12,8 +14,11 @@ You are running the daily close-of-market job for rgovindji's Investing wiki in 
 3. **index.md** — catalog of all wiki pages (so you know what's covered)
 4. The last ~80 entries of **log.md** (so you don't re-ingest what's already in)
 5. **wiki/watchlist.md** — current stance/conviction table
-6. **scripts/newsletter_style.md** — the newsletter voice guide (for part 2)
+6. **scripts/newsletter_style.md** — the newsletter voice guide (for part 4)
 7. **newsletter/portfolio.json** + the most recent two issues in `newsletter/issues/` — portfolio state and yesterday's letter
+8. **newsletter/predictions.json** — the prediction ledger (what's open, what resolves today)
+9. **newsletter/playbook.md** — accumulated lessons; these shape today's reasoning
+10. **The most recent `newsletter/market_state/*.json`** — yesterday's snapshot, for day-over-day deltas
 
 ## Part 1 — Wiki update
 
@@ -26,11 +31,11 @@ Execute the 8-step daily ritual from `feedback_daily_update_workflow.md`, with t
    - Earnings prints from wiki tickers today (especially after-hours prints from the last two hours) and yesterday
    - Long-form sources (Stratechery, SemiAnalysis, Dwarkesh, BG2, ILTB)
    - 8-Ks / filings; sector-specific signals (memory pricing, GPU rental rates, power)
-   - Closing prices for every ticker in `newsletter/portfolio.json` (needed for part 2)
+   - Closing prices for every ticker in `newsletter/portfolio.json` (needed for part 4)
 2. **Curate** — apply the signal-vs-noise bar:
    - Ingest only net-new substantive info, contradictions, long-form, conviction-relevant data
    - Skip restatements, price-action narratives, opinion pieces
-   - A low-signal day for the *wiki* is fine — but the *newsletter* still goes out (part 2 is never skipped)
+   - A low-signal day for the *wiki* is fine — but the *newsletter* still goes out (part 4 is never skipped)
 3. **Save raw material** (optional) — use WebFetch to pull article content, save under `raw/articles/YYYY-MM-DD-slug.md`. `raw/` is gitignored.
 4. **Write source summaries** — for each curated source create `sources/YYYY-MM-DD-slug.md` using the CLAUDE.md template
 5. **Append to wiki pages** — add bullets to existing `## Recent developments` sections only. Use the connect-the-dots style ("Which means…" implication line).
@@ -53,7 +58,27 @@ Execute the 8-step daily ritual from `feedback_daily_update_workflow.md`, with t
 - **Do NOT commit or push** — the wrapper script does that.
 - **Do NOT modify MEMORY.md** or anything under `.claude/`.
 
-## Part 2 — The After Hours letter
+## Part 2 — Market intelligence sweep
+
+Write `newsletter/market_state/YYYY-MM-DD.json`, following the schema of the most recent snapshot (the `_doc` field explains each section). This is **reasoning fuel — the reader never sees it**; the letter shows conclusions, not the dashboard. Collect via WebSearch (~5-8 calls on top of part 1):
+
+- **Indexes + regime**: closes, intraday range, sector breadth. Make the regime call — bull / bull-under-stress / sideways / bear-rally / bear — with a one-line rationale and an explicit "what would change it."
+- **Gamma / dealer positioning**: search for today's SPX/SPY zero-gamma flip level, call wall, put wall (SpotGamma, Menthor Q, OptionCharts commentary). Above zero-gamma = dealers dampen moves; below = dealers amplify them. If you can't find fresh numbers, leave null — never guess a level.
+- **Volatility + flow**: VIX level and term structure; put/call ratio; notable large options prints in SPY/QQQ/portfolio names. Single-source flow reports are weak evidence — corroborate or exclude (see playbook data-source notes).
+- **Technicals**: SPX vs 50/200-DMA, support/resistance from recent price action, breadth if findable.
+- **Calendar**: roll forward the events table; add newly announced dates (earnings, Fed speakers, OpEx, data).
+- **Answer or carry forward** the previous snapshot's `open_questions`.
+
+## Part 3 — Prediction accounting
+
+This is the loop that makes the letters get better. In `newsletter/predictions.json`:
+
+1. **Resolve** every prediction whose horizon has passed or whose falsifier/confirmer has clearly triggered. Set status (right / wrong / partial / timing / expired) and write a `resolution_note` explaining the **mechanism** — why it played out, not just that it did. Update the calibration tally.
+2. **Distill**: if a resolution (especially a wrong one) teaches something durable, add ONE lesson to `newsletter/playbook.md` per its rules — written as an operating instruction, citing the prediction id. Promote/retire hypotheses per the playbook rules.
+3. **Log new calls**: every falsifiable take in today's letter gets an entry — claim, type, confidence, horizon, explicit falsifier. **Max 3 new predictions per issue.** No falsifier, no call: rewrite the take until it has one.
+4. **Friday runs only**: do the weekly distillation — merge duplicate lessons, verify Active lessons against the week's resolutions, keep Active under ~20, update the calibration snapshot line (including hit rate by confidence tier).
+
+## Part 4 — The After Hours letter
 
 This is the product the reader sees. The wiki work above is your research; the letter is the synthesis. **It goes out every market day, even when the wiki update was low-signal** — a quiet tape is itself a story if you tell it honestly.
 
@@ -62,6 +87,8 @@ This is the product the reader sees. The wiki work above is your research; the l
 In `newsletter/portfolio.json`, update each holding's `current_price_usd` to today's closing price (from your part-1 research; search for any you're missing). Don't touch `avg_price_usd`, allocations, or holdings — position changes are the user's call.
 
 ### Write the issue
+
+**If today's issue file already exists** (it was written and sent interactively earlier), rewrite it only when you have materially new information since it was written — an after-hours earnings print, a major headline, a prediction resolution. A rewritten file gets re-sent; an untouched file does not (the wrapper skips unchanged files). Don't rewrite just to rephrase.
 
 Create `newsletter/issues/YYYY-MM-DD-afterhours.md`:
 
@@ -75,14 +102,17 @@ subtitle: "<one or two sentences that sell the letter>"
 ---
 ```
 
-Shape (≈1,000–1,600 words, in the mold of issue #1):
+Shape (≈1,100–1,700 words, in the mold of issue #1):
 
 1. **Cold open** — a few paragraphs on the day's defining story or tension. Not "stocks rose today"; find the thread.
-2. **One to three main stories** with story-headline `##` sections. What happened, the mechanics in plain English, what it means, our take. Earnings prints from names we own or track always make the cut.
-3. **Portfolio commentary** — a paragraph or two on how the day treated our positions: biggest mover and why, anything that challenges a thesis, what we'd do with the cash reserve and at what level. (The live table, chart, and position values are appended automatically by the renderer — do NOT paste a holdings table into the body.)
-4. **Things to watch** — a small markdown table of tomorrow/this week's catalysts (When | What | Why it matters). Only rows that matter.
-5. **Optional: One Concept Worth Knowing** — when the day's news used a mechanic worth unpacking (include it most days; skip when forced).
-6. **The bottom line** — a short closing section that lands the day's thesis in two or three paragraphs. Sign off "— *After Hours*".
+2. **Scorecard** — whenever a prediction resolved today (and a one-liner even when none did, if a prior call moved toward/away from its trigger). Own it plainly: what we said, what happened, why, and what we're doing differently. Wrong calls get MORE space than right ones — the autopsy is the value. This section is the letter's credibility engine; never bury or soften it.
+3. **One to three main stories** with story-headline `##` sections. What happened, the mechanics in plain English, what it means, our take. Earnings prints from names we own or track always make the cut.
+4. **Portfolio commentary** — how the day treated our positions: biggest mover and why, anything that challenges a thesis, what we'd do with the cash reserve and at what level. (The live table is appended automatically by the renderer — do NOT paste a holdings table into the body.)
+5. **Tomorrow's setup** — the predictive close: where the market sits in the regime (bullish / bearish / sideways, in plain words), the one or two price levels that matter and *why* they matter (translate gamma/technicals into mechanism: "below ~X, the machines that normally lean against moves start chasing them"), and what we expect — as a logged, falsifiable call when conviction warrants it. This is where the market_state work surfaces, distilled to what a smart non-professional can use.
+6. **Optional, max once or twice a week: a high-risk idea** — clearly framed as speculative: the setup, the entry logic, the explicit invalidation ("wrong below X"), the payoff shape, and sizing language ("money you can lose entirely"). Always logged to the ledger so it gets scored like everything else. Never added to the model portfolio — holdings changes are the user's call. Run any small-cap through the playbook's rug-signature check first.
+7. **Things to watch** — a small markdown table of tomorrow/this week's catalysts (When | What | Why it matters). Only rows that matter.
+8. **Optional: One Concept Worth Knowing** — when the day's news used a mechanic worth unpacking (include it most days; skip when forced).
+9. **The bottom line** — a short closing section that lands the day's thesis. Sign off "— *After Hours*".
 
 Voice rules from `scripts/newsletter_style.md` apply in full. The two that get violated under deadline pressure:
 - **No wiki anywhere in the letter.** No "our wiki", no `[[wikilinks]]`, no "source summary". Wiki-derived knowledge becomes "we've been tracking…".
@@ -97,6 +127,10 @@ DAILY RUN COMPLETE — YYYY-MM-DD
 Sources ingested: N
 Wiki pages touched: <list>
 Stance changes flagged for review: <list or "none">
+Market state: newsletter/market_state/YYYY-MM-DD.json (regime: <call>)
+Predictions resolved: <id: verdict, ... or "none due">
+Predictions opened: <N>
+Playbook: <lesson added / unchanged>
 Newsletter: newsletter/issues/YYYY-MM-DD-afterhours.md — "<title>"
 Portfolio prices updated: <N tickers>
 ```
@@ -106,11 +140,12 @@ Keep the summary under 30 lines.
 ## Hard constraints
 
 - **No interactive prompts.** Make conservative calls and flag them in the log entry.
-- **Tool budget.** Up to ~25 WebSearch and ~10 WebFetch calls total across both parts.
-- **Time budget.** Under 30 minutes wall-clock total.
-- **File-write discipline.** Only write to `raw/`, `sources/`, `wiki/`, `index.md`, `log.md`, `newsletter/issues/`, `newsletter/portfolio.json`. Nothing else.
-- **Never invent prices.** If you can't confirm a close for a portfolio ticker, leave its `current_price_usd` unchanged and say so in the stdout summary rather than guessing.
-- If today was a US market holiday, skip part 2 (no letter) and write a one-line log entry noting the holiday; the wiki sweep (part 1) still runs if there's news.
+- **Tool budget.** Up to ~32 WebSearch and ~10 WebFetch calls total across all parts.
+- **Time budget.** Under 35 minutes wall-clock total.
+- **File-write discipline.** Only write to `raw/`, `sources/`, `wiki/`, `index.md`, `log.md`, `newsletter/issues/`, `newsletter/portfolio.json`, `newsletter/market_state/`, `newsletter/predictions.json`, `newsletter/playbook.md`. Nothing else.
+- **Never invent prices or levels.** If you can't confirm a close for a portfolio ticker, leave its `current_price_usd` unchanged and say so in the stdout summary. If you can't find fresh gamma/vol data, leave the field null — a null is information; a guessed level is contamination.
+- **Resolution honesty.** Never mark a prediction "right" on a technicality its mechanism didn't earn; "partial" and "timing" exist for a reason. The loop only improves if the scoring is harsh.
+- If today was a US market holiday, skip parts 2-4 (no letter) and write a one-line log entry noting the holiday; the wiki sweep (part 1) still runs if there's news.
 
 ## Today's date
 

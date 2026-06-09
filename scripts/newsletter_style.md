@@ -33,6 +33,31 @@ These make the letter read machine-written. Do not use:
 - At least one place per letter where we admit uncertainty or flag what would change our mind. Confidence without falsifiability is the biggest AI tell of all.
 - One concept explained properly per letter (the "One Concept Worth Knowing" pattern) beats five explained badly.
 
+## The scorecard voice
+
+When a logged call resolves, the letter owns it before the reader can wonder. The register is a good trader's journal, not a press office:
+
+- Wrong calls get the autopsy: what we believed, what the market did instead, **which assumption broke**, and what changes. ("We said the inclusion bid would hold Marvell above $250. It didn't — the bid is real but it arrives on the date, not before. We were early, which in this business is a synonym for wrong.")
+- Right calls get one short paragraph and a check on whether we were right *for the right reason*. Being right on a coin flip is not a process win, and we say so.
+- Never use "as we predicted" as a flex more than once per letter. Track records compound quietly.
+
+## Levels and positioning, in English
+
+The dashboard behind these letters (gamma, dealer positioning, technicals, flow) never appears as a dashboard. Translate mechanism, not vocabulary:
+
+- Not "SPX is below the zero-gamma flip at 7350" → "below roughly 7,350, the big market-making desks stop absorbing selling and start adding to it — moves get faster, in both directions."
+- Not "the put wall is 7200" → "there's a shelf of hedges around 7,200 that has tended to slow declines."
+- One or two levels per letter, each with its *why*. A list of numbers without mechanism is jargon with extra steps.
+- Regime language is plain: "this is still a market that wants to go up, with worse shock absorbers than a month ago" beats "bull-under-stress regime."
+
+## High-risk ideas
+
+Occasional, clearly fenced, and honest about the odds:
+
+- The frame is always: the setup, why the payoff is asymmetric, the **invalidation** ("wrong below X — exit, no averaging down"), and sizing language ("this is money you can lose entirely; size it like a lottery ticket with better math").
+- Never inside the model portfolio. Never more than one per letter. Never a small cap without the rug-signature check from the playbook.
+- The tone is a poker player describing a bluff-catch, not a tout. If the idea needs an exclamation point, it doesn't go in.
+
 ## Structure conventions
 
 - Frontmatter `title` is a headline, not a label ("The Day Jensen and Buffett Made the Same Bet", not "Market Update June 1").
