@@ -9,6 +9,17 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-09] daily | Iran whipsaw bought back; US strikes after the close; AAPL WWDC day 2
+
+First headless 17:00 run with the full loop. One source ingested: [[2026-06-09-iran-whipsaw-aapl-wwdc]] — the June 9 session (S&P −0.26% to 7,386.65 after a −1.46% Iran-headline flush was bought back; Dow green at 50,872.11; WTI −2.3% to $89.22 *through* the war headline), the **~5 PM EDT after-close CENTCOM retaliatory strikes on Iran** (material new event post-close), [[AAPL]]'s second straight post-WWDC down day (ATH $317 June 8 → −3%+ on Siri AI no-ship-date / no-monetization — bear-thesis third leg), and [[MRVL]]'s one-day round-trip of the inclusion pop (−7.6% to $266.88).
+
+- Wiki touched: [[overview]] (new June 9 lead section), [[AAPL]] (Recent developments + sources 1→2), [[MRVL]] (Recent developments), [[index]], log
+- Stance/conviction changes: **none**
+- Newsletter: rewrote `newsletter/issues/2026-06-09-afterhours.md` (the interactively-sent version predated the strikes; rewrite adds the strikes + a Tomorrow's Setup section — will re-send). Market-state snapshot updated (Dow close, 50/200-DMA, after-hours strikes event). One new prediction logged (CPI-day gamma-flip reclaim); none resolved (CPI call resolves tomorrow).
+- Skipped (low-value): SJM/CASY/SAIL earnings (not wiki tickers); Micron board appointment (routine governance); NVIDIA-TSMC "AI in fabs" PR (incremental, already-known relationship); Stratechery "Google's Equity Offering" June 2 (raise already ingested at tier-1 depth June 1).
+
+---
+
 ## [2026-06-09] note | Self-improving newsletter loop: prediction ledger + market state + playbook
 
 Built the auto-improvement loop for the two daily letters:

@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-08
+last_updated: 2026-06-09
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,14 @@ sources: 0
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 9, 2026 — Iran whipsaw bought back to flat; US retaliatory strikes AFTER the close; CPI tomorrow is the binary
+
+Per [[2026-06-09-iran-whipsaw-aapl-wwdc]]: a two-act day. **Act one (the session):** news that an Iranian Shahed drone downed a US Apache off Oman Monday (crew rescued, unhurt) plus Trump's "must respond" flushed the S&P −1.46% intraday to ~7,297; buyers walked it back to **S&P −0.26% (7,386.65) · Nasdaq −0.97% (25,678.82) · Dow +0.17% (50,872.11)**. Tech and energy were the only red sectors. Critically, **WTI fell 2.3% to $89.22** *through* the war headline — the market kept trading the deal ("two or three days" away per Trump), not the strikes. **Act two (~5 PM EDT, after the close): CENTCOM launched "proportional" retaliatory strikes on Iran.** Overnight crude is the arbiter of whether the session's resilience read survives.
+
+**[[AAPL]] −3%+, second straight post-WWDC down day** — ATH $317 intraday during the June 8 keynote, then a two-day reversal on Siri AI shipping beta-only with **no user ship date and no monetization framing** (see AAPL page; bear thesis gains a third leg). **[[MRVL]] −7.6% to $266.88**, round-tripping Monday's inclusion pop in one session — the "lagging confirmation, not a bull leg" framing validated immediately.
+
+> **What this means:** The tape passed a war-headline stress test it had never been given before (a −1.46% lurch fully absorbed the day before a hot CPI) — but the test was graded *before* the US actually fired back. Tomorrow stacks three binaries inside 24 hours: overnight crude's verdict on the strikes, **May CPI at 8:30 ET (consensus 0.5%/4.2% headline, 0.3%/2.9% core — core is the entire game per [[2026-06-10-cpi-binary]])**, and **[[ORCL]] Q4 after the close**. A tame core + oil under $95 likely resumes the uptrend; a hot core puts a June 17 *hike* in the conversation with the index at a record multiple. **No stance/conviction changes** on the day.
 
 ## June 8, 2026 — Partial rebound off the Friday rout; Marvell + Flex added to the S&P 500
 

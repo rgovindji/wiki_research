@@ -5,8 +5,11 @@
   "indexes": {
     "spx": {"close": 7386.65, "chg_pct": -0.26, "intraday_low_pct": -1.46},
     "nasdaq_composite": {"close": 25678.82, "chg_pct": -0.97, "intraday_low_pct": -2.52},
-    "dow": {"close": null, "chg_pct": null, "note": "outperformed; close not confirmed"}
+    "dow": {"close": 50872.11, "chg_pct": 0.17, "note": "confirmed by 17:00 run (TheStreet/Yahoo close recaps)"}
   },
+  "after_hours_events": [
+    {"time": "2026-06-09T17:00:00-04:00", "event": "CENTCOM launched retaliatory strikes on Iran ('self-defense strikes... proportional response' to Monday's Apache downing off Oman). Trump simultaneously still says deal is 'two or three days' away, Hormuz reopens 'immediately upon signing'. Ceasefire nominally intact but fraying.", "read": "First real kinetic test of the oil-is-the-tell hypothesis (prediction 2026-06-09-oil-is-the-tell). Overnight WTI vs $95 is the arbiter; no settled futures/crude reaction observable at write time (~18:00 ET) — do NOT assume direction. Morning run: collect overnight crude + futures FIRST."}
+  ],
   "regime": {
     "call": "bull-under-stress",
     "options": ["bull", "bull-under-stress", "sideways", "bear-rally", "bear"],
@@ -43,10 +46,10 @@
     "note": "Flow data not reliably sourceable same-day from free aggregators (paywalled) — see playbook data-source notes. Leave null rather than guess."
   },
   "technicals": {
-    "spx_vs_50dma": null,
-    "spx_vs_200dma": null,
+    "spx_vs_50dma": "+3.0% (50-DMA ~7174.5 as of June 8; SPX 7386.65)",
+    "spx_vs_200dma": "+7.6% (200-DMA ~6863.3 as of June 8)",
     "breadth_note": "Tech and energy were the only red sectors today — narrow damage, not broad distribution.",
-    "note": "COLLECT NEXT RUN: SPX vs 50/200-DMA, % of S&P above 50-DMA if findable, new highs vs new lows."
+    "note": "DMAs from Investing.com/Barchart technical pages as of June 8 close; they move slowly so usable for June 9. Uptrend intact above both. The 50-DMA (~7175) sits just below the 7150 support shelf — confluence. COLLECT WHEN FINDABLE: % of S&P above 50-DMA, new highs vs lows."
   },
   "calendar": [
     {"date": "2026-06-10", "event": "May CPI, 8:30 ET", "why": "Consensus 0.5% m/m / 4.2% y/y headline, 0.3% / 2.9% core. The binary. Watch core."},
@@ -58,6 +61,8 @@
   "open_questions": [
     "ANSWERED 2026-06-09: we're trading BELOW the zero-gamma flip (7386 vs 7440) — short-gamma regime, moves amplify both ways. The afternoon dip-buy found support almost exactly at the 7300 put wall, suggesting mechanical hedging flows, not just discretionary buyers.",
     "Does SPX reclaim 7440 (gamma flip) on a tame core CPI? That's the line between a twitchy tape and a pinned one into June 19 triple-witching.",
-    "Did today's MRVL -7.6% come with unusual put volume, or was it just inclusion-pop profit taking? (Flow data unavailable free — drop unless it makes news.)"
+    "Did today's MRVL -7.6% come with unusual put volume, or was it just inclusion-pop profit taking? (Flow data unavailable free — drop unless it makes news.)",
+    "NEW (17:00 run): Does overnight crude confirm the de-escalation read after the 5 PM EDT US strikes? WTI under $95 = oil-is-the-tell intact and CPI stays the binary; a gap toward $95+ = the session's resilience was conditioned on a deal that's slipping.",
+    "NEW (17:00 run): VIX close for June 9 never surfaced in free sources (last read 20.45 at 11:31 ET); morning run should backfill it."
   ]
 }
