@@ -136,6 +136,16 @@ if [[ "$SKIP_CLAUDE" == "false" ]]; then
   log "claude completed"
 fi
 
+# ----- 2b. Validate the loop data files Claude just touched -----
+if [[ -f "$REPO_DIR/scripts/validate_loop.py" ]]; then
+  if "$PYTHON_BIN" "$REPO_DIR/scripts/validate_loop.py" 2>&1 | tee -a "$RUN_LOG"; then
+    log "loop validation passed"
+  else
+    # Non-fatal: still commit + send so the day isn't lost, but make it loud.
+    log "WARNING: loop validation FAILED — predictions/market_state/playbook need manual review (see errors above)"
+  fi
+fi
+
 # ----- 3. Detect changes -----
 DIRTY="false"
 if [[ -n "$(git status --porcelain)" ]]; then
