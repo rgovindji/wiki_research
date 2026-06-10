@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-10] note | CPI flash sent 8:40 ET: core 0.2% — the soft branch
+
+Core CPI 0.2% m/m (vs 0.3% consensus and our line), core y/y 2.9% in line; headline 0.5%/4.2% as expected, energy-driven. Flash email sent ~10 min post-print (`newsletter/issues/2026-06-10-cpi-flash.md`): condition on `2026-06-09-cpi-core-asymmetry` broke our way (grade at close); `2026-06-09-pm-gamma-reclaim` now armed (SPX needs 7,460 close by Friday); YOLO desk 7300P card stands down per its own double-key (hot core required — printed soft); complication = overnight Iran retaliation, futures -1% pre-print, oil $89.92 still under the $95 line. Evening run grades everything.
+
+---
+
 ## [2026-06-10] note | Morning brief: Iran Hit Back Overnight. Oil Shrugged. Now a Decimal Point Decides the Day.
 
 Before the Bell sent. Covered: overnight Iran retaliation on US bases with WTI flat ~$88 (oil-is-the-tell holding), futures −0.4/−0.6%, KOSPI −4.5% / VKOSPI record memory rout, TSMC record May revenue vs Taiwan export-curb headline, CRWV/SMCI/ORCL financing-scrutiny theme, CPI-day game plan (7,355 ledge / 7,300 wall / 7,440 flip), YOLO desk: conditional SPX 0DTE 7,300P keyed to hot core. No wiki changes (morning runs don't ingest).
