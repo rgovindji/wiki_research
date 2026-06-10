@@ -9,6 +9,17 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-09] note | Polygon Options Starter live: in-house GEX validated 6/6 against snippet sources
+
+Curator upgraded to Options Starter ($29/mo) this evening; tested immediately:
+
+- **Walls computed from real SPX open interest match snippet sources exactly** (call wall 7600, put wall 7300, both 0.00% apart). Net GEX −$35B confirms the short-gamma regime independently.
+- **Flip required a methodology fix**: cumulative-by-strike proxy failed (no zero crossing in a deeply negative profile → 6785 artifact, caught by the new `--audit` checks). Replaced with the correct spot-iterated approach — recompute net GEX across a ±7% spot grid using each contract's IV via Black-Scholes, find the sign change. Result: 7462.5, just 0.30% from the snippet flip (7440). **Audit verdict: pass 6/6.**
+- Adaptive rate-pacing added (full speed on paid plan, auto-throttles on 429); gamma-only runs fetch spot themselves; `--audit` mode added with tape-coherence + side-by-side checks; close-run prompt now runs `market_levels.py --audit` and gates computed levels on the audit verdict.
+- `market_state/2026-06-09.json` gamma block updated to computed values; 2-week side-by-side trust period begins tonight (through ~June 23), per playbook.
+
+---
+
 ## [2026-06-09] note | Polygon.io wired in: API closes live, GEX engine built (dormant on free plan)
 
 - New `scripts/market_levels.py` — runs first in the close run's intelligence sweep. **Closes work on the free plan**: exact daily closes for all 11 portfolio tickers + SPY/QQQ, paced for the 5 req/min free limit, cross-validated 13/13 against the hand-collected 2026-06-09 prices. Replaces web-search price hunting as the primary source.

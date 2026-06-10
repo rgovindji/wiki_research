@@ -1,32 +1,61 @@
 {
-  "_doc": "Daily market-state snapshot. Written by the close-of-market run, read by the next morning run (and the next close run for day-over-day deltas). This is reasoning fuel — the reader never sees this file, only the conclusions drawn from it. Fields left null were not collected; collect them next run rather than guessing. Add fields freely as new data sources prove useful; note new sources in playbook.md.",
+  "_doc": "Daily market-state snapshot. Written by the close-of-market run, read by the next morning run (and the next close run for day-over-day deltas). This is reasoning fuel \u2014 the reader never sees this file, only the conclusions drawn from it. Fields left null were not collected; collect them next run rather than guessing. Add fields freely as new data sources prove useful; note new sources in playbook.md.",
   "date": "2026-06-09",
   "as_of": "2026-06-09T16:00:00-04:00",
   "indexes": {
-    "spx": {"close": 7386.65, "chg_pct": -0.26, "intraday_low_pct": -1.46},
-    "nasdaq_composite": {"close": 25678.82, "chg_pct": -0.97, "intraday_low_pct": -2.52},
-    "dow": {"close": 50872.11, "chg_pct": 0.17, "note": "confirmed by 17:00 run (TheStreet/Yahoo close recaps)"}
+    "spx": {
+      "close": 7386.65,
+      "chg_pct": -0.26,
+      "intraday_low_pct": -1.46
+    },
+    "nasdaq_composite": {
+      "close": 25678.82,
+      "chg_pct": -0.97,
+      "intraday_low_pct": -2.52
+    },
+    "dow": {
+      "close": 50872.11,
+      "chg_pct": 0.17,
+      "note": "confirmed by 17:00 run (TheStreet/Yahoo close recaps)"
+    }
   },
   "after_hours_events": [
-    {"time": "2026-06-09T17:00:00-04:00", "event": "CENTCOM launched retaliatory strikes on Iran ('self-defense strikes... proportional response' to Monday's Apache downing off Oman). Trump simultaneously still says deal is 'two or three days' away, Hormuz reopens 'immediately upon signing'. Ceasefire nominally intact but fraying.", "read": "First real kinetic test of the oil-is-the-tell hypothesis (prediction 2026-06-09-oil-is-the-tell). Overnight WTI vs $95 is the arbiter; no settled futures/crude reaction observable at write time (~18:00 ET) — do NOT assume direction. Morning run: collect overnight crude + futures FIRST."}
+    {
+      "time": "2026-06-09T17:00:00-04:00",
+      "event": "CENTCOM launched retaliatory strikes on Iran ('self-defense strikes... proportional response' to Monday's Apache downing off Oman). Trump simultaneously still says deal is 'two or three days' away, Hormuz reopens 'immediately upon signing'. Ceasefire nominally intact but fraying.",
+      "read": "First real kinetic test of the oil-is-the-tell hypothesis (prediction 2026-06-09-oil-is-the-tell). Overnight WTI vs $95 is the arbiter; no settled futures/crude reaction observable at write time (~18:00 ET) \u2014 do NOT assume direction. Morning run: collect overnight crude + futures FIRST."
+    }
   ],
   "regime": {
     "call": "bull-under-stress",
-    "options": ["bull", "bull-under-stress", "sideways", "bear-rally", "bear"],
+    "options": [
+      "bull",
+      "bull-under-stress",
+      "sideways",
+      "bear-rally",
+      "bear"
+    ],
     "rationale": "Uptrend intact (~2.5% off record highs set during a nine-week streak) but late-cycle warnings active: June 5 jobs-shock was worst S&P day of year, AVGO guidance disappointment, concentration extreme, rate-HIKE chatter returning, war headlines being absorbed but not yet tested by a hot core CPI. Dip-buyers showed up twice in three sessions (June 8, June 9 afternoon).",
     "what_changes_it": "Core CPI >0.3% m/m on June 10 (-> sideways or worse). S&P reclaiming ~7500 on a cool core print (-> bull). Hormuz closure (-> bear-rally risk)."
   },
   "key_levels": {
-    "spx_support": [7297, 7150],
-    "spx_resistance": [7405, 7500],
-    "notes": "7297 = June 9 midday flush low that buyers defended; 7405 = June 8 close. Record high ~7575. Levels from price action, not gamma — gamma levels not yet collected.",
+    "spx_support": [
+      7297,
+      7150
+    ],
+    "spx_resistance": [
+      7405,
+      7500
+    ],
+    "notes": "7297 = June 9 midday flush low that buyers defended; 7405 = June 8 close. Record high ~7575. Levels from price action, not gamma \u2014 gamma levels not yet collected.",
     "gamma": {
-      "zero_gamma_flip": 7440,
+      "zero_gamma_flip": 7462,
       "call_wall": 7600,
       "put_wall": 7300,
       "net_gex": null,
-      "source": "WebSearch snippets (Barchart/InsiderFinance/OptionCharts index), collected 2026-06-09 ~16:15 CT; exact as-of time unverifiable — see playbook data-source notes",
-      "note": "SPX closed 7386.65 = BELOW the 7440 flip: dealers short gamma, moves amplify — consistent with today's 1.5% midday whipsaw. Corroboration: today's 7297 low was defended within 3 points of the 7300 put wall. Reclaiming 7440+ would flip dealers back to dampening moves (a different, calmer tape)."
+      "source": "polygon/computed (scripts/market_levels.py, Options Starter active 2026-06-09 evening); snippet sources agreed: walls 0.00% apart, flip 0.30% (7440 snippet vs 7462 computed). Audit verdict: pass (6/6).",
+      "note": "SPX closed 7386.65 = BELOW the ~7460 flip with net GEX -$35B: dealers short gamma, moves amplify \u2014 consistent with the 1.5% midday whipsaw. Today's 7297 low defended within 3 points of the 7300 put wall. Side-by-side trust period for computed levels runs ~2 weeks from 2026-06-09.",
+      "net_gex_usd": -35011221270
     }
   },
   "rates_commodities": {
@@ -34,34 +63,54 @@
     "wti_usd": 89.2,
     "brent_usd": 92.5,
     "gold": null,
-    "note": "10Y from early-session read; oil eased on ceasefire optimism and HELD below $90 through the helicopter headline — that divergence is the de-escalation tell."
+    "note": "10Y from early-session read; oil eased on ceasefire optimism and HELD below $90 through the helicopter headline \u2014 that divergence is the de-escalation tell."
   },
   "volatility_flow": {
     "vix": 20.45,
-    "vix_note": "20.45 was the 11:31 ET intraday read (+8% on the day, June 8 closed 18.92); close not confirmed — likely faded with the afternoon equity recovery. VIX back above 20 with SPX below the gamma flip = a twitchier tape than last week.",
+    "vix_note": "20.45 was the 11:31 ET intraday read (+8% on the day, June 8 closed 18.92); close not confirmed \u2014 likely faded with the afternoon equity recovery. VIX back above 20 with SPX below the gamma flip = a twitchier tape than last week.",
     "vix_term_structure": null,
     "put_call_ratio": 0.67,
-    "put_call_note": "CBOE equity P/C, June 5 print (data lags 1-2 days) — 0.67 is complacent-side-of-neutral; notable that the worst day of the year produced no put rush.",
+    "put_call_note": "CBOE equity P/C, June 5 print (data lags 1-2 days) \u2014 0.67 is complacent-side-of-neutral; notable that the worst day of the year produced no put rush.",
     "notable_options_flow": null,
-    "note": "Flow data not reliably sourceable same-day from free aggregators (paywalled) — see playbook data-source notes. Leave null rather than guess."
+    "note": "Flow data not reliably sourceable same-day from free aggregators (paywalled) \u2014 see playbook data-source notes. Leave null rather than guess."
   },
   "technicals": {
     "spx_vs_50dma": "+3.0% (50-DMA ~7174.5 as of June 8; SPX 7386.65)",
     "spx_vs_200dma": "+7.6% (200-DMA ~6863.3 as of June 8)",
-    "breadth_note": "Tech and energy were the only red sectors today — narrow damage, not broad distribution.",
-    "note": "DMAs from Investing.com/Barchart technical pages as of June 8 close; they move slowly so usable for June 9. Uptrend intact above both. The 50-DMA (~7175) sits just below the 7150 support shelf — confluence. COLLECT WHEN FINDABLE: % of S&P above 50-DMA, new highs vs lows."
+    "breadth_note": "Tech and energy were the only red sectors today \u2014 narrow damage, not broad distribution.",
+    "note": "DMAs from Investing.com/Barchart technical pages as of June 8 close; they move slowly so usable for June 9. Uptrend intact above both. The 50-DMA (~7175) sits just below the 7150 support shelf \u2014 confluence. COLLECT WHEN FINDABLE: % of S&P above 50-DMA, new highs vs lows."
   },
   "calendar": [
-    {"date": "2026-06-10", "event": "May CPI, 8:30 ET", "why": "Consensus 0.5% m/m / 4.2% y/y headline, 0.3% / 2.9% core. The binary. Watch core."},
-    {"date": "2026-06-17", "event": "FOMC decision", "why": "Hike risk is live again; CPI decides the conversation."},
-    {"date": "2026-06-19", "event": "Triple-witching OpEx", "why": "Quarterly options/futures expiry — gamma pin effects into it, unclenching after. Largest OpEx of the quarter."},
-    {"date": "2026-06-22", "event": "MRVL + FLEX join S&P 500", "why": "Mechanical index-fund bid; MRVL prediction resolves."},
-    {"date": "2026-06-26", "event": "May PCE (approx)", "why": "Fed's preferred gauge; confirm date."}
+    {
+      "date": "2026-06-10",
+      "event": "May CPI, 8:30 ET",
+      "why": "Consensus 0.5% m/m / 4.2% y/y headline, 0.3% / 2.9% core. The binary. Watch core."
+    },
+    {
+      "date": "2026-06-17",
+      "event": "FOMC decision",
+      "why": "Hike risk is live again; CPI decides the conversation."
+    },
+    {
+      "date": "2026-06-19",
+      "event": "Triple-witching OpEx",
+      "why": "Quarterly options/futures expiry \u2014 gamma pin effects into it, unclenching after. Largest OpEx of the quarter."
+    },
+    {
+      "date": "2026-06-22",
+      "event": "MRVL + FLEX join S&P 500",
+      "why": "Mechanical index-fund bid; MRVL prediction resolves."
+    },
+    {
+      "date": "2026-06-26",
+      "event": "May PCE (approx)",
+      "why": "Fed's preferred gauge; confirm date."
+    }
   ],
   "open_questions": [
-    "ANSWERED 2026-06-09: we're trading BELOW the zero-gamma flip (7386 vs 7440) — short-gamma regime, moves amplify both ways. The afternoon dip-buy found support almost exactly at the 7300 put wall, suggesting mechanical hedging flows, not just discretionary buyers.",
+    "ANSWERED 2026-06-09: we're trading BELOW the zero-gamma flip (7386 vs 7440) \u2014 short-gamma regime, moves amplify both ways. The afternoon dip-buy found support almost exactly at the 7300 put wall, suggesting mechanical hedging flows, not just discretionary buyers.",
     "Does SPX reclaim 7440 (gamma flip) on a tame core CPI? That's the line between a twitchy tape and a pinned one into June 19 triple-witching.",
-    "Did today's MRVL -7.6% come with unusual put volume, or was it just inclusion-pop profit taking? (Flow data unavailable free — drop unless it makes news.)",
+    "Did today's MRVL -7.6% come with unusual put volume, or was it just inclusion-pop profit taking? (Flow data unavailable free \u2014 drop unless it makes news.)",
     "NEW (17:00 run): Does overnight crude confirm the de-escalation read after the 5 PM EDT US strikes? WTI under $95 = oil-is-the-tell intact and CPI stays the binary; a gap toward $95+ = the session's resilience was conditioned on a deal that's slipping.",
     "NEW (17:00 run): VIX close for June 9 never surfaced in free sources (last read 20.45 at 11:31 ET); morning run should backfill it."
   ]

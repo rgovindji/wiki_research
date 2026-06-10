@@ -36,6 +36,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import math
 import os
 import sys
 import time
@@ -66,19 +67,19 @@ def load_env() -> None:
 
 
 class Polygon:
-    def __init__(self, key: str, paced: bool):
+    """Adaptive pacing: run full speed (paid plans allow it); the first 429
+    flips on free-plan pacing for the rest of the session."""
+
+    def __init__(self, key: str):
         self.key = key
-        self.paced = paced
+        self.paced = False
         self._last_call = 0.0
 
-    def get(self, path: str, params: dict | None = None) -> tuple[int, dict]:
+    def _fetch(self, url: str) -> tuple[int, dict]:
         if self.paced:
             wait = FREE_PLAN_PACING_S - (time.time() - self._last_call)
             if wait > 0:
                 time.sleep(wait)
-        q = dict(params or {})
-        q["apiKey"] = self.key
-        url = f"{API}{path}?{urllib.parse.urlencode(q)}"
         for attempt in range(3):
             self._last_call = time.time()
             try:
@@ -91,6 +92,7 @@ class Polygon:
                 except json.JSONDecodeError:
                     pass
                 if e.code == 429 and attempt < 2:
+                    self.paced = True
                     time.sleep(20 * (attempt + 1))
                     continue
                 return e.code, body
@@ -101,19 +103,15 @@ class Polygon:
                 return 0, {"error": str(e)}
         return 0, {"error": "unreachable"}
 
+    def get(self, path: str, params: dict | None = None) -> tuple[int, dict]:
+        q = dict(params or {})
+        q["apiKey"] = self.key
+        return self._fetch(f"{API}{path}?{urllib.parse.urlencode(q)}")
+
     def get_url(self, url: str) -> tuple[int, dict]:
         """Follow a next_url from pagination (already has params)."""
         sep = "&" if "?" in url else "?"
-        for attempt in range(3):
-            try:
-                with urllib.request.urlopen(f"{url}{sep}apiKey={self.key}", timeout=30) as r:
-                    return r.status, json.loads(r.read())
-            except urllib.error.HTTPError as e:
-                if e.code == 429 and attempt < 2:
-                    time.sleep(20 * (attempt + 1))
-                    continue
-                return e.code, {}
-        return 0, {}
+        return self._fetch(f"{url}{sep}apiKey={self.key}")
 
 
 def portfolio_tickers() -> list[str]:
@@ -142,6 +140,38 @@ def fetch_closes(pg: Polygon, tickers: list[str]) -> dict:
     return out
 
 
+RISK_FREE = 0.04
+
+
+def _bs_gamma(S: float, K: float, T: float, iv: float) -> float:
+    """Black-Scholes gamma (same for calls and puts)."""
+    if T <= 0 or iv <= 0 or S <= 0 or K <= 0:
+        return 0.0
+    d1 = (math.log(S / K) + (RISK_FREE + iv * iv / 2) * T) / (iv * math.sqrt(T))
+    return math.exp(-d1 * d1 / 2) / math.sqrt(2 * math.pi) / (S * iv * math.sqrt(T))
+
+
+def _flip_by_iteration(contracts: list[tuple], spot: float) -> float | None:
+    """True zero-gamma estimate: recompute net dealer GEX at a grid of spot
+    levels (±7%) using BS gamma from each contract's IV, and find where the
+    curve crosses zero (linear-interpolated). This is what 'the flip' means;
+    the cumulative-by-strike version is only a positioning picture."""
+    lo, hi = spot * 0.93, spot * 1.07
+    n = 56
+    prev_s = prev_v = None
+    for i in range(n + 1):
+        S = lo + i * (hi - lo) / n
+        net = 0.0
+        for strike, t_years, iv, oi, ctype in contracts:
+            g = _bs_gamma(S, strike, t_years, iv)
+            v = g * oi * 100 * S * S * 0.01
+            net += v if ctype == "call" else -v
+        if prev_v is not None and (prev_v < 0 <= net or prev_v > 0 >= net):
+            return round(prev_s + (S - prev_s) * (0 - prev_v) / (net - prev_v), 1)
+        prev_s, prev_v = S, net
+    return None
+
+
 def fetch_gamma(pg: Polygon, underlying: str, spot: float | None) -> dict:
     """Chain snapshot -> net GEX by strike -> flip + walls.
     Returns available: false with the reason when the plan doesn't allow it."""
@@ -163,7 +193,9 @@ def fetch_gamma(pg: Polygon, underlying: str, spot: float | None) -> dict:
         return {"available": False, "reason": f"http {status}: {d.get('error', '')[:120]}"}
 
     by_strike: dict[float, float] = {}
+    contracts: list[tuple] = []  # (strike, T_years, iv, oi, type) for flip iteration
     spot_seen = spot
+    today_d = dt.date.today()
     pages = 0
     while True:
         pages += 1
@@ -174,6 +206,8 @@ def fetch_gamma(pg: Polygon, underlying: str, spot: float | None) -> dict:
             oi = c.get("open_interest")
             strike = det.get("strike_price")
             ctype = det.get("contract_type")
+            iv = c.get("implied_volatility")
+            exp = det.get("expiration_date")
             ua = (c.get("underlying_asset") or {}).get("price")
             if ua:
                 spot_seen = ua
@@ -182,8 +216,14 @@ def fetch_gamma(pg: Polygon, underlying: str, spot: float | None) -> dict:
             s = spot_seen or strike
             gex = gamma * oi * 100 * s * s * 0.01
             by_strike[strike] = by_strike.get(strike, 0.0) + (gex if ctype == "call" else -gex)
+            if iv and exp:
+                try:
+                    t_years = max((dt.date.fromisoformat(exp) - today_d).days, 0.5) / 365.0
+                    contracts.append((strike, t_years, iv, oi, ctype))
+                except ValueError:
+                    pass
         nxt = d.get("next_url")
-        if not nxt or pages >= 40:
+        if not nxt or pages >= 120:
             break
         status, d = pg.get_url(nxt)
         if status != 200:
@@ -197,15 +237,16 @@ def fetch_gamma(pg: Polygon, underlying: str, spot: float | None) -> dict:
     call_wall = max(strikes, key=lambda s: by_strike[s])
     put_wall = min(strikes, key=lambda s: by_strike[s])
 
+    # Zero-gamma flip: recompute net GEX across a spot grid using each
+    # contract's IV (BS gamma) and find the sign change. Null when the curve
+    # doesn't cross within ±7% of spot — i.e., dealers are short gamma at
+    # every nearby level, which is itself information.
     flip = None
-    cum = 0.0
-    for s in strikes:
-        prev = cum
-        cum += by_strike[s]
-        if prev < 0 <= cum or prev > 0 >= cum:
-            flip = s
-            if spot_seen and abs(s - spot_seen) / spot_seen < 0.10:
-                break  # prefer a crossing near spot over far-wing noise
+    flip_method = "spot-iterated BS-gamma zero crossing (±7% grid)"
+    if contracts and spot_seen:
+        flip = _flip_by_iteration(contracts, spot_seen)
+        if flip is None:
+            flip_method = "no zero crossing within ±7% of spot — short gamma at all nearby levels"
 
     return {
         "available": True,
@@ -216,8 +257,64 @@ def fetch_gamma(pg: Polygon, underlying: str, spot: float | None) -> dict:
         "put_wall": put_wall,
         "net_gex_usd": round(net_total),
         "contracts_pages": pages,
-        "model": "naive dealer (long calls/short puts), <=45d expiries, +/-15% strikes, cumulative-GEX flip proxy",
+        "flip_method": flip_method,
+        "model": "naive dealer (long calls/short puts), <=45d expiries, +/-15% strikes",
     }
+
+
+def audit_gamma(gamma: dict) -> dict:
+    """Sanity-check computed gamma against the tape and against the latest
+    market_state snapshot's (snippet-sourced) levels. Returns a report dict;
+    'verdict' is pass / suspect / fail. Per playbook: computed levels must
+    earn trust side-by-side before becoming the sole source."""
+    report: dict = {"checks": [], "verdict": "pass"}
+
+    def check(name: str, ok: bool | None, detail: str) -> None:
+        status = "pass" if ok else ("skip" if ok is None else "FAIL")
+        report["checks"].append({"check": name, "status": status, "detail": detail})
+        if ok is False:
+            report["verdict"] = "fail" if report["verdict"] == "fail" else "suspect"
+
+    if not gamma.get("available"):
+        report["verdict"] = "skip"
+        report["reason"] = gamma.get("reason")
+        return report
+
+    spot = gamma.get("spot")
+    flip, cw, pw = gamma.get("zero_gamma_flip"), gamma.get("call_wall"), gamma.get("put_wall")
+    scaled = gamma.get("spx_scaled") or {}
+    # When SPY-derived, audit the SPX-scaled values against SPX references.
+    a_flip = scaled.get("zero_gamma_flip", flip)
+    a_cw = scaled.get("call_wall", cw)
+    a_pw = scaled.get("put_wall", pw)
+    a_spot = spot * 10 if scaled and spot else spot
+
+    if all(isinstance(x, (int, float)) for x in (a_pw, a_cw)) and a_spot:
+        check("wall-ordering", a_pw < a_cw, f"put wall {a_pw} < call wall {a_cw}")
+        check("spot-between-walls", a_pw * 0.97 <= a_spot <= a_cw * 1.03,
+              f"spot {a_spot:.0f} vs walls [{a_pw}, {a_cw}] (3% grace)")
+    if isinstance(a_flip, (int, float)) and a_spot:
+        check("flip-near-spot", abs(a_flip - a_spot) / a_spot < 0.06,
+              f"flip {a_flip} is {abs(a_flip - a_spot) / a_spot * 100:.1f}% from spot {a_spot:.0f}")
+
+    # Compare with the latest market_state snapshot (snippet-sourced levels)
+    snaps = sorted((REPO / "newsletter" / "market_state").glob("*.json"))
+    ref = {}
+    if snaps:
+        try:
+            ref = (json.loads(snaps[-1].read_text()).get("key_levels", {}).get("gamma") or {})
+        except json.JSONDecodeError:
+            pass
+    for name, computed, snippet in (("flip", a_flip, ref.get("zero_gamma_flip")),
+                                    ("call_wall", a_cw, ref.get("call_wall")),
+                                    ("put_wall", a_pw, ref.get("put_wall"))):
+        if isinstance(computed, (int, float)) and isinstance(snippet, (int, float)):
+            diff = abs(computed - snippet) / snippet * 100
+            check(f"vs-snippet-{name}", diff < 1.5,
+                  f"computed {computed:.0f} vs snippet {snippet:.0f} ({diff:.2f}% apart)")
+        else:
+            check(f"vs-snippet-{name}", None, "no snippet reference to compare")
+    return report
 
 
 def main() -> int:
@@ -225,6 +322,8 @@ def main() -> int:
     ap.add_argument("--tickers", help="comma-separated override")
     ap.add_argument("--skip-closes", action="store_true")
     ap.add_argument("--skip-gamma", action="store_true")
+    ap.add_argument("--audit", action="store_true",
+                    help="append a sanity/side-by-side audit of the computed gamma levels")
     args = ap.parse_args()
 
     load_env()
@@ -233,7 +332,7 @@ def main() -> int:
         print(json.dumps({"error": "no POLYGON_KEY in .env"}))
         return 1
 
-    pg = Polygon(key, paced=True)
+    pg = Polygon(key)
     out: dict = {"source": "polygon.io", "generated": dt.datetime.now().isoformat(timespec="seconds")}
 
     if not args.skip_closes:
@@ -243,6 +342,11 @@ def main() -> int:
 
     if not args.skip_gamma:
         spy = (out.get("closes", {}).get("prices", {}).get("SPY") or {}).get("close")
+        if not spy:
+            # gamma-only run still needs spot for the strike filter
+            _, d = pg.get("/v2/aggs/ticker/SPY/prev", {"adjusted": "true"})
+            results = d.get("results") or []
+            spy = results[0].get("c") if results else None
         # SPX index options are the cleaner read; SPY is the fallback. Both
         # 403 on the free plan; the first success wins on a paid plan.
         gamma = fetch_gamma(pg, "I:SPX", spy * 10 if spy else None)
@@ -260,6 +364,8 @@ def main() -> int:
             else:
                 gamma["spy_fallback_reason"] = spy_gamma.get("reason")
         out["gamma"] = gamma
+        if args.audit:
+            out["audit"] = audit_gamma(gamma)
 
     print(json.dumps(out, indent=2))
     return 0

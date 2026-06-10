@@ -66,10 +66,10 @@ Write `newsletter/market_state/YYYY-MM-DD.json`, following the schema of the mos
 **Run the API pull FIRST** (it takes ~3 minutes on the free plan's rate limit — start it, then do your WebSearch sweeps while it runs):
 
 ```
-python3 scripts/market_levels.py
+python3 scripts/market_levels.py --audit
 ```
 
-Its JSON gives you (a) **exact closes for every portfolio ticker + SPY/QQQ** — use these for `portfolio.json` prices and the indexes section (SPY×10 ≈ SPX as a sanity cross-check); API numbers beat search snippets, always. And (b) **gamma levels** if `gamma.available` is true (zero-gamma flip, call wall, put wall, net GEX — put them straight into the snapshot with source "polygon/computed"). While `gamma.available` is false (free plan), keep sourcing gamma from search snippets per the playbook; when both exist, record both and note any disagreement — we're auditing the computed model against the snippet sources before trusting it.
+Its JSON gives you (a) **exact closes for every portfolio ticker + SPY/QQQ** — use these for `portfolio.json` prices and the indexes section (SPY×10 ≈ SPX as a sanity cross-check); API numbers beat search snippets, always. And (b) **computed gamma levels** (zero-gamma flip, call wall, put wall, net GEX from the full SPX chain) plus an `audit` block. **If the audit verdict is "pass"**, put the computed levels into the snapshot's gamma section with source "polygon/computed"; also do ONE WebSearch for snippet levels and record the comparison in the audit log below the gamma block (we're in a ~2-week side-by-side trust period that started 2026-06-09). **If the verdict is "suspect" or "fail"**, fall back to snippet levels for the snapshot, keep the computed numbers in a `computed_rejected` field with the failing checks, and flag it in the stdout summary.
 
 Then collect via WebSearch (~5-8 calls on top of part 1):
 
