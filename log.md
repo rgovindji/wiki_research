@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-10] note | Morning brief: Iran Hit Back Overnight. Oil Shrugged. Now a Decimal Point Decides the Day.
+
+Before the Bell sent. Covered: overnight Iran retaliation on US bases with WTI flat ~$88 (oil-is-the-tell holding), futures −0.4/−0.6%, KOSPI −4.5% / VKOSPI record memory rout, TSMC record May revenue vs Taiwan export-curb headline, CRWV/SMCI/ORCL financing-scrutiny theme, CPI-day game plan (7,355 ledge / 7,300 wall / 7,440 flip), YOLO desk: conditional SPX 0DTE 7,300P keyed to hot core. No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-09] note | Dual-source GEX + near-view shelves; put side is a zone
 
 Late-night upgrade after comparing notes with the curator's gamma-desk tool (separate repo, 0-2DTE focus):
