@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-10] note | CPI supercore wrinkle (curator flag, ~8:45 ET): 3.67% y/y vs 3.38% prior
+
+The flash's "core just blinked" framing has an asterisk the evening letter MUST own in the scorecard: **supercore (core services ex-housing) accelerated to 3.67% y/y from 3.38%** — a 0.29pp one-month jump implying a hot monthly services print masked by goods/shelter softness. Core y/y also ticked up 2.8→2.9. Rate futures pared hike bets on the soft core m/m, but supercore is the hawks' exhibit for June 17. **Evening run to-do:** (1) pull the CPI component breakdown — if airfares/transport services (jet-fuel passthrough) drove supercore, it's war inflation in a services costume and the look-through thesis mostly survives; if insurance/medical/recreation broadly firmed, it's genuine domestic heat; (2) grade `2026-06-09-cpi-core-asymmetry` on its stated terms BUT apply the right-for-the-right-reason check using the supercore answer; (3) carry supercore into the June 17 FOMC framing.
+
+---
+
 ## [2026-06-10] note | CPI flash sent 8:40 ET: core 0.2% — the soft branch
 
 Core CPI 0.2% m/m (vs 0.3% consensus and our line), core y/y 2.9% in line; headline 0.5%/4.2% as expected, energy-driven. Flash email sent ~10 min post-print (`newsletter/issues/2026-06-10-cpi-flash.md`): condition on `2026-06-09-cpi-core-asymmetry` broke our way (grade at close); `2026-06-09-pm-gamma-reclaim` now armed (SPX needs 7,460 close by Friday); YOLO desk 7300P card stands down per its own double-key (hot core required — printed soft); complication = overnight Iran retaliation, futures -1% pre-print, oil $89.92 still under the $95 line. Evening run grades everything.
