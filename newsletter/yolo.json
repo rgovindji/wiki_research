@@ -1,10 +1,10 @@
 {
-  "_doc": "The YOLO desk ledger. One defined-risk intraday options idea per morning brief, keyed to the day's levels (gamma walls, flip, event triggers). PAPER ONLY, lottery-ticket framing — but analyzed and scored with full seriousness. Morning run appends the day's trade (status: open). Close run resolves it against the actual tape: did the trigger fire, did it reach target or invalidation, honest payoff estimate. Statuses: open | win | loss | no-trigger | expired. Resolved trades need a resolution_note with the mechanism. 'No clean setup, desk is flat' is a valid morning outcome — don't force a trade; flat days are not logged.",
+  "_doc": "The YOLO desk ledger. One defined-risk intraday options idea per morning brief, keyed to the day's levels (gamma walls, flip, event triggers). PAPER ONLY, lottery-ticket framing \u2014 but analyzed and scored with full seriousness. Morning run appends the day's trade (status: open). Close run resolves it against the actual tape: did the trigger fire, did it reach target or invalidation, honest payoff estimate. Statuses: open | win | loss | no-trigger | expired. Resolved trades need a resolution_note with the mechanism. 'No clean setup, desk is flat' is a valid morning outcome \u2014 don't force a trade; flat days are not logged.",
   "scorecard": {
     "wins": 1,
     "losses": 0,
-    "no_trigger": 0,
-    "notes": "Seeded 2026-06-09 with the desk's origin trade (taken live in the curator's paper account before the desk existed)."
+    "no_trigger": 1,
+    "notes": "Seeded 2026-06-09 with the desk's origin trade. 2026-06-10: first no-trigger (CPI double-key failed soft; flush came on the war anyway \u2014 see resolution_note)."
   },
   "trades": [
     {
@@ -19,7 +19,7 @@
       "invalidation": "SPX reclaiming the morning range (flush failed)",
       "status": "win",
       "resolved": "2026-06-09",
-      "resolution_note": "Origin trade, taken live (paper) by the curator. SPX flushed from the open to 7,297 by midday — the put wall tagged within 3 points — before the afternoon recovery to 7,387. The 7,300 puts captured the full leg down. Mechanism lesson: in a short-gamma tape the put wall is the TARGET of a flush, not the entry signal; the entry is the break of momentum below the flip. Also note the exit discipline this implies — the wall is where you sell, because that's where hedging flows turn from tailwind to headwind (today they did, violently: +90 points off the wall into the close)."
+      "resolution_note": "Origin trade, taken live (paper) by the curator. SPX flushed from the open to 7,297 by midday \u2014 the put wall tagged within 3 points \u2014 before the afternoon recovery to 7,387. The 7,300 puts captured the full leg down. Mechanism lesson: in a short-gamma tape the put wall is the TARGET of a flush, not the entry signal; the entry is the break of momentum below the flip. Also note the exit discipline this implies \u2014 the wall is where you sell, because that's where hedging flows turn from tailwind to headwind (today they did, violently: +90 points off the wall into the close)."
     },
     {
       "id": "2026-06-10-spx-7300p-cpi",
@@ -29,11 +29,11 @@
       "direction": "bearish",
       "thesis": "CPI-day binary in a short-gamma tape (SPX below the ~7,440 flip, net GEX deeply negative). A hot core print (>0.3% m/m) puts a June 17 hike in play with futures already opening near the 7,355 near-dated hedging ledge; losing that ledge hands the move to dealer hedging flows, which accelerate it toward the 7,300 aggregate put wall. Wall is the magnet and the exit.",
       "trigger": "Double-keyed: (1) May core CPI prints ABOVE 0.3% m/m at 8:30 ET, AND (2) SPX loses the 7,355 hedging ledge after the open. Core <=0.3% = no trade, desk stands down.",
-      "target": "Tag of the 7,300 put wall — exit at the wall, where hedging flows flip from tailwind to headwind.",
+      "target": "Tag of the 7,300 put wall \u2014 exit at the wall, where hedging flows flip from tailwind to headwind.",
       "invalidation": "SPX reclaiming 7,386 (June 9 close) after the trigger fires; no averaging down.",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "no-trigger",
+      "resolved": "2026-06-10",
+      "resolution_note": "Core printed 0.2% \u2014 key (1) of the double-keyed trigger failed, so by the card's own terms the trade never existed; the desk stood down at 8:31 and stayed flat. The uncomfortable part, logged honestly: the flush came anyway. SPX lost the 7,355 ledge, broke 7,300, and closed 7,266.99 \u2014 the 7,300 puts would have paid handsomely on the war/supercore selloff. The card keyed the trade to the wrong branch: it assumed a hot core was the only path to a flush on a day carrying TWO live binaries (CPI and an overnight missile exchange). Mechanism lesson (paired with the cpi-core-asymmetry autopsy): the LEVELS were right twice over \u2014 7,355 broke first, the rolled-down put wall (7,265) caught the close within 2 points. Key future triggers to the levels with the catalyst as context, not to one catalyst. Discipline was correct even though the P&L would have been good: no-trigger means no trade, and improvising the same structure off a different catalyst intraday is how a scoreable desk becomes a mood."
     }
   ]
 }

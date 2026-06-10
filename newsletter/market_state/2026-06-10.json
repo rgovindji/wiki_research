@@ -1,0 +1,132 @@
+{
+  "_doc": "Daily market-state snapshot. Written by the close-of-market run, read by the next morning run (and the next close run for day-over-day deltas). This is reasoning fuel — the reader never sees this file, only the conclusions drawn from it. Fields left null were not collected; collect them next run rather than guessing. Add fields freely as new data sources prove useful; note new sources in playbook.md.",
+  "date": "2026-06-10",
+  "as_of": "2026-06-10T16:00:00-04:00",
+  "indexes": {
+    "spx": {
+      "close": 7266.99,
+      "chg_pct": -1.62,
+      "note": "Closed essentially at the session low (SPY low 725.33 vs close 725.43) and within 2 points of the computed 7,265 put wall. ~4.1-4.4% off the record (NOTE: record-close reference is inconsistent in our own files — 7,575 in market_state vs 7,599.96 in the June 1 research notes; reconcile next run and use one number)."
+    },
+    "nasdaq_composite": {
+      "close": 25169.5,
+      "chg_pct": -1.98
+    },
+    "dow": {
+      "close": 49918.78,
+      "chg_pct": -1.87,
+      "note": "-953.33 points; first close below 50,000 since the streak began"
+    }
+  },
+  "after_hours_events": [
+    {
+      "time": "2026-06-10T16:05:00-04:00",
+      "event": "ORCL Q4 FY26: rev $19.2B +21% beat, EPS $2.11 beat, RPO $553B->$638B (+$85B QoQ, almost all large-scale AI contracts), IaaS +93%. But FY26 capex $55.7B vs $50B guided, FY27 net capex outlay ~$70B, and a ~$40B FY27 debt+equity raise announced (incl $20B ATM). Stock fell as much as ~7% AH. New disclosure: $75B cumulative customer GPU prepayments.",
+      "read": "Demand leg record, funding leg sold. Read-through pressure on AI-infra names (CRWV, VRT, DELL) at tomorrow's open; the market is auditing balance sheets, not order books."
+    }
+  ],
+  "regime": {
+    "call": "bull-under-stress",
+    "options": [
+      "bull",
+      "bull-under-stress",
+      "sideways",
+      "bear-rally",
+      "bear"
+    ],
+    "rationale": "Held, but barely — one bad close from sideways. Still above the 50-DMA (~7,180, +1.2%) and within ~4% of the record, but: soft-core CPI relief got SOLD (closed at the lows), dip-buyers were absent for the first time in three tests, net GEX deepened to -$59B/-$74B (dealers amplify), and the index closed ON the put wall. Sellers had three reasons (war, supercore, IPO supply) and buyers had one (soft core) — and the one got overrun.",
+    "what_changes_it": "Close below ~7,150-7,180 (price shelf + 50-DMA confluence) -> sideways or worse. Reclaim of the 7,420-7,450 flip zone -> bull confirmed (this is the live 2026-06-09-pm-gamma-reclaim call, due June 12). Hormuz closure or WTI >$95 -> bear-rally risk."
+  },
+  "key_levels": {
+    "spx_support": [
+      7265,
+      7150
+    ],
+    "spx_resistance": [
+      7387,
+      7420
+    ],
+    "notes": "7265 = computed put wall (both feeds), closed 2pts above it; 7150 = price shelf with 50-DMA (~7,180) just above it — confluence zone 7,150-7,180. 7387 = June 9 close / breakdown level; 7420-7450 = flip zone.",
+    "gamma": {
+      "zero_gamma_flip": 7422,
+      "call_wall": 7500,
+      "put_wall": 7265,
+      "net_gex_usd": -73546058821,
+      "near_put_wall": 7265,
+      "near_call_wall": 7430,
+      "source": "polygon/computed (scripts/market_levels.py --audit, verdict: pass 9/9). CBOE crosscheck: flip 7450 (0.38% from Polygon 7422 — treat flip as a 7,420-7,450 ZONE), call wall 7500 exact, put wall 7265 exact, net GEX -$59B (vs Polygon -$74B).",
+      "note": "Put wall ROLLED DOWN 7300 -> 7265 overnight (fresh hedging stacked lower after the 7,300 break) and SPX closed 7,266.99 — within 2 points of it. Tape-coherence: the close pinned to the computed wall is the strongest live validation of the computed levels yet. Net GEX doubled deeper negative (-$35B -> -$59/-74B): the most amplified tape of the quarter. Near-view (<=2DTE): put shelf 7265 on BOTH feeds (no separate higher ledge tonight — the near fight and the big magnet are the same level now); near call wall DISAGREES (Polygon 7700 artifact-suspect vs CBOE 7430) — using CBOE 7430 for the chart since it coheres with the flip zone; treat overhead as 7,420-7,450 first, 7,500 above.",
+      "caveat": "Polygon's reported spot (7370.5) was stale at fetch time (~18:36 ET); CBOE spot 7266.99 matched the close. Walls/flip derive from OI not spot, and both feeds agree on walls exactly — levels accepted. Watch the Polygon near-view call wall artifact (7700) again tomorrow.",
+      "audit_log": "2026-06-10 side-by-side day 2: fresh WebSearch snippet returned a STALE page (referenced June 8 close 7,405.72; flip 7,445, put wall 7,000, net GEX -$19.2B) — unusable for comparison, logged per trust-period protocol. Script's internal snippet comparison (vs June 9 stored values) passed at <=1.32%. Tape-coherence substituted for snippet check: computed put wall 7265 vs actual close 7266.99 — pass."
+    }
+  },
+  "rates_commodities": {
+    "ust10y_pct": 4.52,
+    "wti_usd": 90.03,
+    "brent_usd": 93.1,
+    "gold": 4180,
+    "note": "10Y EASED to ~4.52% from 4.55% intraday high — the bond market bought the soft core even as equities sold; hike bets for June 17 pared but Dec-hike odds still ~70% (morning read). WTI +2.07% settle, UP on Trump 'attacking them very hard' but still $5 under the $95 line (oil-is-the-tell intact, barely tested). Gold ~$4,165-4,200, LOWEST since March 23, below its 200-DMA for the first time since Oct 2023, 25% off the Jan ATH — gold falling on a war day reads as liquidation/deleveraging, not safe-haven rotation; worth carrying as a regime tell."
+  },
+  "volatility_flow": {
+    "vix": 22.22,
+    "vix_note": "VIX +2.35 (+11.83%) from June 9's 19.87 close (which backfills yesterday's open question). 22+ with SPX pinned to the put wall and net GEX at -$59/-74B = the jumpiest configuration of the quarter.",
+    "vix_term_structure": null,
+    "put_call_ratio": null,
+    "put_call_note": "Not collected today (lags 1-2 days in free sources); June 5 print was 0.67.",
+    "notable_options_flow": null,
+    "note": "ORCL options implied ~12% post-earnings move (Bloomberg via Investing.com) — AH move ran ~half that."
+  },
+  "technicals": {
+    "spx_vs_50dma": "+1.2% (50-DMA ~7,180 est from June 8 reading of ~7,174.5; SPX 7,266.99) — cushion nearly gone, was +3.0% yesterday",
+    "spx_vs_200dma": "+5.8% (200-DMA ~6,865-6,870)",
+    "breadth_note": "Broad distribution, not narrow damage: industrials -3%+, tech and materials -2%+. Contrast with June 9 (only tech and energy red). Gold below its own 200-DMA the same day = cross-asset de-risking.",
+    "note": "DMAs drift slowly; June 8 values carried forward two days. The 7,150 price shelf and the ~7,180 50-DMA now form one support zone — a close below it would be the first 50-DMA loss since the streak began."
+  },
+  "calendar": [
+    {
+      "date": "2026-06-11",
+      "event": "Adobe Q2 earnings (AMC)",
+      "why": "First software-side AI monetization read since the rout; not a holding, but the 'show me the revenue' theme transfers."
+    },
+    {
+      "date": "2026-06-11",
+      "event": "May PPI (date unconfirmed — verify in morning run)",
+      "why": "Pipeline pressure check on the supercore question; April PPI was the original regime-shift scare."
+    },
+    {
+      "date": "2026-06-12",
+      "event": "Deadline: 2026-06-09-pm-gamma-reclaim",
+      "why": "SPX needs a close above ~7,440 by Friday or the dip-buyer thesis is graded wrong."
+    },
+    {
+      "date": "2026-06-17",
+      "event": "FOMC decision",
+      "why": "Soft core m/m argues hold; supercore 3.67% y/y accelerating since fall is the hawks' exhibit. Hike risk reduced, not removed."
+    },
+    {
+      "date": "2026-06-19",
+      "event": "Triple-witching OpEx",
+      "why": "Largest expiry of the quarter; the deep negative gamma regime unclenches (or doesn't) here."
+    },
+    {
+      "date": "2026-06-22",
+      "event": "MRVL + FLEX join S&P 500",
+      "why": "MRVL closed 252.59 — $2.59 above the prediction's $250 falsifier; the inclusion-bid experiment is at its decision point."
+    },
+    {
+      "date": "2026-06-26",
+      "event": "May PCE (approx — confirm)",
+      "why": "Fed's preferred gauge; supercore echo check."
+    }
+  ],
+  "open_questions": [
+    "ANSWERED 2026-06-10 (from June 9): VIX June 9 close was 19.87; June 10 closed ~22.22 (+11.8%).",
+    "ANSWERED 2026-06-10 (from June 9): overnight crude DID confirm the de-escalation read initially (WTI ~$88 through Iran's retaliation) — then Trump's 'attack very hard' pushed WTI +2.07% to $90.03. Still under $95: oil-is-the-tell intact but having its first real test.",
+    "ANSWERED 2026-06-10 (from June 9): SPX did NOT reclaim the flip on the tame core — it lost another 120 points. The reclaim call (7,440 by June 12) is two sessions from failing.",
+    "Does the 7,265 put wall hold a retest tomorrow? It pinned the close tonight; if it breaks with this much negative gamma, dealer hedging chases the move and 7,150-7,180 (price shelf + 50-DMA) is the next stand.",
+    "Does ORCL's -7% AH bleed into AI-infra names at the open (CRWV, VRT, DELL all have funding-narrative beta), or does the $75B customer-prepayment disclosure get re-read as bullish once the call is digested?",
+    "MRVL at 252.59 vs the 250 falsifier with the June 22 inclusion bid 8 sessions away — does the mechanical bid show up before the line breaks?",
+    "Supercore decomposition: airfares (+2.7% m/m) clearly contributed and insurance fell (-1.7%) — but what drove the rest of the 0.55%? BLS detail tables (recreation, medical m/m) would settle the benign-vs-ugly reading; check tomorrow.",
+    "Was today's gold break below the 200-DMA (first since Oct 2023) IPO-treasury-raising / deleveraging flow? If gold keeps falling while VIX rises, that's the liquidation signature worth a letter section."
+  ]
+}

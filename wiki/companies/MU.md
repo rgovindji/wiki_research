@@ -2,9 +2,9 @@
 type: company
 ticker: MU
 tags: [ai, semis, memory, hbm]
-last_updated: 2026-06-01
+last_updated: 2026-06-10
 last_full_review: 2026-05-09
-sources: 6
+sources: 7
 conviction: high
 stance: bull
 ---
@@ -82,6 +82,7 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 4. **Capex discipline** — is the industry over- or under-investing for the next cycle?
 
 ## Recent developments
+- **2026-06-10 — Korea's fear gauge printed a record while the demand side signed a multi-year pact** (per [[2026-06-10-cpi-supercore-iran-ai-ipo-rotation]]). Overnight: KOSPI −4.5%, Samsung −6%, SK Hynix −7.5%, **VKOSPI >90 — a record, above its 2008 GFC peak** — on US-Iran missile exchanges + Japan wholesale inflation at 6.3% + a stalled SoftBank/OpenAI margin-loan report. MU fell in sympathy (−4%+ pre-market). The contradicting datapoint: **NVIDIA signed a multi-year HBM co-development pact with SK Hynix days earlier (first deliveries this quarter)** — the demand side of memory got *stronger* the same week positioning cracked. **Which means:** this is a crowdedness stress-test, not a thesis stress-test — nothing in the 24 hours touched sold-out capacity or pricing. The tell to watch: if MU weakness persists after the war tape settles, that's information positioning can't explain (and the Samsung-HBM4-share bear leg deserves a re-look). Stance held **bull/high**; no adds into a record fear print in the home market of the trade.
 - **2026-05-12** — SemiAnalysis Apr 2026 ISSCC roundup ([[2026-04-15-semianalysis-isscc-roundup]]) flags **Samsung HBM4 as competitive with peers** for the first time in two generations. Samsung is the most aggressive on base-die node (SF4 vs. SK Hynix's TSMC N12 vs. Micron's internal CMOS). **Which means:** the bull case's "MU as preferred supplier" framing is intact for HBM3E but faces a credible Samsung challenger on HBM4 at Rubin. Add to "what would move the view lower" watchlist. Separate data point: LPDDR5 contract prices going **parabolic** in Q1 2026 (+4x YoY per SemiAnalysis Memory Model) — bullish for MU's commodity DRAM leg.
 - **2026-05-11** — MU **+76% in past month** on the AI memory supercycle. **Cloud Memory Business Unit revenue $5.28B at 66% gross margin** (Q-recent). **Mizuho $740 PT** raised. Stock "eyeing $1 trillion club" per Stocktwits coverage. **SK Hynix** told investors HBM / DRAM / NAND for 2026 are essentially booked; **Samsung** memory chief warned shortages continue through at least 2027 — all directionally supportive of the wiki's [[bottleneck-roadmap]] memory thesis.
 

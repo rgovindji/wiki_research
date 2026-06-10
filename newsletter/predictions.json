@@ -4,9 +4,9 @@
     "right": 0,
     "partial": 0,
     "timing": 0,
-    "wrong": 0,
+    "wrong": 1,
     "expired": 0,
-    "notes": "Seeded 2026-06-09; no resolutions yet."
+    "notes": "Updated 2026-06-10: first resolution (wrong, medium confidence). By tier: high 0/0, medium 0/1, low 0/0."
   },
   "predictions": [
     {
@@ -57,9 +57,9 @@
       "confidence": "medium",
       "horizon": "2026-06-10",
       "falsifier": "Core <=0.3% and S&P still falls >1.5% (resilience thesis wrong), or core >0.3% and market rallies anyway (hike fear overstated).",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "wrong",
+      "resolved": "2026-06-10",
+      "resolution_note": "Falsifier fired verbatim: core printed 0.2% m/m (below our 0.3% line) and the S&P still fell 1.62%, closing at the lows. Mechanism autopsy: the call modeled CPI as the day's ONLY variable. Three things beat the soft core: (1) the war escalated overnight (IRGC strikes on US bases in three countries, Trump threatening to attack 'very hard') \u2014 the call's conditional never accounted for the other live binary; (2) composition \u2014 supercore accelerated to +0.55% m/m, worst since March 2024 and accelerating since fall 2025, so the 'soft' core was goods deflation masking services heat (the reader-desk flag at 8:45 was right); (3) a new flow story (the $3.6T OpenAI/Anthropic/SpaceX IPO pipeline) gave tech sellers a third reason. Right-for-the-right-reason check, inverted: HALF the mechanism worked \u2014 rate traders did look through the headline (10Y eased to 4.52%, June hike bets pared), exactly as we argued. The equity half failed because equities had problems the bond market doesn't price. Lesson distilled to playbook: on multi-binary days, condition calls on levels, not on a single catalyst."
     },
     {
       "id": "2026-06-09-oil-is-the-tell",
@@ -96,6 +96,32 @@
       "confidence": "medium",
       "horizon": "2026-06-12",
       "falsifier": "Core <=0.3% and SPX still fails to close above 7,440 by June 12 (dip-buyers weaker than we think, or the gamma framework is decoration). If core prints >0.3% the condition is void - mark expired, not wrong.",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-10-fomc-hold-hawkish",
+      "made": "2026-06-10",
+      "issue": "2026-06-10-afterhours",
+      "type": "macro",
+      "claim": "June 17 FOMC holds rates (no hike) \u2014 the soft core m/m plus a war-driven headline gives cover \u2014 but the supercore acceleration keeps the tilt hawkish: December-hike odds in futures stay above 50% through the meeting.",
+      "confidence": "medium",
+      "horizon": "2026-06-17",
+      "falsifier": "An actual hike on June 17 (hold half wrong), or post-meeting December-hike odds collapsing below 30% (hawkish-tilt half wrong).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-10-short-gamma-range",
+      "made": "2026-06-10",
+      "issue": "2026-06-10-afterhours",
+      "type": "market-direction",
+      "claim": "The amplified tape persists: until SPX closes back above the 7,420-7,450 zone where dealer hedging flips, daily swings stay wide \u2014 at least one of the next three sessions (June 11, 12, 15) prints a 1.5%+ high-to-low intraday range.",
+      "confidence": "high",
+      "horizon": "2026-06-15",
+      "falsifier": "All three sessions print high-low ranges under 1% while SPX remains below 7,420 (the gamma framework says that combination shouldn't happen; if it does, the framework is decoration).",
       "status": "open",
       "resolved": null,
       "resolution_note": null

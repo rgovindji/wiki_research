@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-09
+last_updated: 2026-06-10
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,14 @@ sources: 0
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 10, 2026 — Soft core, hot supercore, hotter war: S&P −1.62% breaks the 7,300 shelf; ORCL record RPO sold off on the $40B raise
+
+Per [[2026-06-10-cpi-supercore-iran-ai-ipo-rotation]]: the CPI binary resolved *soft on its stated terms* — core 0.2% m/m (below the 0.3% consensus), headline 0.5%/4.25% as feared, all energy — **and the market sold off hard anyway**: **S&P −1.62% to 7,266.99 · Nasdaq −1.98% to 25,169.50 · Dow −953 (−1.87%) to 49,918.78**, closing near the lows, industrials −3%+, tech −2%+. Three things beat the soft core: (1) **supercore accelerated to +0.55% m/m, worst since March 2024, and has been accelerating since fall 2025** — a domestically-generated services story the hawks bring to June 17 that Iran doesn't explain; (2) **the war escalated** — overnight IRGC strikes on US bases in Jordan/Bahrain/Kuwait, Trump promising to attack "very hard," Tehran reconsidering talks; WTI +2.1% to $90.03 (up, but well under the $95 line — Qatari mediators flew to Tehran); (3) **AI mega-IPO supply got named as a rotation driver** — OpenAI (~Sept, $730–850B) + Anthropic (~Oct) + SpaceX (June) ≈ **$3.6T of paper competing for the same institutional pools**, with BNP explicitly warning chip positions get liquidated to fund allocations. Korea set the overnight tone: KOSPI −4.5%, SK Hynix −7.5%, **VKOSPI >90 — a record, above its 2008 peak** — the most crowded AI-memory trade on earth getting de-risked. Gold fell below its 200-DMA (first time since Oct 2023) — on a war day, which says liquidation, not safe-haven rotation.
+
+**After the close, [[ORCL]] printed a record quarter and fell ~7%** ([[2026-06-10-ORCL-Q4-FY26-earnings]]): rev/EPS beats, **RPO $553B → $638B (+$85B in one quarter, essentially all large-scale AI contracts)** — but FY26 capex overshot ($55.7B vs $50B), FY27 capex guided to ~$70B net, and a **~$40B debt+equity raise** landed on a tape already auditing AI balance sheets. The new structural fact: **$75B of cumulative customer GPU prepayments** — the buildout is partially customer-funded, which complicates (without killing) the [[ai-infrastructure-debt]] contagion framing. [[TSM]] separately posted a record May (NT$417B, +30% y/y) into a Taiwan export-control headline.
+
+> **What this means:** June 5 was rates; June 10 was *everything else* — war, services inflation, IPO supply, funding scrutiny — and the index closed below the 7,300 options shelf that had held twice. The demand side of AI keeps printing records (ORCL RPO, TSMC May, NVDA-SK Hynix pact) while the *price* of AI equities now answers to flows: crowded positioning unwinding (Korea), $3.6T of IPO paper queueing, and funding mechanics (equity raise = GOOGL, debt+equity = ORCL, "considering" = META) repricing one name at a time. That's a sentiment/liquidity regime, not a demand break — but it can run further than fundamentals justify in both directions. **No stance/conviction changes.** Next tests: Adobe Q2 (June 11), **FOMC June 17 with the supercore asterisk**, triple-witching June 19, MRVL/FLEX inclusion June 22.
 
 ## June 9, 2026 — Iran whipsaw bought back to flat; US retaliatory strikes AFTER the close; CPI tomorrow is the binary
 

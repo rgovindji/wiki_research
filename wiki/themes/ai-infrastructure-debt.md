@@ -1,13 +1,23 @@
 ---
 type: theme
 tags: [debt, private-credit, srt, ai-data-centers, systemic-risk, contagion]
-last_updated: 2026-06-01
+last_updated: 2026-06-10
 last_full_review: 2026-05-15
-sources: 3
+sources: 4
 conviction: high
 ---
 
 # AI Infrastructure Debt — The Contagion Mechanism
+
+## 🔥 June 10, 2026 — ORCL Q4: the thesis's flagship name reported, and the picture got more complicated in both directions
+
+Per [[2026-06-10-ORCL-Q4-FY26-earnings]]: Oracle printed **RPO $553B → $638B** (+$85B in one quarter, "almost all" large-scale AI contracts), FY26 capex **$55.7B vs ~$50B guided**, FY27 net capex outlay **~$70B**, and announced a **~$40B FY27 debt+equity raise** (incl. $20B ATM; no new debt in calendar 2026). Stock −7% AH on the funding line, not the demand line. Three updates to this page's framework:
+
+1. **The treadmill is confirmed.** Capex overshooting guide + a $40B external raise on $32B of operating cash flow is exactly the financing-dependence this page warns about. ORCL remains the cleanest named exposure. Notably the raise is part-*equity* — ORCL is partially following the GOOGL playbook rather than purely the debt channel, which marginally de-risks the contagion vector while diluting shareholders.
+2. **NEW and material: $75B of cumulative customer GPU prepayments**, plus bring-your-own-hardware contracts (customer procures GPUs, Oracle deploys). **Which means:** a documented slice of the buildout is funded by *customers* — neither debt nor dilution — and the cleanest version of the contagion story ("Oracle borrows to build for OpenAI, who may not pay") now has a real offset on the books. The counterparty question doesn't vanish (prepayments come from the same concentrated AI customers), but the cash arrived in advance, which is the opposite of the 2008 pattern where the risk was all forward-dated.
+3. **The conversion clock is now public**: ~12% of the $638B recognized within 12 months, ~34% within 13–36 months, both guided to accelerate. **Which means:** the thesis has a falsifiable quarterly metric — if recognized-revenue conversion *doesn't* accelerate while capex runs $70B+, the gap is being financed, and this page's mechanism is live. AI infra gross margins declining through the ramp is the early static to watch.
+
+Same-day cluster: SMCI −10% on a $7B financing package; CRWV pressured on tallied founder sales ($2.3B, pre-arranged/disclosed — Chanos amplifying); SoftBank −8% on a stalled $6B OpenAI-linked margin loan. The market is auditing AI balance sheets name by name.
 
 ## 🔥 June 1, 2026 — GOOGL chose equity over debt: the *anti-bubble* signal at the top of the credit curve
 

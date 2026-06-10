@@ -1,15 +1,24 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-05
+last_updated: 2026-06-10
 last_full_review: 2026-05-09
-sources: 16
+sources: 17
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side.
+
+## June 10, 2026 — Two new bear mechanisms enter the file: mega-IPO supply and the electricity-CPI loop
+
+Per [[2026-06-10-cpi-supercore-iran-ai-ipo-rotation]], the June 10 rout (S&P −1.62%, tech −2%+, NVDA −3% / AVGO −4% / AMD −4% — on a *soft* core CPI day) surfaced two mechanisms that belong in this debate as distinct from valuation, rates, or demand:
+
+1. **AI mega-IPO supply as a flow-of-funds bear vector.** OpenAI (S-1 filed, ~Sept window, ~$730–850B target) + Anthropic (S-1 June 1, ~Oct) + SpaceX (June 18–30) ≈ **$3.6T of combined paper hitting public markets inside ~5 months** — roughly the GDP of France competing for the same institutional pools currently parked in NVDA and the Mag 7. BNP Paribas explicitly warned investors may liquidate chip positions to fund IPO allocations; session coverage named the IPO pipeline as a rotation driver for the first time. **Which means:** existing AI equities can de-rate without ANY fundamental deterioration, purely on portfolio-rebalancing mechanics — and the timing is datable (Sept–Oct), which makes it hedgeable. This is bearish for *prices* short-term and arguably bullish for the *cycle* (equity, not debt, funds the next leg — the GOOGL pattern at lab scale).
+2. **The electricity-CPI reflexive loop.** May CPI showed electricity +5.9% y/y (+43% since 2021), attributed in part to AI data-center demand — feeding a supercore acceleration (+0.55% m/m, worst since March 2024) that keeps Fed-hike risk alive into June 17. **Which means:** the AI buildout is now, at the margin, raising the discount rate applied to its own equities. A capex cycle that shows up in the inflation data that prices the capex is a genuinely new structural feature of this cycle vs 1999 — and it caps how "immune" the trade can be to its own success.
+
+Bull-side entries from the same 24 hours, for balance: [[ORCL]] added **$85B of RPO in one quarter** (essentially all AI contracts) and disclosed **$75B of customer GPU prepayments**; [[TSM]] printed a record May (+30% y/y); NVDA signed a multi-year HBM pact with SK Hynix. The demand engine keeps printing records while the price of the equity complex answers to flows — the June 5 "sentiment inflection, not fundamentals inflection" read is intact, now with named mechanisms.
 
 ## 🔴 June 5, 2026 — first session where bubble *skepticism itself* was a named selloff driver
 

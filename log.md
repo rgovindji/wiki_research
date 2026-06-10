@@ -9,6 +9,20 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-10] daily | Soft core, hot supercore, hotter war; ORCL record RPO sold off
+
+Headless 17:00 run. Two sources ingested on a heavy-signal day:
+
+- **[[2026-06-10-cpi-supercore-iran-ai-ipo-rotation]]** — the session: S&P −1.62% to 7,266.99 (closed below the 7,300 options shelf, near the lows), Nasdaq −1.98%, Dow −953. May CPI: core 0.2% m/m (soft, below our 0.3% line) but **supercore +0.55% m/m, worst since March 2024, accelerating since fall 2025** — the evening-run question from this morning's addendum is answered: the composition is *mixed* (airfares +2.7% m/m = war jet fuel; insurance −1.7%) **but the trend predates the war**, so it's not cleanly look-through-able. Electricity +5.9% y/y partly AI-DC-driven (reflexive loop noted in [[ai-bubble-debate]]). Iran: overnight IRGC strikes on US bases in Jordan/Bahrain/Kuwait; Trump threatening to hit "very hard"; WTI +2.1% to $90.03 (under the $95 line; oil-is-the-tell intact). KOSPI −4.5% / VKOSPI >90 record. **New bear mechanism logged: OpenAI+Anthropic+SpaceX ≈ $3.6T IPO pipeline as flow-of-funds rotation driver** (BNP chip-liquidation warning). TSMC record May NT$417B +30% y/y vs Taiwan export-control headline. Gold below 200-DMA (first since Oct 2023) on a war day = liquidation tell.
+- **[[2026-06-10-ORCL-Q4-FY26-earnings]]** — per the always-on earnings workflow (official release 403-blocked; compiled from coverage + call transcript, raw saved). Beats on rev/EPS; **RPO $553B→$638B**; FY26 capex $55.7B vs $50B guided; FY27 net capex ~$70B; **~$40B FY27 debt+equity raise**; **$75B cumulative customer GPU prepayments** (genuinely new — amends the [[ai-infrastructure-debt]] ORCL framing in both directions). Stock −7% AH.
+
+- Wiki touched: [[overview]] (June 10 lead), [[ORCL]], [[ai-infrastructure-debt]], [[ai-bubble-debate]], [[inflation-tariffs]] (May CPI section; June-10-binary open question resolved), [[TSM]], [[MU]], [[index]], log
+- Stance/conviction changes: **none**
+- Newsletter: predictions resolved per ledger (see predictions.json — cpi-core-asymmetry graded against its falsifier); YOLO desk no-trigger resolved; After Hours issue #3 written
+- Skipped (low-value): GameStop/Chewy earnings (not wiki tickers); Adobe preview pieces (print is tomorrow); Stratechery/SemiAnalysis (no new on-thesis long-form); CRWV founder-sales tally (noise — pre-arranged 10b5-1 sales, captured inside the session summary rather than as its own ingest)
+
+---
+
 ## [2026-06-10] note | CPI supercore wrinkle (curator flag, ~8:45 ET): 3.67% y/y vs 3.38% prior
 
 The flash's "core just blinked" framing has an asterisk the evening letter MUST own in the scorecard: **supercore (core services ex-housing) accelerated to 3.67% y/y from 3.38%** — a 0.29pp one-month jump implying a hot monthly services print masked by goods/shelter softness. Core y/y also ticked up 2.8→2.9. Rate futures pared hike bets on the soft core m/m, but supercore is the hawks' exhibit for June 17. **Evening run to-do:** (1) pull the CPI component breakdown — if airfares/transport services (jet-fuel passthrough) drove supercore, it's war inflation in a services costume and the look-through thesis mostly survives; if insurance/medical/recreation broadly firmed, it's genuine domestic heat; (2) grade `2026-06-09-cpi-core-asymmetry` on its stated terms BUT apply the right-for-the-right-reason check using the supercore answer; (3) carry supercore into the June 17 FOMC framing.
