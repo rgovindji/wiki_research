@@ -35,6 +35,7 @@ Three files make the letters compound instead of drift:
 - **`newsletter/market_state/DATE.json`** — the daily dashboard (SPX/SPY gamma levels, VIX + term structure, put/call, unusual options flow, technicals, regime call, key levels, event calendar). Reasoning fuel only — the reader sees conclusions, never the dashboard.
 - **`newsletter/playbook.md`** — operating lessons distilled from resolutions, read by both prompts before writing. Hypotheses promote to Active after two confirmations; falsified lessons retire with evidence. Friday runs consolidate.
 - **`newsletter/yolo.json`** — the YOLO desk: one defined-risk, paper-only intraday options idea per morning brief, keyed to the levels; the close run resolves it against the tape and keeps the public win/loss record. The renderer turns a `{{LEVELS_CHART}}` token in any issue into a QuickChart PNG of SPX vs the gamma walls/flip and support/resistance from `market_state/`.
+- **`scripts/market_levels.py`** — Polygon.io pull, run first in the close run's intelligence sweep: exact closes for portfolio tickers + SPY/QQQ (works on the free plan; needs `POLYGON_KEY` in `.env`), plus a full SPX/SPY GEX computation (flip, walls, net GEX) that 403s on the free plan and auto-activates on Options Starter ($29/mo).
 
 Reader-facing effects: a Scorecard section when calls resolve (wrong calls get the autopsy), a plain-English "tomorrow's setup" with levels-and-why, and occasional clearly-fenced high-risk ideas — logged and scored like everything else, never added to the model portfolio.
 

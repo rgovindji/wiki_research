@@ -61,7 +61,17 @@ Execute the 8-step daily ritual from `feedback_daily_update_workflow.md`, with t
 
 ## Part 2 — Market intelligence sweep
 
-Write `newsletter/market_state/YYYY-MM-DD.json`, following the schema of the most recent snapshot (the `_doc` field explains each section). This is **reasoning fuel — the reader never sees it**; the letter shows conclusions, not the dashboard. Collect via WebSearch (~5-8 calls on top of part 1):
+Write `newsletter/market_state/YYYY-MM-DD.json`, following the schema of the most recent snapshot (the `_doc` field explains each section). This is **reasoning fuel — the reader never sees it**; the letter shows conclusions, not the dashboard.
+
+**Run the API pull FIRST** (it takes ~3 minutes on the free plan's rate limit — start it, then do your WebSearch sweeps while it runs):
+
+```
+python3 scripts/market_levels.py
+```
+
+Its JSON gives you (a) **exact closes for every portfolio ticker + SPY/QQQ** — use these for `portfolio.json` prices and the indexes section (SPY×10 ≈ SPX as a sanity cross-check); API numbers beat search snippets, always. And (b) **gamma levels** if `gamma.available` is true (zero-gamma flip, call wall, put wall, net GEX — put them straight into the snapshot with source "polygon/computed"). While `gamma.available` is false (free plan), keep sourcing gamma from search snippets per the playbook; when both exist, record both and note any disagreement — we're auditing the computed model against the snippet sources before trusting it.
+
+Then collect via WebSearch (~5-8 calls on top of part 1):
 
 - **Indexes + regime**: closes, intraday range, sector breadth. Make the regime call — bull / bull-under-stress / sideways / bear-rally / bear — with a one-line rationale and an explicit "what would change it."
 - **Gamma / dealer positioning**: search for today's SPX/SPY zero-gamma flip level, call wall, put wall (SpotGamma, Menthor Q, OptionCharts commentary). Above zero-gamma = dealers dampen moves; below = dealers amplify them. If you can't find fresh numbers, leave null — never guess a level.

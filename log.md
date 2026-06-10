@@ -9,6 +9,14 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-09] note | Polygon.io wired in: API closes live, GEX engine built (dormant on free plan)
+
+- New `scripts/market_levels.py` — runs first in the close run's intelligence sweep. **Closes work on the free plan**: exact daily closes for all 11 portfolio tickers + SPY/QQQ, paced for the 5 req/min free limit, cross-validated 13/13 against the hand-collected 2026-06-09 prices. Replaces web-search price hunting as the primary source.
+- **Free plan is NOT enough for gamma**: options chain snapshots (greeks + OI), indices (SPX/VIX), and grouped-daily all return 403. The full GEX computation (net GEX by strike, cumulative-flip proxy, call/put walls, I:SPX with SPY×10 fallback) is implemented and auto-activates on Polygon Options Starter ($29/mo). Until then, gamma stays search-snippet-sourced with the tape-coherence check.
+- daily_prompt part 2 updated (API pull first, api > snippet, side-by-side audit when both exist); playbook data-source notes updated.
+
+---
+
 ## [2026-06-09] note | Levels chart + YOLO desk added to the letters
 
 Two reader-facing upgrades wired into the loop:

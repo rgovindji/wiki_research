@@ -29,8 +29,10 @@ As of 2026-06-09: 0 resolved (ledger seeded today). Update this line whenever `p
 
 ## Data-source notes
 
-*(Live-tested 2026-06-09, ~16:15 CT)*
+*(Live-tested 2026-06-09, ~16:15 CT; Polygon wired ~19:25 CT)*
 
+- **Polygon API (`scripts/market_levels.py`): closes WORK on the free plan.** Exact daily closes for all portfolio tickers + SPY/QQQ, cross-validated against stockanalysis.com on 2026-06-09 (13/13 match). Primary price source — run it first in the close run; it's paced ~3 min on the free tier's 5 req/min. SPY×10 ≈ SPX (ratio 10.02 on 2026-06-09).
+- **Polygon gamma: BLOCKED on free plan** (options chain snapshot 403s; so do indices/VIX and grouped-daily). The GEX computation in `market_levels.py` is fully implemented and auto-activates if the account is upgraded to Options Starter ($29/mo). When it activates: run computed levels side-by-side with snippet levels for ~2 weeks and log disagreements here before trusting it as sole source — the naive dealer model lacks the proprietary adjustments paid services apply.
 - **Gamma levels (zero-gamma flip, call/put walls): WORKS via WebSearch snippets, not direct fetch.** Query shape that worked: "SPX zero gamma flip level call wall put wall {date}" — Barchart/InsiderFinance/OptionCharts pages get indexed and the snippet carries the numbers. Direct WebFetch of those pages is paywalled/JS-blocked; don't bother. **Mandatory sanity check before using a level:** it must cohere with the tape (2026-06-09: put wall 7300 vs defended low 7297 — pass). A level that doesn't line up with recent price action is stale; drop it.
 - **VIX: level findable same-day via search** (intraday reads from StreetStats and similar get indexed); closing value sometimes lags to next morning. Term structure (front vs 3-month) rarely surfaces in snippets — treat as a bonus, not a required field.
 - **Put/call ratio: lags 1-2 trading days** in free sources (ycharts/MacroMicro index CBOE data late). Use it as positioning *context*, never as a same-day signal.
