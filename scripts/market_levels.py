@@ -172,9 +172,10 @@ def _flip_by_iteration(contracts: list[tuple], spot: float) -> float | None:
     return None
 
 
-def fetch_gamma(pg: Polygon, underlying: str, spot: float | None) -> dict:
-    """Chain snapshot -> net GEX by strike -> flip + walls.
-    Returns available: false with the reason when the plan doesn't allow it."""
+# Normalized contract: (strike, dte_days, t_years, iv, oi, ctype, snap_gamma)
+
+def load_polygon_contracts(pg: Polygon, underlying: str, spot: float | None) -> tuple[list | None, dict]:
+    """Paginate the Polygon chain snapshot into normalized contracts."""
     today = dt.date.today()
     params = {
         "limit": 250,
@@ -187,22 +188,18 @@ def fetch_gamma(pg: Polygon, underlying: str, spot: float | None) -> dict:
 
     status, d = pg.get(f"/v3/snapshot/options/{underlying}", params)
     if status == 403:
-        return {"available": False,
-                "reason": "options chain snapshot requires Polygon Options Starter ($29/mo); free plan returns 403"}
+        return None, {"reason": "options chain snapshot requires Polygon Options Starter ($29/mo); free plan returns 403"}
     if status != 200:
-        return {"available": False, "reason": f"http {status}: {d.get('error', '')[:120]}"}
+        return None, {"reason": f"http {status}: {d.get('error', '')[:120]}"}
 
-    by_strike: dict[float, float] = {}
-    contracts: list[tuple] = []  # (strike, T_years, iv, oi, type) for flip iteration
+    contracts: list[tuple] = []
     spot_seen = spot
-    today_d = dt.date.today()
     pages = 0
     while True:
         pages += 1
         for c in d.get("results") or []:
             det = c.get("details") or {}
-            greeks = c.get("greeks") or {}
-            gamma = greeks.get("gamma")
+            gamma = (c.get("greeks") or {}).get("gamma")
             oi = c.get("open_interest")
             strike = det.get("strike_price")
             ctype = det.get("contract_type")
@@ -211,55 +208,137 @@ def fetch_gamma(pg: Polygon, underlying: str, spot: float | None) -> dict:
             ua = (c.get("underlying_asset") or {}).get("price")
             if ua:
                 spot_seen = ua
-            if not (gamma and oi and strike and ctype):
+            if not (gamma and oi and strike and ctype and exp):
                 continue
-            s = spot_seen or strike
-            gex = gamma * oi * 100 * s * s * 0.01
-            by_strike[strike] = by_strike.get(strike, 0.0) + (gex if ctype == "call" else -gex)
-            if iv and exp:
-                try:
-                    t_years = max((dt.date.fromisoformat(exp) - today_d).days, 0.5) / 365.0
-                    contracts.append((strike, t_years, iv, oi, ctype))
-                except ValueError:
-                    pass
+            try:
+                dte = (dt.date.fromisoformat(exp) - today).days
+            except ValueError:
+                continue
+            contracts.append((strike, dte, max(dte, 0.5) / 365.0, iv, oi, ctype, gamma))
         nxt = d.get("next_url")
         if not nxt or pages >= 120:
             break
         status, d = pg.get_url(nxt)
         if status != 200:
             break
+    return contracts, {"spot": spot_seen, "pages": pages}
 
+
+CBOE_CHAIN_URL = "https://cdn.cboe.com/api/global/delayed_quotes/options/_SPX.json"
+
+
+def load_cboe_contracts() -> tuple[list | None, dict]:
+    """CBOE's free delayed SPX chain — the whole thing in one GET, with OI,
+    greeks, and IV. Independent of Polygon; used as the cross-check source
+    (and the same feed gamma-desk runs on)."""
+    try:
+        with urllib.request.urlopen(CBOE_CHAIN_URL, timeout=30) as r:
+            d = json.loads(r.read())
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
+        return None, {"reason": f"cboe fetch failed: {e}"}
+    data = d.get("data", {})
+    spot = data.get("current_price") or data.get("close")
+    today = dt.date.today()
+    contracts: list[tuple] = []
+    for c in data.get("options") or []:
+        sym = c.get("option", "")
+        oi = c.get("open_interest")
+        gamma = c.get("gamma")
+        iv = c.get("iv")
+        if not (sym and oi and gamma):
+            continue
+        # SPXW260622P07285000 -> root + YYMMDD + C/P + strike*1000
+        tail = sym[-15:]
+        try:
+            exp = dt.date(2000 + int(tail[:2]), int(tail[2:4]), int(tail[4:6]))
+            ctype = {"C": "call", "P": "put"}[tail[6]]
+            strike = int(tail[7:]) / 1000.0
+        except (ValueError, KeyError):
+            continue
+        if spot and not (spot * 0.85 <= strike <= spot * 1.15):
+            continue
+        dte = (exp - today).days
+        if dte < 0 or dte > 45:
+            continue
+        contracts.append((strike, dte, max(dte, 0.5) / 365.0, iv, oi, ctype, gamma))
+    if not contracts:
+        return None, {"reason": "cboe chain parsed but no usable contracts"}
+    return contracts, {"spot": spot}
+
+
+def compute_levels(contracts: list, spot: float | None, max_dte: int, want_flip: bool) -> dict:
+    """Net dealer GEX by strike within a DTE window -> walls (+ flip)."""
+    by_strike: dict[float, float] = {}
+    flip_inputs: list[tuple] = []
+    s_ref = spot
+    for strike, dte, t_years, iv, oi, ctype, snap_gamma in contracts:
+        if dte > max_dte:
+            continue
+        s = s_ref or strike
+        gex = snap_gamma * oi * 100 * s * s * 0.01
+        by_strike[strike] = by_strike.get(strike, 0.0) + (gex if ctype == "call" else -gex)
+        if iv:
+            flip_inputs.append((strike, t_years, iv, oi, ctype))
     if not by_strike:
+        return {"error": f"no contracts within {max_dte}d"}
+
+    out = {
+        "window": f"<={max_dte}d",
+        "call_wall": max(by_strike, key=lambda s: by_strike[s]),
+        "put_wall": min(by_strike, key=lambda s: by_strike[s]),
+        "net_gex_usd": round(sum(by_strike.values())),
+        "n_contracts": len(flip_inputs),
+    }
+    if want_flip and flip_inputs and spot:
+        flip = _flip_by_iteration(flip_inputs, spot)
+        out["zero_gamma_flip"] = flip
+        out["flip_method"] = ("spot-iterated BS-gamma zero crossing (±7% grid)" if flip is not None
+                              else "no zero crossing within ±7% of spot — short gamma at all nearby levels")
+    return out
+
+
+def fetch_gamma(pg: Polygon, underlying: str, spot: float | None) -> dict:
+    """Polygon-primary GEX with a CBOE cross-check, each split into the
+    aggregate (<=45d) wall structure and the near-view (<=2DTE) shelf that
+    intraday flows actually fight over. Top-level fields mirror the
+    aggregate for backward compatibility."""
+    contracts, meta = load_polygon_contracts(pg, underlying, spot)
+    if contracts is None:
+        return {"available": False, **meta}
+    if not contracts:
         return {"available": False, "reason": "snapshot returned no usable contracts (greeks/OI missing)"}
+    spot_seen = meta.get("spot") or spot
 
-    strikes = sorted(by_strike)
-    net_total = sum(by_strike.values())
-    call_wall = max(strikes, key=lambda s: by_strike[s])
-    put_wall = min(strikes, key=lambda s: by_strike[s])
+    agg = compute_levels(contracts, spot_seen, 45, want_flip=True)
+    near = compute_levels(contracts, spot_seen, 2, want_flip=False)
 
-    # Zero-gamma flip: recompute net GEX across a spot grid using each
-    # contract's IV (BS gamma) and find the sign change. Null when the curve
-    # doesn't cross within ±7% of spot — i.e., dealers are short gamma at
-    # every nearby level, which is itself information.
-    flip = None
-    flip_method = "spot-iterated BS-gamma zero crossing (±7% grid)"
-    if contracts and spot_seen:
-        flip = _flip_by_iteration(contracts, spot_seen)
-        if flip is None:
-            flip_method = "no zero crossing within ±7% of spot — short gamma at all nearby levels"
-
-    return {
+    out = {
         "available": True,
         "underlying": underlying,
         "spot": spot_seen,
-        "zero_gamma_flip": flip,
-        "call_wall": call_wall,
-        "put_wall": put_wall,
-        "net_gex_usd": round(net_total),
-        "contracts_pages": pages,
-        "flip_method": flip_method,
-        "model": "naive dealer (long calls/short puts), <=45d expiries, +/-15% strikes",
+        "zero_gamma_flip": agg.get("zero_gamma_flip"),
+        "call_wall": agg.get("call_wall"),
+        "put_wall": agg.get("put_wall"),
+        "net_gex_usd": agg.get("net_gex_usd"),
+        "flip_method": agg.get("flip_method"),
+        "aggregate": agg,
+        "near_view": near,
+        "contracts_pages": meta.get("pages"),
+        "model": "naive dealer (long calls/short puts), +/-15% strikes; aggregate <=45d, near-view <=2DTE",
     }
+
+    cboe_contracts, cboe_meta = load_cboe_contracts()
+    if cboe_contracts:
+        cboe_spot = cboe_meta.get("spot")
+        out["crosscheck"] = {
+            "source": "cboe-delayed",
+            "spot": cboe_spot,
+            "aggregate": compute_levels(cboe_contracts, cboe_spot, 45, want_flip=True),
+            "near_view": compute_levels(cboe_contracts, cboe_spot, 2, want_flip=False),
+        }
+    else:
+        out["crosscheck"] = {"source": "cboe-delayed", "error": cboe_meta.get("reason")}
+    return out
 
 
 def audit_gamma(gamma: dict) -> dict:
@@ -314,6 +393,19 @@ def audit_gamma(gamma: dict) -> dict:
                   f"computed {computed:.0f} vs snippet {snippet:.0f} ({diff:.2f}% apart)")
         else:
             check(f"vs-snippet-{name}", None, "no snippet reference to compare")
+
+    # Cross-source: Polygon-computed vs CBOE-computed (independent feeds,
+    # same model). Disagreement here means a data problem, not a model one.
+    cc = (gamma.get("crosscheck") or {}).get("aggregate") or {}
+    for name, ours, theirs in (("flip", a_flip, cc.get("zero_gamma_flip")),
+                               ("call_wall", a_cw, cc.get("call_wall")),
+                               ("put_wall", a_pw, cc.get("put_wall"))):
+        if isinstance(ours, (int, float)) and isinstance(theirs, (int, float)):
+            diff = abs(ours - theirs) / theirs * 100
+            check(f"vs-cboe-{name}", diff < 1.0,
+                  f"polygon {ours:.0f} vs cboe {theirs:.0f} ({diff:.2f}% apart)")
+        else:
+            check(f"vs-cboe-{name}", None, "cboe crosscheck unavailable")
     return report
 
 

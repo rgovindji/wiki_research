@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-09] note | Dual-source GEX + near-view shelves; put side is a zone
+
+Late-night upgrade after comparing notes with the curator's gamma-desk tool (separate repo, 0-2DTE focus):
+
+- `market_levels.py` now computes **two windows from two independent feeds**: aggregate (≤45d) and near-view (≤2DTE) from Polygon (primary) AND CBOE's free delayed SPX chain (crosscheck, one GET, 30.7k contracts — gamma-desk's feed).
+- **Cross-source day 1:** flip 7462 vs 7459 (0.05%), call wall 7600 exact, near-view put shelf 7355 on both — independently matching gamma-desk's 7355 trigger level. Put wall disagreed (7300 Polygon vs 7385 CBOE) → audit flagged "suspect" correctly; resolution: put-side support is a **zone** (7300–7385, ledge 7355 inside) when fresh hedging stacks; letters describe it as such.
+- Chart now plots near-view shelves; market_state gamma block carries `near_put_wall`/`near_call_wall`; prompt instructs zone-language on source disagreement.
+
+---
+
 ## [2026-06-09] note | Polygon Options Starter live: in-house GEX validated 6/6 against snippet sources
 
 Curator upgraded to Options Starter ($29/mo) this evening; tested immediately:

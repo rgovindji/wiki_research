@@ -261,11 +261,13 @@ MARKET_STATE_DIR = REPO_ROOT / "newsletter" / "market_state"
 # Muted level colors: warm reds above price (resistance-flavored), greens
 # below (support-flavored), blue for the gamma flip.
 LEVEL_STYLES = [
-    ("call_wall",  "Call wall",  "#c64545", [6, 4]),
-    ("zero_gamma", "Gamma flip", "#5577aa", [2, 3]),
-    ("put_wall",   "Put wall",   "#0f7c4a", [6, 4]),
-    ("resistance", "Resistance", "#b8956e", [1, 3]),
-    ("support",    "Support",    "#6b8f88", [1, 3]),
+    ("call_wall",      "Call wall",        "#c64545", [6, 4]),
+    ("near_call_wall", "Near shelf (2d)",  "#d4a574", [2, 2]),
+    ("zero_gamma",     "Gamma flip",       "#5577aa", [2, 3]),
+    ("near_put_wall",  "Near shelf (2d)",  "#5db8a6", [2, 2]),
+    ("put_wall",       "Put wall",         "#0f7c4a", [6, 4]),
+    ("resistance",     "Resistance",       "#b8956e", [1, 3]),
+    ("support",        "Support",          "#6b8f88", [1, 3]),
 ]
 
 
@@ -278,7 +280,9 @@ def _collect_levels(latest: dict) -> list[tuple[str, float, str, list]]:
     levels: list[tuple[str, float, str, list]] = []
     style = {k: (label, color, dash) for k, label, color, dash in LEVEL_STYLES}
 
-    for key, field in (("call_wall", "call_wall"), ("zero_gamma", "zero_gamma_flip"), ("put_wall", "put_wall")):
+    for key, field in (("call_wall", "call_wall"), ("near_call_wall", "near_call_wall"),
+                       ("zero_gamma", "zero_gamma_flip"),
+                       ("near_put_wall", "near_put_wall"), ("put_wall", "put_wall")):
         v = gamma.get(field)
         if isinstance(v, (int, float)):
             label, color, dash = style[key]

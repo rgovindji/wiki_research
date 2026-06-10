@@ -55,7 +55,11 @@
       "net_gex": null,
       "source": "polygon/computed (scripts/market_levels.py, Options Starter active 2026-06-09 evening); snippet sources agreed: walls 0.00% apart, flip 0.30% (7440 snippet vs 7462 computed). Audit verdict: pass (6/6).",
       "note": "SPX closed 7386.65 = BELOW the ~7460 flip with net GEX -$35B: dealers short gamma, moves amplify \u2014 consistent with the 1.5% midday whipsaw. Today's 7297 low defended within 3 points of the 7300 put wall. Side-by-side trust period for computed levels runs ~2 weeks from 2026-06-09.",
-      "net_gex_usd": -35011221270
+      "net_gex_usd": -35011221270,
+      "near_put_wall": 7355,
+      "near_call_wall": 7525,
+      "near_view_note": "<=2DTE window: net GEX -$13.7B (Polygon) / -$33B (CBOE); the 7355 shelf is what intraday flows fight before the 7300 aggregate wall \u2014 independently matches gamma-desk's level.",
+      "crosscheck": "CBOE delayed chain agrees: flip 7459 (0.05% from Polygon's 7462), call wall 7600 exact. Put-wall disagreement 7300 (Polygon) vs 7385 (CBOE) \u2014 put side is a ZONE 7300-7385 with the 7355 ledge inside, reflecting fresh flush-hedging; treat as zone in letters."
     }
   },
   "rates_commodities": {
