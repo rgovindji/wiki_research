@@ -37,3 +37,7 @@ wiki.db-wal
 
 # AWS Lambda build artifacts
 aws/build/
+
+# gamma-desk is its own repo/project — never track it here (a gitlink without
+# .gitmodules breaks every CI checkout; the nightly git add -A would re-add it)
+gamma-desk/
