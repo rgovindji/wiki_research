@@ -2,9 +2,9 @@
   "_doc": "The YOLO desk ledger. One defined-risk intraday options idea per morning brief, keyed to the day's levels (gamma walls, flip, event triggers). PAPER ONLY, lottery-ticket framing \u2014 but analyzed and scored with full seriousness. Morning run appends the day's trade (status: open). Close run resolves it against the actual tape: did the trigger fire, did it reach target or invalidation, honest payoff estimate. Statuses: open | win | loss | no-trigger | expired. Resolved trades need a resolution_note with the mechanism. 'No clean setup, desk is flat' is a valid morning outcome \u2014 don't force a trade; flat days are not logged.",
   "scorecard": {
     "wins": 1,
-    "losses": 0,
+    "losses": 1,
     "no_trigger": 1,
-    "notes": "Seeded 2026-06-09 with the desk's origin trade. 2026-06-10: first no-trigger (CPI double-key failed soft; flush came on the war anyway \u2014 see resolution_note)."
+    "notes": "Seeded 2026-06-09 with the desk's origin trade. 2026-06-10: first no-trigger (CPI double-key failed soft; flush came on the war anyway). 2026-06-11: first loss \u2014 direction right, wall never tagged, 0DTE expired 6 points OTM; time-stop lesson added to playbook."
   },
   "trades": [
     {
@@ -45,9 +45,9 @@
       "trigger": "SPX reclaims 7,355 (the near-dated hedging ledge) after the 8:30 ET PPI print and holds it ~30 minutes, regardless of which catalyst drives it there.",
       "target": "7,420-7,430 near call wall / flip zone. Exit at the wall, where dealer hedging flips from tailwind to headwind.",
       "invalidation": "SPX back below 7,325 (the opening gap area) after entry - failed reclaim, exit, no re-entry. If 7,265 breaks instead of 7,355, the desk stays flat: no improvised bearish card (June 10 lesson - process, not mood).",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "loss",
+      "resolved": "2026-06-11",
+      "resolution_note": "Trigger fired cleanly: the open faded the hot PPI to 7,257 (the 7,355 reclaim wasn't immediate), then the strike-cancellation headlines drove SPX through 7,355 with momentum and it held far longer than the required 30 minutes — and per the June 10 lesson the entry keyed to the level even though the catalyst was Iran, not PPI. The squeeze mechanism worked exactly as drawn: dealers chased the move 155 points off the low. Then it stalled at 7,412.68 — EIGHT points short of the 7,420-7,430 target wall (tonight's recompute puts the wall at 7,395/flip 7,424, i.e. the magnet was nearer and weaker than the morning map showed) — and faded to close 7,394.30. The card's rules had no exit for 'almost': target not tagged, invalidation (7,325) never touched, so the 0DTE call rode to expiry and finished 6 points out of the money. Worthless. A trade that was directionally right, mechanically right, and up big intraday (the call was well ITM at 7,412 with hours left) returned -100% because the exit logic only knew about the wall. Mechanism lesson: walls are magnets, not promises — an 0DTE card needs a time-stop (e.g., exit at 3:30 ET if neither target nor invalidation has hit) because theta resolves 'neither' against the holder, always. Desk record: 1-1-1."
     }
   ]
 }

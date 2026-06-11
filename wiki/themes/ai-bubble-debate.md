@@ -1,15 +1,19 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-10
+last_updated: 2026-06-11
 last_full_review: 2026-05-09
-sources: 17
+sources: 18
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side.
+
+## June 11, 2026 — The toll-payer / toll-taker split: software de-rates on record results while the hardware layer squeezes
+
+Per [[2026-06-11-deescalation-rally-software-derate]]: on a +1.75% de-escalation rally, the AI trade *bifurcated* rather than rallied uniformly. The toll-takers (supply layer) squeezed — [[MU]] +11.7% (Wolfe $1,250 PT), [[MRVL]] +11.1%, [[ALAB]] +11.1%, [[VRT]] +6.0% — while the toll-payers de-rated on *good news*: [[ORCL]] −8.5% the day after an $85B RPO quarter (funding plan), Adobe −6.25% into a beat-and-raise print with **AI-first ARR tripled to >$500M** and ~−5% more after hours, Salesforce at 52-week lows. Even the people moved: Adobe's CFO resigned to join Marvell. **Which means:** the market is now pricing a specific answer to "who captures AI economics" — whoever sells scarce physical inputs (memory, interconnect, power) collects on every capex dollar regardless of which model or app wins, while whoever must *spend* those dollars (clouds raising capital) or whose product AI might commoditize (creative/CRM software) pays for the option to find out. The bear-side caveat that keeps this honest: ADBE's $500M AI ARR is ~2% of revenue — the "AI eats software" fear is still running on multiple compression, not revenue evidence, and a single strong software AI-revenue print could snap the rotation back. The bull-side caveat: toll-taker multiples now embed Wolfe/UBS-grade supercycle math (DRAM +200%), which is its own crowding risk — the KOSPI fear-gauge record was *one day* earlier.
 
 ## June 10, 2026 — Two new bear mechanisms enter the file: mega-IPO supply and the electricity-CPI loop
 

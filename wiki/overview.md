@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-10
+last_updated: 2026-06-11
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,14 @@ sources: 0
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 11, 2026 — Trump cancels the strikes, the deal is "largely done": +1.75% relief rally through a hot PPI; software de-rates while memory squeezes
+
+Per [[2026-06-11-deescalation-rally-software-derate]]: the war trade reversed in one session. Trump **canceled the night's planned strikes** ("discussions… brought to the highest level of Iranian leadership and approved"), called the settlement largely done with a **signing possible this weekend in Europe**, and said Hormuz "officially opens" on signing. **S&P +1.75% to 7,394.30 · Nasdaq +2.54% to 25,809.66 · Dow +930 to 50,848.75 · Russell +3.02%**; **WTI crashed >4% to $85.94 (lowest since April)** *through* Iran's standing "Hormuz closed" declaration — the oil market called the bluff. VIX 22.22 → 19.44. The session shrugged off a **hot May PPI (+1.1% m/m vs +0.6% consensus; +6.5% y/y, highest since Nov 2022)** because ~80% of the acceleration was energy goods (wholesale gasoline +23.4%) — a war premium the crude collapse was refunding in real time; the 10Y *fell* to ~4.46%. The non-ignorable residue: **core PPI +0.4% m/m**, the second firm services-side reading in three days after Wednesday's supercore.
+
+**The internal rotation was the bigger story than the index move**: software de-rated *into* a rally — [[ORCL]] −8.5% to $184.10 (day-after follow-through on the $40B raise), CRM near 52-week lows, **Adobe −6.25% into its own print, then ~−5% more AH despite a beat-and-raise** (Q2 rev $6.62B +13%, **AI-first ARR tripled to >$500M**, FY26 guide raised) when CFO Dan Durn resigned — **to join [[MRVL]]**. Meanwhile the AI-hardware complex squeezed: **[[MU]] +11.7% to $995.87** (Wolfe PT $535→$1,250 on DRAM +200% / NAND +216% price forecasts; ~$226.5B FY27 rev / ~$135 EPS scenario), **[[MRVL]] +11.1% to $280.71** (inclusion bid 7 sessions out), ALAB +11.1%, [[VRT]] +6.0%, [[DELL]] +5.9%, [[NVDA]] +2.2% (and an **S&P Global credit upgrade to AA**). [[CRWV]] priced its $3.5B notes — **9.625% USD / 8.50% EUR, due 2032, at par** — and the stock shrugged (+0.1%): AI-infra credit is open, at a price.
+
+> **What this means:** The market is now positioned for a signed deal — oil at $85.94 against a *declared-closed* strait is the most aggressive peace pricing of the cycle, which makes the weekend signing a live binary in both directions: a signature releases the last of the war premium (and the CPI-headline pressure on the Fed); a slip re-prices it fast. Underneath, the cycle's newest expression is a **capital rotation from AI toll-payers to AI toll-takers** — Oracle and Adobe (who must *spend* to stay in the race, or whose product AI commoditizes) de-rated on record results, while memory/networking/power (who *collect* on every dollar of buildout) squeezed double digits. Adobe's own CFO leaving software for silicon is the rotation expressed as a career move. **No stance/conviction changes.** Next: June 12 (gamma-reclaim deadline), weekend signing watch, **BoJ June 16-17 + FOMC June 17**, triple-witching June 19, MRVL/FLEX inclusion June 22, MU print ~June 24.
 
 ## June 10, 2026 — Soft core, hot supercore, hotter war: S&P −1.62% breaks the 7,300 shelf; ORCL record RPO sold off on the $40B raise
 

@@ -9,6 +9,20 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-11] daily | Strikes canceled, deal near: relief rally through a hot PPI; software→silicon rotation
+
+Headless 17:00 run. Two sources ingested:
+
+- **[[2026-06-11-deescalation-rally-software-derate]]** — the session: Trump canceled the night's strikes mid-day and called the settlement "largely done" (signing possibly this weekend in Europe; Hormuz "officially opens" on signing). S&P +1.75% to 7,394.30 (open 7,287.67 / low 7,257.33 / high 7,412.68 — a 2.14% range, briefly under the 7,265 put wall and stalled 8 pts under the 7,420 flip zone), Nasdaq +2.54%, Dow +930, Russell +3.02%; VIX 22.22→19.44. **WTI −4%+ to $85.94 through Iran's standing "Hormuz closed" declaration** — the bluff got called. **May PPI hot (+1.1% m/m vs +0.6%; +6.5% y/y highest since Nov 2022) and ignored** — ~80% energy-goods; 10Y fell to 4.46%; core PPI +0.4% is the residue that matters for June 17. Rotation: [[MU]] +11.7% to $995.87 (Wolfe $1,250 PT), [[MRVL]] +11.1% to $280.71, ALAB +11.1%, [[VRT]] +6.0%, [[DELL]] +5.9% vs [[ORCL]] −8.5% to $184.10, CRM 52-week lows, **Adobe −6.25% into a beat-and-raise print (AI-first ARR tripled >$500M), −5% more AH on CFO Dan Durn leaving — for Marvell**. [[CRWV]] priced $1.25B at 9.625% + €2B at 8.50% (2032, par); stock +0.1%. [[NVDA]] +2.2% + **S&P Global credit upgrade to AA**.
+- **[[2026-06-03-stratechery-nvda-ai-pc-solara-mai]]** — backfilled long-form (published June 3, surfaced today): Thompson's RTX Spark critique ("chatbot circa 2023" — the first serious bear case on the NVDA PC leg, scoped to that leg only), MSFT's seven MAI models (Claude Sonnet 4.6 blind-parity claims; RLE enterprise pitch), Project Solara.
+
+- Wiki touched: [[overview]] (June 11 lead), [[MU]], [[MRVL]], [[ORCL]], [[NVDA]], [[MSFT]], [[ai-bubble-debate]] (new toll-payer/toll-taker section), [[inflation-tariffs]] (May PPI section), [[index]], log
+- Stance/conviction changes: **none**
+- Newsletter: `2026-06-10-short-gamma-range` resolved **right** (2.14% range day 1 of 3); YOLO 7,400-call resolved **loss** (triggered at the 7,355 reclaim, high 7,412.68 stalled 8 pts under the wall, 0DTE expired worthless at 7,394.30 — time-stop lesson added to playbook); After Hours issue #4 written; portfolio prices refreshed (11/11, best day since inception, +3.3% vs SPX +1.75%)
+- Skipped (low-value): Adobe as a standalone earnings ingest (not a wiki ticker; folded into session source); "sell-the-news" MRVL opinion pieces (no new data); GameStop-style meme coverage; NVDA dividend-date reminder pieces (the 25x hike was ingested May 20); SemiAnalysis (no new article found today)
+
+---
+
 ## [2026-06-11] note | Morning brief: Iran Says the Strait Is Closed. The Market Is Calling the Bluff.
 
 Before the Bell sent. Covered: overnight US second-night strikes + Iran declaring Hormuz closed with WTI only ~$92 / Brent ~$94.50 (oil-tell carve-out now live — $95 close or a tanker fired on is the line), S&P futures +0.8% to ~7,325 implied open, ORCL −8.9% premarket vs CRWV +1.4% on its own $3.5B notes offering (funding audit is discriminating), KOSPI V-reversal + SK Hynix +2.6% + ASML ~+3% near record, PPI 8:30 ET (consensus 0.7% m/m vs April's 1.4%), Adobe AMC. Game plan: 7,265 floor / 7,355 ledge / 7,420–7,450 flip. YOLO desk: SPX 0DTE 7,400 call, level-keyed per the June 10 playbook lesson (logged open in yolo.json). No wiki changes (morning runs don't ingest).

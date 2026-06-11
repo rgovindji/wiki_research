@@ -2,9 +2,9 @@
 type: company
 ticker: MRVL
 tags: [ai, semis, custom-silicon, optical, hyperscaler, dsp, photonic-fabric]
-last_updated: 2026-06-09
+last_updated: 2026-06-11
 last_full_review: 2026-06-01
-sources: 2
+sources: 3
 conviction: medium-high
 stance: bull
 ---
@@ -144,6 +144,7 @@ This is a **medium-high conviction bull with valuation discipline required**. Th
 
 ## Recent developments
 
+- **2026-06-11 — +11.1% to $280.71 pre-inclusion; poaches Adobe's CFO** (per [[2026-06-11-deescalation-rally-software-derate]]). MRVL ripped with the AI-hardware complex on the de-escalation rally (now +57% in a month into the June 22 S&P debut; "sell-the-news?" pieces appearing). Separately: **Dan Durn, Adobe's CFO, resigned effective June 15 to join Marvell** — a tier-1 finance executive leaving a $100B+ software franchise for the custom-silicon layer. **Which means:** two reads — (1) the $250 inclusion-bid line from June 9 is now ~12% below market, so that test is drifting toward an easy pass that proves little about the *defending* mechanism; the real information now is whether the post-June-22 tape holds the pre-inclusion ramp (the 24/7 Wall St sell-the-news question); (2) the Durn hire is a quiet signal that MRVL is professionalizing for a much larger company phase — consistent with the Jensen "next trillion-dollar company" framing, and a human-capital data point for the software→silicon value migration. Thesis/conviction unchanged; Q2 FY27 print (~late August) remains the fundamental event.
 - **2026-06-09 — Inclusion pop round-trips: −7.6% to $266.88** (per [[2026-06-09-iran-whipsaw-aapl-wwdc]]). One session after the +9.6% S&P-inclusion rally, MRVL gave most of it back in a broad pre-CPI de-risking tape (no company news). **Which means:** the June 8 framing — inclusion is *lagging confirmation*, not a new bull leg — validated in one day; whether the mechanical index bid actually *defends* a price floor into June 22 is now a live, falsifiable test (the newsletter ledger has it logged at a $250 line). Thesis and conviction unchanged; Q2 FY27 print (~late August) remains the real event.
 - **2026-06-08 — S&P 500 inclusion (effective June 22) + +9.6% rebound** (per [[2026-06-08-mrvl-flex-sp500-inclusion]]): S&P Dow Jones Indices announced (after Friday's close) that MRVL joins the S&P 500 on **June 22, 2026**, replacing Pool Corp; [[FLEX]] also joins (replacing Campbell's). MRVL **+9.6% Monday** as part of a semis-led rebound off Friday's worst-day-of-2026 rout ([[MU]] +9.9%, SMH +~5%). Jensen Huang floated MRVL as a potential **"next trillion-dollar company."** **Which means:** index-fund trackers must mechanically buy a ~$179B name around June 22 — a multi-billion-dollar one-time forced bid — but this is a *lagging confirmation* of the Q1 FY27 rerating already in the price, not a new bull leg. **No stance/conviction change**; the +130% YTD valuation-discipline caveat is unchanged, and the standalone tactical event remains the **Q2 FY27 print (~late August)**, not the inclusion flow.
 - **🔥 2026-05-27 — Q1 FY27 ATH print + $5B FY27 guide raise** (per Q1 FY27 8-K + earnings call coverage): rev **$2.418B (+28% YoY)** record; **Data Center $1.833B (+27% YoY, 76% of revenue)**; non-GAAP EPS **$0.80** (beat midpoint $0.01); non-GAAP gross margin **58.9%**; operating cash flow **$638.8M record**. **Q2 guide $2.7B (+35% YoY midpoint)** with non-GAAP EPS **$0.93**. **FY27 outlook raised $5B to $11.5B (+40% YoY)** — one of the largest single-quarter guide raises in semis. **Interconnect growth raised from 50% → 70%+ YoY**. Stock hit ATH **$218.26** on the print. **Which means** the AI mix shift is now driving both top-line acceleration AND margin expansion concurrently — the structural rerating the bull case requires is happening live. Conviction medium-high; pairs with [[AVGO]] as the custom-silicon duopoly framing.

@@ -1,12 +1,12 @@
 {
   "_doc": "Prediction ledger for the After Hours / Before the Bell letters. Every falsifiable call a letter makes gets one entry when made. Each close-of-market run MUST: (1) resolve any prediction whose horizon passed or whose falsifier/confirmer triggered, (2) write resolution_note explaining WHY it was right or wrong (mechanism, not just outcome), (3) distill a lesson into playbook.md when the resolution teaches something, (4) update the calibration tally. Verdicts: right | wrong | partial | timing (structurally right, timing off) | expired (unresolvable). Max 3 new predictions per issue; a call without a falsifier doesn't get logged, it gets rewritten until it has one.",
   "calibration": {
-    "right": 0,
+    "right": 1,
     "partial": 0,
     "timing": 0,
     "wrong": 1,
     "expired": 0,
-    "notes": "Updated 2026-06-10: first resolution (wrong, medium confidence). By tier: high 0/0, medium 0/1, low 0/0."
+    "notes": "Updated 2026-06-11: 2 resolved — 1 right (high), 1 wrong (medium). By tier: high 1/1, medium 0/1, low 0/0."
   },
   "predictions": [
     {
@@ -122,6 +122,32 @@
       "confidence": "high",
       "horizon": "2026-06-15",
       "falsifier": "All three sessions print high-low ranges under 1% while SPX remains below 7,420 (the gamma framework says that combination shouldn't happen; if it does, the framework is decoration).",
+      "status": "right",
+      "resolved": "2026-06-11",
+      "resolution_note": "Confirmed on the first of three eligible sessions: June 11 printed a 7,257.33-7,412.68 high-to-low range \u2014 2.14%, well past the 1.5% bar \u2014 while SPX stayed below the 7,420-7,450 flip zone the entire session (high 7,412.68). Right-for-the-right-reason check: the mechanism was amplification-in-both-directions, and that is exactly what printed \u2014 a hot-PPI flush through the 7,265 put wall in the morning, then a 155-point rip on the strike-cancellation headlines in the afternoon, both legs in ONE session below the flip. The direction-agnostic framing (written the night before, when the temptation was to make it a bearish call) is what earned the grade; an equivalent 'wide range because more selling' claim would have been right for the wrong reason. Note for honesty: the catalyst (a near-end to the war) was not predicted \u2014 only the tape's amplification of whatever arrived, which is all the call claimed."
+    },
+    {
+      "id": "2026-06-11-software-derate",
+      "made": "2026-06-11",
+      "issue": "2026-06-11-afterhours",
+      "type": "single-name",
+      "claim": "The software de-rate is multiple compression with momentum, not a one-day CFO scare: ADBE does not reclaim its pre-print level — every close stays below $233.38 (the June 10 close) through June 19 — despite the beat-and-raise and the tripled AI ARR.",
+      "confidence": "medium",
+      "horizon": "2026-06-19",
+      "falsifier": "Any ADBE close above $233.38 on or before June 19 (the market re-reads the print as the AI-monetization evidence it actually contained, and the de-rate was positioning, not regime).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-11-no-revisit-7265",
+      "made": "2026-06-11",
+      "issue": "2026-06-11-afterhours",
+      "type": "market-direction",
+      "claim": "The floor moved up for good this time: with dealer positioning nearly neutral, oil sub-$90, and the deal in signing range, SPX does not CLOSE below 7,265 (the June 10 put wall / June 11 intraday hold) on any session before the June 17 FOMC decision.",
+      "confidence": "medium",
+      "horizon": "2026-06-17",
+      "falsifier": "Any SPX close below 7,265 before the June 17 FOMC statement (deal-slip or Fed-fear selling overwhelms the improved positioning floor; per the playbook, the call is keyed to the LEVEL, whatever the headline that breaks it).",
       "status": "open",
       "resolved": null,
       "resolution_note": null

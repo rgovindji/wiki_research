@@ -1,0 +1,145 @@
+{
+  "_doc": "Daily market-state snapshot. Written by the close-of-market run, read by the next morning run (and the next close run for day-over-day deltas). This is reasoning fuel — the reader never sees this file, only the conclusions drawn from it. Fields left null were not collected; collect them next run rather than guessing. Add fields freely as new data sources prove useful; note new sources in playbook.md.",
+  "date": "2026-06-11",
+  "as_of": "2026-06-11T16:00:00-04:00",
+  "indexes": {
+    "spx": {
+      "close": 7394.3,
+      "chg_pct": 1.75,
+      "ohlc": [7287.67, 7412.68, 7257.33, 7394.3],
+      "note": "Opened lower on the hot PPI (low 7,257.33 — briefly UNDER the 7,265 June-10 put wall, no closing break), then ran 155 points on the strike-cancellation/deal headlines to 7,412.68 (stalled 8 pts under the 7,420-7,450 flip zone) and closed 7,394.30 — within 1 point of tonight's computed 7,395 call wall. Two consecutive closes pinned to the session's dominant wall (put wall June 10, call wall June 11). High-to-low range 2.14% — resolved 2026-06-10-short-gamma-range RIGHT on day 1 of 3. Record close reference RECONCILED: 7,599.96 (June 1) is the number; SPX now -2.70% from it."
+    },
+    "nasdaq_composite": {
+      "close": 25809.66,
+      "chg_pct": 2.54
+    },
+    "dow": {
+      "close": 50848.75,
+      "chg_pct": 1.86,
+      "note": "+929.97; back above 50,000 after one session below. Russell 2000 +3.02% — broadest risk-on day of the month."
+    }
+  },
+  "after_hours_events": [
+    {
+      "time": "2026-06-11T16:05:00-04:00",
+      "event": "ADBE Q2 FY26: beat-and-raise (rev $6.62B +13% vs $6.46B est; EPS $5.96 vs $5.82; AI-first ARR tripled to >$500M; FY26 guide raised) — but CFO Dan Durn announced departure June 15 TO MARVELL; stock ~-5% AH after already falling 6.25% to $218.80 in the regular session (multi-year low).",
+      "read": "The software de-rate didn't spare a beat. AI ARR at ~2% of revenue is real but too small to flip the 'AI eats software' narrative; the CFO defecting to a chip company is the software-to-silicon rotation expressed as a career move. Watch whether ADBE recovers the AH loss once digested — first read on whether the de-rate is exhausted (logged as 2026-06-11-software-derate)."
+    }
+  ],
+  "regime": {
+    "call": "bull-under-stress",
+    "options": [
+      "bull",
+      "bull-under-stress",
+      "sideways",
+      "bear-rally",
+      "bear"
+    ],
+    "rationale": "Held, now improving instead of deteriorating — but per playbook lesson 3, one green session doesn't flip the call; the named resistance (7,420-7,450 flip zone) was NOT reclaimed (high 7,412.68, close 7,394.30). What improved: dealers' aggregate net GEX collapsed from -$59/-74B to -$10.5B/-$4.7B (the amplification regime is unclenching), near-dated GEX turned POSITIVE on both feeds, VIX crushed 22.22 -> 19.44, WTI broke to $85.94, and the 10Y fell to 4.46% through a hot PPI. Breadth was the best of the month (Russell +3.02%). What keeps the 'stress' qualifier: still below the flip, still -2.7% off the record, the whole improvement is priced on an UNSIGNED deal, and software is de-rating internally.",
+    "what_changes_it": "Close above the 7,420-7,450 flip zone -> bull confirmed (2026-06-09-pm-gamma-reclaim needs ~7,440 by tomorrow's close — last session). A deal-signing slip over the weekend -> war premium re-prices fast (oil at $85.94 has fully embraced the deal). Close below 7,265 -> the bounce was a trap (logged as 2026-06-11-no-revisit-7265: no close below 7,265 before June 17 FOMC)."
+  },
+  "key_levels": {
+    "spx_support": [
+      7300,
+      7265,
+      7150
+    ],
+    "spx_resistance": [
+      7395,
+      7424
+    ],
+    "notes": "7395 = tonight's call wall on BOTH feeds — SPX closed 1 point under it; first overhead fight. 7424 = zero-gamma flip (both feeds agree to the point); the 7,420-7,450 zone language collapses to ~7,424 tonight. Above the flip, dealers dampen. Support: 7300 = aggregate put wall (rolled UP from 7,265 — hedging re-stacked higher after the rally), 7265 = June 10 wall / June 11 intraday hold, 7150-7180 = price shelf + 50-DMA confluence.",
+    "gamma": {
+      "zero_gamma_flip": 7424,
+      "call_wall": 7395,
+      "put_wall": 7300,
+      "net_gex_usd": -10520315907,
+      "near_put_wall": 7320,
+      "near_call_wall": 7395,
+      "source": "polygon/computed (scripts/market_levels.py --audit, verdict: pass 9/9). CBOE crosscheck: flip 7424 (0.00%), call wall 7395 (0.00%), put wall 7300 (0.00%) — first night of EXACT three-for-three cross-feed agreement.",
+      "note": "Walls converged overhead: call wall 7395 and flip 7424 are 29 points apart, and SPX closed at 7,394.30 — pinned to the call wall from below. Put wall ROLLED UP 7265 -> 7300. Net GEX collapsed -$59/-74B -> -$10.5B (Polygon) / -$4.7B (CBOE): the most dramatic one-day unclench of the quarter; near-view (<=2DTE) net GEX is POSITIVE on both feeds (+$0.5B / +$4.1B) — intraday flows now lean against moves for the first time since June 4. Near put shelf: feeds disagree (Polygon 7390 vs CBOE 7320) -> treat near support as a 7,320-7,390 zone; near call wall 7395 on both.",
+      "caveat": "Polygon reported spot 7254.3 (stale at fetch, ~17:00 CT) vs CBOE spot 7394.30 matching the close — recurring Polygon spot-staleness artifact, walls/flip derive from OI and both feeds agree exactly, levels accepted. Polygon near-put 7390 may be the same near-view artifact flagged June 10 (7700 call wall then); CBOE's 7320 used for the chart key.",
+      "audit_log": "2026-06-11 side-by-side day 3: fresh WebSearch snippet (OptionCharts) gave flip 7425.85 vs computed 7424 (0.02% — excellent), put wall 7275 vs computed 7300 (0.34%), call wall 8000 vs computed 7395 (far-OTM max-OI artifact on the snippet side; computed coheres with the tape — close pinned 7,394.30). Tape-coherence: pass. Polygon stock closes returned as_of 2026-06-10 at the 17:00 CT run (known free-tier staleness per playbook) — Yahoo chart API used for all 13 same-day closes, SPYx10 cross-check 7,377.6 vs SPX 7,394.30 (ratio 10.02, consistent)."
+    }
+  },
+  "rates_commodities": {
+    "ust10y_pct": 4.46,
+    "wti_usd": 85.94,
+    "brent_usd": 89.09,
+    "gold": 4234,
+    "note": "10Y FELL 4.54 -> ~4.46% THROUGH a +1.1% m/m headline PPI — the bond market traded the live crude collapse (the war premium being refunded), not the backward-looking print. WTI settled $85.94, -4%+, LOWEST SINCE APRIL, through Iran's standing 'Hormuz closed' declaration — the most aggressive peace pricing of the cycle; oil-is-the-tell call survived its hardest test (declared closure -> oil DOWN). Brent $89.09. Gold REBOUNDED ~+2% to ~$4,234 (front-month) the day after breaking its 200-DMA — on a PEACE day, which retroactively confirms June 10's break was liquidation flow, not safe-haven failure; the deleveraging-signature worry eases one notch."
+  },
+  "volatility_flow": {
+    "vix": 19.44,
+    "vix_note": "VIX 22.22 -> 19.44 (-12.5%), intraday low 19.36. Back below 20 with net GEX near flat = the jumpy configuration is dissolving; both the fear gauge and the dealer-positioning amplifier stood down on the same day.",
+    "vix_term_structure": null,
+    "put_call_ratio": null,
+    "put_call_note": "Not collected (lags 1-2 days in free sources).",
+    "notable_options_flow": null,
+    "note": "No corroborated large-print flow found today; NVDA options volume was reported heavy (74.9M total market contracts cited in coverage) but single-source — excluded per playbook."
+  },
+  "technicals": {
+    "spx_vs_50dma": "+2.9% (50-DMA ~7,185-7,190 est, drifting up; SPX 7,394.30) — cushion restored from +1.2% yesterday",
+    "spx_vs_200dma": "+7.6% (200-DMA ~6,870-6,875)",
+    "breadth_note": "Best breadth day of the month: Russell 2000 +3.02% led all indexes; tech/industrials/materials led sectors; energy, staples, real estate red (energy logically — crude -4%). Software was the red pocket inside tech: ORCL -8.5%, CRM near 52-week lows, ADBE -6.25%. KOSPI V-reversed overnight (opened -2%, closed green, SK Hynix +2.6%) — the Korea washout read from the morning brief held.",
+    "note": "DMAs estimated by drift from June 8 anchors (50-DMA 7,174.5); refresh anchors from a direct reading within a few sessions."
+  },
+  "calendar": [
+    {
+      "date": "2026-06-12",
+      "event": "Deadline: 2026-06-09-pm-gamma-reclaim (close above ~7,440)",
+      "why": "Needs +0.6% with the 7,395 call wall and 7,424 flip in the way; graded straight either way in tomorrow's letter."
+    },
+    {
+      "date": "2026-06-13",
+      "event": "US-Iran deal signing watch (weekend, possibly Europe)",
+      "why": "Trump says 'largely done' and Hormuz opens on signing. Oil at $85.94 has pre-paid the peace; a slip re-prices the war premium fast. Binary in both directions."
+    },
+    {
+      "date": "2026-06-15",
+      "event": "Horizon: 2026-06-09-oil-is-the-tell formal grading (June 16 horizon)",
+      "why": "Survived its hardest test June 11 (declared closure -> oil -4%); grade on the 16th."
+    },
+    {
+      "date": "2026-06-16",
+      "event": "BoJ rate decision (June 16-17)",
+      "why": "The highest-leverage scheduled macro catalyst of the month outside FOMC; carry-trade unwind risk if BoJ hikes into a fragile tape. Watch USD/JPY into the meeting."
+    },
+    {
+      "date": "2026-06-17",
+      "event": "FOMC decision",
+      "why": "Hold expected (2026-06-10-fomc-hold-hawkish live). Hawks now hold TWO exhibits (supercore +0.55%, core PPI +0.4%); doves hold collapsing crude. December-hike odds >50% is the call's second leg."
+    },
+    {
+      "date": "2026-06-19",
+      "event": "Triple-witching OpEx",
+      "why": "Largest expiry of the quarter — though the unclench mostly already happened (net GEX -$74B -> -$10B in one day); expiry now more likely to cement the calmer regime than to break it."
+    },
+    {
+      "date": "2026-06-22",
+      "event": "MRVL + FLEX join S&P 500",
+      "why": "MRVL closed $280.71 — 12% above the $250 falsifier; the live question shifted from 'does the bid defend $250' to 'is the debut a sell-the-news event'."
+    },
+    {
+      "date": "2026-06-24",
+      "event": "MU fiscal Q3 earnings (approx — confirm date)",
+      "why": "Guide was $33.5B / 81% GM / $19.15 EPS; now must validate Wolfe's $1,250-PT memory-pricing math after an +11.7% day."
+    },
+    {
+      "date": "2026-06-26",
+      "event": "May PCE (approx — confirm)",
+      "why": "Fed's preferred gauge; the supercore echo check."
+    }
+  ],
+  "open_questions": [
+    "ANSWERED 2026-06-11 (from June 10): the 7,265 put wall DID hold the retest — intraday low 7,257.33 pierced it by 8 points but the close never threatened it; by evening the put wall rolled UP to 7,300.",
+    "ANSWERED 2026-06-11 (from June 10): ORCL's -7% AH did NOT bleed into AI-infra at the open in any durable way — CRWV was green pre-market on its own bond deal and closed +0.1%; VRT +6.0%, DELL +5.9%. The funding audit is discriminating by name, not by sector.",
+    "ANSWERED 2026-06-11 (from June 10): MRVL's inclusion question is moot at $280.71 (+11.1%) — the bid showed up 11 days early (or the de-escalation did). New question: sell-the-news on June 22?",
+    "ANSWERED 2026-06-11 (from June 10): gold's June 10 break read as liquidation was CONFIRMED — gold rebounded ~+2% on a peace day, the opposite of safe-haven mechanics, i.e. June 10's selling was forced, not allocative.",
+    "CARRIED (from June 10): supercore decomposition — BLS detail tables (recreation, medical m/m) still unchecked; now also relevant to core PPI +0.4%. Worth settling before the June 17 FOMC framing.",
+    "Does the deal actually sign this weekend, and with what terms (enrichment moratorium, Hormuz reopening mechanics, sanctions relief)? Everything from oil to the gamma unclench is priced on the signature happening.",
+    "SPX closed 1 point under the 7,395 call wall with the flip at 7,424: does the wall cap tomorrow's reclaim attempt (pm-gamma-reclaim dies at the close), or does deal momentum punch through both and flip the regime?",
+    "Does ADBE hold the after-hours low once the beat-and-raise is digested (CFO noise vs thesis)? First exhaustion-read on the software de-rate (2026-06-11-software-derate logged at the $233.38 line).",
+    "CRWV priced 9.625%/8.50% and the stock shrugged — does the coupon get cited as 'expensive credit' in the next AI-debt scare, or does the clean execution (closing June 18) quietly retire the financing-access bear case for the quarter?"
+  ]
+}

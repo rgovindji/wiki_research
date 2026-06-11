@@ -1,9 +1,9 @@
 ---
 type: macro
 tags: [inflation, tariffs, energy]
-last_updated: 2026-06-10
+last_updated: 2026-06-11
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 ---
 
 # Inflation & Tariffs
@@ -47,6 +47,17 @@ Two consecutive hot prints have **fundamentally shifted the inflation picture**:
 | Core goods m/m | −0.1% | Goods deflation + cooling shelter (OER +0.30%) masked the services heat |
 
 > **What this means:** The report's composition is worse than its best number. The soft core m/m bought the doves one news cycle, but the trend series the hawks bring to the **June 17 FOMC** — core y/y, supercore y/y, supercore 6-month — all point up, and the supercore acceleration started months before Iran. Mixed attribution (airfares +2.7% m/m is war jet-fuel; motor-vehicle insurance actually fell −1.7%) keeps this from being a clean "domestic heat" verdict, but an eight-month acceleration isn't a passthrough artifact. Hike risk at the June 17 meeting is reduced, not removed — and the equity market treated it that way (S&P −1.62% on the day, though war escalation shared the blame).
+
+### May 2026 PPI (released June 11) — hot on its face, stale on arrival (per [[2026-06-11-deescalation-rally-software-derate]])
+
+| Metric | Actual | Read |
+|---|---|---|
+| Headline m/m | **+1.1%** vs +0.6% consensus | Big miss — but ~80% of the acceleration was final-demand goods |
+| Headline y/y | **+6.5%** | Highest since November 2022 |
+| Goods m/m | +2.8% | Largest in the series (back to Dec 2009); ~80% of THAT was energy — wholesale gasoline +23.4% |
+| Core m/m | **+0.4%** | The Fed-relevant residue; second firm services-adjacent reading in three days (after supercore +0.55%) |
+
+Market reaction inverted the print: the 10Y **fell** to ~4.46% and equities rallied +1.75%, because the same morning's de-escalation news had WTI down >4% to $85.94 — the wholesale energy spike the PPI was reporting was visibly unwinding in the live crude market. **Which means:** the PPI measured May's war premium just as June started refunding it; the bond market traded the derivative, not the level. What survives the unwind is the core PPI +0.4% / supercore +0.55% pair — the hawks' June 17 exhibit is now two prints deep, and a December-hike pricing floor looks sticky even if headline inflation collapses with crude.
 
 ## Implications for equities
 
