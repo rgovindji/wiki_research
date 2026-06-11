@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-11] note | Morning brief: Iran Says the Strait Is Closed. The Market Is Calling the Bluff.
+
+Before the Bell sent. Covered: overnight US second-night strikes + Iran declaring Hormuz closed with WTI only ~$92 / Brent ~$94.50 (oil-tell carve-out now live — $95 close or a tanker fired on is the line), S&P futures +0.8% to ~7,325 implied open, ORCL −8.9% premarket vs CRWV +1.4% on its own $3.5B notes offering (funding audit is discriminating), KOSPI V-reversal + SK Hynix +2.6% + ASML ~+3% near record, PPI 8:30 ET (consensus 0.7% m/m vs April's 1.4%), Adobe AMC. Game plan: 7,265 floor / 7,355 ledge / 7,420–7,450 flip. YOLO desk: SPX 0DTE 7,400 call, level-keyed per the June 10 playbook lesson (logged open in yolo.json). No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-10] daily | Soft core, hot supercore, hotter war; ORCL record RPO sold off
 
 Headless 17:00 run. Two sources ingested on a heavy-signal day:

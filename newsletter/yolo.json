@@ -34,6 +34,20 @@
       "status": "no-trigger",
       "resolved": "2026-06-10",
       "resolution_note": "Core printed 0.2% \u2014 key (1) of the double-keyed trigger failed, so by the card's own terms the trade never existed; the desk stood down at 8:31 and stayed flat. The uncomfortable part, logged honestly: the flush came anyway. SPX lost the 7,355 ledge, broke 7,300, and closed 7,266.99 \u2014 the 7,300 puts would have paid handsomely on the war/supercore selloff. The card keyed the trade to the wrong branch: it assumed a hot core was the only path to a flush on a day carrying TWO live binaries (CPI and an overnight missile exchange). Mechanism lesson (paired with the cpi-core-asymmetry autopsy): the LEVELS were right twice over \u2014 7,355 broke first, the rolled-down put wall (7,265) caught the close within 2 points. Key future triggers to the levels with the catalyst as context, not to one catalyst. Discipline was correct even though the P&L would have been good: no-trigger means no trade, and improvising the same structure off a different catalyst intraday is how a scoreable desk becomes a mood."
+    },
+    {
+      "id": "2026-06-11-spx-7400c",
+      "date": "2026-06-11",
+      "issue": "2026-06-11-morning",
+      "structure": "SPX 0DTE 7,400 call",
+      "direction": "bullish",
+      "thesis": "The flush trade run in reverse. Dealer positioning is the most amplifying of the quarter (net GEX -$59B/-$74B both feeds) and the machinery is direction-agnostic: an upside break above resistance forces short-gamma dealers to buy as the market rises, chasing the move toward the 7,420-7,430 near call wall the way Monday's selling chased the flush to 7,300. Futures gap to ~7,325 puts the 7,355 ledge within one push. Per the playbook lesson from June 10: the trigger is the LEVEL; PPI and Hormuz headlines are context, not keys.",
+      "trigger": "SPX reclaims 7,355 (the near-dated hedging ledge) after the 8:30 ET PPI print and holds it ~30 minutes, regardless of which catalyst drives it there.",
+      "target": "7,420-7,430 near call wall / flip zone. Exit at the wall, where dealer hedging flips from tailwind to headwind.",
+      "invalidation": "SPX back below 7,325 (the opening gap area) after entry - failed reclaim, exit, no re-entry. If 7,265 breaks instead of 7,355, the desk stays flat: no improvised bearish card (June 10 lesson - process, not mood).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
     }
   ]
 }
