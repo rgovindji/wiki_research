@@ -56,7 +56,7 @@ Three structural drivers converging in 2026:
 
 ### Tier 3 — Specialized supply chain
 
-- [[VELO]] — **Velo3D.** Metal additive manufacturing (Laser Powder Bed Fusion) for rocket engines, jet engines, fuel delivery. Recently emerged from near-bankruptcy.
+- [[VELO]] — **Velo3D.** Metal additive manufacturing (Laser Powder Bed Fusion) for rocket engines, jet engines, fuel delivery. Recently emerged from near-bankruptcy. *2026-06-11: +93% in four sessions on war-replenishment narrative + squeeze — not a sector signal; see [[2026-06-11-velo-war-squeeze]]. Now has a dedicated page.*
 - [[KTOS]] — **Kratos Defense.** Tactical drones (Valkyrie XQ-58 / Mako) + space + tactical missiles. Tier-2.5 defense.
 - AVAV — AeroVironment (small UAS / drones; Switchblade loitering munitions)
 - TDG — TransDigm (specialty aerospace parts; aftermarket)

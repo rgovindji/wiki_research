@@ -84,6 +84,7 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 
 ## Recent analyses
 
+- [[2026-06-11-velo-war-squeeze]] — VELO +93% in 4 sessions: war-replenishment narrative + short squeeze on a real-but-stale turnaround; rug-signature watch (shelf on file); not a Tier-3 sector signal
 - [[2026-05-13-ppi-cpi-shock-positioning]] — April CPI/PPI shock; Warsh as Fed Chair walking into hot data; 5 of 6 late-cycle warning indicators firing; ticker-by-ticker positioning grid + rotation playbook
 - [[2026-05-12-trump-xi-summit-investment-implications]] — May 14-15 Beijing summit; 3 scenarios mapped to wiki positions; rare earths as underappreciated risk
 
@@ -223,6 +224,7 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 ### Defense AI + Aerospace + Hypersonic (NEW 2026-05-17 PM)
 - [[PLTR]] — Palantir Technologies;
 - [[AVAV]] — AeroVironment NYSE; **Switchblade loitering munitions + JUMP 20 + Quantix**; combat-validated Ukraine + Israel deployments; **+143.4% revenue growth most recent quarter; 45x forward P/E vs PLTR 82-97x**; **$3.9B backlog**; analyst PT $316.88 vs spot $158 (100% upside); **stance: bull (medium conviction)** — most attractive valuation-friendly defense AI hardware play
+- [[VELO]] — Velo3D (NEW 2026-06-11); defense-grade metal additive manufacturing; DLA JAMA $9.8M IDIQ; Q1 rev +48% / GM 17.2% margin inflection; +93% June 8-11 war-narrative squeeze (see [[2026-06-11-velo-war-squeeze]]); raise-into-pop watch; **stance: neutral (low conviction)** — speculative turnaround, watch only
 ### Nuclear-for-AI-data-center power (NEW 2026-05-17 PM)
 - [[OKLO]] — Oklo SMR; **late 2027/early 2028 Aurora INL criticality target** (earliest SMR commercial); 75 MWe liquid-metal fast reactor; Sam Altman backing; NRC PDC review at HALF traditional timeline; Meta 6.6 GW target; **stance: bull (low-medium conviction)** — first-of-a-kind regulatory + execution event-driven
 - [[VST]] — Vistra; 3 operating nuclear plants; **Meta 2,609 MW 20-yr PPA starts late 2026**; 433 MW uprate; multi-customer (Meta + Amazon); reaffirmed 2026 outlook; **stance: bull (medium-high conviction)** — cleanest operational nuclear-AI play; no FOAK risk

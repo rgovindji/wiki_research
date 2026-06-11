@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-11] query | VELO +93% week: war-narrative squeeze analysis filed
+
+Curator asked why Velo3D ran this week. Answer: no new fundamentals (no 8-K since May 15; DLA contract March 30, Q1 print May) — the move is war-replenishment narrative (US-Iran kinetic exchange) x washed-out tape (−39% into June 5) x squeeze mechanics (5-8x volume, +35% June 11 to $30.61) x June 10 RedChip/annual-meeting visibility. Peers flat (KTOS +0.4%, AVAV −1.2%) — idiosyncratic, not a Tier-3 signal.
+
+- Created: [[2026-06-11-velo-war-squeeze]] (analysis), [[VELO]] company page (neutral/low — implicit-entity rule, 3+ page mentions)
+- Updated: [[aerospace-defense]] Tier-3 bullet, [[index]] (analyses + Defense AI section)
+- Watch item: S-3 shelf on file + doubled stock → 424B/8-K raise-into-pop would complete the POET signature. Evening runs should check EDGAR on VELO this week.
+
+---
+
 ## [2026-06-11] daily | Strikes canceled, deal near: relief rally through a hot PPI; software→silicon rotation
 
 Headless 17:00 run. Two sources ingested:
