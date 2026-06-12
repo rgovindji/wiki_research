@@ -9,6 +9,21 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-12] daily | SpaceX $75B debut absorbed; SPX reclaims the flip; quiet wiki Friday
+
+Headless 17:00 run. One source ingested on a session that was one story:
+
+- **[[2026-06-12-spacex-debut-absorption-test]]** — SPCX debut: opened $150, high $176.52, closed **$160.95 (+19.2% vs the $135 fixed price)**, >$2T market cap, ~$75B raised (largest IPO ever; largest AI listing ever with xAI inside; Musk the first trillionaire per CNN). The index rose with it — **S&P +0.5% to 7,431.46, first close above the ~7,424 dealer flip since June 4**; Nasdaq +0.31% to 25,888.84; Dow +0.7% to 51,202.26; VIX 17.68; week +0.65% (first up week since the streak snapped). Proxies round-tripped (EchoStar −10% intraday → **+4.1% close $133.40**; [[RKLB]] −10.8% to $102.39 despite its **June 22 Nasdaq-100 inclusion** announcement). ADBE −6.8% to $204.02 (intraday low $196.90) on downgrades + the CFO exit. Michigan June sentiment 48.9 vs 46.0 consensus (first rise in 3 months). WTI −3%+ to **below $85, 8-week low**; 10Y ~4.47%. Iran: Trump denied the leaked draft text; senior admin official 80% on signing "in coming days"; Araghchi "never been closer."
+
+- Wiki touched: [[overview]] (June 12 lead), [[ai-bubble-debate]] (contradicting-evidence note on the June 10 $3.6T IPO-pipeline bear mechanism — both views kept, dated), [[GOOGL]] (SpaceX stake public mark ~$100B+), [[RKLB]] (inclusion + proxy unwind), [[index]], log
+- Stance/conviction changes: **none**
+- Flagged for user sign-off: **SPCX company page creation** (now a >$2T public company, 3+ wiki mentions — implicit-entity rule fires, headless run defers)
+- VELO EDGAR watch (from June 11 query): **S-8 filed June 11** (employee-plan share registration, file 333-296707) — NOT the 424B/8-K raise-into-pop rug signature, but a registration the week of a double is worth keeping on the watch; continue checking EDGAR through next week
+- Newsletter: `2026-06-09-pm-gamma-reclaim` resolved **partial** (close 7,431.46 — above the 7,424 flip the call's mechanism named, below the literal 7,440 line it quoted; full autopsy in issue #5); YOLO desk flat (no trade to resolve); Friday weekly distillation done in playbook.md; After Hours issue #5 written; portfolio prices refreshed
+- Skipped (low-value): Stratechery "Agents Over Bubbles" (March 16 publication, argument already represented in [[ai-bubble-debate]]); SemiAnalysis (no new on-thesis article surfaced); B.Riley MRVL PT raise (folded into session source, no new data); ADBE downgrade pieces (coverage of known facts); Seagate/Schwab midday-mover items (not wiki tickers, no thesis relevance)
+
+---
+
 ## [2026-06-12] note | Morning brief: A $1.77 Trillion Rocket Lands on the Day the War Might End
 
 Before the Bell sent. Covered: SpaceX IPO day (SPCX, $135 fixed, $75B raise, largest ever, xAI inside) vs the weekend Iran signing watch; 7,440-reclaim call graded at today's close with futures pointing ~7,410–7,440; KOSPI +4.6% with prime brokers tightening leverage on Samsung/SK Hynix/TSMC; ADBE −6.8% pre-market vs the $233.38 line; YOLO desk flat (near-dated gamma flipped positive — no squeeze fuel). No wiki changes (morning runs don't ingest).

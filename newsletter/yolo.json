@@ -4,7 +4,7 @@
     "wins": 1,
     "losses": 1,
     "no_trigger": 1,
-    "notes": "Seeded 2026-06-09 with the desk's origin trade. 2026-06-10: first no-trigger (CPI double-key failed soft; flush came on the war anyway). 2026-06-11: first loss \u2014 direction right, wall never tagged, 0DTE expired 6 points OTM; time-stop lesson added to playbook."
+    "notes": "Seeded 2026-06-09 with the desk's origin trade. 2026-06-10: first no-trigger (CPI double-key failed soft; flush came on the war anyway). 2026-06-11: first loss \u2014 direction right, wall never tagged, 0DTE expired 6 points OTM; time-stop lesson added to playbook. Week-1 record after Friday June 12 (flat, by design \u2014 near-dated gamma flipped positive, no squeeze fuel): 1-1-1. Friday check, graded honestly: flat was defensible ex-ante (near-dated gamma positive = no squeeze fuel) but the tape swung 1.27% (7,363 low to 7,456 high on the SPCX debut) \u2014 a level-keyed long card off the 7,363 morning dip would have paid. Positive gamma slowed the move; it didn't prevent it. Context logged for the pinned-into-opex call."
   },
   "trades": [
     {

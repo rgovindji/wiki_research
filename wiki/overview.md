@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-11
+last_updated: 2026-06-12
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,12 @@ sources: 0
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 12, 2026 — SpaceX prices the largest IPO ever and the market asks for seconds; S&P closes above the flip; deal signing slips to "coming days"
+
+Per [[2026-06-12-spacex-debut-absorption-test]]: **SpaceX (SPCX) debuted at a >$2T valuation** — opened $150 (+11% over the $135 fixed price), touched $176.52, closed **$160.95 (+19.2%)** — after raising **~$75B in the largest IPO in history** (xAI consolidated inside, so also the largest AI listing ever). The index *rose* with it: **S&P +0.5% to 7,431.46 · Nasdaq +0.31% to 25,888.84 · Dow +0.7% to 51,202.26**; week +0.65% — the first up week since the 9-week streak snapped. The S&P closed **above the ~7,424 dealer-hedging flip for the first time since June 4**; VIX 17.68. The proxies round-tripped — EchoStar dumped to $115.52 intraday then closed *up* 4.1% at $133.40; [[RKLB]] closed −10.8% at $102.39 **despite** its June 22 Nasdaq-100 inclusion announcement — the anticipation trade dying on the access date. Elsewhere: ADBE −6.8% to $204.02, intraday low $196.90 (downgrades + the CFO exit; third straight down day through a beat-and-raise), Michigan June sentiment 48.9 vs 46.0 consensus (first rise in three months, still −19% y/y), 10Y ~4.47%, **WTI −3%+ to below $85 (eight-week low)**. Iran: Trump *denied* the leaked Iranian draft text, but a senior admin official put **80% odds on a signing "in the coming days"** (Hormuz reopens, blockade lifts, nuclear program dismantled) and Araghchi said the MOU has "never been closer."
+
+> **What this means:** The $3.6T IPO-pipeline bear mechanism (logged June 10) just failed its first live test — $75B of new paper was absorbed on a Friday and the market rallied, which argues the pipeline is a *pacing* risk, not a wall (contradicting-evidence note filed in [[ai-bubble-debate]]; OpenAI ~Sept and Anthropic ~Oct are bigger asks and the real test). [[GOOGL]]'s ~5% SpaceX stake now has a public mark — a ~$100B+ liquid asset inside the cheapest Mag-7 name. And the tape's plumbing flipped: above ~7,424, dealer hedging dampens moves instead of amplifying them, so the burden of proof shifts back to the bears *mechanically* as well as narratively — into a week stacking the signing binary, **BoJ June 16-17, FOMC June 17, and triple-witching June 19**. **No stance/conviction changes.**
 
 ## June 11, 2026 — Trump cancels the strikes, the deal is "largely done": +1.75% relief rally through a hot PPI; software de-rates while memory squeezes
 

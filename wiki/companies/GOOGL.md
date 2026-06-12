@@ -2,9 +2,9 @@
 type: company
 ticker: GOOGL
 tags: [ai, mag7, cloud, advertising]
-last_updated: 2026-06-01
+last_updated: 2026-06-12
 last_full_review: 2026-05-09
-sources: 6
+sources: 7
 conviction: high
 stance: bull
 ---
@@ -49,6 +49,7 @@ The most under-priced Mag 7 stock entering 2026 — vertically integrated AI sta
 
 ## Recent developments
 
+- **2026-06-12 — SpaceX stake gets a public mark.** SpaceX (SPCX) closed its IPO debut at $160.95 (+19.2% vs the $135 offer), a >$2T market cap — Alphabet's ~5% stake (from the 2015 $500M investment) is now a liquid, tickered asset worth ~$100B+. **Which means:** the sum-of-parts case for the cheapest Mag-7 name gained a hard data point — the stake alone is ~2% of Alphabet's market cap, with a monetization lever (sell-down into a liquid market) nobody models in consensus numbers. From [[2026-06-12-spacex-debut-absorption-test]].
 - **🔥 2026-06-01 — $80B EQUITY RAISE + BERKSHIRE HATHAWAY $10B PRIVATE PLACEMENT** (per [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Largest equity capital raise in tech history.** Structure: $30B underwritten ($15B mandatory convertible preferred + $15B common) + $40B ATM (Q3 2026 start) + **$10B Berkshire ($5B Class A @ $351.81, $5B Class C @ $348.20)**. Berkshire's prior position — built since Q3 2025 — was *first disclosed today*. ~$30B of the ATM is earmarked for 2026 RSU vesting tax obligations (administrative change in how RSUs are funded); the *new AI capex* tranche is closer to ~$50B. Stock −2.51% to $380.34 (dilution-driven; Berkshire stamp limited downside). **Which means** for the wiki:
   - The **"capex burden" bear bullet is partially refuted** — the raise resolves the near-term cash question through 2027; the bear concern is now dilution math (~1.9% gross / ~3.6% with preferred conversion) not cash exhaustion
   - **Berkshire stamp is the single cleanest institutional validation of the GOOGL bull case the wiki has ever captured** — Berkshire has been Apple-only Mag-7 holder for a decade; choosing GOOGL as the second Mag-7 position is a higher-confidence signal than any sell-side rating

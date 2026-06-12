@@ -2,9 +2,9 @@
 type: company
 ticker: RKLB
 tags: [space, aerospace, defense, launch, satellites]
-last_updated: 2026-05-13
+last_updated: 2026-06-12
 last_full_review: 2026-05-13
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -75,6 +75,7 @@ The only US-listed pure-play small/medium-lift launch + space-systems vertically
 
 ## Recent developments
 
+- **2026-06-12 — Nasdaq-100 inclusion announced (effective June 22) — and the stock fell ~10% intraday anyway.** RKLB joins the Nasdaq-100 on June 22 (same date as [[MRVL]]/[[FLEX]] S&P 500 entry), but on SpaceX's debut day the space-proxy trade unwound: RKLB closed −10.8% at $102.39, EchoStar swung from −10% intraday to a +4.1% close. **Which means:** the index-inclusion bid is real but the "public SpaceX proxy" premium RKLB carried is expiring now that SPCX itself trades — expect the two flows to fight into June 22; fundamentals (Neutron debut timeline, $2.2B backlog) are unchanged. From [[2026-06-12-spacex-debut-absorption-test]].
 - **2026-05-07 — Q1 2026 EARNINGS BLOW-OUT** (see [[2026-05-07-RKLB-Q1-2026-earnings]]). Revenue **$200.3M (+63.5% YoY, record)**; backlog **$2.2B (~2x YoY)**; GAAP GM 38.2% record; adj EBITDA loss narrowed to -$11.8M. Q2 guide $225-240M. 36 new launches contracted (31 Electron/HASTE + 5 Neutron). Department of War Space Based Interceptor partnership with Raytheon (Golden Dome). Closed Mynaric; signed Motiv. Stock +46% post-print per Simply Wall St coverage.
 - **2026-04** — $190M HASTE deal for 20 hypersonic test flights
 - **2026-Q1** — Largest contract ever (confidential customer) for Neutron + Electron through 2029

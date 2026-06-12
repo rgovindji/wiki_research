@@ -1,15 +1,19 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-11
+last_updated: 2026-06-12
 last_full_review: 2026-05-09
-sources: 18
+sources: 19
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side.
+
+## June 12, 2026 — Contradicting evidence on the mega-IPO supply mechanism: the largest IPO ever got absorbed, and the market rallied
+
+Per [[2026-06-12-spacex-debut-absorption-test]]: the June 10 bear mechanism (#1 below — $3.6T of AI-lab paper draining the chip bid) met its first live test and **lost on day one**. SpaceX raised ~$75B — the largest IPO in history, the biggest single supply event the pipeline will produce until OpenAI — and the market absorbed it with a +19.2% debut close ($160.95 vs $135) *while the S&P rose 0.5%* and semis held. **Which means:** public appetite for AI mega-listings is deeper than the June 10 selloff implied; the pipeline looks like a *pacing* risk (a few heavy weeks around each listing) rather than a structural drain. **The bear mechanism stays in the file, not deleted**: one absorbed deal in a peace-rally tape proves less than it appears — OpenAI (~Sept, $730–850B ask) and Anthropic (~Oct) are larger asks that may land in a worse tape, and SPCX's fixed-price structure (no underwriter book to flip) made this the easiest possible version of the test. Both views dated; the September window decides it.
 
 ## June 11, 2026 — The toll-payer / toll-taker split: software de-rates on record results while the hardware layer squeezes
 
