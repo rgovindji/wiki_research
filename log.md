@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-12] note | Morning brief: A $1.77 Trillion Rocket Lands on the Day the War Might End
+
+Before the Bell sent. Covered: SpaceX IPO day (SPCX, $135 fixed, $75B raise, largest ever, xAI inside) vs the weekend Iran signing watch; 7,440-reclaim call graded at today's close with futures pointing ~7,410–7,440; KOSPI +4.6% with prime brokers tightening leverage on Samsung/SK Hynix/TSMC; ADBE −6.8% pre-market vs the $233.38 line; YOLO desk flat (near-dated gamma flipped positive — no squeeze fuel). No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-11] query | VELO +93% week: war-narrative squeeze analysis filed
 
 Curator asked why Velo3D ran this week. Answer: no new fundamentals (no 8-K since May 15; DLA contract March 30, Q1 print May) — the move is war-replenishment narrative (US-Iran kinetic exchange) x washed-out tape (−39% into June 5) x squeeze mechanics (5-8x volume, +35% June 11 to $30.61) x June 10 RedChip/annual-meeting visibility. Peers flat (KTOS +0.4%, AVAV −1.2%) — idiosyncratic, not a Tier-3 signal.
