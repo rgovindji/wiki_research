@@ -20,6 +20,7 @@ A US-based vertically-integrated optical-transceiver maker riding the 800G→1.6
 | Metric | Value | As of |
 |---|---|---|
 | Price | ~$194 | 2026-06-15 |
+| Market cap | **$15.37B** | 2026-06-15 |
 | 52-week range | $15.90 – $233.67 | 2026-06-15 (≈12x off the low) |
 | Revenue (Q1 2026) | $151.1M, +51% y/y — 4th straight record | Q1 print (May 7) |
 | Data center rev | $81.4M (>50% of total), +154% y/y | Q1 2026 |
@@ -28,7 +29,7 @@ A US-based vertically-integrated optical-transceiver maker riding the 800G→1.6
 | FY2026 guide | >$1.1B rev; non-GAAP op income >$140M (raised) | mgmt |
 | 800G/1.6T backlog | >$324M | mid-2026 |
 
-(Market cap omitted — couldn't verify share count from a clean source; small/mid-cap.)
+At **$15.37B market cap on ~$1.1B FY26 revenue guide, that's ~14x forward sales** — a CPO-disruptable module maker priced like a structural winner. The valuation *is* the bear case.
 
 ## What they do
 Designs and manufactures optical components and transceivers — vertically integrated (lasers → components → modules) — for three markets: **data center** (the AI growth engine: 100G/200G/400G/800G, ramping 1.6T), **CATV/broadband**, and telecom. US-based manufacturing (Texas) is a differentiator in a China-heavy optical supply chain. Sits at the **pluggable optical module** layer of the [[photonics]] stack alongside [[COHR]], [[LITE]], [[FN]].
