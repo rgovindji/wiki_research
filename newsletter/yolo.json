@@ -48,6 +48,20 @@
       "status": "loss",
       "resolved": "2026-06-11",
       "resolution_note": "Trigger fired cleanly: the open faded the hot PPI to 7,257 (the 7,355 reclaim wasn't immediate), then the strike-cancellation headlines drove SPX through 7,355 with momentum and it held far longer than the required 30 minutes — and per the June 10 lesson the entry keyed to the level even though the catalyst was Iran, not PPI. The squeeze mechanism worked exactly as drawn: dealers chased the move 155 points off the low. Then it stalled at 7,412.68 — EIGHT points short of the 7,420-7,430 target wall (tonight's recompute puts the wall at 7,395/flip 7,424, i.e. the magnet was nearer and weaker than the morning map showed) — and faded to close 7,394.30. The card's rules had no exit for 'almost': target not tagged, invalidation (7,325) never touched, so the 0DTE call rode to expiry and finished 6 points out of the money. Worthless. A trade that was directionally right, mechanically right, and up big intraday (the call was well ITM at 7,412 with hours left) returned -100% because the exit logic only knew about the wall. Mechanism lesson: walls are magnets, not promises — an 0DTE card needs a time-stop (e.g., exit at 3:30 ET if neither target nor invalidation has hit) because theta resolves 'neither' against the holder, always. Desk record: 1-1-1."
+    },
+    {
+      "id": "2026-06-15-spx-7575c",
+      "date": "2026-06-15",
+      "issue": "2026-06-15-morning",
+      "structure": "SPX 0DTE 7,575 call",
+      "direction": "bullish",
+      "thesis": "The pin run in reverse. The US-Iran deal ('complete,' signing Friday) gapped futures +1.3%, opening SPX near 7,520-7,530 — ABOVE the 7,425-7,430 call wall that capped every rally last week. A gap through the call wall flips dealers from selling-rallies (long-gamma pin) to chasing the move; with no price memory between Friday's 7,456 high and the June 1 record at 7,599.96, the air pocket is the trade. Per playbook lesson 1, keyed to the level (reclaim/hold 7,456), with the peace gap as context.",
+      "trigger": "SPX reclaims and HOLDS 7,456 (Friday's high) for ~30 minutes after the open. The hold-filter is the whole point: it separates a real breakout from a gap-and-fade that prints at 9:30 and dies by 10. No hold = no trade, desk stands aside (buy-the-rumor-sell-the-news on a pre-paid peace is the live alternative).",
+      "target": "7,590-7,600 record zone (June 1 ATH 7,599.96). Exit there — a fresh all-time high is where profit-taking and dealer hedging flip from tailwind to headwind, same as a put wall on the way down.",
+      "invalidation": "Back below 7,456 after the reclaim — failed breakout, out, no re-entry, no bearish improvisation on the fade (June 10 lesson: process, not mood). Hard time-stop at 3:30 ET if neither target nor invalidation has hit (June 11 lesson: theta resolves 'almost' against the holder).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
     }
   ]
 }

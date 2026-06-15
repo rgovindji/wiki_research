@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-15] note | Morning brief: The Peace the Tape Already Paid For
+
+Before the Bell sent. Covered: US-Iran deal "complete" (signing Friday) gapped futures +1.3% / Nasdaq +2.1% above the 7,430 call wall, oil −5.6% to ~$80, Asia records (Nikkei +5%, Kospi +5.2%, SK Hynix +6.4%); pinned-into-opex call faces its first exam as an upside test; YOLO desk long the 7,456 breakout toward the record. No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-14] note | Photonics sector page + SemiWiki daily ingestion automation
 
 Per curator: add photonics (standing interest), make SemiWiki a daily ingestion, stop ignoring the long tail.
