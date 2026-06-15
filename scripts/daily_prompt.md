@@ -31,12 +31,14 @@ Execute the 8-step daily ritual from `feedback_daily_update_workflow.md`, with t
    - Today's full session: index moves, sector rotation, top AI / semi / Mag 7 movers and why
    - Earnings prints from wiki tickers today (especially after-hours prints from the last two hours) and yesterday
    - Long-form sources (Stratechery, SemiAnalysis, Dwarkesh, BG2, ILTB)
+   - **SemiWiki (daily, mandatory): run `python3 scripts/semiwiki_scan.py`** — it returns every NEW SemiWiki article + forum thread since the last run (incremental via a seen-cache), with text. For any item with a `"note": "thin extract"` whose title looks relevant, `WebFetch` the full URL. This is a standing daily ingestion source.
    - 8-Ks / filings; sector-specific signals (memory pricing, GPU rental rates, power)
    - Closing prices for every ticker in `newsletter/portfolio.json` (needed for part 4)
 2. **Curate** — apply the signal-vs-noise bar:
    - Ingest only net-new substantive info, contradictions, long-form, conviction-relevant data
    - Skip restatements, price-action narratives, opinion pieces
    - A low-signal day for the *wiki* is fine — but the *newsletter* still goes out (part 4 is never skipped)
+   - **SemiWiki exception (curator instruction 2026-06-14): do NOT ignore SemiWiki's long tail.** Read *every* item the scan returns. Beyond the obvious thesis-movers, capture **diamond-in-the-rough details** — a named private company reaching volume, a packaging/process datapoint, a yield/capacity tell, an analyst number, a new entrant — even when it doesn't move a stance. Home for these: the most relevant existing page's Recent developments, a sector/theme page (e.g. [[photonics]], [[semiconductors]], [[advanced-packaging]] if it exists), or a running notes section. Bias toward capturing, not skipping. Genuine vendor-PR with zero new fact is still skippable; "small but real and net-new" is not. Photonics is a standing interest — always ingest photonics items.
 3. **Save raw material** (optional) — use WebFetch to pull article content, save under `raw/articles/YYYY-MM-DD-slug.md`. `raw/` is gitignored.
 4. **Write source summaries** — for each curated source create `sources/YYYY-MM-DD-slug.md` using the CLAUDE.md template
 5. **Append to wiki pages** — add bullets to existing `## Recent developments` sections only. Use the connect-the-dots style ("Which means…" implication line).

@@ -9,6 +9,17 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-14] note | Photonics sector page + SemiWiki daily ingestion automation
+
+Per curator: add photonics (standing interest), make SemiWiki a daily ingestion, stop ignoring the long tail.
+
+- **Created [[photonics]]** sector page — synthesizes the existing [[2026-05-17-photonic-memory-stack]] layer map into an investable sector view: pluggables→LPO→CPO roadmap, per-layer beneficiaries ([[COHR]]/[[LITE]]/[[FN]] → [[AVGO]]/[[NVDA]]/[[MRVL]] → [[SOITEC]]/[[GLW]]), risks (CPO timing, disruption-cuts-both-ways, narrative conflation w/ [[POET]]), diamond-in-rough watch (NewPhotonics, Lightmatter). Source: [[2026-06-10-semiwiki-photonics-pic-production]].
+- **Automation: `scripts/semiwiki_scan.py`** — headless HTTP (no browser) scan of SemiWiki homepage → all new articles + forum threads → text, with an incremental `.semiwiki_seen.json` cache (gitignored) so each day surfaces only NEW items. Forum-aware (XenForo `.bbWrapper`) + WordPress `<p>` + og:description fallback; tested clean (0 thin extracts on 12 items).
+- **Wired into the daily close run** (`scripts/daily_prompt.md`): discovery step runs the scan (mandatory daily source); curate step gets a SemiWiki exception — read EVERY item, capture diamond-in-the-rough details even when they don't move a stance, photonics always ingested. This IS the schedule — folded into the existing 5pm launchd run rather than a separate cron (one Claude invocation).
+- Index: added [[photonics]] to Sectors + two Recent-source-ingest lines.
+
+---
+
 ## [2026-06-14] ingest | SemiWiki scan (Chrome MCP): UBS generational boom + Google→Intel 3M TPUs
 
 Scanned SemiWiki via Chrome MCP (user forwarded the June 12 newsletter). Two net-new ingests cleared the bar; the rest skipped (see below).

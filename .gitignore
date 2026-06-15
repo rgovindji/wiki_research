@@ -41,3 +41,6 @@ aws/build/
 # gamma-desk is its own repo/project — never track it here (a gitlink without
 # .gitmodules breaks every CI checkout; the nightly git add -A would re-add it)
 gamma-desk/
+
+# SemiWiki daily-scan incremental cache (scripts/semiwiki_scan.py)
+.semiwiki_seen.json
