@@ -20,7 +20,7 @@ The layer of the AI stack that moves data with light instead of electrons. As co
 ## The roadmap (why timing matters)
 | Stage | What it is | Status 2026 | Beneficiaries shift |
 |---|---|---|---|
-| Pluggable transceivers (800G / 1.6T) | Optics in a separate module | Shipping, the cash cow today | [[COHR]] · [[LITE]] · [[FN]] |
+| Pluggable transceivers (800G / 1.6T) | Optics in a separate module | Shipping, the cash cow today | [[COHR]] · [[LITE]] · [[FN]] · [[AAOI]] |
 | Linear-drive pluggable (LPO) | Drops the DSP/retimer; lower power | Early ramp | transceiver makers + ASIC vendors |
 | Co-packaged optics (CPO) | Optics integrated into the switch/compute package | Ramping at the leading edge | [[AVGO]] (Tomahawk 6 + Davisson) · [[NVDA]] (Spectrum-X / Quantum-X) · [[MRVL]] (Teralynx) |
 | Photonic fabric / interposer | Optical bridge compute↔HBM at package level | Frontier, barely commercial | [[MRVL]] (Celestial AI, acq. May 2026), Lightmatter (private) |
@@ -31,7 +31,7 @@ The investable nuance: the transition from pluggables to CPO is **disruptive to 
 - **Substrate:** [[SOITEC]] (photonics-SOI — every silicon-photonic chip starts here); InP for lasers (AXTI ~36% share).
 - **Foundry/process:** [[TSM]] (COUPE silicon-photonics process), Tower (TSEM).
 - **EDA / design IP:** [[SNPS]] · [[CDNS]] — photonic + electrical co-design.
-- **Pluggable modules (today's revenue):** [[COHR]] · [[LITE]] · [[FN]].
+- **Pluggable modules (today's revenue):** [[COHR]] · [[LITE]] · [[FN]] · [[AAOI]] (small-cap, US-mfg, 800G→1.6T hyperscaler ramp — high-beta, see page).
 - **CPO / switch silicon:** [[AVGO]] · [[NVDA]] · [[MRVL]].
 - **Optical fiber / connectivity:** [[GLW]] (Corning).
 - **Diamond-in-the-rough / watch-only:** **NewPhotonics** (private — PIC maker scaling production on yieldHUB analytics); Lightmatter (private, photonic interposer); **POET** — see [[POET]], the wiki's canonical AVOID (narrative-trading small-cap photonics name; do not conflate with the real stack).
@@ -48,7 +48,7 @@ The investable nuance: the transition from pluggables to CPO is **disruptive to 
 - Which private PIC names (NewPhotonics, Lightmatter, Ayar Labs) reach the public market, and on what timeline?
 
 ## Related
-[[2026-05-17-photonic-memory-stack]] · [[semiconductors]] · [[ai-capex-cycle]] · [[nvda-supply-chain]] · [[bottleneck-roadmap]] · [[COHR]] · [[LITE]] · [[FN]] · [[AVGO]] · [[MRVL]] · [[SOITEC]] · [[GLW]] · [[overview]]
+[[2026-05-17-photonic-memory-stack]] · [[semiconductors]] · [[ai-capex-cycle]] · [[nvda-supply-chain]] · [[bottleneck-roadmap]] · [[COHR]] · [[LITE]] · [[FN]] · [[AAOI]] · [[AVGO]] · [[MRVL]] · [[SOITEC]] · [[GLW]] · [[overview]]
 
 ## Sources
 1. [[2026-05-17-photonic-memory-stack]] — layer-by-layer technical map + per-layer tickers

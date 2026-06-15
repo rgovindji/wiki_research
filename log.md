@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-15] note | Added AAOI company page (AXTI already existed)
+
+User asked to add AXTI + AAOI. **AXTI already had a page** (substrate / InP, bull/medium, well-referenced) — left as-is. **AAOI was net-new** (zero prior references) → created [[AAOI]]: US-mfg optical transceivers, pluggable-module layer of [[photonics]]; Q1 2026 record $151.1M (+51% y/y), data center >half (+154% y/y), first 800G hyperscaler volume + first 1.6T order (>$200M Mar 2026), Microsoft supply agreement, FY26 guide >$1.1B; Rosenblatt PT $220 (Jun 4). **Stance neutral / conviction low** — real revenue inflection but documented boom-bust + dilution history, customer concentration, ~12x off lows (cycle largely priced), and CPO is the eventual disruptor of the module layer it's levered to. Added to [[photonics]] pluggable beneficiaries + [[index]] Networking & optical. Watch: dilution-into-strength (EDGAR), Oracle qual, 800G/1.6T margin hold.
+
+---
+
 ## [2026-06-15] note | Morning brief: The Peace the Tape Already Paid For
 
 Before the Bell sent. Covered: US-Iran deal "complete" (signing Friday) gapped futures +1.3% / Nasdaq +2.1% above the 7,430 call wall, oil −5.6% to ~$80, Asia records (Nikkei +5%, Kospi +5.2%, SK Hynix +6.4%); pinned-into-opex call faces its first exam as an upside test; YOLO desk long the 7,456 breakout toward the record. No wiki changes (morning runs don't ingest).

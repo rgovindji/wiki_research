@@ -192,6 +192,7 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 - [[GLW]] — Corning; NVDA $3.2B fiber investment; **stance: bull**
 - [[FN]] — Fabrinet; transceiver contract mfg; **stance: bull**
 - [[LITE]] — Lumentum; NVDA $2B investment (with COHR); **stance: bull**
+- [[AAOI]] — Applied Optoelectronics (NEW 2026-06-15); US-mfg optical transceivers; 800G→1.6T hyperscaler ramp (Microsoft/Amazon); Q1 record $151M +51% y/y, FY26 >$1.1B guide; ~12x off lows + boom-bust history; **stance: neutral (low conviction)** — speculative photonics-cycle play
 - [[APH]] — Amphenol; AI rack interconnect; **stance: bull**
 
 ### Server OEMs
