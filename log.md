@@ -9,6 +9,18 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-14] ingest | SemiWiki scan (Chrome MCP): UBS generational boom + Google→Intel 3M TPUs
+
+Scanned SemiWiki via Chrome MCP (user forwarded the June 12 newsletter). Two net-new ingests cleared the bar; the rest skipped (see below).
+
+- Sources: [[2026-06-12-ubs-semi-2.38T-2027]], [[2026-06-08-google-intel-3m-tpu-2028]]
+- Wiki touched: [[INTC]] (Recent dev + sources 4→5; first external AI-foundry win, foundry-binary bull leg validated, stance held neutral/low), [[TSM]] (10→11; diversification named as the one slow bear vector, stance held bull/high), [[GOOGL]] (7→8; TPU dual-foundry de-risk), [[MU]] (8→9; UBS memory super-cycle = industry-level confirmation), [[valuation-environment]] (0→1; **Contradicting evidence** section — UBS "green into late 2027" vs 5-6/6 late-cycle warnings, surfaced for user, unresolved), [[ai-capex-cycle]] (12→13; industry sizing), [[semiconductors]] (1→3; boom + foundry diversification), [[index]], [[log]].
+- Stance/conviction changes: **none.**
+- Contradiction flagged: UBS demand-lens bull (cycle green into 2027) vs the wiki's valuation/positioning-lens late-cycle warnings — both kept; user decides which breaks first.
+- Skipped (low-value): TSMC talent/water (known constraint), Synopsys-Samsung 2nm + Intel/Synopsys EMIB methodology (vendor PR — folded EMIB as corroboration into the Intel source), Rambus DDR5 / Weebit ReRAM / DAC exhibits / photonic yieldHUB (niche vendor PR), the "US forced Anthropic offline / Fable 5" forum item (uncredible/satirical — explicitly not ingested), Musk-shades-ASML-HighNA + Broadcom-"told the truth" (opinion, no net-new data vs existing [[AVGO]]/[[ASML]] coverage).
+
+---
+
 ## [2026-06-12] daily | SpaceX $75B debut absorbed; SPX reclaims the flip; quiet wiki Friday
 
 Headless 17:00 run. One source ingested on a session that was one story:

@@ -2,9 +2,9 @@
 type: company
 ticker: INTC
 tags: [semis, foundry, cpu, mag7-adjacent, government-stake]
-last_updated: 2026-05-21
+last_updated: 2026-06-14
 last_full_review: 2026-05-17
-sources: 4
+sources: 5
 conviction: low
 stance: neutral
 ---
@@ -72,6 +72,7 @@ Intel is a **binary bet**: bull if 18A yields hit industry-standard by 2027 AND 
 - **CPU shortage duration** — Intel 10-Q says "throughout remainder of 2026"; any pull-forward to Q3/Q4 normalization changes the ASP story
 
 ## Recent developments
+- **🔥 2026-06-08 — Google orders >3 million TPUs from Intel Foundry for 2028; Nvidia evaluating Intel** (The Information via Reuters; [[2026-06-08-google-intel-3m-tpu-2028]]). First genuine external **AI-accelerator** win for Intel Foundry — reportedly via **EMIB-T advanced packaging** (vs TSMC CoWoS), corroborated by the Intel/Synopsys EMIB methodology piece (Jun 11). Nvidia is separately evaluating Intel to make a 4-GPU-combined processor (no order yet). **INTC +9% on the report, ~+169% YTD.** Driver: TSMC's AI capacity crunch pushing designers to a credible second source, plus US-manufacturing political tailwind. **Which means**: the *foundry-binary bull leg* — the one that actually matters for the thesis — gets its first hard external validation, distinct from the gov stake / Tesla-Terafab / Apple-preliminary signals already logged. It is a **2028** order, single-sourced and execution-dependent (18A/14A yield + ramp unproven at this volume), so **stance held neutral / low conviction** — but the watch-trigger has fired in the bull direction. Note the tension with [[UNIMICRON]]'s "industry pivoting EMIB → CoWoS" read: if EMIB-T wins marquee AI packaging, EMIB is a parallel track, not a legacy one. Next checkpoint: Intel Foundry external-revenue disclosure + any Nvidia order confirmation.
 - **2026-06-01 — NVIDIA RTX Spark Computex announcement = structural PC-TAM headwind; INTC closed -3%+** (per [[2026-06-01-nvda-rtx-spark-computex-keynote]]). Jensen unveiled an Arm-based PC superchip (20-core Grace + Blackwell RTX GPU + 128GB unified memory on TSMC 3nm) shipping in fall-2026 Windows laptops/desktops from Microsoft, Dell, HP, ASUS, Lenovo, MSI. AMD also closed -3%+. **Which means**: one of the bull legs in the wiki's neutral / low-conviction event-driven INTC trade — *AI-driven CPU shortage giving Intel ASP power* — gets structurally compressed at the premium/AI-PC tier. The mainstream/value PC market stays x86-led, but the marquee Windows AI-PC SKU is now Arm-led with NVIDIA system architecture. **Stance unchanged at neutral / low conviction** — the bull case still rests on the 18A foundry binary (Apple/Tesla wins, gov 9.9% stake, Lip-Bu execution); today's news doesn't move the foundry dial but it does compress the IDM/product-side leg. Watch trigger: whether AMD's recent +38% server-revenue lead vs Intel +7% widens or narrows post-Computex on the data-center side.
 - **2026-05-21 — Gavin Baker (Atreides): "TerraFab will succeed because Elon recruits A-teams"** on Invest Like the Best [[2026-05-21-gavin-baker-invest-like-best]]. Baker's frame is structurally bullish on TerraFab's odds, complementing the wiki's existing tension between Tan/Musk's Pan-Am-Boeing analogy and CC Wei's "no shortcuts" pushback. Key Baker arguments:
   1. **Elon's labor pull is the real moat.** *"The best engineers want to work for Elon, especially in hardware engineering."* Combined with Tesla/SpaceX-style relocation of supply-chain talent (Taiwan Town, Korea Town, Japan Town next to TerraFab in Texas, complete with restaurant relocations) = a US-soil version of the dense semiconductor ecosystem that TSMC built around Hsinchu Science Park.

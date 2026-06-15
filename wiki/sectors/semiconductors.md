@@ -1,9 +1,9 @@
 ---
 type: sector
 tags: [semis, ai, hardware]
-last_updated: 2026-05-16
+last_updated: 2026-06-14
 last_full_review: 2026-05-09
-sources: 1
+sources: 3
 ---
 
 # Semiconductors
@@ -12,6 +12,8 @@ sources: 1
 The chip stack — design (GPUs, CPUs, custom silicon), foundry ([[TSM|TSMC]]), and equipment (ASML, Applied Materials). Currently the highest-conviction long-term sector of the AI capex cycle because demand is **observable and contracted**, not just projected.
 
 ## State of the sector (May 2026)
+- **🔥 UBS (2026-06-12): "generational" boom — sell-in $1.62T 2026 → $2.38T 2027; memory $961B → $1.638T; cycle green into late 2027** ([[2026-06-12-ubs-semi-2.38T-2027]]). Far above the +26.3%/$975.4B baseline below — UBS is the high-side anchor on the demand lens; weigh vs late-cycle valuation warnings ([[valuation-environment]]).
+- **🔥 Foundry diversification has begun (2026-06-08): Google ordered >3M TPUs from Intel Foundry for 2028; Nvidia evaluating Intel** ([[2026-06-08-google-intel-3m-tpu-2028]]). TSMC's sold-out AI capacity is pushing designers to a credible second source ([[INTC]] via EMIB-T packaging). Slow, multi-year share-of-marginal-growth shift; TSMC scale dominance intact.
 - **Industry revenue forecast 2026: +26.3% to $975.4B**
 - **AI server spend (Bloomberg Intelligence): +45% YoY to $312B**
 - **NVDA $1T confirmed AI chip demand through 2027**

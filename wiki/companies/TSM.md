@@ -2,9 +2,9 @@
 type: company
 ticker: TSM
 tags: [ai, semis, foundry, international, taiwan]
-last_updated: 2026-06-10
+last_updated: 2026-06-14
 last_full_review: 2026-05-09
-sources: 10
+sources: 11
 conviction: high
 stance: bull
 ---
@@ -49,6 +49,7 @@ The single point of truth for advanced AI chip manufacturing — every leading-e
 5. **Customer concentration disclosures** — NVDA share of revenue
 
 ## Recent developments
+- **2026-06-08 — The diversification vector gets a name: Google orders >3M TPUs from Intel Foundry for 2028; Nvidia evaluating Intel** ([[2026-06-08-google-intel-3m-tpu-2028]]). The Information reports designers turning to Intel *because TSMC's AI capacity is sold out*. **Which means**: this is the one genuinely bearish-for-TSM vector in the file — a credible second source emerging — but read it in proportion. It is a 2028 order of ~3M units against TSMC's millions-of-wafers-per-month leading-edge scale and its own 9-fab-phase 2026 build-out; the capacity crunch that *creates* the diversification is itself the bull case (pricing power, sold-out wafers). Net: a slow, multi-year share-of-marginal-growth risk to monitor, not a thesis breaker. Stance held **bull/high**. Watch-trigger: whether the Intel order *expands* beyond TPU/2028 or stays a single hedge SKU.
 - **2026-06-10 — Record May revenue into a Taiwan export-control headline** (per [[2026-06-10-cpi-supercore-iran-ai-ipo-rotation]]). May revenue **NT$417B — all-time monthly record, +30% y/y** — while Bloomberg reported Taiwan is weighing export controls restricting advanced AI chip sales to **all** Chinese customers (not just blacklisted entities). Stock fell ~2% pre-market on the headline, more with the broad tech rout. **Which means:** the number that actually measures the AI buildout (wafers shipped) set a record in the same session the stock fell — and the export-control headline mostly codifies the status quo, since US rules already bar TSMC's leading-edge AI silicon from China. Treat weakness here as the tape's problem, not the company's; the thesis metric is moving the right way. Stance held **bull/high**.
 - **🔥 2026-06-01 PM — NVDA RTX Spark + Vera CPU = N3 leadership validation; new PC volume tier** (per [[2026-06-01-nvda-rtx-spark-computex-keynote]]). NVIDIA's RTX Spark PC superchip ships on **TSMC 3nm**; Vera CPU is now "in full production" (also TSMC). Six Windows OEMs commit to RTX Spark launch fall 2026. **Which means**: a new high-volume consumer leading-edge SKU tier appears on TSMC N3 18-24 months ahead of typical mobile-cycle ramp, on top of the NVIDIA #1-customer concentration the wiki captured May 17 (19% of 2025 revenue). NVDA's premium per-wafer-hour pricing extends across PC volumes too. Reinforces TSMC's capacity-discipline-as-bubble-prevention framing per Gavin Baker — the marginal wafer is now spoken for across three NVDA product families (data-center GPU + Vera CPU + RTX Spark PC). Stance held at **bull/high**.
 - **🔥 2026-06-01 AM — GOOGL $80B raise + Berkshire $10B placement read-through:** Every wafer in the GOOGL AI fleet — TPU (AVGO co-design) AND the Blackwell/Vera Rubin NVDA fleet running in GCP — flows through TSMC fabs at N3/N2 (per [[2026-06-01-googl-80B-equity-raise-berkshire]]). The implied $30-50B incremental AI capex tranche above the $185-190B 2026 guide is directly additive to leading-edge wafer demand into the 2027-2028 window where TSMC's $52-56B 2026 capex (likely revised toward Dylan Patel's $100B 2028 framing) is already sold out. **Which means**: the [[ai-bubble-debate]] "TSMC capacity discipline IS the bubble-prevention mechanism" framing per [[2026-05-21-gavin-baker-invest-like-best]] sharpens further — GOOGL just locked in funding for demand that mechanically exceeds what TSMC is choosing to make available. Bull thesis on TSMC pricing power compounds; the marginal customer is now equity-funded with a Berkshire stamp behind it.

@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, capex, hyperscalers]
-last_updated: 2026-06-01
+last_updated: 2026-06-14
 last_full_review: 2026-05-09
-sources: 12
+sources: 13
 ---
 
 # AI Capex Cycle
@@ -127,6 +127,9 @@ The same [[bottleneck-roadmap]] framework applied to humanoid robotics yields it
 - **Datacenter overbuild** — fixed-cost assets that depreciate fast if utilization falls short
 - **Returns dispersion** — even if AI is real, the LLM layer may commoditize while hardware (NVDA/TSM) and applications (TBD) capture the value
 - Vanguard's framing: "**Economic upside, stock market downside**" — AI may be net-positive for GDP and net-negative for the stocks priced for monopolistic outcomes
+
+## Industry sizing (UBS, 2026-06-12)
+UBS (Gaudois) frames the through-line: agentic AI broadens demand beyond accelerators/HBM into CPU, DRAM, NAND, networking, power management — total semi sell-in **$1.62T 2026 → $2.38T 2027**, memory **$961B → $1.638T** ([[2026-06-12-ubs-semi-2.38T-2027]]). Structural driver on the demand side: **memory content per AI server is several TB vs hundreds of GB for a traditional cloud server**. UBS sees cycle indicators "green into late 2027" — the optimistic anchor to weigh against the late-cycle warnings in [[valuation-environment]] and [[ai-bubble-debate]].
 
 ## Tactical signals to watch
 - **Hyperscaler quarterly capex guides** — any cut signals capex peak
