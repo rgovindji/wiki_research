@@ -2,9 +2,9 @@
 type: company
 ticker: SNPS
 tags: [ai, semis, eda, software, nvda-direct]
-last_updated: 2026-05-12
+last_updated: 2026-06-15
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 conviction: medium
 stance: bull
 ---
@@ -59,6 +59,7 @@ EDA (electronic design automation) duopoly with Cadence — every advanced AI ch
 ## Sources
 1. [[2026-05-11-semianalysis-eda-primer]] — Part 1 of 3-part series on EDA; design-bottleneck structural thesis; verification = 70% of effort
 2. [[2026-05-17-semiwiki-nenni-blog-sweep]] — Synopsys-TSMC AI design alliance deepening: agentic Fusion Compiler on A14; 3DIC at 5.5x reticle; automotive UCIe ASIL B; COUPE photonics integration (added 2026-05-17 PM)
+3. [[2026-06-15-semiwiki-graphene-photonics-colossus-token-throttle]] — SAFE Forum 2026: SNPS extends the **Samsung Foundry** alliance to 2nd/3rd-gen **2nm** (production-ready digital+analog flows) and **3DIC Compiler** multi-die signoff; AI-driven test cuts patterns up to 20%. The TSMC alliance now has a Samsung-side mirror — duopoly EDA selling the same AI-design tooling to *both* leading-edge foundries (added 2026-06-15)
 
 ## Citations
 - Synopsys NVDA partnership at GTC 2026: https://news.synopsys.com/2026-03-16-Synopsys-Showcases-NVIDIA-Partnership-Impact-and-Ecosystem-Innovation-at-GTC-2026

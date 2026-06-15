@@ -1,12 +1,12 @@
 {
   "_doc": "Prediction ledger for the After Hours / Before the Bell letters. Every falsifiable call a letter makes gets one entry when made. Each close-of-market run MUST: (1) resolve any prediction whose horizon passed or whose falsifier/confirmer triggered, (2) write resolution_note explaining WHY it was right or wrong (mechanism, not just outcome), (3) distill a lesson into playbook.md when the resolution teaches something, (4) update the calibration tally. Verdicts: right | wrong | partial | timing (structurally right, timing off) | expired (unresolvable). Max 3 new predictions per issue; a call without a falsifier doesn't get logged, it gets rewritten until it has one.",
   "calibration": {
-    "right": 1,
+    "right": 2,
     "partial": 1,
     "timing": 0,
     "wrong": 1,
     "expired": 0,
-    "notes": "Updated 2026-06-12: 3 resolved — 1 right (high), 1 partial (medium), 1 wrong (medium). By tier: high 1/1 clean; medium 0/2 clean (one partial, one wrong). Early read: high-confidence mechanism calls are earning their label; medium calls keep failing on the NUMBER while the mechanism survives — tighten how levels are written into claims (see playbook lesson 7)."
+    "notes": "Updated 2026-06-15: 4 resolved — 2 right (1 high, 1 medium), 1 partial (medium), 1 wrong (medium). By tier: high 1/1 clean; medium now 1/3 clean (oil-is-the-tell RIGHT, gamma-reclaim partial, CPI wrong). The medium tier earned its first clean win, and it was a MECHANISM call (equities follow crude, not headlines) graded across adversarial tests — consistent with the early read that our mechanism reads are the strength. The two medium misses both failed on level-quoting discipline, not mechanism (lesson 7). Watch whether medium keeps converting now that level-keyed claims name their governing standard."
   },
   "predictions": [
     {
@@ -70,9 +70,9 @@
       "confidence": "medium",
       "horizon": "2026-06-16",
       "falsifier": "WTI closes above $95 without Hormuz closure, or an Iran headline alone produces a >2% S&P down day that doesn't recover within two sessions.",
-      "status": "open",
-      "resolution_note": null,
-      "resolved": null
+      "status": "right",
+      "resolution_note": "Resolved one session ahead of the June 16 horizon because the confirmer triggered decisively: the deal was declared 'complete' Sunday, WTI cracked to $80.75 (-4.8%, an 8-week low) and the S&P rallied +1.65% to 7,554.29. Neither falsifier ever fired across the full window: WTI never closed above $95 (it fell the whole period, from ~$90 on June 9 to $80.75), and no Iran headline alone produced an unrecovered >2% S&P down day. Mechanism check — right for the right reason: the entire thesis was that equities follow CRUDE, not the headline TEXT, and the window delivered the cleanest possible proof — June 11 Iran DECLARED Hormuz closed and oil FELL 4% while stocks rallied 1.75%; June 12 Tehran disputed the draft text and oil fell 3% while stocks rose; today the signing itself is what's priced and oil/equities moved in lockstep with the de-escalation. Four consecutive sessions, including two where the bearish headline was as loud as it gets, all graded by crude. The hypothesis ('oil is the tell on war headlines') is hereby promoted to a playbook Active lesson — it has now been right across multiple independent tests including adversarial ones. Caveat banked for honesty: the regime that made oil the clean tell was a market that WANTED the deal; in a tape already fearful for other reasons, a crude move might not dominate sentiment as cleanly — the lesson is 'when oil and the headline disagree, trust oil,' not 'oil predicts everything.'",
+      "resolved": "2026-06-15"
     },
     {
       "id": "2026-06-09-mrvl-inclusion-bid",
@@ -174,6 +174,32 @@
       "confidence": "medium",
       "horizon": "2026-06-30",
       "falsifier": "Any SPCX close below $135 on or before June 30 (the market resents the supply after all; the pipeline-absorption read from day one was a peace-rally artifact).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-15-call-wall-caps-record",
+      "made": "2026-06-15",
+      "issue": "2026-06-15-afterhours",
+      "type": "market-direction",
+      "claim": "The same positive-gamma machinery that pinned the tape and capped panic also caps the JOY: SPX does not CLOSE above 7,600 (the June 1 record, 7,599.96) before the June 19 triple-witching close. Mechanism: with net GEX at a cycle-high positive (+$80B/+$101B), dealers are long gamma and SELL into the 7,555 call wall, so clearing a fresh all-time high requires the wall to migrate up first — which takes either time or a new catalyst the calendar (BoJ/FOMC, both more likely to inject caution than fuel) doesn't obviously provide. Grading governs by the 7,600 record level (a round, fixed, widely-watched number), not by the nightly-recomputed wall (lesson 7 applied at logging time).",
+      "confidence": "medium",
+      "horizon": "2026-06-19",
+      "falsifier": "Any SPX close above 7,600 on or before June 19 (the wall migrated up faster than the positive-gamma cap predicts, or a fresh catalyst overwhelmed it — the framework is decoration on the upside).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-15-boj-non-event-for-tech",
+      "made": "2026-06-15",
+      "issue": "2026-06-15-afterhours",
+      "type": "macro",
+      "claim": "The BoJ's near-certain 25bp hike to 1.0% (80-97% priced) is a sell-the-fact non-event for US tech, NOT the long-feared yen-carry-unwind trigger: no >2% Nasdaq down day attributable to a yen spike in the two sessions following the June 16-17 decision. Mechanism: a fully-priced hike with Gov. Ueda absent is most likely accompanied by dovish-leaning forward guidance to avoid a disorderly yen move; the carry unwind needs a SURPRISE (hawkish dissent or an unexpectedly steep path), not the base case.",
+      "confidence": "medium",
+      "horizon": "2026-06-19",
+      "falsifier": "Nasdaq prints a >2% down day within two sessions of the BoJ decision that coheres with a sharp yen appreciation (USD/JPY breaking down hard) — i.e. the carry-unwind tail the wiki has flagged as the #1 macro risk actually fires. (A >2% tech down day driven by the FOMC or a deal slip, with the yen quiet, does NOT falsify this — the claim is specifically about the BoJ/yen channel.)",
       "status": "open",
       "resolved": null,
       "resolution_note": null

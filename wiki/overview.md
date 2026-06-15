@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-12
+last_updated: 2026-06-15
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,12 @@ sources: 0
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 15, 2026 — The peace gap: deal "complete," oil cracks to $80, S&P +1.65% and pins to the call wall a stone's throw from a record
+
+Late Sunday Trump declared the US-Iran deal **"now complete"** — Hormuz reopens, blockade lifts, signing set for **Friday in Switzerland**, ceasefire extended 60 days. The two-week front-run finally cashed: **S&P +1.65% to 7,554.29 · Nasdaq +3.07% to 26,683.94 · Dow +0.92% to 51,671.03**; **WTI −4.8% to $80.75** (lowest since early March, still +40% YTD); 10Y eased to ~4.42%; **VIX crushed to 16.20** (a fresh post-selloff low). Asia led overnight — **Nikkei +5% to a record >69,000, KOSPI +5.2%, SK Hynix +6.4%, Samsung +4.5%** — the same Korea memory trade prime brokers were reportedly de-levering Friday. The book ripped: **[[MU]] +10.8% to $1,087.99** (best portfolio mover, into its ~June 24 print), **[[MRVL]] +10.4% to $308.88** (S&P inclusion June 22), [[ALAB]] +6.0%, [[CRWV]] +6.1%, [[TSM]] +4.1% to $441.40, [[NVDA]] +3.5% to $212.45, [[DELL]] +3.4% to $409.07. SPCX held ~$173.95 (+8.1%) on day two; Musk floated >$1T revenue by 2030.
+
+> **What this means:** The gap blew straight through the 7,425-7,430 call wall that capped every rally last week — and then pinned *almost exactly* at the new computed call wall, **7,555** (close 7,554.29; high 7,577.92), in a regime where dealers are now **deeply long gamma (net GEX +$80B Polygon / +$101B CBOE, a cycle high)**. That positive-gamma pin is the story into a stacked week: it caps panic *and* joy, so a fresh record (7,599.96, −0.6% away) needs the wall to migrate up first. The whole repricing still rests on an **unsigned** deal (signature Friday), with **BoJ June 16-17** (80-97% odds of a 25bp hike to 1.0%, highest since 1995; Governor Ueda hospitalized and absent), **FOMC June 17** (hold expected), and **triple-witching June 19** all inside five sessions. The day's high-to-low range was just **0.81%** — the calm-tape thesis confirming on its first eligible session. **No stance/conviction changes.**
 
 ## June 12, 2026 — SpaceX prices the largest IPO ever and the market asks for seconds; S&P closes above the flip; deal signing slips to "coming days"
 

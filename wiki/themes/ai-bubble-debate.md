@@ -1,15 +1,19 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-12
+last_updated: 2026-06-15
 last_full_review: 2026-05-09
-sources: 19
+sources: 20
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side.
+
+## June 15, 2026 — A demand-side data point cuts against the over-build bear: the labs are rationing compute with price
+
+Per [[2026-06-15-semiwiki-graphene-photonics-colossus-token-throttle]]: SemiWiki reports datacenters are *already fully utilized with demand still exceeding supply*, and the frontier labs have **ended unlimited-token pricing** to throttle consumption (Anthropic's plan-limit change is live ~Jun 22). Anthropic's reported **~$16B/yr lease of Musk's Colossus** is a single inference contract the size of SpaceX's whole 2025 revenue. **Which means**: the cleanest bear mechanism in this file — hyperscalers building ahead of demand into a depreciation cliff — is harder to hold when the operators are raising prices to ration scarce capacity rather than discounting to fill it. This is one indicative datapoint (the $16B figure is single-source), not a thesis flip; the bull and bear both keep their seats. Separately, **Anthropic is now marketed at ~$965B** (up from the $900B May raise) amid an "IPO marketing blitz" — the supply-pipeline clock (see June 12 below) keeps ticking toward the September OpenAI / October Anthropic listings.
 
 ## June 12, 2026 — Contradicting evidence on the mega-IPO supply mechanism: the largest IPO ever got absorbed, and the market rallied
 

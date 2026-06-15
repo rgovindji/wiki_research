@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, datacenter, construction, contractors, labor]
-last_updated: 2026-05-17
+last_updated: 2026-06-15
 last_full_review: 2026-05-12
-sources: 2
+sources: 3
 ---
 
 # Data Center Construction Layer
@@ -118,6 +118,7 @@ This is the **single largest near-term political catalyst** for the construction
 - **Hyperscaler capex commentary** — read-through is direct
 - **Modularization adoption** — Crusoe / Google / Meta moves to factory-built modules could shift revenue mix
 - **Power-side execution** — PWR specifically benefits from generation + transmission build; FIX/EME more from inside-the-fence MEP
+- **Regulatory/cost creep (NEW 2026-06-15)** — Texas Gov. Abbott recommended sweeping data-center rules for the 2027 session: new DCs must **add their own generation**, pay their own **grid interconnect**, run **closed-loop water**, report power/water annually, and **repeal the DC sales-tax exemption** ([[2026-06-15-semiwiki-graphene-photonics-colossus-token-throttle]]). **Which means**: the marquee build-it-anywhere state is signaling that hyperscalers, not ratepayers, will carry growth costs — a slow-burn margin/permitting headwind (2027 legislation, not immediate) that mostly *helps* the on-site-generation names (BE/GEV/bring-your-own-power) and raises the bar for everyone else. Watch whether other states follow.
 
 ## Related
 [[ai-capex-cycle]] · [[bottleneck-roadmap]] · [[FIX]] · [[EME]] · [[PWR]] · [[VRT]] · [[ETN]] · [[GEV]] · [[BE]] · [[overview]]

@@ -9,6 +9,19 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-15] daily | Peace gap rally + SemiWiki sweep: demand-throttle datapoint, graphene photonics
+
+Close-of-market run. **Market**: US-Iran deal declared "complete" (signing Friday, Hormuz reopens); S&P +1.65% to 7,554.29, Nasdaq +3.07%, Dow +0.92%, WTI −4.8% to $80.75, VIX 16.20; book ripped (MU +10.8% to $1,087.99, MRVL +10.4%, TSM +4.1%, NVDA +3.5%). SPX pinned to the computed 7,555 call wall (net GEX +$80B/+$101B, cycle-high positive). [[overview]] new June 15 lead.
+
+**Ingest**: [[2026-06-15-semiwiki-graphene-photonics-colossus-token-throttle]] from the daily SemiWiki scan (17 new items). Curated diamonds: (1) Anthropic's reported ~$16B/yr Colossus lease + "datacenters fully utilized, labs throttling demand via pricing" → [[ai-capex-cycle]] + [[ai-bubble-debate]] (demand-durability, cuts against over-build bear); (2) **Black Semiconductor** integrated graphene photonics → [[photonics]]; (3) **Synopsys × Samsung** 2nm/3DIC → [[SNPS]]; (4) **Chips&Media CODEC → Ambarella** → [[AMBA]]; (5) **Abbott Texas DC regulation** → [[datacenter-construction]]; (6) Intel EMIB/Synopsys (already in [[INTC]]).
+
+**Wiki touched**: [[overview]], [[ai-capex-cycle]], [[ai-bubble-debate]], [[photonics]], [[SNPS]], [[AMBA]], [[datacenter-construction]], [[index]].
+**Stance/conviction changes**: none. **Flagged for review**: none.
+**Skipped (low-value)**: generic memory-AI overview, EDA agentic-design trend pieces (no new fact), llmda.ai/SEGA-AI vendor PR, Rambus DDR5 client chipset + Weebit ReRAM (noted in source summary, too niche for a page).
+**Newsletter**: predictions — resolved `2026-06-09-oil-is-the-tell` RIGHT (deal complete, oil $80, no Hormuz closure, never a >2% Iran-only down day); promoted "oil is the tell" hypothesis to playbook Active. YOLO `2026-06-15-spx-7575c` LOSS (trigger fired, high 7,577.92 tagged the strike but stalled below the 7,590 target at the 7,555 call wall; desk 1-2-1). Logged 2 new calls. After Hours issue #7 written.
+
+---
+
 ## [2026-06-15] note | Added AAOI company page (AXTI already existed)
 
 User asked to add AXTI + AAOI. **AXTI already had a page** (substrate / InP, bull/medium, well-referenced) — left as-is. **AAOI was net-new** (zero prior references) → created [[AAOI]]: US-mfg optical transceivers, pluggable-module layer of [[photonics]]; Q1 2026 record $151.1M (+51% y/y), data center >half (+154% y/y), first 800G hyperscaler volume + first 1.6T order (>$200M Mar 2026), Microsoft supply agreement, FY26 guide >$1.1B; Rosenblatt PT $220 (Jun 4). **Stance neutral / conviction low** — real revenue inflection but documented boom-bust + dilution history, customer concentration, ~12x off lows (cycle largely priced), and CPO is the eventual disruptor of the module layer it's levered to. Added to [[photonics]] pluggable beneficiaries + [[index]] Networking & optical. Watch: dilution-into-strength (EDGAR), Oracle qual, 800G/1.6T margin hold.

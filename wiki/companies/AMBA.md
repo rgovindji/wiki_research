@@ -2,9 +2,9 @@
 type: company
 ticker: AMBA
 tags: [edge-ai, robotics, humanoid, automotive, semis]
-last_updated: 2026-05-13
+last_updated: 2026-06-15
 last_full_review: 2026-05-13
-sources: 1
+sources: 2
 conviction: medium
 stance: bull
 ---
@@ -62,6 +62,7 @@ Best-quality edge AI vision SoC business of the small-cap robotics screen — re
 
 ## Recent developments
 
+- **2026-06-15** — **Licensed Chips&Media's next-gen video CODEC IP** (8K, PPBA-optimized) for the expanding "Physical AI" edge portfolio — autonomous driving, robotics, intelligent security, industrial ([[2026-06-15-semiwiki-graphene-photonics-colossus-token-throttle]]). **Which means**: incremental validation that AMBA is building system-level edge-vision SoCs (sensor + CODEC + AI accelerator) for the robotics/physical-AI wedge the bull case rests on, rather than just supplying point silicon — a small but real net-new IP-stack datapoint, not an earnings event.
 - **2026-05-05** — Q1 FY2027 earnings conference call scheduled. CEO honored by IEEE.
 - **2026-02-09** — Confirmed at Embedded World 2026 (March).
 - **2026-Q4 FY26** — Revenue $100.87M beat consensus $100.18M. Adjusted GM 59%-60.5% guided for Q1 FY27. Roth lowered PT.

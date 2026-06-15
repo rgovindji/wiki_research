@@ -1,9 +1,9 @@
 ---
 type: sector
 tags: [photonics, silicon-photonics, cpo, optical-interconnect, pic, ai-infrastructure]
-last_updated: 2026-06-14
+last_updated: 2026-06-15
 last_full_review: 2026-06-14
-sources: 3
+sources: 4
 conviction: medium
 ---
 
@@ -34,7 +34,7 @@ The investable nuance: the transition from pluggables to CPO is **disruptive to 
 - **Pluggable modules (today's revenue):** [[COHR]] · [[LITE]] · [[FN]] · [[AAOI]] (small-cap, US-mfg, 800G→1.6T hyperscaler ramp — high-beta, see page).
 - **CPO / switch silicon:** [[AVGO]] · [[NVDA]] · [[MRVL]].
 - **Optical fiber / connectivity:** [[GLW]] (Corning).
-- **Diamond-in-the-rough / watch-only:** **NewPhotonics** (private — PIC maker scaling production on yieldHUB analytics); Lightmatter (private, photonic interposer); **POET** — see [[POET]], the wiki's canonical AVOID (narrative-trading small-cap photonics name; do not conflate with the real stack).
+- **Diamond-in-the-rough / watch-only:** **Black Semiconductor** (private, Germany — *integrated graphene photonics* (IGP); FabONE 300mm electronic-photonic line operational end-2026, "first of its kind"; graphene's no-bandgap property — what killed it for transistors — makes it a broadband on-wafer modulator+photodetector; claims 100x interconnect scaling vs copper; added 2026-06-15, [[2026-06-15-semiwiki-graphene-photonics-colossus-token-throttle]]); **NewPhotonics** (private — PIC maker scaling production on yieldHUB analytics; second production-discipline datapoint 2026-06-15); Lightmatter (private, photonic interposer); **POET** — see [[POET]], the wiki's canonical AVOID (narrative-trading small-cap photonics name; do not conflate with the real stack).
 
 ## Risks / counter-thesis
 - **CPO timing risk** — the transition has been "two years away" for several years; pluggables keep getting cheaper and good-enough, deferring CPO economics.
