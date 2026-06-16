@@ -203,6 +203,32 @@
       "status": "open",
       "resolved": null,
       "resolution_note": null
+    },
+    {
+      "id": "2026-06-16-rotation-is-a-trim",
+      "made": "2026-06-16",
+      "issue": "2026-06-16-afterhours",
+      "type": "market-direction",
+      "claim": "The June 16 chip-for-cyclicals rotation (Dow record close while semis dumped: MRVL -9.8%, AVGO -4.4%, MU -6.2%, AMD -5.9%) is a one-day pre-FOMC trim of the year's most crowded trade, NOT a leadership change: a semis basket (our equal-weight NVDA/AVGO/MRVL/MU/TSM/AVGO book, proxied by SOXX) OUTPERFORMS the Dow over the three sessions June 17-19. Mechanism: no negative AI-demand datapoint landed today — the catalysts (SpaceX-Cursor $60B, reported SpaceX-Google compute deal) were demand-POSITIVE — so the rotation is positioning (oil-down cyclical bid + de-risking a winner into an event), and positioning trims mean-revert once the event clears, where a real de-rate would keep compounding lower.",
+      "confidence": "medium",
+      "horizon": "2026-06-19",
+      "falsifier": "SOXX (or our equal-weight semi book) underperforms the Dow over June 17-19 close-to-close, OR any AI-demand guide-down / negative hyperscaler-capex datapoint lands in that window (then it's a de-rate, not a trim).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-16-fomc-day-box",
+      "made": "2026-06-16",
+      "issue": "2026-06-16-afterhours",
+      "type": "market-direction",
+      "claim": "SPX CLOSES the June 17 FOMC day inside the 7,510-7,600 wall box — neither the 7,510 put wall breaks nor the 7,600 record/call wall falls on Warsh's debut. Mechanism: even with net dealer gamma thinned ~80% (to +$13-21B), the two computed feeds agree to the dollar that the dominant strikes are 7,510 (put, where the close pinned today) and 7,600 (call, = the June 1 record) — dealers still buy the put wall and sell the call wall, just with less force, so a hold-with-neutral-tilt Fed (the base case) keeps the close boxed. Grading governs by the two fixed wall levels (7,510 / 7,600), not by the nightly-recomputed flip (lesson 7 applied at logging time).",
+      "confidence": "medium",
+      "horizon": "2026-06-17",
+      "falsifier": "Any SPX June 17 CLOSE below 7,510 (the put wall broke — thinned gamma let a hawkish Warsh amplify a flush toward the 7,450 flip) OR above 7,600 (a dovish Warsh migrated the call wall up and took out the record). A close inside the box = right.",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
     }
   ]
 }

@@ -1,0 +1,90 @@
+{
+  "_doc": "Daily market-state snapshot. Written by the close-of-market run, read by the next morning run (and the next close run for day-over-day deltas). This is reasoning fuel — the reader never sees this file, only the conclusions drawn from it. Fields left null were not collected; collect them next run rather than guessing. Add fields freely as new data sources prove useful; note new sources in playbook.md.",
+  "date": "2026-06-16",
+  "as_of": "2026-06-16T16:00:00-04:00",
+  "indexes": {
+    "spx": {
+      "close": 7511.35,
+      "chg_pct": -0.57,
+      "ohlc": [7550.0, 7564.96, 7508.68, 7511.35],
+      "note": "Open ~7,550 (estimated — began near flat, Yahoo meta returned null open), high 7,564.96, low 7,508.68, close 7,511.35 (-0.57%). High-to-low range 0.75% (56.28 pts) — still a compressed range, the calm-tape pattern holding mechanically even on a down day. Critically, the high (7,564.96) NEVER reached the 7,590-7,600 record zone — the morning's +0.5% futures pop faded by the cash open. Close pinned almost exactly to the computed 7,510 put wall (both feeds). High/low/close exact from Yahoo chart API (^GSPC, stamped 16:00 ET June 16). SPYx10 = 7,503.3 vs SPX 7,511.35 (ratio 10.01) — cross-check passes. Two snippet sources reported 7,548.60 (-0.08%); that is WRONG — Yahoo ^GSPC official close is 7,511.35, corroborated by SPYx10 and CBOE spot 7,511.35."
+    },
+    "nasdaq_composite": {
+      "close": 26376.34,
+      "chg_pct": -1.15,
+      "note": "-1.15%, the day's laggard — the inverse of Monday's +3.07% leadership. Pure chip unwind: SOX names dumped (MRVL -9.8%, MU -6.2%, AVGO -4.4%, AMD -5.9%, INTC -7%)."
+    },
+    "dow": {
+      "close": 51999.67,
+      "chg_pct": 0.64,
+      "note": "+328.64 pts to a RECORD close (51,999.67; intraday all-time high 52,190.29). The split-tape tell: money rotated OUT of crowded AI winners INTO cyclicals/value — oil-down + pre-FOMC de-risking of the year's best trade. Dow record while S&P fell is a breadth signal, not a risk-off signal."
+    }
+  },
+  "after_hours_events": [
+    {"event": "SpaceX (SPCX) to acquire Anysphere/Cursor for $60B all-stock", "note": "AI coding tool, ~$2.6B ARR; closes Q3 pending regulatory approval. SPCX +~5-8% on the day. AI-application-layer consolidation + a demand-side datapoint (a public-co paying $60B for AI coding share). Also reported: a SpaceX-Google ~$30B compute agreement (single-source, treat as context). Relevant to the 2026-06-12-spcx-holds-offer prediction — SPCX well above its $135 offer."}
+  ],
+  "regime": {
+    "call": "bull",
+    "options": ["bull", "bull-under-stress", "sideways", "bear-rally", "bear"],
+    "rationale": "Still bull, but a watchful one — today was a healthy rotation, not a stress event. The Dow set a record while the S&P fell 0.57%; that is breadth broadening (oil-down cyclicals bid, pre-FOMC trim of the crowded AI trade), not a thesis crack. No negative AI-demand datapoint landed — the day's AI news (SpaceX-Cursor $60B, reported SpaceX-Google compute deal) was demand-POSITIVE. VIX stayed calm (16.41), oil benign ($80.6), 10Y ~4.46%. BUT the mechanically important change keeping this from a clean bull: net dealer gamma collapsed from +$80B/+$101B (Mon, cycle high) to +$21B Polygon / +$13B CBOE — the positive-gamma cushion that pinned the tape thinned ~80% in one session. SPX now sits AT the 7,510 put wall with the flip zone (7,348-7,450) below and the 7,600 call wall (= the June 1 record) above. So into the first Warsh FOMC the shock absorber is much weaker than last week — the presser can move the tape more than the recent 0.75-0.81% grinds imply.",
+    "what_changes_it": "A close below the 7,510 put wall, with net GEX this thin and the flip at 7,450 (CBOE) / 7,348 (Polygon) just below, would mean dealers stop cushioning and start amplifying — back to bull-under-stress, then watch 7,450/7,348. A dovish Warsh presser collapsing December-hike odds below 30% could re-arm the melt-up (grades 2026-06-10-fomc-hold-hawkish). A hawkish-surprise hike or a >2% Nasdaq down day on a yen spike post-BoJ (USD/JPY breaking down) flips the carry-unwind tail live. Confirmation the rotation is a trim not a regime: semis recover vs the Dow over the next three sessions."
+  },
+  "key_levels": {
+    "spx_support": [7510, 7450, 7348, 7300],
+    "spx_resistance": [7565, 7600],
+    "notes": "Support: 7510 = computed put wall on BOTH feeds (the close pinned to it, 7,511.35) — the floor that matters now; 7450 = CBOE zero-gamma flip; 7348 = Polygon zero-gamma flip (the flip is a ZONE 7,348-7,450 — the two computed feeds disagree by 1.37%); 7300 = prior aggregate put wall (rolled UP to 7,510 today as near-money hedges stacked on the down day). Resistance: 7565 = today's intraday high (the failed push); 7600 = aggregate AND near-view call wall on both feeds AND the June 1 record (7,599.96) — a triple-confluence ceiling.",
+    "gamma": {
+      "zero_gamma_flip": 7450,
+      "call_wall": 7600,
+      "put_wall": 7510,
+      "net_gex_usd": 20982395466,
+      "near_put_wall": 7510,
+      "near_call_wall": 7600,
+      "source": "polygon/computed (scripts/market_levels.py --audit), walls CORROBORATED by CBOE crosscheck to the dollar. Flip taken as CBOE 7,450 (more conservative / closer to prior-day 7,440) — Polygon computed 7,348; the flip is a 7,348-7,450 ZONE.",
+      "note": "REGIME SHIFT: net GEX +$21.0B Polygon / +$13.2B CBOE — DOWN ~80% from Monday's +$80B/+$101B cycle high. The deep long-gamma pin thinned hard on the chip selloff (hedges unwound + new near-money puts bought, rolling the put wall UP from 7,300 to 7,510). Close (7,511.35) pinned to the 7,510 put wall; the 7,600 call wall = the record, untouched (high 7,564.96). Both feeds agree EXACTLY on both walls (call 7600/7600, put 7510/7510); they disagree on the flip (Polygon 7348 vs CBOE 7450 = the audit's one substantive fail). Near-view (<=2DTE) walls identical to aggregate (7600/7510) on both feeds.",
+      "audit_verdict": "suspect",
+      "audit_override": "OVERRIDDEN to computed for the WALLS, with reasoning; flip kept as a zone. The 'suspect' verdict came from 2 failing checks: (1) vs-snippet-put_wall (computed 7,510 vs snippet 7,300, 2.88% apart) — the 7,300 snippet is STALE (last week's put wall; today's rolled up to near-money as the selloff prompted protection buying), and a 7,300 put wall fails the tape-coherence test (spot 7,511). (2) vs-cboe-flip (Polygon 7,348 vs CBOE 7,450, 1.37%) — a genuine flip-zone disagreement, handled by quoting the flip as a 7,348-7,450 zone rather than a point. The decisive evidence FOR computed: the two INDEPENDENT feeds (Polygon, CBOE) agree to the DOLLAR on both walls (7,510 put / 7,600 call), and the close pinned to the 7,510 put wall while the high stalled below the 7,600 call wall = textbook tape-coherence. Per playbook data-source rule, stale snippet dropped, computed walls accepted.",
+      "audit_log": "2026-06-16 side-by-side day 6 (trust period started 2026-06-09). Script verdict: suspect (2 fail / 7 pass). Fails: vs-snippet-put_wall (7510 vs stale 7300) and vs-cboe-flip (7348 vs 7450, the flip zone). Computed (Polygon): flip 7347.6, call wall 7600, put wall 7510, net GEX +$21.0B, spot 7548.3 (Polygon spot ran slightly stale again — actual SPX close 7,511.35, which CBOE spot matched to the cent: 7,511.35). CBOE crosscheck: flip 7450.0, call wall 7600 (exact), put wall 7510 (exact), net GEX +$13.2B; near-view call 7600 / put 7510. WebSearch snippet (FlashAlpha/InsiderFinance indexed): zero-gamma 7412.77, put wall 7430, call wall 7500 — all somewhat stale/intraday (call wall 7500 < computed 7600, which the record-level confluence and both-feed agreement override). Tape-coherence: close pinned to computed 7,510 put wall, high stalled below computed 7,600 call wall = decisive. Conclusion: computed walls accepted; flip is a 7,348-7,450 zone; 'suspect' flag is a stale-snippet + flip-zone artifact, not a wall-compute problem. Closes: Polygon returned as_of 2026-06-15 (known free-tier staleness) -> Yahoo chart API used for all 11 portfolio closes + SPX/VIX, all stamped 16:00 ET June 16."
+    }
+  },
+  "rates_commodities": {
+    "ust10y_pct": 4.456,
+    "wti_usd": 80.58,
+    "brent_usd": null,
+    "gold": null,
+    "note": "10Y ~4.456% (little changed from 4.42% Mon). WTI ~$80.58, holding the post-deal lows — the war premium fully refunded; oil is now a cyclical tailwind (helped the Dow rotation) rather than a risk variable. Brent/gold not collected."
+  },
+  "volatility_flow": {
+    "vix": 16.41,
+    "vix_note": "VIX 16.20 -> 16.41, basically flat and still near post-selloff lows (Yahoo ^VIX, 16:00 ET June 16). A 0.57% S&P down day with VIX up only 0.21 = no fear, just rotation. Calm vol vs thinned dealer gamma is the tension: the options market isn't pricing event risk into the FOMC the way the gamma collapse suggests it could.",
+    "vix_term_structure": null,
+    "put_call_ratio": null,
+    "put_call_note": "Not collected (lags 1-2 days in free sources). NOTE: the put wall rolling UP 7,300->7,510 implies fresh near-money put buying today — a positioning tell consistent with a one-day hedge-up, not panic.",
+    "notable_options_flow": null,
+    "note": "No corroborated single large-print flow found. The cleanest flow read is structural: the put wall migrating to spot (7,510) = downside hedges stacked near-the-money on the chip selloff."
+  },
+  "technicals": {
+    "spx_vs_50dma": "+4.0% (50-DMA ~7,220-7,230 est, drifting up; SPX 7,511.35)",
+    "spx_vs_200dma": "+9.0% (200-DMA ~6,890-6,900 est)",
+    "breadth_note": "Split/rotational, the inverse of Monday: Dow record (+0.64%) >> S&P (-0.57%) >> Nasdaq (-1.15%). Portfolio movers (Yahoo, all 16:00 ET June 16): CRWV +9.7% $117.03, GOOGL +1.1% $373.25, MAGS -0.3% $66.42, DELL -1.2% $404.08, NVDA -2.4% $207.41, TSM -3.5% $425.83, VRT -4.0% $299.60, AVGO -4.4% $376.71, MU -6.2% $1,020.76, ALAB -7.1% $361.71, MRVL -9.8% $278.67. Outside book: AMD -5.9%, INTC -7%. The two greens are tells: CRWV (AI-cloud, lifted by SpaceX/compute-demand headlines) and GOOGL (cheapest mega-cap + reported SpaceX-Google compute deal) — demand-side AI names held while the supply-side chip complex unwound, an intra-AI rotation worth watching.",
+    "note": "DMAs estimated by drift from June 8 anchors — getting stale (carried 5 sessions); refresh from a direct reading next run."
+  },
+  "calendar": [
+    {"date": "2026-06-17", "event": "FOMC decision (2 PM ET) + Kevin Warsh's first presser as chair", "why": "Hold near-certain (~97% priced at 3.50-3.75%). The event is the VOICE: whether the easing bias is dropped (a hawkish tilt) and where the dot plot / December-hike odds (~80% priced) settle. Grades 2026-06-10-fomc-hold-hawkish (hold + Dec-hike odds >50%) and 2026-06-11-no-revisit-7265 (no SPX close below 7,265 before the statement — holding with huge cushion at 7,511). Risk to the hold-hawkish call: Warsh sounding dovish enough to collapse Dec-hike odds below 30%."},
+    {"date": "2026-06-19", "event": "Triple-witching OpEx + grading day for 2026-06-12-pinned-into-opex, 2026-06-15-call-wall-caps-record, 2026-06-15-boj-non-event-for-tech, 2026-06-11-software-derate", "why": "Quarter's biggest expiry. pinned-into-opex: 2 of 4 eligible sessions confirmed (June 15 0.81%, June 16 0.75%, both starting above flip) — but the gamma cushion thinned, so FOMC day is the real test. call-wall-caps-record: SPX must not close above 7,600 (at 7,511, the high 7,564.96 didn't even reach the wall — holding). boj-non-event: no >2% Nasdaq yen-driven down day in two sessions post-BoJ (hike landed benign, yen contained). software-derate: ADBE must close below $233.38."},
+    {"date": "2026-06-19", "event": "US-Iran formal signing (scheduled, Switzerland)", "why": "The signature the whole oil/peace repricing rests on. A slip re-arms the war premium fast; lands the same day as triple-witching. Per playbook lesson 1, the 7,510 put wall then 7,450 flip then 7,348 are the downside ledges, whatever the headline."},
+    {"date": "2026-06-22", "event": "MRVL + FLEX join S&P 500; RKLB joins Nasdaq-100", "why": "Grades 2026-06-09-mrvl-inclusion-bid ($250 line). MRVL fell 9.8% today to $278.67 but is still well above $250 — the inclusion bid still has a wide cushion; the mechanical index-fund buy lands June 22."},
+    {"date": "2026-06-24", "event": "MU fiscal Q3 earnings (approx — confirm)", "why": "Guide $33.5B / 81% GM / ~$19.15 EPS; Wolfe $1,250 PT. MU fell 6.2% today to $1,020.76 (gave back part of Monday's +10.8%) — the crowded memory trade meets the income statement; the prime-broker leverage-tightening report remains unaddressed by a macro-mood rally."},
+    {"date": "2026-06-26", "event": "May PCE (approx — confirm)", "why": "Fed's preferred gauge; supercore echo check, post-FOMC."},
+    {"date": "2026-06-30", "event": "Horizon: 2026-06-12-spcx-holds-offer", "why": "No SPCX close below $135 through June 30. SPCX rallied on the $60B Cursor acquisition — holding well above the $135 offer."}
+  ],
+  "open_questions": [
+    "NEW: is today's chip-for-cyclicals rotation a one-day pre-FOMC trim or the start of a leadership change? Tell: do the semis (MRVL/MU/AVGO/our book) recover vs the Dow over June 17-19, and does any AI-demand datapoint turn negative? (Logged as a prediction.)",
+    "NEW: net dealer gamma collapsed ~80% in one session (+$101B->+$13B CBOE). Is this a durable de-grossing (the pin is gone for the OpEx week) or a one-day artifact of the chip-hedge unwind that re-stacks by Thursday? Recompute Wednesday — it governs how much the FOMC presser can move the tape.",
+    "NEW: the flip-zone disagreement widened (Polygon 7,348 vs CBOE 7,450, 1.37% apart) vs near-perfect wall agreement. Which feed's flip is right matters for the downside-amplification trigger — watch which level actually gates dealer behavior if SPX loses 7,510.",
+    "CARRIED (from June 15): does the 7,600 call wall cap the melt-up? Tested today indirectly — SPX never reached it (high 7,564.96); the record stays defended. Grades June 19 (call-wall-caps-record).",
+    "CARRIED (from June 15): BoJ hike landed benign (yen contained, Nikkei +0.46%) — the carry-unwind tail did NOT fire on the decision. Two-session falsifier window runs to ~June 19; watch USD/JPY.",
+    "CARRIED (from June 10, AGING OUT): supercore decomposition unchecked, FOMC is tomorrow — settle in the Wednesday run from the FOMC statement's inflation language, or drop the thread.",
+    "CARRIED (from June 15): MU leverage-clamp un-crowding question — MU gave back 6.2% today; does the prime-broker tightening bite into the June 24 print, or was it noise? Carries to the print."
+  ]
+}

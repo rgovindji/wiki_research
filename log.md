@@ -9,6 +9,19 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-16] daily | Chips-for-cyclicals rotation + SemiWiki: Intel 18A-P, WSTS correction warning
+
+Close-of-market run. **Market**: split tape into the first Warsh FOMC (tomorrow) — **Dow record close 51,999.67 (+0.64%)** while **S&P −0.57% to 7,511.35** (high 7,564.96, never poked the 7,600 record) and **Nasdaq −1.15%**. Chip rotation: [[MRVL]] −9.8%, [[ALAB]] −7.1%, [[MU]] −6.2%, [[AVGO]] −4.4%, [[VRT]] −4.0%, [[TSM]] −3.5%, [[NVDA]] −2.4%; green [[CRWV]] +9.7%, [[GOOGL]] +1.1%. WTI ~$80.6, 10Y ~4.46%, VIX 16.41. **Net dealer gamma collapsed +$80–101B → +$21B Polygon / +$13B CBOE** — pin cushion thinned ~80%; close pinned to the 7,510 put wall, call wall 7,600 = the record, flip zone 7,348–7,450. New [[overview]] June 16 lead.
+
+**Ingest**: [[2026-06-16-semiwiki-intel18ap-wsts-correction-gan]] from the daily SemiWiki scan (7 new items). Curated: (1) **Intel 18A-P entered risk production on schedule** (VLSI 2026: +9% perf / −18% power vs 18A on an Arm core; 18A ramping two US fabs, defect density ahead of plan) → [[INTC]] (5→6); (2) **Future Horizons / WSTS** April semis +106.3% y/y but **ASP-driven not unit-driven** (Memory +359%, IC-ex-memory +38.4%) → [[ai-bubble-debate]] (20→21), hardest-sourced "narrow super-cycle" bear flag; (3) **China Supreme Court bans Infineon GaN chips** (Innoscience win) — captured in source summary ([[NVTS]] has no Recent-dev section to append).
+
+**Wiki touched**: [[overview]], [[INTC]], [[ai-bubble-debate]], [[index]].
+**Stance/conviction changes**: none. **Flagged for review**: none.
+**Skipped (low-value)**: Siemens EDA GPU-native MRC, DAC-2026 agentic-EDA roundup, "atomic simulation = realization evidence" opinion (no net-new fact). SpaceX–Cursor $60B / SpaceX–Google compute deal noted as AI-demand context (newsletter), not wiki-page-moving for our coverage.
+**Newsletter**: predictions — none due today (next: FOMC-hold-hawkish + no-revisit-7265 grade June 17; call-wall-caps-record + pinned-into-opex + boj-non-event June 19). `2026-06-15-call-wall-caps-record` and `pinned-into-opex` both confirming (record untouched, 0.75% range); BoJ non-event going right (hike landed, yen contained). YOLO `2026-06-16-spx-7575p` **NO-TRIGGER** (fade thesis directionally right but SPX high 7,564.96 never poked the 7,590–7,600 zone; desk stood aside; record 1-2-2). Logged 2 new calls (rotation-is-a-trim; FOMC-day 7,510–7,600 box). Playbook unchanged. After Hours issue #8 written.
+
+---
+
 ## [2026-06-16] note | Morning brief: A New Chair Walks Into the Room
 
 Before the Bell sent. Covered: pinned tape (SPX 7,554 at the 7,555 call wall, futures +~0.5%) into the first Warsh-led FOMC tomorrow; BoJ hiked to 1.0% overnight with yen contained (our non-event call going right); YOLO desk fades a record-poke (7,575 put, target the 7,555 pin) — the deliberate correction of two melt-up losses. No wiki changes (morning runs don't ingest).

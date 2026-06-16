@@ -1,15 +1,19 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-15
+last_updated: 2026-06-16
 last_full_review: 2026-05-09
-sources: 20
+sources: 21
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side.
+
+## June 16, 2026 — A well-sourced bear datapoint: WSTS growth is ASP-driven, not unit-driven (Future Horizons)
+
+Per [[2026-06-16-semiwiki-intel18ap-wsts-correction-gan]]: the June WSTS report shows April semiconductor sales **+106.3% y/y** (+22.3% m/m) — the 32nd straight month of positive y/y growth, 2nd-longest run on record. Malcolm Penn / Future Horizons, explicitly "out on a limb and alone," argues a correction is inevitable because the growth is **ASP-driven, not unit-driven**: Memory +359%, Logic +48.6%, all on AI-datacenter ASPs, while **IC-ex-memory is only +38.4%** and Analog (+17.2%), Micro (+26.2%), Opto (+7.2%) and Discretes (+13.5%) remain subdued — i.e. no broad-based unit recovery underneath the headline. **Which means**: this is the cleanest, hardest-sourced version of the bear's "narrow, price-led super-cycle" worry — it rhymes with the [[market-concentration]] critique and Dylan Patel's "30% of capex is memory" note, and with the cycle-peak-P/E paradox flagged below for [[MU]] and the memory names. The counter (per the June 15 entry above) is that demand still exceeds utilized supply and labs are *raising* prices to ration — so the ASPs may be scarcity rents, not a bubble premium. One analyst's contrarian read on real WSTS data; logged as a falsifiable bear flag (watch for the first negative m/m memory-ASP print), not a thesis flip.
 
 ## June 15, 2026 — A demand-side data point cuts against the over-build bear: the labs are rationing compute with price
 
