@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-16] note | Morning brief: A New Chair Walks Into the Room
+
+Before the Bell sent. Covered: pinned tape (SPX 7,554 at the 7,555 call wall, futures +~0.5%) into the first Warsh-led FOMC tomorrow; BoJ hiked to 1.0% overnight with yen contained (our non-event call going right); YOLO desk fades a record-poke (7,575 put, target the 7,555 pin) — the deliberate correction of two melt-up losses. No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-15] daily | Peace gap rally + SemiWiki sweep: demand-throttle datapoint, graphene photonics
 
 Close-of-market run. **Market**: US-Iran deal declared "complete" (signing Friday, Hormuz reopens); S&P +1.65% to 7,554.29, Nasdaq +3.07%, Dow +0.92%, WTI −4.8% to $80.75, VIX 16.20; book ripped (MU +10.8% to $1,087.99, MRVL +10.4%, TSM +4.1%, NVDA +3.5%). SPX pinned to the computed 7,555 call wall (net GEX +$80B/+$101B, cycle-high positive). [[overview]] new June 15 lead.
