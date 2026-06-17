@@ -1,0 +1,129 @@
+{
+  "name": "Rotation Side Book",
+  "inception_date": "2026-06-16",
+  "starting_capital_usd": 100000,
+  "mandate": "Overlooked, de-rated quality that benefits as money rotates out of the crowded AI trade post-war (Baker 'franchise on the other side'). Complement to the AI-supply-chain After Hours book; deliberately low correlation. 6-18mo tactical tilt, not all-in.",
+  "selection_filter": "(1) trading well below 52w high, de-rated on narrative not fundamentals; (2) quality/franchise with real cash flow; (3) a rotation catalyst (breadth/rates/oil/IPO-wave/M&A); (4) under-followed angle.",
+  "current_holdings": [
+    {
+      "ticker": "ADP",
+      "company": "Automatic Data Processing",
+      "allocation_pct": 11,
+      "avg_price_usd": 222.0,
+      "current_price_usd": 222.0,
+      "shares": 49.55,
+      "added_date": "2026-06-16",
+      "conviction": "high",
+      "thesis": "De-rated payroll/HCM franchise (dividend aristocrat) down 30% on AI-disruption fear that the moat doesn't actually break. Infrastructure FOR AI workforce mgmt, not a victim."
+    },
+    {
+      "ticker": "PAYX",
+      "company": "Paychex",
+      "allocation_pct": 8,
+      "avg_price_usd": 100.28,
+      "current_price_usd": 100.28,
+      "shares": 79.78,
+      "added_date": "2026-06-16",
+      "conviction": "medium-high",
+      "thesis": "SMB payroll, high-margin + dividend, down 34% on the same AI-narrative overshoot."
+    },
+    {
+      "ticker": "PAYC",
+      "company": "Paycom Software",
+      "allocation_pct": 7,
+      "avg_price_usd": 129.13,
+      "current_price_usd": 129.13,
+      "shares": 54.21,
+      "added_date": "2026-06-16",
+      "conviction": "medium",
+      "thesis": "Higher-growth payroll, deepest de-rate (-48%) = most beta if the narrative reverses; discount partly earned (more automatable)."
+    },
+    {
+      "ticker": "ICE",
+      "company": "Intercontinental Exchange",
+      "allocation_pct": 9,
+      "avg_price_usd": 141.28,
+      "current_price_usd": 141.28,
+      "shares": 63.7,
+      "added_date": "2026-06-16",
+      "conviction": "high",
+      "thesis": "NYSE + data + mortgage tech franchise on sale (-25%); IPO-cycle + data annuity + rate-thaw optionality."
+    },
+    {
+      "ticker": "NDAQ",
+      "company": "Nasdaq Inc",
+      "allocation_pct": 8,
+      "avg_price_usd": 89.29,
+      "current_price_usd": 89.29,
+      "shares": 89.6,
+      "added_date": "2026-06-16",
+      "conviction": "medium-high",
+      "thesis": "Listings + index + market-data; direct beneficiary as mega-AI labs (SpaceX done, OpenAI/Anthropic ahead) list on Nasdaq."
+    },
+    {
+      "ticker": "KKR",
+      "company": "KKR & Co",
+      "allocation_pct": 7,
+      "avg_price_usd": 98.97,
+      "current_price_usd": 98.97,
+      "shares": 70.73,
+      "added_date": "2026-06-16",
+      "conviction": "medium",
+      "thesis": "Alt-asset manager (-36%); private-market liquidity unlock (AI-lab exits/IPO realizations) flows to fee + carry. Most rate-sensitive name."
+    },
+    {
+      "ticker": "STE",
+      "company": "STERIS plc",
+      "allocation_pct": 8,
+      "avg_price_usd": 206.51,
+      "current_price_usd": 206.51,
+      "shares": 38.74,
+      "added_date": "2026-06-16",
+      "conviction": "high",
+      "thesis": "Sterilization + endoscopy razor-blade compounder simply on sale (-23%); quality healthcare at a discount."
+    },
+    {
+      "ticker": "MOH",
+      "company": "Molina Healthcare",
+      "allocation_pct": 7,
+      "avg_price_usd": 200.21,
+      "current_price_usd": 200.21,
+      "shares": 34.96,
+      "added_date": "2026-06-16",
+      "conviction": "medium",
+      "thesis": "Managed care, deeply out of favor on MLR fears (-36%) \u2014 the contrarian end of the healthcare-laggard trade."
+    },
+    {
+      "ticker": "CNMD",
+      "company": "CONMED Corp",
+      "allocation_pct": 7,
+      "avg_price_usd": 34.57,
+      "current_price_usd": 34.57,
+      "shares": 202.49,
+      "added_date": "2026-06-16",
+      "conviction": "medium",
+      "thesis": "Small-cap surgical devices (-39%), recurring disposables, plausible M&A target in the medtech deal wave."
+    },
+    {
+      "ticker": "SCCO",
+      "company": "Southern Copper",
+      "allocation_pct": 8,
+      "avg_price_usd": 194.53,
+      "current_price_usd": 194.53,
+      "shares": 41.12,
+      "added_date": "2026-06-16",
+      "conviction": "medium-high",
+      "thesis": "Lowest-cost/longest-life copper into a structural refined-copper deficit (electrification+grid+AI); cleaner than FCX (at highs)."
+    }
+  ],
+  "cash_pct": 20,
+  "cash_usd": 20000,
+  "cash_rationale": "Rotations are choppy (June 15 tech +3%, June 16 tech -1.2%). Dry powder to add on head-fakes; this is a tilt not an all-in.",
+  "history": [
+    {
+      "date": "2026-06-16",
+      "action": "inception",
+      "note": "10 names across de-rated software, capital-markets/IPO-cycle, contrarian healthcare, copper. 80% invested / 20% cash. Research: wiki/analyses/2026-06-16-rotation-side-portfolio.md"
+    }
+  ]
+}

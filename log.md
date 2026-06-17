@@ -9,6 +9,19 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-16] note | New "Rotation Side Book" — overlooked post-war rotation portfolio
+
+User brief: war over (oil ~$80, deal "complete"), money may rotate off the crowded AI trade — build a side portfolio of quality that *hasn't run* and isn't in the masses' eyes (AI trade not declared done; this is a complement). Research + book created.
+
+- Research: [[2026-06-16-rotation-side-portfolio]] (analysis page) + `newsletter/side_portfolio.json` (trackable holdings, $100k notional, parallel to After Hours).
+- **Thesis:** war-over breadth + Baker "franchise on the other side of the bottleneck" ([[2026-06-16-baker-bottleneck-rotation-boj-hike]]) + the 2026 rotation already running into financials/industrials/utilities/materials/healthcare.
+- **Filter:** below 52w high + de-rated on narrative not fundamentals + quality/franchise + a rotation catalyst + under-followed.
+- **Book (10 names, 80% invested, 20% cash):** de-rated franchise software (ADP/PAYX/PAYC — AI-disruption overshoot); capital-markets/IPO-cycle (ICE/NDAQ/KKR — the non-obvious AI-IPO-wave beneficiary); contrarian healthcare (STE/MOH/CNMD — multi-decade-low valuations + M&A); copper (SCCO — structural deficit, cleaner than FCX).
+- **Explicitly excluded as already-run** (discipline): grid/electrical (ETN/HUBB/NVT/AGX near highs), nuclear/uranium (URA +120%), FCX (at high), and the run AI bottleneck names (After Hours' job).
+- Conviction labels are starting hypotheses to be scored. Offered to render an HTML + tune sizing/capital.
+
+---
+
 ## [2026-06-16] note | Daily overview 2nd pass: Baker bottleneck-trade-end framing + CRWV catalyst correction
 
 Manual overview run after the scheduled daily. Added the framework lens the auto-run missed and fixed a factual gap.
