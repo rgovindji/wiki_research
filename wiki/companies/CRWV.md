@@ -2,9 +2,9 @@
 type: company
 ticker: CRWV
 tags: [ai, neocloud, gpu-cloud, nvda-direct]
-last_updated: 2026-05-16
+last_updated: 2026-06-16
 last_full_review: 2026-05-13
-sources: 4
+sources: 5
 conviction: high
 stance: bull
 ---
@@ -61,6 +61,7 @@ The largest "neocloud" — leases out high-performance GPU compute to AI labs, h
 6. **Debt service trajectory** — refinancing risk if 10y Treasury sustains above 4.5% (see [[fed-policy]])
 
 ## Recent developments
+- **2026-06-16 — +9.7% to $117.03 on three real catalysts (not "compute headlines")** ([[2026-06-16-baker-bottleneck-rotation-boj-hike]]). (1) **Nasdaq-100 inclusion effective June 22** → mechanical passive/benchmarked buying; (2) a **$2.2B, 15-year Chicago hyperscale data-center lease** (contracted revenue + visibility); (3) **Cantor Fitzgerald $167 PT**, calling it cheap at ~$115; plus 90% of the 2027 ARR target now secured. Intraday ran +12-16% then faded as CRWV sounded out EUR/USD high-yield bond demand (the financing-treadmill reminder). **Which means:** on a day the AI *supply-side* book was routed (semis −4% to −10%), CRWV rose on *demand-side*, company-specific, contracted catalysts — a clean illustration of the Baker supply→demand rotation (see [[bottleneck-roadmap]]). Note the standing tension from the Q2 guide miss + the recurring debt-market activity ([[ai-infrastructure-debt]]); stance held **bull/high** but the leverage is why position sizing stays small.
 - **2026-05-07** — **Q1 2026 EARNINGS BLOW-OUT.** Revenue **$2.078B (+112% YoY)**; **backlog $99.4B (+~50% QoQ)**; Adj EBITDA **$1.157B (56% margin)**; **Anthropic multi-year Claude contract** NEW disclosure; **Meta added $21B in March 2026** (incremental); operating cash flow $2.984B; capex $7.695B. NVDA $2B Class A placement + 5+ GW partnership by 2030. Active power >1 GW; contracted >3.5 GW; 2030 target 8+ GW. 2026 guide $12-13B; exit ARR $18-19B; >$30B ARR EOY 2027. NVIDIA Exemplar Cloud designation for GB200 NVL72 inference. See [[2026-05-07-CRWV-Q1-2026-earnings]].
 - **2026-05-13** — Wiki retroactively processed Q1 print after user flagged it had been missed. Triggered new always-on earnings retrieval workflow.
 - **2026-05-17 PM — Q2 2026 guidance TRAILED consensus** ([[2026-05-17-multi-agent-research-batch]] Agent F): **$2.53B guide vs $2.69B consensus** (-6% guide miss). Stock still +80% YTD despite miss. Wells Fargo PT raised to $155 (from $135); Deutsche Bank to $135 (from $125); 33 analysts Buy consensus. **NVDA bought another $2B in CRWV shares post-Q1**. 10 customers committed >$1B; 36% of $99.4B backlog to recognize in next 24 months. **Bull tension**: extraordinary backlog growth + NVDA capital commitment + customer diversification (10 $1B+ customers) vs guidance miss + premium valuation. **Agent recommended conviction NEUTRAL** (down from high). **House view**: keeping bull / high pending Q2 actual print and any updated 2026 ARR exit trajectory — but the Q2 miss is a yellow flag that warrants closer monitoring on capex execution and customer ramp pace.

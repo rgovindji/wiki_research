@@ -9,6 +9,20 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-16] note | Daily overview 2nd pass: Baker bottleneck-trade-end framing + CRWV catalyst correction
+
+Manual overview run after the scheduled daily. Added the framework lens the auto-run missed and fixed a factual gap.
+
+- Source: [[2026-06-16-baker-bottleneck-rotation-boj-hike]]
+- **Filed the pending Gavin Baker call** ("bottleneck trade nearing its end → enduring franchise value on the other side") — today's supply-side rout (MRVL −9.8%, ALAB −7.1%, MU −6.2%, AVGO −4.4%, TSM −3.5%) vs demand-side/franchise bid (GOOGL +1.1%, Dow record) is its same-day confirmation. Actionable split added to [[bottleneck-roadmap]] (7→8): durable-franchise-that's-also-bottlenecked ([[TSM]]/[[ASML]]/[[MU]]-HBM) vs pure cyclical-rent-capturer ([[AAOI]]/commodity DRAM/pluggables); NVDA the open question. Cross-linked [[ai-bubble-debate]] (21→22, restates Penn's ASP-not-unit worry as a portfolio call) and [[overview]] (framework addendum to the June 16 lead).
+- **Correction:** overview mis-attributed [[CRWV]] +9.7% to "SpaceX/compute headlines." Real catalysts: **Nasdaq-100 inclusion June 22 + $2.2B 15-yr Chicago DC lease + Cantor $167 PT**. Fixed on CRWV (4→5) + overview.
+- [[MU]] (9→10): −6.2% in the rout but HBM4-for-Vera-Rubin upside signal — the cleanest test of franchise-vs-cyclical on MU; Q3 print ~June 24.
+- **BoJ** hiked to 1% (first since 1995, 7-1, hawkish) — carry-unwind backdrop to the momentum selloff; was a flagged binary ([[2026-06-16-boj-decision]] playbook). Added to overview macro line.
+- **Flagged for the newsletter close run:** Baker + today's rotation is the strongest evidence yet against ledger prediction `2026-06-01-supply-over-demand` — weigh at resolution.
+- Stance/conviction changes: **none.**
+
+---
+
 ## [2026-06-16] daily | Chips-for-cyclicals rotation + SemiWiki: Intel 18A-P, WSTS correction warning
 
 Close-of-market run. **Market**: split tape into the first Warsh FOMC (tomorrow) — **Dow record close 51,999.67 (+0.64%)** while **S&P −0.57% to 7,511.35** (high 7,564.96, never poked the 7,600 record) and **Nasdaq −1.15%**. Chip rotation: [[MRVL]] −9.8%, [[ALAB]] −7.1%, [[MU]] −6.2%, [[AVGO]] −4.4%, [[VRT]] −4.0%, [[TSM]] −3.5%, [[NVDA]] −2.4%; green [[CRWV]] +9.7%, [[GOOGL]] +1.1%. WTI ~$80.6, 10Y ~4.46%, VIX 16.41. **Net dealer gamma collapsed +$80–101B → +$21B Polygon / +$13B CBOE** — pin cushion thinned ~80%; close pinned to the 7,510 put wall, call wall 7,600 = the record, flip zone 7,348–7,450. New [[overview]] June 16 lead.

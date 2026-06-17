@@ -3,7 +3,7 @@ type: theme
 tags: [ai, bubble, risk, debate]
 last_updated: 2026-06-16
 last_full_review: 2026-05-09
-sources: 21
+sources: 22
 ---
 
 # AI Bubble Debate
@@ -14,6 +14,8 @@ The live debate over whether the AI investment cycle is a healthy productivity-d
 ## June 16, 2026 — A well-sourced bear datapoint: WSTS growth is ASP-driven, not unit-driven (Future Horizons)
 
 Per [[2026-06-16-semiwiki-intel18ap-wsts-correction-gan]]: the June WSTS report shows April semiconductor sales **+106.3% y/y** (+22.3% m/m) — the 32nd straight month of positive y/y growth, 2nd-longest run on record. Malcolm Penn / Future Horizons, explicitly "out on a limb and alone," argues a correction is inevitable because the growth is **ASP-driven, not unit-driven**: Memory +359%, Logic +48.6%, all on AI-datacenter ASPs, while **IC-ex-memory is only +38.4%** and Analog (+17.2%), Micro (+26.2%), Opto (+7.2%) and Discretes (+13.5%) remain subdued — i.e. no broad-based unit recovery underneath the headline. **Which means**: this is the cleanest, hardest-sourced version of the bear's "narrow, price-led super-cycle" worry — it rhymes with the [[market-concentration]] critique and Dylan Patel's "30% of capex is memory" note, and with the cycle-peak-P/E paradox flagged below for [[MU]] and the memory names. The counter (per the June 15 entry above) is that demand still exceeds utilized supply and labs are *raising* prices to ration — so the ASPs may be scarcity rents, not a bubble premium. One analyst's contrarian read on real WSTS data; logged as a falsifiable bear flag (watch for the first negative m/m memory-ASP print), not a thesis flip.
+
+**Same-day, franchise-quality lens (Gavin Baker):** *"the bottleneck trade is nearing its end… the next game is what has enduring franchise value on the other side."* This is the Penn "ASP-driven, not unit-driven" worry restated as a portfolio call — ASP/bottleneck rents are cyclical and self-liquidating, so the question becomes which names keep pricing power after supply catches up. June 16's tape (supply-side semis routed, demand-side/franchise/value bid) is the rotation in miniature. Full treatment + the durable-franchise vs cyclical-rent split lives in [[bottleneck-roadmap]]; source [[2026-06-16-baker-bottleneck-rotation-boj-hike]]. Directly tensions the newsletter ledger's `2026-06-01-supply-over-demand` call.
 
 ## June 15, 2026 — A demand-side data point cuts against the over-build bear: the labs are rationing compute with price
 

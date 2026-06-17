@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
-last_updated: 2026-05-17
+last_updated: 2026-06-16
 last_full_review: 2026-05-09
-sources: 7
+sources: 8
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -135,6 +135,21 @@ Per [[2026-05-28-DELL-Q1-FY27-earnings]]: **each NVIDIA GB300 rack requires roug
 - **Land / permitting.** Texas, Wyoming, New Mexico solve it. Australia/Malaysia/Indonesia/India also building.
 - **Networking switches** — within the constraint of optical/CPO suppliers but not the gate-keeping constraint.
 - **GPUs themselves** (within the chip-supply ceiling) — Nvidia is making "X-1" but it's still huge.
+
+## 🆕 Baker: "the bottleneck trade is nearing its end" (2026-06-16)
+
+Gavin Baker (Atreides — a source this wiki weights heavily): *"The bottleneck trade is nearing its end. That was the game for the last year. The next game is what has enduring franchise value on the other side of these bottlenecks, whenever that is."* ([[2026-06-16-baker-bottleneck-rotation-boj-hike]])
+
+This is the cyclical-vs-secular distinction applied to the whole roadmap above. Bottleneck rents are self-liquidating by construction — the same scarcity that creates the rent funds the capex that ends it. The signal that the Street is late, not early: cyclical rents getting *secular* multiples ([[MU]] valued as "infrastructure not commodity"; [[AAOI]] ~14x fwd sales as a CPO-disruptable module maker).
+
+**The actionable split** the roadmap now overlays on every layer — within the bottleneck basket, separate:
+- **Durable franchise that is *also* bottlenecked** (keeps pricing power after supply catches up): [[TSM]] (process + capacity discipline + lock-in), [[ASML]] (EUV monopoly), [[MU]]'s **HBM** franchise specifically (vs commodity DRAM).
+- **Pure cyclical rent-capturer** (owns nothing on the other side): [[AAOI]], AXT, commodity DRAM/NAND, pluggable optical modules.
+- **The open question — [[NVDA]]:** CUDA + systems + pace = durable franchise, or is NVDA *itself* the bottleneck (GPU scarcity) that compresses as ASICs + the Intel-foundry diversification arrive?
+
+**Live confirmation, same day:** June 16's BoJ-hike/Fed-eve session routed the supply-side book ([[MRVL]] −9.8%, [[ALAB]] −7.1%, [[MU]] −6.2%, [[AVGO]] −4.4%, [[TSM]] −3.5%) while demand-side/franchise/value held ([[GOOGL]] +1.1%, Dow record). One day isn't a trend — but it's the rotation in miniature.
+
+**The hedge that governs timing — "whenever that is":** the wiki's own demand-underestimation evidence (HBM sold out to 2027-28, GPU rental booked out, Dylan's "everyone's building X-1") argues *against* being early. The price peak front-runs the fundamental resolution by quarters. **This is a framework to start tilting, not a switch to flip.** The tell that the rotation has actually begun: memory contract prices decelerating, CoWoS lead times shrinking, or a first hyperscaler capex guide-down. Also tensions the newsletter ledger's `2026-06-01-supply-over-demand` call directly.
 
 ## What this means for the wiki's stance
 
