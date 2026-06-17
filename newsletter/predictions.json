@@ -1,12 +1,12 @@
 {
   "_doc": "Prediction ledger for the After Hours / Before the Bell letters. Every falsifiable call a letter makes gets one entry when made. Each close-of-market run MUST: (1) resolve any prediction whose horizon passed or whose falsifier/confirmer triggered, (2) write resolution_note explaining WHY it was right or wrong (mechanism, not just outcome), (3) distill a lesson into playbook.md when the resolution teaches something, (4) update the calibration tally. Verdicts: right | wrong | partial | timing (structurally right, timing off) | expired (unresolvable). Max 3 new predictions per issue; a call without a falsifier doesn't get logged, it gets rewritten until it has one.",
   "calibration": {
-    "right": 2,
+    "right": 4,
     "partial": 1,
     "timing": 0,
-    "wrong": 1,
+    "wrong": 3,
     "expired": 0,
-    "notes": "Updated 2026-06-15: 4 resolved — 2 right (1 high, 1 medium), 1 partial (medium), 1 wrong (medium). By tier: high 1/1 clean; medium now 1/3 clean (oil-is-the-tell RIGHT, gamma-reclaim partial, CPI wrong). The medium tier earned its first clean win, and it was a MECHANISM call (equities follow crude, not headlines) graded across adversarial tests — consistent with the early read that our mechanism reads are the strength. The two medium misses both failed on level-quoting discipline, not mechanism (lesson 7). Watch whether medium keeps converting now that level-keyed claims name their governing standard."
+    "notes": "Updated 2026-06-17 (FOMC day, 4 resolved at once): 8 resolved total — 4 right / 1 partial / 3 wrong. By tier: HIGH 1/1 clean (short-gamma wide-range); MEDIUM now 3 right / 1 partial / 3 wrong of 7. Today's FOMC resolved a clean, instructive pattern: the two RIGHT calls were both MECHANISM reads (fomc-hold-hawkish nailed the hawkish SEP; no-revisit-7265 was a level call whose mechanism — the floor migrating up — played out exactly), while the two WRONG calls were the SAME structural error twice (fomc-day-box and pinned-into-opex both bet positive-gamma CONTAINMENT would hold the night after net GEX had already collapsed ~80%). The edge remains mechanism reads; the new liability is trusting a gamma framework after its fuel has drained. Note the sharpest pairing in the ledger: fomc-hold-hawkish (right) and fomc-day-box (wrong) graded the SAME event — right about the catalyst, wrong about the plumbing's capacity to absorb it. Lesson 10 distilled."
   },
   "predictions": [
     {
@@ -109,9 +109,9 @@
       "confidence": "medium",
       "horizon": "2026-06-17",
       "falsifier": "An actual hike on June 17 (hold half wrong), or post-meeting December-hike odds collapsing below 30% (hawkish-tilt half wrong).",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "right",
+      "resolved": "2026-06-17",
+      "resolution_note": "Both halves landed. The Fed held the funds rate at 3.50-3.75% on a 12-0 vote (hold half, clean). The hawkish-tilt half landed decisively: the new dot plot showed 9 of 18 officials projecting at least one hike before year-end (6 of them two hikes), with year-end PCE marked UP to 3.6% from 2.7% in March and unemployment to 4.3%. December-hike odds stayed well above the 50% line — equities sold off (S&P -1.21%, 10Y surged) precisely BECAUSE a late-2026 hike moved into view, the opposite of the sub-30% collapse the falsifier required. Right for the right reason: the mechanism we wrote was 'supercore acceleration keeps the tilt hawkish even as a soft core + war headline give cover for the hold,' and that is exactly the SEP story — inflation revised up, hold delivered, dots hawkish. Warsh declining to pencil his own dot and shipping a shorter, forward-guidance-free statement is consistent with the hawkish-by-omission read. The medium tier's MECHANISM reads keep converting; this is its third clean win and the second straight macro mechanism call to grade right."
     },
     {
       "id": "2026-06-10-short-gamma-range",
@@ -148,9 +148,9 @@
       "confidence": "medium",
       "horizon": "2026-06-17",
       "falsifier": "Any SPX close below 7,265 before the June 17 FOMC statement (deal-slip or Fed-fear selling overwhelms the improved positioning floor; per the playbook, the call is keyed to the LEVEL, whatever the headline that breaks it).",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "right",
+      "resolved": "2026-06-17",
+      "resolution_note": "The floor held the entire window with room to spare. From logging (June 11) through the June 17 FOMC statement, the lowest SPX close was 7,394.30 (June 11 itself); every subsequent close printed higher (7,431.46, 7,554.29, 7,511.35), and even today's post-statement hawkish-Fed flush — which broke the 7,510 put wall and closed 7,420.10 — held ~155 points above the 7,265 line. Right for the right reason: the call was keyed to the LEVEL per playbook lesson 1, and the mechanism (improved positioning floor: oil sub-$90, deal in signing range, dealer gamma neutral-to-positive) did exactly what we said. The structural confirmation: the put wall ROLLED UP from 7,265 to 7,510 over the window (June 16), i.e. the floor didn't just hold, it migrated up — fresh hedges stacked near-money, vacating the 7,265 shelf. A clean level call that never sweated its falsifier."
     },
     {
       "id": "2026-06-12-pinned-into-opex",
@@ -161,9 +161,9 @@
       "confidence": "medium",
       "horizon": "2026-06-19",
       "falsifier": "Any session that starts above the flip and prints a 1.5%+ high-to-low range (positive-gamma dampening failed when it mattered). Sessions that START below the flip don't count toward either side — if a weekend deal-slip gaps the tape below the flip and keeps it there, mark expired, not wrong.",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "wrong",
+      "resolved": "2026-06-17",
+      "resolution_note": "Falsifier fired today, two sessions before the June 19 horizon. June 17 BEGAN above the dealer-hedging flip (prior close 7,511.35; flip zone 7,348-7,450 — above it on both feeds) and printed a high-to-low range of 1.75% (7,532.17 to 7,402.61), past the 1.5% bar a positive-gamma session was claimed not to breach. Graded by the recomputed flip per the claim's own terms (lesson 7); the session unambiguously started above it. Mechanism: positive-gamma DAMPENING is proportional to the SIZE of net GEX, and that cushion had already drained ~80% (to +$13-21B) by June 16. A thin positive-gamma tape does not pin — the hawkish-dot-plot whipsaw (~130-point swing around the 2pm statement) ran unobstructed. The self-inflicted part, logged honestly: the June 16 letter EXPLICITLY flagged that the drained cushion meant 'the FOMC presser can move the tape more than the recent grinds imply' — we diagnosed the exact risk and let this pin call (logged June 12, before the collapse) stay live through that warning instead of retiring it. Pairs with 2026-06-16-fomc-day-box: both were bets on positive-gamma containment over a cushion that had already collapsed."
     },
     {
       "id": "2026-06-12-spcx-holds-offer",
@@ -226,6 +226,32 @@
       "confidence": "medium",
       "horizon": "2026-06-17",
       "falsifier": "Any SPX June 17 CLOSE below 7,510 (the put wall broke — thinned gamma let a hawkish Warsh amplify a flush toward the 7,450 flip) OR above 7,600 (a dovish Warsh migrated the call wall up and took out the record). A close inside the box = right.",
+      "status": "wrong",
+      "resolved": "2026-06-17",
+      "resolution_note": "Falsifier fired on the downside: SPX closed 7,420.10, BELOW the 7,510 put wall the box's floor rested on. The autopsy is in the falsifier's own words — 'the put wall broke; thinned gamma let a hawkish Warsh amplify a flush toward the 7,450 flip' — and that is exactly what printed: with net dealer gamma already collapsed ~80% to +$13-21B, the SEP came in genuinely hawkish (9 of 18 dots for a hike) and the put wall didn't hold; the close sliced through 7,510 and settled below even the 7,450 CBOE flip, into the 7,348-7,450 flip zone. The instructive pairing: this SAME EVENT resolved 2026-06-10-fomc-hold-hawkish RIGHT (we nailed the hawkish Fed) and this box WRONG (we wrongly trusted the put wall to CONTAIN the equity reaction to it). Right about the catalyst, wrong about the plumbing's capacity to absorb it. The error was structural, not directional: we knew the cushion was thin (said so June 16) and still drew a containment box around it. A put wall is only as strong as the gamma behind it."
+    },
+    {
+      "id": "2026-06-17-no-reclaim-7510",
+      "made": "2026-06-17",
+      "issue": "2026-06-17-afterhours",
+      "type": "market-direction",
+      "claim": "The broken floor becomes a ceiling: SPX does NOT close above 7,510 (yesterday's put wall, today's break level) on either of the next two sessions (June 18, June 19) before triple-witching. Mechanism: with net dealer gamma drained (~+$22B, no re-stack through today's break) there is no mechanical dip-buying to mean-revert the market upward, and the hawkish dot plot removed the dovish surprise that could carry it there — a thin-gamma tape needs a fresh catalyst to reclaim a level it just lost. Grading governs by the fixed 7,510 number (the level that broke today), not the nightly-recomputed flip (lesson 7 applied at logging time).",
+      "confidence": "medium",
+      "horizon": "2026-06-19",
+      "falsifier": "Any SPX close above 7,510 on June 18 or June 19 (a Fed speaker walked back the hawkish dots, or dip-buyers are stronger than a thin tape implies — the floor-becomes-ceiling read was wrong).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-17-thin-gamma-wide-range",
+      "made": "2026-06-17",
+      "issue": "2026-06-17-afterhours",
+      "type": "market-direction",
+      "claim": "The calm is over until the cushion rebuilds: with net dealer gamma drained and SPX below the flip, at least one of the next two sessions (June 18, June 19) prints a high-to-low intraday range of 1.5%+. This is the direction-agnostic mechanism call (the inverse of the now-broken pin) — thin/neutral gamma means no dampening, so ranges stay wide until positioning re-stacks. Same family as 2026-06-10-short-gamma-range, which graded RIGHT.",
+      "confidence": "medium",
+      "horizon": "2026-06-19",
+      "falsifier": "Both June 18 AND June 19 print high-to-low ranges under 1.5% while SPX remains below the ~7,450 flip (the cushion re-stacked faster than thought, or today's break was a one-afternoon event — the thin-gamma-wide-range mechanism is decoration).",
       "status": "open",
       "resolved": null,
       "resolution_note": null

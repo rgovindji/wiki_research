@@ -2,9 +2,9 @@
 type: company
 ticker: AMKR
 tags: [ai, semis, packaging, osat]
-last_updated: 2026-05-09
+last_updated: 2026-06-17
 last_full_review: 2026-05-09
-sources: 0
+sources: 1
 conviction: high
 stance: bull
 ---
@@ -41,6 +41,9 @@ US-based OSAT making the most aggressive bet in the industry — **2026 capex $2
 2. **Advanced packaging revenue mix** — direction quarter-over-quarter
 3. **CoWoS-S capacity** — how much does AMKR actually capture vs. ASX?
 4. **Operating margin expansion** — does the build-out flow through?
+
+## Recent developments
+- **2026-06-17 — TSMC signs a 10-year Arizona advanced-packaging agreement with Amkor** ([[2026-06-17-semiwiki-tsmc-amkor-intel14a]]). TSMC will procure advanced packaging + test services from Amkor in Arizona; the two will expand capacity together as partners, with Amkor's Peoria campus sitting alongside TSMC's Arizona fabs. CEO Kevin Engel framed it as enabling "a full U.S. supply chain from advanced silicon manufacturing to tested packaged devices." **Which means**: this is the explicit, contracted version of the thesis this page is built on — TSMC's CoWoS/advanced-packaging outsourcing flowing to Amkor — now anchored by a decade-long framework rather than spot demand. It validates the ~3x 2026 capex bet (the Peoria build now has a named multi-year TSMC procurement behind it) and is the cleanest de-risking yet of the Arizona-ramp execution question. No dollar figure or committed volume disclosed, so the size of the prize is still unquantified. Stance held **bull/high**.
 
 ## Related
 [[NVDA]] · [[nvda-supply-chain]] · [[TSM]] · [[ASX]] · [[CAMT]] · [[ai-capex-cycle]] · [[overview]]

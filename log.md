@@ -9,6 +9,18 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-17] daily | Hawkish first-Warsh FOMC breaks the 7,510 floor; SemiWiki TSMC–Amkor pact
+
+Headless after-the-bell run. FOMC held 3.50-3.75% (12-0) but shipped a hawkish SEP (9/18 dots for a 2026 hike, 6 for two; year-end PCE up to 3.6% from 2.7%). **S&P −1.21% to 7,420.10** (broke the 7,510 put wall, closed below the ~7,450 flip), Nasdaq −1.34%, Dow −0.98% (off a fresh intraday record); VIX +2.03 to 18.44. Internals INVERTED June 16: AI-hardware/semis rose ([[VRT]] +6.0%, [[AVGO]] +4.3%, [[MRVL]] +3.9%, [[DELL]] +3.77%, [[ALAB]] +3.59%, [[MU]] +2.2%, [[TSM]] +1.48%) while rate-sensitive mega-caps fell ([[GOOGL]] −2.53%, [[NVDA]] −1.33%).
+
+- Source: [[2026-06-17-semiwiki-tsmc-amkor-intel14a]] (SemiWiki, 9 new items). **TSMC + [[AMKR]] 10-year Arizona advanced-packaging agreement** → [[AMKR]] (0→1, new Recent-dev section) + [[TSM]] (11→12). **Intel 14A/14A2 pitch leak** → [[INTC]] (6→7, unverified, stance held). Lower-signal (Synopsys multiphysics incl. photonics, PowerArtist→Keysight, Hot Chips Aug 23-25) captured in the source summary only.
+- Wiki touched: [[overview]] (June 17 daily lead; regime → bull-under-stress), [[TSM]], [[AMKR]], [[INTC]], index, log.
+- **Stance/conviction changes flagged for review: none.** Regime call moved bull → bull-under-stress (a daily-tape call in [[overview]], not a page stance flip).
+- Newsletter: market_state/2026-06-17.json (regime: bull-under-stress); issue #8 "A Hawkish Fed, a Broken Floor, and a Book That Rose Anyway". **4 predictions resolved** — fomc-hold-hawkish RIGHT, no-revisit-7265 RIGHT, fomc-day-box WRONG, pinned-into-opex WRONG (calibration now 4R/1P/3W of 8). Playbook lesson 10 added (positive-gamma containment scales with net GEX — retire the pin/box framework once the cushion drains). 2 new predictions logged.
+- **NOTE: `scripts/market_levels.py` hung >15 min with zero output and was killed** — gamma is WebSearch-snippet fallback today (pre-FOMC, flagged in the snapshot audit log); all closes via Yahoo chart API. Investigate the hang (likely Polygon free-tier rate-limit retry loop) before next run; trust-period gamma audit paused.
+
+---
+
 ## [2026-06-16] note | New "Rotation Side Book" — overlooked post-war rotation portfolio
 
 User brief: war over (oil ~$80, deal "complete"), money may rotate off the crowded AI trade — build a side portfolio of quality that *hasn't run* and isn't in the masses' eyes (AI trade not declared done; this is a complement). Research + book created.

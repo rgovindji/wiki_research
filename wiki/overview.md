@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-16
+last_updated: 2026-06-17
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,12 @@ sources: 0
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 17, 2026 — Warsh's first Fed comes in hawkish: dots show a 2026 hike, SPX breaks the 7,510 floor; semis rebound as rate-sensitive mega-caps lead the drop
+
+Kevin Warsh's debut FOMC **held the funds rate at 3.50-3.75% (12-0)** but shipped a genuinely hawkish Summary of Economic Projections: **9 of 18 officials now project at least one 2026 hike (6 of them two)**, year-end PCE marked **up to 3.6% from 2.7%** in March, unemployment 4.3%. Warsh declined to pencil his own dot, shipped a shorter forward-guidance-free statement, and named five task forces. **S&P −1.21% to 7,420.10 · Nasdaq −1.34% to 26,021.66 · Dow −0.98% to 51,492.55** (after a fresh intraday record high 52,281.19 pre-decision). 10Y yields surged; **VIX +2.03 to 18.44**. The tell in the internals: the move INVERTED June 16 — this time **AI-hardware/semis rose** ([[VRT]] +6.0%, [[AVGO]] +4.3%, [[MRVL]] +3.9% to $289.54, [[DELL]] +3.77%, [[ALAB]] +3.59%, [[MU]] +2.2% to $1,043.19, [[TSM]] +1.48%) while **rate-sensitive mega-cap growth fell** ([[GOOGL]] −2.53% to $363.79, [[NVDA]] −1.33% to $204.65, plus MSFT/META/AMZN). Also today: TSMC + [[AMKR]] signed a **10-year Arizona advanced-packaging pact** ([[2026-06-17-semiwiki-tsmc-amkor-intel14a]]).
+
+> **What this means:** Regime downgraded to **bull-under-stress**. A hawkish first-Warsh Fed broke the tape below the structure — SPX closed through the 7,510 put wall and below the ~7,450 flip, into the 7,348-7,450 flip zone — and with net dealer gamma still thin (~+$22B; it did NOT re-stack) the move ran unobstructed. But this is *rates stress, not a demand crack*: the driver was a hawkish dot plot, and the within-tech rotation REVERSED (chips up / long-duration mega-cap growth down) — the exact mirror of June 16, which is strong evidence June 16's chip dump was a one-day trim, not a leadership change. Higher-for-longer marks down the longest-dated growth multiples first (GOOGL/MSFT/META), while shorter-cycle AI-hardware names trade on their own order books (the TSMC-Amkor decade-deal is a supply chain digging in, not bracing for a bust). The structure inverted: **7,510 is now resistance**; support is 7,400 → the ~7,350 flip (below it dealers amplify) → 7,300. Triple-witching + the Iran signing both land June 19 into a thin-cushion tape. **No stance/conviction changes.** (NB: `scripts/market_levels.py` hung today — gamma is snippet-fallback only; recompute next run.)
 
 ## June 16, 2026 — Chips for cyclicals: Dow sets a record while the AI book unwinds; dealer gamma collapses 80% into the first Warsh Fed
 
