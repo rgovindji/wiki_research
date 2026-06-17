@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Rotation Side Book — June 16 2026</title>
+<title>The Rotation Side Book (v2) — June 16 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -19,25 +19,26 @@
   *{box-sizing:border-box;}
   html{background:var(--canvas);}
   body{margin:0;background:var(--canvas);color:var(--body);font-family:var(--body-font);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
-  .memo{max-width:780px;margin:0 auto;padding:72px 32px 96px;}
+  .memo{max-width:800px;margin:0 auto;padding:72px 32px 96px;}
   .eyebrow{color:var(--primary);text-transform:uppercase;letter-spacing:1.6px;font-size:12px;font-weight:600;margin:0 0 18px;}
   h1{font-family:var(--display);color:var(--ink);font-size:48px;line-height:1.08;font-weight:600;letter-spacing:-0.5px;margin:0 0 18px;}
   .standfirst{font-size:20px;line-height:1.55;color:var(--body-strong);font-style:italic;margin:0 0 14px;max-width:64ch;}
-  .meta{font-size:13px;color:var(--muted);font-family:var(--mono);margin:0 0 40px;padding-bottom:28px;border-bottom:1px solid var(--hairline);}
-  h2{font-family:var(--display);color:var(--ink);font-size:31px;font-weight:600;letter-spacing:-0.3px;margin:54px 0 16px;}
+  .meta{font-size:13px;color:var(--muted);font-family:var(--mono);margin:0 0 28px;padding-bottom:24px;border-bottom:1px solid var(--hairline);}
+  .v2{background:var(--surface-card);border-radius:8px;padding:16px 20px;margin:0 0 36px;font-size:14.5px;}
+  .v2 b{color:var(--primary-active);}
+  h2{font-family:var(--display);color:var(--ink);font-size:31px;font-weight:600;letter-spacing:-0.3px;margin:50px 0 16px;}
   p{margin:0 0 18px;max-width:68ch;}
-  strong{color:var(--ink);font-weight:600;}
-  em{color:var(--body-strong);}
+  strong{color:var(--ink);font-weight:600;}em{color:var(--body-strong);}
   .filter{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:22px 0 8px;}
   .filter div{background:var(--surface-soft);border-radius:8px;padding:14px 16px;font-size:14.5px;}
   .filter b{color:var(--primary-active);}
-  .alloc{margin:26px 0 14px;}
+  .alloc{margin:24px 0 14px;}
   .bar{display:flex;align-items:center;margin-bottom:9px;font-size:13.5px;}
-  .bar .lab{width:172px;flex:none;color:var(--body-strong);font-weight:500;}
+  .bar .lab{width:178px;flex:none;color:var(--body-strong);font-weight:500;}
   .bar .track{flex:1;background:var(--hairline-soft);border-radius:5px;height:18px;overflow:hidden;}
   .bar .fill{height:100%;border-radius:5px;}
   .bar .pct{width:46px;flex:none;text-align:right;font-family:var(--mono);font-weight:600;color:var(--ink);}
-  .c1{background:#cc785c;}.c2{background:#5577aa;}.c3{background:#5db8a6;}.c4{background:#8a6433;}.c5{background:#cfc8b8;}
+  .c1{background:#5577aa;}.c2{background:#cc785c;}.c3{background:#c64545;}.c4{background:#cfc8b8;}
   table{width:100%;border-collapse:collapse;margin:14px 0 10px;font-size:14px;}
   th{text-align:left;padding:9px 10px;font-size:10.5px;text-transform:uppercase;letter-spacing:0.7px;color:var(--muted);font-weight:600;border-bottom:1.5px solid var(--hairline);}
   th.r,td.r{text-align:right;}
@@ -45,9 +46,9 @@
   tr.grp td{background:var(--surface-card);font-family:var(--display);font-size:17px;font-weight:600;color:var(--ink);padding:9px 10px;border-bottom:1px solid var(--hairline);}
   .tkr{font-family:var(--mono);font-weight:600;color:var(--primary-active);}
   .num{font-family:var(--mono);font-variant-numeric:tabular-nums;}
-  .neg{color:var(--error);font-weight:600;}
+  .neg{color:var(--error);font-weight:600;}.posfaint{color:var(--success);font-weight:600;}
   .conv{font-size:10px;text-transform:uppercase;letter-spacing:.4px;padding:2px 7px;border-radius:20px;font-weight:700;white-space:nowrap;}
-  .ch{background:#0f7c4a;color:#fff;}.cmh{background:#3f8f6a;color:#fff;}.cm{background:#846b58;color:#fff;}
+  .cmh{background:#3f8f6a;color:#fff;}.cm{background:#846b58;color:#fff;}.cl{background:#a8312c;color:#fff;}
   .thn{color:var(--body);font-size:13px;line-height:1.5;}
   .callout{background:var(--surface-soft);border-left:3px solid var(--accent-teal);border-radius:0 6px 6px 0;padding:18px 22px;margin:26px 0;font-size:16px;}
   .callout.warn{border-left-color:var(--error);}
@@ -56,115 +57,109 @@
   ul.clean{list-style:none;padding:0;margin:14px 0 22px;}
   ul.clean li{position:relative;padding-left:22px;margin-bottom:11px;max-width:66ch;}
   ul.clean li:before{content:"";position:absolute;left:0;top:12px;width:11px;height:1px;background:var(--primary);}
-  a{color:var(--primary-active);text-decoration:none;border-bottom:1px solid var(--hairline);}
   .t{border-bottom:1px dotted var(--muted-soft);cursor:help;}
   .t.tk{font-family:var(--mono);font-weight:600;color:var(--primary-active);font-size:0.92em;border-bottom:1px dotted var(--primary);}
   .foot{margin-top:56px;padding-top:24px;border-top:1px solid var(--hairline);font-size:12.5px;color:var(--muted);font-style:italic;line-height:1.6;}
-  #tip{position:fixed;z-index:99;max-width:340px;background:#181715;color:#faf9f5;padding:13px 15px;border-radius:8px;font-size:13px;line-height:1.5;box-shadow:0 8px 30px rgba(0,0,0,.28);opacity:0;pointer-events:none;transition:opacity .12s;}
+  #tip{position:fixed;z-index:99;max-width:344px;background:#181715;color:#faf9f5;padding:13px 15px;border-radius:8px;font-size:13px;line-height:1.5;box-shadow:0 8px 30px rgba(0,0,0,.28);opacity:0;pointer-events:none;transition:opacity .12s;}
   #tip.on{opacity:1;}
   #tip .tn{font-weight:700;color:#fff;font-size:13.5px;}
   #tip .tmeta{font-family:var(--mono);font-size:11px;color:#cfc8b8;margin:3px 0 7px;}
   #tip .tth{color:#e6dfd8;}
-  #tip .pill{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.5px;padding:1px 7px;border-radius:20px;font-weight:700;margin-right:5px;}
-  #tip .bull{background:#0f7c4a;color:#fff;}#tip .neutral{background:#846b58;color:#fff;}
-  @media(max-width:660px){.memo{padding:48px 18px 72px;}h1{font-size:35px;}.filter{grid-template-columns:1fr;}.bar .lab{width:120px;font-size:12px;}.thn{display:none;}}
+  #tip .pill{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.5px;padding:1px 7px;border-radius:20px;font-weight:700;margin-right:5px;background:#3f8f6a;color:#fff;}
+  @media(max-width:680px){.memo{padding:48px 18px 72px;}h1{font-size:35px;}.filter{grid-template-columns:1fr;}.bar .lab{width:128px;font-size:12px;}.thn{display:none;}}
 </style>
 </head>
 <body>
 <div class="memo">
-  <div class="eyebrow">✻ Investing Wiki · Side Portfolio</div>
+  <div class="eyebrow">✻ Investing Wiki · Side Portfolio · v2</div>
   <h1>The Rotation Side Book</h1>
-  <p class="standfirst">Quality the crowd left behind. A complement to the AI-heavy After Hours book — built for the money that rotates <em>out</em> of the bottleneck trade now that the war is over, into franchises that haven't run and aren't yet in the masses' eyes.</p>
-  <p class="meta">Inception 2026-06-16 · $100,000 notional · 10 names / 80% invested / 20% cash · entry = 6/16 close · model portfolio, not advice</p>
+  <p class="standfirst">Catalyst-driven asymmetry, not cheap-and-boring. A barbell of under-followed small/mid-caps with hard, recent catalysts — plus two overlooked-quality anchors — for the money rotating off the crowded AI mega-cap trade.</p>
+  <p class="meta">Inception 2026-06-16 · $100,000 notional · 8 names / 80% invested / 20% cash · entry = 6/16 close · model portfolio, not advice</p>
 
-  <p>The AI trade isn't dead — but three forces argue for a parallel book of overlooked names: the <strong>Iran war is over</strong> (oil cracked to ~$80, risk-on breadth, the rate-cut conversation reopening); <span class="t tk" data-tip="Baker">Gavin Baker's</span> call that the <strong>bottleneck trade is ending</strong> and the next game is "enduring franchise value on the other side"; and a <strong>rotation already underway</strong> in 2026 — leadership broadening out of mega-cap tech into financials, industrials, materials and (lately) healthcare. This book owns the franchises that money rotates <em>toward</em>, not the picks-and-shovels it already bid to the sky.</p>
+  <div class="v2">
+    <b>What changed (v2).</b> v1 was a de-rated large-cap value screen (ADP/ICE/KKR/Molina…). The verdict was fair: <em>too boring, low upside, and "down = broken."</em> It confused <em>out-of-favor</em> with <em>undiscovered</em>. v2 swaps the screen for the real brief: every name has a <b>hard, recent catalyst</b> and genuine upside — and "down" is only allowed when it's sector-beta on an intact catalyst (and sized as a bet).
+  </div>
 
-  <h2>The filter — what earns a seat</h2>
+  <p>The thesis is unchanged — war over, oil ~$80, breadth widening, and <span class="t" data-tip="Baker">Baker's</span> call that the bottleneck trade is ending. What changed is the <em>kind</em> of name: instead of cheap mega-caps, this owns the catalyst-rich edges the crowd hasn't fully paid for — the fuel, the power, the grid labor, the minerals, the inference layer, the AI-infra conversion.</p>
+
+  <h2>The filter (v2)</h2>
   <div class="filter">
-    <div><b>1. Hasn't run.</b> Well below its 52-week high, de-rated on a <em>narrative</em> — not deteriorating fundamentals.</div>
-    <div><b>2. Quality / franchise.</b> Durable moat, real cash flow. No pre-profit story stocks — that's a different risk book.</div>
-    <div><b>3. A rotation catalyst.</b> Benefits from breadth, lower rates/oil, the <span class="t" data-tip="IPOwave">IPO wave</span>, M&amp;A, or money leaving crowded AI.</div>
-    <div><b>4. Not in the masses' eyes.</b> An under-followed angle or an out-of-favor sector — not the obvious trade.</div>
+    <div><b>1. A hard, recent catalyst.</b> A DOE award, a hyperscaler contract, a government stake — not "it's cheap."</div>
+    <div><b>2. Real upside.</b> 2-3x potential on the asymmetric sleeve; anchors with genuine growth, not low multiples.</div>
+    <div><b>3. Not a falling knife.</b> Prefer names working/inflecting; catalyst names that pulled back on sector beta are flagged and sized down.</div>
+    <div><b>4. Under-followed.</b> Off the consensus AI-mega-cap and value-screen radar.</div>
   </div>
 
   <h2>Allocation</h2>
   <div class="alloc">
-    <div class="bar"><span class="lab">De-rated software</span><span class="track"><span class="fill c1" style="width:32.5%"></span></span><span class="pct">26%</span></div>
-    <div class="bar"><span class="lab">Capital markets / IPO</span><span class="track"><span class="fill c2" style="width:30%"></span></span><span class="pct">24%</span></div>
-    <div class="bar"><span class="lab">Contrarian healthcare</span><span class="track"><span class="fill c3" style="width:27.5%"></span></span><span class="pct">22%</span></div>
-    <div class="bar"><span class="lab">Real assets (copper)</span><span class="track"><span class="fill c4" style="width:10%"></span></span><span class="pct">8%</span></div>
-    <div class="bar"><span class="lab">Cash</span><span class="track"><span class="fill c5" style="width:25%"></span></span><span class="pct">20%</span></div>
+    <div class="bar"><span class="lab">Asymmetric sleeve</span><span class="track"><span class="fill c1" style="width:44%"></span></span><span class="pct">44%</span></div>
+    <div class="bar"><span class="lab">Quality anchors</span><span class="track"><span class="fill c2" style="width:30%"></span></span><span class="pct">30%</span></div>
+    <div class="bar"><span class="lab">Speculative (ticket)</span><span class="track"><span class="fill c3" style="width:6%"></span></span><span class="pct">6%</span></div>
+    <div class="bar"><span class="lab">Cash</span><span class="track"><span class="fill c4" style="width:20%"></span></span><span class="pct">20%</span></div>
   </div>
 
   <h2>The book</h2>
   <table>
-    <thead><tr><th>Ticker</th><th class="r">Wt</th><th class="r">Entry</th><th class="r">Off 52w-hi</th><th>Conv.</th><th>Why it's here</th></tr></thead>
+    <thead><tr><th>Ticker</th><th class="r">Wt</th><th class="r">Entry</th><th class="r">Off 52w-hi</th><th>Conv.</th><th>Catalyst / why</th></tr></thead>
     <tbody>
-      <tr class="grp"><td colspan="6">De-rated franchise software — "left for dead quality"</td></tr>
-      <tr><td><span class="t tk" data-tip="ADP">ADP</span></td><td class="r num">11%</td><td class="r num">$222</td><td class="r neg">−30%</td><td><span class="conv ch">high</span></td><td class="thn">Payroll/<span class="t" data-tip="HCM">HCM</span> franchise, dividend aristocrat — crushed on "AI disrupts payroll" fear it's more likely <em>infrastructure</em> for.</td></tr>
-      <tr><td><span class="t tk" data-tip="PAYX">PAYX</span></td><td class="r num">8%</td><td class="r num">$100</td><td class="r neg">−34%</td><td><span class="conv cmh">med-high</span></td><td class="thn">SMB payroll, high-margin + dividend; same narrative overshoot.</td></tr>
-      <tr><td><span class="t tk" data-tip="PAYC">PAYC</span></td><td class="r num">7%</td><td class="r num">$129</td><td class="r neg">−48%</td><td><span class="conv cm">med</span></td><td class="thn">Higher-growth payroll, deepest de-rate = most beta if the narrative reverses (discount partly earned).</td></tr>
-      <tr class="grp"><td colspan="6">Capital markets / the AI-IPO cycle — "the non-obvious AI beneficiary"</td></tr>
-      <tr><td><span class="t tk" data-tip="ICE">ICE</span></td><td class="r num">9%</td><td class="r num">$141</td><td class="r neg">−25%</td><td><span class="conv ch">high</span></td><td class="thn">NYSE + data + mortgage-tech franchise on sale; IPO-cycle + data annuity + rate-thaw optionality.</td></tr>
-      <tr><td><span class="t tk" data-tip="NDAQ">NDAQ</span></td><td class="r num">8%</td><td class="r num">$89</td><td class="r neg">−12%</td><td><span class="conv cmh">med-high</span></td><td class="thn">Listings + index + data; direct beneficiary as the mega-AI labs list on Nasdaq.</td></tr>
-      <tr><td><span class="t tk" data-tip="KKR">KKR</span></td><td class="r num">7%</td><td class="r num">$99</td><td class="r neg">−36%</td><td><span class="conv cm">med</span></td><td class="thn">Alt-asset manager; private-market liquidity unlock (AI-lab exits/IPO realizations) → fee + <span class="t" data-tip="carry">carry</span>.</td></tr>
-      <tr class="grp"><td colspan="6">Contrarian healthcare — "multi-decade-low valuations + M&amp;A + rate cuts"</td></tr>
-      <tr><td><span class="t tk" data-tip="STE">STE</span></td><td class="r num">8%</td><td class="r num">$207</td><td class="r neg">−23%</td><td><span class="conv ch">high</span></td><td class="thn">STERIS — sterilization/endoscopy razor-blade compounder simply on sale.</td></tr>
-      <tr><td><span class="t tk" data-tip="MOH">MOH</span></td><td class="r num">7%</td><td class="r num">$200</td><td class="r neg">−36%</td><td><span class="conv cm">med</span></td><td class="thn">Molina managed care — out of favor on <span class="t" data-tip="MLR">MLR</span> fears; the contrarian end.</td></tr>
-      <tr><td><span class="t tk" data-tip="CNMD">CNMD</span></td><td class="r num">7%</td><td class="r num">$35</td><td class="r neg">−39%</td><td><span class="conv cm">med</span></td><td class="thn">Small-cap surgical devices, recurring disposables, plausible M&amp;A target in the medtech deal wave.</td></tr>
-      <tr class="grp"><td colspan="6">Real assets, selectively — "materials is the 2026 leader, still mid-innings"</td></tr>
-      <tr><td><span class="t tk" data-tip="SCCO">SCCO</span></td><td class="r num">8%</td><td class="r num">$195</td><td class="r neg">−12%</td><td><span class="conv cmh">med-high</span></td><td class="thn">Southern Copper — lowest-cost/longest-life into a structural refined-copper deficit; cleaner than FCX (at its high).</td></tr>
+      <tr class="grp"><td colspan="6">Anchors — overlooked quality, working, real AI cash-flow catalyst</td></tr>
+      <tr><td><span class="t tk" data-tip="TLN">TLN</span></td><td class="r num">16%</td><td class="r num">$407</td><td class="r neg">−10%</td><td><span class="conv cmh">med-high</span></td><td class="thn">"Atomic utility for AI" — $18B Amazon nuclear deal (1,920MW through 2042); 2026 EBITDA $1.75-2.05B, real FCF. Working.</td></tr>
+      <tr><td><span class="t tk" data-tip="NET">NET</span></td><td class="r num">14%</td><td class="r num">$231</td><td class="r neg">−17%</td><td><span class="conv cm">med</span></td><td class="thn">Edge franchise → AI-inference + Zero-Trust platform. Workers AI = a call option on inference at the edge. Working, real revenue.</td></tr>
+      <tr class="grp"><td colspan="6">Asymmetric sleeve — hard catalysts, 2-3x potential, under-followed</td></tr>
+      <tr><td><span class="t tk" data-tip="CIFR">CIFR</span></td><td class="r num">11%</td><td class="r num">$26</td><td class="r neg">−8%</td><td><span class="conv cm">med</span></td><td class="thn">Bitcoin miner → AI/HPC infra: $3B <span class="t" data-tip="Fluidstack">Fluidstack</span> deal, Google 5.4% stake + $1.4B backstop, 300MW leased + AWS deal. Working hard.</td></tr>
+      <tr><td><span class="t tk" data-tip="WLDN">WLDN</span></td><td class="r num">9%</td><td class="r num">$94</td><td class="r neg">−31%</td><td><span class="conv cm">med</span></td><td class="thn">AI-power picks-and-shovels: energy-engineering services, record grid/data-center upgrade demand. The grid labor without the GEV multiple.</td></tr>
+      <tr><td><span class="t tk" data-tip="USAR">USAR</span></td><td class="r num">8%</td><td class="r num">$22</td><td class="r neg">−51%</td><td><span class="conv cm">med</span></td><td class="thn">Govt-backed critical minerals: Trump admin 10% stake (~$1.6B), Serra Verde (~$2.8B) deal; China <span class="t" data-tip="REE">REE</span> export-control catalyst.</td></tr>
+      <tr><td><span class="t tk" data-tip="IRDM">IRDM</span></td><td class="r num">8%</td><td class="r num">$43</td><td class="r neg">−19%</td><td><span class="conv cm">med</span></td><td class="thn">Space-adjacent: LEO satellite IoT + <span class="t" data-tip="D2D">direct-to-device</span> optionality on a recurring-revenue base. Working.</td></tr>
+      <tr><td><span class="t tk" data-tip="LEU">LEU</span></td><td class="r num">8%</td><td class="r num">$165</td><td class="r neg">−64%</td><td><span class="conv cm">med·hi-var</span></td><td class="thn">Only NRC-approved US <span class="t" data-tip="HALEU">HALEU</span> producer; $900M DOE award; Oklo/Palantir/Fluor. Down big = sector derate, not lost monopoly. A bet, sized as one.</td></tr>
+      <tr class="grp"><td colspan="6">Speculative — lottery ticket, size accordingly</td></tr>
+      <tr><td><span class="t tk" data-tip="ASPI">ASPI</span></td><td class="r num">6%</td><td class="r num">$6.44</td><td class="r neg">−56%</td><td><span class="conv cl">low</span></td><td class="thn">Laser enrichment + isotopes + Quantum Leap HALEU MOU (Euro reactor fuel 2028). Pre-scale, binary — money you can lose entirely.</td></tr>
     </tbody>
   </table>
 
-  <h2>What I refused to buy (the discipline)</h2>
-  <p>Your "hasn't run" rule did real work. The obvious post-war and electrification trades flunked it — so they're <em>out</em>, on purpose:</p>
+  <h2>What I still refuse to buy</h2>
   <ul class="clean">
-    <li><strong>Grid / electrical equipment</strong> (ETN −6%, HUBB −11%, NVT, AGX) — superb theme, all <em>near 52-week highs</em>. Already run.</li>
-    <li><strong>Nuclear / uranium</strong> (URA +120% past year) — structural AI-power story, but crowded and extended.</li>
-    <li><strong>Copper at the high</strong> (FCX) — took the cheaper, lower-cost long-life name (<span class="t tk" data-tip="SCCO">SCCO</span>) instead.</li>
-    <li><strong>The run AI bottleneck names</strong> (NVDA / MU / AVGO / AXTI) — that's the After Hours book's job; this is the complement.</li>
+    <li><strong>Already-run electrification large-caps</strong> (ETN/HUBB/NVT/AGX near 52w highs) and <strong>crowded uranium ETFs</strong> (URA +120%) — the consensus trade.</li>
+    <li><strong>FCX at its high</strong> — and v1's cheap-but-boring value screen (ADP/ICE/KKR/MOH).</li>
+    <li><strong>The After Hours bottleneck names</strong> (NVDA/MU/AVGO) — that's the other book's job.</li>
   </ul>
 
   <div class="callout">
     <div class="lbl">How it fits with After Hours</div>
-    After Hours owns the <strong>AI build-out</strong> (supply-side chips, memory, neocloud). This book owns <strong>what the build-out's success rotates money toward</strong> — de-rated franchises, the listing-wave plumbing, contrarian defensives, a real-asset deficit. If Baker is right and the bottleneck peaks, this is the hedge that also makes money; if AI keeps running, these are quality names bought cheap with limited downside. Deliberately low correlation.
+    After Hours owns the AI build-out's <strong>core</strong> (chips/memory/neocloud). This owns the <strong>catalyst-rich edges</strong> — the fuel (<span class="t tk" data-tip="LEU">LEU</span>), the power (<span class="t tk" data-tip="TLN">TLN</span>), the grid labor (<span class="t tk" data-tip="WLDN">WLDN</span>), the minerals (<span class="t tk" data-tip="USAR">USAR</span>), the inference layer (<span class="t tk" data-tip="NET">NET</span>), the AI-infra conversion (<span class="t tk" data-tip="CIFR">CIFR</span>), the connectivity optionality (<span class="t tk" data-tip="IRDM">IRDM</span>). Higher beta, deliberately uncorrelated, sized for asymmetry.
   </div>
 
   <div class="callout warn">
     <div class="lbl">The honest risks</div>
-    <strong>Rotation head-fake</strong> is the #1 risk — money has tried to leave mega-cap tech before and been yanked back by the next AI catalyst (June 15 tech +3%, June 16 tech −1.2% — it whipsaws on every headline). That's why cash is 20% and this is a 6-18mo <em>tilt</em>, not all-in. <strong>Sticky rates</strong> (BoJ just hiked to 1%, Warsh Fed unknown) blunt the rate-levered names (KKR, MOH, ICE-mortgage). <strong>Value traps</strong> — "cheap" can stay cheap unless the catalyst (M&amp;A, cuts, IPO wave) actually shows. New book, zero track record: conviction labels are hypotheses to be scored.
+    <strong>This is the higher-risk book by design</strong> — LEU/USAR/ASPI can halve; that's why cash is 20% and the speculative names are small. <strong>Catalyst ≠ guaranteed</strong>: DOE awards, hyperscaler deals and government stakes can slip or disappoint. <strong>Rotation head-fake</strong> remains the macro risk (the tape whipsaws on every AI headline). New book, zero track record — conviction labels are hypotheses to be scored, not calls.
   </div>
 
   <div class="foot">
-    Model portfolio for research/education — not personal financial advice. Entry prices and 52-week-range figures: Yahoo Finance, 2026-06-16 close. Stances/convictions reflect a personally-maintained investing wiki's framework as of that date and are starting hypotheses, not recommendations. Hover any <span class="t" data-tip="HCM">underlined term</span> or <span class="t tk" data-tip="ADP">ticker</span> for context. Do your own research.
+    Model portfolio for research/education — not personal financial advice. Entry prices and 52-week-range figures: Yahoo Finance, 2026-06-16 close. Catalysts sourced from company releases / reporting (TLN-Amazon, CIFR-Fluidstack/Google, LEU-DOE, USAR-govt stake). Convictions are starting hypotheses. Hover any <span class="t" data-tip="HALEU">underlined term</span> or <span class="t tk" data-tip="TLN">ticker</span> for context. Do your own research.
   </div>
 </div>
 
 <div id="tip"></div>
 <script>
 const TIPS={
-  Baker:{kind:"term",name:"Gavin Baker (Atreides)",def:"PM whose June 2026 call frames this book: 'The bottleneck trade is nearing its end. The next game is what has enduring franchise value on the other side of these bottlenecks.'"},
-  IPOwave:{kind:"term",name:"The 2026 IPO wave",def:"~$160B of IPO proceeds expected in 2026 (≈4x 2025): SpaceX (done), OpenAI (~Sept), Anthropic (~Oct). Benefits exchanges, underwriters, and alt-asset managers — the non-obvious AI beneficiaries."},
-  HCM:{kind:"term",name:"Human Capital Management",def:"Software for payroll, benefits, hiring and workforce management — ADP/Paychex/Paycom's core franchise."},
-  MLR:{kind:"term",name:"Medical Loss Ratio",def:"Share of premiums a health insurer pays out as claims. Rising MLR squeezes managed-care margins — the fear that de-rated Molina; the contrarian bet is that it's cyclical, not structural."},
-  carry:{kind:"term",name:"Carried interest",def:"A PE/VC manager's ~20% cut of investment profits. Realized when portfolio companies exit or IPO — so the AI-lab listing wave flows straight to KKR's carry."},
-  ADP:{kind:"ticker",name:"Automatic Data Processing",stance:"bull",conv:"high",act:"$222 · −30% off high",th:"Payroll/HCM franchise, dividend aristocrat, 30%+ recurring. De-rated on AI-disruption fear; plausibly infrastructure FOR AI workforce mgmt, not a victim. Bear: secular seat-count risk.",as_of:"2026-06-16"},
-  PAYX:{kind:"ticker",name:"Paychex",stance:"bull",conv:"medium-high",act:"$100 · −34% off high",th:"SMB payroll, high-margin + dividend; same AI-narrative overshoot. Bear: SMB formation slows in a downturn.",as_of:"2026-06-16"},
-  PAYC:{kind:"ticker",name:"Paycom Software",stance:"bull",conv:"medium",act:"$129 · −48% off high",th:"Higher-growth payroll; deepest de-rate = most beta on a reversal, but genuinely more AI-automatable — the discount is partly earned.",as_of:"2026-06-16"},
-  ICE:{kind:"ticker",name:"Intercontinental Exchange",stance:"bull",conv:"high",act:"$141 · −25% off high",th:"NYSE + data + mortgage tech franchise on sale. IPO-cycle + data annuity + rate-thaw optionality. Bear: mortgage-tech drag if rates stay high.",as_of:"2026-06-16"},
-  NDAQ:{kind:"ticker",name:"Nasdaq Inc",stance:"bull",conv:"medium-high",act:"$89 · −12% off high",th:"Listings + index + market-data annuity; direct beneficiary as mega-AI labs list on Nasdaq. Bear: listings are cyclical.",as_of:"2026-06-16"},
-  KKR:{kind:"ticker",name:"KKR & Co",stance:"bull",conv:"medium",act:"$99 · −36% off high",th:"Alt-asset manager; private-market liquidity unlock (AI-lab exits/IPO realizations) → fees + carry. Bear: most rate/credit-cycle sensitive name in the book.",as_of:"2026-06-16"},
-  STE:{kind:"ticker",name:"STERIS plc",stance:"bull",conv:"high",act:"$207 · −23% off high",th:"Sterilization + endoscopy razor-blade compounder simply on sale. Bear: hospital capex softness.",as_of:"2026-06-16"},
-  MOH:{kind:"ticker",name:"Molina Healthcare",stance:"bull",conv:"medium",act:"$200 · −36% off high",th:"Managed care, deeply out of favor on MLR fears — the contrarian end of the healthcare-laggard trade. Bear: if MLR pressure is structural, cheapness is a trap.",as_of:"2026-06-16"},
-  CNMD:{kind:"ticker",name:"CONMED Corp",stance:"bull",conv:"medium",act:"$35 · −39% off high",th:"Small-cap surgical devices, recurring disposables, plausible M&A target in the medtech deal wave. Bear: leverage + small-cap execution; deal optionality isn't a thesis alone.",as_of:"2026-06-16"},
-  SCCO:{kind:"ticker",name:"Southern Copper",stance:"bull",conv:"medium-high",act:"$195 · −12% off high",th:"Lowest-cost/longest-life copper into a structural refined-copper deficit (~330kt 2026). Cleaner than FCX (at its high). Bear: China demand + growth scare hit copper fast; Peru jurisdiction risk.",as_of:"2026-06-16"},
+  Baker:{kind:"term",name:"Gavin Baker (Atreides)",def:"'The bottleneck trade is nearing its end. The next game is what has enduring franchise value on the other side of these bottlenecks.' The frame for rotating off the crowded AI mega-caps."},
+  HALEU:{kind:"term",name:"High-Assay Low-Enriched Uranium",def:"The 5-20% enriched fuel that next-gen small modular reactors (SMRs) need. Russia was the main supplier; the US is racing to build domestic capacity. Centrus (LEU) is the only NRC-approved US producer."},
+  D2D:{kind:"term",name:"Direct-to-Device",def:"Satellites beaming connectivity straight to ordinary phones/IoT, no ground station. Iridium's NTN Direct service; the asymmetric call option on top of its recurring base."},
+  REE:{kind:"term",name:"Rare Earth Elements",def:"17 metals critical to magnets, defense, EVs and electronics. China dominates supply and uses export controls as leverage — the catalyst behind US government-backed plays like USA Rare Earth."},
+  Fluidstack:{kind:"term",name:"Fluidstack",def:"An AI cloud/GPU platform. Its $3B 10-year hosting deal with Cipher Mining — backstopped $1.4B by Google, which also took a ~5.4% Cipher stake — is the catalyst re-rating CIFR from bitcoin miner to AI-infra."},
+  TLN:{kind:"ticker",name:"Talen Energy",conv:"medium-high",act:"$407 · −10% off high",th:"'Atomic utility for AI': $18B Amazon deal, 1,920MW Susquehanna nuclear through 2042, co-located hyperscale DCs. 2026 EBITDA $1.75-2.05B, FCF ~$1B, +43% growth. Quality anchor, working. Bear: PJM power-price/regulatory risk.",as_of:"2026-06-16"},
+  NET:{kind:"ticker",name:"Cloudflare",conv:"medium",act:"$231 · −17% off high",th:"Edge franchise → AI-inference + Zero-Trust platform; Workers AI is a call option on inference at the edge. Working, enterprise momentum. Bear: rich multiple; edge-inference is still a thesis.",as_of:"2026-06-16"},
+  CIFR:{kind:"ticker",name:"Cipher Mining",conv:"medium",act:"$26 · −8% off high",th:"Bitcoin miner re-rating into AI/HPC: $3B Fluidstack deal, Google 5.4% stake + $1.4B backstop, 300MW leased + AWS deal. +697% off lows, working. Bear: crypto balance-sheet volatility, AI-hosting execution.",as_of:"2026-06-16"},
+  WLDN:{kind:"ticker",name:"Willdan Group",conv:"medium",act:"$94 · −31% off high",th:"Under-followed AI-power picks-and-shovels: energy-engineering services, record grid/DC upgrade demand. The grid labor without the GEV/ETN multiple. Bear: services margins, project lumpiness.",as_of:"2026-06-16"},
+  USAR:{kind:"ticker",name:"USA Rare Earth",conv:"medium",act:"$22 · −51% off high",th:"Govt-backed critical minerals: Trump admin 10% stake (~$1.6B), Serra Verde (~$2.8B) deal; China REE export-control catalyst. Bear: pre-cash-flow, deal/dilution risk; volatile.",as_of:"2026-06-16"},
+  IRDM:{kind:"ticker",name:"Iridium Communications",conv:"medium",act:"$43 · −19% off high",th:"Space-adjacent: LEO satellite IoT + direct-to-device (NTN) optionality on a recurring-revenue base. Working. Bear: D2D competition (ASTS/Starlink), capex cycle.",as_of:"2026-06-16"},
+  LEU:{kind:"ticker",name:"Centrus Energy",conv:"medium (high-variance)",act:"$165 · −64% off high",th:"Only NRC-approved US HALEU producer; $900M DOE award; Oklo/Palantir/Fluor partners. Down 64% = nuclear-sector derate, not lost monopoly — a structural-catalyst bet, sized as one. Bear: if SMR timelines slip, HALEU demand is years out.",as_of:"2026-06-16"},
+  ASPI:{kind:"ticker",name:"ASP Isotopes",conv:"low",act:"$6.44 · −56% off high",th:"Laser enrichment + medical/specialty isotopes + Quantum Leap HALEU MOU (Euro reactor fuel 2028); >$300M long-term EBITDA target. Pre-scale, binary. Bear: money you can lose entirely — lottery-ticket sizing.",as_of:"2026-06-16"},
 };
 (function(){
   const tip=document.getElementById("tip");
   function html(k){const d=TIPS[k];if(!d)return k;
     if(d.kind==="term")return `<div class="tn">${d.name}</div><div class="tth">${d.def}</div>`;
-    return `<div class="tn">${d.name} <span class="pill ${d.stance}">${d.stance}</span></div><div class="tmeta">conv: ${d.conv} · ${d.act}</div><div class="tth">${d.th}</div><div class="tmeta" style="margin-top:6px">data as of ${d.as_of}</div>`;}
+    return `<div class="tn">${d.name} <span class="pill">bull</span></div><div class="tmeta">conv: ${d.conv} · ${d.act}</div><div class="tth">${d.th}</div><div class="tmeta" style="margin-top:6px">data as of ${d.as_of}</div>`;}
   function place(x,y){tip.style.left="0px";tip.style.top="0px";const r=tip.getBoundingClientRect();let nx=x+14,ny=y+16;
     if(nx+r.width>innerWidth-12)nx=x-r.width-14;if(ny+r.height>innerHeight-12)ny=y-r.height-16;
     tip.style.left=Math.max(8,nx)+"px";tip.style.top=Math.max(8,ny)+"px";}
