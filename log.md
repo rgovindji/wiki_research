@@ -9,6 +9,13 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-18] note | Reaction Desk agent built + Mistral dossier saved
+
+- **Mistral parked:** consolidated everything into `MISTRAL_INVESTMENT_DOSSIER.md` (repo root, self-contained — verdict, numbers, bull/bear, return math, €200B analysis, primary-vs-secondary unknown, seller-question checklist; pointers to [[MISTRAL]] + sources).
+- **Reaction Desk agent** (curator spec: forward-looking, plain-directional, simple). (1) `.claude/agents/reaction-desk.md` — invocable subagent + source of truth: forward-looking-first (next ~2wks of events → simple "if X → mega-caps/sectors up/down" branches), fallback to today's driver, fallback to "mixed, no clean driver — don't over-read"; silent transmission map so the reader never sees mechanics. (2) `scripts/factor_tape.py` — cross-asset inputs (10Y/oil/DXY/VIX/gold, day move + 5d trend), tested. (3) Wired into both prompts: close run adds a Reaction Desk letter section + `factor_attribution` in market_state + logs the conditional warning as a `reaction`-type prediction (scored); morning brief adds it pre-market as the high-value block. Plain/directional, ≤1 block, humility built in.
+
+---
+
 ## [2026-06-18] note | Morning brief: The Bounce Has to Climb Its Own Broken Floor
 
 Before the Bell sent. Covered: relief gap (SPY +0.71%/QQQ +1.59% premkt) after the hawkish-Fed flush must reclaim the broken 7,510 floor with no dealer cushion (~+$22B GEX); no-reclaim-7510 call on the line; Nvidia-SK Hynix memory tie-up + duration whipsaw inside tech; YOLO fade-the-reclaim 7,450p. No wiki changes (morning runs don't ingest).
