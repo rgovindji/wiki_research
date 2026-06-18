@@ -1,0 +1,95 @@
+{
+  "_doc": "Daily market-state snapshot. Written by the close-of-market run, read by the next morning run (and the next close run for day-over-day deltas). This is reasoning fuel — the reader never sees this file, only the conclusions drawn from it. Fields left null were not collected; collect them next run rather than guessing.",
+  "date": "2026-06-18",
+  "as_of": "2026-06-18T16:00:00-04:00",
+  "indexes": {
+    "spx": {
+      "close": 7500.58,
+      "chg_pct": 1.08,
+      "ohlc": [null, 7511.07, 7468.32, 7500.58],
+      "note": "Relief bounce off the hawkish-Fed flush. High 7,511.07 — the index TAGGED the broken 7,510 floor (yesterday's put wall) and got rejected, closing 7,500.58, back below the 7,510 line and pinned to the 7,500 call wall. High-to-low range just 42.75 pts = 0.57% — a calm, positive-gamma pin day (the cushion re-stacked vs yesterday's 1.75% flush). SPYx10 = 7,467 vs SPX 7,500.58 (SPY print may be slightly stale; SPX confirmed by TheStreet/CNBC at 7,500.58 +1.08%). Open not captured (Yahoo meta null); high/low/close exact from Yahoo ^GSPC 16:00 ET."
+    },
+    "nasdaq_composite": {
+      "close": 26517.93,
+      "chg_pct": 1.91,
+      "note": "+1.91%, the LEADER today (vs Dow +0.14%) — the exact reverse of June 16. Nasdaq-100 (QQQ) +1.47%. AI-hardware/semis drove it: ALAB +11.3%, MU +8.7%, MRVL +7.3%, TSM +6.9%, AVGO +4.7%. Mega-cap growth lagged but green (NVDA +2.9%, GOOGL +1.2%); AAPL red. Second straight session of semis-lead / mega-cap-growth-lag — a duration rotation within tech, not a demand story."
+    },
+    "dow": {
+      "close": 51564.70,
+      "chg_pct": 0.14,
+      "note": "+72 pts to 51,564.70 — barely green. The cyclical/value bid that set June 16's record stayed muted while money concentrated in AI-hardware. Russell 2000 reportedly led on the modest yield decline. Dow's near-flat day vs Nasdaq +1.91% = the rotation back into chips, the mirror of June 16's chips-down/Dow-record."
+    }
+  },
+  "after_hours_events": [
+    {"event": "No portfolio-name earnings after the close. MU fiscal Q3 print is ~June 24.", "note": "The day's news was the Apple-Intel deal (Trump Truth Social post, INTC +14.5%) and the broad memory/chip rally — both intraday, not after-hours prints."}
+  ],
+  "regime": {
+    "call": "bull-under-stress",
+    "options": ["bull", "bull-under-stress", "sideways", "bear-rally", "bear"],
+    "rationale": "Held at bull-under-stress, improving but not healed. The relief rally (+1.08%, VIX -11% to 16.40) recovered much of the FOMC flush but STALLED at the level that defines a return to bull: SPX high 7,511.07 tagged the broken 7,510 put wall and got rejected, closing 7,500.58 — back below it, pinned at the 7,500 call wall in a calm 0.57% range. Per the June 17 what_changes_it ('back to bull on a close that RECLAIMS 7,450-7,510'), today reclaimed 7,450 but NOT 7,510 — so the structure is still in stress, on the cusp. The constructive tell: a SECOND straight session of AI-hardware/semis leading (ALAB +11.3%, MU +8.7%, MRVL +7.3%, TSM +6.9%) while long-duration mega-cap growth lags (GOOGL +1.2%, AAPL red) — a duration rotation, demand-positive catalysts (memory super-cycle DRAM +90% Q1; Intel foundry wins). The cushion appears to be re-stacking (today's 0.57% pin vs yesterday's 1.75% flush = positive-gamma dampening returning).",
+    "what_changes_it": "Back to bull on a CLOSE above 7,510 (reclaims the broken floor — says the hawkish flush was a one-day repricing). Down to bear-rally/bear on sustained closes below the ~7,352 flip with the cushion thin — there dealers stop cushioning and amplify, next ledges 7,300 then the ~7,230 50-DMA. Watch (1) whether semis keep leading the Dow into June 19 (confirms rotation-is-a-trim, resolving tomorrow), (2) the API gamma recompute (fix the hung script) for whether net GEX re-stacks into triple-witching, (3) the Iran signing June 19 (a slip re-arms the war premium)."
+  },
+  "key_levels": {
+    "spx_support": [7468, 7430, 7352, 7300, 7230],
+    "spx_resistance": [7510, 7600],
+    "notes": "Support: 7,468 = today's low; 7,430 = today's put wall (snippet); 7,352 = zero-gamma flip (below it dealer amplification); 7,300 = prior aggregate put wall; ~7,230 = rising 50-DMA. Resistance: 7,510 = the broken floor, now overhead — the index kissed 7,511.07 and got sold; 7,600 = call wall AND the June 1 record (7,599.96). The broken-floor-becomes-ceiling structure from June 17 held cleanly today.",
+    "gamma": {
+      "zero_gamma_flip": 7352,
+      "call_wall": 7500,
+      "put_wall": 7430,
+      "net_gex_usd": null,
+      "near_put_wall": 7430,
+      "near_call_wall": 7500,
+      "source": "SNIPPET FALLBACK (FlashAlpha indexed, as-of intraday June 18) — scripts/market_levels.py --audit HUNG AGAIN (>3 min zero output, killed; same failure mode as June 17, likely a Polygon free-tier rate-limit retry loop). No computed levels / no audit verdict. Snippet levels: put wall 7,430 (0.1% below spot), call wall 7,500 (0.8% above), acceleration 7,490, zero-gamma 7,352.49 (carried, likely stale). Tape-coherence check: close 7,500.58 pinned EXACTLY to the 7,500 call wall and the 0.57% range confirms a positive-gamma dampening regime — coherent. net_gex not quantified (script down) but the calm pin implies it re-stacked positive vs yesterday's thin +$22B.",
+      "note": "API FAILURE 2nd straight day: market_levels.py hung with zero output and was killed (~3+ min). Gamma is snippet-only. The close pinning to the 7,500 call wall in a 0.57% range is the cleanest qualitative evidence the positive-gamma cushion is back — dealers sold the 7,510 tag and contained the day. Trust-period audit (started 2026-06-09) remains PAUSED until the script is fixed. RECOMPUTE + DEBUG before next run — the hang has now eaten two consecutive sessions of computed gamma.",
+      "audit_verdict": "unavailable",
+      "audit_override": "N/A — no computed levels produced (script hung/killed 2nd day). Snapshot uses snippet fallback per playbook rule.",
+      "audit_log": "2026-06-18: scripts/market_levels.py --audit launched ~17:00 CT, ran >3 min with ZERO output, killed (PID 88882). Same hang as June 17. Portfolio + index closes obtained via Yahoo chart API (all 11 holdings + SPX/Nasdaq/Dow/VIX + SPY/QQQ + INTC/AAPL, 16:00 ET stamp). NOTE: Yahoo meta chartPreviousClose came back lagged by a session for several tickers — day-change % computed manually against KNOWN June 17 closes from the prior snapshot/portfolio, not from the script's chg field. Gamma from WebSearch snippet (put 7,430 / call 7,500 / flip 7,352 / accel 7,490, positive-gamma regime). ACTION: debug the rate-limit hang before next run; the trust-period audit has now missed two sessions."
+    }
+  },
+  "rates_commodities": {
+    "ust10y_pct": 4.45,
+    "wti_usd": 75.52,
+    "brent_usd": null,
+    "gold": 4227.9,
+    "note": "10Y eased to 4.45% (-0.04, falling 5d) — yields backing off the FOMC surge gave growth multiples a little relief and let the relief rally breathe. WTI $75.52 (-1.65%; 5-day -12.19, a sharp slide) as the Iran de-escalation keeps draining the war premium into the June 19 signing. Gold -3.0% to $4,227.90 and VIX -11% = a clean risk-on unwind of yesterday's hedges. DXY +0.71% to 100.8 (rising 5d) — a mild dollar bid, the one cross-current."
+  },
+  "volatility_flow": {
+    "vix": 16.40,
+    "vix_note": "VIX -2.04 to 16.40 (-11.06%), fully unwinding yesterday's FOMC spike (+2.03 to 18.44) and back to the mid-June lows. The options market priced the Fed event risk OUT as fast as it priced it in — consistent with a rates-repricing, not a growth scare. Yahoo ^VIX 16:00 ET.",
+    "vix_term_structure": null,
+    "put_call_ratio": null,
+    "put_call_note": "Not collected (lags 1-2 days free). Structural read: the put wall rolling UP from 7,400/7,430 (June 17) and the close pinning the 7,500 call wall imply hedges were lifted and dealers re-grossed positive gamma — the calm 0.57% range corroborates.",
+    "notable_options_flow": null,
+    "note": "No corroborated single large print. Cleanest flow read remains structural (call-wall pin + VIX crush = positive-gamma re-stack)."
+  },
+  "technicals": {
+    "spx_vs_50dma": "+3.7% (50-DMA ~7,230 est; SPX 7,500.58)",
+    "spx_vs_200dma": "+8.7% (200-DMA ~6,900 est)",
+    "breadth_note": "Up day led by AI-hardware/semis, second straight. Portfolio movers (Yahoo, 16:00 ET June 18, day-change vs June 17 closes): ALAB +11.3% $417.07, MU +8.7% $1,133.99, MRVL +7.3% $310.58, TSM +6.9% $462.12, VRT +4.9% $333.05, AVGO +4.7% $411.35, NVDA +2.9% $210.69, CRWV +2.4% $117.95, GOOGL +1.2% $368.03, MAGS +1.4% $65.44, DELL -2.3% $409.50. DELL the lone red — gapped to $436 intraday then sold to close near the low (6.76% intraday range), the Silver Lake insider-supply overhang + profit-taking from its June 2 ATH. INTC (tracked, not held) +14.5% $133.99 on the Apple deal. The book's two-day round-trip from June 16 is complete: the names crushed June 16 (MRVL/MU/ALAB/AVGO/TSM/VRT) have now led two straight rebound sessions.",
+    "note": "DMAs still estimated by drift from prior anchors — refresh from a direct reading next run (carried 7 sessions, stale)."
+  },
+  "factor_attribution": {
+    "dominant_driver": "risk-on relief unwind (no single macro driver) + a sector-specific memory/chip catalyst",
+    "detail": "Equities had no clean macro driver today — the move was (a) the unwind of yesterday's FOMC fear (VIX -11%, gold -3%, 10Y easing) and (b) a within-tech rotation into the memory super-cycle (DRAM +90% Q1) and the Intel foundry headlines. Cross-asset (factor_tape.py, Yahoo): 10Y 4.45% (-0.8%, falling 5d), WTI $75.52 (-1.65%, 5d -12.19 falling), DXY 100.8 (+0.71%, rising), VIX 16.40 (-11.06%, falling), gold $4,227.90 (-3.01%, but +137.6 over 5d). Reaction-Desk read: the dominant forward driver is the calendar (June 19 triple-witching + Iran signing; June 24 MU; June 26 PCE), not today's tape.",
+    "cross_asset": {"ust10y_pct": 4.45, "wti_usd": 75.52, "dxy": 100.8, "vix": 16.40, "gold_usd": 4227.9}
+  },
+  "calendar": [
+    {"date": "2026-06-19", "event": "Triple-witching OpEx + grading day for 2026-06-17-no-reclaim-7510, 2026-06-17-thin-gamma-wide-range, 2026-06-15-call-wall-caps-record, 2026-06-15-boj-non-event-for-tech, 2026-06-16-rotation-is-a-trim, 2026-06-11-software-derate", "why": "Quarter's biggest expiry. no-reclaim-7510: SPX must not CLOSE above 7,510 (today 7,500.58, held by 9 pts after tagging 7,511). thin-gamma-wide-range: needs June 19 to print 1.5%+ or it's FALSIFIED (June 18 was calm 0.57%). call-wall-caps-record: not above 7,600 (safe at 7,500). rotation-is-a-trim: semis vs Dow June 17-19 — tracking RIGHT hard (2 straight semis-lead days). boj-non-event: no >2% yen-driven Nasdaq down day (none). software-derate: ADBE below $233.38 (at $195.16, holding wide)."},
+    {"date": "2026-06-19", "event": "US-Iran formal signing (scheduled, Switzerland)", "why": "The signature the oil/peace repricing rests on; lands the same day as triple-witching. WTI $75.52 and sliding — the market has fully pre-paid. A slip re-arms the war premium into a thin-into-OpEx tape."},
+    {"date": "2026-06-22", "event": "MRVL + FLEX join S&P 500; RKLB joins Nasdaq-100", "why": "Grades 2026-06-09-mrvl-inclusion-bid ($250 line). MRVL $310.58 (+7.3% today) — well above $250; the mechanical index buy lands with a wide cushion."},
+    {"date": "2026-06-24", "event": "MU fiscal Q3 earnings (approx — confirm)", "why": "Guide ~$33.5B / 81% GM / ~$19.15 EPS. MU $1,133.99 (+8.7% today, new high) — the crowded memory trade meets the income statement; Samsung's 1d-DRAM-for-2027 roadmap is the structural caution to weigh against the print."},
+    {"date": "2026-06-26", "event": "May PCE (approx — confirm)", "why": "Fed's preferred gauge, the key data print after a hawkish SEP that revised year-end PCE up to 3.6%. A hot supercore echo hardens the December-hike case and pressures growth multiples."},
+    {"date": "2026-06-30", "event": "Horizon: 2026-06-12-spcx-holds-offer", "why": "No SPCX close below $135 through June 30. Holding far above (~$200 area last seen)."},
+    {"date": "2026-Q3", "event": "SpaceX-Anysphere/Cursor $60B acquisition close (pending regulatory)", "why": "Largest-ever VC-backed acquisition; AI-coding consolidation."}
+  ],
+  "open_questions": [
+    "NEW: does SPX CLOSE back above 7,510 on June 19, healing the broken floor back to bull — or does the broken-floor-becomes-ceiling hold (today it held by 9 pts after a clean 7,511 rejection)? Governs 2026-06-17-no-reclaim-7510 and the regime call.",
+    "NEW: thin-gamma-wide-range is now on the line — June 18 printed a calm 0.57% range, so the cushion appears to have re-stacked; June 19 must print 1.5%+ or the call is FALSIFIED. Triple-witching is the natural catalyst for a wide range, but positive gamma into OpEx usually pins.",
+    "ANSWERED (rotation-is-a-trim): now TWO straight semis-lead-Dow sessions (June 17 AVGO +4.3% vs Dow -0.98%; June 18 semis +5-11% vs Dow +0.14%) with no negative AI-demand datapoint — tracking strongly RIGHT into the June 19 resolution. The June 16 chip dump looks definitively like a trim.",
+    "CARRIED: the within-tech duration rotation (AI-hardware up / long-duration mega-cap growth lagging) is now a 2-day pattern — bears directly on 2026-06-01-supply-over-demand (supply-side basket vs demand-side). Watch whether GOOGL/AAPL keep lagging the semis.",
+    "CARRIED: market_levels.py hung a SECOND straight day — two sessions now with no computed gamma. Fix the rate-limit retry loop before next run; the trust-period audit is paused.",
+    "CARRIED: MU leverage-clamp / Samsung-1d-DRAM competitive question carries to the June 24 print — MU made a new high (+8.7%); does the guide and the HBM5 roadmap hold the franchise read?",
+    "NEW: is the Apple-Intel deal real substance or a presidential tweet? No terms, both firms silent — watch for an actual Intel Foundry external-revenue disclosure or an Apple confirmation before treating it as more than sentiment."
+  ]
+}

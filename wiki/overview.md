@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-17
+last_updated: 2026-06-18
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,12 @@ sources: 0
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 18, 2026 — The relief bounce stalls at the broken floor while the AI-hardware book goes vertical; Intel rips on an Apple deal
+
+The day after the hawkish-Fed flush, the market exhaled: **S&P +1.08% to 7,500.58 · Nasdaq +1.91% to 26,517.93 · Dow +0.14% to 51,564.70** — but the S&P's high was **7,511.07**, it tagged the broken 7,510 floor, got sold, and **closed back below it at 7,500.58**, pinned right at the 7,500 call wall in a tight 0.57% range. **VIX −11% to 16.40** unwound the FOMC fear. The story was *within* tech: AI-hardware/semis went near-vertical — **[[ALAB]] +11.3% to $417.07, [[MU]] +8.7% to $1,133.99, [[MRVL]] +7.3% to $310.58, [[TSM]] +6.9% to $462.12, [[AVGO]] +4.7% to $411.35, [[VRT]] +4.9% to $333.05** — while rate-sensitive mega-caps lagged (**[[NVDA]] +2.9% to $210.69, [[GOOGL]] +1.2% to $368.03**, AAPL red) and **[[DELL]] reversed −2.3% to $409.50** (gapped to $436 then sold off — the Silver Lake insider-supply overhang). Driver stack: the **memory super-cycle** (DRAM contract prices ~+90% in Q1, ~+40% more expected through Q2; HBM supply-constrained), the **Apple-Intel** US-chip-deal headline (**[[INTC]] +14.5% to $133.99**) plus the **Google 9th-gen TPU EMIB-vs-CoWoS packaging war**, and 10Y easing to ~4.45%. ([[2026-06-18-semiwiki-apple-intel-google-tpu-packaging-samsung-dram]])
+
+> **What this means:** Still **bull-under-stress**, improving but not yet healed. The relief rally ran straight into the level it had to reclaim — **7,510**, last week's put wall that broke June 17 — kissed it (7,511.07) and got rejected, closing at the 7,500 call wall in a calm positive-gamma pin. That is the textbook *broken-floor-becomes-ceiling* behavior, and it keeps the regime in stress until a *close* back above 7,510 says the hawkish flush was a one-day repricing. The constructive tell is the leadership: this is the **second straight session** of AI-hardware/semis leading while long-duration mega-cap growth lags — a duration rotation, not a demand crack (the day's catalysts, memory pricing + Intel's foundry wins, are demand-positive). The Apple-Intel deal is a presidential tweet with no terms and unproven execution (Intel cost/chip ~3x TSMC) — sentiment/optionality, not modeled revenue; TSM ripped 6.9% on the *same* second-source news because sold-out capacity is the cause. Support 7,468 → 7,430 (today's put wall) → the ~7,352 flip (below it dealers amplify); resistance 7,510 then 7,600. **Triple-witching + the Iran signing both land tomorrow, June 19**, into a tape whose cushion is re-stacking but still thin. **No stance/conviction changes.** (`scripts/market_levels.py` hung again — gamma is snippet-fallback; fix pending.)
 
 ## June 17, 2026 — Warsh's first Fed comes in hawkish: dots show a 2026 hike, SPX breaks the 7,510 floor; semis rebound as rate-sensitive mega-caps lead the drop
 

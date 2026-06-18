@@ -9,6 +9,18 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-18] daily | Relief bounce stalls at 7,510; chip book vertical; Apple-Intel tweet
+
+Headless after-the-bell run. **Market**: relief rally off the hawkish-Fed flush — **S&P +1.08% to 7,500.58 · Nasdaq +1.91% to 26,517.93 · Dow +0.14% to 51,564.70**; VIX −11% to 16.40. SPX high 7,511.07 **tagged the broken 7,510 floor, got rejected, closed back under it** pinned to the 7,500 call wall in a calm 0.57% range. Within-tech rotation (2nd straight day): AI-hardware/semis vertical — [[ALAB]] +11.3% $417.07, [[MU]] +8.7% $1,133.99 (new high), [[MRVL]] +7.3% $310.58, [[TSM]] +6.9% $462.12, [[AVGO]] +4.7% $411.35, [[VRT]] +4.9% $333.05 — while mega-cap growth lagged ([[NVDA]] +2.9%, [[GOOGL]] +1.2%, AAPL red) and [[DELL]] reversed −2.3% (Silver Lake supply overhang). 10Y 4.45%, WTI $75.52 (5d −12).
+
+- Source: [[2026-06-18-semiwiki-apple-intel-google-tpu-packaging-samsung-dram]] (SemiWiki scan, 8 new items). **Trump's Apple-Intel US-chip-deal tweet** ([[INTC]] +14.5% to $133.99, termless, both firms silent) + **Google 9th-gen TPU EMIB-vs-CoWoS packaging war** (Intel CFO "billions/yr" packaging demand; TSMC 14-reticle CoWoS-L counter) + **Intel Foundry stands up advanced packaging under Seok-Hee Lee (ex-SK hynix CEO)** → [[INTC]] (7→8). **Samsung 1d DRAM mass-prod end-2027 / HBM5** + memory super-cycle (DRAM +90% Q1) → [[MU]] (10→11). Apple second-source + TSMC CoWoS-L win-back → [[TSM]] (12→13). TPU packaging optionality → [[GOOGL]] (8→9). **Electro-Optical Realization Corridor** photonics framing → [[photonics]] (4→5). New June 18 lead on [[overview]]. Lower tail (RISC-V $300B-by-2031, PDF Solutions DFF) captured in source summary; Defacto IP-XACT webinar skipped (vendor PR).
+- Wiki touched: [[overview]], [[INTC]], [[TSM]], [[MU]], [[GOOGL]], [[photonics]], [[index]].
+- **Stance/conviction changes flagged for review: none.** Regime held **bull-under-stress** (improving but stalled — reclaim of 7,510 would flip it back to bull).
+- Newsletter: market_state/2026-06-18.json (regime bull-under-stress); issue #9 "The Chips Ran; the Index Hit the Ceiling It Just Built". **No predictions.json resolutions** (no-reclaim-7510 held by 9 pts, thin-gamma-wide-range tracking WRONG after a calm 0.57% day — both resolve June 19). **YOLO `2026-06-18-spx-7450p` NO-TRIGGER** (SPX pinned the 7,510 tag rather than rejecting; fade never set up; discipline avoided a loss this time — desk 1-2-3). 2 new calls logged (pce-duration-branch reaction; intel-apple-pop-fades). Playbook unchanged.
+- **NOTE: `scripts/market_levels.py` HUNG AGAIN** (2nd straight day, killed ~3min, same Polygon rate-limit retry-loop suspect) — gamma is snippet fallback (put 7,430 / call 7,500 / flip 7,352); all closes via Yahoo chart API. Trust-period gamma audit still paused; **fix the script before next run** (two sessions of computed gamma now lost).
+
+---
+
 ## [2026-06-18] note | Reaction Desk agent built + Mistral dossier saved
 
 - **Mistral parked:** consolidated everything into `MISTRAL_INVESTMENT_DOSSIER.md` (repo root, self-contained — verdict, numbers, bull/bear, return math, €200B analysis, primary-vs-secondary unknown, seller-question checklist; pointers to [[MISTRAL]] + sources).

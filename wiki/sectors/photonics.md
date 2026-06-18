@@ -1,9 +1,9 @@
 ---
 type: sector
 tags: [photonics, silicon-photonics, cpo, optical-interconnect, pic, ai-infrastructure]
-last_updated: 2026-06-15
+last_updated: 2026-06-18
 last_full_review: 2026-06-14
-sources: 4
+sources: 5
 conviction: medium
 ---
 
@@ -41,6 +41,7 @@ The investable nuance: the transition from pluggables to CPO is **disruptive to 
 - **Disruption cuts both ways** — CPO adoption compresses the pluggable-module franchise that is today's [[COHR]]/[[LITE]]/[[FN]] cash flow.
 - **Narrative conflation** — "photonic memory" as a discrete product does not exist; small-cap names trade on the confusion (see [[2026-05-17-photonic-memory-stack]] and [[POET]]).
 - **Reliability / yield at scale** — PIC manufacturing adds optical variables (waveguide uniformity, coupling efficiency, packaging tolerances) that electrical chips don't have; yield is the gating variable as volumes rise.
+- **The device is not the product — the "realization corridor" is** (2026-06-18, SemiWiki EORB thread, [[2026-06-18-semiwiki-apple-intel-google-tpu-packaging-samsung-dram]]). A useful frame for handicapping CPO/optical-I/O winners: the modulator or optical engine is the breakthrough, but the *product* is the full electro-optical realization path — electrical launch → optical conversion → driver integration → package/substrate interface → alignment stability → thermal-drift control → fiber attach → SI/PI behavior → test coverage → yield learning → reliability. **Which means**: bet on whoever proves the whole corridor can be manufactured, tested, cooled, aligned and qualified at scale, not on the best optical device in isolation — it sharpens the existing yield-is-the-gate risk into a selection rule (favor integrated package+test+reliability competence, e.g. [[AVGO]]/[[TSM]]-COUPE/advanced-packaging incumbents, over pure-device storylines).
 
 ## Open questions
 - When does CPO cross from leading-edge-only to mainstream switch deployment — and which transceiver makers successfully pivot vs get disrupted?

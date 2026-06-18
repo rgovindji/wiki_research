@@ -6,7 +6,7 @@
     "timing": 0,
     "wrong": 3,
     "expired": 0,
-    "notes": "Updated 2026-06-17 (FOMC day, 4 resolved at once): 8 resolved total — 4 right / 1 partial / 3 wrong. By tier: HIGH 1/1 clean (short-gamma wide-range); MEDIUM now 3 right / 1 partial / 3 wrong of 7. Today's FOMC resolved a clean, instructive pattern: the two RIGHT calls were both MECHANISM reads (fomc-hold-hawkish nailed the hawkish SEP; no-revisit-7265 was a level call whose mechanism — the floor migrating up — played out exactly), while the two WRONG calls were the SAME structural error twice (fomc-day-box and pinned-into-opex both bet positive-gamma CONTAINMENT would hold the night after net GEX had already collapsed ~80%). The edge remains mechanism reads; the new liability is trusting a gamma framework after its fuel has drained. Note the sharpest pairing in the ledger: fomc-hold-hawkish (right) and fomc-day-box (wrong) graded the SAME event — right about the catalyst, wrong about the plumbing's capacity to absorb it. Lesson 10 distilled."
+    "notes": "2026-06-18: no predictions.json resolutions (the two June 17 calls stay open to June 19); YOLO desk logged a 3rd no-trigger (record 1-2-3); 2 new calls logged (pce-duration-branch reaction, intel-apple-pop-fades). thin-gamma-wide-range tracking toward WRONG (June 18 calm 0.57%). Updated 2026-06-17 (FOMC day, 4 resolved at once): 8 resolved total — 4 right / 1 partial / 3 wrong. By tier: HIGH 1/1 clean (short-gamma wide-range); MEDIUM now 3 right / 1 partial / 3 wrong of 7. Today's FOMC resolved a clean, instructive pattern: the two RIGHT calls were both MECHANISM reads (fomc-hold-hawkish nailed the hawkish SEP; no-revisit-7265 was a level call whose mechanism — the floor migrating up — played out exactly), while the two WRONG calls were the SAME structural error twice (fomc-day-box and pinned-into-opex both bet positive-gamma CONTAINMENT would hold the night after net GEX had already collapsed ~80%). The edge remains mechanism reads; the new liability is trusting a gamma framework after its fuel has drained. Note the sharpest pairing in the ledger: fomc-hold-hawkish (right) and fomc-day-box (wrong) graded the SAME event — right about the catalyst, wrong about the plumbing's capacity to absorb it. Lesson 10 distilled."
   },
   "predictions": [
     {
@@ -252,6 +252,32 @@
       "confidence": "medium",
       "horizon": "2026-06-19",
       "falsifier": "Both June 18 AND June 19 print high-to-low ranges under 1.5% while SPX remains below the ~7,450 flip (the cushion re-stacked faster than thought, or today's break was a one-afternoon event — the thin-gamma-wide-range mechanism is decoration).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": "Tracking toward WRONG after day 1 of 2: June 18 printed a calm 0.57% range (high 7,468.32-7,511.07) and pinned the 7,500 call wall — the cushion re-stacked faster than the thin-gamma read implied. The falsifier needs BOTH June 18 AND June 19 under 1.5%; June 18 satisfied half of it. June 19 (triple-witching) must print 1.5%+ to save the call. Final grade June 19."
+    },
+    {
+      "id": "2026-06-18-pce-duration-branch",
+      "made": "2026-06-18",
+      "issue": "2026-06-18-afterhours",
+      "type": "reaction",
+      "claim": "Reaction Desk conditional (reader sees: 'hot PCE June 26 → the mega-caps take the hit, chips hold up better'). Testable form: IF May core PCE (released ~June 26) prints HOT (core m/m >=0.3%, or a supercore acceleration that hardens the December-hike case), THEN the duration rotation extends — an AI-semis basket (SOXX proxy) OUTPERFORMS an equal-weight mega-cap-growth basket (GOOGL/MSFT/META/AAPL) over the two sessions following the print, because higher-for-longer marks down the longest-dated growth multiples first while shorter-cycle AI-hardware trades on its own order books.",
+      "confidence": "medium",
+      "horizon": "2026-06-29",
+      "falsifier": "On a hot PCE print, the mega-cap-growth basket outperforms SOXX over the two sessions after release (duration logic failed — the hit landed on chips, not multiples). If PCE prints SOFT (core <0.3%, no supercore acceleration), the condition is VOID — mark expired, not wrong.",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-18-intel-apple-pop-fades",
+      "made": "2026-06-18",
+      "issue": "2026-06-18-afterhours",
+      "type": "single-name",
+      "claim": "The Apple-Intel pop is a termless presidential tweet, not modeled revenue: INTC (+14.5% to $133.99 today) gives back the majority of the one-day gain — it CLOSES below $126 on at least one session within five trading days (by June 25) — absent confirmed deal terms (volumes/timeline/dollar figure) or an Apple confirmation. Mechanism: the deal was announced by neither company, has no specifics, and Intel's execution (cost/chip ~3x TSMC, yields trailing) is unproven; sentiment pops on relationship headlines fade when no substance follows, the way Intel's prior political/customer tells have repeatedly round-tripped.",
+      "confidence": "low",
+      "horizon": "2026-06-25",
+      "falsifier": "INTC holds its gains — no close below $126 on or before June 25 (the market is pricing real deal value, or a confirmation/terms landed and the move was substance, not sentiment). A close below $126 driven by a broad-market selloff rather than INTC-specific fade still counts (per the level-keying rule), but note the cause in the resolution.",
       "status": "open",
       "resolved": null,
       "resolution_note": null
