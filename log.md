@@ -9,6 +9,15 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-17] ingest | Mistral GTM transcript (Latent Space / Voxtral) → multiple-quality fulcrum
+
+Curator shared a Latent Space pod transcript (Lample + Pavan, ~Voxtral TTS launch / GTC week, late Mar 2026). Source summary: [[2026-03-26-latentspace-mistral-voxtral-gtm]]. Applied conviction discipline — classified as mostly **confirming**, with two offsetting component moves, **verdict held** (lean cautious, no stance change):
+- UP (moat): the GTM is genuinely sticky — forward-deployed engineers + fine-tune-customer's-proprietary-data + on-prem ("10x cheaper") = data-gravity + switching-cost lock-in; blunts the DeepSeek/Qwen commoditization fear.
+- DOWN (valuation): it confirms the revenue is **services-led (Palantir/Accenture-FDE economics)** — headcount-bound, lower multiple-quality; the market pays ~5-15x for that, not ~50x.
+- These offset → **net unchanged.** Added the **platform-vs-services multiple-quality fulcrum** to [[MISTRAL]] (the decisive diligence Q: is self-serve platform the engine with FDEs as land-and-expand, or *are the FDEs the business?*) + seller-question #9 + sources 4→5. Explicitly resisted letting an impressive, curator-shared founder narrative pull conviction when it doesn't touch the two deciding variables (deal terms + revenue mix).
+
+---
+
 ## [2026-06-17] note | Mistral fact-check: business-model details verified + refined
 
 Curator supplied primary detail (revenue = platform/Studio SaaS + services/FDE wrap; open/closed license split; ~$400M ARR; agentic-token path "year+ out" per CTO; Mistral Compute 13,800 GB300s). Verified via targeted searches; added a "Business model & revenue quality" section to [[MISTRAL]]. Results: mostly TRUE. Corrections/nuance — (1) **Medium 3.5 is NOT closed/API-only in the current lineup**: released as open weights under a modified-MIT *revenue-capped* license; the prior Medium 3 was the closed one (curator's model likely one version stale). (2) **Voxtral TTS = CC BY-NC 4.0 confirmed** (non-commercial; commercial via API only) — curator correct. (3) Large 3 flagship = Apache 2.0 confirmed. (4) Agentic-token growth mechanism confirmed; the "year+ out" timing could NOT be independently verified. (5) Mistral Compute go-live ~end-Q2 2026 (live now-ish). **Key analytical add:** services/FDE-heavy revenue is stickier (mild bull on commoditization) but lower-quality (services trade ~1-3x rev vs software ~10-20x) → makes the ~50x ARR multiple *even richer*. Cautious lean unchanged; deal structure (primary-pref vs secondary/SPV) still decisive.
