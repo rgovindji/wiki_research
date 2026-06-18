@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-17] query | Mistral AI private-investment memo (4-agent orchestrated research)
+
+User is weighing an offer to invest in Mistral AI at **€19.8B / €45.76 per share** and asked for maximal, critical, multi-agent research. Ran 4 parallel general-purpose sub-agents (fundamentals · competitive/moat · ruthless bear case · valuation/deal-math), synthesized into [[MISTRAL]] (new private-company page).
+
+- **Verdict: high-risk, illiquid, right-tail-dependent — lean cautious / pass unless terms are confirmed favorable.** ~50x trailing ARR (richest in cohort) on ~$400M ARR; ~20x only on the unproven $1B-2026 target. Existential 15-50x compute deficit vs OpenAI/Anthropic (Anthropic pays ~$1.25B/mo for ONE 220k-GPU cluster; Mistral ~13,800 GPUs, ~$3-4B raised total). Open-weight commoditization (DeepSeek/Qwen). Sovereignty moat real (ASML ~11% lead, French MoD framework — note the "$14B defense deal" is a MISREPORT of the valuation) but caps the ceiling (foreign M&A politically foreclosed; IPO ~2028-30). Illustrative EV ~2.3x net, ~50% mass break-even-or-worse post-dilution.
+- **Surfaced contradiction (unresolved, flagged):** agents split on whether €19.8B/€45.76 is PRIMARY (preferred, 1x pref, protected) or SECONDARY/SPV (common, worst seat) — the figures appear in no public source. This is the decisive variable; page leads with it + a "questions to ask the seller" checklist.
+- New page only ([[MISTRAL]]); cross-links [[ai-bubble-debate]], [[sovereign-ai]], [[valuation-environment]]. Index recent-ingests updated. No stance changes elsewhere.
+
+---
+
 ## [2026-06-17] daily | Hawkish first-Warsh FOMC breaks the 7,510 floor; SemiWiki TSMC–Amkor pact
 
 Headless after-the-bell run. FOMC held 3.50-3.75% (12-0) but shipped a hawkish SEP (9/18 dots for a 2026 hike, 6 for two; year-end PCE up to 3.6% from 2.7%). **S&P −1.21% to 7,420.10** (broke the 7,510 put wall, closed below the ~7,450 flip), Nasdaq −1.34%, Dow −0.98% (off a fresh intraday record); VIX +2.03 to 18.44. Internals INVERTED June 16: AI-hardware/semis rose ([[VRT]] +6.0%, [[AVGO]] +4.3%, [[MRVL]] +3.9%, [[DELL]] +3.77%, [[ALAB]] +3.59%, [[MU]] +2.2%, [[TSM]] +1.48%) while rate-sensitive mega-caps fell ([[GOOGL]] −2.53%, [[NVDA]] −1.33%).
