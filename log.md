@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-18] note | Morning brief: The Bounce Has to Climb Its Own Broken Floor
+
+Before the Bell sent. Covered: relief gap (SPY +0.71%/QQQ +1.59% premkt) after the hawkish-Fed flush must reclaim the broken 7,510 floor with no dealer cushion (~+$22B GEX); no-reclaim-7510 call on the line; Nvidia-SK Hynix memory tie-up + duration whipsaw inside tech; YOLO fade-the-reclaim 7,450p. No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-17] ingest | Mistral GTM transcript (Latent Space / Voxtral) → multiple-quality fulcrum
 
 Curator shared a Latent Space pod transcript (Lample + Pavan, ~Voxtral TTS launch / GTC week, late Mar 2026). Source summary: [[2026-03-26-latentspace-mistral-voxtral-gtm]]. Applied conviction discipline — classified as mostly **confirming**, with two offsetting component moves, **verdict held** (lean cautious, no stance change):

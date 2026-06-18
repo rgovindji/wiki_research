@@ -76,6 +76,21 @@
       "status": "no-trigger",
       "resolved": "2026-06-16",
       "resolution_note": "NO-TRIGGER. The card required SPX to POKE the 7,590-7,600 record zone in the first hour and then fail to hold it — that was the entire entry filter. The morning's +0.5% futures pop faded before the cash open; SPX began near flat and the intraday HIGH was only 7,564.96, ~25 points shy of the 7,590 trigger. No poke, no trade — the desk stood aside, exactly as the card specified. The uncomfortable-but-honest part: the directional thesis was RIGHT. SPX faded all session on the chip-for-cyclicals rotation and closed -0.57% at 7,511.35 — BELOW the 7,555 pin the put was meant to target, and below the 7,575 strike, so a put bought at the open would have paid. But the card keyed entry to a record-poke-and-reject setup that never materialized; the actual move was a straight-line drift lower with no record test to fade. Process held: this is the second time (June 10 the first) the desk correctly declined a trade whose level-trigger didn't fire even though an improvised entry would have paid — which is the whole point of a scoreable desk (lesson: no-trigger = no trade, process not mood). Mechanism footnote: the net-GEX collapse (+$101B->+$13B) meant there was far less dealer selling to lean on at the 7,600 wall, so the gap-into-the-record setup the card was built to fade simply didn't have the long-gamma fuel to gap there in the first place. Desk record: 1-2-2."
+    },
+    {
+      "id": "2026-06-18-spx-7450p",
+      "date": "2026-06-18",
+      "issue": "2026-06-18-morning",
+      "structure": "SPX 0DTE 7,450 put",
+      "direction": "bearish (fade the reclaim attempt at the broken floor)",
+      "thesis": "Yesterday's hawkish-Fed flush broke the 7,510 put wall and closed 7,420.10; this morning's relief gap (SPY +0.71%, QQQ +1.59% premarket, ~7,470 implied open) has to climb back over 7,510 to undo it. With net dealer gamma drained (~+$22B, no re-stack) there's no mechanical dip-buying engine behind the bounce — it's real money, not dealer hedging — and the Fed just removed the dovish surprise that could carry a reclaim. So a poke into the broken floor with no automatic tailwind and Fed speakers more likely to reinforce than walk back the dots is the textbook spot for a relief rally to get sold at resistance. Keyed to the level (7,510) per playbook lesson 1; this morning's bounce is context, not a key. Internally consistent with our house call 2026-06-17-no-reclaim-7510.",
+      "trigger": "SPX rallies into the 7,500-7,510 zone (yesterday's broken put wall, now overhead resistance) in the first ~90 minutes AND fails to hold it (15-30 min rejection, not a clean break above). No poke into 7,500+ = no trade, desk stands aside. A clean HOLD above 7,510 = no trade (that's our no-reclaim call breaking; stand aside, don't fight it).",
+      "target": "The 7,400-7,415 shelf where yesterday's selling came to rest and fresh hedges stacked. Exit there.",
+      "invalidation": "SPX holds above 7,510 for ~30 minutes after the poke (the reclaim is real — our thesis is wrong) — out, no bearish re-entry. Hard time-stop at 3:30 ET if neither target nor invalidation has hit (June 11 lesson: theta resolves 'almost' against the holder).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null,
+      "caveat": "Thin-gamma honesty (lesson 10): with net GEX ~+$22B, 7,510 is a technical/structural level (yesterday's break), NOT a strong dealer-hedging magnet — the tape can slice through it in either direction. The trade rests on real-money flow + the absence of a dovish catalyst, not on dealer gravity. If buyers clear 7,510 cleanly the card never triggers, and that's the correct outcome."
     }
   ]
 }
