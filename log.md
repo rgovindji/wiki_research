@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-17] note | Mistral fact-check: business-model details verified + refined
+
+Curator supplied primary detail (revenue = platform/Studio SaaS + services/FDE wrap; open/closed license split; ~$400M ARR; agentic-token path "year+ out" per CTO; Mistral Compute 13,800 GB300s). Verified via targeted searches; added a "Business model & revenue quality" section to [[MISTRAL]]. Results: mostly TRUE. Corrections/nuance — (1) **Medium 3.5 is NOT closed/API-only in the current lineup**: released as open weights under a modified-MIT *revenue-capped* license; the prior Medium 3 was the closed one (curator's model likely one version stale). (2) **Voxtral TTS = CC BY-NC 4.0 confirmed** (non-commercial; commercial via API only) — curator correct. (3) Large 3 flagship = Apache 2.0 confirmed. (4) Agentic-token growth mechanism confirmed; the "year+ out" timing could NOT be independently verified. (5) Mistral Compute go-live ~end-Q2 2026 (live now-ish). **Key analytical add:** services/FDE-heavy revenue is stickier (mild bull on commoditization) but lower-quality (services trade ~1-3x rev vs software ~10-20x) → makes the ~50x ARR multiple *even richer*. Cautious lean unchanged; deal structure (primary-pref vs secondary/SPV) still decisive.
+
+---
+
 ## [2026-06-17] query | Mistral AI private-investment memo (4-agent orchestrated research)
 
 User is weighing an offer to invest in Mistral AI at **€19.8B / €45.76 per share** and asked for maximal, critical, multi-agent research. Ran 4 parallel general-purpose sub-agents (fundamentals · competitive/moat · ruthless bear case · valuation/deal-math), synthesized into [[MISTRAL]] (new private-company page).
