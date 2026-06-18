@@ -9,6 +9,7 @@ This file is the newsletter's accumulated judgment. **Both prompts read it befor
 - **Retire** (don't delete) lessons that get falsified — move to Retired with the falsifying evidence. A playbook that only grows is a playbook nobody prunes.
 - **Friday close runs** do the weekly distillation: merge duplicates, check Active lessons against the week's resolutions, keep Active under ~20 entries.
 - Lessons are written as **operating instructions** ("when X, do Y"), not observations ("X happened").
+- **Conviction discipline (anti-sycophancy, curator directive 2026-06-17).** Hold calls to the evidence, not the reader's mood. Pre-commit view + confidence + an explicit falsifier; when new info lands, classify it (factual correction / confirms / genuinely updates) and move conviction **proportional to evidence weight** — a detail nudges, a hard data contradiction flips. Distinguish "components moved but the verdict held" from an actual flip, and say which. Disagree visibly when the reader pushes; never reverse a call just to please. No validation theater. A real flip must be logged in the prediction ledger like any other resolution. See memory `conviction-discipline` + [[feedback-log|wiki/feedback-log.md]].
 
 ## Calibration snapshot
 
