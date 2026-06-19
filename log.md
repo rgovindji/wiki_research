@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-19] query | KEEL "10x to $30B" powered-land thesis → new page (stress-tested, not validated)
+
+User shared a bull pitch for [[KEEL]] (Keel Infrastructure): 2.2 GW power pipeline (PA/WA/Quebec); sign 3 leases (Panther Creek 350MW, Sharon 110MW, Moses Lake 18MW) → ~$1B near-term ARR / $4B full → $30B at 6-7× sales = "10x." Researched + built [[KEEL]] (neutral/speculative, low conviction).
+
+- **Held the line (conviction discipline) — did not validate the seductive pitch.** Core flaw: conflates *powered-land lessor* (tenant builds; KEEL earns a fraction of colo rates) with *build-and-operate colo* (KEEL earns full ~$163/kW/mo but must build it). Capex hole: ~$11-12M/MW standard, $45-55B/GW AI-grade → 478MW ≈ $5-6B, 2.2GW ≈ $25-100B vs the **$458M converts just raised** (the tell it's capital-intensive, not "just sign leases"). Already **+799% off the 52w low at its high**; **$3.8B cap on $218.6M TTM rev = ~17× sales** already; $30B is ~8× from here not 10×.
+- **Kernel kept:** powered land + interconnection is genuinely scarce; a signed hyperscaler lease is a real re-rating catalyst (comp [[DGXX]]/Cerebras — though DGXX now −27% off high). So: a **lease-signature catalyst trade, not a clean path to $30B.** Decisive unknown = lease *terms* (who funds capex, $/kW, tenant credit).
+- Touched: [[KEEL]] (new), [[index]] (Power systems + recent ingests), [[log]]. No other stance changes.
+
+---
+
 ## [2026-06-19] note | Morning brief: A Holiday, a Peace Signing, and a Witching That Already Happened
 
 Before the Bell sent. Covered: US markets closed for Juneteenth (NYSE/Nasdaq dark, reopen Mon June 22) — holiday note in voice; triple-witching was pulled to Thursday June 18, so our "June 19 close" calls (no-reclaim-7510, thin-gamma-wide-range, call-wall-caps-record, etc.) roll to Monday's close; thin-gamma-wide-range now effectively dead (its window had June 18 calm + a holiday). Iran signing today in Geneva, oil ~$75 pre-paid. Desk flat (no session — not logged to yolo.json). No wiki changes (morning runs don't ingest).
