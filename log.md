@@ -2896,3 +2896,12 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
 - Wiki cohort placement: between [[RKLB]] (launch + spacecraft) and [[KTOS]] / [[AVAV]] (defense tech with drones). Pairs with [[ASTS]] for diversified-vs-concentrated space-defense exposure choice.
 - Key catalysts to watch: Andromeda task-order disclosures; Tetra-5 + Otter milestone hits; AE Industrial selling cadence; net loss trajectory toward GAAP profitability; Andromeda ceiling raise to $6B+.
 - Followups: file dedicated source summary if a sell-side report or podcast episode is ingested specifically on RDW; revisit conviction post Q2 2026 earnings (Aug 2026) for evidence of GM trajectory + AE Industrial selling deceleration.
+
+## [2026-06-19] query | PSIX 5-agent deep dive — conviction LOWERED
+- Source: wiki/analyses/2026-06-19-psix-deep-dive.md
+- Wiki touched: PSIX (downgraded neutral-constructive/low-med → neutral-cautious/low; corrected "what they do" to enclosure integrator; added deep-dive bear bullets + scenario table), index.md (PSIX line + Analyses entry)
+- Orchestrated 5 general-purpose analyst agents (Chrome MCP was down → web/SEC-mirror research). All five independently converged MORE NEGATIVE than the initial page.
+- Three findings that moved the view: (1) PSI is an enclosure/packaging INTEGRATOR not a genset OEM — own engines ≤1.2MW, below the 2-3.5MW+ DC-backup class; packages third-party gensets; no disclosed DC revenue/customer/backlog. (2) Margin reset structural + ~2 quarters old (GM 29.7%→21.9%→22.9%) and management WITHDREW full-year guidance; Q2 ~flat. (3) Going-concern flag (BDO Mar'26) + active securities class action (DC-capacity claims) + controlled-company (Weichai >50% voting, related-party extraction) + CEO resigned May'26.
+- Quality of earnings: OCF only ~34% of net income → ~36x P/FCF, ~40x EV/FCF. Not a value stock on cash. Scenario prob-weighted ~$38 ≈ current price ($40.31) → fairly valued, not a bargain.
+- Positioning: Weichai SOLD into highs ($80-95), no insider buy near lows; 20.7% short float on ~8.5M float; June bounce on below-avg volume (short-covering, not accumulation).
+- Conviction discipline applied: I initially leaned constructive; the deep dive genuinely weakened the thesis, so I downgraded honestly rather than defend the prior call. Re-raise triggers logged on the page (disclosed DC revenue, Weichai/officer open-market buy, going-concern cleared, GM ≥24% with H2 conversion).

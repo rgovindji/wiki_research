@@ -217,7 +217,7 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 
 ### Power systems
 - [[KEEL]] — Keel Infrastructure (NEW 2026-06-19); ~2.2 GW powered-land/data-center pipeline (PA/WA/Quebec); lease-signature catalyst trade; $458M converts fund a capital-intensive build; "10x to $30B" pitch flawed (capex hole, already +799% off low); **stance: neutral (speculative) / low**
-- [[PSIX]] — Power Solutions Intl (NEW 2026-06-19); engines/gensets for DC backup power; **cheap (9x EPS / 1.3x sales) + de-rated −67% near 52w low** but Q1 profit −62% miss + Weichai/China control; de-rated value buy if you accept governance + lumpiness; **stance: neutral (constructive-lean) / low-med**
+- [[PSIX]] — Power Solutions Intl (2026-06-19, **DOWNGRADED after 5-agent deep dive**); genset *enclosure integrator* (not OEM) for DC backup; screens cheap (9x EPS) but on **peak earnings rolling over**, ~34% cash conversion, going-concern flag, controlled-company/Weichai extraction, class action → **fairly valued on normalized EPS, not a bargain**; **stance: neutral (cautious) / low** — see [[2026-06-19-psix-deep-dive]]
 - [[FLEX]] — Flex Ltd; diversified contract mfg; **stance: bull**
 - [[VRT]] — Vertiv; only large player covering both power AND cooling; **stance: bull**
 - [[ETN]] — Eaton; Beam Rubin DSX with NVDA; **stance: bull**
@@ -302,6 +302,7 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 
 ## Analyses (`wiki/analyses/`)
 
+- [[2026-06-19-psix-deep-dive]] — **NEW 2026-06-19** — 5-agent forensic work-up of [[PSIX]] (financials/Q1-miss · DC-market/competition · governance/Weichai · valuation/quality-of-earnings · positioning). Result: **broke conviction down.** PSI is an enclosure integrator not a genset OEM (engines ≤1.2MW); margin reset structural + guidance withdrawn; OCF only ~34% of net income (~36x P/FCF); going-concern flag + active class action; controlled-company value extraction; Weichai selling into highs. Scenario prob-weighted ~$38 ≈ price → **fairly valued, not cheap.**
 - [[2026-06-06-buying-the-dip-broader-market]] — **NEW 2026-06-06** — tactical: should you add into the June 5 selloff, and is "the broader market" (SPY/QQQ) the right vehicle? Drawdown-from-peak math (S&P −2.8% vs Nasdaq −5.1% off June 1 record → only Nasdaq hit the wiki's 5% buy-signal threshold); SPY = ~35% the same AI names you already own (not diversification); bull/bear cases; tranche-vs-wait logic; June 10 CPI binary condensed. Research synthesis, not advice.
 - [[2026-05-15-weekly-synthesis]] — first weekly synthesis instance; "The week the supply chain raised its hand — and the bond market raised it higher"; AMAT guide raise + 30y auction above 5%; ~1,300 words; internal draft for Saturday May 17 publication (NEW 2026-05-14)
 

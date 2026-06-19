@@ -4,14 +4,16 @@ ticker: PSIX
 tags: [power, gensets, data-center, backup-power, value, china-controlled, small-cap]
 last_updated: 2026-06-19
 last_full_review: 2026-06-19
-sources: 1
-conviction: low-medium
+sources: 2
+conviction: low
 stance: neutral
 ---
 
 # Power Solutions International (PSIX)
 
-**Stance:** neutral (de-rated value, constructive-lean) · **Conviction:** low-medium · **Time horizon:** 6-18mo cyclical/catalyst · **Verdict:** the cheaper, more interesting of the two — a genuinely de-rated, profitable, cash-generative AI-backup-power play near its 52-week low — but a Q1 miss and Weichai/China control are the real reasons it's cheap. A value buy *if* you accept the governance + earnings-lumpiness.
+**Stance:** neutral (cautious) · **Conviction:** low · **Time horizon:** 6-18mo cyclical/catalyst · **Verdict (DOWNGRADED after 5-agent deep dive 2026-06-19, see [[2026-06-19-psix-deep-dive]]):** *not* the cheap value buy it screens as. The 9x P/E is on **peak earnings already rolling over**, cash conversion is poor (OCF ~34% of net income), PSI's DC role is narrower than the pitch (an **enclosure integrator, not a genset OEM**, with no disclosed DC revenue), and the overhangs are serious (**going-concern flag, controlled-company value extraction, active class action, CEO vacancy**). On normalized earnings it's ~fairly valued (~$33-40). Treat as a **speculative squeeze/mean-reversion trade**, not a value buy.
+
+> **What changed my mind (conviction discipline):** I initially leaned constructive ("the better risk/reward, de-rated value"). The deep dive lowered conviction on hard findings — see the dedicated work-up [[2026-06-19-psix-deep-dive]]. Re-raise triggers: a *disclosed* DC revenue/backlog, a Weichai/officer open-market buy near lows, going-concern cleared, GM stabilizing ≥24% with H2 orders converting.
 
 ## One-line thesis
 Engine/power-systems maker pivoting capacity to **data-center backup generators** (a sold-out AI-power bottleneck), trading at **~9x earnings / 1.3x sales** on $715M revenue and $102M net income after a **−67% drawdown** — but the Q1 2026 profit collapse (−62% YoY) and Weichai majority control are the catch.
@@ -30,7 +32,7 @@ Engine/power-systems maker pivoting capacity to **data-center backup generators*
 | Mix | Power Systems ~79% of sales (DC backup, oil & gas, industrial, transport) | 2026 |
 
 ## What they do
-Designs/builds complete power systems and engines for **stationary + mobile power generation** — standby/prime/demand-response/microgrid — with an explicit pivot to **backup generators for data centers**. Backed since 2017 by **Weichai** (China's largest power-systems conglomerate), which supplies low-cost castings/machining (~+10pp gross margin on core engines) and is the controlling shareholder.
+Power systems and engines for **stationary + mobile power generation** (standby/prime/demand-response/microgrid). **Important correction (deep dive 2026-06-19):** for data centers, PSI is mostly an **enclosure/packaging integrator** — its own engines top out at **~1.2 MW** (below the 2-3.5MW+ DC-backup class), so it packages *third-party* gensets (up to 5MW) into UL enclosures + switchgear; the March 2026 MTL acquisition (metal fabrication) confirms a *packaging*, not engine-leadership, strategy. It is a **niche sub-supplier**, not a Tier-1 DC genset OEM (CAT/Cummins/Generac/Kohler/MTU own 63-72% of that market and the >2MW class). Backed since 2017 by **Weichai** (China's largest power-systems conglomerate) — low-cost engines/castings *and* the controlling shareholder (>50% voting).
 
 ## Bull case
 - **Cheap + profitable + de-rated.** ~9x earnings, 1.3x sales, $102M TTM net income, −67% off high near the 52-week low — a real value setup, not a story stock.
@@ -44,6 +46,22 @@ Designs/builds complete power systems and engines for **stationary + mobile powe
 - **🟠 Weichai / China control + governance.** Majority-controlled, low float, China-ownership optics (a US-data-center-power supplier owned by a Chinese conglomerate is a procurement/political risk), and a **past financial-restatement history** that has historically kept institutions away.
 - **🟠 Order lumpiness.** Project/order-driven revenue, not recurring — quarters are volatile; one delayed DC order swings the print.
 - **🟠 Oil & gas drag** — a meaningful chunk of Power Systems is energy-sector, currently soft.
+
+## Deep-dive additions (2026-06-19, 5-agent — see [[2026-06-19-psix-deep-dive]])
+- **🔴 Margin reset is structural, ~2 quarters old + guidance withdrawn.** GM 29.7% (Q1'25) → 21.9% (Q4'25) → 22.9% (Q1'26); Wisconsin ramp costs "expected to persist"; O&G soft *despite high oil prices*. Management **pulled full-year guidance**; Q2 guided ~flat. The 9x is on peak EPS rolling over.
+- **🔴 Quality of earnings is poor.** OCF only **~34% of net income** (21% FY25), ~$67M working-capital drag → **~36x P/FCF, ~40x EV/FCF.** Not a value stock on cash.
+- **🔴 Going-concern flag (BDO, March 2026)** despite record results — solvency narrative leans on continued Weichai support. Plus an **active securities class action** (May'25-Mar'26) on the exact DC-capacity/cost claims, and **CEO resigned May 2026** (interim CFO).
+- **🟠 Governance: formal "controlled company"** — Weichai ~46% economic / **>50% voting**, only 3/7 independent directors; value-extracting related-party terms (**1.75% revenue royalty ~$12M/yr, ~$290-309M mandatory purchase commitment, controller-as-lender**); squeeze-out risk on a thin ~8.5M float with no majority-of-minority protection.
+- **🟠 Positioning is cautionary:** Weichai **sold** into the highs ($80-95); **no insider buying near lows**; 20.7% short float (squeeze fuel *and* bear conviction); June bounce on below-average volume; below 200-DMA.
+- **DC role unverifiable:** no disclosed DC revenue, named customer, or backlog — the bull case can't be falsified on current disclosure.
+
+## Scenario valuation (normalized fwd EPS ~$2.50-3.00 × 12-14x)
+| Scenario | Fwd EPS | Mult | Fair value | vs $40.31 |
+|---|---|---|---|---|
+| Bear | $1.75 | 9x | ~$16 | −61% |
+| Base | $2.75 | 13x | ~$36 | −11% |
+| Bull (DC re-accelerates) | $4.25 | 16x | ~$68 | +69% |
+Prob-weighted (30/45/25) ≈ **~$38 ≈ current price** → fairly valued, upside hinges on the undisclosed DC ramp.
 
 ## Key questions / what to watch
 1. **Do data-center backup orders re-accelerate** (the whole thesis) — or stay lumpy? Watch DC mix + book-to-bill.
