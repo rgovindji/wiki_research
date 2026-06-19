@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-19] note | Morning brief: A Holiday, a Peace Signing, and a Witching That Already Happened
+
+Before the Bell sent. Covered: US markets closed for Juneteenth (NYSE/Nasdaq dark, reopen Mon June 22) — holiday note in voice; triple-witching was pulled to Thursday June 18, so our "June 19 close" calls (no-reclaim-7510, thin-gamma-wide-range, call-wall-caps-record, etc.) roll to Monday's close; thin-gamma-wide-range now effectively dead (its window had June 18 calm + a holiday). Iran signing today in Geneva, oil ~$75 pre-paid. Desk flat (no session — not logged to yolo.json). No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-18] daily | Relief bounce stalls at 7,510; chip book vertical; Apple-Intel tweet
 
 Headless after-the-bell run. **Market**: relief rally off the hawkish-Fed flush — **S&P +1.08% to 7,500.58 · Nasdaq +1.91% to 26,517.93 · Dow +0.14% to 51,564.70**; VIX −11% to 16.40. SPX high 7,511.07 **tagged the broken 7,510 floor, got rejected, closed back under it** pinned to the 7,500 call wall in a calm 0.57% range. Within-tech rotation (2nd straight day): AI-hardware/semis vertical — [[ALAB]] +11.3% $417.07, [[MU]] +8.7% $1,133.99 (new high), [[MRVL]] +7.3% $310.58, [[TSM]] +6.9% $462.12, [[AVGO]] +4.7% $411.35, [[VRT]] +4.9% $333.05 — while mega-cap growth lagged ([[NVDA]] +2.9%, [[GOOGL]] +1.2%, AAPL red) and [[DELL]] reversed −2.3% (Silver Lake supply overhang). 10Y 4.45%, WTI $75.52 (5d −12).
