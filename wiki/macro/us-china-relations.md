@@ -1,9 +1,9 @@
 ---
 type: macro
 tags: [macro, geopolitics, us-china, tariffs, export-controls, taiwan, rare-earths]
-last_updated: 2026-05-17
+last_updated: 2026-06-19
 last_full_review: 2026-05-12
-sources: 2
+sources: 3
 ---
 
 # US-China Relations
@@ -37,7 +37,7 @@ Most of the wiki's AI-tech-heavy positioning is on names that **either depend on
 - **NVDA H200 to China:** APPROVED with 25% surcharge + per-deal inter-agency review (since Dec 2025 / Jan 2026)
 - **NVDA Blackwell, Rubin to China:** RESTRICTED
 - **AMD MI300 to China:** RESTRICTED
-- **ASML EUV to China:** RESTRICTED (this is the chokepoint Washington is least likely to concede)
+- **ASML EUV to China:** RESTRICTED (this is the chokepoint Washington is least likely to concede). **NEW 2026-06-19** ([[2026-06-19-semiwiki-asml-china-wsts-tsmc-troll-intel-pdf]]): Commerce Secretary Lutnick privately told ASML he believes an EUV machine may have reached China in breach of controls and that officials have evidence ASML is "not acting in good faith" — but US officials **declined to provide the evidence** and would not confirm seeing a tool in China; ASML denies ever shipping an EUV system there. An unproven enforcement-pressure escalation against the single most-guarded chokepoint — watch for a formal probe or Dutch/EU license action (would hit [[ASML]] China-service revenue + multiple), vs the story fading as another "unfounded rumor."
 - **ASML DUV to China:** Partially restricted; pre-2024 already-installed systems grandfathered
 - **Status:** China has been holding out on buying H200s — wants Blackwell access as negotiating lever
 - **Nvidia preparing 82,000 H200 GPU shipments** to China (March 2026 announcement)

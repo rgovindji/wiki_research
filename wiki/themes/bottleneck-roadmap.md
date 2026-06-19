@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
-last_updated: 2026-06-16
+last_updated: 2026-06-19
 last_full_review: 2026-05-09
-sources: 8
+sources: 9
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -96,6 +96,10 @@ Per Horace He (Meta PyTorch Compilers) — see [[2026-05-16-horace-he-ml-systems
 **Which means:** the [[MU]] HBM thesis isn't just a 2025-2026 cycle — *every* compute generation runs into the same data-shuffling wall, which is why HBM density and bandwidth keep scaling alongside FLOPs. The structural reason memory is a perennial bottleneck (not a one-cycle event) is the architecture of GPUs themselves. HBM4 → HBM4E → HBM5 cadence isn't optional; without it, the next NVDA chip generation suffocates on its own matmul throughput.
 
 **Cross-cycle note for robotics:** Sergey Levine ([[2026-05-16-sergey-levine-physical-intelligence]]) makes the same memory point in a different domain — π0 has only 1 second of visual context vs. human "hours to decades." Scaling robot context length requires the same memory hierarchy improvements that AI training does. Same vendors, same demand vector.
+
+## Sub-bottleneck: advanced-packaging signoff is getting harder as packages get bigger (NEW 2026-06-19)
+
+Per [[2026-06-19-semiwiki-asml-china-wsts-tsmc-troll-intel-pdf]] (the "Warpage-to-Impedance Causality Matrix," Dr. Moh Kolbehdari): in large AI packages — chiplets, HBM stacks, glass substrates, bridges, interposers, CoWoS/CoPoS, 2.5D/3D — substrate **warpage of just 50–100µm is no longer a purely mechanical pass/fail item**. That deformation perturbs impedance, return-current continuity, SI/PI margin, PDN resonance and thermal-current behavior — so mechanical stress "behaves like electrical noise," and signoff has to couple mechanical + electrical + thermal + reliability rather than clear each in its own silo. **Which means**: as packages scale up (the whole point of [[advanced-packaging|advanced packaging]] when transistor shrink stalls), the *integration/signoff* problem compounds faster than the part count — a quiet moat-deepener for incumbents who already own the data and the flow ([[TSM]] CoWoS, [[AMKR]], the EDA + test layer) and a real barrier for would-be second sources trying to package marquee AI silicon. It rhymes with the [[INTC]] yield story (June 19): at the bleeding edge, both *yield* and *packaging signoff* now need specialist analytics that favor whoever has the most production data.
 
 ## Copper: the parallel commodity bottleneck (NEW 2026-05-16)
 

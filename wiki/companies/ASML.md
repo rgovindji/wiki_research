@@ -2,9 +2,9 @@
 type: company
 ticker: ASML
 tags: [ai, semis, equipment, international, netherlands]
-last_updated: 2026-05-09
+last_updated: 2026-06-19
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 conviction: high
 stance: bull
 ---
@@ -55,6 +55,7 @@ Monopoly supplier of EUV lithography — and per the May 2026 [[2026-05-09-dwark
 8. **Carl Zeiss + Cymer ramp signals** — supply-chain bottleneck of the bottleneck
 
 ## Recent developments
+- **2026-06-19 — US Commerce Secretary Lutnick privately tells ASML he believes an EUV tool reached China; ASML flatly denies** ([[2026-06-19-semiwiki-asml-china-wsts-tsmc-troll-intel-pdf]]). In recent private meetings Howard Lutnick raised concern to ASML's senior leaders that one of its top-of-the-line EUV machines "might have made its way into China" in violation of US-led controls; multiple senior administration officials say they have evidence ASML "is not acting in good faith" (e.g. exports to China of gear *related to* EUV tools) — but **declined Bloomberg's requests for that evidence and would not say whether they had actually seen an EUV system in China**. ASML's denial is categorical and physically grounded: EUV tools are "the size of a school bus," made in tiny quantities, and require constant on-site ASML upkeep, so one could not quietly run in China; it "has never shipped an EUV machine to China" and enforces controls strictly. The Dutch foreign ministry says it enforces EUV restrictions "very strictly." **Which means**: a new, *unproven* national-security overhang on Europe's most valuable company — the kind of headline that, if it escalates into a formal probe, could pressure the China DUV-service revenue (the highest-margin segment, already the MATCH-Act risk in the bear case) and the stock's multiple, independent of fundamentals. But note the asymmetry: US officials made the claim and then withheld the evidence, and the chokepoint thesis ([[bottleneck-roadmap]]) doesn't change either way. Treat as a watch-item/tail-risk, not a thesis mover. Stance held **bull / high (multi-year)**. Watch-trigger: a formal investigation, a Dutch/EU export-license action, or named evidence — vs the story fading as one more "unfounded rumor" ASML says it has refuted before.
 - **2026-05-17 — ASML Q1 2026 gross margin only 53%** (per TSMC Q1 2026 earnings call thread, [[2026-05-17-multi-agent-research-batch]] context). **For comparison: TSMC Q1 2026 GM = 66.2% (operating margin 58.1%, NPM 50.5%); NVIDIA GM ~75%**. **Pricing-power hierarchy is the inverse of monopoly position**: NVDA > TSMC > ASML. ASML, the sole EUV supplier, has the **lowest gross margin among the three quasi-monopolies that share the AI compute supply chain**. **Which means**: the "generous monopolist" thesis is empirically confirmed Q1 2026. CC Wei doesn't complain about ASML EUV ASPs anymore; NVDA's Jensen Huang publicly told TSMC they should *raise* ASPs (Forum: "JH during the last year orso publicly said that because of the high value of TSMC's wafers, they should increase their ASPs"). **The single biggest 2028-2030 bull lever for ASML remains pricing discipline** — but Q1 evidence is that ASML still hasn't taken price proportional to its position.
 - **2026-05-17 — MATCH Act enters bear case** (see Bear case section above). New US legislation specifically targeting ASML + Tokyo Electron equipment exports + service licenses to China. House Foreign Affairs committee advanced April 22; bipartisan momentum; China preemptive countermeasures. Per [[2026-05-17-semiwiki-forum-sweep-3]]. **Stance unchanged (bull / high multi-year) but with explicit downside-tail acknowledged**: passage of MATCH would compress ASML's China service revenue (~highest-margin segment).
 - **2026-05-09** — Conviction upgraded **medium → high** (multi-year horizon) based on [[2026-05-09-dwarkesh-dylan-semianalysis]] framing of ASML as THE single binding constraint of all of AI by 2028-2030. Near-term medium retained (2026 China pull-forward digestion).
@@ -74,3 +75,4 @@ Monopoly supplier of EUV lithography — and per the May 2026 [[2026-05-09-dwark
 
 ## Sources
 1. [[2026-05-09-dwarkesh-dylan-semianalysis]] — primary source for the EUV bottleneck math and the "generous monopolist" framing
+2. [[2026-06-19-semiwiki-asml-china-wsts-tsmc-troll-intel-pdf]] — Lutnick EUV-in-China allegation + ASML denial (added 2026-06-19)

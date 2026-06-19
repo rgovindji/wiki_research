@@ -9,6 +9,22 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-19] daily | Juneteenth holiday — markets closed; substantive SemiWiki sweep ingested off-tape
+
+**US markets CLOSED for Juneteenth** (NYSE/Nasdaq dark, reopen Mon June 22). Per headless rules: parts 2-4 SKIPPED (no market_state snapshot, no letter, no portfolio price update — no closes exist; the "to June 19 close" prediction calls roll to Monday's close, unresolved — confirmed in the morning brief). No predictions resolved, none opened; YOLO desk flat (no session). Part 1 wiki sweep run because the SemiWiki scan returned a genuinely meaty day.
+
+- Source: [[2026-06-19-semiwiki-asml-china-wsts-tsmc-troll-intel-pdf]] (SemiWiki incremental scan, 6 new items, all captured per the no-item-ignored / diamond-in-the-rough instruction):
+  1. **Lutnick alleges an [[ASML]] EUV tool reached China; ASML categorically denies; US officials withheld the evidence** → [[ASML]] (1→2, Recent dev + bear-tail note), [[us-china-relations]] (2→3, export-controls section). Unproven national-security overhang; stance held bull/high.
+  2. **WSTS Spring forecast: 2026 semis $1.51T (+90%), Memory ~+250% y/y to >$800B, 2027 ~$1.9T** → [[MU]] (11→12), [[semiconductors]] (3→4), [[ai-bubble-debate]] (22→23, new June 19 section). Official confirmation of a narrow memory-ASP-led cycle — bullish MU pricing leg, hardest "ASP-not-unit" bear data yet.
+  3. **USITC opens a patent investigation into [[TSM]]** (13→14) on a complaint from two Irish IPValue/Vector-Capital shells TIPO calls "patent trolls"; ALJ preliminary ruling this month, possible ITC decision Oct. Low-prob import-ban tail.
+  4. **Intel × PDF Solutions (PDFS) yield partnership on 18A/18A-P** → [[INTC]] (8→9). The unglamorous execution leg that gates foundry external revenue; on-cadence positive, stance held neutral/low.
+  5. **"Warpage-to-Impedance" advanced-packaging signoff difficulty** → [[bottleneck-roadmap]] (8→9, new sub-bottleneck section). Packaging-moat deepener for TSMC CoWoS / [[AMKR]] / EDA-test layer.
+  6. **Tensordyne LNS inference chip** (claims 17× tokens/W vs GB300, simulated only) — logged as a skeptical inference-challenger flag in [[ai-bubble-debate]].
+- Wiki touched: [[overview]] (June 19 holiday lead), [[ASML]], [[us-china-relations]], [[MU]], [[semiconductors]], [[ai-bubble-debate]], [[TSM]], [[INTC]], [[bottleneck-roadmap]], [[index]].
+- **Stance changes flagged for review: none.** No newsletter, no predictions.json/yolo.json changes, no playbook change (holiday).
+
+---
+
 ## [2026-06-19] query | PSIX + MRAM company pages (user weighing both as buys)
 
 User wants to invest in both if they're good buys. Built [[PSIX]] + [[MRAM]] with honest, differentiated verdicts (conviction discipline — didn't rubber-stamp both):

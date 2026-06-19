@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-18
+last_updated: 2026-06-19
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,18 @@ sources: 0
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 19, 2026 — Markets closed (Juneteenth); a substantive semis-research day off-tape
+
+US markets dark for Juneteenth (NYSE/Nasdaq closed, reopen Monday June 22). No cash session, no letter. Triple-witching was pulled forward to Thursday June 18, so the open newsletter calls keyed "to the June 19 close" now resolve at Monday's close. Off-tape, the SemiWiki sweep returned a genuinely meaty research day ([[2026-06-19-semiwiki-asml-china-wsts-tsmc-troll-intel-pdf]]):
+
+- **[[ASML]] (+[[us-china-relations]]):** Commerce Sec. Lutnick privately told ASML he believes an **EUV machine may have reached China** in breach of controls — but US officials **withheld the evidence**, and ASML categorically denies ever shipping one. An unproven national-security overhang on the chokepoint, not a thesis mover; watch for a formal probe.
+- **[[MU]] / [[semiconductors]] / [[ai-bubble-debate]]:** **WSTS Spring forecast** — 2026 semis $1.51T (+90%), with **Memory ~+250% y/y to >$800B** (the majority of the year's growth); 2027 ~$1.9T. The official scorekeeper's confirmation that this is a narrow, memory-ASP-led cycle — bullish for MU's pricing leg, and the hardest data yet for the "ASP-driven, not unit-driven" bear.
+- **[[TSM]]:** **USITC opens a patent investigation** on a complaint from two Irish IPValue/Vector-Capital shells that Taiwan's IP office calls "patent trolls"; ALJ preliminary ruling this month, possible ITC decision October. Low-probability import-ban tail, base case a settlement nuisance.
+- **[[INTC]]:** detail on the **Intel × PDF Solutions** yield partnership for 18A/18A-P — the unglamorous execution leg that actually gates foundry external revenue. On-cadence positive; stance held neutral/low.
+- **[[bottleneck-roadmap]]:** advanced-packaging *signoff* is getting harder as packages scale (warpage now couples into impedance/SI-PI) — a quiet moat-deepener for TSMC CoWoS / [[AMKR]] / the EDA-test layer.
+
+**No stance/conviction changes.** The Iran formal signing was scheduled in Switzerland today; oil (~$75) has long pre-paid it.
 
 ## June 18, 2026 — The relief bounce stalls at the broken floor while the AI-hardware book goes vertical; Intel rips on an Apple deal
 
