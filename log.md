@@ -9,6 +9,15 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-19] query | PSIX + MRAM company pages (user weighing both as buys)
+
+User wants to invest in both if they're good buys. Built [[PSIX]] + [[MRAM]] with honest, differentiated verdicts (conviction discipline — didn't rubber-stamp both):
+- **[[PSIX]]** (Power Solutions Intl) — **the better risk/reward.** DC-backup gensets; $40.31, **9.1x EPS / 1.3x sales, $102M TTM net income, −67% off high near 52w low**. Real AI-power tailwind, but **Q1 2026 profit −62% miss** (margin compression, lumpy DC orders, oil&gas softness, Wisconsin ramp) + **Weichai/China control + low float + past-restatement history**. De-rated value buy *if* you accept governance + earnings-lumpiness; cycle-peak-P/E risk flagged. Stance neutral (constructive-lean) / low-med.
+- **[[MRAM]]** (Everspin) — **richer, more speculative.** Leading MRAM/persistent-memory; $27.11, **~11x sales / ~2,238x earnings on ~16% growth**, $57M rev, ran ~5x off lows (−47% off high). Real domestic-defense moat ($40M DoD subcontract, big vs $57M rev) + small IBM-FlashCore DC optionality, but micro-niche (not where HBM dollars flow) and priced for the optionality. Stance neutral (speculative) / low.
+- Honest bottom line to user: PSIX is the cheaper/more compelling value buy (with caveats); MRAM is pricey for its growth — an optionality/momentum bet, not an obvious buy. Touched: [[PSIX]], [[MRAM]] (new), [[index]] (Memory + Power + recent ingests), [[log]].
+
+---
+
 ## [2026-06-19] query | KEEL "10x to $30B" powered-land thesis → new page (stress-tested, not validated)
 
 User shared a bull pitch for [[KEEL]] (Keel Infrastructure): 2.2 GW power pipeline (PA/WA/Quebec); sign 3 leases (Panther Creek 350MW, Sharon 110MW, Moses Lake 18MW) → ~$1B near-term ARR / $4B full → $30B at 6-7× sales = "10x." Researched + built [[KEEL]] (neutral/speculative, low conviction).
