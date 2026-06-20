@@ -62,8 +62,7 @@ What practitioners actually ship reveals demand/ROI before it shows in financial
 ## Cross-cutting passes (run alongside the tiers)
 1. **Conference-series enumeration** — Stanford "Economics of AI", GTC, Hot Chips, Latent Space LIVE, a16z/Sequoia summits host the Tier-1/2/3 talks that name-search misses.
 2. **Citation-chase** — when a new transcript names a person/company/chip, queue them next sweep.
-3. **Channel `/videos` enumeration** — for the host channels above; YouTube RSS feed
-   (`https://www.youtube.com/feeds/videos.xml?channel_id=…`) is the most reliable ID source if HTML is JS-only.
+3. **Channel RSS enumeration (most reliable ID source)** — use `scripts/yt_rss.sh <channel_id|@handle> [DAYS]` or `scripts/yt_rss.sh --roster 45`. RSS (`youtube.com/feeds/videos.xml?channel_id=…`) returns the latest ~15 uploads with dates — far more reliable than WebSearch for Tier-3/6. **Handle→ID auto-resolve is flaky → hardcode channel_ids in the script roster.** Confirmed IDs: Latent Space `UCxBcwypKK-W3GHd_RZ9FZrQ`, Damodaran `UCLvnJL8htRR1T9cbSccaoVw`. TODO: resolve + cache channel_ids for Dwarkesh, BG2, No Priors, Interconnects, SemiAnalysis (the daily sweep should resolve once and append to the roster).
 4. **Macro/power** — nuclear/SMR/grid + Fed/rates when they move the discount rate.
 
 ## Relevance filter (transcribe only if it clears the bar)
