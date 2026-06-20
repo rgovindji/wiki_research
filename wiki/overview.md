@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-19
+last_updated: 2026-06-20
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,16 @@ sources: 0
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 20, 2026 — Off-tape (Saturday); two AI-thesis transcripts → a new lens on the cycle
+
+Two video-essay/interview ingests ([[2026-06-20-dwarkesh-sample-efficiency]] + [[2026-06-20-katti-stanford-ai-supercycle]], the latter from OpenAI's head of industrial compute — *bias-flagged*) seeded a new theme, **[[inference-economics]]** — the unit economics of *serving* AI, now the better lens than raw capex for "who keeps the money."
+
+- **Inference is already the majority of compute, → 80%+** (Katti). RL post-training + synthetic data are *inference* workloads, and "we've run out of real-world data." **Which means** the demand bid under [[NVDA]] / [[CRWV]] / [[NBIS]] / memory survives even if *pretraining* scaling plateaus — the cycle is no longer a training-capex story. (Reinforces [[ai-capex-cycle]].)
+- **The moat contradiction — surface, don't resolve (→ [[ai-bubble-debate]]):** the *same* open-weight lag, read oppositely. Dwarkesh/Epoch: ~4 months → moat *thin/perishable* (data, not architecture, drives progress and distills through the API). Katti: "a 6-month lead is *enormous*." Both can hold — open-weight takes the routed-away 80-90%, frontier keeps the high-value 10-20%. The bite is on **frontier-lab pricing power / valuations** ($900B+ Anthropic, OpenAI IPO), not on NVDA/infra.
+- **Second high-credibility voice confirms [[ASML]] as "the single choke point of the whole supply chain"** (Katti, after Dylan Patel) → [[bottleneck-roadmap]]. Plus: power quantified (1GW≈$70B; ~100GW US hyperscaler buildout = double-digit % of the grid → gas+nuclear); heterogeneous compute (Cerebras in prod, CPUs back with agents); TSMC wafer-allocation structurally guarantees multi-vendor silicon (custom silicon coexists with NVDA); memory *architecture* called the medium/long-term frontier (→ [[MU]]).
+
+**No stance/conviction changes.** Filed as evidence/lens, not calls.
 
 ## June 19, 2026 — Markets closed (Juneteenth); a substantive semis-research day off-tape
 

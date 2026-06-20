@@ -295,7 +295,7 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 
 ### NVDA direct investments + AI cloud (cloud / telecom / EDA)
 - [[CRWV]] — CoreWeave (neocloud); NVDA $250M IPO anchor; Meta $35B; **stance: bull**
-- [[NBIS]] — Nebius (neocloud); NVDA $2B; Meta $27B; **stance: bull**
+- [[NBIS]] — Nebius (neocloud); NVDA $2B; Meta $27B; operational thesis intact but risk/reward compressed at ~$287 (consensus PT ~$242 *below* spot, ~62-83x sales, profit is a non-cash ClickHouse mark); **stance: bull · conviction medium** (⬇ from high 2026-06-20)
 - [[ORCL]] — Oracle; OpenAI compute partner; multi-year deals; **stance: bull**
 - [[NOK]] — Nokia; NVDA $1B for AI-RAN/6G; **stance: bull (low conviction)**
 - [[SNPS]] — Synopsys; NVDA $2B for AI-EDA; **stance: bull**
