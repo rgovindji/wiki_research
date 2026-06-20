@@ -2,7 +2,7 @@
 date: 2026-06-20
 type: podcast
 publisher: Dwarkesh Patel (dwarkesh.com)
-url: https://www.youtube.com/watch?v=4k53z3Ysjg0
+url: unverified — text supplied by curator; the link given (youtube 4k53z3Ysjg0) actually resolves to the Katti/Stanford talk, not this essay. Find canonical dwarkesh.com URL.
 raw_path: raw/podcasts/2026-06-20-dwarkesh-sample-efficiency.txt
 touches: [inference-economics, ai-bubble-debate, ai-capex-cycle, MISTRAL]
 ---
