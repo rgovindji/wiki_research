@@ -3,7 +3,7 @@ type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
 last_updated: 2026-06-20
 last_full_review: 2026-05-09
-sources: 10
+sources: 12
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -101,6 +101,16 @@ Per Horace He (Meta PyTorch Compilers) — see [[2026-05-16-horace-he-ml-systems
 ## Sub-bottleneck: advanced-packaging signoff is getting harder as packages get bigger (NEW 2026-06-19)
 
 Per [[2026-06-19-semiwiki-asml-china-wsts-tsmc-troll-intel-pdf]] (the "Warpage-to-Impedance Causality Matrix," Dr. Moh Kolbehdari): in large AI packages — chiplets, HBM stacks, glass substrates, bridges, interposers, CoWoS/CoPoS, 2.5D/3D — substrate **warpage of just 50–100µm is no longer a purely mechanical pass/fail item**. That deformation perturbs impedance, return-current continuity, SI/PI margin, PDN resonance and thermal-current behavior — so mechanical stress "behaves like electrical noise," and signoff has to couple mechanical + electrical + thermal + reliability rather than clear each in its own silo. **Which means**: as packages scale up (the whole point of [[advanced-packaging|advanced packaging]] when transistor shrink stalls), the *integration/signoff* problem compounds faster than the part count — a quiet moat-deepener for incumbents who already own the data and the flow ([[TSM]] CoWoS, [[AMKR]], the EDA + test layer) and a real barrier for would-be second sources trying to package marquee AI silicon. It rhymes with the [[INTC]] yield story (June 19): at the bleeding edge, both *yield* and *packaging signoff* now need specialist analytics that favor whoever has the most production data.
+
+## Sub-bottleneck: CPUs + RL-environment compute (NEW 2026-06-20)
+
+Per [[2026-06-20-dylan-patel-daytona-cpu-bottleneck]] (Dylan Patel × Daytona Compute Conference): **server CPUs are the third near-term binding constraint of the agentic era** — after GPUs (2023-24) and DRAM/HBM (2025-26). This *extends* the "2025-2026 x86 CPUs (parallel constraint)" row in the table above with a fresh driver and named, dated catalysts. The sequence now reads: GPU (23-24) → memory/HBM (25-26) → **CPU (26)** → cleanroom/fabs (27) → EUV/ASML (28-30).
+
+- **Intel + AMD both "fully sold out," price-increase notices issued, "not even competing with each other anymore."** "Over the last 6 months the entire cloud market ran out of CPUs"; Amazon installing **3x YoY** CPU servers. Server-CPU margins (historically thin) "creeping up." [[2026-06-20-nopriors-127-dylan-patel]] adds the GitHub-instability anecdote (MSFT sold spare CPUs to OpenAI/Anthropic).
+- **The driver is RL + agents, not traditional compute.** Two forces: (1) **RL-environment verifier loops** getting tighter (a single Daytona customer ran 1M vCPU workloads in 6 hours; physics/biology-sim verifiers ahead); (2) **long-horizon agents** (Codex working 6-7hr) hammering CPU for tool calls, sandboxes, scraping, DB calls. The GPU:CPU ratio is collapsing — "warm-pool" CPUs kept hot so expensive GPUs never idle waiting on a verifier = structurally more CPU per GPU. **Which means:** the agentic-task unit cost now has a rising vCPU line (read-through to [[inference-economics]]).
+- **CPU silicon is fragmenting (gold-rush "even broken pickaxes sell").** Beneficiaries: [[AMD]] (EPYC sold out, server-share gains), [[INTC]] (Xeon sold out + foundry-of-last-resort for vendors kicked off TSMC N3 — but Dylan *tempers* the bull: "not saved," short-term/cyclical not structural), **[[ARM]] launching its own standalone CPU "in a few weeks" that Meta + Cloudflare will adopt** (IP-licensing → selling silicon directly — a business-model shift), [[AMZN]] Graviton (5-6 gens, +3x install), [[NVDA]] Vera (Grace successor, late-2026/early-2027). **Catalyst to watch: ARM standalone-CPU launch + Meta/Cloudflare confirmation (~mid-2026).**
+- **NAND catching up to DRAM (update, not contradiction).** Dylan: DRAM "+4x last year and still rising"; **SSD/NAND now +3-4x with "another ~60% to go."** This is sharper NAND inflation than the 2026-05-09 Dwarkesh read (NAND rising *less* than DRAM); NAND lagged but is now catching up — bullish near-term [[SNDK]]/[[WDC]], reinforces the memory row above and the [[MU]] thesis.
+- **TSMC node-allocation squeeze (cross-ref):** all AI accelerators are on N3 → TSMC telling Apple/Qualcomm/MediaTek to "get off 3nm, move to 2nm faster," pushing mobile/PC vendors toward Intel (non-AI-competing foundry). NVDA's Groq acquisition partly = Groq-on-Samsung (no TSMC N3 capacity). Reinforces the [[AAPL]]-deprioritization flag.
 
 ## Copper: the parallel commodity bottleneck (NEW 2026-05-16)
 
@@ -218,3 +228,5 @@ The previous version of this roadmap covered only the **physical** bottlenecks (
 7. [[2026-05-15-semiwiki-tsmc-tool-orders-capex]] — Daniel Nenni / SemiWiki: TSMC Q1 2026 board appropriations $31.3B with record $21B Advanced Node equipment line; TTM equipment orders forcing upward CapEx guide revision (added 2026-05-17)
 8. [[2026-05-17-semiwiki-cpu-shortage-intel-18a]] — AI-driven x86 CPU shortage row added; INTC Q1 10-Q quoted; AMD vs Intel relative growth (added 2026-05-17)
 9. [[2026-06-20-katti-stanford-ai-supercycle]] — OpenAI compute chief confirms ASML as "the single choke point of the whole supply chain"; memory architecture as the medium/long-term frontier (added 2026-06-20)
+10. [[2026-06-20-dylan-patel-daytona-cpu-bottleneck]] — NEW server-CPU bottleneck (RL-environment verifiers + long-horizon agents); Intel/AMD sold out; ARM standalone CPU (Meta/Cloudflare); NAND catching DRAM; TSMC N3 squeeze (added 2026-06-20)
+11. [[2026-06-20-nopriors-127-dylan-patel]] — multi-bottleneck confirmation; GitHub-instability/CPU-reallocation anecdote; GE turbine 4-8yr backlog; labor/electrician constraint (added 2026-06-20)

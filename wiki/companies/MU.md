@@ -4,7 +4,7 @@ ticker: MU
 tags: [ai, semis, memory, hbm]
 last_updated: 2026-06-20
 last_full_review: 2026-05-09
-sources: 13
+sources: 14
 conviction: high
 stance: bull
 ---
@@ -49,6 +49,7 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 - **+120% YTD already.** "Undervalued" relative to what? Stock has more than doubled in less than 5 months. **Which means:** at some point "undervalued" becomes "you're chasing." The base rate for a stock that has doubled in 5 months going up another 50% is poor regardless of fundamentals.
 - **High YTD beta** — significant gains already priced; near-term consolidation risk is real.
 - **Damodaran calls a near-term top on the chip sector (NEW 2026-05-16 per [[2026-05-16-damodaran-profg-markets]]).** Aswath Damodaran on Prof G Markets cited [[MU]] specifically as **+160% YTD** (the wiki had +120% — verify which is current) and said: *"The bulk of the run is done… right now it's a question of consolidation in this market and a cleaning up. There is going to be a correction in some of those companies because we've run up too much too quickly."* Damodaran noted the chip sector is now **17% of S&P 500 (vs. 3% a decade ago) and up 60% in the last 2 months.** **Discount appropriately:** Damodaran is a long-horizon valuation expert, not a near-term tactician, and admits he was lucky on Intel. But this is the cleanest expert call-out the wiki has on near-term chip-sector correction risk. Treat as a **position-sizing prompt**, not a stance-change prompt: don't add aggressively at current levels; if MU pulls back 20-30%, the long-term thesis remains intact and Damodaran's read was right; if it grinds higher into Q3 2026, his read was wrong. Sizing discipline matters more than directional conviction at this price point.
+- **Contradicting evidence (2026-06-20): a Groq insider argues memory gets commoditized/"solved" *again*** ([[2026-06-20-t2-jonathan-ross-groq-inference]] — *Jonathan Ross, Groq CEO; an interested party, also an active short-seller*). Ross's "bottlenecks always get solved — the tall poppy gets chopped" framework explicitly includes **memory**: he bets today's #1 AI bottleneck gets solved like every prior one, via more fabs + algorithmic compression (cites DeepSeek V4's ~90% KV-cache cut as exactly the kind of effort expensive memory forces). **Which means:** a direct counter to the HBM/DRAM-scarcity bull that underpins MU — surfaced, *not resolved*. Note the conflict cuts both ways: Groq's SRAM-heavy LPU sidesteps HBM (so "memory gets solved" talks his book), yet he competes with the very supercycle the wiki is long. This sharpens the durable-franchise-vs-cyclical-rent fork already on the page (Ross is a vote for "cyclical rent that compresses"). **Stance/conviction unchanged at bull/high** — logged as a flagged counter-thesis for the curator, not a stance change. Falsifier to watch: any sign HBM/DRAM tightness eases *before* the 2028 new-fab supply wave.
 
 ## The right framing for MU
 
@@ -106,6 +107,7 @@ Pure-play memory leveraged to the AI HBM supercycle — preferred [[NVDA]] HBM s
 8. [[2026-05-26-micron-1T-ubs-1625-pt]] — **MU crosses $1T mcap May 26; UBS PT $535→$1,625; structural-vs-cyclical reframing; hyperscaler forward-funded capacity signal** (added 2026-05-27)
 9. [[2026-05-27-daily-iran-hbm-cbrs-meta]] — Samsung HBM4 qualified by NVDA + AMD; supply begins June 2026; logic die prices +40-50% (added 2026-05-27)
 10. [[2026-06-01-googl-80B-equity-raise-berkshire]] — GOOGL $80B equity raise + Berkshire $10B placement (added 2026-06-01)
+11. [[2026-06-20-t2-jonathan-ross-groq-inference]] — Contradicting evidence: Groq CEO argues memory gets commoditized/"solved" again (counter to HBM-scarcity bull) (added 2026-06-20; bias-flagged: interested party)
 
 ## Recent developments
 

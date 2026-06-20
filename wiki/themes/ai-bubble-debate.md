@@ -3,7 +3,7 @@ type: theme
 tags: [ai, bubble, risk, debate]
 last_updated: 2026-06-20
 last_full_review: 2026-05-09
-sources: 25
+sources: 28
 ---
 
 # AI Bubble Debate
@@ -21,6 +21,25 @@ Two well-credentialed sources read the *identical* open-weight lag in opposite d
 **Which means:** both can be true at once — open-weight is *good enough* for the 80-90% of routed tasks (Katti concedes "we don't see that as an issue") while the frontier keeps the high-value 10-20%. The bear bite isn't a demand claim, it's a *pricing-power* claim: if the routed-away share keeps rising, closed-lab revenue *quality* compresses even as total compute demand rises. This is the [[market-concentration]] / [[valuation-environment]] risk to **frontier-lab valuations** ($900B+ Anthropic, OpenAI IPO), not to [[NVDA]]/infra. Tracks the same direction as bear-trigger #9 (Chinese open-weights crossing agentic-coding thresholds). Full unit-economics treatment in [[inference-economics]].
 
 **Plus a sharp scaling rebuttal worth keeping (Dwarkesh):** humans are **1,000-1,000,000× more sample-efficient** than LLMs, and per the **Chinchilla** equations the parameter and data loss-terms add *independently* — so even **infinite parameters cut required data by only ~10×.** "Just make the model bigger" therefore *cannot* deliver cheap, human-like learning; humans are "on a different scaling curve." **Which means:** the labs' real escape hatch for out-of-distribution work is the recursive one — automate AI research first, then have the automated researchers solve sample efficiency (see the recursion entry in [[ai-capex-cycle]]). That unproven recursive step is the load-bearing assumption under aggressive AGI timelines — a clean bear-on-timelines flag, not a thesis flip. (One analyst's framework; "different scaling curve" is a hypothesis, not a result.)
+
+## June 20, 2026 — The macro bull/bear ledger gets three fresh, maximally-conflicted voices (a both-sides to surface, not resolve)
+
+A 6-tier interview batch landed three of the most-cited macro takes on the bubble question. All three are talking their book — flagged inline. None changes the wiki's both-sides stance; they sharpen the ledger.
+
+**Bull side — Laffont's 80/20 + the funding-structure argument ([[2026-06-20-laffont-coatue-bubble]], Coatue — *bias: AI long, owns Anthropic + OpenAI in private book*).** Laffont puts **80% "not a bubble" / 20% "bubble."** His core structural bull: AI capex is **funded by hyperscalers generating ~$1T EBITDA/yr with ~no net debt** at a market P/E ~20-21x — *unlike 1999*, when retail and capital markets financed the build at 50-60x. **Which means:** the cleanest articulation yet of the "this is internally-funded, not a leverage bubble" leg — though it now carries the [[ai-capex-cycle]] caveat that GOOGL had to dilute $80B (June 1), so "no net debt at the funding layer" is true at the *aggregate* hyperscaler level but fraying at the margin. His **named falsifier** (the 20%): *earnings are front-loaded and "melt"* — cheap-looking multiples are a trap if current AI/SaaS earnings aren't sustainable. Notably, he is **bearish SaaS despite being an AI long** ("AI models are digital 3D printers") — a less-conflicted tell that corroborates the [[ai-software-disruption]] derate.
+
+**Bull-adjacent — Dario: Anthropic profitable + the "SaaSpocalypse" ([[2026-06-20-dario-anthropic-965b]], Anthropic CEO — *maximally conflicted: lab CEO, every capability/growth claim serves fundraising*).** Dario says Anthropic is **profitable for the first time**, the highest-revenue/highest-valuation frontier lab (~$965B implied), growing "faster than the exponential" (~80x annualized Q1). His demand-durability rebuttal to SaaS-doom: *"the software industry gets larger, not smaller… but there will be some big losers — those who don't identify their moats."* The bear-relevant datapoint: Claude Cowork's launch coincided with a reported **~$285B of software market value vanishing overnight** ("SaaSpocalypse," software down 9 days running) — a dated marker for the [[ai-software-disruption]] short/avoid theses. All figures self-reported and unaudited; the in-show Jensen Huang critique ("conflating tasks with jobs… scaring people") is the bias check.
+
+**Bear side — Zitron's contagion thesis + a falsifiable watch-list ([[2026-06-20-zitron-bubble-crash]], The Majority Report — *the marquee AI perma-bear; advocacy outlet; figures sourced to an unverified leaked audit, he flags his own uncertainty*).** ⚠️ **ALL DOLLAR FIGURES BELOW ARE ZITRON'S CLAIMS — TREAT AS CLAIMS-TO-VERIFY, NOT FACTS.** He claims OpenAI spent ~$34B to make ~$13B revenue in 2025 (~$21B loss) and is committed to burn >$852B by 2030; that OpenAI is "load-bearing" for ~$250B MSFT / ~$300B ORCL / ~$138B AMZN / ~$22B CRWV of *future* revenue; and that the real systemic transmission channel is **private credit** (pensions/insurance → private credit → AI data-center loans, no reserve requirements). His most checkable near-term tells: ChatGPT growth "stalled," and OpenAI **and** Anthropic reportedly discussing **token price cuts**.
+
+**Add to the falsifiable bear watch-list (Zitron's checkable items, dated 2026-06-20):**
+- **(a) Token price cuts actually executed** at OpenAI *and* Anthropic — a margin/demand tell, checkable near-term. (Note the *tension*: Willison [[2026-06-20-t6-simon-willison-coding]] documents price *hikes* on the coding tier the same week — surface both, don't resolve.)
+- **(b) ChatGPT consumer/usage growth stall** — checkable.
+- **(c) Private-credit / data-center loan stress** — defaults or mark-downs at Blackstone/Apollo/Carlyle/BlackRock AI-DC exposure (slow-burn; extends the existing [[ai-infrastructure-debt]] watch).
+- **(d) OpenAI unit economics** — any *audited* FY25/FY26 figures vs his $34B/$13B/$21B claim.
+- **(e) ORCL OpenAI-revenue concentration** — watch Oracle RPO/backlog quality (logged as Contradicting evidence on [[ORCL]]).
+
+**Which means:** the macro debate stays exactly where the wiki has it — real AND priced for a lot — but now with a maximally-conflicted bull (Laffont/Dario) and a maximally-conflicted bear (Zitron) framing the *same* funding-structure question from opposite ends. Laffont's "front-loaded earnings melt" and Zitron's "costs scale faster than revenue" are the same falsifier from two political poles; the audited OpenAI/Anthropic unit economics (when they exist) resolve both at once.
 
 ## June 19, 2026 — WSTS Spring forecast hard-confirms the "narrow, memory-ASP-led cycle" read (and an inference-challenger pre-silicon claim)
 
@@ -532,3 +551,6 @@ LeCun goes further — he argues LLMs are *not the path* to human-level intellig
 5. [[2026-05-14-anthropic-2028-ai-leadership]] — Anthropic policy paper providing both/and framing: empirical compute-gap data + commercially-motivated policy advocacy (added 2026-05-17)
 6. [[2026-05-16-dylan-patel-invest-like-best]] — Anthropic margin expansion 30%→72%; protest prediction; productivity reset framing (added 2026-05-17)
 7. [[2026-05-21-gavin-baker-invest-like-best]] — TSMC-discipline-as-bubble-prevention framing; cross-sectional valuation paradox; Baker's diversity-breakdown bearish self-check; $11B/month Anthropic ARR (added 2026-05-21)
+8. [[2026-06-20-laffont-coatue-bubble]] — 80/20 not-a-bubble; hyperscaler ~$1T EBITDA / no net debt vs 1999 retail/credit at 50-60x; "front-loaded earnings melt" falsifier; AI-long bearish on SaaS (added 2026-06-20; bias-flagged)
+9. [[2026-06-20-dario-anthropic-965b]] — Anthropic profitable first time, ~$965B, "pie gets bigger"; "SaaSpocalypse" ~$285B software wipeout (added 2026-06-20; bias-flagged: lab CEO)
+10. [[2026-06-20-zitron-bubble-crash]] — perma-bear; OpenAI ~$21B 2025 loss claim + >$852B-by-2030 burn; private-credit contagion channel; token-cut + ChatGPT-stall + ORCL-concentration falsifiers — ALL CLAIMS-TO-VERIFY (added 2026-06-20; bias-flagged: marquee bear)
