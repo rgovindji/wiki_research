@@ -1,49 +1,77 @@
-# Curated YouTube source list — daily sweep
+# Curated source roster + search algorithm — daily sweep (and general web research)
 
-Purpose: a maintained roster so the daily sweep finds high-signal AI/semis/power/compute
-videos instead of relying on ad-hoc keyword search. **Lesson (2026-06-20):** name-based
-searches ("Dylan Patel interview") miss conference talks like the Baseten "inference billion-x"
-and Katti talks. Fix = enumerate CHANNELS/PLAYLISTS + search by THEME/CONFERENCE, and when a
-transcript names a person/company, queue their recent talks.
+Purpose: a maintained roster + repeatable algorithm so the daily sweep (and any ad-hoc web
+research) finds high-signal AI/semis/power/compute material instead of relying on ad-hoc keyword
+search. **Lesson (2026-06-20):** name-based searches miss conference talks (e.g. the Baseten
+"inference billion-x" and Katti talks). Fix = **persona-tiered discovery** below + citation-chase.
 
-## Search strategy (run all four passes each sweep)
-1. **Channel/playlist enumeration** — for each channel below, WebFetch the `/videos` page (or playlist) and pull video IDs uploaded since the last sweep date.
-2. **Conference-series enumeration** — the Stanford "Economics of AI / AI supercycle" series hosts Katti + Baseten; enumerate the host channel/playlist for sibling talks.
-3. **Theme search** — WebSearch dated theme queries: "AI inference scaling 2026 talk", "data center power 2026 keynote", "RL environments agents 2026", "custom silicon ASIC 2026 interview", "memory HBM supercycle 2026".
-4. **Citation chase** — when a new transcript names a person/company/chip, queue that name's recent videos next sweep.
+This algorithm applies to **both YouTube transcription AND general WebSearch/WebFetch research.**
 
-## Expert roster (search each + chase new uploads)
-- **Nathan Lambert** (Interconnects / Ai2) — open models, RL post-training. View: "open models in perpetual catch-up" (leans Katti's 6-month-lead side of the [[inference-economics]] moat debate). HIGH PRIORITY — not yet ingested.
-- **Dylan Patel** (SemiAnalysis) — semis/compute supply chain. [ingested 5/9, 5/16, 6/20 x2]
-- **Dwarkesh Patel** — frontier AI. [ingested 5/9, 6/20]
-- **Tuhin Srivastava** (Baseten) — inference infra/economics. [ingested 6/20]
-- **Sachin Katti** (OpenAI) — industrial compute. [ingested 6/20]
-- Sholto Douglas / Trenton Bricken (Anthropic) — scaling, interpretability
-- Tri Dao (Together) — kernels/efficiency
-- Jonathan Ross (Groq) — inference ASIC
-- Chip Huyen — ML systems/economics
-- Gavin Baker (Atreides) — public markets AI. [ingested 5/21]
+---
 
-## Channels / shows (enumerate recent uploads)
-- BG2 Pod (Gerstner/Gurley) [ingested 6/20 x3]
-- Invest Like the Best (Patrick O'Shaughnessy) [ingested 5/16, 5/21]
-- No Priors (Sarah Guo / Elad Gil) [ingested 6/20]
-- Latent Space (swyx)
-- a16z
-- Sequoia Capital (Training Data)
-- Stratechery / Sharp Tech (Ben Thompson)
-- Stanford eCorner / GSB / "Economics of AI" series (Katti + Baseten origin)
-- TBPN / All-In (macro + AI, lower signal — skim)
-- SemiAnalysis (own channel)
-- Interconnects (Nathan Lambert)
+## THE 6-TIER PERSONA ALGORITHM (run every tier each sweep)
 
-## Macro / power / energy
-- Nuclear/SMR + grid + datacenter-power interviews (search "AI data center power 2026", "SMR datacenter PPA 2026")
-- Fed/rates interviews when they move the discount rate (rates drive the whole book)
+For each tier: search recent (last ~30-60 days) talks/interviews/posts; dedupe vs `sources/` +
+`log.md`; keep only items clearing the relevance filter; cap the whole sweep at ~3-5 transcribes/day
+(rotate which tiers get the slots so all six get covered across a week).
 
-## Relevance filter (only transcribe if it clears the bar)
-Transcribe a video only if it plausibly contains NEW, specific, investable signal on: AI compute
-demand/supply, semis (logic/memory/networking/custom silicon/CPU), power/cooling/nuclear,
-inference economics, model-lab capex commitments, robotics/physical AI, or a falsifiable
-dated catalyst. Skip pure news recaps, price-target listicles, and vendor PR.
-Always check sources/ + log.md first to avoid re-ingesting.
+### Tier 1 — Major players (thought leaders; what they say shapes the future)
+Frontier-lab + key-company leadership. Their roadmap statements ARE the forward signal.
+- Sam Altman (OpenAI) · Dario Amodei (Anthropic) · Demis Hassabis (DeepMind) · Jensen Huang (NVDA)
+- Satya Nadella (MSFT) · Sundar Pichai (GOOGL) · Mark Zuckerberg (META) · Elon Musk (xAI/Tesla)
+- Lisa Su (AMD) · Ilya Sutskever (SSI) · Mira Murati (Thinking Machines) · C.C. Wei (TSMC) · Mustafa Suleyman
+- Search: "<name> interview 2026", "<name> keynote 2026", "<name> fireside 2026"
+
+### Tier 2 — Tier-2 leaders (execs + scaled-startup founders one rung down)
+Operators building the actual infra/products; often more candid than Tier 1.
+- Brad Lightcap / Greg Brockman / Kevin Weil (OpenAI) · Mike Krieger (Anthropic) · Aravind Srinivas (Perplexity)
+- Arthur Mensch (Mistral) · Jonathan Ross (Groq) · Tuhin Srivastava (Baseten) [ingested] · Sachin Katti (OpenAI compute) [ingested]
+- Alexandr Wang (Meta/Scale) · Clem Delangue (HuggingFace) · Thomas Kurian (Google Cloud) · Matt Garman (AWS) · Cristiano Amon (Qualcomm) · Scott Wu (Cognition/Devin)
+- Search: "<name> 2026 talk/interview", + the companies' eng/keynote channels
+
+### Tier 3 — Researchers / academics / analysts (PhDs, the technical truth layer)
+The people who know what's actually happening under the hood; least hype, most falsifiable.
+- Dylan Patel (SemiAnalysis) [ingested x4] · Nathan Lambert (Ai2 / Interconnects) [QUEUED — high priority]
+- Sholto Douglas · Trenton Bricken · Chris Olah (Anthropic) · Tri Dao (Together) · Noam Brown (OpenAI)
+- Andrej Karpathy · Jim Fan / Sergey Levine (robotics) · Yann LeCun · Percy Liang · Jared Kaplan · Horace He · Chip Huyen
+- Outlets: semianalysis.com, Epoch AI, SemiWiki, Interconnects, Ai2
+- Search: "<name> talk 2026", "<lab> research talk 2026", conference enum (NeurIPS/ICML/ISCA/Hot Chips/GTC)
+
+### Tier 4 — Major investors (where the capital + positioning is going)
+- Gavin Baker (Atreides) [ingested] · Brad Gerstner + Bill Gurley (BG2/Altimeter) [ingested x3]
+- Stanley Druckenmiller · Philippe Laffont (Coatue) · Josh Wolfe (Lux) · Chamath Palihapitiya
+- Vinod Khosla · Marc Andreessen / Ben Horowitz (a16z) · Mary Meeker (BOND) · Sarah Guo / Elad Gil (No Priors) [ingested]
+- Hosts to enum: Invest Like the Best, BG2, No Priors, a16z, Sequoia Training Data, Bg2
+- Search: "<name> AI 2026 interview", "<fund> AI outlook 2026"
+
+### Tier 5 — Contrarians / bears (the falsifiable other side — REQUIRED for anti-sycophancy)
+- Ed Zitron · Paul Kedrosky · Jim Chanos · Michael Burry · Gary Marcus · Daron Acemoglu
+- Aswath Damodaran (NYU) · David Cahn (Sequoia "$600B question") · Jeremy Grantham (GMO)
+- Search: "AI bubble 2026 <name>", "AI capex skeptic 2026", "data center overbuild 2026"
+- Goal: keep the bear watch-list in [[ai-bubble-debate]] fed with the strongest opposing case.
+
+### Tier 6 — Developers using LLMs (ground truth on real adoption + unit economics)
+What practitioners actually ship reveals demand/ROI before it shows in financials.
+- swyx (Latent Space) · Simon Willison · Mitchell Hashimoto · antirez · Theo (t3.gg) · Geoffrey Huntley
+- Pieter Levels · the Cursor / Cognition / Windsurf / Replit teams · indie-hacker + agent-builder talks
+- Search: "AI coding agents 2026 real usage", "<dev> LLM 2026 talk", "Claude Code / Codex production 2026"
+- Signal to extract: token-consumption reality, which models win in practice, where agents break.
+
+---
+
+## Cross-cutting passes (run alongside the tiers)
+1. **Conference-series enumeration** — Stanford "Economics of AI", GTC, Hot Chips, Latent Space LIVE, a16z/Sequoia summits host the Tier-1/2/3 talks that name-search misses.
+2. **Citation-chase** — when a new transcript names a person/company/chip, queue them next sweep.
+3. **Channel `/videos` enumeration** — for the host channels above; YouTube RSS feed
+   (`https://www.youtube.com/feeds/videos.xml?channel_id=…`) is the most reliable ID source if HTML is JS-only.
+4. **Macro/power** — nuclear/SMR/grid + Fed/rates when they move the discount rate.
+
+## Relevance filter (transcribe only if it clears the bar)
+NEW + specific + investable signal on: AI compute demand/supply, semis (logic/memory/networking/
+custom-silicon/CPU), power/cooling/nuclear, inference economics, model-lab capex commitments,
+robotics/physical AI, or a falsifiable dated catalyst. Skip news recaps, PT listicles, vendor PR.
+Always check `sources/` + `log.md` first to avoid re-ingesting.
+
+## Already ingested (do not re-propose)
+BG2 ×3 (buildout / china-rareearths / bubble-stablecoin) · Dylan Patel ×4 (Dwarkesh 5/9, ILTB 5/16,
+Daytona, No Priors 127) · Dwarkesh sample-efficiency · Katti Stanford · Baseten/Tuhin · Gavin Baker ILTB 5/21.
