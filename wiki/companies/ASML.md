@@ -2,9 +2,9 @@
 type: company
 ticker: ASML
 tags: [ai, semis, equipment, international, netherlands]
-last_updated: 2026-06-19
+last_updated: 2026-06-20
 last_full_review: 2026-05-09
-sources: 2
+sources: 3
 conviction: high
 stance: bull
 ---
@@ -32,6 +32,7 @@ Monopoly supplier of EUV lithography — and per the May 2026 [[2026-05-09-dwark
 - **Service revenue** is a growing high-margin annuity from the installed base.
 - **Direct beneficiary of [[TSM|TSMC]]'s $52-56B capex** and similar investments by Samsung, Intel.
 - **Tools are physically supply-constrained, not commercially.** Carl Zeiss (lenses, ~18 multilayer mirrors per tool) and Cymer (San Diego, EUV source) can't ramp faster — supply chain is 10,000+ people of specialized labor.
+- **Independent buyer-side corroboration of the single-choke thesis (NEW 2026-06-20).** OpenAI's head of industrial compute Sachin Katti, asked for the *biggest unsolved problem in AI infrastructure*, answered fab capacity across logic + memory — then went a layer deeper: *"if you dig down even deeper, it's ASML. For all of these you need ASML machines. So to me, that is the single choke point of the whole supply chain."* Per [[2026-06-20-katti-stanford-ai-supercycle]]. **Which means** the EUV-bottleneck thesis is now voiced not just by an analyst (Dylan Patel) but by the buyer literally orchestrating OpenAI's gigawatt buildout — a second independent, high-credibility confirmation that ASML output is the physical ceiling on the whole cycle.
 
 ## Bear case / risks
 - **2026 lumpiness.** China pull-forward demand in 2025 (ahead of export controls) leaves a 2026 air pocket — quarterly numbers will be uneven.

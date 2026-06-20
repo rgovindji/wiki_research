@@ -2,7 +2,7 @@
 type: company
 ticker: MISTRAL
 tags: [ai, private, sovereign-ai, europe, foundation-models, venture, illiquid]
-last_updated: 2026-06-17
+last_updated: 2026-06-20
 last_full_review: 2026-06-17
 sources: 5
 conviction: low
@@ -53,6 +53,7 @@ The exact figures **€19.8B and €45.76/share appear in no public source** (al
 ## Bear case / risks (this is where the weight is)
 - **🔴 Compute gap is existential, not competitive.** Anthropic pays **~$1.25B/month** for *one* 220k-GPU cluster; Mistral's flagship Paris build is ~13,800 GPUs and it has raised ~$3-4B equity *in total*. That's a 15-50x capital/compute deficit. Efficiency narrows a gap by ~2-3x; it does not close 15-50x — and every efficiency trick Mistral publishes is adopted by better-funded labs on top of far more compute. **If Mistral falls off the frontier, it re-rates from "frontier optionality" to "European inference vendor" = 80-90% impairment.**
 - **🔴 Commoditization box.** Open-weight + DeepSeek/Qwen (97%+ price cuts; Qwen >1B downloads) are collapsing the exact segment Mistral plays in. Mistral is *not frontier enough* to charge premium and *not cheap enough* to beat the Chinese — and open weights give away the asset. Margin is increasingly a services/compliance margin, not a model margin. **No gross margin disclosed** — a red flag at this mark.
+  - **The 4-vs-6-month-lag fork makes this concrete (NEW 2026-06-20; see [[inference-economics]]).** Two sources frame the *same* open-weight lag oppositely: Dwarkesh/Epoch say open models trail the frontier by only **~4 months** because "data is the driver and distills through the API" ([[2026-06-20-dwarkesh-sample-efficiency]]) → the commoditization box is *real and tightening*; OpenAI's Katti counters a **"6-month lead is enormous"** ([[2026-06-20-katti-stanford-ai-supercycle]]). **For Mistral specifically the asymmetry is brutal:** an open-weight house *benefits* from the gap-closing only if it can stay near the frontier to begin with — but the 15-50x compute deficit (above) means it's more likely the *recipient* of commoditization than the agent of it. The same dynamic that erodes OpenAI/Anthropic *pricing power* erodes Mistral's *reason to exist as a frontier lab*. Net: reinforces the existing bear weight; no stance change (lean cautious holds).
 - **🔴 Worst seat + no liquidity.** No real secondary market (online "marks" are wildly inconsistent — Notice $11.63 vs Hiive $37.55 — i.e. not real trades). Exit requires IPO or M&A, **years away or never**; if secondary/SPV, you sit below ASML's senior pref with no information rights.
 - **🟠 Dilution math.** Mega-round every ~9 months to fund compute. Assuming ~3 more rounds at ~18% dilution, you keep ~55% of your stake → **a flat exit is a ~0.55x loss before any preference**, and you need a **~€40B+ exit just to break even net of dilution**; real money needs €80B+.
 - **🟠 Sovereignty cuts both ways on exit.** France treats Mistral as a strategic asset → a high-premium **foreign (US-megacap) acquisition is near-politically-foreclosed**, killing the usual VC home-run M&A path. Permitted exits (European consortium, Bpifrance, EU merger) are lower-premium and slower. The moat that protects the floor **caps the ceiling**.

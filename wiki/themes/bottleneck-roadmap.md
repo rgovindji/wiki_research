@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
-last_updated: 2026-06-19
+last_updated: 2026-06-20
 last_full_review: 2026-05-09
-sources: 9
+sources: 10
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -46,6 +46,7 @@ Synthesized from the May 2026 Dwarkesh × Dylan Patel interview ([[2026-05-09-dw
 - Elon wants 100 GW/yr → 50% share is implausible
 - Tool cost: **$300-400M** each
 - $50B of data center CapEx per GW vs. only **$1.2B of EUV tooling** per GW → enormous leverage
+- **Buyer-side confirmation (NEW 2026-06-20):** OpenAI's head of industrial compute Sachin Katti, asked for the single biggest unsolved infra problem, said fab capacity across logic + memory — then drilled to the root: *"if you dig down even deeper, it's ASML. For all of these you need ASML machines. That is the single choke point of the whole supply chain."* Per [[2026-06-20-katti-stanford-ai-supercycle]]. **Which means** the EUV-as-binding-constraint thesis is now stated by the person literally orchestrating OpenAI's gigawatt buildout, not just by analysts — a second independent, high-credibility confirmation of the anchor math above. See [[ASML]].
 
 ## Dylan Patel update: memory 2-3x and TSMC $100B 2028 capex (NEW 2026-05-17)
 
@@ -216,3 +217,4 @@ The previous version of this roadmap covered only the **physical** bottlenecks (
 6. [[2026-05-16-dylan-patel-invest-like-best]] — DRAM 2-3x pricing, TSMC 2028 ~$100B capex, supply-chain sold-out enumeration (added 2026-05-17)
 7. [[2026-05-15-semiwiki-tsmc-tool-orders-capex]] — Daniel Nenni / SemiWiki: TSMC Q1 2026 board appropriations $31.3B with record $21B Advanced Node equipment line; TTM equipment orders forcing upward CapEx guide revision (added 2026-05-17)
 8. [[2026-05-17-semiwiki-cpu-shortage-intel-18a]] — AI-driven x86 CPU shortage row added; INTC Q1 10-Q quoted; AMD vs Intel relative growth (added 2026-05-17)
+9. [[2026-06-20-katti-stanford-ai-supercycle]] — OpenAI compute chief confirms ASML as "the single choke point of the whole supply chain"; memory architecture as the medium/long-term frontier (added 2026-06-20)

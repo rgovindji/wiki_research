@@ -1,15 +1,30 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-19
+last_updated: 2026-06-20
 last_full_review: 2026-05-09
-sources: 23
+sources: 25
 ---
 
 # AI Bubble Debate
 
 ## What this is
-The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side.
+The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side. The *unit-economics* leg of this debate (how perishable the frontier moat is, who captures inference margin) now lives in [[inference-economics]].
+
+## June 20, 2026 — How perishable is the frontier moat? Same fact, opposite spin (a both-sides to surface, not resolve)
+
+Two well-credentialed sources read the *identical* open-weight lag in opposite directions — the cleanest articulation yet of the "LLM layer commoditizes while hardware + apps capture value" fork:
+
+- **Bear-on-moat (Dwarkesh Patel, [[2026-06-20-dwarkesh-sample-efficiency]]):** open models lag the frontier by only **~4 months (Epoch)** → the moat is *thin and perishable*, because **data is the real driver of progress and data distills cheaply from public APIs** (architecture / hyperparameters / training-tricks do not). "If the latter were driving most of the progress, catching up would be far harder than we observe."
+- **Bull-on-moat (Sachin Katti, OpenAI compute chief, [[2026-06-20-katti-stanford-ai-supercycle]] — *bias: talking his book*):** "a **six-month lead** in intelligence is an *enormous* lead" → keep spending orders-of-magnitude more on the frontier; open-weights merely "distill into compact form factors," never lead.
+
+**Which means:** both can be true at once — open-weight is *good enough* for the 80-90% of routed tasks (Katti concedes "we don't see that as an issue") while the frontier keeps the high-value 10-20%. The bear bite isn't a demand claim, it's a *pricing-power* claim: if the routed-away share keeps rising, closed-lab revenue *quality* compresses even as total compute demand rises. This is the [[market-concentration]] / [[valuation-environment]] risk to **frontier-lab valuations** ($900B+ Anthropic, OpenAI IPO), not to [[NVDA]]/infra. Tracks the same direction as bear-trigger #9 (Chinese open-weights crossing agentic-coding thresholds). Full unit-economics treatment in [[inference-economics]].
+
+**Plus a sharp scaling rebuttal worth keeping (Dwarkesh):** humans are **1,000-1,000,000× more sample-efficient** than LLMs, and per the **Chinchilla** equations the parameter and data loss-terms add *independently* — so even **infinite parameters cut required data by only ~10×.** "Just make the model bigger" therefore *cannot* deliver cheap, human-like learning; humans are "on a different scaling curve." **Which means:** the labs' real escape hatch for out-of-distribution work is the recursive one — automate AI research first, then have the automated researchers solve sample efficiency (see the recursion entry in [[ai-capex-cycle]]). That unproven recursive step is the load-bearing assumption under aggressive AGI timelines — a clean bear-on-timelines flag, not a thesis flip. (One analyst's framework; "different scaling curve" is a hypothesis, not a result.)
+
+## June 19, 2026 — WSTS Spring forecast hard-confirms the "narrow, memory-ASP-led cycle" read (and an inference-challenger pre-silicon claim)
+
+Per [[2026-06-19-semiwiki-asml-china-wsts-tsmc-troll-intel-pdf]]: the **WSTS Spring-2026 forecast** raises 2026 global semis to **$1.51T (+90% y/y)** — but "overwhelmingly driven" by **Memory at ~+250% y/y to >$800B**, with Logic +37% and *everything else* single-to-low-double-digit (Micro +20%, Analog +10%, Discretes +8%, Sensors/Opto +3%); 2027 +27% to ~$1.9T, memory leading again (+32%). **Which means**: this is now the *official scorekeeper's* version of the June-16 Future Horizons "ASP-driven, not unit-driven" worry — memory alone is the majority of the year's dollar growth, while the broad analog/discrete/sensor base (the real-economy unit recovery) stays subdued. The bull counter still holds (demand > utilized supply; labs raising prices to ration → these are scarcity rents, not a froth premium), so this stays a falsifiable bear *flag*, not a thesis flip — but it is the hardest data version of the concentration critique, and it raises the stakes on whether memory ([[MU]]) keeps pricing power after supply catches up (the durable-franchise vs cyclical-rent fork in [[bottleneck-roadmap]]). Watch for the first negative m/m memory-ASP print as the falsifier.
 
 ## June 19, 2026 — WSTS Spring forecast hard-confirms the "narrow, memory-ASP-led cycle" read (and an inference-challenger pre-silicon claim)
 

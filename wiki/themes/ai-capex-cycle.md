@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, capex, hyperscalers]
-last_updated: 2026-06-15
+last_updated: 2026-06-20
 last_full_review: 2026-05-09
-sources: 14
+sources: 16
 ---
 
 # AI Capex Cycle
@@ -48,6 +48,11 @@ The multi-year, hundreds-of-billions-of-dollars buildout of AI compute infrastru
   - **[[AMAT]] (May 14):** raised CY26 semi equipment growth guide from ">20%" to **">30%"** — first explicit annual-outlook upgrade this cycle. CEO: AI demand "now in full force." Direct supply-side validation of $725B+ hyperscaler capex commitments.
   - **Cisco Q3 FY26 (May 13):** **AI infrastructure orders guidance raised from $5B to $9B** for FY26 (80% increase). Data center switching orders +40% YoY. Networking growth accelerated to +25% YoY. Stock +20% on print; 6 firms raised PTs.
   - **Which means:** when both WFE and networking vendors **upgrade their own outlooks mid-year** while NVDA holds $1T+ confirmed demand through 2027 and Anthropic/CRWV/NBIS print profitability inflections — the bear case ("capex is over-extrapolated") gets harder to sustain. The supply chain isn't lagging behind demand anymore; it's pulling forward.
+
+- **2026-06-20 — Inference is the majority of compute; the demand bid survives a pretraining plateau (NEW; OpenAI compute chief + Dwarkesh).** Per [[2026-06-20-katti-stanford-ai-supercycle]] (Sachin Katti, OpenAI head of industrial compute, ex-Intel CTO — *bias: talking his book*): **scaling laws now span the entire compute lifecycle** — pretrain + RL post-training + synthetic-data generation + product serving — and **RL post-training and synthetic data are themselves *inference* workloads.** "Inference is already the majority," heading to **80%+.** [[2026-06-20-dwarkesh-sample-efficiency]] independently confirms the mechanism: **RL = synthetic data generation** (dump compute against a verifier/rubric to find good data, then train on it), and "we have run out of real-world data" so labs *generate* it. **Which means:** even if *pretraining* scaling stalls, the RL/synthetic-data/serving legs keep the compute bid under [[NVDA]] / [[CRWV]] / [[NBIS]] / memory intact — the cycle is no longer a training-capex story. Also: **revenue is a lagging indicator for frontier labs** ("compute tripled YoY, revenue tripled YoY" = compute × utilization). Full unit-economics treatment in [[inference-economics]].
+- **2026-06-20 — Power quantified as *the* constraint; AI exits "energy for human consumption" framing (NEW).** Per Katti: a 1 GW DC ≈ **$70B and ~half a million GPUs**; synchronized training jobs swing **hundreds of MW** in seconds → real blackout/grid-stability risk → labs decoupling via **natural gas + increasingly nuclear**. ~**100 GW** of US hyperscaler buildout *beyond* OpenAI = **double-digit % of the US grid**; OpenAI's own 30 GW is on top. Scale-vision anchor: "every human should have a GPU" → 7B × 1-2kW = **7 TW**, two orders of magnitude beyond 30 GW. **Which means:** the power/grid leg ([[VRT]], [[GEV]], [[BE]], [[NRG]], nuclear utilities) is sized by grid percentage now, not megawatts — and behind-the-meter gas/nuclear is a procurement reality, not a 2030 thesis.
+- **2026-06-20 — Heterogeneous compute is structural + TSMC wafer-allocation guarantees multi-vendor silicon (NEW).** Katti: "you can't deliver [agentic] UX economically on pure GPU" → need GPUs + CPUs + accelerators (**Cerebras confirmed in production at OpenAI** for fast inference; long-context accelerators that hold state in memory for coding; **CPUs making a comeback with agents**). And a sharp supply-side structural point: **TSMC deliberately spreads wafers across customers** to avoid single-customer concentration → multiple GPU/ASIC varieties *must* exist; at hyperscale "we have to learn to use all of these chips." **Which means:** a clean reason custom silicon ([[GOOGL]] TPU, Amazon Trainium ~$50B run-rate, [[AVGO]]) coexists with [[NVDA]] rather than NVDA-winner-take-all — bullish for the breadth of the accelerator supply chain, modestly tempering the NVDA-monopoly framing. (Katti's own picks: short model wrappers, long the *lowest* layer — transformers/batteries/generation/cooling/materials; first to $10T = NVIDIA.)
+- **2026-06-20 — "AI designs the next AI infra" (recursion) to bend the compute-time curve (NEW).** Katti: using the latest models to design the next chip + low-level software, compressing the ~3-yr chip-design cycle — "probably the only feasible way to bend the curve." The concrete, near-term version of the "automate AI research first" assumption in [[ai-bubble-debate]]. Watch for the first lab-designed-silicon tape-out as the falsifier/confirmation.
 
 ## Key drivers
 - **Hyperscaler competition** — none of MSFT/AMZN/GOOGL/META can afford to under-invest if a competitor's models pull ahead
@@ -166,3 +171,5 @@ UBS (Gaudois) frames the through-line: agentic AI broadens demand beyond acceler
 5. [[2026-05-16-damodaran-profg-markets]] — AI as net expense for non-chip Mag 7; GDP-engine framing
 6. [[2026-05-16-dylan-patel-invest-like-best]] — Anthropic ARR $40-45B; productivity reset evidence; compute-constrained labs (added 2026-05-17)
 7. [[2026-05-16-john-arnold-invest-like-best]] — Energy as bottleneck for US innovation; permitting reform optimism (added 2026-05-17)
+8. [[2026-06-20-katti-stanford-ai-supercycle]] — OpenAI compute chief: inference-majority (80%+), synthetic-data-as-inference, power-as-constraint quantified (1GW≈$70B/500k GPUs, ~100GW US = double-digit % grid), heterogeneous compute, TSMC multi-vendor, recursive AI-designs-chips (added 2026-06-20; bias-flagged)
+9. [[2026-06-20-dwarkesh-sample-efficiency]] — RL = synthetic data generation; "ran out of real data"; data is the driver (added 2026-06-20)
