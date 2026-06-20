@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.rgovindji.wiki-youtube-sweep</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/rgovindji/Projects/Investing/scripts/youtube_sweep.sh</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/Users/rgovindji/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <!-- Daily at 06:12 local (off the :00/:45 marks; before the 06:45 morning brief so findings can feed it) -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key><integer>6</integer>
+        <key>Minute</key><integer>12</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/rgovindji/Library/Logs/wiki-daily/youtube-sweep.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/rgovindji/Library/Logs/wiki-daily/youtube-sweep.err.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

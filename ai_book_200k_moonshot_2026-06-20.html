@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The $200K Moonshot — AI/Tech Convexity Book (June 2026)</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#141925; --panel2:#1b2230; --ink:#e6edf3; --muted:#8b98a9;
+    --line:#263041; --accent:#6ea8fe; --green:#3fb950; --amber:#d29922; --red:#f85149;
+    --purple:#bc8cff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:1080px;margin:0 auto;padding:32px 22px 80px}
+  h1{font-size:30px;margin:0 0 4px;letter-spacing:-.5px}
+  h2{font-size:21px;margin:38px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+  h3{font-size:16px;margin:22px 0 8px;color:var(--accent)}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 22px}
+  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+  .banner{background:linear-gradient(90deg,#2a1414,#1b2230);border:1px solid var(--red);
+    border-radius:12px;padding:16px 18px;margin:18px 0 6px}
+  .banner b{color:var(--red)}
+  .grid{display:grid;gap:14px}
+  .cards{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:14px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .card .k{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+  .card .v{font-size:24px;font-weight:700;margin-top:4px}
+  table{width:100%;border-collapse:collapse;margin:10px 0 4px;font-size:13.5px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.4px}
+  tr:last-child td{border-bottom:none}
+  .pill{display:inline-block;padding:1px 8px;border-radius:20px;font-size:11px;font-weight:600;white-space:nowrap}
+  .leap{background:#1f2b40;color:var(--accent);border:1px solid #2d4a78}
+  .eq{background:#16261a;color:var(--green);border:1px solid #235a32}
+  .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .sleeve{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+  .sleeve h3{margin-top:0;display:flex;justify-content:space-between;align-items:baseline}
+  .sleeve h3 .alloc{color:var(--ink);font-size:14px;font-weight:700}
+  .bar{height:26px;border-radius:7px;display:flex;overflow:hidden;margin:8px 0 18px;border:1px solid var(--line)}
+  .bar span{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#0b0e14}
+  .tip{border-bottom:1px dotted var(--muted);cursor:help}
+  .tkr{font-weight:700;color:var(--ink)}
+  .z{color:var(--red);font-size:12.5px}
+  .cat{color:var(--amber)}
+  small{color:var(--muted)}
+  .foot{color:var(--muted);font-size:12.5px;margin-top:14px}
+  #tip{position:fixed;z-index:99;max-width:320px;background:#0b0e14;border:1px solid var(--accent);
+    border-radius:8px;padding:9px 11px;font-size:12.5px;color:var(--ink);box-shadow:0 8px 30px rgba(0,0,0,.6);
+    display:none;line-height:1.5}
+  #tip b{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>The $200K Moonshot 🚀</h1>
+<p class="sub">AI/tech-concentrated convexity book · mandate: <b>$200K → ~$1M or $0</b> · options-allowed · horizon H2-2026 → 2028 · drafted 2026-06-20 · <small>research synthesis, not financial advice</small></p>
+
+<div class="banner">
+<b>Read this first — the honest base rate.</b> A concentrated, options-levered, single-theme book built to 5x is <b>far more likely to end near zero than at $1M.</b> That is not pessimism; it is the arithmetic of leverage + correlation. Every name below shares one macro factor — the <span class="tip" data-tip="AI capital-expenditure cycle: the hundreds-of-billions hyperscaler/lab buildout of compute, power, and memory. The single shared driver of nearly every position here.">AI capex cycle</span> — so in a real AI-sentiment break they fall <i>together</i>, and the LEAPS premium goes to zero with no recovery time. This book has <b>no diversification by design</b> (your instruction). Size it as money you have genuinely written off. The kill-switches at the bottom are the difference between "lost the bet" and "lost more than the bet."
+</div>
+
+<h2>Allocation at a glance</h2>
+<div class="grid cards">
+  <div class="card"><div class="k">Capital</div><div class="v">$200,000</div></div>
+  <div class="card"><div class="k">Target</div><div class="v" style="color:var(--green)">~$1.0M</div></div>
+  <div class="card"><div class="k">Convexity via</div><div class="v" style="color:var(--accent)">LEAPS</div></div>
+  <div class="card"><div class="k">Lines</div><div class="v">15 + hedge</div></div>
+</div>
+
+<div class="bar">
+  <span style="width:43%;background:#6ea8fe">Core LEAPS 43%</span>
+  <span style="width:16%;background:#3fb950">Power 16%</span>
+  <span style="width:18%;background:#bc8cff">New-bottleneck 18%</span>
+  <span style="width:15%;background:#d29922">Lottery 15%</span>
+  <span style="width:3%;background:#f85149">Hedge 3%</span>
+  <span style="width:5%;background:#8b98a9">Roll 5%</span>
+</div>
+
+<p class="foot">Instrument legend: <span class="pill leap">LEAPS</span> = long-dated (Jan-2028) call options, ~3-5x leverage to the stock with loss capped at premium · <span class="pill eq">EQ</span> = common stock. Prices "as of 2026-06-18" are recent in-context marks (<span class="tip" data-tip="Yahoo was rate-limiting at draft time. Pull a live quote before any order — and ALWAYS quote option premiums and implied vol live; option prices are never estimated here.">verify before any order</span>); "live" = pull at execution. <b>Option premiums are deliberately not shown — they must be quoted live.</b></p>
+
+<!-- SLEEVE 1 -->
+<div class="sleeve">
+<h3>1 · Core LEAPS convexity <span class="alloc">$86,000 · 43%</span></h3>
+<p><small>The spine. Highest-conviction, most-liquid bottleneck names — owned as <b>Jan-2028 LEAPS</b> so a 2-year thesis gets 3-5x leverage with defined downside. Buy ~60-75 delta (slightly ITM) to limit theta bleed, not lottery OTM.</small></p>
+<table>
+<tr><th>Name</th><th>Instr</th><th class="num">$ / %</th><th>Thesis (the 2-yr bet)</th><th>Cited target / catalyst</th><th>How it goes to zero</th></tr>
+<tr>
+  <td><span class="tkr tip" data-tip="NVDA — stance bull, conviction high. The compute monopoly; CUDA moat; ~$500B of OpenAI's ~$1.4T compute commitment. Dylan Patel re-underwrote the moat at architecture level June 2026.">NVDA</span><br><small>$210.69</small></td>
+  <td><span class="pill leap">LEAPS</span></td>
+  <td class="num">$30k<br>15%</td>
+  <td>The spine of the entire cycle. Blackwell/Rubin sold out; ~$500B OpenAI commitment; moat re-underwritten vs custom-silicon fear. <b>Least "run too much" of the spine</b> — drifting since the May print (exhausted-buyer), not frothy.</td>
+  <td>Cantor $350 / Susquehanna $275 (raised May 2026). <span class="cat">Vera CPU prod Q3-26; Q2 FY27 print Aug.</span></td>
+  <td class="z">AI capex guide-cut; a credible custom-silicon share-taker ships; bill-and-hold revenue questioned.</td>
+</tr>
+<tr>
+  <td><span class="tkr tip" data-tip="AVGO — stance bull. Custom-silicon (XPU) leader for hyperscalers + the OpenAI–Broadcom custom inference chip framed as >$1T incremental capex.">AVGO</span><br><small>$411.35</small></td>
+  <td><span class="pill leap">LEAPS</span></td>
+  <td class="num">$22k<br>11%</td>
+  <td>The custom-silicon counter-bet to NVDA: OpenAI–Broadcom inference chip = >$1T incremental capex path; every hyperscaler XPU program.</td>
+  <td>No wiki PT logged — <span class="tip" data-tip="House rule: cite analyst targets verbatim or omit. Pull live consensus before sizing.">pull live</span>. <span class="cat">FQ3 print Sept; OpenAI chip tape-out milestones.</span></td>
+  <td class="z">Custom programs are frameworks not contracts — slip/cancel; XPU cycle digestion.</td>
+</tr>
+<tr>
+  <td><span class="tkr tip" data-tip="MU — stance bull, conviction high. Memory supercycle: DRAM +4x/yr, NAND now catching up (+3-4x, ~60% more to come per Dylan June 2026). HBM franchise for Vera Rubin. CYCLICAL — LEAPS cap the downside, which is why options fit here.">MU</span><br><small>$1,134</small></td>
+  <td><span class="pill leap">LEAPS</span></td>
+  <td class="num">$18k<br>9%</td>
+  <td>Memory supercycle — DRAM+NAND both inflecting; HBM4/Vera-Rubin lock-in. <b>Most "run too much" name here</b> (+76% in a month, +11x from Jan) → use a <b>call SPREAD</b> (buy ~60Δ / sell far-OTM) to cut premium + cap the cyclical-reversal tail.</td>
+  <td>UBS $1,625 · Wolfe $1,250 (raised May-Jun 2026). <span class="cat">Fiscal Q3 print ~June 24.</span></td>
+  <td class="z">First negative m/m memory-ASP print; supply catches up → the cyclical-peak P/E trap.</td>
+</tr>
+<tr>
+  <td><span class="tkr tip" data-tip="TSM — stance bull. Sole leading-edge foundry; downstream of the ASML chokepoint. Katti (OpenAI) named ASML→TSMC as the single binding constraint of the whole supply chain.">TSM</span><br><small>$462.12</small></td>
+  <td><span class="pill leap">LEAPS</span></td>
+  <td class="num">$16k<br>8%</td>
+  <td>The chokepoint nobody routes around — every chip above runs on TSMC; CoWoS sold out; record monthly revenue.</td>
+  <td>No single wiki PT — pull live. <span class="cat">Monthly rev prints; Taiwan geopolitics = the tail.</span></td>
+  <td class="z">Taiwan/China shock (binary, severe); 2026 capex digestion air-pocket.</td>
+</tr>
+</table>
+</div>
+
+<!-- SLEEVE 2 -->
+<div class="sleeve">
+<h3>2 · Power — the real binding constraint <span class="alloc">$32,000 · 16%</span></h3>
+<p><small>Satya Nadella, June 2026: he has <i>chips he can't plug in</i> — the bottleneck moved from silicon to <span class="tip" data-tip="Powered, shell-complete data-center capacity ready to energize. The scarce input once chips are available — per Nadella the current gating factor.">power & warm shells</span>. ~100 GW of US hyperscaler buildout = double-digit % of the grid (Katti). Mostly equity; LEAPS optional on VRT.</small></p>
+<table>
+<tr><th>Name</th><th>Instr</th><th class="num">$ / %</th><th>Thesis</th><th>Catalyst</th><th>How it goes to zero</th></tr>
+<tr><td><span class="tkr tip" data-tip="VRT — stance bull. The only large player covering both power AND cooling for AI data centers; liquid-cooling density ramp.">VRT</span><br><small>$333.05</small></td><td><span class="pill leap">LEAPS</span></td><td class="num">$14k<br>7%</td><td>Power + cooling pure-play; every GW needs it regardless of which chip/model wins.</td><td class="cat">Quarterly orders/book-to-bill.</td><td class="z">Capex guide-cut cascades fastest to the picks-and-shovels.</td></tr>
+<tr><td><span class="tkr tip" data-tip="GEV — GE Vernova. Gas turbines with order books beyond 2030; the fastest bridge power for data centers. Gavin Baker flagged the NVDA-vs-GEV valuation anomaly.">GEV</span><br><small>live</small></td><td><span class="pill eq">EQ</span></td><td class="num">$10k<br>5%</td><td>Gas turbines = the only fast bridge power; 4-8yr backlog; grid build-out.</td><td class="cat">Turbine backlog updates; reconciliation/permitting bill.</td><td class="z">Rate-driven de-rate of long-duration industrials; AI-power narrative cools.</td></tr>
+<tr><td><span class="tkr tip" data-tip="CEG — Constellation Energy (nuclear). Existing nuclear fleet + PPAs to hyperscalers (the Three Mile Island restart archetype). Cleaner near-term than SMRs (which are 2030+).">CEG</span><br><small>live</small></td><td><span class="pill eq">EQ</span></td><td class="num">$8k<br>4%</td><td>Existing nuclear = the only firm clean baseload available <i>now</i>; hyperscaler PPAs.</td><td class="cat">New PPA announcements; power-price prints.</td><td class="z">Power-price normalization; a DC-demand air-pocket.</td></tr>
+</table>
+</div>
+
+<!-- SLEEVE 3 -->
+<div class="sleeve">
+<h3>3 · The new bottleneck (June-2026 signal) <span class="alloc">$36,000 · 18%</span></h3>
+<p><small>Fresh from this week's transcripts — under-owned vs the NVDA trade. Dylan Patel: <b>CPUs are the new shortage</b> (RL-environment verifier loops + long-horizon agents); <b>NAND is catching up to DRAM</b>.</small></p>
+<table>
+<tr><th>Name</th><th>Instr</th><th class="num">$ / %</th><th>Thesis</th><th>Catalyst</th><th>How it goes to zero</th></tr>
+<tr><td><span class="tkr tip" data-tip="AMD — EPYC server CPUs sold out with pricing power; MI-series GPUs = Dylan's best non-NVDA GPU alternative; ~$300B in OpenAI's commitment framework.">AMD</span><br><small>live</small></td><td><span class="pill leap">LEAPS</span></td><td class="num">$14k<br>7%</td><td>Double shot: EPYC CPU shortage + MI GPU as the credible #2 + OpenAI ~$300B framework.</td><td class="cat">MI ramp; CPU pricing notices.</td><td class="z">MI fails to take real share; CPU shortage eases as capacity catches up.</td></tr>
+<tr><td><span class="tkr tip" data-tip="ARM Holdings — launching a STANDALONE CPU with Meta + Cloudflare as customers (Dylan, June 2026): a business-model shift from IP royalty to selling silicon. Higher revenue per chip.">ARM</span><br><small>live</small></td><td><span class="pill eq">EQ</span></td><td class="num">$8k<br>4%</td><td>Royalty→silicon model shift; standalone server CPU w/ Meta + Cloudflare; Graviton/Vera all ARM.</td><td class="cat">Standalone-CPU launch + customer confirmation (~mid-2026).</td><td class="z">Launch slips/underwhelms; rich multiple compresses hard.</td></tr>
+<tr><td><span class="tkr tip" data-tip="SNDK — SanDisk (NAND/SSD pure-play). Dylan June 2026: NAND now +3-4x with ~60% more to come, catching up to DRAM. Highest-beta way to play the NAND leg.">SNDK</span><br><small>live</small></td><td><span class="pill eq">EQ</span></td><td class="num">$8k<br>4%</td><td>The NAND-supercycle pure-play — catching DRAM's move; AI-data-exhaust storage demand.</td><td class="cat">NAND contract-price prints.</td><td class="z">KV-cache efficiency (DeepSeek-style) dents NAND demand; cyclical reversal.</td></tr>
+<tr><td><span class="tkr tip" data-tip="MRVL — custom silicon + 1.6T optical/networking for AI fabrics; 10+ active programs; just hired Adobe's CFO. S&P 500 inclusion done June 22.">MRVL</span><br><small>$310.58</small></td><td><span class="pill eq">EQ</span></td><td class="num">$6k<br>3%</td><td>Custom-silicon + AI networking; the interconnect tax on every cluster.</td><td class="cat">Custom-program ramps; quarterly AI-rev mix.</td><td class="z">Program timing slips; networking commoditizes.</td></tr>
+</table>
+</div>
+
+<!-- SLEEVE 4 -->
+<div class="sleeve">
+<h3>4 · Asymmetric lottery — willing to lose all of this <span class="alloc">$30,000 · 15%</span></h3>
+<p><small>The "go to zero" slice within the bet. Highest convexity, lowest conviction. Treat each as a coin you've already spent. <b>Do not average down here.</b></small></p>
+<table>
+<tr><th>Name</th><th>Instr</th><th class="num">$ / %</th><th>Thesis (the long shot)</th><th>The honest bear</th></tr>
+<tr><td><span class="tip" data-tip="A basket of far-out-of-the-money Jan-2027/2028 calls on the core bottleneck names (NVDA / AVGO / AMD). Pure convexity: ~zero most outcomes, 10-30x in a melt-up. Premiums quoted live.">OTM call basket</span><br><small>NVDA·AVGO·AMD</small></td><td><span class="pill leap">LEAPS</span></td><td class="num">$6k<br>3%</td><td>Deep-OTM calls on the spine names — the literal lottery ticket that turns a melt-up into the $1M outcome.</td><td class="z">Expire worthless in any flat/down tape — the most likely outcome for this slice.</td></tr>
+<tr><td><span class="tkr tip" data-tip="HIVE Digital — $4.26, ~$1.25B mcap, TTM rev $297.8M (+158%), but LOSSMAKING (-$148M). Bitcoin miner pivoting to AI/HPC (BUZZ HPC): 320MW Toronto 'AI Gigafactory', 100k GPUs, CAD $3.5B, live H2-2027. The most convex of your three picks.">HIVE</span><br><small>$4.26</small></td><td><span class="pill eq">EQ</span></td><td class="num">$6k<br>3%</td><td>Crypto-miner→AI/HPC pivot with a real megaproject (320MW Toronto gigafactory, 100k GPUs). Of PSIX/KEEL/HIVE, the only genuine AI-convexity moonshot.</td><td class="z">CAD $3.5B capex on a $1.25B cap = massive dilution; crypto-price correlated; H2-2027 execution; lossmaking now.</td></tr>
+<tr><td><span class="tkr tip" data-tip="NBIS — Nebius. Stance bull, conviction MEDIUM (tempered from high June 2026 on valuation). +684% rev, owned power, but consensus PT (~$242) BELOW spot (~$287), ~62-83x sales, profit is a non-cash ClickHouse mark. My call: hold/trim — not a high-conviction add at this price.">NBIS</span><br><small>$287</small></td><td><span class="pill eq">EQ</span></td><td class="num">$5k<br>2.5%</td><td>High-beta neocloud; owned power; inference-up-the-stack survivor of the neocloud cull. <b>Sized down</b> — see my NBIS call in the notes.</td><td class="z">Already ahead of the Street; dilution + ClickHouse-flattered profit; commoditization.</td></tr>
+<tr><td><span class="tkr tip" data-tip="CRWV — CoreWeave. Largest pure neocloud, ~98% contracted backlog — but NVDA backstops its UNSOLD capacity (Gurley flagged this obscures real demand). Event-driven IV around every print.">CRWV</span><br><small>live</small></td><td><span class="pill eq">EQ</span></td><td class="num">$5k<br>2.5%</td><td>Scaled neocloud; sold-out contracts; ~$99B backlog; consolidation winner.</td><td class="z">Circular-financing flag (NVDA backstop); lease-heavy; GPU depreciation.</td></tr>
+</table>
+</div>
+
+<!-- SLEEVE 5 — TAIL HEDGE -->
+<div class="sleeve" style="border-color:var(--red)">
+<h3>5 · Tail hedge <span class="alloc">$6,000 · 3%</span></h3>
+<p><small>You asked for this — good instinct. The whole book is one factor (semis/AI), so a small <b>semis-specific</b> put position caps the "break" scenario for ~3% of capital. This is the one position that <i>pays off when everything else goes to zero.</i></small></p>
+<table>
+<tr><th>Instrument</th><th class="num">$ / %</th><th>Structure</th><th>Why</th></tr>
+<tr>
+  <td><span class="tkr tip" data-tip="SOXX = iShares Semiconductor ETF. Puts on it hedge the book's actual factor (semis), not the broad market — cheaper and better-matched than SPY puts for this concentrated book.">SOXX</span> puts<br><small>+ optional SPX</small></td>
+  <td class="num">$6k<br>3%</td>
+  <td><b>~6-12mo, ~10-15% OTM put spreads</b> (buy ~10% OTM / sell ~25% OTM to cheapen). Roll quarterly. Premiums <span class="tip" data-tip="Never estimated here — quote the put + IV live. In high-IV tapes, spreads beat outright puts.">quoted live</span>.</td>
+  <td>Matches the book's semis factor; a put <i>spread</i> (not outright) keeps the cost ~3% while still cutting a −40% semis crash roughly in half.</td>
+</tr>
+</table>
+<p class="foot">Honest limit: 3% of capital can't fully insure a levered book — it blunts the crash, it doesn't erase it. Going bigger on the hedge (5-7%) would meaningfully cap the downside but also tax the melt-up return. 3% is the compromise; size up if you want to sleep better.</p>
+</div>
+
+<!-- SLEEVE 6 -->
+<div class="sleeve">
+<h3>6 · Roll / dry powder <span class="alloc">$10,000 · 5%</span></h3>
+<p><small>Not timidity — <b>operational necessity.</b> LEAPS must be <span class="tip" data-tip="Closing a near-dated option and opening a longer-dated one to extend the thesis and avoid theta/expiry. Requires cash on hand.">rolled</span> before expiry and averaged on big dips. A book with zero cash can't manage its own options and gets forced out at the worst time. This is the one place the 'all-in' instinct actively loses money.</small></p>
+</div>
+
+<h2>Have they run too much? (NVDA / MU / TSM) — entry timing</h2>
+<p>Short answer: <b>yes, they've run — and no, that doesn't mean don't own them; it means buy them differently.</b> They're not equally extended:</p>
+<table>
+<tr><th>Name</th><th class="num">Price</th><th>Extended?</th><th>So what</th></tr>
+<tr><td class="tkr">NVDA</td><td class="num">$210.69</td><td><b style="color:var(--green)">Least</b> — actually <i>drifting</i> since the May print ("exhausted buyer"); not frothy short-term.</td><td>Cleanest core entry. Buy in 2-3 tranches.</td></tr>
+<tr><td class="tkr">TSM</td><td class="num">$462.12</td><td><b style="color:var(--amber)">Moderate</b> — up a lot but reasonable vs growth; the chokepoint nobody routes around.</td><td>Structural, not cyclical-peak risk. Scale in.</td></tr>
+<tr><td class="tkr">MU</td><td class="num">$1,134</td><td><b style="color:var(--red)">Most</b> — +76% in a month, +11x from Jan, near highs. Cyclical-peak-P/E risk is real.</td><td>Use a <b>call spread</b>, not stock or naked LEAPS. Smallest of the four core lines.</td></tr>
+</table>
+<p>Three rules that follow from "they've run":</p>
+<ul>
+<li><b>That's exactly why the book uses LEAPS, not stock</b> — defined max-loss (the premium) is the right way to chase a late-cycle move. The downside is pre-capped; the upside isn't.</li>
+<li><b>Scale in over 3-4 tranches</b> (e.g., now / on a 7-8% dip / on the next guide-confirmation), don't lump-sum at the highs. Keep the 5% roll reserve partly for averaging.</li>
+<li><b>Tilt <i>fresh</i> capital toward the less-extended legs</b> — the CPU-shortage names (AMD/ARM), power (VRT/GEV/CEG), and inference-infra — which haven't run like memory has.</li>
+</ul>
+<div class="banner" style="border-color:var(--accent);background:linear-gradient(90deg,#0f1b2e,#1b2230)">
+<b style="color:var(--accent)">Why "run a lot" ≠ "too late":</b> a Baseten operator data point from this week — a B200 cluster repriced <b>$263→$510/hr (+94%) at renewal</b>, new 1,000-GPU orders quote ~Q2-2027 (12-15mo out), GCP has a ~10x backlog. Supply scarcity is <i>intensifying, not normalizing.</i> The prices have run because the shortage is real — which supports staying long through the bottleneck, while sizing for the day the guide-cut finally lands.
+</div>
+
+<h2>Options playbook (structures, not premiums)</h2>
+<p class="foot"><b>I won't quote premiums or implied vol — those must be pulled live at execution.</b> What I can specify is the structure:</p>
+<table>
+<tr><th>Sleeve</th><th>Structure</th><th>Rationale</th></tr>
+<tr><td>Core (NVDA/AVGO/AMD/TSM)</td><td><b>Jan-2028 LEAPS, ~65-75 delta</b> (slightly in-the-money)</td><td>~2-2.5x leverage with minimal theta decay; deep enough to behave like leveraged stock, not a lottery ticket.</td></tr>
+<tr><td>MU (cyclical at highs)</td><td><b>Jan-2028 call spread</b> (buy ~60Δ / sell far-OTM)</td><td>Cuts premium and caps the cyclical-reversal tail you're exposed to at a cycle peak.</td></tr>
+<tr><td>Lottery OTM basket</td><td><b>Jan-2027 ~20-30 delta OTM calls</b></td><td>Cheap pure convexity — the slice that turns a melt-up into $1M; expects to expire worthless.</td></tr>
+<tr><td>Tail hedge</td><td><b>SOXX 6-12mo put spreads, ~10-15% OTM</b>, rolled quarterly</td><td>Hedges the book's actual factor (semis); spread keeps cost ~3%.</td></tr>
+</table>
+<ul>
+<li><b>Ladder expiries</b> — don't cluster everything on Jan-2028; mix some 2027 so you're not forced to roll the whole book at once.</li>
+<li><b>Roll at ~6 months to expiry</b>, never let a core LEAPS run into the last quarter (theta accelerates).</li>
+<li><b>Take cost off the table:</b> if a LEAPS triples, sell ⅓ to recover your basis and ride the rest "free." This is how you survive to the melt-up.</li>
+<li><b>Cap premium-at-risk per name</b> at the sleeve % shown; LEAPS gains silently over-concentrate.</li>
+<li><b>No margin, ever.</b> Convexity comes from long options only — margin turns "lost the bet" into "owe money."</li>
+</ul>
+
+<h2>The 5x math — honest scenarios</h2>
+<table>
+<tr><th>Scenario</th><th>What happens (H2-26 → 2028)</th><th class="num">≈ Outcome</th></tr>
+<tr><td><b style="color:var(--green)">Melt-up (≈10-15%)</b></td><td>AI capex re-accelerates, no guide-cut; core names +80-120%; LEAPS 3-4x; OTM basket hits.</td><td class="num" style="color:var(--green)">~$0.9-1.3M</td></tr>
+<tr><td><b>Grind-up (≈25%)</b></td><td>Cycle holds, names +40-60%; LEAPS ~2x, equities up, lottery mostly dead.</td><td class="num">~$350-500k</td></tr>
+<tr><td><b style="color:var(--amber)">Chop (≈30%)</b></td><td>Range-bound 2yr; theta eats LEAPS; equities flat.</td><td class="num" style="color:var(--amber)">~$90-140k</td></tr>
+<tr><td><b style="color:var(--red)">Break (≈30%)</b></td><td>AI-sentiment break / guide-cut / rate shock; LEAPS → 0, equities −40-60%.</td><td class="num" style="color:var(--red)">~$25-55k</td></tr>
+</table>
+<p class="foot">Probabilities are judgmental, not modeled — they exist to make the point: <b>the single most likely bucket is "chop or break," i.e. you lose most of it.</b> The $1M outcome requires the melt-up tail. That is the bet you asked for, stated honestly.</p>
+
+<h2>Dated catalysts (for timing options)</h2>
+<table>
+<tr><th>Date</th><th>Event</th><th>Why it matters</th></tr>
+<tr><td>~Jun 24</td><td>MU fiscal Q3 print</td><td>Memory-ASP read; the cyclical-peak test for the MU LEAPS.</td></tr>
+<tr><td>~mid-2026</td><td>ARM standalone-CPU launch + Meta/Cloudflare confirm</td><td>The thesis trigger for the ARM position.</td></tr>
+<tr><td>Q3-2026</td><td>NVDA Vera CPU production; NVDA FQ2 print (Aug)</td><td>CPU-comeback + demand confirmation for NVDA LEAPS.</td></tr>
+<tr><td>Sept-2026</td><td>AVGO FQ3; OpenAI IPO window (no committed date — Altman walked back the report)</td><td>Custom-chip milestones; mega-IPO supply could drain the chip bid (see <span class="tip" data-tip="ai-bubble-debate: ~$3.6T of AI-lab paper (OpenAI/Anthropic/SpaceX) hitting markets in months could force rebalancing OUT of NVDA/Mag-7 to fund allocations.">IPO-pipeline risk</span>).</td></tr>
+<tr><td>ongoing</td><td>Any hyperscaler capex <b>guide-cut</b></td><td>The master kill-switch for the whole book.</td></tr>
+</table>
+
+<h2>Kill-switches — the part that protects the downside</h2>
+<ul>
+<li><b>The one signal that ends the book:</b> a hyperscaler <b>cuts</b> AI capex guidance (not a soft beat — an actual cut). On that print, sell the lottery sleeve and the OTM basket same day, and roll core LEAPS down to stock.</li>
+<li><b>LEAPS discipline:</b> never let a LEAPS go below ~6 months to expiry unrolled; never add to a losing OTM position; cap any single LEAPS line at the % shown — they grow fast and silently over-concentrate.</li>
+<li><b>Stop framing:</b> equities -30% from entry → reassess thesis (not auto-sell); LEAPS are pre-defined max-loss (the premium) so no stop needed, which is exactly why leverage lives in options not margin.</li>
+<li><b>No margin, no shorting.</b> Convexity comes only from long options here. Margin turns "lost the bet" into "owe money" — outside the mandate.</li>
+<li><b>Tax/rolling cash</b> stays untouched as the 5% reserve.</li>
+</ul>
+
+<h2>MSFT — why it's not in this book</h2>
+<p><span class="tkr tip" data-tip="MSFT — $379.40, ~$2.82T mcap, fwd P/E ~20.5x, rev +17.9%. Azure ~39% (supply-constrained), ~$400B RPO. Highest-quality self-funded AI compute owner.">MSFT</span> is a fantastic company and the wrong tool for <i>this</i> job. The mandate is 5x. Microsoft is a <b>$2.82T</b> company — 5x means a <b>$14 trillion</b> market cap, which simply will not happen in 2-3 years. It's the lowest-beta, lowest-convexity name in the complex (it moves ~20-30% in a great year, not 200%). Even LEAPS on it would ~2x at best in the bull case. <b>It belongs in a core/quality portfolio, not a $1M-or-zero moonshot.</b> The only reason to hold it here would be as drawdown ballast — which directly contradicts your "all-in, no ballast" instruction, so I left it out. (If you ever want a *second*, conservative book to compound alongside this one, MSFT anchors it.)</p>
+
+<h2>PSIX / KEEL / HIVE — your speculative picks, ranked honestly</h2>
+<table>
+<tr><th>Name</th><th>Verdict</th><th>Why</th></tr>
+<tr><td class="tkr">HIVE <small>$4.26</small></td><td><b style="color:var(--green)">In — small (3%)</b></td><td>The only one with genuine AI-convexity: a real crypto→AI/HPC pivot + a 320MW Toronto gigafactory (100k GPUs, H2-2027). It's a true lottery ticket. But <span class="z">CAD $3.5B capex on a $1.25B cap = severe dilution, crypto-correlated, lossmaking (−$148M)</span> — hence small.</td></tr>
+<tr><td class="tkr">KEEL</td><td><b style="color:var(--amber)">Optional — momentum trade only</b></td><td>Powered-land + lease-signature catalyst is real, but the "10x to $30B" math is flawed and it's already +799% off the low at ~17x sales. Tradeable as a <i>catalyst/momentum</i> bet, not a thesis. If you want it, it's a swap for part of the OTM basket — not an add.</td></tr>
+<tr><td class="tkr">PSIX</td><td><b style="color:var(--red)">Out</b></td><td>My 5-agent deep dive made it <i>more</i> cautious, not less: enclosure-integrator (not a genset OEM), structural margin reset, withdrawn guidance, going-concern flag, ~34% cash conversion, Weichai control + selling. It's a <b>value-trap</b>, not a convex AI moonshot — wrong profile for this book entirely.</td></tr>
+</table>
+
+<h2>What's deliberately NOT here</h2>
+<p class="foot">No diversifiers, no non-AI sectors — per your AI-concentrated, all-in instruction (the one exception is the 3% semis tail hedge you asked for). No <span class="tip" data-tip="MRAM (Everspin) — pricey for ~16% growth, micro-niche; I rated it neutral/low. Not convex enough to earn a slot here.">MRAM</span>, no PSIX (see above). No fabricated option premiums — every option is "quote live." Conviction discipline: I won't relabel low-conviction names as moonshots to pad the list.</p>
+
+<p class="foot" style="margin-top:26px;border-top:1px solid var(--line);padding-top:14px">
+Drafted 2026-06-20 from the investing wiki + the June-2026 YouTube-transcript batch (BG2, Dylan Patel/SemiAnalysis, Katti/OpenAI, Dwarkesh). Prices marked "as of 2026-06-18" are recent marks pending live verification; "live" = pull at execution; option premiums are never estimated. Cited analyst targets are attributed and dated; no targets are invented. <b>This is a research synthesis, not financial advice or a recommendation to buy any security.</b> The bull case argues X; you decide.
+</p>
+
+</div>
+
+<div id="tip"></div>
+<script>
+(function(){
+  var tip=document.getElementById('tip');
+  function show(e){
+    var t=e.currentTarget.getAttribute('data-tip'); if(!t)return;
+    tip.innerHTML=t; tip.style.display='block';
+    move(e);
+  }
+  function move(e){
+    var pad=14, w=tip.offsetWidth, h=tip.offsetHeight;
+    var x=e.clientX+pad, y=e.clientY+pad;
+    if(x+w>window.innerWidth-8) x=e.clientX-w-pad;
+    if(y+h>window.innerHeight-8) y=e.clientY-h-pad;
+    tip.style.left=x+'px'; tip.style.top=y+'px';
+  }
+  function hide(){tip.style.display='none';}
+  document.querySelectorAll('[data-tip]').forEach(function(el){
+    el.addEventListener('mouseenter',show);
+    el.addEventListener('mousemove',move);
+    el.addEventListener('mouseleave',hide);
+  });
+})();
+</script>
+</body>
+</html>
