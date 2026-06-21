@@ -3,251 +3,177 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The AI Bottleneck Roadmap → 2030</title>
+<title>The Bottleneck Decade — Where AI Compute Breaks, and What to Own Into 2030</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0b0e14;--bg2:#10141c;--card:#161b24;--card2:#1c2330;--line:#28303d;--line2:#1f2630;
-    --ink:#f0f3f7;--body:#c3cad4;--muted:#8a93a0;--soft:#6a7480;
-    --now:#f0883e;--mid:#bc8cff;--far:#6ea8fe;--green:#3fb950;--amber:#d9a521;--red:#f06a5a;
-    --font:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    --mono:'JetBrains Mono','SF Mono',Menlo,monospace;
+    --bg:#0c0f15;--bg2:#11151d;--card:#161b24;--card2:#1c2330;--line:#283039;--line2:#1f262f;
+    --ink:#f3f5f8;--body:#cdd4dd;--muted:#8a93a0;--soft:#69727e;
+    --accent:#e0a060;--accent2:#cc8a4c;--green:#56c06a;--amber:#d9a521;--red:#ef6a5a;--blue:#6ea8fe;--purple:#bc8cff;
+    --serif:'Newsreader',Georgia,'Times New Roman',serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--mono:'JetBrains Mono',monospace;
   }
   *{box-sizing:border-box;}
   html{background:var(--bg);}
-  body{margin:0;background:radial-gradient(1100px 560px at 75% -8%,#161d2a 0%,var(--bg) 58%);color:var(--body);font-family:var(--font);font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased;}
-  .wrap{max-width:1060px;margin:0 auto;padding:48px 22px 90px;}
-  .eyebrow{color:var(--now);text-transform:uppercase;letter-spacing:2.5px;font-size:11px;font-weight:700;margin:0 0 12px;}
-  h1{color:var(--ink);font-size:40px;line-height:1.06;font-weight:800;letter-spacing:-1px;margin:0 0 12px;}
-  .sub{font-size:17px;color:var(--body);margin:0 0 8px;max-width:74ch;}
-  .meta{font-size:12px;color:var(--muted);font-family:var(--mono);margin:14px 0 26px;padding-bottom:20px;border-bottom:1px solid var(--line);}
-  h2{color:var(--ink);font-size:23px;font-weight:700;margin:42px 0 14px;letter-spacing:-.3px;}
-  p{margin:0 0 14px;max-width:76ch;} strong{color:var(--ink);font-weight:650;}
-  .verdict{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-left:3px solid var(--now);border-radius:11px;padding:18px 22px;margin:6px 0 26px;font-size:15px;}
-  .verdict b{color:var(--now);}
-  .phases{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:10px 0 8px;}
-  .phase{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0 0 14px;overflow:hidden;}
-  .phead{padding:13px 16px;font-weight:700;color:#0b0e14;font-size:13px;letter-spacing:.3px;}
-  .p1 .phead{background:var(--now);} .p2 .phead{background:var(--mid);} .p3 .phead{background:var(--far);}
-  .phase ul{list-style:none;margin:12px 0 0;padding:0 14px;}
-  .phase li{position:relative;padding:7px 0 7px 16px;font-size:13.5px;border-bottom:1px solid var(--line2);}
-  .phase li:last-child{border-bottom:none;}
-  .phase li:before{content:"";position:absolute;left:0;top:14px;width:7px;height:7px;border-radius:50%;background:var(--soft);}
-  .phase li b{color:var(--ink);}
-  .tag{display:inline-block;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.3px;padding:1px 6px;border-radius:20px;margin-left:5px;}
-  .t-bind{background:#3a2417;color:#f0a060;} .t-next{background:#2a2140;color:#c4a4f0;} .t-ceil{background:#16253f;color:#84b4f8;}
-  table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0;}
-  th{text-align:left;padding:9px 10px;font-size:9.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);font-weight:700;border-bottom:1px solid var(--line);background:var(--card2);}
-  td{padding:10px 10px;border-bottom:1px solid var(--line2);vertical-align:top;}
-  tr:last-child td{border-bottom:none;}
-  .when{font-family:var(--mono);font-size:11.5px;white-space:nowrap;}
-  .w1{color:var(--now);} .w2{color:var(--mid);} .w3{color:var(--far);}
-  .tkr{font-family:var(--mono);font-weight:600;color:var(--now);border-bottom:1px dotted var(--now);cursor:help;font-size:12.5px;}
-  .t{border-bottom:1px dotted var(--soft);cursor:help;}
-  .box{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:16px 20px;margin:16px 0;}
-  .box.amber{border-left:3px solid var(--amber);} .box.green{border-left:3px solid var(--green);} .box.blue{border-left:3px solid var(--far);}
-  .box .lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:1.2px;font-weight:700;margin-bottom:8px;}
-  .box.amber .lbl{color:var(--amber);} .box.green .lbl{color:var(--green);} .box.blue .lbl{color:var(--far);}
-  ul.clean{list-style:none;padding:0;margin:8px 0 14px;}
-  ul.clean li{position:relative;padding-left:18px;margin-bottom:8px;max-width:76ch;font-size:14px;}
-  ul.clean li:before{content:"";position:absolute;left:0;top:10px;width:9px;height:1px;background:var(--now);}
-  .math{font-family:var(--mono);font-size:12.5px;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:14px 16px;color:var(--body);line-height:1.9;}
+  body{margin:0;background:var(--bg);color:var(--body);font-family:var(--serif);font-size:19px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:760px;margin:0 auto;padding:60px 24px 110px;}
+  .kicker{font-family:var(--sans);color:var(--accent);text-transform:uppercase;letter-spacing:2.5px;font-size:11.5px;font-weight:700;margin:0 0 18px;}
+  h1{font-family:var(--serif);color:var(--ink);font-size:44px;line-height:1.1;font-weight:700;letter-spacing:-.5px;margin:0 0 18px;}
+  .dek{font-size:21px;line-height:1.5;color:var(--body);font-weight:400;margin:0 0 24px;font-style:italic;}
+  .byline{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0 0 6px;padding-bottom:26px;border-bottom:1px solid var(--line);letter-spacing:.3px;}
+  h2{font-family:var(--serif);color:var(--ink);font-size:28px;font-weight:600;margin:48px 0 6px;letter-spacing:-.3px;}
+  h2 .rn{font-family:var(--sans);font-size:12px;font-weight:700;color:var(--accent);letter-spacing:2px;display:block;margin-bottom:6px;text-transform:uppercase;}
+  h3{font-family:var(--sans);color:var(--ink);font-size:17px;font-weight:650;margin:28px 0 6px;}
+  p{margin:0 0 20px;}
+  strong{color:var(--ink);font-weight:600;}
+  em{color:var(--body);}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(224,160,96,.4);} a:hover{border-color:var(--accent);}
+  .lead::first-letter{font-size:62px;float:left;line-height:.82;padding:6px 10px 0 0;color:var(--accent);font-weight:700;}
+  blockquote{margin:24px 0;padding:4px 0 4px 22px;border-left:3px solid var(--accent);font-style:italic;color:var(--ink);font-size:20px;line-height:1.5;}
+  blockquote .src{display:block;font-style:normal;font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:8px;}
+  .standfirst{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:8px 0 30px;font-size:18px;line-height:1.6;}
+  .standfirst b{color:var(--accent);}
+  .math{font-family:var(--mono);font-size:13px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:18px 20px;color:var(--body);line-height:2;margin:24px 0;}
   .math b{color:var(--ink);}
-  .foot{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);font-style:italic;}
-  #tip{position:fixed;z-index:99;max-width:330px;background:#06080c;border:1px solid var(--now);color:#e8eaee;padding:11px 13px;border-radius:9px;font-size:12.5px;line-height:1.5;box-shadow:0 12px 40px rgba(0,0,0,.65);opacity:0;pointer-events:none;transition:opacity .12s;}
-  #tip.on{opacity:1;} #tip .tn{font-weight:700;color:#fff;} #tip .tm{font-family:var(--mono);font-size:10.5px;color:#8a93a0;margin:2px 0 6px;}
-  @media(max-width:760px){.phases{grid-template-columns:1fr;}h1{font-size:30px;}}
+  .pick{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:18px 0;position:relative;}
+  .pick .rank{font-family:var(--sans);font-size:12px;font-weight:800;color:#0c0f15;background:var(--accent);border-radius:20px;padding:3px 11px;letter-spacing:.5px;}
+  .pick .conv{font-family:var(--sans);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);float:right;margin-top:4px;}
+  .pick h3{margin:12px 0 4px;font-size:21px;font-family:var(--serif);font-weight:600;color:var(--ink);}
+  .pick h3 .px{font-family:var(--mono);font-size:13px;color:var(--muted);font-weight:400;margin-left:8px;}
+  .pick p{font-size:16.5px;margin:8px 0 0;}
+  .pick .why{color:var(--green);font-weight:600;font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:.5px;}
+  .pick .risk{color:var(--red);font-weight:600;font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:.5px;}
+  .tkr{font-family:var(--mono);font-weight:600;color:var(--accent);border-bottom:1px dotted var(--accent);cursor:help;font-size:.82em;}
+  .t{border-bottom:1px dotted var(--soft);cursor:help;}
+  table{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:13.5px;margin:18px 0;}
+  th{text-align:left;padding:10px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);font-weight:700;border-bottom:1px solid var(--line);}
+  td{padding:11px 10px;border-bottom:1px solid var(--line2);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .tier1{color:var(--green);font-weight:700;} .tier2{color:var(--amber);font-weight:700;} .tier3{color:var(--red);font-weight:700;}
+  .foot{margin-top:50px;padding-top:22px;border-top:1px solid var(--line);font-family:var(--sans);font-size:12px;color:var(--muted);font-style:normal;line-height:1.6;}
+  #tip{position:fixed;z-index:99;max-width:320px;background:#06080c;border:1px solid var(--accent);color:#e8eaee;padding:11px 13px;border-radius:9px;font-family:var(--sans);font-size:12.5px;line-height:1.5;box-shadow:0 12px 40px rgba(0,0,0,.65);opacity:0;pointer-events:none;transition:opacity .12s;}
+  #tip.on{opacity:1;} #tip .tn{font-weight:700;color:#fff;}
+  @media(max-width:680px){.wrap{padding:40px 18px 80px;}h1{font-size:33px;}body{font-size:18px;}}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="eyebrow">⚙️ AI Compute · Bottleneck Roadmap</div>
-  <h1>What gates AI scaling — now to 2030</h1>
-  <p class="sub">The pure-AI-compute view: the physical constraints that decide how much intelligence can actually be built and deployed, in the order they bind. Synthesized from the wiki's [bottleneck-roadmap] + everything ingested through June 2026.</p>
-  <p class="meta">As of 2026-06-21 · figures dated inline · hover any ticker/underlined term · research synthesis, not advice</p>
+  <div class="kicker">Investing Wiki · Research · AI Infrastructure</div>
+  <h1>The Bottleneck Decade</h1>
+  <p class="dek">AI's limit isn't ideas — it's physics. Here is where compute actually breaks between now and 2030, and the handful of names worth owning because of it.</p>
+  <p class="byline">Synthesis · 2026-06-21 · figures dated inline · hover tickers for the live stance · research, not advice</p>
 
-  <div class="verdict">
-    <b>Does the earlier thesis still hold? Mostly yes — with two refinements.</b> The time-sequenced spine — <strong>memory (2026) → packaging/substrates (2027) → EUV &amp; wafer (2028-2030)</strong> — is intact and <em>confirming</em> (June's Korea export data validated the memory leg in real time). Two things changed: <strong>(1) Power was promoted to a co-primary <em>near-term</em> bottleneck</strong> — the original "power is not the bottleneck" call is now outdated for the <em>deployment</em> layer (Satya: "I have chips I can't plug in"; Katti: ~100 GW US demand = double-digit % of the grid). <strong>(2) A new CPU / RL-environment layer appeared</strong> (server CPUs sold out on agent + verifier-loop demand). The key mental model now: separate the <em>deployment</em> bottleneck (power/grid, binds 2026-28) from the <em>manufacturing</em> bottleneck (EUV/wafer, binds 2028-30).
+  <div class="standfirst">
+    <b>The argument in one breath.</b> Demand for intelligence is, for practical purposes, unlimited; the supply of it is gated by a short series of physical chokepoints that bind in a predictable order. Own the chokepoints with the deepest moats and the longest runways, buy them when the cycle hands you a discount, and rent — never marry — the parts that will be competed away. Done right, this is the highest-conviction multi-year trade in the market. The four refinements since we first mapped it: <b>memory is confirming, power got promoted, a CPU layer appeared, and EUV is now the consensus ceiling.</b>
   </div>
 
-  <h2>The roadmap at a glance</h2>
-  <div class="phases">
-    <div class="phase p1">
-      <div class="phead">2026 · BINDING NOW</div>
-      <ul>
-        <li><b>Memory</b> — HBM + DRAM; NAND now catching up <span class="tag t-bind">live</span></li>
-        <li><b>Power &amp; "warm shells"</b> — the deployment ceiling <span class="tag t-bind">live</span></li>
-        <li><b>Advanced packaging</b> — CoWoS sold out <span class="tag t-bind">live</span></li>
-        <li><b>CPU / RL-environment</b> — server CPUs sold out <span class="tag t-bind">new</span></li>
-      </ul>
-    </div>
-    <div class="phase p2">
-      <div class="phead">2027 · BINDS NEXT</div>
-      <ul>
-        <li><b>Cleanrooms / fab build</b> — construction + skilled labor</li>
-        <li><b>Substrates &amp; optical</b> — 1.6T transceivers, copper foil, ABF</li>
-        <li><b>Grid interconnection</b> — transformers booked 3-4 yrs out</li>
-        <li><b>HBM4 ramp</b> — the bandwidth step-change</li>
-      </ul>
-    </div>
-    <div class="phase p3">
-      <div class="phead">2028-2030 · THE CEILING</div>
-      <ul>
-        <li><b>EUV lithography</b> — the single chokepoint (ASML)</li>
-        <li><b>Leading-edge wafer</b> — TSMC capacity discipline</li>
-        <li><b>New memory architecture</b> — the next frontier</li>
-        <li><b>Nuclear / firm power</b> — SMRs arrive late-decade</li>
-      </ul>
-    </div>
+  <h2><span class="rn">I · The Frame</span>Two bottlenecks, two clocks</h2>
+  <p class="lead">The single most useful correction to the original roadmap is this: there is not one bottleneck, there are two, and they run on different clocks. There is the constraint on <em>manufacturing</em> intelligence — the chips themselves — which is a 2028-2030 story and funnels, ultimately, through one Dutch company. And there is the constraint on <em>deploying</em> it — getting built chips powered, cooled, and plugged into a grid — which is a problem right now, in 2026.</p>
+  <p>We originally underweighted the second. The wiki carried Dylan Patel's line that "power is not the bottleneck — there are sixteen-plus vendors of generation, and half of new capacity will be behind-the-meter." That was true as a statement about the <em>theoretical</em> availability of electrons. It has been overtaken by the operational reality, stated most bluntly by the people actually building the clusters:</p>
+  <blockquote>"I have chips I can't plug in."<span class="src">— Satya Nadella, on the binding constraint shifting from silicon to power, June 2026</span></blockquote>
+  <p>OpenAI's head of industrial compute put a number on it: roughly <strong>100 gigawatts</strong> of US hyperscaler demand by the end of the decade — a double-digit percentage of the entire American grid — against transformers and turbines booked three to four years out. So the frame for the rest of this piece: <strong>power is the bottleneck that decides returns over the next two to three years; EUV is the bottleneck that decides them over the next five.</strong> You want exposure to both, expressed differently.</p>
+
+  <h2><span class="rn">II · Confirming</span>Memory was the 2026 call, and it just printed</h2>
+  <p>The cleanest validation of the whole framework arrived this month, not from a podcast but from a customs office. South Korea's preliminary June exports — the most real-time read we get on memory, because SK Hynix and Samsung are Korean — showed the supercycle not only intact but <em>broadening</em>: HBM exports up <strong>51% month-over-month</strong>, NAND up 28%, SSD up 25%. The year-over-year figures (DRAM +342%) are base-effect theatre; the sequential acceleration is the signal, and it says the cycle has rotated out of DRAM and into the higher-value, longer-runway products.</p>
+  <p>This matters because inference — now the majority of all AI compute, on its way to 80%-plus — is memory-bandwidth-bound. An AI server carries several terabytes of memory against a few hundred gigabytes for a traditional cloud box. The bottleneck is structural, not a spot shortage. But memory is also where the framework demands the most discipline: it is <em>cyclical</em>. The one yellow flag in that same Korea print was DRAM at merely +3% month-over-month — the first hint the DRAM price curve is flattening even as HBM accelerates. Memory is a bottleneck you <em>rent</em>, sized and time-boxed, not a franchise you hold through the cycle. We will come back to that distinction; it is the difference between making money here and giving it back.</p>
+
+  <h2><span class="rn">III · Promoted</span>Power is where the constraint — and the cheap entries — now live</h2>
+  <p>If memory is the bottleneck that's confirming, power is the one that's been promoted, and it is the most investable idea in this entire piece for a simple reason: it is the only major chokepoint where the assets are still trading at a discount. The semiconductor layer has already re-rated; the chips are priced for the shortage. The power layer, oddly, is not — because the market still files these names under "utilities" rather than "AI infrastructure."</p>
+  <p>That mispricing is the opportunity. A merchant power producer signing twenty-year data-center supply contracts at $70-90 per megawatt-hour is not a sleepy utility; it is a contracted, inflation-protected annuity on the buildout, and several trade near their lows. The constraint is real and durable: you cannot wish a gigawatt onto the grid, transformer lead times are measured in years, and the labor to build it is itself scarce. The risk is equally real — merchant power is cyclical, rate-sensitive, and the re-rate depends on converting pipeline into signed, energized contracts. But the asymmetry — a de-rated entry into a structural shortage — is the best risk/reward on the board.</p>
+
+  <h2><span class="rn">IV · The Tax</span>Packaging, substrates, and the interconnect toll</h2>
+  <p>Between the chip and the cluster sits a layer that takes a toll on every unit shipped: advanced packaging (CoWoS, sold out at TSMC, and getting physically harder to sign off as packages scale and warpage bleeds into signal integrity), and the optical and networking fabric that stitches GPUs into a coherent machine — 1.6-terabit transceivers, ABF substrates, copper foil. This is a genuine 2027 bottleneck. But it is mostly a <em>rent</em>, not a franchise: pluggable optics and outsourced packaging get competed down as capacity catches up. The exception is the company that designs the custom silicon <em>and</em> the networking around it, capturing the toll structurally rather than cyclically — which is why the one name we'd own here sits with the franchises, not the rent.</p>
+
+  <h2><span class="rn">V · The Ceiling</span>EUV is the one chokepoint that doesn't move</h2>
+  <p>Everything above is a constraint that eventually eases as the industry throws capital at it. There is exactly one that does not, because it cannot be bought from a second supplier at any price: extreme-ultraviolet lithography. No advanced AI chip — none — is manufactured without an ASML machine, and the company's annual tool output physically caps how much leading-edge compute can exist. This used to be a contrarian wiki call. It is now consensus: OpenAI's compute chief, asked for the single biggest unsolved problem in AI infrastructure, dug past fabs and memory to the root —</p>
+  <blockquote>"If you dig down even deeper, it's ASML. For all of these you need ASML machines. That is the single choke point of the whole supply chain."<span class="src">— Sachin Katti, OpenAI, June 2026</span></blockquote>
+  <p>The math is what makes it the most durable franchise in technology:</p>
+  <div class="math">
+    EUV output: <b>~70 tools/yr today → ~100 by 2030</b> · cumulative <b>~700</b><br>
+    1 GW of AI capacity ≈ <b>3.5 EUV tools'</b> worth of fab time<br>
+    → ceiling ≈ <b>~200 GW/yr</b> of AI compute, even if 100% allocated to AI<br>
+    Leverage: <b>$50B</b> of data-center capex per GW rides on <b>~$1.2B</b> of EUV tooling
+  </div>
+  <p>Read that last line again. The entire trillion-dollar buildout funnels through roughly $1.2 billion of ASML equipment per gigawatt — the thinnest, least-substitutable, highest-leverage link in the chain. Paired with TSMC, which converts those tools into wafers and whose capacity <em>discipline</em> is the single thing preventing a 1999-style overbuild, this is the manufacturing ceiling of the AI era. The only real bear case is a peculiar one: that ASML remains a "generous monopolist" and never fully prices its position, leaving the rent to its customers rather than its shareholders. Worth watching — but a high-class problem to own.</p>
+
+  <h2><span class="rn">VI · The Conclusion</span>What to actually own</h2>
+  <p>A framework that won't name names isn't research. So here is the call. The organizing principle: <strong>concentrate in the chokepoints with the deepest moats and longest runways (own through the cycle); take the elevated near-term constraint where it's still cheap (power); and rent the cyclical layers with explicit exit discipline.</strong> Ranked by multi-year, risk-adjusted return potential:</p>
+
+  <div class="pick">
+    <span class="rank">1</span><span class="conv">Conviction: highest · own through the cycle</span>
+    <h3><span class="tkr" data-tip="ASML">ASML</span> — the ceiling itself<span class="px">~$1,930 · at ATH</span></h3>
+    <p>The purest expression of the entire thesis and the least substitutable asset in technology. If AI compute scales to 2030, ASML is the one company that <em>must</em> grow with it, with no second source at any price. <span class="why">Why own it:</span> monopoly, the hardest moat, the longest runway, the highest leverage to the buildout. <span class="risk">The catch:</span> it's at an all-time high — this is an <em>accumulate-on-weakness</em> name, and the 2026 China air-pocket may hand you the entry. Cited median PT $1,775 (verify). Buy the dips; do not chase the highs.</p>
   </div>
 
-  <h2>Each bottleneck — what binds, when, who benefits</h2>
+  <div class="pick">
+    <span class="rank">2</span><span class="conv">Conviction: high · best franchise-at-a-fair-entry today</span>
+    <h3><span class="tkr" data-tip="NVDA">NVDA</span> — the platform, not the chip<span class="px">~$211 · −11% off high</span></h3>
+    <p>The one franchise on this list trading at a <em>reasonable</em> entry right now — it's drifted since its last print while the fundamentals compounded. NVIDIA is no longer a chip company; its CUDA stack and reference architecture have become the industry's <em>standard</em> (competitors build to it). Inference-majority demand secures the bid, and supply is sold out. <span class="why">Why own it:</span> the deepest software moat in compute, sold-out demand, and the cleanest quality-at-a-fair-price setup in the group. <span class="risk">The catch:</span> the most crowded trade on earth — any capex air-pocket hits here first. This is the core holding.</p>
+  </div>
+
+  <div class="pick">
+    <span class="rank">3</span><span class="conv">Conviction: med-high · the best risk/reward — buyable cheap</span>
+    <h3>The power basket — <span class="tkr" data-tip="CEG">CEG</span> + <span class="tkr" data-tip="NRG">NRG</span> (with <span class="tkr" data-tip="VRT">VRT</span>)<span class="px">de-rated 30%+</span></h3>
+    <p>If you want the <em>best absolute return over the next two to three years</em>, this is it — the elevated bottleneck that is still, inexplicably, on sale. <span class="tkr" data-tip="CEG">CEG</span> (nuclear, −34% off high, marquee hyperscaler PPAs) and <span class="tkr" data-tip="NRG">NRG</span> (merchant IPP, −29%, twenty-year DC supply contracts) are contracted annuities on the buildout that the market still prices as utilities. <span class="tkr" data-tip="VRT">VRT</span> adds the power-and-cooling equipment leg (with one watch-item: the 800VDC shift may erode its UPS content). <span class="why">Why own it:</span> a de-rated entry into a genuine, durable shortage — the only place the chokepoint and the discount coexist. <span class="risk">The catch:</span> merchant-power cyclicality and rate sensitivity; the re-rate needs PPAs to keep converting.</p>
+  </div>
+
+  <div class="pick">
+    <span class="rank">4</span><span class="conv">Conviction: high · the manufacturing franchise</span>
+    <h3><span class="tkr" data-tip="TSM">TSM</span> — the wafer chokepoint<span class="px">~$462 · near highs</span></h3>
+    <p>The other half of the manufacturing ceiling: the sole foundry that turns ASML's tools into leading-edge wafers, with ~86% of its most advanced node going to AI by 2027. Its capacity <em>discipline</em> is the mechanism preventing an overbuild — a structural positive that also means it won't flood the market. <span class="why">Why own it:</span> an irreplaceable franchise with pricing power and a multi-decade runway. <span class="risk">The catch:</span> near its highs (entry-sensitive — pair with ASML and accumulate), plus the one non-fundamental tail every Taiwan name carries.</p>
+  </div>
+
+  <div class="pick">
+    <span class="rank">5</span><span class="conv">Conviction: high · the second compute franchise</span>
+    <h3><span class="tkr" data-tip="AVGO">AVGO</span> — the custom-silicon toll-taker<span class="px">~$411 · −17% off high</span></h3>
+    <p>The structural way to own the interconnect/custom-silicon tax: Broadcom designs the ASICs <em>and</em> the networking for the hyperscalers building their own chips, with an OpenAI partnership framed as a >$1T path. It collects whether or not NVIDIA wins every socket — and it's de-rated on an expectations unwind, not a fundamental crack. <span class="why">Why own it:</span> a franchise (not a rent) on the custom-silicon wave, at a better entry than the chip is given credit for. <span class="risk">The catch:</span> lumpier than NVIDIA; the "growth plateau" worry around each print.</p>
+  </div>
+
+  <h2><span class="rn">VII · Discipline</span>What to rent, and what to refuse</h2>
+  <p><strong>Rent, don't marry — memory.</strong> <span class="tkr" data-tip="MU">MU</span> is a real franchise on the HBM-bandwidth leg, and the Korea data confirms the cycle. But it is cyclical, it's at an all-time high, and DRAM is already plateauing sequentially. Own it <em>sized as a trade</em>, with an explicit exit — the bull's own data has new fab supply arriving 2028-29, which is the cycle's built-in end date. The trim signal is the first negative month-over-month memory-ASP print.</p>
+  <p><strong>Refuse the rent dressed as a franchise.</strong> Commodity DRAM/NAND pure-plays at all-time highs (a SanDisk up 4,000% off the spin is the <em>opposite</em> of a de-rated entry), pluggable-optics cyclical names, outsourced packaging (a 14%-margin OSAT is rent, not a moat), and — most of all — the sub-scale neoclouds. WhiteFiber, Applied Digital, IREN and their kin are levered bets that burn more cash per quarter than they hold, dependent on a financing window staying open. They belong in a willing-to-lose lottery sleeve, never in a core book that's trying to compound through 2030.</p>
+
+  <h2><span class="rn">VIII · The Tell</span>What ends the trade</h2>
+  <p>Every multi-year thesis needs a falsifier, and this one's is unusually clean. The cycle does not end when valuations look stretched or when a pundit calls a top — those signals arrive late and lie often. It ends when <strong>supply discipline breaks</strong>. Watch two numbers: TSMC's capacity guidance against NVIDIA's order intent (a widening gap means discipline holds; a closing one is the overbuild setup), and the first negative month-over-month memory-ASP print (the cyclical-peak tell for the rent layer). Until those fire, the bottleneck is real, the demand is sold out, and the names above are the way to own it.</p>
+
+  <h2><span class="rn">The Sheet</span>The picks, at a glance</h2>
   <table>
-    <thead><tr><th>Bottleneck</th><th>When</th><th>Why it binds (pure-AI lens)</th><th>Beneficiaries</th><th>Falsifier / risk</th></tr></thead>
+    <thead><tr><th>Name</th><th>Role</th><th>Tier</th><th>Stance</th></tr></thead>
     <tbody>
-      <tr>
-        <td><b>Memory (HBM/DRAM/NAND)</b></td>
-        <td class="when w1">2026 · live</td>
-        <td>Inference is memory-bandwidth-bound; HBM per AI server is multiple TB vs hundreds of GB for cloud. June Korea exports: HBM <b>+51% MoM</b>, NAND <b>+28% MoM</b> — cycle broadening.</td>
-        <td><span class="tkr" data-tip="MU">MU</span> <span class="tkr" data-tip="SNDK">SNDK</span> · SK Hynix, Samsung · equip <span class="tkr" data-tip="AMAT">AMAT</span></td>
-        <td>DRAM is +3% MoM = ASP curve flattening; a negative m/m print = cyclical-peak tell.</td>
-      </tr>
-      <tr>
-        <td><b>Power &amp; "warm shells"</b><br><span style="color:var(--muted);font-size:11.5px">↑ promoted to co-primary</span></td>
-        <td class="when w1">2026-28 · live</td>
-        <td><span class="t" data-tip="Powered, shell-complete data-center capacity ready to energize — the scarce input once chips are available.">The deployment ceiling</span>: "chips you can't plug in." ~100 GW US hyperscaler demand = double-digit % of the grid; transformers/turbines booked 3-4 yrs.</td>
-        <td><span class="tkr" data-tip="NRG">NRG</span> <span class="tkr" data-tip="CEG">CEG</span> <span class="tkr" data-tip="VST">VST</span> <span class="tkr" data-tip="TLN">TLN</span> <span class="tkr" data-tip="GEV">GEV</span> <span class="tkr" data-tip="VRT">VRT</span> <span class="tkr" data-tip="ETN">ETN</span> <span class="tkr" data-tip="BE">BE</span></td>
-        <td>Behind-the-meter gas + efficiency unlock supply faster than expected (the original "power is solvable" view).</td>
-      </tr>
-      <tr>
-        <td><b>Advanced packaging (CoWoS)</b></td>
-        <td class="when w1">2026-27 · live</td>
-        <td>Every GPU/HBM stack needs 2.5D/3D packaging; CoWoS sold out, and signoff is getting harder as packages scale (warpage couples into impedance/SI-PI).</td>
-        <td><span class="tkr" data-tip="TSM">TSM</span> <span class="tkr" data-tip="AMKR">AMKR</span> · ASE · EDA/test</td>
-        <td>CoWoS-L capacity ramps faster; glass-substrate transition smooths the moat.</td>
-      </tr>
-      <tr>
-        <td><b>CPU / RL-environment</b><br><span style="color:var(--muted);font-size:11.5px">new layer</span></td>
-        <td class="when w1">2026 · new</td>
-        <td>Agentic + RL post-training spin up verifier loops, sandboxes, tool-calls — CPU-heavy. EPYC/Xeon "entire cloud ran out of CPUs."</td>
-        <td><span class="tkr" data-tip="AMD">AMD</span> <span class="tkr" data-tip="INTC">INTC</span> · ARM · AMZN Graviton</td>
-        <td>CPU capacity catches up; the shortage is "short-term, not the company saved" (Dylan on INTC).</td>
-      </tr>
-      <tr>
-        <td><b>Substrates / optical / networking</b></td>
-        <td class="when w2">2027 · next</td>
-        <td>Scale-up/scale-out fabric: 1.6T transceivers, ABF substrates, copper foil. Interconnect is the tax on every cluster.</td>
-        <td><span class="tkr" data-tip="AVGO">AVGO</span> <span class="tkr" data-tip="MRVL">MRVL</span> <span class="tkr" data-tip="FN">FN</span> <span class="tkr" data-tip="LITE">LITE</span> <span class="tkr" data-tip="GLW">GLW</span> <span class="tkr" data-tip="ANET">ANET</span></td>
-        <td>Co-packaged optics / silicon photonics compress the transceiver TAM.</td>
-      </tr>
-      <tr>
-        <td><b>Cleanrooms / fab build / labor</b></td>
-        <td class="when w2">2027 · next</td>
-        <td>The physical build: skilled electricians/mechanical contractors are a real constraint as fabs + DCs ramp simultaneously.</td>
-        <td><span class="tkr" data-tip="FIX">FIX</span> <span class="tkr" data-tip="EME">EME</span> <span class="tkr" data-tip="PWR">PWR</span> · <span class="tkr" data-tip="HUBB">HUBB</span></td>
-        <td>Permitting reform + modular/standardized DCs cut build time.</td>
-      </tr>
-      <tr>
-        <td><b>EUV lithography</b><br><span style="color:var(--muted);font-size:11.5px">the ultimate ceiling</span></td>
-        <td class="when w3">2028-30 · ceiling</td>
-        <td><span class="t" data-tip="Confirmed independently by both Dylan Patel and OpenAI's Sachin Katti, who called it 'the single choke point of the whole supply chain.'">The single chokepoint</span>: no advanced AI chip exists without ASML. Tool output physically caps how much compute can be manufactured.</td>
-        <td><span class="tkr" data-tip="ASML">ASML</span> (monopoly) · <span class="tkr" data-tip="TSM">TSM</span></td>
-        <td>ASML never takes pricing power → shareholders don't capture the rent (the "generous monopolist" risk).</td>
-      </tr>
-      <tr>
-        <td><b>Leading-edge wafer</b></td>
-        <td class="when w3">2028-30 · ceiling</td>
-        <td>AI ≈ 86% of TSMC N3 by 2027. TSMC's capacity discipline is what's <em>preventing</em> a 1999-style overbuild (Baker).</td>
-        <td><span class="tkr" data-tip="TSM">TSM</span> · <span class="tkr" data-tip="INTC">INTC</span> (if 18A yields) · Samsung</td>
-        <td>Intel/Samsung break discipline at >30% share → TSMC must expand → supply discipline collapses.</td>
-      </tr>
-      <tr>
-        <td><b>New memory architecture</b></td>
-        <td class="when w3">2028-30 · frontier</td>
-        <td>"The compute-unit shape is known; it's the memory architecture <em>around</em> it that keeps changing" (Katti) — stacking, bonding, near-memory compute.</td>
-        <td><span class="tkr" data-tip="MU">MU</span> · SK Hynix · Samsung</td>
-        <td>Commodity DRAM/NAND "gets solved again" (Ross) → franchise premium narrows.</td>
-      </tr>
+      <tr><td><span class="tkr" data-tip="ASML">ASML</span></td><td>The EUV ceiling</td><td class="tier1">Own — core</td><td>Accumulate on dips (at ATH)</td></tr>
+      <tr><td><span class="tkr" data-tip="NVDA">NVDA</span></td><td>Compute platform</td><td class="tier1">Own — core</td><td>Best entry of the franchises now</td></tr>
+      <tr><td><span class="tkr" data-tip="CEG">CEG</span> · <span class="tkr" data-tip="NRG">NRG</span> · <span class="tkr" data-tip="VRT">VRT</span></td><td>Power — the elevated bottleneck</td><td class="tier1">Own — best R/R</td><td>De-rated; buy now</td></tr>
+      <tr><td><span class="tkr" data-tip="TSM">TSM</span></td><td>Wafer chokepoint</td><td class="tier1">Own — core</td><td>Accumulate (near highs)</td></tr>
+      <tr><td><span class="tkr" data-tip="AVGO">AVGO</span></td><td>Custom-silicon toll</td><td class="tier1">Own — core</td><td>De-rated; buy</td></tr>
+      <tr><td><span class="tkr" data-tip="MU">MU</span></td><td>HBM / memory</td><td class="tier2">Rent — trade</td><td>Sized trade, exit discipline</td></tr>
+      <tr><td>SanDisk · OSAT · pluggable optics</td><td>Cyclical rent</td><td class="tier3">Trade only</td><td>Harvest, exit before 2028-29 supply</td></tr>
+      <tr><td>Sub-scale neoclouds (WYFI/APLD/IREN)</td><td>Levered AI-host</td><td class="tier3">Avoid (core)</td><td>Lottery sleeve only</td></tr>
     </tbody>
   </table>
 
-  <h2>The 2028-2030 EUV math (the hard ceiling)</h2>
-  <div class="math">
-    ASML EUV output: <b>~70 tools/yr now → ~80 next → ~100 by 2030</b><br>
-    Cumulative tools by end-of-decade: <b>~700</b><br>
-    1 GW of AI capacity ≈ <b>3.5 EUV tools'</b> worth of fab time<br>
-    → 700 ÷ 3.5 = <b>~200 GW/yr theoretical AI capacity</b> if 100% allocated to AI<br>
-    Leverage: <b>$50B</b> of DC capex per GW vs only <b>~$1.2B</b> of EUV tooling per GW
-  </div>
-  <p style="font-size:13.5px;color:var(--muted)">So the entire AI buildout funnels through ~$1.2B/GW of ASML tools — the thinnest, least-substitutable link in the chain. That's why EUV is the 2028-2030 ceiling, and why it's the most durable franchise on this page.</p>
-
-  <div class="box amber">
-    <div class="lbl">⚠ The caveat that decides how you play it (Gavin Baker)</div>
-    <p style="margin:0">"The bottleneck trade is nearing its end… the next game is what has <em>enduring franchise value</em> on the other side." <strong>Bottleneck rents are cyclical and self-liquidating</strong> — when supply catches up, the pure rent-capturers (commodity DRAM, pluggable optics, OSAT) de-rate, while the <strong>durable franchises keep pricing power</strong>. The split: <span class="tkr" data-tip="TSM">TSM</span> / <span class="tkr" data-tip="ASML">ASML</span> / <span class="tkr" data-tip="NVDA">NVDA</span> / <span class="tkr" data-tip="MU">MU</span>-HBM = durable; commodity memory, pluggable transceivers, low-end packaging = rent. <strong>Tilt to the franchises as the cycle matures.</strong></p>
-  </div>
-
-  <div class="box green">
-    <div class="lbl">✓ Why the demand side keeps the roadmap live</div>
-    <p style="margin:0"><strong>Inference is now the majority of compute, heading to 80%+</strong> (Katti) — and RL post-training + synthetic data are themselves inference workloads. So the demand bid under every bottleneck above survives even if <em>pretraining</em> scaling plateaus. GPU capacity is sold out; "excess capacity is gone in 6 weeks." The buildout is demand-real, not just announced.</p>
-  </div>
-
-  <h2>What is NOT the bottleneck</h2>
-  <ul class="clean">
-    <li><strong>Raw GPU supply</strong> — tight, but NVDA/TSMC are scaling it; the constraint is upstream (EUV) and downstream (power/packaging), not the GPU itself.</li>
-    <li><strong>Training data</strong> — labs "ran out of real data," but <strong>synthetic data + RL scale around it</strong> (it consumes compute rather than gating it). Data is the driver of <em>capability</em>, not the ceiling on <em>capacity</em>.</li>
-    <li><strong>Algorithms / model architecture</strong> — diffuse fast (open models lag ~4-6 months); not a physical ceiling.</li>
-    <li><strong>Capital</strong> — ~$1T+/yr is flowing; funding mechanism (equity vs debt) is a risk, not a hard limit (yet).</li>
-  </ul>
-
-  <h2>How to play it (by durability)</h2>
-  <ul class="clean">
-    <li><strong>Durable franchises (own through the cycle):</strong> <span class="tkr" data-tip="ASML">ASML</span> (the ceiling), <span class="tkr" data-tip="TSM">TSM</span> (wafer discipline), <span class="tkr" data-tip="NVDA">NVDA</span> (platform), <span class="tkr" data-tip="MU">MU</span>-HBM (bandwidth franchise).</li>
-    <li><strong>Power — the elevated near-term play:</strong> de-rated entries preferred — <span class="tkr" data-tip="NRG">NRG</span>, <span class="tkr" data-tip="CEG">CEG</span> over the at-highs names; <span class="tkr" data-tip="VRT">VRT</span> for power+cooling (watch the 800VDC disintermediation flag).</li>
-    <li><strong>Cyclical rent (trade, don't marry):</strong> commodity DRAM/NAND, pluggable optics, OSAT packaging — harvest the shortage, exit before the supply wave (~2028-29 fabs).</li>
-    <li><strong>The tell to watch:</strong> TSMC capex guidance vs NVDA order intent (gap widening = discipline held; closing = bubble setup begins). The earliest cycle-peak signal there is.</li>
-  </ul>
-
-  <div class="foot">
-    Synthesis of the wiki's bottleneck-roadmap + sources through 2026-06-21 (Dylan Patel/SemiAnalysis, Katti/OpenAI, Gavin Baker, Korea customs exports, Midha/a16z). EUV anchor math per SemiAnalysis. Tickers carry the wiki's stance on hover. Research/education only — not financial advice; figures move fast, re-verify before acting.
-  </div>
+  <p class="foot">
+    Synthesis of the wiki's bottleneck-roadmap and sources through 2026-06-21 (Dylan Patel / SemiAnalysis, Sachin Katti / OpenAI, Gavin Baker, Anjney Midha, Korea customs exports). EUV anchor math per SemiAnalysis. Prices as of 2026-06-18/21; analyst targets cited verbatim where used; no price targets invented. Tickers carry the wiki's live stance on hover. For research and education only — not personal financial advice. Concentration in a single theme is a real risk; size accordingly and do your own work.
+  </p>
 </div>
 
 <div id="tip"></div>
 <script>
 const TIPS={
- MU:{n:"Micron",c:"bull · high",d:"Memory supercycle (HBM+DRAM+NAND); bandwidth franchise. Cyclical — own the rent, not the whiplash; at ATH."},
- SNDK:{n:"SanDisk",c:"watch (at ATH)",d:"NAND pure-play; the 'NAND catches DRAM' leg. Parabolic / at all-time high — pass on entry discipline."},
- AMAT:{n:"Applied Materials",c:"bull",d:"WFE; raised CY26 equip growth to >30%. Memory→fab cascade beneficiary."},
- NRG:{n:"NRG Energy",c:"bull · med-high",d:"De-rated power IPP (−29% off high, ~17x) w/ 10-20yr DC PPAs. Best-value power entry."},
- CEG:{n:"Constellation",c:"bull · med-high",d:"De-rated nuclear (−34%); MSFT TMI restart PPA. Firm clean baseload."},
- VST:{n:"Vistra",c:"bull",d:"Merchant power / nuclear; AI-power demand leverage."},
- TLN:{n:"Talen",c:"bull · watch",d:"Nuclear + AWS behind-the-meter co-location; cheap fwd but at highs."},
- GEV:{n:"GE Vernova",c:"bull",d:"Gas turbines = fast bridge power; 4-8yr backlog. Near highs."},
- VRT:{n:"Vertiv",c:"bull · high (flag)",d:"Power + cooling. 800VDC may disintermediate the central UPS — cooling franchise intact, UPS content at risk."},
- ETN:{n:"Eaton",c:"bull",d:"Electrical/grid; Beam Rubin DSX with NVDA."},
- BE:{n:"Bloom Energy",c:"bull",d:"Fuel cells = fast on-site power (gas-turbine substitute). Aschenbrenner's top power long."},
- TSM:{n:"TSMC",c:"bull",d:"Sole leading-edge foundry; wafer discipline IS the bubble-prevention mechanism. The durable franchise."},
- AMKR:{n:"Amkor",c:"med · stage",d:"OSAT packaging; TSMC Arizona + AMD anchor. Cyclical rent, not franchise."},
- AMD:{n:"AMD",c:"med · staged",d:"EPYC CPU shortage + MI GPU (#2 to NVDA). At highs — stage."},
- INTC:{n:"Intel",c:"neutral · low",d:"CPU-shortage + foundry-of-last-resort tailwinds; binary on 18A yields."},
- AVGO:{n:"Broadcom",c:"bull · high",d:"Custom ASIC + networking; OpenAI-Broadcom chip = >$1T path."},
- MRVL:{n:"Marvell",c:"bull",d:"Custom silicon + 1.6T optical/networking; the interconnect tax."},
- FN:{n:"Fabrinet",c:"bull · med-high",d:"Cheap optical (1.6T transceiver ramp) at ~4.85x sales."},
- LITE:{n:"Lumentum",c:"covered",d:"Optical components; 1.6T transceiver ramp."},
- GLW:{n:"Corning",c:"covered",d:"Optical fiber + glass substrates for the buildout."},
- ANET:{n:"Arista",c:"bull · med-high",d:"800G/1.6T Ethernet AI fabric; hyperscaler scale-out."},
- FIX:{n:"Comfort Systems",c:"bull",d:"Mechanical/HVAC; $12B+ backlog, 45% DC mix. The labor-layer play."},
- EME:{n:"EMCOR",c:"bull",d:"Largest US MEP contractor; $15B+ RPOs."},
- PWR:{n:"Quanta",c:"bull",d:"Transmission/grid construction; $48B+ backlog."},
- HUBB:{n:"Hubbell",c:"bull · watch",d:"Grid T&D (transformers/switchgear); quality but near highs."},
- ASML:{n:"ASML",c:"bull · high",d:"EUV monopoly = THE single chokepoint of the whole supply chain (Katti). The most durable franchise here. ~$1.2B tooling gates each $50B/GW of capex."},
- NVDA:{n:"NVIDIA",c:"bull · high",d:"Platform, not just a chip; CUDA + reference architecture is the ecosystem standard. The durable compute franchise."},
+ ASML:{n:"ASML · bull · high",d:"EUV monopoly = the single chokepoint of the whole chain. The most durable franchise here; at ATH so accumulate on weakness. Cited median PT $1,775."},
+ NVDA:{n:"NVIDIA · bull · high",d:"Platform/ecosystem standard (CUDA + reference arch); sold-out demand; least-extended franchise. The core holding."},
+ CEG:{n:"Constellation · bull · med-high",d:"De-rated nuclear (−34%); hyperscaler PPAs. The elevated power bottleneck, still cheap."},
+ NRG:{n:"NRG Energy · bull · med-high",d:"Merchant IPP (−29%) with 20yr DC PPAs; priced as a utility, is an AI-power annuity."},
+ VRT:{n:"Vertiv · bull · high (flag)",d:"Power + cooling. Watch the 800VDC shift eroding UPS content; cooling franchise intact."},
+ TSM:{n:"TSMC · bull",d:"Sole leading-edge foundry; wafer discipline prevents overbuild. Manufacturing franchise, near highs."},
+ AVGO:{n:"Broadcom · bull · high",d:"Custom ASIC + networking toll; OpenAI partnership >$1T path. Franchise, not rent; de-rated."},
+ MU:{n:"Micron · bull · high (rent)",d:"HBM bandwidth franchise but cyclical + at ATH. Own as a sized trade with exit discipline."},
 };
-(function(){
- const tip=document.getElementById("tip");
- function html(k){const d=TIPS[k];if(!d)return k;return `<div class="tn">${d.n} <span style="color:#f0883e">· ${d.c}</span></div><div class="tm"></div><div>${d.d}</div>`;}
+(function(){const tip=document.getElementById("tip");
+ function show(t,x,y){const k=t.getAttribute("data-tip");const d=TIPS[k];tip.innerHTML=d?`<div class="tn">${d.n}</div><div>${d.d}</div>`:`<div>${k}</div>`;tip.classList.add("on");place(x,y);}
  function place(x,y){tip.style.left="0";tip.style.top="0";const r=tip.getBoundingClientRect();let nx=x+14,ny=y+16;if(nx+r.width>innerWidth-12)nx=x-r.width-14;if(ny+r.height>innerHeight-12)ny=y-r.height-16;tip.style.left=Math.max(8,nx)+"px";tip.style.top=Math.max(8,ny)+"px";}
- function show(t,x,y){const k=t.getAttribute("data-tip");tip.innerHTML=TIPS[k]?html(k):`<div>${k}</div>`;tip.classList.add("on");place(x,y);}
  function hide(){tip.classList.remove("on");}
  document.addEventListener("mouseover",e=>{const t=e.target.closest("[data-tip]");if(t)show(t,e.clientX,e.clientY);});
  document.addEventListener("mousemove",e=>{const t=e.target.closest("[data-tip]");if(t&&tip.classList.contains("on"))place(e.clientX,e.clientY);});
