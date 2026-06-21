@@ -2,9 +2,9 @@
 type: company
 ticker: VRT
 tags: [ai, power, cooling, data-center]
-last_updated: 2026-06-01
+last_updated: 2026-06-20
 last_full_review: 2026-05-09
-sources: 2
+sources: 3
 conviction: high
 stance: bull
 ---
@@ -34,6 +34,7 @@ The **only large player covering both power AND cooling** for AI data centers �
 - **Power is NOT going to be the binding AI constraint (NEW).** Per [[2026-05-09-dwarkesh-dylan-semianalysis]], power has **16+ vendors** of generation (combined-cycle, aeroderivatives, reciprocating engines, ship engines, fuel cells, solar+battery), and ~50% of new AI capacity by EOD will be behind-the-meter. Could unlock ~200 GW of US grid just with peak-shaving batteries. **Implication:** VRT keeps growing, but its *pricing-power* moat is bounded by power-side alternatives — the framing shifts from "scarcity" to "growth + execution."
 - **AI capex cycle exposure** — slows hard if hyperscalers pause (see [[ai-capex-cycle]])
 - **Premium multiple already paid** — much of the AI thesis priced in
+- **🆕 Contradicting evidence — 800VDC may disintermediate the *central UPS* (NEW 2026-06-20, per [[2026-05-26-semianalysis-800vdc-revolution-part1]]).** SemiAnalysis argues that above ~600kW racks, 48-54V distribution breaks down and the architecture moves to **800VDC with power disaggregated to the row level** — and it explicitly names **Vertiv (with Schneider, Eaton) as *losing* the centralized low-voltage-UPS role by the later phases** (the function migrates to row-level battery/sidecar racks + solid-state transformers; named power-semi beneficiaries were Infineon/Wolfspeed, not the incumbents). **Which means** the bull case's "every GW needs VRT power+cooling" framing has a real architectural counter: VRT *keeps the cooling franchise* but its UPS content could be competed away unless it recaptures value via row-level battery racks. **Caveat:** the ranked winner/loser verdict is paywalled, so this is directional, not final, and Part 2 (the power-semi read-through) is the one to watch. This tensions the page's bull/high stance — *flagged for the curator, stance unchanged pending Part 2.*
 - **Competition** — Eaton, Schneider, ABB are all formidable; BE/GEV/Siemens/Mitsubishi also serve adjacent power layers
 - **Supply chain risk** — own components, copper, specialty cooling fluids
 - **Order timing volatility** — can be lumpy quarter to quarter
