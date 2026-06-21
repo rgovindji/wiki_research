@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Book v3 — Fresh $100K · June 20 2026 (post-research review)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0e1014;--bg2:#14171d;--card:#1a1e26;--card2:#20252e;--line:#2a2f3a;--line2:#222732;
+    --ink:#f0f2f5;--body:#c4c9d2;--muted:#8b919c;--soft:#6b7280;
+    --accent:#e08a6a;--accent2:#cc785c;--teal:#5db8a6;--green:#4ade80;--amber:#e8b45a;--red:#f87171;--blue:#6c9bd6;
+    --display:'Cormorant Garamond',Garamond,serif;--font:'Inter',-apple-system,sans-serif;--mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;}
+  html{background:var(--bg);}
+  body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#1a1f2a 0%,var(--bg) 55%);color:var(--body);font-family:var(--font);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1000px;margin:0 auto;padding:56px 24px 90px;}
+  .eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:2px;font-size:11.5px;font-weight:600;margin:0 0 14px;}
+  h1{font-family:var(--display);color:var(--ink);font-size:46px;line-height:1.05;font-weight:600;letter-spacing:-0.5px;margin:0 0 14px;}
+  .sub{font-size:18px;color:var(--body);font-style:italic;margin:0 0 12px;max-width:64ch;}
+  .meta{font-size:12.5px;color:var(--muted);font-family:var(--mono);margin:0 0 30px;padding-bottom:22px;border-bottom:1px solid var(--line);}
+  h2{font-family:var(--display);color:var(--ink);font-size:28px;font-weight:600;margin:44px 0 14px;letter-spacing:-0.3px;}
+  p{margin:0 0 16px;max-width:72ch;}
+  strong{color:var(--ink);font-weight:600;}
+  .verdict{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:20px 24px;margin:8px 0 28px;font-size:15.5px;}
+  .verdict b{color:var(--accent);}
+  .grid2{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:18px 0 8px;}
+  .chartcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center;}
+  .chartcard img{max-width:100%;height:auto;}
+  .legend{font-size:12.5px;column-count:2;column-gap:22px;}
+  .legend div{display:flex;align-items:center;gap:8px;padding:3px 0;break-inside:avoid;}
+  .legend .sw{width:11px;height:11px;border-radius:3px;flex:none;}
+  .legend .pc{margin-left:auto;font-family:var(--mono);color:var(--ink);font-weight:600;}
+  .tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;}
+  table{width:100%;border-collapse:collapse;font-size:13px;min-width:760px;}
+  th{text-align:left;padding:10px 9px;font-size:9.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:600;border-bottom:1px solid var(--line);background:var(--card2);position:sticky;top:0;}
+  th.r,td.r{text-align:right;}
+  td{padding:10px 9px;border-bottom:1px solid var(--line2);vertical-align:middle;}
+  tr.grp td{background:var(--card2);font-family:var(--display);font-size:14.5px;color:var(--ink);font-weight:600;}
+  .tkr{font-family:var(--mono);font-weight:600;color:var(--accent);}
+  .num{font-family:var(--mono);font-variant-numeric:tabular-nums;}
+  .pt{color:var(--green);font-family:var(--mono);} .sl{color:var(--red);font-family:var(--mono);}
+  .pill{font-size:9px;text-transform:uppercase;letter-spacing:.4px;padding:2px 6px;border-radius:20px;font-weight:700;white-space:nowrap;}
+  .ph{background:#15402e;color:#7ee2a8;} .pmh{background:#173a36;color:#74d3bf;} .pm{background:#3a3320;color:#e8c98a;} .pl{background:#3a2424;color:#f0a0a0;}
+  ul.clean{list-style:none;padding:0;margin:10px 0 18px;}
+  ul.clean li{position:relative;padding-left:20px;margin-bottom:9px;max-width:74ch;font-size:14.5px;}
+  ul.clean li:before{content:"";position:absolute;left:0;top:11px;width:10px;height:1px;background:var(--accent);}
+  .risk{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:10px;padding:18px 22px;margin:18px 0;}
+  .risk .lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:1.4px;color:var(--teal);font-weight:700;margin-bottom:8px;}
+  .risk ul{margin:8px 0 0;padding-left:18px;font-size:13.5px;} .risk li{margin-bottom:6px;}
+  .note{font-size:12.5px;color:var(--muted);font-style:italic;margin:8px 0 0;}
+  .t{border-bottom:1px dotted var(--soft);cursor:help;}
+  .t.tk{font-family:var(--mono);font-weight:600;color:var(--accent);font-size:.92em;border-bottom:1px dotted var(--accent2);}
+  .foot{margin-top:46px;padding-top:22px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);font-style:italic;line-height:1.6;}
+  #tip{position:fixed;z-index:99;max-width:340px;background:#070809;border:1px solid #2c333f;color:#e8eaee;padding:12px 14px;border-radius:9px;font-size:12.5px;line-height:1.5;box-shadow:0 12px 40px rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:opacity .12s;}
+  #tip.on{opacity:1;}
+  #tip .tn{font-weight:700;color:#fff;}
+  #tip .tm{font-family:var(--mono);font-size:10.5px;color:#8b919c;margin:3px 0 6px;}
+  #tip .pp{display:inline-block;font-size:9px;text-transform:uppercase;padding:1px 6px;border-radius:20px;font-weight:700;margin-right:5px;background:#2a2f3a;color:#cfd4dc;}
+  @media(max-width:720px){.wrap{padding:40px 14px 70px;}h1{font-size:32px;}.grid2{grid-template-columns:1fr;}.legend{column-count:1;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">🌙 AI Book · v4 · Fresh $100K · Stock-Combine deployment</div>
+  <h1>Putting the dry powder to work — on de-rated names only.</h1>
+  <p class="sub">v4 deploys part of the cash into four researched additions from the "Stock Combine" sweep — chosen because they're <em>de-rated</em> (pass the don't-chase screen), not because they're new. Cash 27% → 14%.</p>
+  <p class="meta">$100,000 · prices/caps at 2026-06-18/20 · 16 positions · 14% cash · targets &amp; stops illustrative, not advice</p>
+
+  <div class="verdict">
+    <b>What v4 added (2026-06-20):</b> from the 30-name research sweep, four cleared the bar — all <em>de-rated</em>, which is the whole point: <strong><span class="t tk" data-tip="QCOM">QCOM</span> (5%)</strong> cheapest AI-adjacent large-cap + free DC-AI optionality; <strong><span class="t tk" data-tip="RDDT">RDDT</span> (3%)</strong> the cleanest AI-content-monetization play; <strong><span class="t tk" data-tip="BABA">BABA</span> (3%)</strong> best accessible China AI/cloud at −44% off high; <strong><span class="t tk" data-tip="NEE">NEE</span> (2%)</strong> lower-beta power ballast (smallest — it's the weakest fit, first to cut). Funded from cash (27→14%). <em>Deliberately skipped</em> the at-the-high names (TLN/HUBB/ONTO) and the lower-tier neoclouds (IREN/APLD vs the CRWV/NBIS we'd rather own). <br><br><b>v3 baseline (unchanged):</b> dropped DDOG + PSIX; added CEG + staged AMD + AMZN; kept the GOOGL/AVGO/MSFT/NVDA franchise core. <span class="t tk" data-tip="ASML">ASML</span>/<span class="t tk" data-tip="TSM">TSM</span> remain <em>watchlist</em> (at ATH) — the remaining 14% cash is for those dips.
+  </div>
+
+  <h2>Allocation</h2>
+  <div class="grid2">
+    <div class="chartcard"><img alt="allocation" id="donut"></div>
+    <div class="legend" id="legend"></div>
+  </div>
+
+  <h2>The book — caps, targets, stops</h2>
+  <div class="tblwrap"><table>
+    <thead><tr>
+      <th>Ticker</th><th>Layer</th><th class="r">Wt</th><th class="r">$</th><th class="r">Entry</th>
+      <th class="r">Mkt cap</th><th class="r">Target</th><th class="r">Targ. cap</th><th class="r">Stop</th><th>Conv.</th>
+    </tr></thead>
+    <tbody>
+      <tr class="grp"><td colspan="10">Mega-cap anchors — de-rated franchises (40%)</td></tr>
+      <tr><td><span class="t tk" data-tip="GOOGL">GOOGL</span></td><td>Hyperscaler</td><td class="r num">10%</td><td class="r num">$10k</td><td class="r num">$368</td><td class="r num">$4.49T</td><td class="r pt">$460</td><td class="r num">$5.6T</td><td class="r sl">$315</td><td><span class="pill ph">high</span></td></tr>
+      <tr><td><span class="t tk" data-tip="AVGO">AVGO</span></td><td>Custom ASIC</td><td class="r num">9%</td><td class="r num">$9k</td><td class="r num">$411</td><td class="r num">$1.96T</td><td class="r pt">$540</td><td class="r num">$2.6T</td><td class="r sl">$345</td><td><span class="pill ph">high</span></td></tr>
+      <tr><td><span class="t tk" data-tip="MSFT">MSFT</span></td><td>Hyperscaler</td><td class="r num">8%</td><td class="r num">$8k</td><td class="r num">$379</td><td class="r num">$2.82T</td><td class="r pt">$500</td><td class="r num">$3.7T</td><td class="r sl">$325</td><td><span class="pill ph">high</span></td></tr>
+      <tr><td><span class="t tk" data-tip="NVDA">NVDA</span></td><td>Chips</td><td class="r num">8%</td><td class="r num">$8k</td><td class="r num">$211</td><td class="r num">$5.10T</td><td class="r pt">$285</td><td class="r num">$6.9T</td><td class="r sl">$178</td><td><span class="pill ph">high</span></td></tr>
+      <tr><td><span class="t tk" data-tip="AMZN">AMZN</span></td><td>Hyperscaler</td><td class="r num">5%</td><td class="r num">$5k</td><td class="r num">$244</td><td class="r num">$2.63T</td><td class="r pt">$320</td><td class="r num">$3.4T</td><td class="r sl">$208</td><td><span class="pill pmh">med-hi</span></td></tr>
+      <tr class="grp"><td colspan="10">Power — now the #1 binding constraint, de-rated (18%)</td></tr>
+      <tr><td><span class="t tk" data-tip="NRG">NRG</span></td><td>Power IPP</td><td class="r num">6%</td><td class="r num">$6k</td><td class="r num">$135</td><td class="r num">$28.5B</td><td class="r pt">$185</td><td class="r num">$39B</td><td class="r sl">$112</td><td><span class="pill pmh">med-hi</span></td></tr>
+      <tr><td><span class="t tk" data-tip="VRT">VRT</span></td><td>Power / cooling</td><td class="r num">5%</td><td class="r num">$5k</td><td class="r num">$333</td><td class="r num">$127.9B</td><td class="r pt">$430</td><td class="r num">$165B</td><td class="r sl">$278</td><td><span class="pill pmh">med-hi</span></td></tr>
+      <tr><td><span class="t tk" data-tip="CEG">CEG</span></td><td>Nuclear baseload</td><td class="r num">5%</td><td class="r num">$5k</td><td class="r num">$274</td><td class="r num">$97.9B</td><td class="r pt">$370</td><td class="r num">$132B</td><td class="r sl">$232</td><td><span class="pill pmh">med-hi</span></td></tr>
+      <tr><td><span class="t tk" data-tip="NEE">NEE</span></td><td>Utility / renewables</td><td class="r num">2%</td><td class="r num">$2k</td><td class="r num">$87</td><td class="r num">~$179B</td><td class="r pt">$110</td><td class="r num">~$227B</td><td class="r sl">$76</td><td><span class="pill pm">med·ballast</span></td></tr>
+      <tr class="grp"><td colspan="10">Compute / semis — incl. the new CPU bottleneck (8%)</td></tr>
+      <tr><td><span class="t tk" data-tip="AMD">AMD</span></td><td>CPU + GPU</td><td class="r num">3%</td><td class="r num">$3k</td><td class="r num">$537</td><td class="r num">$876B</td><td class="r pt">$640</td><td class="r num">$1.04T</td><td class="r sl">$445</td><td><span class="pill pm">med·stage</span></td></tr>
+      <tr><td><span class="t tk" data-tip="QCOM">QCOM</span></td><td>Edge AI + DC optionality</td><td class="r num">5%</td><td class="r num">$5k</td><td class="r num">$226</td><td class="r num">~$245B</td><td class="r pt">$290</td><td class="r num">~$315B</td><td class="r sl">$190</td><td><span class="pill pmh">med</span></td></tr>
+      <tr class="grp"><td colspan="10">De-rated growth / AI-monetization — picks-and-shovels (17%)</td></tr>
+      <tr><td><span class="t tk" data-tip="FN">FN</span></td><td>Optical (cheap)</td><td class="r num">5%</td><td class="r num">$5k</td><td class="r num">$574</td><td class="r num">$20.6B</td><td class="r pt">$760</td><td class="r num">$27B</td><td class="r sl">$480</td><td><span class="pill pmh">med-hi</span></td></tr>
+      <tr><td><span class="t tk" data-tip="AKAM">AKAM</span></td><td>Edge / security</td><td class="r num">5%</td><td class="r num">$5k</td><td class="r num">$125</td><td class="r num">$18.2B</td><td class="r pt">$165</td><td class="r num">$24B</td><td class="r sl">$105</td><td><span class="pill pm">med</span></td></tr>
+      <tr><td><span class="t tk" data-tip="AMKR">AMKR</span></td><td>Adv. packaging</td><td class="r num">4%</td><td class="r num">$4k</td><td class="r num">$90</td><td class="r num">$22.4B</td><td class="r pt">$120</td><td class="r num">$30B</td><td class="r sl">$74</td><td><span class="pill pm">med·stage</span></td></tr>
+      <tr><td><span class="t tk" data-tip="RDDT">RDDT</span></td><td>AI-content monetization</td><td class="r num">3%</td><td class="r num">$3k</td><td class="r num">$175</td><td class="r num">~$33B</td><td class="r pt">$250</td><td class="r num">~$47B</td><td class="r sl">$135</td><td><span class="pill pm">med·high-beta</span></td></tr>
+      <tr class="grp"><td colspan="10">China AI optionality (3%)</td></tr>
+      <tr><td><span class="t tk" data-tip="BABA">BABA</span></td><td>China AI / cloud</td><td class="r num">3%</td><td class="r num">$3k</td><td class="r num">$107</td><td class="r num">~$245B</td><td class="r pt">$150</td><td class="r num">~$345B</td><td class="r sl">$88</td><td><span class="pill pm">med</span></td></tr>
+      <tr class="grp"><td colspan="10">Dry powder — earmarked for ASML / TSM on a dip (14%)</td></tr>
+      <tr><td colspan="2"><strong>CASH</strong> — deploy in tranches</td><td class="r num">14%</td><td class="r num">$14k</td><td class="r num">—</td><td class="r num">—</td><td class="r num">—</td><td class="r num">—</td><td class="r num">—</td><td><span class="pill pmh">position</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Targets &amp; "target cap" = illustrative 12–18mo scenarios (revenue path × a multiple that assumes today's rich multiples compress), <em>not</em> analyst price targets or advice. Stops = thesis-break / risk levels (~−15% anchors, wider on high-beta). CEG/AMD entry prices at 2026-06-20; rest at 2026-06-18. Re-verify before acting.</p>
+
+  <h2>What changed</h2>
+  <ul class="clean">
+    <li><strong>v4 (2026-06-20) — deployed cash into four de-rated researched adds:</strong> <span class="t tk" data-tip="QCOM">QCOM</span> 5% (cheapest AI-adjacent large-cap + free DC-AI optionality), <span class="t tk" data-tip="RDDT">RDDT</span> 3% (AI-content monetization, high-beta), <span class="t tk" data-tip="BABA">BABA</span> 3% (China AI/cloud, −44% off high — carries ADR/policy risk), <span class="t tk" data-tip="NEE">NEE</span> 2% (lower-beta power ballast — explicitly the weakest fit, sized smallest, first to cut). Cash 27→14%. Each chosen for being <em>de-rated</em>, not new; deliberately skipped the at-the-high names (TLN/HUBB/ONTO) and the lower-tier neoclouds (IREN/APLD vs the CRWV/NBIS we'd rather own).</li>
+    <li><strong>v3 baseline — Dropped <span class="t tk" data-tip="DDOG">DDOG</span> (was 5%)</strong> — the only software name, the highest software-sentiment-beta line, into a rising "AI-eats-SaaS" regime (Dario's ~$285B "SaaSpocalypse"; Willison's dated price hikes). Its usage-based-observability thesis is the best of the software theses, but it didn't fit a compute/power picks-and-shovels book. Cleaner to cut.</li>
+    <li><strong>Dropped <span class="t tk" data-tip="PSIX">PSIX</span> (was 2%)</strong> — the 5-agent deep dive made it <em>more</em> cautious: enclosure-integrator (not a genset OEM), structural margin reset, withdrawn guidance, going-concern flag. A value-trap, not a convex ticket — out of the core book.</li>
+    <li><strong>Added <span class="t tk" data-tip="CEG">CEG</span> (5%)</strong> — power is now the #1 constraint (Satya: "chips I can't plug in"; Katti: ~100 GW = double-digit % of the grid), and CEG is the book's favorite setup: <em>de-rated −33% off high</em>, ~23.6x fwd, +23% rev, firm nuclear baseload + hyperscaler PPAs. Same logic that put NRG in.</li>
+    <li><strong>Added <span class="t tk" data-tip="AMD">AMD</span> (3%, staged)</strong> — the genuine new theme: CPUs are the new shortage (EPYC sold out) + AMD is the best non-NVDA GPU. But it's −3.9% off its high at ~61x → start <em>small</em>, add on weakness. Don't chase.</li>
+    <li><strong>Added <span class="t tk" data-tip="AMZN">AMZN</span> (5%)</strong> — the SemiAnalysis Bedrock work flipped the prior "AWS lags" exclusion: AWS EBIT +213bps Q/Q on the Bedrock/Anthropic mix. At −12% off its high it passes the don't-chase screen (unlike AMD/ASML), and it completes the hyperscaler line + adds the most diversified non-AI base in the Mag-7. Funded from cash.</li>
+    <li><strong>Kept</strong> the franchise core (GOOGL/AVGO/MSFT/NVDA), power (NRG/VRT), and the de-rated growth (FN/AKAM/AMKR) — today's research reinforced all of them.</li>
+    <li><strong>Contrarian counterweight (verified vs primary 13F):</strong> Aschenbrenner's Situational Awareness LP is positioned <em>opposite</em> this book's tilt — long power/memory/neoclouds (Bloom/SanDisk/CRWV/IREN/CORZ/APLD = 85% of a $3.86B long book) and <strong>notional puts on the semis complex (SMH/NVDA/AVGO/AMD/ASML/ORCL); zero mega-cap equity.</strong> I pulled his actual filing rather than defer to the hype: the repeated "long Vistra/Constellation + ~5.6% NBIS" claims are NOT in it, and MU/TSM are put+call spreads, not naked shorts. Disciplined read: <em>his edge is the theme (power/memory/neocloud), which we already own via NRG/VRT/CEG/AMZN-Bedrock — not names to chase (SanDisk at ATH) or shorts to mirror.</em> Held as a flag, not a stance change.</li>
+    <li><strong>Watchlist, not positions:</strong> <span class="t tk" data-tip="ASML">ASML</span> (THE chokepoint, confirmed by Katti) and <span class="t tk" data-tip="TSM">TSM</span> — both at all-time highs. The 32% cash is the dry powder to buy them on a ~10% dip rather than chase the high.</li>
+  </ul>
+
+  <div class="risk">
+    <div class="lbl">Risk discipline</div>
+    <ul>
+      <li><strong>14% cash is the remaining dry powder</strong> — v4 deployed ~13pts into de-rated names (QCOM/RDDT/BABA/NEE); the rest is held for ASML/TSM on a ~10% dip. Most of the AI complex at its highs still argues for keeping *some* powder rather than going fully invested.</li>
+      <li><strong>Power is now ~18% and concentrated</strong> — NRG+VRT+CEG+NEE. Justified (power = the #1 constraint) but watch it: if you want less, NEE (ballast) is the first trim.</li>
+      <li><strong>Stops are thesis-break levels, not day-trading lines</strong> — exit on a close below; don't average down. Anchors ~−15%; AMD staged (wider, add-don't-stop on the first leg).</li>
+      <li><strong>The bull/bear ledger says stay invested but hedged</strong> — Laffont's "80% not-a-bubble" (hyperscaler-EBITDA-funded, ~20x vs 1999's 50-60x) vs Zitron's private-credit-fragility bear. Cash + the separate tail-hedged moonshot cover the tail.</li>
+      <li><strong>Top risks:</strong> rate-driven multiple compression, an AI-capex air-pocket, the Q4 OpenAI/Anthropic IPO supply drain. The cash + de-rated tilt mitigate all three.</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    Model portfolio for research/education — not personal financial advice. Prices &amp; caps at 2026-06-18/20 (Yahoo / stockanalysis.com). Targets, target caps and stops are <em>illustrative scenario levels</em>, not analyst targets or recommendations; multiples move fast — re-verify before acting. Hover any <span class="t tk" data-tip="NVDA">ticker</span> for the bull/bear + entry quality. Do your own research.
+  </div>
+</div>
+
+<div id="tip"></div>
+<script>
+const ALLOC=[["GOOGL",10,"#6c9bd6"],["AVGO",9,"#e08a6a"],["MSFT",8,"#4ade80"],["NVDA",8,"#76d4b0"],["AMZN",5,"#ffa94d"],["NRG",6,"#e8b45a"],["VRT",5,"#5db8a6"],["CEG",5,"#7ee2a8"],["NEE",2,"#9ad17a"],["AMD",3,"#e0706a"],["QCOM",5,"#5a86c9"],["FN",5,"#b48ee0"],["AKAM",5,"#5a9e8c"],["AMKR",4,"#c98a5a"],["RDDT",3,"#ff6b4a"],["BABA",3,"#d98a3a"],["CASH",14,"#3a4150"]];
+const TIPS={
+ GOOGL:{n:"Alphabet",c:"high",a:"$368 · −10% off high · $4.49T",bull:"Cheapest mega-cap; TPU/ASIC optionality; search+cloud franchise funds capex. Purest 'enduring franchise' name.",bear:"Search disruption + antitrust; capex weighs FCF."},
+ AVGO:{n:"Broadcom",c:"high",a:"$411 · −17% off high · $1.96T",bull:"Deepest de-rate in quality compute; AI rev +143%; ASIC TAM $46B→$100B; OpenAI–Broadcom custom chip = >$1T path.",bear:"Q3 AI didn't beat the whisper — the 'growth plateau' worry."},
+ MSFT:{n:"Microsoft",c:"high",a:"$379 · −32% off high · $2.82T",bull:"Cheapest mega-cap on P/E (~20.5x), near 52w low, oversold-not-broken. Azure 39% supply-constrained; ~$400B RPO.",bear:"~$190B capex consuming most of op cash flow → FCF compression (franchise intact)."},
+ NVDA:{n:"NVIDIA",c:"high",a:"$211 · −11% off high · $5.10T",bull:"Q1 FY27 rev +85%, DC +92%, ~70% GM; LEAST extended of the spine (drifting since the print); moat re-underwritten vs custom silicon.",bear:"Most crowded trade; any capex air-pocket hits here first."},
+ AMZN:{n:"Amazon",c:"med-high (NEW)",a:"$244 · −12.3% off high · $2.63T · ~29x fwd · +14% rev",bull:"NEW (2026-06-20): the Bedrock-margin inflection re-opened the case — AWS EBIT +213bps Q/Q on Bedrock/Anthropic mix (SemiAnalysis); Trainium vertical integration; most diversified non-AI base (retail+ads) in the Mag-7. −12% off high = passes the don't-chase screen.",bear:"AWS networking handicap is structural (Stratechery); Bedrock concentrated on Anthropic; 29x fwd richer than GOOGL/MSFT; Aschenbrenner's fund owns zero mega-cap equity (contrarian flag)."},
+ NRG:{n:"NRG Energy",c:"med-high",a:"$135 · −29% off high · $28.5B",bull:"Power IPP that sold off independently of AI; ~17x fwd, near 52w low; real DC PPAs ($70-90/MWh, 10-20yr). Power = the #1 constraint.",bear:"Merchant-power cyclicality; rate-sensitive; execution on DC PPAs."},
+ VRT:{n:"Vertiv",c:"med-high",a:"$333 · −12% off high · $127.9B",bull:"Pure-play DC power & cooling; $15B backlog (+109%); every GW needs it regardless of which chip/model wins.",bear:"Cyclical; first to fall if AI capex blinks; not cheap."},
+ CEG:{n:"Constellation Energy",c:"med-high (NEW)",a:"$274 · −33.5% off high · $97.9B · ~23.6x fwd · +23% rev",bull:"NEW (2026-06-20): de-rated nuclear baseload — the ONLY firm clean power available now; hyperscaler PPAs (the Three-Mile-Island-restart archetype). Power is the #1 binding constraint (Satya/Katti) and this is the cleanest de-rated entry to it.",bear:"Power-price normalization; a DC-demand air-pocket; regulatory/restart timelines."},
+ NEE:{n:"NextEra Energy",c:"med · ballast (NEW v4)",a:"$87 · −12% off high · ~$179B · ~21x fwd · +10% rev",bull:"NEW (v4): largest US utility + renewables developer — the lower-beta way to own electrification/power demand. Ballast within the power sleeve.",bear:"Weakest fit in this growth book (lowest torque); rate-sensitive; IRA/tax-credit policy risk. Sized smallest (2%); first to cut if you want more cash."},
+ QCOM:{n:"Qualcomm",c:"med (NEW v4)",a:"$226 · −13% off high · ~$245B · ~23x fwd · +14% rev",bull:"NEW (v4): cheapest AI-adjacent large-cap; edge/on-device AI franchise + FREE datacenter-AI optionality (Tenstorrent talks, AI200/AI250). De-rated → passes the don't-chase screen. The most asymmetric add of the four.",bear:"Apple modem revenue cliff is the falsifier; handset cyclicality; DC-AI is optionality, not yet revenue."},
+ RDDT:{n:"Reddit",c:"med · high-beta (NEW v4)",a:"$175 · −38% off high · ~$33B · +70% rev",bull:"NEW (v4): the cleanest 'AI monetizes human content' play — LLM data-licensing (Google/OpenAI) + top AI-search citation source; +70% rev, newly profitable.",bear:"Highest volatility in the book; Google-traffic dependence is the falsifier; rich on a still-young monetization model."},
+ BABA:{n:"Alibaba",c:"med (NEW v4)",a:"$107 · −44% off high · ~$245B · ~16x",bull:"NEW (v4): best accessible China AI/cloud — Qwen #1 China LLM (~32% enterprise), Aliyun #1 AI-cloud (~36%), $55B+ AI capex. Deep-value optionality at −44% off high.",bear:"ADR/Beijing policy risk; AI capex crushed near-term profit (FY26 Q3 net −67%); the value can stay trapped on geopolitics."},
+ AMD:{n:"Advanced Micro Devices",c:"med · stage (NEW)",a:"$537 · −3.9% off high · $876B · ~61x fwd · +35% rev",bull:"NEW (2026-06-20): double shot on the new bottleneck — EPYC server CPUs sold out (RL-environment + agent demand) + MI GPU as Dylan's best non-NVDA alternative + ~$300B in OpenAI's commitment framework.",bear:"At its high at ~61x; MI must take real share; CPU shortage eases as capacity catches up. STAGE the entry — small first leg, add on weakness."},
+ FN:{n:"Fabrinet",c:"med-high",a:"$574 · 4.85× sales · $20.6B",bull:"The cheap version of the optical bet — same 1.6T transceiver ramp, but 4.85× sales protects the downside AND leaves real upside.",bear:"Contract manufacturer = lower margin, customer concentration; the low multiple can stay low."},
+ AKAM:{n:"Akamai",c:"med",a:"$125 · −25% off high · $18.2B",bull:"Cheapest AI-adjacent (~17x fwd P/E); security+cloud ~70% of rev growing; NVIDIA Zero-Trust tie-in; CDN decay already priced.",bear:"Low total revenue growth; AI angle incremental not transformational."},
+ AMKR:{n:"Amkor",c:"med (stage in)",a:"$90 · −6% off high · $22.4B",bull:"Best packaging thesis — 10-yr TSMC Arizona deal + AMD anchor; real contracted demand; US onshoring.",bear:"Tripled in 6 weeks, sold its Investor Day (~38x); 14%-GM cyclical OSAT. Stage the entry."},
+ DDOG:{n:"Datadog",c:"CUT (was 5%)",a:"$223 · −20% off high · $79.4B · ~22x sales",bull:"Usage-based observability = AI tailwind (more agents → more telemetry); the best of the software theses.",bear:"CUT 2026-06-20: lone software name + highest software-sentiment-beta into a rising SaaSpocalypse/cost-backlash regime; premium multiple compresses with the complex regardless. Didn't fit a compute/power book."},
+ PSIX:{n:"Power Solutions Intl",c:"CUT (was 2%)",a:"$40 · −67% off high · $0.93B",bull:"Under-followed DC-genset engines; record sales.",bear:"CUT 2026-06-20: 5-agent deep dive = value-trap. Enclosure-integrator (not OEM), structural margin reset, withdrawn guidance, going-concern flag, Weichai control + selling. Wrong profile for the core book."},
+ ASML:{n:"ASML",c:"WATCH (chokepoint)",a:"$1,930 · −0.6% off high · $731B · ~49x fwd",bull:"THE single choke point of the whole supply chain (confirmed by Katti, OpenAI). No advanced AI chip without it; EUV monopoly.",bear:"At an all-time high, ~49x, 2026 China air-pocket — zero margin of safety. Buy the dip from cash, don't chase."},
+ TSM:{n:"Taiwan Semi",c:"WATCH / dip-buy",a:"$462 · at highs",bull:"Sole leading-edge foundry; the chokepoint nobody routes around; record monthly revenue.",bear:"At the high; want it ~10% lower. Taiwan geopolitics = the tail. Watchlist from cash."},
+};
+(function(){
+ const labels=ALLOC.map(a=>a[0]),data=ALLOC.map(a=>a[1]),colors=ALLOC.map(a=>a[2]);
+ const cfg={type:"doughnut",data:{labels,datasets:[{data,backgroundColor:colors,borderColor:"#14171d",borderWidth:2}]},options:{cutout:"58%",plugins:{legend:{display:false},datalabels:{display:false}}}};
+ document.getElementById("donut").src="https://quickchart.io/chart?bkg=transparent&w=280&h=280&c="+encodeURIComponent(JSON.stringify(cfg));
+ document.getElementById("legend").innerHTML=ALLOC.map(a=>`<div><span class="sw" style="background:${a[2]}"></span><span>${a[0]}</span><span class="pc">${a[1]}%</span></div>`).join("");
+ const tip=document.getElementById("tip");
+ function html(k){const d=TIPS[k];if(!d)return k;return `<div class="tn">${d.n} <span class="pp">${d.c}</span></div><div class="tm">${d.a}</div><div><b style="color:#7ee2a8">Bull:</b> ${d.bull}</div><div style="margin-top:4px"><b style="color:#f0a0a0">Bear:</b> ${d.bear}</div>`;}
+ function place(x,y){tip.style.left="0px";tip.style.top="0px";const r=tip.getBoundingClientRect();let nx=x+14,ny=y+16;if(nx+r.width>innerWidth-12)nx=x-r.width-14;if(ny+r.height>innerHeight-12)ny=y-r.height-16;tip.style.left=Math.max(8,nx)+"px";tip.style.top=Math.max(8,ny)+"px";}
+ function show(t,x,y){tip.innerHTML=html(t.getAttribute("data-tip"));tip.classList.add("on");place(x,y);}
+ function hide(){tip.classList.remove("on");}
+ document.addEventListener("mouseover",e=>{const t=e.target.closest("[data-tip]");if(t)show(t,e.clientX,e.clientY);});
+ document.addEventListener("mousemove",e=>{const t=e.target.closest("[data-tip]");if(t&&tip.classList.contains("on"))place(e.clientX,e.clientY);});
+ document.addEventListener("mouseout",e=>{const t=e.target.closest("[data-tip]");const rel=e.relatedTarget&&e.relatedTarget.closest&&e.relatedTarget.closest("[data-tip]");if(t&&!rel)hide();});
+ document.addEventListener("click",e=>{const t=e.target.closest("[data-tip]");if(!t){hide();return;}if(tip.classList.contains("on"))hide();else{const r=t.getBoundingClientRect();show(t,r.left,r.bottom);}});
+})();
+</script>
+</body>
+</html>
