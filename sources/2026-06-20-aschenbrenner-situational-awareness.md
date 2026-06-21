@@ -65,3 +65,22 @@ sources: 1
 - **[[CRWV]] / [[NBIS]] / [[IREN]]** — note SA LP long positioning (NBIS ~5.6% holder); useful smart-money read-through.
 - Consider new pages: **[[independent-power-producers]]** (VST/CEG/BE) and a **[[situational-awareness-thesis]]** theme page if this becomes a recurring lens.
 - **[[overview]] / [[watchlist]]** — the "long bottlenecks / short GPU makers" barbell is a notable smart-money divergence worth surfacing.
+
+---
+
+## ⚠️ PRIMARY 13F CORRECTION (added 2026-06-20, supersedes secondary-reporting above)
+
+Pulled the actual SEC EDGAR 13F-HR — **accession 0002045724-26-000008, filed 2026-05-18, report date 2026-03-31, 42 line items, $13.677B total** (CIK 0002045724). Primary > the podcast/aggregator picture.
+
+**Headline split of the $13.68B 13F:** long equity $3.86B (28%) · put notional $8.46B (62%, *overstates* the short — 13F lists puts at underlying value, not premium/delta) · call notional $1.36B (10%).
+
+**LONG equity book (% of the $3.86B):** Bloom Energy [[BE]] 22.8% ($879M) · SanDisk SNDK 18.8% ($724M) · [[CRWV]] 14.4% ($556M) · [[IREN]] 10.4% ($401M) · Core Scientific CORZ 10.1% ($389M) · Applied Digital APLD 8.3% ($320M) · Riot RIOT 3.7% · then tails (CleanSpark, Solaris, T1, Bitfarms, Bitdeer, Power Solutions, WhiteFiber, Babcock, SharonAI, ProPetro, HIVE, all <3%). **Top 6 = 85%.**
+
+**PUTS (notional):** SMH $2.04B · NVDA $1.57B · ORCL $1.07B · AVGO $1.01B · AMD $969M · MU $584M · TSM $535M · ASML $494M · INTC $159M.
+**CALLS (notional):** MU $422M · SNDK $389M · TSM $355M · CRWV $141M · BE $55M → **MU and TSM are put+call SPREADS, not naked shorts**; clean directional shorts = SMH/NVDA/AVGO/AMD/ASML/ORCL.
+
+**Corrections to earlier context:** Vistra (VST), Constellation (CEG), Cipher (CIFR), and Nebius (NBIS) are **NOT in the Q1-2026 13F** — the "long power = BE/VST/CEG" and "new ~5.6% NBIS" claims were secondary-reporting noise (NBIS possibly held via a non-13F instrument or exited; unconfirmed). The $225M→$13.7B AUM jump in 5 quarters is mostly *inflows*, not return; the +2,065% figure is unaudited/implausible.
+
+**Uncovered longs vetted against our de-rated-quality discipline:** APLD = WATCH ($46.59, ~$13.3B, P/S ~42x, −8% off high — rich + near high, the best-fit but don't-chase) · SNDK = PASS for the book but a memory-tightness *signal* (~$2,184, ~$320B, P/E ~74, at ATH after a ~4,000% run — opposite of a de-rated entry) · CORZ/RIOT = PASS (lower-quality miner-to-AI-host beta, redundant with [[IREN]]/[[CRWV]]). **Net: no disciplined core-book add** — his edge is the *theme*, already expressed via [[BE]]/[[CRWV]]/[[IREN]]/[[NRG]]/[[CEG]].
+
+Source: [SEC EDGAR primary 13F XML](https://www.sec.gov/Archives/edgar/data/2045724/000204572426000008/salp13fq1xml.xml) · [13f.info](https://13f.info/13f/000204572426000008-situational-awareness-lp-q1-2026)
