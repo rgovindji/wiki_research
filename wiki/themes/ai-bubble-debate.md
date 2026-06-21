@@ -1,15 +1,24 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-20
+last_updated: 2026-06-21
 last_full_review: 2026-05-09
-sources: 32
+sources: 35
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side. The *unit-economics* leg of this debate (how perishable the frontier moat is, who captures inference margin) now lives in [[inference-economics]].
+
+## June 21, 2026 — Korea exports: real-time memory-demand confirmation, but DRAM is plateauing sequentially
+
+Per [[2026-06-21-korea-exports-memory]]: South Korea preliminary exports (June 1-20; cleanest near-real-time memory read — SK Hynix + Samsung) — **DRAM +342% YoY / +3% MoM · NAND +336% / +28% MoM · SSD +405% / +25% MoM · HBM (MCP) +209% / +51% MoM.** **Which means** — bull: a near-real-time export surge cuts against the "fabricated / over-extrapolated demand" leg, and the cycle is *broadening* (NAND/SSD/HBM all accelerating MoM; HBM +51% into the HBM4 ramp). **Bear:** it's ASP-heavy (the huge YoY is price, not unit — feeds the "narrow, price-led cycle" worry), and **DRAM +3% MoM is the first concrete sign the DRAM-ASP curve is flattening** — the "first negative m/m memory-ASP print" falsifier this file has watched for is now one print away on DRAM. Both seats keep their chairs; DRAM sequential momentum is the tell. See [[MU]].
+
+## June 21, 2026 — Two clean both-sides inputs: index mechanics (Damodaran) + utilization waste / brittle labs (Midha)
+
+- **Damodaran ([[2026-06-21-damodaran-spacex-openai-sp500-index]], bias LOW) pushes back on the "passive flows = momentum bubble" leg.** If mega-cap top-heaviness were purely momentum/index-flow driven, small caps would be *dirt cheap* on P/E & EV/EBITDA vs large caps — they are **not**; the earnings growth of the last ~20 yrs actually *came from* the large caps + winner-take-all economics (ads = Google/Meta). **Which means:** a respected, low-bias valuation voice argues Mag-7 concentration is *largely fundamentally justified*, blunting the "indexing is inflating the top" bear. **Counter-caveat (same source):** because flows lift the largest caps on the way up, *outflows* should hit them hardest → evidence of *increased variance* in index-listed mega-caps. So concentration is justified **and** more fragile both-ways — a tail-risk for a concentrated AI book ([[hedging-risk]]). Also dated: S&P **kept its rules**, so SpaceX/OpenAI/Anthropic are out of the index ≥12 months → no index-inclusion flow catalyst (mirrors the 6/11 BG2 note).
+- **Midha (a16z/Amp, [[2026-06-21-latentspace-midha-amp-compute-grid]], bias HIGH) adds two cross-cutting datapoints.** (1) *Utilization waste corroborates the RL-MFU bear:* best-in-class node allocation should be ~95-96% and MFU ~60-70%, yet many frontier-lab clusters run far below → nameplate GPU counts **overstate effective compute** (same direction as the SemiAnalysis RL-Systems 10.5%-MFU datapoint above). (2) *Bear on the long tail of labs:* "so many labs have all the cash and compute they need and still can't ship" → capital is not a moat; too much money too early = brittle culture → consolidation. **Which means:** both cut against naïve "GPUs run hot 24/7, every funded lab is a winner" bull math — but Midha *sells* a compute-fungibility grid and is an Anthropic investor, so flag the book.
 
 ## June 20, 2026 — How perishable is the frontier moat? Same fact, opposite spin (a both-sides to surface, not resolve)
 
