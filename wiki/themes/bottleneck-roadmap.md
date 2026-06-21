@@ -3,7 +3,7 @@ type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
 last_updated: 2026-06-20
 last_full_review: 2026-05-09
-sources: 12
+sources: 13
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -111,6 +111,10 @@ Per [[2026-06-20-dylan-patel-daytona-cpu-bottleneck]] (Dylan Patel × Daytona Co
 - **CPU silicon is fragmenting (gold-rush "even broken pickaxes sell").** Beneficiaries: [[AMD]] (EPYC sold out, server-share gains), [[INTC]] (Xeon sold out + foundry-of-last-resort for vendors kicked off TSMC N3 — but Dylan *tempers* the bull: "not saved," short-term/cyclical not structural), **[[ARM]] launching its own standalone CPU "in a few weeks" that Meta + Cloudflare will adopt** (IP-licensing → selling silicon directly — a business-model shift), [[AMZN]] Graviton (5-6 gens, +3x install), [[NVDA]] Vera (Grace successor, late-2026/early-2027). **Catalyst to watch: ARM standalone-CPU launch + Meta/Cloudflare confirmation (~mid-2026).**
 - **NAND catching up to DRAM (update, not contradiction).** Dylan: DRAM "+4x last year and still rising"; **SSD/NAND now +3-4x with "another ~60% to go."** This is sharper NAND inflation than the 2026-05-09 Dwarkesh read (NAND rising *less* than DRAM); NAND lagged but is now catching up — bullish near-term [[SNDK]]/[[WDC]], reinforces the memory row above and the [[MU]] thesis.
 - **TSMC node-allocation squeeze (cross-ref):** all AI accelerators are on N3 → TSMC telling Apple/Qualcomm/MediaTek to "get off 3nm, move to 2nm faster," pushing mobile/PC vendors toward Intel (non-AI-competing foundry). NVDA's Groq acquisition partly = Groq-on-Samsung (no TSMC N3 capacity). Reinforces the [[AAPL]]-deprioritization flag.
+
+## Sub-bottleneck: in-rack power distribution — the 800VDC shift (NEW 2026-06-20)
+
+Per [[2026-05-26-semianalysis-800vdc-revolution-part1]] (*SemiAnalysis — AI-bull / commercially conflicted; partly paywalled*): above **~600kW per rack**, conventional 415VAC / 48VDC distribution hits a copper/I²R-loss wall, forcing an industry shift to **800VDC** rack power architecture. **Which means**: an emerging *power-distribution* sub-bottleneck sitting above the grid-side transformer constraint — pricing power for whoever supplies 800VDC power-shelf / busbar / solid-state conversion gear ([[VRT]] / [[ETN]] / [[NVTS]] adjacency) as rack densities climb past 600kW. One analyst's framing; logged as a watch-item, not yet a hard constraint.
 
 ## Copper: the parallel commodity bottleneck (NEW 2026-05-16)
 
@@ -230,3 +234,4 @@ The previous version of this roadmap covered only the **physical** bottlenecks (
 9. [[2026-06-20-katti-stanford-ai-supercycle]] — OpenAI compute chief confirms ASML as "the single choke point of the whole supply chain"; memory architecture as the medium/long-term frontier (added 2026-06-20)
 10. [[2026-06-20-dylan-patel-daytona-cpu-bottleneck]] — NEW server-CPU bottleneck (RL-environment verifiers + long-horizon agents); Intel/AMD sold out; ARM standalone CPU (Meta/Cloudflare); NAND catching DRAM; TSMC N3 squeeze (added 2026-06-20)
 11. [[2026-06-20-nopriors-127-dylan-patel]] — multi-bottleneck confirmation; GitHub-instability/CPU-reallocation anecdote; GE turbine 4-8yr backlog; labor/electrician constraint (added 2026-06-20)
+12. [[2026-05-26-semianalysis-800vdc-revolution-part1]] — 800VDC rack power architecture as emerging power-distribution sub-bottleneck above ~600kW racks (added 2026-06-20; bias-flagged: AI-bull, partly paywalled)

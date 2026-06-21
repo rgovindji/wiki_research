@@ -2,9 +2,9 @@
 type: company
 ticker: AMZN
 tags: [ai, mag7, cloud, retail]
-last_updated: 2026-06-01
+last_updated: 2026-06-20
 last_full_review: 2026-05-09
-sources: 4
+sources: 6
 conviction: medium
 stance: bull
 ---
@@ -25,6 +25,7 @@ Two re-acceleration stories on parallel tracks — AWS regaining cloud growth sh
 | Other engines | Advertising, Prime, retail, logistics | diversified |
 
 ## Bull case
+- **🆕 AWS margin INFLECTION on the Bedrock/Anthropic mix (NEW 2026-06-20, per [[2026-05-27-semianalysis-aws-anthropic-bedrock-margins]]).** SemiAnalysis: AWS EBIT margin **+213 bps Q/Q** while Azure/GCP lagged — driven by **Bedrock (~$5.5B run-rate, 37% of AWS AI revenue, up from ~9% a year ago) + Trainium vertical integration** (Trainium powers 50%+ of Bedrock tokens). Anthropic's inference gross margin path (−94% 2024 → 38% 2025 → mid-60s% now) is the engine. **Which means** this is the first hard datapoint that *directly counters the AWS-structural-handicap bear below* — AWS is converting the Anthropic relationship into higher-margin tokens-as-a-service, not just IaaS. Caveats: figures are SemiAnalysis estimates (partly paywalled), and it's **concentrated on a single lab** (Anthropic ≈ 80-90%+ of Bedrock). This is the catalyst that re-opened the AMZN-add case for the core book.
 - **AWS reaccelerating** on AI workload demand; Bedrock gives AWS a multi-model marketplace position vs. MSFT-OpenAI exclusivity
 - **Trainium price-performance via [[AVGO]] partnership.** AWS's custom silicon (Trainium / Inferentia) is **co-designed with Broadcom** — same playbook as Google TPU and Meta MTIA. Gradually reduces NVDA dependence, but routes a share of the AWS chip economics to Broadcom.
 - **Retail margin expansion** — advertising at high margin growing fast; retail core fulfillment automation (robotics) compounding
@@ -38,6 +39,7 @@ Two re-acceleration stories on parallel tracks — AWS regaining cloud growth sh
 - **Multiple compression** alongside Mag 7 (see [[market-concentration]])
 - **Anti-trust + EU regulatory** scrutiny on marketplace + Prime bundling
 - **AWS networking handicap is structural (NEW; see [[2026-05-12-stratechery-amazon-durability]]).** Ben Thompson sharpens the AWS bear case: AWS's in-house **Nitro + EFA networking stack was optimized for the CPU cloud era**, not for AI workload topologies (low-latency, lossless, high-bandwidth between small numbers of high-power GPUs). [[NVDA]] NVLink/Spectrum-X and [[AVGO]] Tomahawk are the substrate the AI industry is building on; AWS faces a choice between grafting them in (losing Nitro differentiation) or shipping AI on Nitro (underdelivering on goodput vs Azure / GCP). **Which means:** the AWS AI revenue lag vs MSFT / GOOGL has a **technical/architectural root cause**, not just a go-to-market gap — the kind of multi-year handicap that doesn't resolve in one capex cycle.
+- **🆕 Contrarian positioning flag (NEW 2026-06-20).** Leopold Aschenbrenner's AGI-maximalist fund (Situational Awareness LP, [[2026-06-20-aschenbrenner-situational-awareness]]) holds **zero mega-cap equity (incl. AMZN)** and is short the broad semis complex — its thesis is that AI value accrues to *power/memory/neoclouds*, not hyperscaler or GPU margins. A notable sophisticated-money counter to owning the mega-caps here (heavily caveated: his short book is the fragile part, returns unaudited).
 - **AMZN held 2026 capex FLAT at $200B (May 2026; see [[2026-05-12-hyperscaler-capex-q1-revisions]])** while MSFT, GOOGL, META all raised. Could be read two ways: (a) supply-constrained (bullish supply chain, neutral AMZN) or (b) leaning harder on internal Trainium silicon (bearish for NVDA's AMZN revenue line, neutral AMZN). The Stratechery framing tilts toward "structural AI-readiness gap" as the explanation. If AMZN can't show AI-attached revenue growth in line with peers by 2H 2026, consider downgrade to neutral.
 
 ## Recent developments

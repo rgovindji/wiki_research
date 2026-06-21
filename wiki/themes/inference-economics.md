@@ -3,7 +3,7 @@ type: theme
 tags: [ai, inference, open-weight, model-routing, unit-economics, agentic]
 last_updated: 2026-06-20
 last_full_review: 2026-06-20
-sources: 8
+sources: 10
 ---
 
 # Inference Economics
@@ -21,6 +21,13 @@ The economics of *serving* AI (not training it): how inference came to dominate 
 - **Cost-backlash CONFIRMED with dated price hikes (Simon Willison, [[2026-06-20-t6-simon-willison-coding]] — *lowest-bias source in the cluster*).** The pricing honeymoon ended on Q1-2026 finance reviews: two hikes shipped "this week" — **Opus 4.7 = same nominal price but ~1.4× tokens (an invisible ~+40% bump); GPT-5.5 = 2× the price of GPT-5.4** — while heavy coding-agent users burn ~100× the tokens of 2024 chat users. **Which means:** the wiki's CIO cost-backlash thesis is no longer a forecast — it is happening, with named, dated price increases forcing the shift from token-maxing to cost-per-outcome.
 - **Open-weight ~20× cheaper is the hardest thin-moat datapoint yet (Willison).** DeepSeek ~20× cheaper than Claude Opus on API and "not 20× worse on benchmarks," runs on your own hardware; Qwen 3.6 (~627B-class) "feels like a frontier model from 6-12 months ago" and **runs on a MacBook Pro.** **Which means:** the open-weight price anchor under the routed-away 80-90% is now concrete at the laptop level — the single most load-bearing piece of evidence for the Dwarkesh thin-moat leg above.
 - **The high-margin reasoning tier is barely monetized in API (Dylan Patel, No Priors #127, [[2026-06-20-nopriors-127-dylan-patel]]).** SemiAnalysis token-tracking: people aren't actually using reasoning/thinking models much in API; **Anthropic has eclipsed OpenAI in API revenue, and that revenue is *primarily non-thinking* (Claude in non-reasoning mode), with code the biggest, fastest-growing use case.** Reasoning is gated by **cost and latency, not capability.** **Which means:** a cheap, self-hostable open-weight reasoner (e.g. OpenAI's day-1-kernels open release) could *simultaneously* (a) expand reasoning-token demand via Jevons — bullish total compute/[[NVDA]] — and (b) compress closed-lab reasoning-API margins faster than the "frontier keeps the premium" reconciliation below assumes. The premium tier the bull case leans on is a *strategic pricing choice*, not a demonstrated demand moat — corroborated by [[2026-06-20-baseten-tuhin-inference-billionx]] ("labs won't post-train their laggards because it concedes the AGI thesis").
+
+## 2026-06-20 — SemiAnalysis: utilization reality + a hard inference-commoditization datapoint (bias-flagged)
+
+*SemiAnalysis is AI-bullish / commercially conflicted; several figures are their own unaudited estimates, partly paywalled.*
+
+- **Utilization/MFU reality ([[2026-06-16-semianalysis-rl-systems-mind-the-gap]]).** RL trainers sit idle 30-74%, MFU as low as 10.5% — throughput is gated by **generator/sandbox** (a CPU/non-GPU bottleneck), not the GPUs. **Which means:** the cost-per-outcome of RL/agentic workloads carries a large non-GPU tax, and headline GPU-utilization assumptions overstate effective infra ROI (read-through to [[ai-bubble-debate]] capex-ROI).
+- **Inference commoditizes fast — and [[AMD]] caught up via open-source SW ([[2026-06-09-semianalysis-deepseekv4-day0-day43]]).** AMD **MI355X throughput +100× in <1 month** on DeepSeek V4 via open-source software (day-0 → day-43); B200 **tokens/MW +1.7×** over the same window. **Which means:** a hard thin-moat / inference-commoditization datapoint — serving cost collapses rapidly post-launch as software matures — and an [[AMD]] software-catch-up *positive*, but one that required heavy ROCm effort (so the moat narrows for whoever does the work, it doesn't vanish on its own).
 
 ## The central debate: how perishable is the frontier moat?
 Two well-credentialed sources, the *same* fact, opposite spin — surface both, don't resolve (the user decides):
@@ -70,3 +77,5 @@ Two well-credentialed sources, the *same* fact, opposite spin — surface both, 
 6. [[2026-06-20-nopriors-127-dylan-patel]] — reasoning models barely used in API (cost/latency-gated); Anthropic > OpenAI in API rev, non-thinking/code-dominated; OpenAI open-weight + day-1 kernels = margin-kneecap event (added 2026-06-20)
 7. [[2026-06-20-t2-jonathan-ross-groq-inference]] — "bottlenecks always get solved" incl. memory; portability dying → inference-ASIC bull; no-satiation demand (added 2026-06-20; bias-flagged: Groq CEO/short-seller)
 8. [[2026-06-20-baseten-tuhin-inference-billionx]] — open-weight ~90-day lag / 70-90% cheaper; B200 cluster $263→$510/hr at renewal; supply "never normalizes" till ~Q2-2027; rent→own; software-as-sticky-layer (added 2026-06-20; bias-flagged: private inference vendor)
+9. [[2026-06-16-semianalysis-rl-systems-mind-the-gap]] — RL trainers idle 30-74%, MFU as low as 10.5%; generator/sandbox throughput (CPU/non-GPU) gates RL (added 2026-06-20; bias-flagged: AI-bull, unaudited estimates)
+10. [[2026-06-09-semianalysis-deepseekv4-day0-day43]] — AMD MI355X +100× throughput in <1mo via open-source SW; B200 tokens/MW +1.7×; thin-moat/inference-commoditization + AMD ROCm catch-up (added 2026-06-20; bias-flagged: AI-bull)

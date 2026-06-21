@@ -3,7 +3,7 @@ type: theme
 tags: [ai, bubble, risk, debate]
 last_updated: 2026-06-20
 last_full_review: 2026-05-09
-sources: 28
+sources: 32
 ---
 
 # AI Bubble Debate
@@ -21,6 +21,14 @@ Two well-credentialed sources read the *identical* open-weight lag in opposite d
 **Which means:** both can be true at once — open-weight is *good enough* for the 80-90% of routed tasks (Katti concedes "we don't see that as an issue") while the frontier keeps the high-value 10-20%. The bear bite isn't a demand claim, it's a *pricing-power* claim: if the routed-away share keeps rising, closed-lab revenue *quality* compresses even as total compute demand rises. This is the [[market-concentration]] / [[valuation-environment]] risk to **frontier-lab valuations** ($900B+ Anthropic, OpenAI IPO), not to [[NVDA]]/infra. Tracks the same direction as bear-trigger #9 (Chinese open-weights crossing agentic-coding thresholds). Full unit-economics treatment in [[inference-economics]].
 
 **Plus a sharp scaling rebuttal worth keeping (Dwarkesh):** humans are **1,000-1,000,000× more sample-efficient** than LLMs, and per the **Chinchilla** equations the parameter and data loss-terms add *independently* — so even **infinite parameters cut required data by only ~10×.** "Just make the model bigger" therefore *cannot* deliver cheap, human-like learning; humans are "on a different scaling curve." **Which means:** the labs' real escape hatch for out-of-distribution work is the recursive one — automate AI research first, then have the automated researchers solve sample efficiency (see the recursion entry in [[ai-capex-cycle]]). That unproven recursive step is the load-bearing assumption under aggressive AGI timelines — a clean bear-on-timelines flag, not a thesis flip. (One analyst's framework; "different scaling curve" is a hypothesis, not a result.)
+
+## June 20, 2026 — SemiAnalysis cluster: one bull counter, one steelman, one bear datapoint (surface, don't resolve)
+
+Three SemiAnalysis pieces land on opposite sides of the debate. **Bias flag (applies to all three):** SemiAnalysis is structurally AI-bullish / commercially conflicted (sells research + consulting into this ecosystem), and several headline figures are *their own unaudited estimates*, partly paywalled — treat as informed-analyst claims, not facts.
+
+- **Bull-side counter-evidence to the Zitron "horsemen" watch-list ([[2026-06-18-semianalysis-datacenter-capacity-canceled]]):** SemiAnalysis's datacenter-capacity forecast moved only **~1% in 6 months** — i.e. they do *not* see the "DCs being cancelled / planned-never-built / shutting-down" pop (Zitron horsemen #1-3 in the watch-list below). Their read: the real slippage is **undercapitalized new entrants**, and the binding constraint is **transformer / electrical-equipment lead times, not demand**. **Which means:** a dated, direct counter to bear-triggers #1-3 — but from an AI-bull source, so log it as a falsifiable bull counter, not a resolution. The transformer-lead-time framing rhymes with the [[bottleneck-roadmap]] grid-equipment row.
+- **Steelman for "AI ROI is real but statistically invisible" ([[2026-05-29-semianalysis-ai-dark-output]]):** a Solow-paradox argument — productivity gains may be real yet hidden in measurement lags / "dark output," as with electricity and early computing. **Honest caveat:** the thesis is **near-unfalsifiable** — "you can't measure it yet" fits both a real boom and a bubble equally well, so it strengthens *neither* side decisively. Logged as the most charitable version of the bull ROI case, with that unfalsifiability flag attached.
+- **Bear datapoint on effective capex ROI ([[2026-06-16-semianalysis-rl-systems-mind-the-gap]]):** RL training systems run **trainers idle 30-74%** of the time, with **MFU (model FLOPs utilization) as low as 10.5%**. **Which means:** clean "GPUs run hot 24/7" utilization assumptions overstate effective return on AI capex — a concrete, bear-leaning datapoint cutting against the bull ROI math, even from a bull source. The gate is generator/sandbox throughput (a CPU/non-GPU bottleneck) — see [[inference-economics]].
 
 ## June 20, 2026 — The macro bull/bear ledger gets three fresh, maximally-conflicted voices (a both-sides to surface, not resolve)
 
@@ -163,6 +171,10 @@ The week of May 26-27 delivered confirming data points across every layer of the
 ### Bear case strongmen — Kedrosky + Zitron + Hashimoto + Burry (UPDATED 2026-05-31)
 
 Four well-credentialed bears made the sharpest versions of the bubble case in May 2026. Cataloged here as the **falsifiable bear framework** the wiki tracks against outcomes.
+
+#### Leopold Aschenbrenner (Situational Awareness LP) — the AGI maximalist is SHORT the semis (NEW 2026-06-20)
+
+Per [[2026-06-20-aschenbrenner-situational-awareness]]: the author of *the* "$1T compute buildout / AGI-2027" manifesto runs his ~$13.7B-13F fund as a **barbell that is bearish the consensus AI trade**: long the *physical bottlenecks* (power — Bloom/Vistra/Constellation; memory — SanDisk; neoclouds — CRWV/IREN + a new ~5.6% [[NBIS]] ≈ 15% of book) but **short the chip/semis complex via ~$8.46B notional puts** (~$2B SMH, ~$1.6B [[NVDA]], plus [[AVGO]]/[[ORCL]]/[[AMD]]/[[MU]]/[[ASML]]/[[INTC]]/[[TSM]]) and **zero mega-cap equity.** **Which means** a sophisticated, maximally-AGI-pilled investor has concluded the buildout is real *and* that value accrues to power/memory/neoclouds rather than GPU margins or hyperscaler equity — a direct, named-money counter to the [[NVDA]]/[[TSM]]/[[ASML]] core of most AI books (and a validation of the power/neocloud tilt). **Heavy caveats:** the short book is the fragile leg (short NVDA = short the best performer; blows up if Blackwell/Rubin pricing power holds), the reported +2,065% 2025 return is unaudited/implausible, and he talks his book at maximum volume (wrote the manifesto, then built the fund to monetize it). Parallel to Burry's SOXX-put structure below, but from the *opposite* worldview (Burry = "it's a bubble"; Aschenbrenner = "it's real, you own the wrong layer").
 
 #### Michael Burry — "jumped the shark" + Jan 2027 SOXX puts (NEW 2026-05-31; source dated May 8 2026)
 
@@ -554,3 +566,6 @@ LeCun goes further — he argues LLMs are *not the path* to human-level intellig
 8. [[2026-06-20-laffont-coatue-bubble]] — 80/20 not-a-bubble; hyperscaler ~$1T EBITDA / no net debt vs 1999 retail/credit at 50-60x; "front-loaded earnings melt" falsifier; AI-long bearish on SaaS (added 2026-06-20; bias-flagged)
 9. [[2026-06-20-dario-anthropic-965b]] — Anthropic profitable first time, ~$965B, "pie gets bigger"; "SaaSpocalypse" ~$285B software wipeout (added 2026-06-20; bias-flagged: lab CEO)
 10. [[2026-06-20-zitron-bubble-crash]] — perma-bear; OpenAI ~$21B 2025 loss claim + >$852B-by-2030 burn; private-credit contagion channel; token-cut + ChatGPT-stall + ORCL-concentration falsifiers — ALL CLAIMS-TO-VERIFY (added 2026-06-20; bias-flagged: marquee bear)
+11. [[2026-06-18-semianalysis-datacenter-capacity-canceled]] — DC-capacity forecast moved ~1% in 6mo; counters Zitron horsemen #1-3; bottleneck = transformer lead times, not demand (added 2026-06-20; bias-flagged: AI-bull, unaudited estimates, partly paywalled)
+12. [[2026-05-29-semianalysis-ai-dark-output]] — Solow-paradox steelman: AI ROI may be real-but-statistically-invisible; near-unfalsifiable (added 2026-06-20; bias-flagged: AI-bull)
+13. [[2026-06-16-semianalysis-rl-systems-mind-the-gap]] — RL trainers idle 30-74%, MFU as low as 10.5% → clean GPU-utilization assumptions overstate effective capex ROI (added 2026-06-20; bias-flagged: AI-bull)
