@@ -1,12 +1,12 @@
 {
   "_doc": "Prediction ledger for the After Hours / Before the Bell letters. Every falsifiable call a letter makes gets one entry when made. Each close-of-market run MUST: (1) resolve any prediction whose horizon passed or whose falsifier/confirmer triggered, (2) write resolution_note explaining WHY it was right or wrong (mechanism, not just outcome), (3) distill a lesson into playbook.md when the resolution teaches something, (4) update the calibration tally. Verdicts: right | wrong | partial | timing (structurally right, timing off) | expired (unresolvable). Max 3 new predictions per issue; a call without a falsifier doesn't get logged, it gets rewritten until it has one.",
   "calibration": {
-    "right": 4,
+    "right": 10,
     "partial": 1,
     "timing": 0,
-    "wrong": 3,
+    "wrong": 4,
     "expired": 0,
-    "notes": "2026-06-18: no predictions.json resolutions (the two June 17 calls stay open to June 19); YOLO desk logged a 3rd no-trigger (record 1-2-3); 2 new calls logged (pce-duration-branch reaction, intel-apple-pop-fades). thin-gamma-wide-range tracking toward WRONG (June 18 calm 0.57%). Updated 2026-06-17 (FOMC day, 4 resolved at once): 8 resolved total — 4 right / 1 partial / 3 wrong. By tier: HIGH 1/1 clean (short-gamma wide-range); MEDIUM now 3 right / 1 partial / 3 wrong of 7. Today's FOMC resolved a clean, instructive pattern: the two RIGHT calls were both MECHANISM reads (fomc-hold-hawkish nailed the hawkish SEP; no-revisit-7265 was a level call whose mechanism — the floor migrating up — played out exactly), while the two WRONG calls were the SAME structural error twice (fomc-day-box and pinned-into-opex both bet positive-gamma CONTAINMENT would hold the night after net GEX had already collapsed ~80%). The edge remains mechanism reads; the new liability is trusting a gamma framework after its fuel has drained. Note the sharpest pairing in the ledger: fomc-hold-hawkish (right) and fomc-day-box (wrong) graded the SAME event — right about the catalyst, wrong about the plumbing's capacity to absorb it. Lesson 10 distilled."
+    "notes": "2026-06-22 (big batch — 7 resolved at once, the Juneteenth holiday pushed six June-19-horizon calls plus the June-22 MRVL call to today's close): 6 RIGHT (software-derate, call-wall-caps-record, boj-non-event, rotation-is-a-trim, no-reclaim-7510, mrvl-inclusion-bid), 1 WRONG (thin-gamma-wide-range). Running tally now 10 right / 1 partial / 4 wrong of 15 resolved. The batch reinforces the standing pattern: the LEVEL/MECHANISM reads keep converting (no-reclaim-7510 was a clean fixed-level call graded right; rotation-is-a-trim was a mean-reversion mechanism that played out), while thin-gamma-wide-range WRONG is the now-familiar gamma-state error — it assumed thin gamma would PERSIST, but the cushion re-stacked positive within a session (the exact mirror of lesson 10's containment-after-drain error, now on the wide-range side). Two RIGHTs flagged as mechanism-untested for honesty: call-wall-caps-record (the record was never challenged — the FOMC flush put it out of reach, so the positive-gamma cap was never attacked) and mrvl-inclusion-bid (MRVL never weakened into inclusion, so the bid's defensive value went unobserved). Lesson 11 distilled (thin-gamma persistence). 3 new calls logged (floor-becomes-ceiling-holds, googl-350-reclaim, mu-sells-the-news). YOLO desk flat today (no morning trade); record holds 1-2-3. PRIOR — 2026-06-18: no predictions.json resolutions (the two June 17 calls stay open to June 19); YOLO desk logged a 3rd no-trigger (record 1-2-3); 2 new calls logged (pce-duration-branch reaction, intel-apple-pop-fades). thin-gamma-wide-range tracking toward WRONG (June 18 calm 0.57%). Updated 2026-06-17 (FOMC day, 4 resolved at once): 8 resolved total — 4 right / 1 partial / 3 wrong. By tier: HIGH 1/1 clean (short-gamma wide-range); MEDIUM now 3 right / 1 partial / 3 wrong of 7. Today's FOMC resolved a clean, instructive pattern: the two RIGHT calls were both MECHANISM reads (fomc-hold-hawkish nailed the hawkish SEP; no-revisit-7265 was a level call whose mechanism — the floor migrating up — played out exactly), while the two WRONG calls were the SAME structural error twice (fomc-day-box and pinned-into-opex both bet positive-gamma CONTAINMENT would hold the night after net GEX had already collapsed ~80%). The edge remains mechanism reads; the new liability is trusting a gamma framework after its fuel has drained. Note the sharpest pairing in the ledger: fomc-hold-hawkish (right) and fomc-day-box (wrong) graded the SAME event — right about the catalyst, wrong about the plumbing's capacity to absorb it. Lesson 10 distilled."
   },
   "predictions": [
     {
@@ -83,9 +83,9 @@
       "confidence": "low",
       "horizon": "2026-06-22",
       "falsifier": "MRVL closes below $250 before June 22 (inclusion bids don't defend prices in a tape this twitchy).",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "right",
+      "resolved": "2026-06-22",
+      "resolution_note": "RIGHT on outcome — MRVL joined the S&P 500 today (replaced Pool Corp) and closed $307.86, never anywhere near the $250 line across the June 9-22 window (it ran from ~$250 to $310+). But the HYPOTHESIS being tested ('index-inclusion bids DEFEND prices in twitchy tapes') went untested: the bid's defensive value is only observable when a stock is WEAK into inclusion, and MRVL was strong the whole way (the broad semis recovery carried it, and it even dipped -0.9% today ON inclusion day). So the prediction resolves RIGHT but does NOT promote the hypothesis — we never saw the mechanical bid have to absorb selling. A low-confidence experiment that paid on direction without isolating the variable. Keep the hypothesis under test for a name that actually wobbles into its inclusion date."
     },
     {
       "id": "2026-06-09-pm-gamma-reclaim",
@@ -135,9 +135,9 @@
       "confidence": "medium",
       "horizon": "2026-06-19",
       "falsifier": "Any ADBE close above $233.38 on or before June 19 (the market re-reads the print as the AI-monetization evidence it actually contained, and the de-rate was positioning, not regime).",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "right",
+      "resolved": "2026-06-22",
+      "resolution_note": "RIGHT. ADBE never reclaimed $233.38 across the June 11-19 window — it traded around $195 the entire time and closed $194.94 today (June 22), ~17% below the pre-print level. The de-rate was multiple compression with momentum exactly as claimed: a beat-and-raise with tripled AI ARR could not arrest a positioning-driven software de-rate. Horizon was June 19 (Juneteenth holiday); the last trading session inside the window was June 18 ($195.16), and today confirms it held far below. Right for the right reason — the call was that the print's contents wouldn't matter against the regime, and they didn't."
     },
     {
       "id": "2026-06-11-no-revisit-7265",
@@ -187,9 +187,9 @@
       "confidence": "medium",
       "horizon": "2026-06-19",
       "falsifier": "Any SPX close above 7,600 on or before June 19 (the wall migrated up faster than the positive-gamma cap predicts, or a fresh catalyst overwhelmed it — the framework is decoration on the upside).",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "right",
+      "resolved": "2026-06-22",
+      "resolution_note": "RIGHT on outcome, but the mechanism went largely untested — flagged honestly. SPX never closed above 7,600 in the window; the highest close was 7,554.29 (June 15), after which the June 17 FOMC flush knocked the tape to 7,420 and it spent the rest of the window failing to reclaim 7,510, let alone challenge 7,600. So the positive-gamma 'dealers sell into the call wall' cap was never actually attacked — the record was out of reach because the Fed intervened, not because the wall held. Graded RIGHT (the claim was simply 'no close above 7,600 before June 19,' and there wasn't), but a right call that never had to sweat its mechanism is weaker evidence than one that did. Consistent with lesson 10: net GEX collapsed ~80% mid-window, so even had the index approached 7,600 the cap would have been thin."
     },
     {
       "id": "2026-06-15-boj-non-event-for-tech",
@@ -200,9 +200,9 @@
       "confidence": "medium",
       "horizon": "2026-06-19",
       "falsifier": "Nasdaq prints a >2% down day within two sessions of the BoJ decision that coheres with a sharp yen appreciation (USD/JPY breaking down hard) — i.e. the carry-unwind tail the wiki has flagged as the #1 macro risk actually fires. (A >2% tech down day driven by the FOMC or a deal slip, with the yen quiet, does NOT falsify this — the claim is specifically about the BoJ/yen channel.)",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "right",
+      "resolved": "2026-06-22",
+      "resolution_note": "RIGHT. No >2% yen-driven Nasdaq down day materialized in the sessions following the June 16-17 BoJ decision: June 18 the Nasdaq rose +1.91%; today (June 22) it fell -1.32%, but on a GOOGL-specific AI-talent story with the yen quiet (no USD/JPY break, no carry unwind), which the falsifier explicitly excludes. The long-feared yen-carry-unwind tail did not fire. Right for the right reason: the mechanism was that a fully-priced hike with dovish-leaning guidance is a sell-the-fact non-event and the carry unwind needs a SURPRISE, which a base-case hike isn't. The wiki's #1 macro tail stayed dormant exactly as argued."
     },
     {
       "id": "2026-06-16-rotation-is-a-trim",
@@ -213,9 +213,9 @@
       "confidence": "medium",
       "horizon": "2026-06-19",
       "falsifier": "SOXX (or our equal-weight semi book) underperforms the Dow over June 17-19 close-to-close, OR any AI-demand guide-down / negative hyperscaler-capex datapoint lands in that window (then it's a de-rate, not a trim).",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "right",
+      "resolved": "2026-06-22",
+      "resolution_note": "RIGHT. The June 16 chip-for-cyclicals dump fully mean-reverted. Over the window's trading sessions (June 17-18; June 19 was a holiday), semis/AI-hardware dramatically outperformed the Dow — June 18 alone the dumped names ripped (ALAB +11.3%, MU +8.7%, MRVL +7.3%, TSM +6.9%) vs Dow +0.14% — and the pattern extended today (SOXX +2.4% vs Dow +0.29%; MU +6.8% to new highs, ALAB/VRT/TSM up). No negative AI-demand datapoint landed in the window; the catalysts were demand-positive. Right for the right reason: the claim was that positioning trims mean-revert once the event (FOMC) clears while a real de-rate compounds lower — the names compounded HIGHER, so it was a trim. Confirms the June 16 chip dump was a pre-FOMC de-risking of a crowded winner, not a leadership change."
     },
     {
       "id": "2026-06-16-fomc-day-box",
@@ -239,9 +239,9 @@
       "confidence": "medium",
       "horizon": "2026-06-19",
       "falsifier": "Any SPX close above 7,510 on June 18 or June 19 (a Fed speaker walked back the hawkish dots, or dip-buyers are stronger than a thin tape implies — the floor-becomes-ceiling read was wrong).",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": null
+      "status": "right",
+      "resolved": "2026-06-22",
+      "resolution_note": "RIGHT. The broken floor became a ceiling exactly as claimed. SPX never closed above 7,510 across the window: June 18 closed 7,500.58 (tagged 7,511 intraday, rejected), June 19 was a holiday, and today (June 22, the substitute final session per the morning brief) opened at 7,500, poked 7,530 intraday, then faded all day to close 7,472.79 — below 7,510 by 37 points and a third straight close beneath it. Right for the right reason and graded by the fixed 7,510 per lesson 7: the mechanism was that a thin-gamma tape (no mechanical dip-buying engine) plus a hawkish dot plot (no dovish surprise to carry a reclaim) leaves a lost level overhead, and that played out across three sessions. The morning brief pre-committed the grade — close above = wrong, below = right. Below."
     },
     {
       "id": "2026-06-17-thin-gamma-wide-range",
@@ -252,9 +252,9 @@
       "confidence": "medium",
       "horizon": "2026-06-19",
       "falsifier": "Both June 18 AND June 19 print high-to-low ranges under 1.5% while SPX remains below the ~7,450 flip (the cushion re-stacked faster than thought, or today's break was a one-afternoon event — the thin-gamma-wide-range mechanism is decoration).",
-      "status": "open",
-      "resolved": null,
-      "resolution_note": "Tracking toward WRONG after day 1 of 2: June 18 printed a calm 0.57% range (high 7,468.32-7,511.07) and pinned the 7,500 call wall — the cushion re-stacked faster than the thin-gamma read implied. The falsifier needs BOTH June 18 AND June 19 under 1.5%; June 18 satisfied half of it. June 19 (triple-witching) must print 1.5%+ to save the call. Final grade June 19."
+      "status": "wrong",
+      "resolved": "2026-06-22",
+      "resolution_note": "WRONG. The call needed at least one eligible session to print a 1.5%+ high-to-low range; both did the opposite — June 18 was 0.57% and today (June 22, the substitute for the Juneteenth holiday) was 0.93% (high 7,530.01, low 7,460.01). Mechanism autopsy: the read assumed positioning would STAY drained, but the cushion re-stacked positive within one session — net GEX went from ~+$22B (June 17, drained) back to +$8.8B and the dampening returned (two consecutive sub-1% ranges). The instructive contrast with its RIGHT-grading sibling 2026-06-10-short-gamma-range: in June the tape stayed BELOW the flip (gamma stayed negative, ranges stayed wide); this time the index pinned the flip and dealers re-grossed positive gamma, so the dampening came back. The lesson is the mirror of lesson 10 — a thin-gamma WIDE-range read is only valid while gamma stays thin, and it re-stacked faster than the read implied. We even diagnosed the re-stack in the June 18 letter ('the shock absorbers re-stacked faster than we expected') and let the call ride anyway."
     },
     {
       "id": "2026-06-18-pce-duration-branch",
@@ -278,6 +278,45 @@
       "confidence": "low",
       "horizon": "2026-06-25",
       "falsifier": "INTC holds its gains — no close below $126 on or before June 25 (the market is pricing real deal value, or a confirmation/terms landed and the move was substance, not sentiment). A close below $126 driven by a broad-market selloff rather than INTC-specific fade still counts (per the level-keying rule), but note the cause in the resolution.",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-22-floor-becomes-ceiling-holds",
+      "made": "2026-06-22",
+      "issue": "2026-06-22-afterhours",
+      "type": "market-direction",
+      "claim": "The 7,510 broken floor stays a ceiling into the data: SPX does not CLOSE above 7,510 on any session before the May-PCE print (~June 26). Mechanism: net GEX is only +$8.8B (thin-positive), there's no upside catalyst until Micron (June 24) and PCE (June 26), and the mega-cap-PLATFORM leadership is cracking (GOOGL -5% on the AI-talent exodus) — nothing to power a reclaim of a level the index has now closed below three straight sessions. Graded against the fixed 7,510 (lesson 7). Direct continuation of 2026-06-17-no-reclaim-7510, which resolved RIGHT today.",
+      "confidence": "medium",
+      "horizon": "2026-06-26",
+      "falsifier": "Any SPX close above 7,510 on June 23, 24, or 25 (a Micron-driven or Fed-speaker-driven catalyst carried the reclaim, or dip-buyers are stronger than a thin-cushion tape implies).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-22-googl-350-reclaim",
+      "made": "2026-06-22",
+      "issue": "2026-06-22-afterhours",
+      "type": "single-name",
+      "claim": "The Alphabet AI-talent exodus is a sentiment shock, not a fundamental break: GOOGL closes back above $350 (Berkshire's anchor) on at least one session by June 29. Mechanism: two researcher departures (Noam Shazeer to OpenAI, John Jumper to Anthropic) don't change search/cloud/TPU economics or the $460B GCP backlog; GOOGL is the cheapest mega-cap by P/E and Buffett's $350 marks just got tested to the downside (closed $349.68) — the level that drew Berkshire should draw dip-buyers. This is the bull-side test of whether the talent story is a one-name dip or a leadership de-rate.",
+      "confidence": "medium",
+      "horizon": "2026-06-29",
+      "falsifier": "No GOOGL close above $350 on or before June 29 (the market is repricing Google's AI LEADERSHIP, not just reacting to two exits — the talent drain is a regime, not a dip; would be consistent with the supply-over-demand thesis that the platforms structurally lag).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-22-mu-sells-the-news",
+      "made": "2026-06-22",
+      "issue": "2026-06-22-afterhours",
+      "type": "single-name",
+      "claim": "Micron sells the news: MU's first post-print close (June 25, the session after the June 24 after-close report) is LOWER than its June 24 close, despite a near-certain fiscal-Q3 beat. Mechanism: the quarter is pre-sold under signed price/volume contracts (no surprise left in the Q3 number), and the stock ran ~200% YTD to fresh all-time highs ($1,211 today, +6.8%) into the event — so the bar sits at the highs and only a 2027 guide that raises the HBM4 trajectory BEYOND the already-priced bar (against Samsung's 1d-DRAM/HBM5 roadmap) reverses the buy-the-rumor dynamic. Not a thesis change — we own MU and stay bull/high on the franchise; this is a tactical read on the post-print reaction given the run-up.",
+      "confidence": "low-medium",
+      "horizon": "2026-06-26",
+      "falsifier": "MU's June 25 close is HIGHER than its June 24 close (the guide re-rated the franchise; the all-time-high entry wasn't the whole story and the order-book bull case overpowered the sell-the-news setup). If MU does not report on June 24 (date slip), mark expired.",
       "status": "open",
       "resolved": null,
       "resolution_note": null

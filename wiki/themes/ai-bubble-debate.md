@@ -1,15 +1,19 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-21
+last_updated: 2026-06-22
 last_full_review: 2026-05-09
-sources: 35
+sources: 36
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side. The *unit-economics* leg of this debate (how perishable the frontier moat is, who captures inference margin) now lives in [[inference-economics]].
+
+## June 22, 2026 — The loudest bear op-ed yet (no new fact) + WSJ hard-confirms the memory shortage is supply-physics-bound
+
+Two opposite inputs landed via [[2026-06-22-semiwiki-daily]]. **Bear (pure narrative):** an FT-style op-ed ("AI is the greatest money-wasting scheme humanity has ever invented") makes the concentration + ROI case in its starkest form — **35% of the S&P 500 in seven firms, six of which haven't made a penny of AI profit (only Nvidia, "the company the other six gave their money to"); ~$1.4T cumulative AI capex against <$60B of annual global AI turnover; Stein's Law ("anything that can't go on forever eventually stops")**. No new datapoint, but it's the cleanest articulation of the revenue-vs-spend gap the bears keep circling. **Bull (hard data):** the WSJ ("Why the Memory Crunch Is Almost Impossible to Solve") confirms the memory shortage is *structural and slow*, not a fabricated-demand artifact — new US fabs don't arrive in time ([[MU]] Boise ~mid-2027, Clay NY ~2030), the three titans stay capacity-disciplined despite 80% margins, and AI's deepest pockets out-bid everyone for DRAM. **Which means** the debate's central tension is sharpened, not resolved: the bear's strongest card is the turnover-vs-capex gap (revenue must inflect to justify the spend); the bull's strongest card is that the *hardware* layer's scarcity is physical and earning real cash now. The toll-taker/toll-payer split ([[June 11]] section) keeps both seats filled. See [[market-concentration]], [[inference-economics]].
 
 ## June 21, 2026 — Korea exports: real-time memory-demand confirmation, but DRAM is plateauing sequentially
 

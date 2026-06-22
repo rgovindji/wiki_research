@@ -9,6 +9,20 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-22] daily | Alphabet talent exodus cracks the platforms; memory leads into Micron; 7 calls graded
+
+First session in five days (June 19 Juneteenth, weekend). **Tape:** SPX 7,472.79 (−0.37%, range 0.93%); Nasdaq −1.32%; Dow +0.29%. A clean supply-over-demand day — mega-cap PLATFORMS dumped ([[GOOGL]] −5% on an AI-talent exodus, AMZN −4.8%, MSFT −3%, META −2.3%) while AI-hardware/memory led ([[MU]] +6.8% to new highs, [[VRT]] +7.5%, [[ALAB]] +5.4%, [[TSM]] +1.2%, SOXX +2.4%; [[AVGO]] −4.7% and [[CRWV]] −5.6% the semi-side exceptions). Regime held **bull-under-stress** (failed to reclaim 7,510 a 3rd straight close; positive-but-thin gamma +$8.8B; VIX 17.3).
+
+- Sources ingested:
+  1. [[2026-06-22-googl-ai-talent-exodus]] — Noam Shazeer (Gemini co-lead) → OpenAI; Nobel laureate John Jumper (AlphaFold) → Anthropic. GOOGL −5% to $349.68, worst day in ~a year, first close below Berkshire's $350 anchor. Patched [[GOOGL]] (9→10). New risk axis (talent retention), NOT a stance change.
+  2. [[2026-06-22-semiwiki-daily]] — SemiWiki sweep (7 new items, 5 curated): **WSJ memory-crunch** (Micron Boise fab ~mid-2027, Clay NY ~2030; 80% GM; titans outbid everyone) → [[MU]] (15→16); **China-without-ASML** (SMEE 28nm immersion, NAURA 28nm HVM, AMEC 14nm at SMIC — mature-node progress, EUV substitution a 2030s problem) → [[ASML]] (3→4); **TSMC "doesn't need to win"** (Q1 FY26 +41% to $35.9B, HPC 61%, $106B cash) → [[TSM]] (14→15); **800VDC rack physics** (15× current reduction at 1MW, system-realization moat) → [[bottleneck-roadmap]] (14→15, ETN/VRT read); **FT-style bubble op-ed** ($1.4T capex vs <$60B turnover, Stein's Law) → [[ai-bubble-debate]] (35→36). Skipped 2 vendor/thought-leadership pieces (no new fact).
+- Wiki touched: [[GOOGL]], [[MU]], [[ASML]], [[TSM]], [[bottleneck-roadmap]], [[ai-bubble-debate]], [[index]].
+- **Predictions: 7 resolved** (Juneteenth pushed six June-19-horizon calls + the MRVL call to today): **6 right** (software-derate, call-wall-caps-record [mechanism untested], boj-non-event, rotation-is-a-trim, no-reclaim-7510, mrvl-inclusion-bid [hypothesis untested]), **1 wrong** (thin-gamma-wide-range — cushion re-stacked positive; lesson 11 distilled). Calibration now 10R/1P/4W of 15. **3 opened** (floor-becomes-ceiling-holds, googl-350-reclaim, mu-sells-the-news). YOLO desk flat (no morning trade); record 1-2-3.
+- **Stance changes flagged for review: none.** GOOGL talent-exodus logged as a watch-item, not a stance flip (would need user sign-off). Newsletter: issue #10 written + sent by wrapper.
+- **Standing infra flag:** `scripts/market_levels.py --audit` HUNG a 3rd straight day (Polygon rate-limit retry loop). Closes pulled from the **CBOE delayed_quotes JSON** (Yahoo + stockanalysis both network-blocked from the sandbox); every implied prev-close matched June 18 portfolio values, so figures are clean. Gamma snippet-only 3rd day — debug or switch gamma to snippet-primary.
+
+---
+
 ## [2026-06-22] note | Morning brief: Five Days Off, Same Line to Beat
 
 Before the Bell sent. Covered: market reopens after Juneteenth pinned under 7,510 (no-reclaim call + MRVL S&P 500 inclusion + wide-range call all grade at today's close); Iran deal signed (60-day MoU), oil ~$75; Micron earnings Wed + PCE Thu are the week's real tests; YOLO desk flat (positive-gamma pin, no catalyst). No wiki changes (morning runs don't ingest).

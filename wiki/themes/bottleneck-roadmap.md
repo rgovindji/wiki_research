@@ -3,7 +3,7 @@ type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
 last_updated: 2026-06-22
 last_full_review: 2026-05-09
-sources: 14
+sources: 15
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -134,6 +134,8 @@ Per [[2026-06-21-latentspace-midha-amp-compute-grid]] (Anjney Midha, a16z/Amp �
 ## Sub-bottleneck: in-rack power distribution — the 800VDC shift (NEW 2026-06-20)
 
 Per [[2026-05-26-semianalysis-800vdc-revolution-part1]] (*SemiAnalysis — AI-bull / commercially conflicted; partly paywalled*): above **~600kW per rack**, conventional 415VAC / 48VDC distribution hits a copper/I²R-loss wall, forcing an industry shift to **800VDC** rack power architecture. **Which means**: an emerging *power-distribution* sub-bottleneck sitting above the grid-side transformer constraint — pricing power for whoever supplies 800VDC power-shelf / busbar / solid-state conversion gear ([[VRT]] / [[ETN]] / [[NVTS]] adjacency) as rack densities climb past 600kW. One analyst's framing; logged as a watch-item, not yet a hard constraint.
+
+**Update 2026-06-22** ([[2026-06-22-semiwiki-daily]]): a SemiWiki engineering thread puts hard numbers on *why* the shift is forced — at **1,000kW rack power, 800VDC carries ~1,250A vs ~18,518A at 54VDC (~15x lower current)**, cutting copper, I²R losses, busbar size and conversion stages. But it reframes 800VDC as a *system-realization* problem, not just a voltage bump: clearance/creepage, arc risk, connector safety, hot-swap behavior, fault isolation, rack-level protection. **Which means** the value doesn't accrue to "higher voltage" generically — it accrues to whoever can deliver 800VDC *safely and serviceably at scale* (the engineering moat is fault-isolation + connector + protection design, not the busbar). Sharpens the [[ETN]] (800V DC architecture / NVDA Beam-Rubin DSX partner) and [[VRT]] (power-shelf/conversion) read: this is a content-and-complexity story, the kind that widens margins for the incumbent who solves the safety envelope first.
 
 ## Copper: the parallel commodity bottleneck (NEW 2026-05-16)
 
