@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-22] note | Morning brief: Five Days Off, Same Line to Beat
+
+Before the Bell sent. Covered: market reopens after Juneteenth pinned under 7,510 (no-reclaim call + MRVL S&P 500 inclusion + wide-range call all grade at today's close); Iran deal signed (60-day MoU), oil ~$75; Micron earnings Wed + PCE Thu are the week's real tests; YOLO desk flat (positive-gamma pin, no catalyst). No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-19] daily | Juneteenth holiday — markets closed; substantive SemiWiki sweep ingested off-tape
 
 **US markets CLOSED for Juneteenth** (NYSE/Nasdaq dark, reopen Mon June 22). Per headless rules: parts 2-4 SKIPPED (no market_state snapshot, no letter, no portfolio price update — no closes exist; the "to June 19 close" prediction calls roll to Monday's close, unresolved — confirmed in the morning brief). No predictions resolved, none opened; YOLO desk flat (no session). Part 1 wiki sweep run because the SemiWiki scan returned a genuinely meaty day.
