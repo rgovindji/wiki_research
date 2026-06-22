@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
-last_updated: 2026-06-20
+last_updated: 2026-06-22
 last_full_review: 2026-05-09
-sources: 13
+sources: 14
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -12,6 +12,17 @@ sources: 13
 A time-sequenced view of which physical resource is the binding constraint on AI compute scaling each year through the end of the decade. The bottleneck moves down the stack as supply chains catch up — and the pattern matters for portfolio construction because **the pricing power lives wherever the binding constraint is**.
 
 Synthesized from the May 2026 Dwarkesh × Dylan Patel interview ([[2026-05-09-dwarkesh-dylan-semianalysis]]).
+
+## ⭐ The 2026 reframe: two bottlenecks, two clocks (updated 2026-06-22)
+
+The most important correction since the original sequence below: **there is not one bottleneck, there are two, and they run on different clocks.** This is the headline framing now; the per-year sequence table further down is the detail layer.
+
+- **The DEPLOYMENT bottleneck — power & "warm shells" — binds NOW (2026-28).** Getting *built* chips powered, cooled, and grid-connected. **Power has been promoted to a co-primary near-term constraint**, overturning the original Dylan framing carried on this page ("power is *not* the bottleneck — 16+ generation vendors, behind-the-meter unlocks ~200 GW"). That was true about the *theoretical* availability of electrons; it's been overtaken by operational reality — Satya Nadella: *"I have chips I can't plug in"*; Katti (OpenAI): ~**100 GW** US hyperscaler demand = double-digit % of the grid, transformers/turbines booked 3-4 yrs ([[2026-06-20-katti-stanford-ai-supercycle]], [[ai-capex-cycle]]). **This decides returns over the next 2-3 years — and it's the only major chokepoint still trading at a discount** (the market files power names as "utilities," not AI infra).
+- **The MANUFACTURING bottleneck — EUV & leading-edge wafer — is the 2028-30 ceiling.** Making the chips at all; funnels through ASML (the single chokepoint, now consensus per Katti) + TSMC wafer discipline. The most durable franchise layer; decides returns over ~5 years.
+- **Memory (2026) is confirming in real time** — June Korea exports: HBM +51% MoM, NAND +28% MoM ([[2026-06-21-korea-exports-memory]]) — but it's *cyclical*: rent, not franchise (DRAM already plateauing at +3% MoM).
+- **New layer: CPU / RL-environment compute** — server CPUs sold out on agent + verifier-loop demand ([[2026-06-20-dylan-patel-daytona-cpu-bottleneck]]; sub-bottleneck section below).
+
+**Portfolio translation** (per [[ai-capex-cycle]] + Baker's "bottleneck trade nearing its end"): own the durable chokepoints through the cycle (**[[ASML]], [[TSM]], [[NVDA]], [[AVGO]]**), take the elevated near-term constraint where it's still cheap (**power: [[CEG]]/[[NRG]]/[[VRT]]**), and *rent* — never marry — the cyclical layers (commodity memory, pluggable optics, OSAT) with explicit exit discipline. Full ranked decision treatment in the research note `ai_bottleneck_roadmap_2030.html`.
 
 ## The sequence
 
@@ -111,6 +122,14 @@ Per [[2026-06-20-dylan-patel-daytona-cpu-bottleneck]] (Dylan Patel × Daytona Co
 - **CPU silicon is fragmenting (gold-rush "even broken pickaxes sell").** Beneficiaries: [[AMD]] (EPYC sold out, server-share gains), [[INTC]] (Xeon sold out + foundry-of-last-resort for vendors kicked off TSMC N3 — but Dylan *tempers* the bull: "not saved," short-term/cyclical not structural), **[[ARM]] launching its own standalone CPU "in a few weeks" that Meta + Cloudflare will adopt** (IP-licensing → selling silicon directly — a business-model shift), [[AMZN]] Graviton (5-6 gens, +3x install), [[NVDA]] Vera (Grace successor, late-2026/early-2027). **Catalyst to watch: ARM standalone-CPU launch + Meta/Cloudflare confirmation (~mid-2026).**
 - **NAND catching up to DRAM (update, not contradiction).** Dylan: DRAM "+4x last year and still rising"; **SSD/NAND now +3-4x with "another ~60% to go."** This is sharper NAND inflation than the 2026-05-09 Dwarkesh read (NAND rising *less* than DRAM); NAND lagged but is now catching up — bullish near-term [[SNDK]]/[[WDC]], reinforces the memory row above and the [[MU]] thesis.
 - **TSMC node-allocation squeeze (cross-ref):** all AI accelerators are on N3 → TSMC telling Apple/Qualcomm/MediaTek to "get off 3nm, move to 2nm faster," pushing mobile/PC vendors toward Intel (non-AI-competing foundry). NVDA's Groq acquisition partly = Groq-on-Samsung (no TSMC N3 capacity). Reinforces the [[AAPL]]-deprioritization flag.
+
+## Sub-bottleneck: utilization waste + datacenter community backlash + alt-silicon co-design (NEW 2026-06-21)
+
+Per [[2026-06-21-latentspace-midha-amp-compute-grid]] (Anjney Midha, a16z/Amp — *bias HIGH: sells a multi-cloud compute "grid," competes with neoclouds, Anthropic investor*):
+
+- **Utilization is a hidden capacity lever.** Best-in-class node allocation should be **95-96%** (at Google "95% is an outage") and **MFU ~60-70%**; many frontier-lab clusters run far below → stranded/wasted compute that compounds at scale. **Which means:** effective compute supply < nameplate — a *utilization* dimension to the GPU constraint (corroborates the SemiAnalysis RL-Systems 10.5%-MFU datapoint). The picks-and-shovels read is the orchestration/scheduling/pooling layer (Amp, SF Compute futures), mostly private.
+- **Community/permitting backlash is becoming a power-adjacent constraint.** Midha: "up to ~20% of US data centers this year are at risk" of not getting community support (grid, environment, permitting) — *he flags this may be over-reported*. Pitches "net-positive data centers" (rebate marginal $/hr / cut local electricity bills) and warns of coming audits/investigations. **Which means:** sits *above* the transformer/grid-equipment row — social license to build is an emerging gate on the buildout pace; watch local-permitting friction as a leading indicator.
+- **Alt-silicon's binding constraint is co-design trust-boundary, not fab access.** Matrox (Reiner Pope) adopted the **NVIDIA reference architecture** so its chips drop into any NVDA bring-up site, innovating only on logic-die systems co-design. A 2-yr tape-out needs early visibility into the *next* model generation → leaving an incumbent's trust boundary (ex-Google) is the real risk. **Which means:** NVDA's open reference architecture is itself an ecosystem-standard moat ([[NVDA]]); challengers ([[AMD]], Matrox) build *to* it. Cross-ref the in-rack power row below.
 
 ## Sub-bottleneck: in-rack power distribution — the 800VDC shift (NEW 2026-06-20)
 
