@@ -56,7 +56,7 @@ AI-infrastructure provider via two segments: **cloud services** (GPU/HPC for gen
 - **2026-06-18 — $100M delayed-draw term loan** (to $150M; Bit Digital + $20M B. Riley slice) to bridge NC-1 Madison financing. Stock jumped on the news.
 
 ## Related
-[[CRWV]] · [[NBIS]] · [[IREN]] · [[APLD]] · [[ai-capex-cycle]] · [[inference-economics]] · [[2026-06-20-aschenbrenner-situational-awareness]] · [[project-aggressive-200k-portfolio|moonshot lottery candidate]] · [[overview]]
+[[CRWV]] · [[NBIS]] · [[IREN]] · [[APLD]] · [[ai-capex-cycle]] · [[inference-economics]] · [[2026-06-20-aschenbrenner-situational-awareness]] · [[overview]] · *(moonshot lottery candidate — see the $200K book)*
 
 ## Sources
 1. Web research 2026-06-20: [StocksToTrade — WYFI $100M AI funding](https://stockstotrade.com/news/whitefiber-inc-wyfi-news-2026_06_18/) · [stockanalysis.com WYFI](https://stockanalysis.com/stocks/wyfi/) · [SEC 8-K filings](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002042022). Price/cap/financials as of 2026-06-18; verify against a current quote + latest 10-Q before acting.

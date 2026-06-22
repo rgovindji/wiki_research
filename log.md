@@ -3017,3 +3017,11 @@ User added two new podcast transcripts to `raw/podcasts/` (dylan_invest_like_bes
 - (video) sources/2026-06-22-tastylive-ai-correlation-beta.md + raw. tastytrade quant study: AI stocks DECOUPLED from each other (avg pairwise corr ~52%→~42% 2020-22→2024-26) but market beta ROSE to ~75%. Two camps: index-coupled lower-beta (MSFT/GOOGL/AMZN >70% corr → SPX puts work) vs narrative-driven high-beta (NVDA/AMD/META/PLTR/SMCI → SPX puts DON'T hedge; need name/sector hedges). Crash → all snap to >90% correlation (diversification vanishes). Size by beta-weighted risk not dollars.
 - Why it matters: independently VALIDATES the moonshot's SOXX (semis) tail hedge over SPX (high-beta AI names aren't index-hedgeable); quantifies the core book's real tail (intra-AI decoupling is a calm-tape illusion, snaps to >90% in a crash → cash + uncorrelated assets are the only drawdown diversification). Risk/hedging insight only — no stock-pick changes.
 - Wiki touched: bottleneck-roadmap (reframe), hedging-risk (new SPX-can't-hedge-narrative section, sources 0→1, last_updated 6/22), index, log. No stance changes.
+
+## [2026-06-22] lint | cleanup pass
+- FIXED: removed duplicate "June 19 WSTS" section in ai-bubble-debate.md (was 2 identical blocks).
+- CREATED: wiki/themes/ai-software-disruption.md (was referenced 16x with no page — the biggest dangling link). Survival spectrum VEEV>NOW>DDOG(tailwind)>>CRM>DUOL.
+- CREATED: wiki/companies/DDOG.md (closes self-introduced dangling ref; the "AI-tailwind observability" exemplar, cut from book on factor risk not thesis).
+- FIXED: WYFI.md dangling link to memory file (project-aggressive-200k-portfolio) → plain text.
+- Added ai-software-disruption to index themes catalog.
+- REPORTED (not auto-fixed, per house rule — out-of-scope/borderline implicit entities for curator decision): RTX (6, defense — also malformed aliases "RTX (Raytheon)"), USAR (5, rare-earth/robotics), DGXX (3), ALNT (3, robotics motion); minor: ai-software alias→should be ai-software-disruption/inference-economics, MATCH-Act/X/log should be plain text, UUUU/UMC/TECK/FCX/CSCO/CCJ (2 each, sector-adjacent ticker mentions).

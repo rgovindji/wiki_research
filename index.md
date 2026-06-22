@@ -120,6 +120,7 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 - [[ai-capex-cycle]] — hyperscalers spending ~$725B in 2026 (+77% YoY); 40% of S&P 500 EPS growth attributed to AI
 - [[market-concentration]] — Mag 7 = 35% of S&P 500, equal to dot-com peak; counter-thesis
 - [[ai-bubble-debate]] — bull (real productivity) vs. bear (CAPE 39.8, capex ROI uncertain)
+- [[ai-software-disruption]] — **NEW 2026-06-22** — "AI eats SaaS": agents-are-the-new-seats; the SaaSpocalypse (~$285B software wipeout); survival spectrum VEEV > NOW > [[DDOG]] (tailwind) >> CRM > DUOL; usage-based/vertical/regulated survives, horizontal/per-seat is the target
 - [[inference-economics]] — **NEW 2026-06-20** — the unit economics of *serving* AI: inference is already the majority of compute (→80%+); CIO cost backlash ("value-maxing not token-maxing"); model routing (frontier for 10-20%, open-weight for 80-90%); the **4-vs-6-month open-weight-lag moat contradiction** (Dwarkesh: perishable / Katti: enormous); where the margin accrues (cheap-inference infra, memory, non-NVDA silicon, the harness layer, data-labeling vendors)
 - [[ai-infrastructure-debt]] — the contagion mechanism; $38B Oracle DC debt distribution, $120B off-balance-sheet shift, SRT mechanism, Blue Owl + Apollo redemption gates, named bank exposures, 2008 CDO/SIV pattern analog (NEW 2026-05-15)
 - [[nvda-supply-chain]] — NVIDIA's vendor stack + direct equity investments; second-order AI plays
