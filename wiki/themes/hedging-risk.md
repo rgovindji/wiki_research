@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [hedging, risk, defensive, volatility, late-cycle]
-last_updated: 2026-05-14
+last_updated: 2026-06-22
 last_full_review: 2026-05-14
-sources: 0
+sources: 1
 conviction: high
 ---
 
@@ -14,6 +14,19 @@ conviction: high
 Until 2026-05-14 the wiki was **100% long-biased.** Every framework page modeled what to buy; none addressed what to do when the bear case played out. With **5 of 6 late-cycle warning indicators firing** (per [[ai-bubble-debate]]) and the **30y Treasury auctioned above 5% with soft demand** (per [[fed-policy]]), that's a contradiction worth fixing before the May 20 NVDA print and June 10 CPI binary.
 
 **Hedging is insurance, not a directional bet.** The wiki's central long thesis (AI capex acceleration, semiconductor bottleneck cascade, structural compounders) is intact. Hedging is what protects realized gains from short-window tail risks while the long thesis plays out over 18-24 months.
+
+## ⚠ Hedging AI: S&P puts DON'T hedge the high-beta names (NEW 2026-06-22)
+
+Per [[2026-06-22-tastylive-ai-correlation-beta]] (tastytrade quant study — descriptive, directional): AI stocks have **decoupled from each other** (avg pairwise correlation ~52% → ~42%, 2020-22 → 2024-26) while their **beta to the market rose to ~75%.** That low-correlation/high-beta combo splits the hedge problem in two:
+
+- **Index-coupled, lower-beta** ([[MSFT]], [[GOOGL]], [[AMZN]], >70% correlated to the market) → **S&P/SPY puts hedge them effectively.**
+- **Narrative-driven, high-beta** ([[NVDA]], [[AMD]], [[META]], [[PLTR]], SMCI — they move on their own AI story; NVDA's correlation has drifted *furthest* from the index) → **S&P puts CANNOT hedge them.** You need **name- or sector-specific** hedges (e.g. **SOXX puts** for the semis-heavy book).
+
+**Two rules that follow:**
+1. **Match the hedge to the factor.** This is exactly why the $200K moonshot uses a **SOXX (semis) tail hedge, not SPX** — its high-beta [[NVDA]]/[[AVGO]]/[[AMD]] exposure isn't index-hedgeable. Validated independently here.
+2. **Size by beta-weighted risk, not dollars** — adding AI names raises portfolio vol *significantly* even at low correlation, because beta/vol is high. "The vol premium per dollar of allocation is the real cost."
+
+**The tail that matters most:** in a crash, **all AI names snap to >90% correlation** — *"diversification disappears when the market gets stressed."* So intra-AI "decoupling" is a calm-tape illusion; the only diversification that survives a drawdown is **cash + genuinely uncorrelated assets** (the de-rated power tilt, gold/VIX, dry powder), not owning "different" AI names.
 
 ## When to hedge — the indicator framework
 
