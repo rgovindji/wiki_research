@@ -1,0 +1,96 @@
+{
+  "_doc": "Daily market-state snapshot. Written by the close-of-market run, read by the next morning run (and the next close run for day-over-day deltas). Reasoning fuel — the reader never sees this file, only the conclusions drawn from it. Fields left null were not collected; collect them next run rather than guessing.",
+  "date": "2026-06-23",
+  "as_of": "2026-06-23T16:00:00-04:00",
+  "session_note": "The chip rout the morning brief flagged. Overnight global memory selloff (KOSPI -9.99% with a circuit-breaker halt, Samsung/SK Hynix -12%+) carried into the US. SPX -1.44% to 7,365.46, BELOW the ~7,450 zero-gamma flip for the first time this stretch (net GEX flipped negative). But it made its low EARLY (7,347.60, ~the 7,350 put wall) and rallied 76 pts off it as non-chip tech + defensives caught a bid.",
+  "indexes": {
+    "spx": {
+      "close": 7365.46,
+      "chg_pct": -1.44,
+      "ohlc": [7366.51, 7424.17, 7347.60, 7365.46],
+      "note": "Open 7366.51, high 7424.17, low 7347.60, close 7365.46 (CBOE _SPX OHLC; close cross-confirmed by Yahoo/CNBC/TheStreet at 7,365.47 -1.44% / -107.32). High-to-low range = 76.57 pts = 1.04%. Path: gapped down ~flat-to-the-feared-open, dripped to the 7,347.60 low (≈ the 7,350 put wall) EARLY, then rallied 76 pts to 7,424.17 as bargain-hunters bid non-chip tech (MSFT/AMZN) + defensives (WMT/PG/JNJ), then faded into the close to 7,365.46 — above the 7,352 ledge, below the 7,400 shelf and the ~7,450 flip. The put wall caught the flush within ~3 pts (same signature as June 9/10 at 7,300)."
+    },
+    "nasdaq_composite": {
+      "close": 25587.04,
+      "chg_pct": -2.21,
+      "note": "-2.21% / -579.56, the laggard — a chip/memory event. MU -13.2%, NVDA -4.13%, INTC -6.1%, AMD ~-6%, QCOM ~-8%, SOXX -7.88%. Mega-cap PLATFORMS held up far better (GOOGL -1.0%, MSFT/AMZN reportedly green) — the supply-over-demand rotation running IN REVERSE for a day (supply side led down)."
+    },
+    "dow": {
+      "close": 51665.49,
+      "chg_pct": -0.09,
+      "note": "-0.09% / -47.22 (~51,665) — near-flat. A near-flat Dow on a -2.2% Nasdaq day is the tell this was a chip-specific de-risk, not a broad risk-off. DELL +2.2% (green) the standout portfolio name; value/defensives bid."
+    }
+  },
+  "after_hours_events": [
+    {"event": "No portfolio-name earnings after the close today. MU fiscal Q3 print is TOMORROW (Wed June 24, after close).", "note": "Day's defining event was the global memory rout (intraday, overnight-led). SPCX +~1% to ~$156, SNAPPING a 3-day -24% skid (bears comfortably above the $135 offer; 2026-06-12-spcx-holds-offer stays open and safe). The live wire now is MU's 2027 guide tomorrow night into a freshly-repriced, fearful tape."}
+  ],
+  "regime": {
+    "call": "bull-under-stress",
+    "options": ["bull", "bull-under-stress", "sideways", "bear-rally", "bear"],
+    "rationale": "Held at bull-under-stress but with the stress materially intensified and the gamma cushion now GONE. For the first time this stretch SPX closed BELOW the ~7,450 zero-gamma flip (7,365.46) and net GEX flipped NEGATIVE (-$49.4B, FlashAlpha) — so dealers are now in AMPLIFY mode, not dampen mode (the morning brief's warning realized). VIX +12.8% to 19.49. That argues for a downgrade. What holds it at bull-under-stress rather than bear-rally/bear: (1) the flush was bought hard — SPX rallied 76 pts off a low that tagged the 7,350 put wall within 3 pts, closing well off the lows; (2) Dow near-flat and defensives/non-chip tech GREEN = a chip-specific de-risk, not a broad collapse; (3) VIX 19.5 is elevated, not panicked (no 25+); (4) gold ALSO fell = dash-for-cash de-risking, the orderly kind; (5) nothing touched a signed memory contract — the thesis is intact, this was a valuation reset of the most crowded trade. Per playbook (don't flip regime on one session; require a close beyond a named level), the call waits for a CLOSE below 7,300 (bear confirmation) or back above 7,450 (heals it).",
+    "what_changes_it": "Down to bear-rally/bear on a CLOSE below 7,300 (the deeper put-wall magnet breaks → amplification toward 7,250/7,200 with no cushion), OR a Micron 2027 guide CUT tomorrow that turns the reset into a demand-break, OR a hot May PCE (June 26) that hardens the BofA-hike narrative. Back to bull on a CLOSE above ~7,450 (reclaims the flip, re-stacks positive gamma, says the rout was a one-day crowded-trade unwind). Watch (1) MU June 24 AH guide — the reset-vs-break disambiguator, (2) whether the 7,350 put wall holds as support on a retest, (3) Fed speakers' tone vs the BofA hike call, (4) PCE June 26."
+  },
+  "key_levels": {
+    "spx_support": [7350, 7347, 7300, 7265],
+    "spx_resistance": [7400, 7424, 7450, 7510],
+    "notes": "Support: 7,350 = put wall (today's low 7,347.60 bounced here within 3 pts); 7,300 = prior aggregate put-wall magnet (caught flushes within 2 pts June 9/10); 7,265 = June 10/11 hold. Resistance: 7,400 = peak-GEX magnet / broken hedge shelf; 7,424 = today's high; 7,450 = zero-gamma flip (reclaim line — above it dealers dampen again); 7,510 = the broken-floor-now-ceiling (untouched today). Below the 7,450 flip the tape is in the amplification zone.",
+    "gamma": {
+      "zero_gamma_flip": 7450,
+      "call_wall": 7510,
+      "put_wall": 7350,
+      "net_gex_usd": -49360000000,
+      "near_put_wall": 7350,
+      "near_call_wall": 7450,
+      "source": "SNIPPET (FlashAlpha, indexed as-of June 23) — scripts/market_levels.py --audit FAILED A 4TH STRAIGHT DAY (exit 144, Polygon free-tier rate-limit retry loop; killed). No computed levels / no audit verdict. Snippet: net GEX -$49.36B (NEGATIVE — flipped from +$8.8B June 22), zero-gamma flip 7,450.46, put wall 7,350, peak-GEX magnet 7,400, reported 'call wall 8,000' treated as a far-OTM artifact (practical overhead resistance = the 7,450 flip then the 7,510 broken floor). Tape-coherence check: close 7,365.46 is BELOW the 7,450 flip = negative gamma confirmed; the day's low 7,347.60 tagged the 7,350 put wall and bounced 76 pts — clean coherence. near_call_wall set to the 7,450 flip (the real intraday resistance), not the 8,000 artifact.",
+      "note": "API FAILURE 4th straight day (June 17/18/22/23; June 19 holiday). market_levels.py exits 144 on the Polygon rate-limit retry loop. Closes + OHLC obtained via the CBOE delayed_quotes JSON endpoint (cdn.cboe.com/api/global/delayed_quotes/quotes/{T}.json) for all 11 holdings + SPY/QQQ/INTC/SOXX + _SPX/_VIX; every implied prev-close matched the June 22 portfolio values, confirming clean June 23 data. factor_tape.py (Yahoo) ran fine for cross-asset. STANDING ACTION: the gamma API hang is now a 4-session failure — either debug the retry loop or formally switch gamma to snippet-primary and retire the trust-period audit.",
+      "audit_verdict": "unavailable",
+      "audit_override": "N/A — no computed levels produced (script failed 4th day). Snapshot uses snippet fallback per playbook rule; snippet passes the tape-coherence check (close below flip, low tagged put wall).",
+      "audit_log": "2026-06-23: market_levels.py --audit launched ~17:00 CT, ran with zero output, killed (exit 144). FOURTH consecutive failure. Closes/OHLC via CBOE delayed_quotes JSON (all holdings + _SPX/_VIX OHLC: SPX open 7366.51/high 7424.17/low 7347.60/close 7365.46). Gamma from FlashAlpha snippet (flip 7450 / put 7350 / peak-GEX 7400 / net GEX -$49.36B). VIX 19.49 from factor_tape.py. The side-by-side trust period (started 2026-06-09) has now MISSED FOUR sessions and is effectively dead — recommend formalizing snippet-primary for gamma until the script is fixed."
+    }
+  },
+  "rates_commodities": {
+    "ust10y_pct": 4.49,
+    "wti_usd": 73.05,
+    "brent_usd": null,
+    "gold": 4129.00,
+    "note": "10Y 4.49% (+0.04, +0.94%, rising 5d) — the BofA 'Fed hikes 75bp in 2026' note pushed the higher-for-longer leg; a duration headwind that compounded the growth/chip selloff. WTI $73.05 (-2.37%, 5d -7.7 falling) — war premium fully drained, oil now a disinflationary tailwind (cuts against the BofA hot-inflation call at the margin). Gold -1.26% to $4,129 (falling 5d) — gold DOWN on a risk-off day = dash-for-cash de-risking, not a flight-to-safety panic. DXY 101.36 (+0.33%, rising 5d) — firm dollar, mild EM/multinational headwind. From factor_tape.py (Yahoo)."
+  },
+  "volatility_flow": {
+    "vix": 19.49,
+    "vix_note": "VIX +2.21 to 19.49 (+12.79%) — a real fear bid (biggest 1-day VIX pop in weeks), consistent with net GEX flipping negative and SPX losing the flip. But sub-20 and well off the June-10 war spike — elevated, not panicked. Coheres with the orderly bounce-off-the-put-wall character. From factor_tape.py.",
+    "vix_term_structure": null,
+    "put_call_ratio": null,
+    "put_call_note": "Not collected (lags 1-2 days free). Structural read: VIX +12.8% on a -1.44% SPX day, net GEX negative, but the index closed 76 pts off its low at the put wall = hedging surge met by dip-buying in non-chip names; the amplification regime is newly ON but the first test (the 7,350 put wall) held.",
+    "notable_options_flow": null,
+    "note": "No corroborated single large print. Cleanest flow read is structural: net GEX flipped to -$49.4B (amplify), the low tagged the 7,350 put wall and reversed."
+  },
+  "technicals": {
+    "spx_vs_50dma": "+1.5% (50-DMA ~7,255 est; SPX 7,365.46)",
+    "spx_vs_200dma": "+6.3% (200-DMA ~6,930 est)",
+    "breadth_note": "Sharp negative breadth in semis, far better elsewhere. Portfolio movers (CBOE delayed_quotes, June 23 vs June 22 close): MU -13.18% $1,051.77, VRT -11.07% $318.32, ALAB -9.70% $397.02, MRVL -9.36% $279.04, TSM -6.69% $436.39, NVDA -4.13% $200.04, AVGO -3.06% $380.15, CRWV -5.00% $105.72, MAGS -1.37% $63.14, GOOGL -1.02% $346.13, DELL +2.17% $427.78 (GREEN). Tracked-not-held: SOXX -7.88% $603.39, INTC -6.14% $132.28. The book split: memory/power/infra-hardware hit hardest; platform (GOOGL) + DELL resilient. GOOGL $346.13 = second straight close below Berkshire's $350 anchor (bears on 2026-06-01-googl-buffett-floor, falsifier = SUSTAINED closes below $350; two closes now, flagged not fired). INTC $132.28 still above the $126 fade-trigger (2026-06-18-intel-apple-pop-fades, horizon June 25 — the rout pushed it closer but not through).",
+    "note": "DMAs still estimated by drift from prior anchors (carried 9 sessions, stale) — refresh from a direct reading next run."
+  },
+  "factor_attribution": {
+    "dominant_driver": "the chip/memory rout — positioning unwind of the most crowded trade, triggered by Dan Niles' AI-'speed-bump' call + a cautious Broadcom note + BofA's Street-most-hawkish 75bp-of-2026-hikes call",
+    "detail": "A clean single-driver day: a global memory-trade unwind (KOSPI -10% circuit-breaker, Samsung/SK Hynix -12%+) that gapped because the trade is the most crowded on earth. Two new fundamentals fed it: (1) Dan Niles flagged a near-term AI-trade 'speed bump' (the AI-capex-ROI bear); (2) BofA published the Street's most hawkish Fed call — 75bp of HIKES in 2026 (Sep/Oct/Dec to 4.25-4.5%, 'inflation unambiguously worse'), a genuine higher-for-longer shock. Cross-asset (factor_tape.py, Yahoo): 10Y 4.49% (+0.94%, rising — the BofA-hike leg), WTI $73.05 (-2.37%, draining — disinflationary, cuts the other way), DXY 101.36 (+0.33%), VIX 19.49 (+12.79%), gold $4,129 (-1.26%, falling — dash-for-cash). Reaction-Desk read: the dominant FORWARD driver is now the calendar — Micron tonight-equivalent (June 24 AH) is the swing vote on whether this was a reset or a break, then PCE June 26.",
+    "cross_asset": {"ust10y_pct": 4.49, "wti_usd": 73.05, "dxy": 101.36, "vix": 19.49, "gold_usd": 4129.00}
+  },
+  "calendar": [
+    {"date": "2026-06-24", "event": "MU fiscal Q3 earnings (AFTER CLOSE)", "why": "THE swing event. Q3 pre-sold on signed contracts (guide ~$33.5B / 81% GM / ~$19.15 EPS); the live variable is the 2027 guide + HBM4/Samsung-1d/HBM5 competitive read. MU $1,051.77 into the print (-13.2% today). A reaffirmed/raised demand trajectory = today was a valuation reset; a cut = the rout was right. Governs 2026-06-22-mu-sells-the-news (June 25 close vs June 24) AND 2026-06-23-mu-guide-holds-demand (new)."},
+    {"date": "2026-06-25", "event": "Horizon: 2026-06-18-intel-apple-pop-fades", "why": "INTC $132.28 today (-6.1% in the rout) — closer to but still above the $126 trigger. Two sessions left; the chip selloff is doing the fade's work."},
+    {"date": "2026-06-26", "event": "May core PCE (Fed's preferred gauge)", "why": "The week's macro fight, now louder after BofA's 75bp-hike call. Street ~3.4% y/y, expected hot. Hot extends the rate-fear leg of today's selloff; soft is the broad relief. Governs 2026-06-18-pce-duration-branch (hot PCE -> SOXX outperforms mega-cap-growth) and the new 2026-06-23-pce-reaction call."},
+    {"date": "all week", "event": "Fed speakers (Williams, Goolsbee, Kashkari, Waller, Barkin)", "why": "First voices since the hawkish dot plot AND the BofA hike note. A 'remove the easing bias' tone pours fuel; 'data-dependent' is the relief valve. Risk leans hawkish."},
+    {"date": "2026-06-29", "event": "Horizon: 2026-06-22-googl-350-reclaim", "why": "GOOGL to close back above $350 by June 29 (closed $346.13 today, 2nd straight close below; held up RELATIVELY well -1% on a -2.2% Nasdaq day)."},
+    {"date": "2026-06-30", "event": "Horizon: 2026-06-12-spcx-holds-offer", "why": "No SPCX close below $135 through June 30. SPCX ~$156 today (+~1%, snapped a 3-day -24% skid) — comfortably above the offer."},
+    {"date": "2026-09-01", "event": "Horizon: 2026-06-01-supply-over-demand", "why": "Supply-side basket vs demand-side platforms from the June 1 baseline. Today ran INVERSE (supply -7 to -13% vs GOOGL -1%) — one bad day, NOT the falsifier (which is demand-side leading >5pts at quarterly review or two consecutive supply-bellwether guide cuts). Flagged as the first real counter-print; MU's guide tomorrow is the next test."}
+  ],
+  "open_questions": [
+    "NEW (the day's central question): was the -13% memory rout a valuation reset of a crowded trade or the start of a demand-break de-rate? The disambiguator is MU's June 24 AH 2027 guide — a reaffirmed/raised trajectory says reset; a cut says break. Governs 2026-06-23-mu-guide-holds-demand and bears on 2026-06-01-supply-over-demand.",
+    "NEW: does the 7,350 put wall hold on a retest, or does the negative-gamma amplification (net GEX -$49.4B) carry a break toward 7,300/7,250? The cushion is now OFF (closed below the 7,450 flip). Governs 2026-06-23-no-reclaim-7450 (no close above 7,450 before PCE).",
+    "NEW: does BofA's 75bp-of-2026-hikes call gain traction with Fed speakers / get confirmed by a hot PCE, or is it an outlier? It added a higher-for-longer leg to today's selloff that oil (-2.4%, draining) cuts against. Governs the 2026-06-23-pce-reaction call.",
+    "CARRIED (now tracking strongly RIGHT): 2026-06-22-floor-becomes-ceiling-holds (no SPX close above 7,510 before June 26) — today closed 7,365.46, a 4th straight close below 7,510 and now far below it. Falsifier (close >7,510) looks remote with the cushion off.",
+    "CARRIED: 2026-06-01-googl-buffett-floor — GOOGL $346.13, second straight close below Berkshire's $350 anchor (falsifier = SUSTAINED closes below $350). Two closes; flagged, not fired. NOTE GOOGL was a relative HAVEN today (-1% vs semis -7 to -13%), which complicates the 'platforms structurally lag' supply-over-demand read.",
+    "CARRIED (now a 4-session standing failure): market_levels.py --audit hung/failed a 4TH straight day (exit 144). Gamma snippet-only again (FlashAlpha; coherent). The CBOE delayed_quotes JSON is the reliable close-data fallback. RECOMMEND formalizing snippet-primary for gamma and retiring the dead trust-period audit until the Polygon retry loop is fixed.",
+    "CARRIED: AVGO -3.06% today, still trading more mega-cap-correlated than semi-leader (it fell less than the memory names but more than GOOGL). The decoupling-from-AI-hardware question persists into its own next print."
+  ]
+}

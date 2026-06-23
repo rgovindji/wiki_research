@@ -1,9 +1,9 @@
 ---
 type: sector
 tags: [semis, ai, hardware]
-last_updated: 2026-06-19
+last_updated: 2026-06-23
 last_full_review: 2026-05-09
-sources: 4
+sources: 6
 ---
 
 # Semiconductors
@@ -74,6 +74,13 @@ The chip stack — design (GPUs, CPUs, custom silicon), foundry ([[TSM|TSMC]]), 
 - TSMC monthly revenue: leading indicator for advanced demand
 - ASML order book replenishment: post-China-pull-forward normalization
 - Hyperscaler capex commentary on custom silicon vs. NVDA splits
+
+## Recent developments
+- **2026-06-23 — Global memory rout; plus four SemiWiki long-tail tells worth banking** ([[2026-06-23-memory-rout-niles-bofa-hawkish]], [[2026-06-23-semiwiki-daily]]). The headline event was the **~13% memory selloff** (KOSPI −10% circuit-breaker, [[MU]] −13%, SOXX −7.9%) on Dan Niles' AI "speed-bump" + BofA's 75bp-of-*hikes* call — a valuation reset of the most crowded trade, not a contracted-demand change (see bull-case point 1). Underneath, four diamonds-in-the-rough:
+  - **The "DRAM can't shrink below 10nm" inflection.** A SemiWiki forum thread cites Deutsche Bank modeling **the DRAM supply gap persisting to 2030+** — and the structural reason: DRAM has historically grown bits via shrinks with little capex, but **sub-10nm shrinks are basically done**, so future bit-growth requires explosive *capacity* capex (analogized to 3D NAND's inflection 13 years ago). **Which means** the supply side is even more capex-gated (and slower) than the ASP debate implies — bullish-tight for the memory trio, but also why the cycle is unusually capex-heavy.
+  - **AMD acquires MEXT** (memory-tiering startup) — AI software that makes **NAND flash appear as DRAM to the OS**, prefetching pages before they're needed, to cut hyperscalers' DRAM bill. A demand-side *efficiency* vector against the DRAM shortage (relieves some pressure at the margin); folds into AMD's data-center portfolio.
+  - **Intel + AMD co-author "ACE" (Advanced Compute Extensions)** — an x86 spec adding dedicated matrix hardware (keeps AVX10 registers, adds OCP MX block-scaled formats, up to 16× ops/instruction vs AVX10) to make **CPUs viable for small-model / latency-sensitive / edge inference** without a GPU. Not a GPU threat at training scale, but a structural nibble at the inference-everywhere TAM and a rare Intel/AMD standards collaboration.
+  - **New inference entrants:** **Semidynamics** (European RISC-V) brought a full silicon-to-rack 3nm inference stack to ISC-HPC, pitching memory-centric "usable compute" over peak TOPS; **Chips&Media** signed an **AV2 video-codec IP** license with a North-American big-tech (30–50% better compression than AV1) for AI-infra SoCs. Both are credible-alternative / long-tail tells, not stance-movers.
 
 ## Related
 [[ai-capex-cycle]] · [[NVDA]] · [[TSM]] · [[ASML]] · [[cloud-hyperscalers]] · [[overview]]

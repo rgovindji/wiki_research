@@ -9,6 +9,20 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-23] daily | Global memory rout −13%; S&P loses the gamma flip then bounces off the put wall; MU print tomorrow
+
+**Tape:** the chip rout the morning brief flagged. Overnight global memory selloff (**KOSPI −9.99% with a circuit-breaker halt**, Samsung/SK Hynix −12%+) carried into the US. **SPX −1.44% to 7,365.46** (low 7,347.60 ≈ the 7,350 put wall, rallied 76 pts off it, close above the 7,352 ledge); Nasdaq −2.21%; Dow −0.09% (near-flat = a chip event, not broad risk-off). Net GEX flipped NEGATIVE (−$49.4B); SPX closed below the ~7,450 zero-gamma flip for the first time this stretch = amplification regime now ON. VIX +12.8% to 19.49; gold −1.3% (dash-for-cash, not panic). Portfolio: [[MU]] −13.2% $1,051.77 (into Wed's print), [[VRT]] −11.1%, [[ALAB]] −9.7%, [[MRVL]] −9.4%, [[TSM]] −6.7%, [[NVDA]] −4.1%, [[AVGO]] −3.1%, [[CRWV]] −5.0%, [[GOOGL]] −1.0% (relative haven), [[DELL]] +2.2% (green); SOXX −7.9%, INTC −6.1%.
+
+- Sources ingested (2):
+  1. [[2026-06-23-memory-rout-niles-bofa-hawkish]] — the rout: trigger = **Dan Niles** AI-"speed-bump" + cautious Broadcom note + **BofA's Street-most-hawkish call: 75bp of Fed HIKES in 2026** (Sep/Oct/Dec to 4.25–4.5%, "inflation unambiguously worse"). Valuation reset of the most crowded trade, not a demand change; MU June 24 guide is the disambiguator. Patched [[overview]] (daily lead), [[ai-bubble-debate]] (38→39), [[MU]] (18→19), [[semiconductors]] (4→6).
+  2. [[2026-06-23-semiwiki-daily]] — SemiWiki sweep (8 items): **Intel 800 Gb/s/fiber @ BER 1e-9 vs Nvidia 256 Gb/s/fiber @ BER 1e-12** (CPO bandwidth-vs-error-rate race) → [[photonics]] (5→6); **Deutsche Bank DRAM supply-gap-to-2030** on the sub-10nm-shrink wall; **AMD buys MEXT** (NAND-as-DRAM tiering); **Intel+AMD "ACE"** x86 matrix-inference spec; Semidynamics RISC-V inference stack; Chips&Media AV2 IP; Oracle −21,000 jobs (capex-driven, not AI-replacement) → [[semiconductors]] (recent-dev). Diamonds-in-the-rough captured per the no-item-ignored instruction.
+- Wiki touched: [[overview]], [[ai-bubble-debate]], [[MU]], [[semiconductors]], [[photonics]], [[index]].
+- **Predictions: NONE resolved** (no June-23 horizon; no falsifier triggered). Tracking: floor-becomes-ceiling-holds strongly RIGHT (4th close below 7,510); intel-apple-pop-fades pushed toward $126 by the rout (INTC $132.28) but not through; googl-buffett-floor 2nd close below $350 (not "sustained"); supply-over-demand ran INVERSE (flagged, not falsified). **3 opened:** no-reclaim-7450 (market-direction), mu-guide-holds-demand (single-name thesis), pce-reaction (reaction). **YOLO desk:** the morning 7,350-put flush → **NO-TRIGGER** (low tagged the 7,350 put wall at 7,347.60 but reversed 76 pts up, no momentum break to 7,300); record **1-2-4** (4th correct stand-aside, again avoiding a loss). Calibration unchanged: 10R/1P/4W of 15. **Playbook: unchanged** (no resolution taught something new).
+- **Stance changes flagged for review: none.** Memory rout is a valuation reset; stance held bull/high on [[MU]] and the complex (would need user sign-off to flip). Newsletter: issue **#11** ("The Flush Came, and the Market Bought It") written; wrapper renders + sends.
+- **Standing infra flag (4th day):** `scripts/market_levels.py --audit` FAILED again (exit 144, Polygon rate-limit retry loop). Gamma snippet-only (FlashAlpha: flip 7,450 / put 7,350 / net GEX −$49.4B — passes tape-coherence). Closes via CBOE delayed_quotes JSON. The trust-period audit is effectively dead — recommend formalizing snippet-primary for gamma until the script is fixed.
+
+---
+
 ## [2026-06-23] note | Morning brief: The Flush Came a Day Early
 
 Before the Bell sent. Covered: overnight global memory rout (Kospi -10% halt, Samsung/SK Hynix -12%, ASML -5%, MU -8% pre-market) on Dan Niles AI-speed-bump + Broadcom caution + rate fears; S&P futures -1.3% gapping below the 7,446 flip into amplification territory; reaction desk + game plan (7,446/7,400/7,352/7,300); YOLO desk logged a short-gamma flush 0DTE 7,350 put (trigger: loses 7,352, target 7,300). No wiki changes (morning runs don't ingest).

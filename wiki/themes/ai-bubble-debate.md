@@ -3,13 +3,17 @@ type: theme
 tags: [ai, bubble, risk, debate]
 last_updated: 2026-06-23
 last_full_review: 2026-05-09
-sources: 38
+sources: 39
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side. The *unit-economics* leg of this debate (how perishable the frontier moat is, who captures inference margin) now lives in [[inference-economics]].
+
+## June 23, 2026 — The debate stops being academic: the memory complex sells off ~13% on a famous bear's mic-drop + the Street's most hawkish Fed call
+
+The cycle-peak and demand-destruction threads this file has tracked for weeks **printed in the tape today**, and it's worth logging the mechanism cleanly because it's the first session the bubble debate moved real money in our direction-of-watch. Trigger was *positioning + sentiment*, not a fundamental datapoint: **Dan Niles** (long-time tech investor) said publicly he'd cut chip holdings and warned the AI trade faces a near-term "speed bump" — his worry is the file's core bear, whether hyperscalers earn a return on hundreds of billions of capex as inference routes to cheaper models. Add a cautious Broadcom AI-chip note and a genuinely new macro shock — **BofA went to the most hawkish call on the Street, forecasting 75bp of Fed *hikes* in 2026** (Sep/Oct/Dec to 4.25–4.5%, "inflation has gotten unambiguously worse") — and a memory trade up ~40% in two weeks unwound at once. **South Korea's KOSPI fell 9.99% and tripped a circuit breaker** (Samsung & SK Hynix each −12%+); US memory followed (**[[MU]] −13.2% to $1,051.77 the day before its own print**, SanDisk −13.6%), and the rout spread across the complex ([[TSM]] −6.7%, SOXX −7.9%, [[VRT]] −11%, [[ALAB]] −9.7%, [[MRVL]] −9.4%, [[NVDA]] −4.2%). **Which means:** nothing overnight changed a signed contract — this was a valuation reset of the most crowded trade on earth, exactly the way Zlatev's "shallow shappy peak" and the SK-Hynix-90%-margin cycle-peak tell said a top *would* arrive (positioning, not demand, cracks first). The honest both-sides: a crowded-trade unwind and a thesis break look identical on day one — [[MU]]'s June 24 guide is the disambiguator (demand-trajectory cut = thesis bear validated; reaffirmed shortage = valuation reset). Note the *intra-tech split*: the demand-side platforms held up far better ([[GOOGL]] −1%, MSFT/AMZN reportedly green) while the supply side led down — the **inverse** of the supply-over-demand rotation, which is what a supply-side-specific de-risking (not a broad AI-bubble pop) looks like. VIX +12.8% to 19.49; this was de-risking, not panic (gold *also* fell). See [[MU]], [[semiconductors]], [[valuation-environment]].
 
 ## June 23, 2026 — Chanos vs Zlatev: the cleanest bull-vs-bear, and they AGREE on the core trade
 

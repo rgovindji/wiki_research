@@ -1,7 +1,7 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-20
+last_updated: 2026-06-23
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -9,6 +9,10 @@ sources: 0
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 23, 2026 — The chip rout arrives: a global memory selloff drops the S&P 1.4%, the day before Micron's print
+
+The downside test the supply-over-demand book was always going to face landed. Overnight, **South Korea's KOSPI fell 9.99% and tripped a circuit breaker** (Samsung & SK Hynix −12%+); the global memory trade — up ~40% in two weeks — unwound. **SPX −1.44% to 7,365.47** (Nasdaq −2.21%, Dow −0.09%, a near-flat Dow underscoring this was a *chip* event, not a broad risk-off); [[MU]] −13.2% to $1,051.77 *into its own June 24 print*, SOXX −7.9%, [[TSM]] −6.7%, [[VRT]] −11%, [[ALAB]] −9.7%, [[MRVL]] −9.4%, [[NVDA]] −4.2%. The trigger was **positioning + a microphone**: Dan Niles flagged an AI-trade "speed bump," Broadcom added a cautious AI-chip note, and **BofA published the Street's most hawkish call — 75bp of Fed *hikes* in 2026** ("inflation unambiguously worse"). **Which means:** a crowded trade unwinds by gapping, not drifting, because there's no marginal buyer when everyone is the same way — but nothing overnight touched a signed memory contract; this reads as a valuation reset, with [[MU]]'s 2027 guide tomorrow the disambiguator between "reset" and "demand crack." The constructive tells under the hood: SPX made its low early (7,347.60) and **rallied 76 points off it** as non-chip tech (MSFT/AMZN) and defensives caught a bid, closing above the 7,352 ledge; VIX only 19.49 (+12.8%) and gold *fell* — de-risking, not panic. The supply-over-demand rotation ran in reverse for a day ([[GOOGL]] −1% vs the semis' −7 to −13%). **No stance/conviction changes** — the memory shortage is physical and multi-year; a 13% drop from a record and an intact thesis are both true at once. Regime: **bull-under-stress**, now *below* the ~7,446 dealer-gamma flip for the first time this stretch, so the shock absorbers are off until it reclaims.
 
 ## June 20, 2026 — Off-tape (Saturday); two AI-thesis transcripts → a new lens on the cycle
 
