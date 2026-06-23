@@ -3,13 +3,17 @@ type: theme
 tags: [ai, bubble, risk, debate]
 last_updated: 2026-06-22
 last_full_review: 2026-05-09
-sources: 36
+sources: 37
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side. The *unit-economics* leg of this debate (how perishable the frontier moat is, who captures inference margin) now lives in [[inference-economics]].
+
+## June 23, 2026 — Memory: a commodity at ~90% theoretical margin is the clearest cycle-peak tell yet
+
+Per [[2026-06-23-sk-hynix-hbm4-throttle-commodity-dram]]: SK Hynix is **throttling HBM4 to chase commodity DRAM — because commodity-DRAM op-margins now EXCEED HBM** (>15pp; Daishin floats a *theoretical ~90%* in 2026; MS: DRAM ASP +62%, raised SK Hynix EPS +56-63%). **Which means** — for the bull: the margin surge is broad and real, and it *inverts* the "commodity DRAM is the cyclical drag" worry near-term (good for [[MU]]'s biggest segment). **For the bear:** this is the **cleanest cycle-peak signal the file has logged** — a *commodity* hitting ~90% theoretical operating margin is, by definition, a shortage rent at its maximum, and **Morgan Stanley explicitly reframes the value driver as the memory-wide pricing cycle, not an HBM franchise** — i.e. a classic up-cycle that mean-reverts (memory has crashed 40-70% every prior cycle). Combined with the June-21 Korea print (DRAM +3% MoM = plateauing), the "ASP-driven, not unit-driven" thread now has its sharpest data: pricing power is maxed. Demand-side flag: **NVDA Rubin production forecasts reportedly trending downward** (verify). The trim/exit discipline on the memory complex ([[MU]], SNDK) is the actionable takeaway — not a stance flip.
 
 ## June 22, 2026 — The loudest bear op-ed yet (no new fact) + WSJ hard-confirms the memory shortage is supply-physics-bound
 
