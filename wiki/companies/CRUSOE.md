@@ -4,7 +4,7 @@ ticker: private
 tags: [ai, ai-infrastructure, data-centers, neocloud, private, pre-ipo, energy, stargate]
 last_updated: 2026-06-22
 last_full_review: 2026-06-22
-sources: 1
+sources: 8
 conviction: low
 stance: neutral
 ---
@@ -54,6 +54,14 @@ Crusoe began (~2018) as a flared-gas-to-bitcoin miner — capturing stranded nat
 - **Bookings:** Crusoe Cloud bookings reportedly grew ~5x in the first three quarters of 2025 vs prior year [company claim].
 - **Named customers / counterparties:** Oracle + OpenAI (Abilene/Stargate), **Microsoft** (new ~900 MW Abilene "AI factory," first building ~mid-2027), **Meta** (see below), plus AI-cloud tenants Cursor, Together AI, Fireworks, Decart, Odyssey, Luma, and others [confirmed across multiple sources, though contract terms/$ undisclosed].
 - **Gross margin, burn, runway, customer-revenue concentration: not disclosed → unverified.** This is a serious gap for underwriting.
+
+## What the founder interviews add (2026-06-22 — video learning)
+From CEO Chase Lochmiller's interviews ([Acquired/IA-Summit, Oct 2025](https://www.youtube.com/watch?v=dID3LnMUv2w); [CNBC "every customer is compute-constrained," Oct 2025](https://www.youtube.com/watch?v=YOzWZg7PHPU)) — these flesh out the *bull* but **do not** resolve the financial gaps below:
+- **Vertical integration is the actual moat (and it's about *speed*).** Crusoe stood up **Crusoe Industries**, an in-house factory for data-center electrical gear, because supplier lead times were untenable — e.g. a medium-voltage power-distribution center quoted at **100 weeks** from suppliers, which Crusoe builds itself in **~20 weeks**. The data center is modularized into prefab "Lego blocks" assembled on-site. This is *why* Crusoe won the Abilene RFP: it committed **~1 year** vs the next-fastest bid's **2.5 years**.
+- **"Energy-first" is the siting strategy.** Abilene was chosen for **curtailed/stranded West-Texas wind** (turbines idled on negative power prices); the original flared-gas→bitcoin→AI pivot is the same DNA — *bring compute to cheap, abundant, stranded energy*. Enabled because **AI training + most inference are latency-agnostic** (30ms doesn't matter for a 6-month training run), so siting in remote energy-rich areas is fine.
+- **Scale color:** Abilene ≈ **1.2 GW** (≈ the power draw of Denver; ~¼ of *all* Northern Virginia capacity) across 8 buildings (~500k sqft each), **7,000 workers** on site; first 2 buildings broke ground June-2024, next 6 Feb-2025. **Wyoming** project: 1.8 GW scaling to **10 GW**.
+- **The cost-down thesis:** like bitcoin mining dropped DC capex ~98% by ditching unnecessary "5-nines" reliability, AI needs *new* (lower-reliability, liquid-cooled, denser) infra — "**3 nines is plenty for training**" — and Crusoe's edge is building that new paradigm cheaper/faster than legacy DC players. Two business lines: the **AI factory** (design/build/operate, e.g. Abilene with Oracle) + **Crusoe Cloud** (managed GPU/inference) — "convert electrons into tokens."
+- **Still UNVERIFIED after the interviews:** revenue, gross margin, burn, customer concentration % — Lochmiller talks scale and strategy, never unit economics. The bull is *real and substantive*; the underwriting gap (and the cap-table-seat problem) is unchanged.
 
 ## Recent developments
 - **2026-06-18 — Meta signed new AI-compute deals with Crusoe** for ~**1.6 GW** across **Childress, TX** and **Warrenton, MO**. Materially **de-risks** the prior Abilene reallocation overhang (below). From multiple outlets (TechStartups, Yahoo/Bloomberg).
@@ -116,6 +124,8 @@ Crusoe began (~2018) as a flared-gas-to-bitcoin miner — capturing stranded nat
 4. [Axios Pro — Crusoe raising up to $2B pre-IPO at up to $40B](https://www.axios.com/pro/climate-deals/2026/03/25/crusoe-pre-ipo-valuation-batteries-redwood-materials) — 2026-03-25 [rumored]
 5. [TechStartups — Meta strikes 1.6 GW AI compute deal with Crusoe](https://techstartups.com/2026/06/18/meta-strikes-new-1-6-gigawatt-ai-computing-deal-with-data-center-startup-crusoe/) — 2026-06-18
 6. [Tom's Hardware — Oracle rebuts Stargate cancellation reporting](https://www.tomshardware.com/tech-industry/oracle-rebuts-incorrect-reporting-on-stargate-expansion) — contradiction
+7. [Acquired/IA-Summit — Ben Gilbert × Chase Lochmiller on AI data centers](https://www.youtube.com/watch?v=dID3LnMUv2w) — 2025-10 (vertical-integration/energy-first strategy; raw transcript on file 2026-06-22)
+8. [CNBC — Crusoe CEO: "every single customer is compute-constrained"](https://www.youtube.com/watch?v=YOzWZg7PHPU) — 2025-10-23 (at the $10B Series E; transcript on file)
 7. [Crusoe Series C (company newsroom)](https://crusoe.ai/newsroom/crusoe-series-c/) + Crunchbase — 2022, $350M @ ~$1.75B
 8. Series D detail ($600M @ ~$2.8B, Founders Fund, Dec 2024) — company + Crunchbase/Sacra [confirmed]
 9. Secondary access (accredited only): Forge / Hiive / EquityZen / Nasdaq Private Market — listings are indications, not confirmed trades. **No verified secondary clearing price found.**

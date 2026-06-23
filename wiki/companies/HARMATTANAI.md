@@ -4,7 +4,7 @@ ticker: private
 tags: [private, defense, drones, ai, counter-uas, europe, france, autonomy, pre-ipo]
 last_updated: 2026-06-22
 last_full_review: 2026-06-22
-sources: 0
+sources: 1
 conviction: low
 stance: neutral
 ---
@@ -27,6 +27,13 @@ Founded **April 2024** in Paris, Harmattan AI builds **vertically integrated aut
 - **Kalahari** — mission management / command-and-control layer spanning the above.
 
 The bull frame: Europe is rearming, counter-drone is the most acute live battlefield need (Ukraine), and Harmattan is moving from stealth to government orders in ~18 months with a top-tier strategic backer. **Which means** if it executes, it could become a core node of European sovereign defense-AI — a category the US (Anduril, [[AVAV]]-adjacent) is currently defining and Europe wants its own version of.
+
+## Founder strategy (2026-06-22 — learning) · ⚠ NO English YouTube video exists
+A YouTube search returned **no usable video** (no founder interview, conference talk, or English coverage on YouTube). The best learning resource is the **text** interview with [Le Grand Continent (Feb 15 2026, French)](https://legrandcontinent.eu/fr/2026/02/15/entretien-harmattan-ai-mouad-mghari/), CEO **Mouad M'Ghari**. Its thesis:
+- **"The true strategic weapon is the factory."** Mass-production capacity, not individual system quality, wins modern wars — **100,000 units at 80% capability beats 1,000 units at 100%.** Speed/volume over perfection; "saturation by intelligent, coordinated robotic swarms" ("Napoleonic robotic armies").
+- **Vertical integration for supply-chain sovereignty:** designs its own radios, radar sensors, optics, motors, flight/motor controllers in-house; developing **rare-earth-free motor magnets (targeted end-2026)** to de-risk the China supply chain. **Invested early in mass-production infrastructure** rather than proofs-of-concept — consistent with the "factory is the weapon" thesis.
+- **Deployment-speed as the moat/credibility flywheel:** claims it "sold more drones in one month than most European drone makers in 15 years"; deployment timelines — France ~14 months ("fastest in DGA history"), UK ~15 months, **Estonia <7 months**; needs **long-term government commitments** to justify the production-capacity capex.
+- **Investment read-through:** the model is *capex-heavy, mass-manufacturing, government-contract* — high future capital intensity (→ dilution) and revenue gated by multi-year state offtake. Reinforces both the bull (right thesis, fast traction) and the bear (capital-hungry, sovereignty-bounded) below. Note: founder talking his book; unit economics still undisclosed.
 
 ## Funding & valuation history *(confirmed vs disputed flagged)*
 | Round | Date | Amount | Lead / investors | Post-money | Confidence |
