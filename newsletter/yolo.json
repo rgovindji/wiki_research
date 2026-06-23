@@ -90,6 +90,20 @@
       "status": "no-trigger",
       "resolved": "2026-06-18",
       "resolution_note": "NO-TRIGGER. The card required a poke into the 7,500-7,510 broken-floor zone in the first ~90 min AND a real rejection/fade (15-30 min turn lower, the thing you short into) — that was the entry filter. What actually happened: SPX gapped up, tagged the 7,510 floor (high 7,511.07), and then PINNED at the 7,500 call wall all session in a tight 42-point (0.57%) range, closing 7,500.58. There was no rejection to fade — the index didn't turn DOWN from 7,510, it sat just below it; the day's low (7,468) never came within 18 points of the 7,450 strike, let alone the 7,400-7,415 target. The relief rally got CONTAINED at the broken floor (positive-gamma re-stack), not SOLD off it, so the bearish setup the card was built to catch never presented. Honest reading, the uncomfortable mirror of June 10/16: those two no-triggers stood aside while the directional thesis paid; THIS time the directional thesis was WRONG (no fade lower — the market pinned), so the no-trigger discipline AVOIDED a loss rather than missing a winner. Read loosely as 'tagged 7,510, didn't break above,' the 7,450 put would have been entered and expired ~50 pts OTM and worthless — a loss. The trigger filter (demand a real rejection, not just a tag) saved the desk for the second time in a week. Mechanism footnote validated the morning caveat in reverse: the cushion re-stacked faster than the thin-gamma read implied, so 7,510 acted as a calm pin-ceiling, not a slice-through level. Desk record: 1-2-3."
+    },
+    {
+      "id": "2026-06-23-spx-7350p",
+      "date": "2026-06-23",
+      "issue": "2026-06-23-morning",
+      "structure": "SPX 0DTE 7,350 put",
+      "direction": "bearish (short-gamma flush continuation)",
+      "thesis": "The desk's origin trade — the short-gamma flush — set up by a genuine catalyst meeting a thin cushion. Overnight global memory rout (Kospi -10% with a circuit-breaker halt, Samsung/SK Hynix -12%, ASML -5%, MU -8% pre-market) on a Dan Niles AI-'speed-bump' call + Broadcom caution + rate fears. S&P futures -1.3% imply an open near 7,370-7,380, BELOW the 7,446 zero-gamma flip, where dealer hedging amplifies instead of dampens. Net GEX was only +$8.8B (thin) into last night, so a real catalyst slices the wall the way the playbook (lessons 10/11) says it does. Below the flip there is no automatic buyer; the next magnets are 7,400 (first hedge shelf, likely gapped through), 7,352, then 7,300 — the prior aggregate put wall that caught two flushes within 2 pts June 9/10.",
+      "trigger": "SPX LOSES 7,352 with momentum after the first 30 minutes (not just gaps there — breaks below once the opening swing settles), regardless of which headline drives it (playbook lesson 1: key to the level, not the catalyst). A gap-down that immediately RECLAIMS 7,446 in the opening hour = no trade, desk stands aside (gap-and-reverse is the live alternative on a panic open).",
+      "target": "7,300 — the prior aggregate put wall / session magnet. Exit there, where dealer hedging flips from tailwind to headwind (it did, violently, +90 pts off the wall on June 9).",
+      "invalidation": "SPX reclaims 7,400 (the broken hedge shelf) after entry — flush failed, out, no averaging down. Hard time-stop at 3:30 ET if neither target nor invalidation has hit (June 11 lesson: theta resolves 'almost' against the holder).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
     }
   ]
 }

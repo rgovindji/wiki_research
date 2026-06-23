@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-23] note | Morning brief: The Flush Came a Day Early
+
+Before the Bell sent. Covered: overnight global memory rout (Kospi -10% halt, Samsung/SK Hynix -12%, ASML -5%, MU -8% pre-market) on Dan Niles AI-speed-bump + Broadcom caution + rate fears; S&P futures -1.3% gapping below the 7,446 flip into amplification territory; reaction desk + game plan (7,446/7,400/7,352/7,300); YOLO desk logged a short-gamma flush 0DTE 7,350 put (trigger: loses 7,352, target 7,300). No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-22] daily | Alphabet talent exodus cracks the platforms; memory leads into Micron; 7 calls graded
 
 First session in five days (June 19 Juneteenth, weekend). **Tape:** SPX 7,472.79 (−0.37%, range 0.93%); Nasdaq −1.32%; Dow +0.29%. A clean supply-over-demand day — mega-cap PLATFORMS dumped ([[GOOGL]] −5% on an AI-talent exodus, AMZN −4.8%, MSFT −3%, META −2.3%) while AI-hardware/memory led ([[MU]] +6.8% to new highs, [[VRT]] +7.5%, [[ALAB]] +5.4%, [[TSM]] +1.2%, SOXX +2.4%; [[AVGO]] −4.7% and [[CRWV]] −5.6% the semi-side exceptions). Regime held **bull-under-stress** (failed to reclaim 7,510 a 3rd straight close; positive-but-thin gamma +$8.8B; VIX 17.3).
