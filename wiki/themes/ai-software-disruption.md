@@ -1,7 +1,7 @@
 ---
 type: theme
 tags: [ai, software, saas, agents, disruption, saaspocalypse]
-last_updated: 2026-06-22
+last_updated: 2026-06-23
 last_full_review: 2026-06-22
 sources: 5
 ---
@@ -16,6 +16,12 @@ The live thesis that LLM **agents disrupt the per-seat SaaS business model** —
 - **Confirmed seat erosion.** [[CRM]]'s own service customers reportedly show **~10% seat reduction** from AI — the agent-eats-seats mechanism is no longer theoretical.
 - **Pricing-power inversion.** Per [[2026-06-20-t6-simon-willison-coding]]: peers now ship 70-80% agent-written code; the SaaS *pricing honeymoon is ending* while the labs raise prices (Opus 4.7 ~+40% effective, GPT-5.5 2× GPT-5.4) — value accruing to the model layer, not the app.
 - **Investor framing.** Philippe Laffont ([[2026-06-20-laffont-coatue-bubble]]): "models are digital 3D printers — bad for software." Software trades ~5.2x fwd rev vs a ~7x 10-yr average; the de-rate is multiple compression on *fear*, largely ahead of revenue evidence.
+
+## The key reconciliation: it's a *growth* re-rate, not a *replacement* story (2026-06-23)
+The most useful framing of *why* quality SaaS keeps bleeding even though it won't be ripped out — the bear isn't "AI replaces Salesforce," it's **"AI flattens *seat growth*, so the multiple collapses from a compounder (~30x) to an entrenched utility (~12x)."** Lock-in is real (an F500 took ~18 months to leave CRM); but if agents stop *new seat* growth, the business becomes GDP+low-single-digits and **loses the premium multiple regardless of how sticky it is.** That single fact reconciles everything that looks "irrational": *entrenched + cheap + still falling daily* all coexist because the market is re-rating *terminal value*, which ignores near-term NRR.
+- **CRM datapoint (2026-06-23):** −30% in 14 straight red days to **~10.5x forward** (lowest since Jan-2023), with NRR still >110% and double-digit organic growth — i.e. the market is pricing *utility-or-worse* on a business whose current numbers don't show decline. **At 10.5x it's a clean "utility-not-death" bet:** cheap if you accept "entrenched low-growth utility," a value trap if agentic disruption is genuinely terminal. The swing factor is whether **consumption revenue (Agentforce) out-grows seat erosion** — the one print that flips the narrative.
+- **Sentiment marker:** retail capitulation is loud (viral r/StockMarket "software massacre… detached from fundamentals" posts; "I've deployed all my cash averaging down" — the classic out-of-ammo-at-the-bottom mistake). Capitulation + a factor-driven de-rate (quality and garbage sold identically) is *typically* late in a move, not early.
+- **The mechanical reversal trigger:** this is largely a **liquidity rotation** (sell software/value to fund the semi/memory melt-up). So paradoxically, **the catalyst that revives software is the *semis/memory trade cracking*** — when that liquidity rotates back. Near-term tell: the MU print. Plus re-discrimination (the market stops treating all SaaS as one trade) and forced-selling exhaustion.
 
 ## The survival spectrum (most → least resilient)
 From the cluster-D research ([[2026-06-20]] sweep). The question for each name: **does AI eat it, or feed it?**
