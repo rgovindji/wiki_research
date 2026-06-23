@@ -2,9 +2,9 @@
 type: company
 ticker: SPCX
 tags: [space, launch, satellite, starlink, ipo, mega-cap]
-last_updated: 2026-06-20
+last_updated: 2026-06-23
 last_full_review: 2026-06-20
-sources: 0
+sources: 1
 conviction: low
 stance: neutral
 ---
@@ -63,12 +63,14 @@ The dominant launch + satellite-broadband (Starlink) franchise, public since **J
 5. **Float settling** — where does the stock base after IPO euphoria fades?
 
 ## Recent developments
+- **2026-06-23 — Chanos reads the S-1 and finds the launch business *still loses money* and subsidizes Starlink** ([[2026-06-23-chanos-zlatev-ai-capex-debate]]). Jim Chanos's teardown adds segment detail to the bear case: **Starlink** earns ~**$4B operating profit on ~$25–30B invested capital** — "good, not insanely good," with growth slowed and price cuts (per the prospectus). **The launch business still loses money after billions** (he was "surprised to learn that in the S-1") AND it **subsidizes Starlink via cheap internal launch rates** → reported Starlink profitability may be flattered. **xAI = a cash sinkhole** (it cut only a *short-term* deal renting space to Anthropic). His verdict: the ~$2T valuation is pure Mars/moon/space-DC optionality ("like Tesla — can't justify on the cars"), but he **won't short it** (shorting Musk hasn't paid). Separately he debunks the space-DC rationale: **power is only 5–7% of DC cost** (so "free solar" is the wrong reason), while radiation + redundancy/insurance dominate, and **Starship hasn't reached Earth orbit in 12 flights** (blew up 6–7). **Which means:** independent S-1-grounded support for the existing valuation/lockup bear — the *existing* business doesn't pencil at $1.77T+, confirming "pass as a long." Stance held **neutral / low**. (Source bias: professional short, though not short SPCX.)
 - **2026-06-12** — IPO at $135 (largest in history, ~$75B raised); +19% day one to ~$160.95; ran to ~$226, since ~$185.
 
 ## Related
 [[space-economy]] · [[RKLB]] · [[ASTS]] · [[overview]]
 
 ## Sources
+1. [[2026-06-23-chanos-zlatev-ai-capex-debate]] — Chanos S-1 teardown (launch loses money + subsidizes Starlink; xAI cash sinkhole; space-DC economics) (added 2026-06-23; bias-flagged: professional short)
 1. [SPCX closes at $161, +19% record debut — CNBC](https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html)
 2. [SpaceX IPO explained — CNBC](https://www.cnbc.com/2026/06/09/spacex-ipo-explained-stock-price-date.html)
 3. stockanalysis.com/stocks/SPCX/ — price/valuation snapshot (as of 2026-06-18)

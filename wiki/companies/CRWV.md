@@ -2,9 +2,9 @@
 type: company
 ticker: CRWV
 tags: [ai, neocloud, gpu-cloud, nvda-direct]
-last_updated: 2026-06-16
+last_updated: 2026-06-23
 last_full_review: 2026-05-13
-sources: 5
+sources: 6
 conviction: high
 stance: bull
 ---
@@ -61,6 +61,7 @@ The largest "neocloud" — leases out high-performance GPU compute to AI labs, h
 6. **Debt service trajectory** — refinancing risk if 10y Treasury sustains above 4.5% (see [[fed-policy]])
 
 ## Recent developments
+- **2026-06-23 — Chanos's central short thesis names this category: "equipment-leasing/finance cos at single-digit ROIC"** ([[2026-06-23-chanos-zlatev-ai-capex-debate]]). Jim Chanos — *who is short neoclouds/miner-DCs but NOT short any semiconductor* — models the neocloud category as **equipment-leasing finance companies, not tech** ("the CoreWeave guys are the old Magnetar guys; Blackstone is now in the business"), penciling to **4–8% pre-tax ROIC even on a generous 10-year GPU life**. His tell: hyperscalers *can* buy chips directly but choose to rent → gold-rush capacity grab that compresses once supply catches up. **Counter (Val Zlatev, same panel):** not all dumb shells — CoreWeave has *real* software/optimization layers above the NVDA stack; the near-term spot-rent inflection (+40–50% since Jan, see [[inference-economics]]) is *improving* neocloud economics right now. **Which means:** the bear is the *structural ROIC* (value migrates to chip tech, not landlords) while the bull is *cyclical spot tightness* — exactly the franchise-vs-rent fork this page already carries via the financing treadmill ([[ai-infrastructure-debt]]). Stance held **bull/high**, small-size discipline reaffirmed; both speakers are interested parties (Chanos short, Zlatev net-long).
 - **2026-06-16 — +9.7% to $117.03 on three real catalysts (not "compute headlines")** ([[2026-06-16-baker-bottleneck-rotation-boj-hike]]). (1) **Nasdaq-100 inclusion effective June 22** → mechanical passive/benchmarked buying; (2) a **$2.2B, 15-year Chicago hyperscale data-center lease** (contracted revenue + visibility); (3) **Cantor Fitzgerald $167 PT**, calling it cheap at ~$115; plus 90% of the 2027 ARR target now secured. Intraday ran +12-16% then faded as CRWV sounded out EUR/USD high-yield bond demand (the financing-treadmill reminder). **Which means:** on a day the AI *supply-side* book was routed (semis −4% to −10%), CRWV rose on *demand-side*, company-specific, contracted catalysts — a clean illustration of the Baker supply→demand rotation (see [[bottleneck-roadmap]]). Note the standing tension from the Q2 guide miss + the recurring debt-market activity ([[ai-infrastructure-debt]]); stance held **bull/high** but the leverage is why position sizing stays small.
 - **2026-05-07** — **Q1 2026 EARNINGS BLOW-OUT.** Revenue **$2.078B (+112% YoY)**; **backlog $99.4B (+~50% QoQ)**; Adj EBITDA **$1.157B (56% margin)**; **Anthropic multi-year Claude contract** NEW disclosure; **Meta added $21B in March 2026** (incremental); operating cash flow $2.984B; capex $7.695B. NVDA $2B Class A placement + 5+ GW partnership by 2030. Active power >1 GW; contracted >3.5 GW; 2030 target 8+ GW. 2026 guide $12-13B; exit ARR $18-19B; >$30B ARR EOY 2027. NVIDIA Exemplar Cloud designation for GB200 NVL72 inference. See [[2026-05-07-CRWV-Q1-2026-earnings]].
 - **2026-05-13** — Wiki retroactively processed Q1 print after user flagged it had been missed. Triggered new always-on earnings retrieval workflow.
@@ -75,6 +76,7 @@ The largest "neocloud" — leases out high-performance GPU compute to AI labs, h
 3. [[2026-05-17-multi-agent-research-batch]] — Q2 2026 guidance miss ($2.53B vs $2.69B consensus); NVDA $2B additional share buy; 10 $1B+ customers; agent recommended neutral conviction (added 2026-05-17 PM)
 3. [[2026-04-20-semianalysis-gpu-cluster-cost]] — ClusterMAX 2.1 framework; goodput-based differentiation refutes commoditization bear case
 4. [[2026-05-16-sergey-levine-physical-intelligence]] — off-board robot inference as latent 2028-2030 demand vector
+5. [[2026-06-23-chanos-zlatev-ai-capex-debate]] — Chanos's neocloud short thesis (equipment-leasing finance cos, 4-8% ROIC on 10yr GPU life; "the Magnetar guys") + Zlatev's software-layer counter (added 2026-06-23; bias-flagged: Chanos short, Zlatev net-long)
 
 ## Citations
 - 24/7 Wall St on NBIS as neocloud winner: https://247wallst.com/investing/2026/03/11/after-2-billion-nvidia-investment-nebius-group-just-became-the-real-neocloud-winner/

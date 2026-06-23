@@ -2,9 +2,9 @@
 type: company
 ticker: NBIS
 tags: [ai, neocloud, gpu-cloud, nvda-direct, international]
-last_updated: 2026-06-20
+last_updated: 2026-06-23
 last_full_review: 2026-05-13
-sources: 5
+sources: 6
 conviction: medium
 stance: bull
 ---
@@ -64,6 +64,7 @@ Neocloud peer to [[CRWV]] — **NVDA invested $2B for 8.3% stake**, locked in **
 
 ## Recent developments
 
+- **2026-06-23 — A semis L/S CIO cites Nebius by name as the *least* commodity-like neocloud** ([[2026-06-23-chanos-zlatev-ai-capex-debate]]; Val Zlatev, Analog Century — *net long AI*). Against Chanos's "neoclouds = equipment-leasing finance cos at single-digit ROIC" short ([[CRWV]]), Zlatev singles out Nebius as **not a dumb shell**: real software/optimization layers, and — the differentiator — **only ~50–60% contracted to hyperscalers, with the other ~40–50% sold as inference at SPOT**, so it captures the +40–50%-since-January spot-rent inflection ([[inference-economics]]) that pure-contracted peers can't. **Which means:** the spot-inference mix is a near-term bull *and* a volatility source (spot cuts both ways) — it's the operational reason NBIS screens above CRWV on tech but below on contracted visibility, the exact split this page already carries. (Transcript's "Nimbix" = Nebius mis-transcription.) Value still ultimately migrates to chip tech, not landlords (Zlatev's own caveat). Stance/conviction held **bull/medium**; bias: speaker is net-long.
 - **2026-06-20 — Risk/reward reassessment at ~$287 (conviction high → medium; stance held bull).** Two months after the May 13 print, the *business* has executed but the *stock* has re-rated to near its 52-wk high. The honest forward-return picture (per the independently-researched snapshot in [[2026-06-19-nebius-inflection-event]], as of 2026-06-18): mkt cap ~$73B; **~62-83x sales**; **EV/ARR ~38x current ($1.92B), ~9-10x the $7-9B forward run-rate**; **consensus 12-mo target ~$242 — *below* the ~$287 price.** Earnings-quality flag sharpened: the ~$621M Q1 net income / ~99 P/E is **mostly a non-cash ClickHouse revaluation mark** — core ops still ~−$100M/qtr; underwrite on EV/ARR, not the P/E. Financing watch: **FY26 capex $20-25B vs ~$3.2B revenue**, ~40% funded by equity + serial converts ($4.3B in 2026) → real dilution risk if a convert wave lands in a weak tape. Concentration nuance: **Meta's ~$27B is a *backstop* (buys excess capacity), not committed dedicated demand.** vs [[CRWV]]: NBIS is the smaller/faster-growing/owned-power name at ~62x sales; CRWV ~98% contracted at ~7x — analyst community split (surface, don't resolve). **Net:** the operational bull case is intact and the owned-power moat + [[inference-economics|inference-majority]] tailwind are real, but "high conviction" is hard to defend with the Street's target below spot. Tempered to **medium**; not a sell, a sizing/price-discipline call. (Source: Nebius "Inflection" event work-up + secondary aggregators; verify exact EV/ARR vs the 6-K before acting.)
 - **2026-05-13 — Q1 2026 BLOW-OUT (full data from official press release).** See [[2026-05-13-NBIS-Q1-2026-earnings]].
   - Revenue **$399M (+684% YoY)**; Adj EPS $2.11 (beat -$0.78 by $2.89); **Adj EBITDA $129.5M (vs -$53.7M Y/Y)** — profitability inflection
@@ -91,6 +92,7 @@ Neocloud peer to [[CRWV]] — **NVDA invested $2B for 8.3% stake**, locked in **
 3. [[2026-04-20-semianalysis-gpu-cluster-cost]] — ClusterMAX 2.1; goodput-based Neocloud differentiation
 4. [[2026-05-16-sergey-levine-physical-intelligence]] — off-board robot inference as latent 2028-2030 demand vector
 5. [[2026-06-19-nebius-inflection-event]] — "Inflection" event panels + independently-researched valuation/earnings-quality reassessment (conviction high → medium at ~$287; secondary aggregators as of 2026-06-18)
+6. [[2026-06-23-chanos-zlatev-ai-capex-debate]] — Zlatev names Nebius as the least-commodity neocloud: real software layer + ~40-50% inference-at-spot (captures spot-rent inflection) vs Chanos's "neoclouds = finance cos" short (added 2026-06-23; bias-flagged: speaker net-long)
 
 ## Citations
 - [Nebius reports first quarter 2026 financial results — BusinessWire (May 13, 2026)](https://www.businesswire.com/news/home/20260513568820/en/Nebius-reports-first-quarter-2026-financial-results)

@@ -1,15 +1,26 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-22
+last_updated: 2026-06-23
 last_full_review: 2026-05-09
-sources: 37
+sources: 38
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side. The *unit-economics* leg of this debate (how perishable the frontier moat is, who captures inference margin) now lives in [[inference-economics]].
+
+## June 23, 2026 — Chanos vs Zlatev: the cleanest bull-vs-bear, and they AGREE on the core trade
+
+Per [[2026-06-23-chanos-zlatev-ai-capex-debate]] (MacroMinds panel — **Jim Chanos**, legendary short, vs **Val Zlatev**, Analog Century semis L/S CIO, *net long AI*). The signal here is what a professional bear and a net-long semis specialist **converge** on:
+
+- **Both: own where the chips are *produced*, short/avoid where they *reside*.** Chanos's shorts are **neoclouds & Bitcoin-miner-DCs**, which he models as **equipment-leasing/finance companies** ("CoreWeave guys are the old Magnetar guys; Blackstone is in the business now") penciling to **4–8% pre-tax ROIC even on a 10-year GPU life** — and he explicitly **rebuts the bear caricature** ("bears say 2–3yr life — I use *ten*"). **Crucially, Chanos is NOT short a single semiconductor.** → strongest external corroboration yet of the toll-taker/toll-payer split this file has tracked, from a name with credibility on the bear side.
+- **The accounting-mismatch bear, stated precisely:** picks-and-shovels (NVDA/GEV/VRT) book revenue+profit *now*; hyperscalers *capitalize* the same dollars + sit in construction-in-progress 12–18 months before depreciating → today's high-tech profit boom is structurally flattered. **'98→'00 analog: S&P operating profit +30% over two years, then −40% mid-2000→2001** (GFC-deep) when order books cut (20,000 routers → 4,000). **Which means** the falsifiable bear timing is explicit: *"the mundane business models get exposed within **18–24 months**."*
+- **NOT a '99-style blanket froth (Chanos's own words).** Networking ~50–60x fwd is the extreme; **NVDA ~15x 2027 EPS, AVGO ~12x 2028, memory 5–7x** — vs Cisco's 160x in 2000. The expensive-on-*revenue*-not-earnings re-rate is in competitive names (Intel/AMD CPU), not the oligopolists. → blunts the "everything is 1999" bear; sharpens it into a *specific* short list (landlords, networking, money-losing model cos).
+- **Chanos's own nightmare (steelman of the picks-and-shovels bear):** a *non-transformer* architecture that breaks scaling laws and gets "compute for nothing." **DeepSeek (Jan-2025, −30–60% AI selloff over 3 weeks) was NOT that** — just known-algorithm cost reduction. The structural risk to NVDA/AVGO is an *architecture* break, not a demand miss.
+- **SpaceX IPO teardown** (S-1 out, listing imminent) → see [[SPCX]]: Starlink good-not-great (~$4B op profit on ~$25–30B capital), **launch still loses money and subsidizes Starlink**, xAI a cash sinkhole → ~$2T = pure Mars/space-DC optionality. **Space DCs don't pencil:** power is only **5–7% of DC cost** (so "free sun" is the wrong reason); radiation + redundancy/insurance dominate; Starship hasn't reached orbit in 12 tries.
+- **Zlatev's both-sides on memory** feeds [[MU]]: supply-constrained shallow **2–4yr peak** (equipment can't grow shipments >30–35%/yr) — but the bear bite is **downstream demand destruction** (memory now ~50% of PC/phone BOM vs ~20% → OEM pass-through → units down ~mid-teens). **Bias flag:** Zlatev is net-long and runs a semis fund; Chanos is short neoclouds/SpaceX — weight the *agreements* over either's directional call.
 
 ## June 23, 2026 — Memory: a commodity at ~90% theoretical margin is the clearest cycle-peak tell yet
 

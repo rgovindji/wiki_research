@@ -20,14 +20,14 @@ DAYS_DEFAULT=45
 read -r -d '' ROSTER <<'EOF'
 @LatentSpacePod UCxBcwypKK-W3GHd_RZ9FZrQ
 @AswathDamodaranonValuation UCLvnJL8htRR1T9cbSccaoVw
-@DwarkeshPatel
-@bg2pod
-@NoPriorsPodcast
-@interconnects
-@SemiAnalysis
+@DwarkeshPatel UCZa18YV7qayTh-MRIrBhDpA
+@bg2pod UC-yRDvpR99LUc5l7i7jLzew
+@NoPriorsPodcast UCSI7h9hydQ40K5MJHnCrQvw
+@interconnects UCMhPRKnK8S_ruoGSt3vm1sQ
+@SemiAnalysis UCf_KhBXw5TIV0A7butjgFhg
 @thatsamir
 @sequoiacapital
-@a16z
+@a16z UCQ1VQj-37kl2yS_VUhfQHsw
 @theprofg
 @ThisWeekinStartups
 EOF

@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, inference, open-weight, model-routing, unit-economics, agentic]
-last_updated: 2026-06-20
+last_updated: 2026-06-23
 last_full_review: 2026-06-20
-sources: 10
+sources: 11
 ---
 
 # Inference Economics
@@ -12,6 +12,7 @@ sources: 10
 The economics of *serving* AI (not training it): how inference came to dominate compute, how the cost-per-useful-outcome is set, and who captures the margin as workloads go agentic. Distinct from [[ai-capex-cycle]] (the buildout) and [[ai-bubble-debate]] (is it a bubble) — this page is about the *unit economics* that decide whether the buildout pays and which layer keeps the money.
 
 ## Why it matters now
+- **Old-GPU rents INVERTED in January — the cleanest demand tell on the page.** Per [[2026-06-23-chanos-zlatev-ai-capex-debate]] (Val Zlatev, Analog Century): GPU *rental* prices were falling **20–30% YoY into December** — the *normal* pattern, since each new architecture is more token-efficient so old GPUs should depreciate. **Since January they've reversed to +40–50%+**, including 6–8-year-old GPUs, purely on tightness as token usage explodes. **Which means:** corroborates Baseten's B200 $263→$510/hr renewal — inference demand is currently out-running the efficiency curve, which is bullish near-term but is a *spot-shortage* signal, not a durable margin (both Zlatev and Chanos warn against pricing long-duration neocloud equities off it). Track it directly via **OpenRouter public token counts** rather than waiting for a CFO. See [[CRWV]] / [[NBIS]].
 - **Inference is already the majority of compute, heading to 80%+.** Per OpenAI's head of industrial compute Sachin Katti ([[2026-06-20-katti-stanford-ai-supercycle]]): scaling laws now span the whole lifecycle — pretrain + RL post-training + synthetic-data generation + product serving — and **RL post-training and synthetic data are themselves inference workloads.** **Which means:** the demand bid under [[NVDA]] / [[CRWV]] / [[NBIS]] / memory survives even if *pretraining* scaling plateaus; the cycle is no longer a training-capex story.
 - **The CIO cost backlash is now a named narrative.** Per the [[2026-06-19-nebius-inflection-event|Nebius Inflection]] customer panels (Databricks, Cognition/Devin, DataRobot): AI line items jumped from $30/user SaaS to *millions*; CIOs are "relitigating the ROI," explicitly compared to early-AWS sticker shock (~2010-15). **Which means:** the next phase rewards *cost-per-outcome*, not raw token volume ("value-maxing, not token-maxing") — and that pressures frontier-lab pricing power from the demand side.
 - **Model routing is becoming standard practice.** Frontier models for the hard 10-20% of tasks; open-weight models for the other 80-90% ("10× faster/cheaper"). A live worked example (Nebius compliance agent): one run went **$657 (GPT-5.5) → $34 (DeepSeek V4) → $24 (Nemotron Ultra)** at near-equal recall, 70-80% cheaper than closed-source over 120 ground-truth tasks. **Which means:** a structural ceiling on closed-lab pricing for non-frontier work, and a durable bid for open-weight + cheap-inference infra.
@@ -79,3 +80,4 @@ Two well-credentialed sources, the *same* fact, opposite spin — surface both, 
 8. [[2026-06-20-baseten-tuhin-inference-billionx]] — open-weight ~90-day lag / 70-90% cheaper; B200 cluster $263→$510/hr at renewal; supply "never normalizes" till ~Q2-2027; rent→own; software-as-sticky-layer (added 2026-06-20; bias-flagged: private inference vendor)
 9. [[2026-06-16-semianalysis-rl-systems-mind-the-gap]] — RL trainers idle 30-74%, MFU as low as 10.5%; generator/sandbox throughput (CPU/non-GPU) gates RL (added 2026-06-20; bias-flagged: AI-bull, unaudited estimates)
 10. [[2026-06-09-semianalysis-deepseekv4-day0-day43]] — AMD MI355X +100× throughput in <1mo via open-source SW; B200 tokens/MW +1.7×; thin-moat/inference-commoditization + AMD ROCm catch-up (added 2026-06-20; bias-flagged: AI-bull)
+11. [[2026-06-23-chanos-zlatev-ai-capex-debate]] — old-GPU rents inverted from −20-30% YoY (into Dec) to +40-50% (since Jan) on token-demand tightness; track via OpenRouter token counts; Nebius 40-50% inference-at-spot (added 2026-06-23; bias-flagged: speaker net-long semis)
