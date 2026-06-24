@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Gamma Flip — why losing one number changes everything</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#141a24; --panel2:#1b2330; --line:#26303f; --ink:#eef2f7; --body:#c2cad6; --muted:#8a93a2;
+    --green:#3fb950; --greendim:#1c3326; --red:#f0603a; --reddim:#3a1d16; --amber:#e0a83a; --blue:#5aa0f0;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1100px 600px at 70% -10%,#15202f 0%,var(--bg) 55%);color:var(--body);font-family:var(--font);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:980px;margin:0 auto;padding:34px 20px 70px}
+  h1{color:var(--ink);font-size:30px;letter-spacing:-.5px;margin:0 0 6px}
+  .dek{font-size:16px;color:var(--body);margin:0 0 22px;max-width:72ch}
+  .dek b{color:var(--ink)}
+  .stage{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;grid-template-columns:1fr 300px;gap:16px}
+  @media(max-width:820px){.stage{grid-template-columns:1fr}}
+  canvas{width:100%;height:auto;display:block;border-radius:10px;background:#0a0d13}
+  .side{display:flex;flex-direction:column;gap:12px}
+  .regime{border-radius:10px;padding:14px;border:1px solid var(--line);transition:all .3s}
+  .regime.above{background:var(--greendim);border-color:#2e5a3c}
+  .regime.below{background:var(--reddim);border-color:#7a3322}
+  .regime .lbl{font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .regime .big{font-size:17px;font-weight:700;color:var(--ink);margin-bottom:6px}
+  .regime.above .big{color:#7ee29a} .regime.below .big{color:#f6916f}
+  .regime .desc{font-size:13px;color:var(--body)}
+  .readout{display:flex;gap:10px;justify-content:space-between;font-family:var(--mono);font-size:13px;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:9px 12px}
+  .readout .px{font-size:18px;font-weight:700;color:var(--ink)}
+  .ctrls{display:flex;flex-wrap:wrap;gap:8px}
+  button{font-family:var(--font);font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--panel2);color:var(--ink);border-radius:8px;padding:9px 11px;cursor:pointer;transition:.15s;flex:1 1 auto}
+  button:hover{border-color:var(--blue);background:#222e40}
+  button.on{background:#243a2a;border-color:var(--green);color:#9ae9ad}
+  button.down{border-color:#5a2a1e} button.down:hover{background:#3a1d16}
+  button.up{border-color:#2e5a3c} button.up:hover{background:#16301f}
+  .hint{font-size:12px;color:var(--muted);font-style:italic;margin-top:2px}
+  .ex{margin-top:26px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 24px}
+  .ex h2{color:var(--ink);font-size:19px;margin:0 0 10px}
+  .ex p{margin:0 0 12px;max-width:74ch}
+  .ex .k{color:var(--ink);font-weight:600}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+  @media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .card{border-radius:10px;padding:14px 16px;font-size:14px}
+  .card.g{background:var(--greendim);border:1px solid #2e5a3c} .card.r{background:var(--reddim);border:1px solid #7a3322}
+  .card h3{margin:0 0 6px;font-size:14px} .card.g h3{color:#7ee29a} .card.r h3{color:#f6916f}
+  .foot{margin-top:24px;font-size:12px;color:var(--muted);font-style:italic}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>The Gamma Flip 🎚️</h1>
+  <p class="dek">Why losing <b>one number</b> (≈ <b>7,450</b>) changes everything. It isn't magic — it's a <b>behavior switch</b> for the biggest, most mechanical traders in the market. Fire the <i>same</i> shock above the line and below it, and watch the dealers either <b style="color:#7ee29a">absorb</b> it or <b style="color:#f6916f">amplify</b> it.</p>
+
+  <div class="stage">
+    <canvas id="c" width="760" height="440"></canvas>
+    <div class="side">
+      <div class="readout"><span>S&amp;P (sim)</span><span class="px" id="px">7,470</span></div>
+      <div class="readout" style="font-size:12px"><span>vs flip 7,450</span><span id="dist" style="color:#7ee29a">+20</span></div>
+      <div class="regime above" id="regime">
+        <div class="lbl">Dealer regime</div>
+        <div class="big" id="rtitle">🛡️ ABOVE — dampening</div>
+        <div class="desc" id="rdesc">Desks hedge <b>against</b> the move: they sell into rallies and buy into dips. Shocks get quietly absorbed — calm, shallow dips.</div>
+      </div>
+      <div class="ctrls">
+        <button class="down" onclick="shock(-7)">📉 Bad headline</button>
+        <button class="up" onclick="shock(7)">📈 Good headline</button>
+      </div>
+      <div class="ctrls">
+        <button onclick="setRegime(-1)">⬇ Knock below 7,450</button>
+        <button onclick="setRegime(1)">⬆ Lift above</button>
+      </div>
+      <div class="ctrls">
+        <button id="autobtn" onclick="toggleAuto()">⚡ Auto-shocks: off</button>
+        <button onclick="reset()">↺ Reset</button>
+      </div>
+      <div class="hint">Tip: turn on Auto-shocks, then use ⬇/⬆ to flip the regime — the <i>same</i> random noise looks calm above the line and runs away below it. That's the whole point.</div>
+    </div>
+  </div>
+
+  <div class="ex">
+    <h2>What you're looking at</h2>
+    <p>Big trading desks <span class="k">sell options</span> to the rest of the market, then hedge what they've sold by buying and selling index futures all day. <span class="k">Which way they hedge depends on where the index sits relative to the "gamma flip."</span></p>
+    <div class="grid2">
+      <div class="card g">
+        <h3>🛡️ Above the flip — they lean AGAINST you</h3>
+        Hedging is <b>negative feedback</b>: sell rallies, buy dips. It quietly smooths everything out. Dips are shallow and bought instantly. This is the calm market we've had for weeks.
+      </div>
+      <div class="card r">
+        <h3>🔥 Below the flip — they lean WITH you</h3>
+        The math inverts to <b>positive feedback</b>: sell into weakness, buy into strength — adding fuel to whatever direction price is already going. <b>No shock absorbers.</b>
+      </div>
+    </div>
+    <p>Today the S&amp;P closed <span class="k">below that flip</span> for the first time in this stretch. That's why the brief was nervous about a <i>number</i>, not a headline: crossing 7,450 changes whether the most mechanical participants are <b style="color:#7ee29a">absorbing</b> the moves or <b style="color:#f6916f">accelerating</b> them. Until the index closes back above it, every catalyst — <span class="k">Micron, a Fed speaker, a stray headline</span> — lands on a market with no cushion. That's why we want a <b>close back over the line</b> before trusting a bounce.</p>
+    <p class="foot">Educational illustration of dealer gamma-hedging dynamics — a simplified physics model, not a literal market simulator. The flip level and behavior are real; the exact path is synthetic.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const cv=document.getElementById('c'), x=cv.getContext('2d');
+  const W=cv.width, H=cv.height, PAD=44;
+  const FLIP=7450, LO=7380, HI=7520;
+  const N=240;                       // history length
+  let price=7470, vel=0, anchor=7470;
+  let hist=[];                       // {p, above}
+  let auto=false, autoT=0;
+  let flash=0, flashDir=0;           // dealer-flow arrow flash
+
+  function yOf(p){ p=Math.max(LO,Math.min(HI,p)); return H-PAD - (p-LO)/(HI-LO)*(H-2*PAD); }
+  function fmt(p){ return Math.round(p).toLocaleString(); }
+
+  window.shock=function(mag){ vel += mag; flash=18; flashDir=Math.sign(mag); };
+  window.setRegime=function(dir){
+    if(dir<0){ price=7438; vel=-2.0; }      // drop just below the line, drifting down
+    else { price=7470; vel=1.0; anchor=7470; }
+  };
+  window.reset=function(){ price=7470; vel=0; anchor=7470; hist=[]; auto=false; document.getElementById('autobtn').classList.remove('on'); document.getElementById('autobtn').textContent='⚡ Auto-shocks: off'; };
+  window.toggleAuto=function(){ auto=!auto; const b=document.getElementById('autobtn'); b.classList.toggle('on',auto); b.textContent='⚡ Auto-shocks: '+(auto?'on':'off'); };
+
+  function step(){
+    const above = price>=FLIP;
+    // ambient noise — the SAME catalyst stream in both regimes (this is the lesson)
+    vel += (Math.random()-0.5)*0.22;
+    let dealerDir;
+    if(above){
+      // DAMPEN: restore toward a slowly-drifting anchor + heavy damping (dealers fade the move)
+      const f = -0.022*(price-anchor);
+      vel += f;
+      vel *= 0.90;
+      anchor += (price-anchor)*0.004;
+      dealerDir = (price>anchor)? -1 : 1;        // sell rallies / buy dips = against
+    } else {
+      // AMPLIFY: positive feedback on momentum, low damping (dealers chase the move)
+      vel += 0.045*vel;
+      vel *= 0.995;
+      if(Math.abs(vel)<0.05) vel -= 0.05;        // no cushion → drift becomes a slide
+      dealerDir = Math.sign(vel)||-1;            // buy strength / sell weakness = with
+    }
+    if(vel>6) vel=6; if(vel<-6) vel=-6;
+    price += vel;
+    if(price>HI){ price=HI; vel*=-0.35; }
+    if(price<LO){ price=LO; vel*=-0.10; }        // crash floor
+    if(auto){ autoT++; if(autoT>140){ autoT=0; shock((Math.random()<0.5?-1:1)*(4+Math.random()*4)); } }
+    hist.push({p:price,above}); if(hist.length>N) hist.shift();
+    if(flash>0) flash--;
+    return {above,dealerDir};
+  }
+
+  function draw(st){
+    x.clearRect(0,0,W,H);
+    const yF=yOf(FLIP);
+    // zone shading
+    x.fillStyle='rgba(63,185,80,.06)'; x.fillRect(PAD,PAD,W-PAD-10,yF-PAD);
+    x.fillStyle='rgba(240,96,58,.07)'; x.fillRect(PAD,yF,W-PAD-10,H-PAD-yF);
+    // flip line
+    x.strokeStyle='#e0a83a'; x.lineWidth=1.5; x.setLineDash([7,5]);
+    x.beginPath(); x.moveTo(PAD,yF); x.lineTo(W-10,yF); x.stroke(); x.setLineDash([]);
+    x.fillStyle='#e0a83a'; x.font='bold 12px '+getComputedStyle(document.body).fontFamily;
+    x.fillText('GAMMA FLIP  7,450', PAD+6, yF-7);
+    // zone labels
+    x.font='11px '+getComputedStyle(document.body).fontFamily;
+    x.fillStyle='rgba(126,226,154,.55)'; x.fillText('🛡️ dealers ABSORB (shallow dips)', W-260, PAD+16);
+    x.fillStyle='rgba(246,145,111,.6)';  x.fillText('🔥 dealers AMPLIFY (no cushion)', W-260, H-PAD-8);
+    // axis ticks
+    x.fillStyle='#5a6473'; x.font='10px '+getComputedStyle(document.body).fontFamily;
+    [7380,7415,7450,7485,7520].forEach(p=>{ x.fillText(fmt(p), 6, yOf(p)+3); });
+    // price path
+    if(hist.length>1){
+      const dx=(W-PAD-10)/N;
+      for(let i=1;i<hist.length;i++){
+        const a=hist[i-1], b=hist[i];
+        x.strokeStyle=b.above?'#3fb950':'#f0603a'; x.lineWidth=2.2;
+        x.beginPath(); x.moveTo(PAD+(i-1)*dx,yOf(a.p)); x.lineTo(PAD+i*dx,yOf(b.p)); x.stroke();
+      }
+      // current dot
+      const cx=PAD+(hist.length-1)*dx, cy=yOf(price);
+      x.fillStyle=st.above?'#3fb950':'#f0603a';
+      x.beginPath(); x.arc(cx,cy,5.5,0,7); x.fill();
+      x.strokeStyle='#0a0d13'; x.lineWidth=2; x.stroke();
+      // dealer-flow arrow next to the dot
+      const dir=st.dealerDir, ax=cx-26, len=20;
+      const flashing = flash>0 ? (flash%6<3) : false;
+      x.strokeStyle = st.above ? '#7ee29a' : '#f6916f';
+      x.globalAlpha = flashing?1:0.8; x.lineWidth=3;
+      x.beginPath(); x.moveTo(ax,cy); x.lineTo(ax,cy+dir*-len); x.stroke();
+      const ay=cy+dir*-len; x.beginPath(); x.moveTo(ax-4,ay+dir*5); x.lineTo(ax,ay); x.lineTo(ax+4,ay+dir*5); x.stroke();
+      x.globalAlpha=1;
+      x.font='bold 10px '+getComputedStyle(document.body).fontFamily;
+      x.fillStyle = st.above ? '#7ee29a' : '#f6916f';
+      x.fillText(st.above?'dealers fade':'dealers chase', ax-30, cy+ (dir>0?34:-26));
+    }
+  }
+
+  function updatePanel(st){
+    document.getElementById('px').textContent=fmt(price);
+    const d=Math.round(price-FLIP);
+    const de=document.getElementById('dist'); de.textContent=(d>=0?'+':'')+d; de.style.color=d>=0?'#7ee29a':'#f6916f';
+    const r=document.getElementById('regime'), t=document.getElementById('rtitle'), ds=document.getElementById('rdesc');
+    if(st.above){ r.className='regime above'; t.textContent='🛡️ ABOVE — dampening';
+      ds.innerHTML='Desks hedge <b>against</b> the move: sell into rallies, buy into dips. Shocks get quietly absorbed — calm, shallow dips.'; }
+    else { r.className='regime below'; t.textContent='🔥 BELOW — amplifying';
+      ds.innerHTML='Desks hedge <b>with</b> the move: sell weakness, buy strength — fuel on the fire. <b>No shock absorbers</b> until price closes back over the line.'; }
+  }
+
+  function loop(){ const st=step(); draw(st); updatePanel(st); requestAnimationFrame(loop); }
+  loop();
+})();
+</script>
+</body>
+</html>
