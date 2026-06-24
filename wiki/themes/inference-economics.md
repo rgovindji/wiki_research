@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, inference, open-weight, model-routing, unit-economics, agentic]
-last_updated: 2026-06-23
+last_updated: 2026-06-24
 last_full_review: 2026-06-20
-sources: 11
+sources: 12
 ---
 
 # Inference Economics
@@ -47,6 +47,7 @@ Two well-credentialed sources, the *same* fact, opposite spin — surface both, 
 - **Heterogeneous compute** — "can't deliver agentic UX economically on pure GPU" (Katti). Cerebras *in production at OpenAI* for fast inference; long-context accelerators that hold state in memory (coding); **CPUs making a comeback with agents.** Bullish optionality for non-NVDA silicon; supports the multi-vendor structure TSMC's wafer-allocation already forces.
 - **Three cost levers (Katti):** make each token cheaper (HW+SW), make each token more intelligent (model), make each task need *fewer* tokens (product/harness). Structural deflation in cost-per-token is the baseline — volume has to outrun it.
 - **Prefill latency** — time-to-first-token still ~400-500ms (Codex = 400k context) → favors *concentrated* clusters over edge for now; edge waits on distillation.
+- **RL post-training efficiency (incremental, not regime-change)** — Cursor's Sasha Rush on how **Composer 2.5** was trained ([[2026-06-24-dwarkesh-sasha-rush-on-policy-distillation]]): *off-policy self-distillation* synthesizes a "teacher" by injecting targeted text feedback at the exact spot a reader-model flags an error in a long (100s-of-turn) agentic rollout, fixing specific mistakes *"much quicker than the full RL process."* **But the explicit limiter cuts against "training is collapsing to free":** *"not at the point yet where it replaces aspects of RL"* — runs *alongside* full RL, only catches *"easily identifiable"* errors, yields *"slightly better, a little bit at a time."* Net: real marginal efficiency on the cost-of-RL curve; not a step-change. Also a tell that app-layer leaders ([[ai-software-disruption|Cursor]]) are building their *own* frontier models.
 
 ## Who captures the margin (where this points)
 - **Cheap-inference / neocloud infra** — [[NBIS]], [[CRWV]] (managed inference + open-weight serving = the routed-away volume). Double-edged: the same "route to cheapest compute" backlash pressures *their* pricing too (commoditization risk).
@@ -81,3 +82,4 @@ Two well-credentialed sources, the *same* fact, opposite spin — surface both, 
 9. [[2026-06-16-semianalysis-rl-systems-mind-the-gap]] — RL trainers idle 30-74%, MFU as low as 10.5%; generator/sandbox throughput (CPU/non-GPU) gates RL (added 2026-06-20; bias-flagged: AI-bull, unaudited estimates)
 10. [[2026-06-09-semianalysis-deepseekv4-day0-day43]] — AMD MI355X +100× throughput in <1mo via open-source SW; B200 tokens/MW +1.7×; thin-moat/inference-commoditization + AMD ROCm catch-up (added 2026-06-20; bias-flagged: AI-bull)
 11. [[2026-06-23-chanos-zlatev-ai-capex-debate]] — old-GPU rents inverted from −20-30% YoY (into Dec) to +40-50% (since Jan) on token-demand tightness; track via OpenRouter token counts; Nebius 40-50% inference-at-spot (added 2026-06-23; bias-flagged: speaker net-long semis)
+12. [[2026-06-24-dwarkesh-sasha-rush-on-policy-distillation]] — Cursor Composer 2.5 off-policy self-distillation = marginal RL-efficiency win (fixes specific errors faster), but explicitly *"doesn't replace RL"*; app-layer leaders building in-house models (added 2026-06-24; bias low-med: Cursor researcher)

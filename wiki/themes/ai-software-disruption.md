@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, software, saas, agents, disruption, saaspocalypse]
-last_updated: 2026-06-23
+last_updated: 2026-06-24
 last_full_review: 2026-06-22
-sources: 5
+sources: 6
 ---
 
 # AI Software Disruption ("AI eats SaaS")
@@ -39,6 +39,7 @@ From the cluster-D research ([[2026-06-20]] sweep). The question for each name: 
 ## Who captures the value instead
 - **The model labs / agent layer** — OpenAI, Anthropic (the disruptors; see [[ai-capex-cycle]] demand-pull).
 - **The harness/infra layer** — orchestration, observability, retrieval (sticky; see [[inference-economics]]).
+- **The app-layer winners moving *down* the stack into their own models** — datapoint (2026-06-24): Cursor's Sasha Rush detailing how **Composer 2.5** was trained with novel RL methods ([[2026-06-24-dwarkesh-sasha-rush-on-policy-distillation]]) confirms the strongest coding-agent player is building a *vertical in-house frontier model*, not wrapping someone else's. **Which means** the durable margin at the app layer may accrue to those who own both the workflow *and* the model — a moat the pure-seat incumbents (CRM) don't have and the pure-wrappers can't defend.
 - **NOT** the per-seat incumbents, unless they convert to consumption pricing faster than seats erode.
 
 ## Risks / counter-thesis
@@ -60,3 +61,4 @@ From the cluster-D research ([[2026-06-20]] sweep). The question for each name: 
 3. [[2026-06-20-laffont-coatue-bubble]] — "models are digital 3D printers — bad for software"
 4. [[2026-06-20-nopriors-127-dylan-patel]] — code is the biggest/fastest-growing API use case
 5. Cluster-D company research (2026-06-20): [[CRM]] / [[NOW]] / [[VEEV]] / [[DUOL]] survival spectrum
+6. [[2026-06-24-dwarkesh-sasha-rush-on-policy-distillation]] — Cursor Composer 2.5 trained in-house with off-policy self-distillation; app-layer leaders building vertical models (added 2026-06-24)

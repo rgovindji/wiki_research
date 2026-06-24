@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
-last_updated: 2026-06-22
+last_updated: 2026-06-24
 last_full_review: 2026-05-09
-sources: 15
+sources: 16
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -20,7 +20,8 @@ The most important correction since the original sequence below: **there is not 
 - **The DEPLOYMENT bottleneck — power & "warm shells" — binds NOW (2026-28).** Getting *built* chips powered, cooled, and grid-connected. **Power has been promoted to a co-primary near-term constraint**, overturning the original Dylan framing carried on this page ("power is *not* the bottleneck — 16+ generation vendors, behind-the-meter unlocks ~200 GW"). That was true about the *theoretical* availability of electrons; it's been overtaken by operational reality — Satya Nadella: *"I have chips I can't plug in"*; Katti (OpenAI): ~**100 GW** US hyperscaler demand = double-digit % of the grid, transformers/turbines booked 3-4 yrs ([[2026-06-20-katti-stanford-ai-supercycle]], [[ai-capex-cycle]]). **This decides returns over the next 2-3 years — and it's the only major chokepoint still trading at a discount** (the market files power names as "utilities," not AI infra).
 - **The MANUFACTURING bottleneck — EUV & leading-edge wafer — is the 2028-30 ceiling.** Making the chips at all; funnels through ASML (the single chokepoint, now consensus per Katti) + TSMC wafer discipline. The most durable franchise layer; decides returns over ~5 years.
 - **Memory (2026) is confirming in real time** — June Korea exports: HBM +51% MoM, NAND +28% MoM ([[2026-06-21-korea-exports-memory]]) — but it's *cyclical*: rent, not franchise (DRAM already plateauing at +3% MoM).
-- **New layer: CPU / RL-environment compute** — server CPUs sold out on agent + verifier-loop demand ([[2026-06-20-dylan-patel-daytona-cpu-bottleneck]]; sub-bottleneck section below).
+- **New layer: CPU / RL-environment compute** — server CPUs sold out on agent + verifier-loop demand ([[2026-06-20-dylan-patel-daytona-cpu-bottleneck]]; sub-bottleneck section below). Intel's Lip-Bu Tan independently confirms the CPU squeeze (No Priors, 6/24): training CPU:GPU attach *"one to eight" → "one to four"* as agentic/RL orchestration goes CPU-heavy ([[2026-06-24-nopriors-lipbu-tan-intel]]).
+- **Watch-item input bottleneck: helium.** Flagged by Lip-Bu Tan (No Priors, 6/24) as an under-appreciated semiconductor supply chokepoint — *"a lot of people didn't realize the helium impact can be quite significant"* ([[2026-06-24-nopriors-lipbu-tan-intel]]). Not yet investable for this book (no clean liquid play), but logged as a CEO-named constraint alongside power/memory.
 
 **Portfolio translation** (per [[ai-capex-cycle]] + Baker's "bottleneck trade nearing its end"): own the durable chokepoints through the cycle (**[[ASML]], [[TSM]], [[NVDA]], [[AVGO]]**), take the elevated near-term constraint where it's still cheap (**power: [[CEG]]/[[NRG]]/[[VRT]]**), and *rent* — never marry — the cyclical layers (commodity memory, pluggable optics, OSAT) with explicit exit discipline. Full ranked decision treatment in the research note `ai_bottleneck_roadmap_2030.html`.
 
