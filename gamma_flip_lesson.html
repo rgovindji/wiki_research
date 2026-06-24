@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gamma, the Flip & Dealer Hedging — a step-by-step lesson</title>
+<style>
+  :root{
+    --bg:#0b0e14;--panel:#141a24;--panel2:#1b2330;--line:#26303f;--ink:#eef2f7;--body:#c2cad6;--muted:#8a93a2;
+    --green:#3fb950;--greendim:#16291d;--red:#f0603a;--reddim:#2e1611;--amber:#e0a83a;--blue:#5aa0f0;--purple:#bc8cff;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--mono:ui-monospace,Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--body);font-family:var(--font);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:820px;margin:0 auto;padding:32px 20px 90px}
+  h1{color:var(--ink);font-size:30px;letter-spacing:-.5px;margin:0 0 6px}
+  .dek{font-size:16px;margin:0 0 10px;max-width:70ch}
+  .toc{font-size:13px;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:18px 0 8px}
+  .toc a{color:var(--blue);text-decoration:none;display:block;padding:2px 0}
+  section{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:18px 0}
+  .num{font-family:var(--mono);font-size:12px;color:var(--amber);letter-spacing:1px;text-transform:uppercase}
+  h2{color:var(--ink);font-size:22px;margin:4px 0 12px;letter-spacing:-.3px}
+  h3{color:var(--ink);font-size:15px;margin:18px 0 6px}
+  p{margin:0 0 13px} p:last-child{margin-bottom:0}
+  .k{color:var(--ink);font-weight:600}
+  .q{background:var(--panel2);border-left:3px solid var(--blue);border-radius:8px;padding:10px 14px;margin:0 0 14px;font-style:italic;color:var(--ink);font-size:14.5px}
+  canvas{width:100%;height:auto;display:block;background:#0a0d13;border:1px solid var(--line);border-radius:10px;margin:8px 0}
+  .ctrls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}
+  button{font-family:var(--font);font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--panel2);color:var(--ink);border-radius:8px;padding:8px 12px;cursor:pointer}
+  button:hover{border-color:var(--blue)} button.on{background:#243a2a;border-color:var(--green);color:#9ae9ad}
+  button.dn{border-color:#5a2a1e} button.up{border-color:#2e5a3c}
+  input[type=range]{flex:1;min-width:140px;accent-color:var(--blue)}
+  .lab{font-family:var(--mono);font-size:12px;color:var(--muted)}
+  .val{font-family:var(--mono);font-size:13px;color:var(--ink);font-weight:700}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+  @media(max-width:620px){.grid2{grid-template-columns:1fr}}
+  .card{border-radius:10px;padding:13px 15px;font-size:13.5px}
+  .card.g{background:var(--greendim);border:1px solid #2e5a3c}.card.r{background:var(--reddim);border:1px solid #7a3322}
+  .card h4{margin:0 0 5px;font-size:13.5px}.card.g h4{color:#7ee29a}.card.r h4{color:#f6916f}
+  .tldr{background:linear-gradient(180deg,#16202e,#121a26);border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:8px;padding:12px 16px;font-size:14px;margin-top:14px}
+  .tldr b{color:var(--amber)}
+  .speedbar{position:sticky;top:0;z-index:10;background:rgba(11,14,20,.92);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:0 0 8px;display:flex;gap:8px;align-items:center}
+  .speedbar .lab{margin-right:auto}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin:8px 0}
+  td,th{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Gamma, the Flip & Dealer Hedging</h1>
+  <p class="dek">Built from scratch, slowly. By the end you'll know what a gamma flip is, what the level means, why dealers lean <em>against</em> you above it and <em>with</em> you below, which "close" matters, and whether they're secretly steering the price.</p>
+
+  <div class="speedbar">
+    <span class="lab">⏱️ Animation speed (applies to all):</span>
+    <button class="spd on" onclick="setSpeed(0.4,this)">🐢 Slow</button>
+    <button class="spd" onclick="setSpeed(1,this)">▶ Normal</button>
+    <button class="spd" onclick="setSpeed(0,this)">⏸ Pause</button>
+  </div>
+
+  <div class="toc">
+    Jump to: <a href="#s1">1 · What's in it for the dealer? (they're the casino, not the gambler)</a>
+    <a href="#s2">2 · Delta & Gamma, in plain English</a>
+    <a href="#s3">3 · Why "against you above, with you below" — long vs short gamma</a>
+    <a href="#s4">4 · So what IS the flip level?</a>
+    <a href="#s5">5 · Which "close" — minute, daily, or weekly?</a>
+    <a href="#s6">6 · Don't they pin the price to make options expire worthless?</a>
+  </div>
+
+  <!-- ===================== SECTION 1 ===================== -->
+  <section id="s1">
+    <div class="num">Section 1</div>
+    <h2>What's in it for the dealer?</h2>
+    <div class="q">"If market makers sell options, don't they lose money on the ones that move against them? What's in it for them?"</div>
+    <p>Here's the key idea that unlocks everything else: <span class="k">a dealer (market maker) is not betting on which way the market goes.</span> They're a shop. When you buy an option, they sell it to you and pocket a small edge — they sell it for a hair more than it's "worth" (selling <span class="k">implied volatility</span> a touch rich), plus the bid/ask spread, plus a little <span class="k">time decay</span> every day the option ages (called <span class="k">theta</span>).</p>
+    <p>But selling you that option leaves them exposed to direction — and they don't want that. So they immediately <span class="k">hedge it away</span> by buying or selling index futures, to get back to <span class="k">neutral</span> (zero directional exposure). Move the index below and watch: every time price moves, the dealer trades futures to re-flatten. They genuinely don't care if it goes up or down — they just keep collecting the edge + decay.</p>
+    <div class="ctrls">
+      <span class="lab">Index:</span>
+      <input id="s1idx" type="range" min="7400" max="7500" value="7450" oninput="s1draw()">
+      <span class="val" id="s1px">7,450</span>
+    </div>
+    <canvas id="s1c" width="760" height="150"></canvas>
+    <p class="lab" id="s1msg" style="min-height:18px"></p>
+    <div class="tldr"><b>So what's in it for them?</b> The spread + selling volatility slightly rich + daily time-decay — collected over thousands of trades. They <b>hedge to remove the gamble</b>. They lose only when the market moves <em>more violently than the option price implied</em> (re-hedging then costs more than they collected). Hold that thought — it's exactly why "below the flip" is dangerous for them too.</p>
+  </section>
+
+  <!-- ===================== SECTION 2 ===================== -->
+  <section id="s2">
+    <div class="num">Section 2</div>
+    <h2>Delta & Gamma, in plain English</h2>
+    <p>To hedge, the dealer needs two numbers:</p>
+    <p><span class="k">Delta</span> = "if the index moves $1, how much does my option position move?" It's the <em>slope</em>. To be neutral, the dealer holds an offsetting amount of futures so the slopes cancel.</p>
+    <p><span class="k">Gamma</span> = "how fast does my delta <em>change</em> as the index moves?" It's the <em>curvature</em>. This is the troublemaker: because delta keeps changing, the dealer must <span class="k">keep re-hedging</span> — and gamma tells you <em>how much futures they're forced to trade per point of index move.</em></p>
+    <p>Drag the spot below. The white line is an option position's value; the <span style="color:#5aa0f0">blue tangent</span> is delta (the slope right under spot). Notice the slope <em>changes</em> as you slide — that change is gamma. Flat curve = low gamma = little re-hedging. Curvy = high gamma = lots of forced re-hedging.</p>
+    <div class="ctrls">
+      <span class="lab">Spot:</span>
+      <input id="s2idx" type="range" min="7390" max="7510" value="7450" oninput="s2draw()">
+      <span class="val" id="s2d">delta: 0.00</span>
+    </div>
+    <canvas id="s2c" width="760" height="230"></canvas>
+    <div class="tldr"><b>One line:</b> delta = slope (how exposed I am), gamma = how fast that exposure changes (how much I'm forced to trade to stay neutral as price moves).</div>
+  </section>
+
+  <!-- ===================== SECTION 3 ===================== -->
+  <section id="s3">
+    <div class="num">Section 3 — the core</div>
+    <h2>Why "against you above, with you below"</h2>
+    <div class="q">"Why do they lean against the market above the flip and with it below?"</div>
+    <p>It comes down to one thing: is the dealers' combined book <span class="k">long gamma</span> or <span class="k">short gamma</span>? Re-hedging to stay neutral forces <em>opposite</em> behavior in each case:</p>
+    <div class="grid2">
+      <div class="card g"><h4>🛡️ LONG gamma (above the flip)</h4>Index rises → their delta drifts positive → to re-flatten they <b>SELL</b> futures. Index falls → delta drifts negative → they <b>BUY</b>. Result: <b>sell rallies, buy dips</b> = they push price back toward where it was = <b>dampening</b>. Calm, shallow dips.</div>
+      <div class="card r"><h4>🔥 SHORT gamma (below the flip)</h4>Index rises → their delta drifts <em>negative</em> → to re-flatten they must <b>BUY</b>. Index falls → they must <b>SELL</b>. Result: <b>buy strength, sell weakness</b> = they shove price further the way it's already going = <b>amplifying</b>. No shock absorbers.</div>
+    </div>
+    <p>Same shock, opposite outcome. Both tracks below get the <em>identical</em> nudge — the top dealer is long gamma, the bottom is short gamma. Use <b>Step</b> to go one move at a time and read what the dealer does at each step.</p>
+    <div class="ctrls">
+      <button class="dn" onclick="s3shock(-9)">📉 Nudge both DOWN</button>
+      <button class="up" onclick="s3shock(9)">📈 Nudge both UP</button>
+      <button onclick="s3step()">⏭ Step (one move)</button>
+      <button onclick="s3reset()">↺ Reset</button>
+    </div>
+    <canvas id="s3c" width="760" height="300"></canvas>
+    <div class="tldr"><b>The whole mechanism:</b> dealers don't <em>choose</em> to dampen or amplify — they're <em>forced</em> to, by re-hedging to stay neutral. Long gamma forces buy-low/sell-high (stabilizing). Short gamma forces buy-high/sell-low (destabilizing). The flip is just the line where the book switches from one to the other.</div>
+  </section>
+
+  <!-- ===================== SECTION 4 ===================== -->
+  <section id="s4">
+    <div class="num">Section 4</div>
+    <h2>So what IS the flip level (7,450)?</h2>
+    <div class="q">"What does the level actually represent?"</div>
+    <p>Every option at every strike contributes some gamma to the dealers' books. Add it all up across the whole chain and you get a <span class="k">total dealer gamma</span> that changes depending on where the index is. The <span class="k">gamma flip is simply the index level where that total crosses zero</span> — above it the aggregate book is net long gamma (stabilizing), below it net short gamma (destabilizing).</p>
+    <p>It is <span class="k">not a price target and not a magic line</span> — it's the zero-crossing of dealer positioning, calculated from the live options chain. It drifts as positions are opened, closed, and expire.</p>
+    <svg viewBox="0 0 760 230" style="width:100%;height:auto;background:#0a0d13;border:1px solid var(--line);border-radius:10px;margin:8px 0">
+      <defs><linearGradient id="gg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fb950" stop-opacity=".35"/><stop offset="1" stop-color="#3fb950" stop-opacity="0"/></linearGradient>
+      <linearGradient id="rg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0603a" stop-opacity="0"/><stop offset="1" stop-color="#f0603a" stop-opacity=".35"/></linearGradient></defs>
+      <!-- zero line -->
+      <line x1="60" y1="115" x2="730" y2="115" stroke="#3a4658" stroke-width="1"/>
+      <text x="64" y="110" fill="#8a93a2" font-size="11" font-family="monospace">total dealer gamma = 0</text>
+      <!-- curve: positive (above) on right side high, crossing zero at flip x=395 -->
+      <path d="M60,40 C200,55 320,95 395,115 C470,135 600,180 730,200" fill="none" stroke="#cdd6e3" stroke-width="2.5"/>
+      <!-- shading: left of flip is the 'above flip' (long gamma, green, curve above zero) -->
+      <path d="M60,40 C200,55 320,95 395,115 L395,115 L60,115 Z" fill="url(#gg)"/>
+      <path d="M395,115 C470,135 600,180 730,200 L730,115 L395,115 Z" fill="url(#rg)"/>
+      <!-- flip marker -->
+      <line x1="395" y1="20" x2="395" y2="210" stroke="#e0a83a" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <circle cx="395" cy="115" r="5" fill="#e0a83a"/>
+      <text x="402" y="34" fill="#e0a83a" font-size="12" font-weight="bold" font-family="monospace">FLIP 7,450</text>
+      <text x="120" y="200" fill="#7ee29a" font-size="12">🛡️ LONG gamma — dampening</text>
+      <text x="520" y="55" fill="#f6916f" font-size="12">🔥 SHORT gamma — amplifying</text>
+      <text x="360" y="226" fill="#8a93a2" font-size="11" font-family="monospace">← lower index        index level        higher index →</text>
+    </svg>
+    <p class="lab">Read it like this: as the index slides left (down) past 7,450, total dealer gamma goes from positive (green, stabilizing) to negative (red, destabilizing). That crossover point is the flip.</p>
+  </section>
+
+  <!-- ===================== SECTION 5 ===================== -->
+  <section id="s5">
+    <div class="num">Section 5</div>
+    <h2>Which "close" — minute, daily, or weekly?</h2>
+    <div class="q">"When you say it closed below the flip — close of what? A minute? A day?"</div>
+    <p><span class="k">We mean the daily close.</span> Here's why each timeframe matters differently:</p>
+    <table>
+      <tr><th>Timeframe</th><th>What it tells you</th></tr>
+      <tr><td><span class="k">Intraday</span> (minute/hour)</td><td>Mostly <b>noise</b>. Price pokes above and below the flip all day; a single tick across the line is a head-fake, not a regime change. Don't act on it.</td></tr>
+      <tr><td><span class="k">Daily close</span> ✅</td><td><b>The signal we watch.</b> A daily settle below the flip means dealers are positioned short-gamma going into the <em>next</em> session — so tomorrow's catalysts land on an amplifying market. That's why we want a daily close back <em>above</em> the line before trusting a bounce.</td></tr>
+      <tr><td><span class="k">Weekly / OpEx</span></td><td>This is when the flip level itself can <b>jump</b>. On big options-expiration days (monthly "OpEx," quarterly "triple-witching"), huge amounts of gamma expire and roll off — so the flip can move sharply afterward. Watch these as level-reset events.</td></tr>
+    </table>
+    <div class="tldr"><b>Rule of thumb:</b> intraday crossings = noise; the <b>daily close</b> = the regime signal; <b>OpEx weeks</b> = when the line itself can move.</div>
+  </section>
+
+  <!-- ===================== SECTION 6 ===================== -->
+  <section id="s6">
+    <div class="num">Section 6</div>
+    <h2>Don't they steer the price to make options expire worthless?</h2>
+    <div class="q">"If they sold the most options at a level, wouldn't they want to keep the index there so those expire worthless? Isn't that the whole game?"</div>
+    <p>Great instinct — and it's <span class="k">half right, but the cause is backwards.</span> There IS a real tendency for the index to gravitate toward big option strikes near expiry (traders call it <span class="k">"pinning"</span> or <span class="k">"max pain"</span>). But it's <span class="k">not</span> dealers deliberately steering price to pocket your premium. It's an <em>emergent side-effect</em> of the long-gamma hedging you saw in Section 3: near a heavily-traded strike, the buy-dips/sell-rips hedging mechanically tugs price toward that strike. No conspiracy — just neutral re-hedging, magnified as expiry approaches.</p>
+    <p>And remember Section 1: the dealer is <span class="k">already hedged</span>, so they're largely indifferent to whether your specific option expires worthless. Their profit is the volatility edge + decay, not your option's payout. Slide "days to expiry" toward 0 and watch the pull toward the strike strengthen:</p>
+    <div class="ctrls">
+      <span class="lab">Days to expiry:</span>
+      <input id="s6dte" type="range" min="0" max="30" value="30" oninput="s6set()">
+      <span class="val" id="s6lab">30 days</span>
+    </div>
+    <canvas id="s6c" width="760" height="170"></canvas>
+    <div class="tldr"><b>Bottom line:</b> pinning toward big strikes is real, but it's a <em>consequence</em> of neutral hedging, not deliberate steering. Dealers aren't gambling that your option expires worthless — they hedged that bet away and earn the spread either way.</div>
+  </section>
+
+  <p class="dek" style="color:var(--muted);font-style:italic;margin-top:24px">Educational illustrations of dealer gamma-hedging dynamics — simplified models, not literal market simulators. The mechanics (long/short gamma, the flip, pinning) are real; the exact numbers and paths are synthetic.</p>
+</div>
+
+<script>
+let SPEED=0.4;
+function setSpeed(s,btn){SPEED=s;document.querySelectorAll('.spd').forEach(b=>b.classList.remove('on'));btn.classList.add('on');}
+const F=getComputedStyle(document.body).fontFamily;
+
+/* ---------- Section 1: dealer stays neutral ---------- */
+const s1=document.getElementById('s1c'), s1x=s1.getContext('2d');
+let s1last=7450, s1theta=0;
+function s1draw(){
+  const idx=+document.getElementById('s1idx').value;
+  document.getElementById('s1px').textContent=idx.toLocaleString();
+  const W=s1.width,H=s1.height; s1x.clearRect(0,0,W,H);
+  // neutrality meter
+  const cx=W/2, cy=H/2;
+  s1x.strokeStyle='#26303f'; s1x.lineWidth=2; s1x.beginPath(); s1x.moveTo(80,cy); s1x.lineTo(W-80,cy); s1x.stroke();
+  s1x.fillStyle='#8a93a2'; s1x.font='12px '+F; s1x.textAlign='center';
+  s1x.fillText('◀ dealer is SHORT the market', 200, cy+26);
+  s1x.fillText('flat / neutral', cx, cy-16);
+  s1x.fillText('dealer is LONG the market ▶', W-200, cy+26);
+  // delta from a sold call: rises as index rises above 7450
+  const delta=Math.max(-1,Math.min(1,(idx-7450)/40));
+  const nx=cx+delta*(W/2-90);
+  // they re-hedge back to flat
+  const moved=idx-s1last;
+  let msg='Move the index — the dealer instantly trades futures to get back to neutral.';
+  if(Math.abs(moved)>0.5){
+    if(moved>0) msg='Index ↑ → their sold options make them effectively SHORT → they BUY '+Math.round(Math.abs(moved)*3)+' futures to flatten. (No view — just neutralizing.)';
+    else msg='Index ↓ → they become effectively LONG → they SELL '+Math.round(Math.abs(moved)*3)+' futures to flatten. (No view — just neutralizing.)';
+  }
+  document.getElementById('s1msg').textContent=msg;
+  s1last=idx;
+  // needle (snaps back toward center to show re-hedge)
+  s1x.fillStyle=Math.abs(delta)<0.05?'#3fb950':'#e0a83a';
+  s1x.beginPath(); s1x.arc(nx,cy,7,0,7); s1x.fill();
+  s1x.textAlign='left';
+}
+s1draw();
+setInterval(()=>{ s1theta+=1; },1000);
+
+/* ---------- Section 2: payoff curve + delta tangent ---------- */
+const s2=document.getElementById('s2c'), s2x=s2.getContext('2d');
+function s2payoff(p){ const k=(p-7450)/60; return -(k*k)*60 + 120; } // long-gamma-ish hump (curvature visible)
+function s2draw(){
+  const spot=+document.getElementById('s2idx').value;
+  const W=s2.width,H=s2.height,PAD=30; s2x.clearRect(0,0,W,H);
+  const xOf=p=>PAD+(p-7390)/(7510-7390)*(W-2*PAD);
+  const yOf=v=>H-PAD-(v)/200*(H-2*PAD);
+  // curve
+  s2x.strokeStyle='#cdd6e3'; s2x.lineWidth=2.5; s2x.beginPath();
+  for(let p=7390;p<=7510;p+=2){ const X=xOf(p),Y=yOf(s2payoff(p)); p===7390?s2x.moveTo(X,Y):s2x.lineTo(X,Y);} s2x.stroke();
+  // tangent (delta) at spot
+  const h=2, d=(s2payoff(spot+h)-s2payoff(spot-h))/(2*h); // slope per point
+  const sx=xOf(spot), sy=yOf(s2payoff(spot));
+  const dpx=80; // pixels each side
+  const ppx=(W-2*PAD)/(7510-7390), vpx=(H-2*PAD)/200;
+  s2x.strokeStyle='#5aa0f0'; s2x.lineWidth=2; s2x.beginPath();
+  s2x.moveTo(sx-dpx, sy + d*(dpx/ppx)*vpx);
+  s2x.lineTo(sx+dpx, sy - d*(dpx/ppx)*vpx); s2x.stroke();
+  // spot dot
+  s2x.fillStyle='#e0a83a'; s2x.beginPath(); s2x.arc(sx,sy,5,0,7); s2x.fill();
+  s2x.fillStyle='#8a93a2'; s2x.font='11px '+F;
+  s2x.fillText('option value', xOf(7395), yOf(s2payoff(7395))-8);
+  s2x.fillStyle='#5aa0f0'; s2x.fillText('delta = slope here', sx+10, sy-12);
+  document.getElementById('s2d').textContent='delta (slope): '+d.toFixed(2)+'  ·  move spot → slope changes = gamma';
+}
+s2draw();
+
+/* ---------- Section 3: absorb vs amplify (two tracks) ---------- */
+const s3=document.getElementById('s3c'), s3x=s3.getContext('2d');
+const N=200;
+let A={p:7470,v:0,anchor:7470,hist:[]}; // long gamma (above)
+let B={p:7438,v:0,hist:[]};             // short gamma (below)
+function s3reset(){A={p:7470,v:0,anchor:7470,hist:[]};B={p:7438,v:0,hist:[]};}
+function s3shock(m){A.v+=m;B.v+=m;}
+function s3physics(){
+  // ambient identical noise
+  const n=(Math.random()-0.5)*0.3;
+  // A: long gamma -> dampen toward anchor
+  A.v+=n; A.v+=-0.03*(A.p-A.anchor); A.v*=0.86; A.anchor+=(A.p-A.anchor)*0.004; A.p+=A.v;
+  if(A.p>7510){A.p=7510;A.v*=-0.3} if(A.p<7430){A.p=7430;A.v*=-0.3}
+  // B: short gamma -> amplify momentum
+  B.v+=n; B.v+=0.05*B.v; B.v*=0.995; if(Math.abs(B.v)<0.06)B.v-=0.05; B.p+=B.v;
+  if(B.p>7470){B.p=7470;B.v*=-0.3} if(B.p<7370){B.p=7370;B.v*=-0.1}
+  if(A.v>7)A.v=7;if(A.v<-7)A.v=-7;if(B.v>7)B.v=7;if(B.v<-7)B.v=-7;
+  A.hist.push(A.p); if(A.hist.length>N)A.hist.shift();
+  B.hist.push(B.p); if(B.hist.length>N)B.hist.shift();
+}
+function s3step(){ s3physics(); s3render(); }
+function s3render(){
+  const W=s3.width,H=s3.height,h=H/2; s3x.clearRect(0,0,W,H);
+  function panel(o,y0,h0,col,coldim,label,flipY,absorb){
+    s3x.fillStyle=coldim; s3x.fillRect(0,y0,W,h0);
+    // flip line
+    s3x.strokeStyle='#e0a83a'; s3x.setLineDash([5,4]); s3x.lineWidth=1; s3x.beginPath(); s3x.moveTo(0,flipY); s3x.lineTo(W,flipY); s3x.stroke(); s3x.setLineDash([]);
+    s3x.fillStyle='#e0a83a'; s3x.font='10px '+F; s3x.fillText('flip', W-30, flipY-4);
+    // path
+    const dx=W/N, lo=y0+8, hi=y0+h0-8;
+    const map=p=>{ const r=(p-7400)/(7510-7400); return hi-(r)*(hi-lo); };
+    s3x.strokeStyle=col; s3x.lineWidth=2; s3x.beginPath();
+    o.hist.forEach((p,i)=>{ const X=i*dx,Y=Math.max(y0+2,Math.min(y0+h0-2,map(p))); i?s3x.lineTo(X,Y):s3x.moveTo(X,Y);});
+    s3x.stroke();
+    s3x.fillStyle=col; s3x.font='bold 12px '+F; s3x.fillText(label, 8, y0+18);
+    s3x.fillStyle='#8a93a2'; s3x.font='11px '+F;
+    s3x.fillText(absorb?'dealers SELL rallies / BUY dips → pulled back (absorbed)':'dealers BUY strength / SELL weakness → runs away (amplified)', 8, y0+h0-8);
+  }
+  // A flip line near top-region 7470 anchor; show flip at a y; use map within panel
+  panel(A,0,h,'#3fb950','rgba(63,185,80,.06)','🛡️ LONG gamma (above flip) — DAMPENING', h-14, true);
+  panel(B,h,h,'#f0603a','rgba(240,96,58,.07)','🔥 SHORT gamma (below flip) — AMPLIFYING', h+14, false);
+}
+s3reset();
+
+/* ---------- Section 6: pinning toward strike ---------- */
+const s6=document.getElementById('s6c'), s6x=s6.getContext('2d');
+let s6p=7468, s6v=0, dte=30;
+function s6set(){ dte=+document.getElementById('s6dte').value; document.getElementById('s6lab').textContent=dte+(dte==1?' day':' days'); }
+function s6physics(){
+  const strike=7450;
+  // magnet strength grows as dte->0
+  const mag=0.002 + 0.06*Math.pow((30-dte)/30,2);
+  s6v+=(Math.random()-0.5)*0.5;          // noise pushing it around
+  s6v+=-mag*(s6p-strike);                  // pull to strike
+  s6v*=0.90; s6p+=s6v;
+  if(s6p>7495){s6p=7495;s6v*=-0.4} if(s6p<7405){s6p=7405;s6v*=-0.4}
+}
+function s6render(){
+  const W=s6.width,H=s6.height; s6x.clearRect(0,0,W,H);
+  const xOf=p=>40+(p-7405)/(7495-7405)*(W-80);
+  // strike + OI bar
+  const sk=xOf(7450);
+  s6x.fillStyle='rgba(224,168,58,.15)'; s6x.fillRect(sk-26,20,52,H-50);
+  s6x.strokeStyle='#e0a83a'; s6x.setLineDash([5,4]); s6x.beginPath(); s6x.moveTo(sk,12); s6x.lineTo(sk,H-26); s6x.stroke(); s6x.setLineDash([]);
+  s6x.fillStyle='#e0a83a'; s6x.font='bold 12px '+F; s6x.textAlign='center'; s6x.fillText('biggest strike 7,450', sk, H-8);
+  // a few other strikes
+  s6x.fillStyle='#3a4658'; [7420,7435,7465,7480].forEach(k=>{ const X=xOf(k); s6x.fillRect(X-6,H-26-18,12,18); });
+  // price ball
+  const bx=xOf(s6p), by=H/2-6;
+  s6x.fillStyle='#5aa0f0'; s6x.beginPath(); s6x.arc(bx,by,7,0,7); s6x.fill();
+  s6x.fillStyle='#cdd6e3'; s6x.font='12px '+F; s6x.fillText('index', bx, by-14);
+  // magnet label
+  s6x.textAlign='left'; s6x.fillStyle='#8a93a2'; s6x.font='11px '+F;
+  s6x.fillText(dte>20?'far from expiry: weak pull, price wanders freely':(dte>7?'expiry approaching: pull toward the strike strengthens':'near expiry: strong "pin" — long-gamma hedging tugs price to the strike'), 40, 22);
+  s6x.textAlign='left';
+}
+s6set();
+
+/* ---------- master loop ---------- */
+let acc=0;
+function loop(){
+  if(SPEED>0){
+    acc+=SPEED;
+    while(acc>=1){ s3physics(); s6physics(); acc-=1; }
+    s3render(); s6render();
+  }
+  requestAnimationFrame(loop);
+}
+loop();
+</script>
+</body>
+</html>
