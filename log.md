@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-24] note | Morning brief: Korea Answered the Panic With a $59 Billion Buyback
+
+Before the Bell sent. Covered: overnight V-shaped Asia recovery (Kospi +3.3%, Samsung ~$59B buyback, SK Hynix $26B ADR listing) + US futures green into Micron's after-close print; the no-reclaim-7450 level call live today; Reaction Desk (Micron tonight = swing vote, PCE Friday, Fed speakers); YOLO desk carded a fade-the-flip 7,400 put consistent with the no-reclaim call. No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-23] daily | Global memory rout −13%; S&P loses the gamma flip then bounces off the put wall; MU print tomorrow
 
 **Tape:** the chip rout the morning brief flagged. Overnight global memory selloff (**KOSPI −9.99% with a circuit-breaker halt**, Samsung/SK Hynix −12%+) carried into the US. **SPX −1.44% to 7,365.46** (low 7,347.60 ≈ the 7,350 put wall, rallied 76 pts off it, close above the 7,352 ledge); Nasdaq −2.21%; Dow −0.09% (near-flat = a chip event, not broad risk-off). Net GEX flipped NEGATIVE (−$49.4B); SPX closed below the ~7,450 zero-gamma flip for the first time this stretch = amplification regime now ON. VIX +12.8% to 19.49; gold −1.3% (dash-for-cash, not panic). Portfolio: [[MU]] −13.2% $1,051.77 (into Wed's print), [[VRT]] −11.1%, [[ALAB]] −9.7%, [[MRVL]] −9.4%, [[TSM]] −6.7%, [[NVDA]] −4.1%, [[AVGO]] −3.1%, [[CRWV]] −5.0%, [[GOOGL]] −1.0% (relative haven), [[DELL]] +2.2% (green); SOXX −7.9%, INTC −6.1%.
