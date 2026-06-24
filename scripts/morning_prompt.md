@@ -39,9 +39,15 @@ subtitle: "<one or two sentences that sell the brief>"
 ---
 ```
 
-Shape (≈600-950 words — shorter than the evening letter; the reader has ten minutes before work):
+Shape (≈550-800 words — shorter and tighter; the reader has ten minutes before work; **concision is a hard requirement**, per curator feedback 2026-06-24):
 
-1. **The setup** — two or three paragraphs: where futures point relative to last night's regime call and key levels, what happened overnight, and the one thing that matters most before the open. Lead with the most interesting thing, not with "futures are up".
+**Every brief opens with `## The 30-second read` — a Bottom-Line-Up-Front bullet list (3–6 bullets), before the setup and before anything else.** Each bullet = ONE concrete pre-open fact: futures level vs last night's key level, the overnight mover + cause, what resolves today, the one level that matters, the desk's trade or "flat". **No teasers** — state the fact. Bold the load-bearing words. Most important first. **A reader who reads only this list is ready for the open.** Mandatory every brief.
+
+**Writing principles (every section):** inverted pyramid — **conclusion first, then support** (don't bury the point); concrete over narrative (numbers/levels/names/causes, not adjectives or throat-clearing); keep the "which means…" line but *what* before *why*; one idea per paragraph; reward the skim.
+
+Then the body:
+
+1. **The setup** — SHORT (1–2 tight paragraphs), **point first**: where futures sit relative to last night's regime/levels and the one thing that matters most before the open. Not "futures are up".
 2. **On the line today** — when one of our logged calls resolves today (a data print, an event), one tight paragraph: what we said, the specific number or level that proves us right or wrong, and what we'll do in either branch. Skip the section entirely when nothing resolves.
 3. **One to three overnight stories** with story-headline `##` sections. Each: what happened, the mechanics in plain English, what it means for names we own or track, and our take.
 4. **Today's calendar** — a small markdown table (When | What | Why it matters) covering earnings and data due today. Only rows that matter; three rows beat eight.

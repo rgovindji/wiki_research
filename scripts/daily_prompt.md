@@ -119,9 +119,19 @@ subtitle: "<one or two sentences that sell the letter>"
 ---
 ```
 
-Shape (≈1,100–1,700 words, in the mold of issue #1):
+Shape (≈1,000–1,500 words — tighter than the old mold; **concision is now a hard requirement**, per curator feedback 2026-06-24):
 
-1. **Cold open** — a few paragraphs on the day's defining story or tension. Not "stocks rose today"; find the thread.
+**Every issue opens with `## The 30-second read` — a Bottom-Line-Up-Front bullet list (4–7 bullets), before the cold open and before anything else.** Each bullet = ONE concrete fact or finding the reader needs: a number, a move + its cause, a resolved call's verdict, the regime word, the single key level, tomorrow's catalyst. **No teasers** ("more below", "we dig into…") — state the actual fact. Bold the few load-bearing words in each bullet. Most important bullet first. **Test: a reader who reads only this list should walk away with the whole picture and forget nothing they need.** Mandatory every issue, busy day or quiet.
+
+**Writing principles (apply to EVERY section below):**
+- **Inverted pyramid — lead with the conclusion, then support it.** Never make the reader wade through a story to find the point; state the *what*, then the *why*. (This fixes the core complaint: "by the time I reach the point I've forgotten the setup.")
+- **Concrete over narrative.** Numbers, levels, names, causes — not adjectives, mood, or throat-clearing. If a sentence carries no fact and no conclusion, cut it.
+- Keep the connect-the-dots **"which means…"** implication — but put the *what* before the *why*, in the same paragraph, not three paragraphs later.
+- One idea per paragraph; short paragraphs. The reader is skimming — reward the skim.
+
+Then the body:
+
+1. **Cold open** — SHORT now (1–2 tight paragraphs, not "a few"): the day's defining tension, **point first.** Not "stocks rose today"; name the thread, state what it means, move on.
 2. **Scorecard** — whenever a prediction resolved today (and a one-liner even when none did, if a prior call moved toward/away from its trigger). Own it plainly: what we said, what happened, why, and what we're doing differently. Wrong calls get MORE space than right ones — the autopsy is the value. This section is the letter's credibility engine; never bury or soften it. Include the YOLO desk resolution here when the morning brief carried a trade: trigger fired or not, how the levels behaved, the running desk record (e.g., "the desk is 3-1").
 3. **One to three main stories** with story-headline `##` sections. What happened, the mechanics in plain English, what it means, our take. Earnings prints from names we own or track always make the cut.
 4. **Portfolio commentary** — how the day treated our positions: biggest mover and why, anything that challenges a thesis, what we'd do with the cash reserve and at what level. (The live table is appended automatically by the renderer — do NOT paste a holdings table into the body.)

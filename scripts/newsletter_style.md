@@ -75,3 +75,15 @@ Occasional, clearly fenced, and honest about the odds:
 - `---` between major sections (renders as a ✻ ✻ ✻ divider).
 - Markdown tables only for calendars and watch-items; the renderer styles them.
 - Sign off "— *After Hours*" (evening) or "— *Before the Bell*" (morning).
+
+## Concision & the 30-second read (curator feedback 2026-06-24)
+
+The reader's complaint: the letters read like a *story* you have to wade through to find the point — and by the time you reach it, you've forgotten the setup. Fix, applied to BOTH editions:
+
+1. **Open every issue with `## The 30-second read`** — a Bottom-Line-Up-Front bullet list (evening 4–7 bullets, morning 3–6), before the cold open / setup. Each bullet is ONE concrete fact or finding (a number, a move + cause, a resolved call, the regime, the key level, the catalyst), **not a teaser**. Bold the load-bearing words. Most important first. A reader who reads only this list has the whole picture. Mandatory every issue.
+2. **Inverted pyramid in every section** — conclusion FIRST, then the support/mechanism. Never bury the point at the end of a narrative arc.
+3. **Concrete over narrative** — numbers, levels, names, causes; cut adjectives, mood-setting, and throat-clearing. If a sentence has no fact and no conclusion, delete it.
+4. Keep the **"which means…"** implication line (connect-the-dots) and the **"what this means"** box — but front-load the *what*; the *why* comes right after, not pages later.
+5. Tighter word budgets: evening ≈1,000–1,500 (was 1,100–1,700); morning ≈550–800 (was 600–950). Shorter is better if the facts are all there.
+
+The reader still wants the analysis and the take — just delivered point-first and skimmable, with a glance-list on top.
