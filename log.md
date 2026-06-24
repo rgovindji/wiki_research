@@ -9,6 +9,19 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-24] ingest | THE PRINT — Micron fiscal Q3 FY26 earnings (the hinge event)
+
+- Source: sources/2026-06-24-MU-Q3-FY26-earnings.md (raw: raw/filings/2026-06-24-MU-Q3-FY26-prepared-remarks.pdf). User dropped the prepared-remarks PDF with "Thoughts."
+- **The print:** record blowout, beat the high end across the board — rev **$41.5B** (+74% QoQ, +346% YoY) vs ~$35.8B est; GM **84.9%** (+10pp QoQ); EPS **$25.11** (+106% QoQ) vs ~$20.83 est; op margin 81.2%; FCF $18.3B record; net cash $24.4B; BBB+. DRAM prices +low-60s% QoQ, NAND +mid-80s%. Data center >$25B (>$100B annualized run rate); HBM4 12-high >$1B revenue, ramping 2x as fast as HBM3E. **FQ4 guide $50B ±$1B / ~86% GM / ~$31 EPS** vs ~$43B Street. Stock **+9–10% AH**.
+- **The structural change (the real story): 16 Strategic Customer Agreements** — multi-year take-or-pay (CY2026–2030), ~20% of DRAM + ~⅓ of NAND volume, ~half-or-more of revenue when complete; large ones carry a **price floor through the term** → *"a very robust gross margin… well above our peak quarterly margins in any past cycle"*; 14/16 = ~$100B cumulative at minimum price; $22B cash deposits/commitments. The most direct answer the wiki has seen to its #1 bear (cycle-peak-P/E paradox).
+- **Conviction discipline — contests, doesn't refute the bear:** floors struck at the CQ2 apex ("above past peak" ≠ "near today's 85%"); same guide flags *"meaningful moderation in the rate of price increases"* (second derivative rolling); FY27 capex guided above FQ4 with construction pull-in (Micron funding the 2028 supply); ~half the book still spot; take-or-pay enforceability through a real bust untested.
+- **Net:** stance held **bull/high**, but the SCAs raise the through-cycle floor and push the exit clock out — strongest evidence yet that this cycle is less cyclical than the last five. Weakens the specific reason MU stayed OUT of the core book (at-ATH cyclical-peak risk) → flagged for a deliberate core-book revisit (user decision).
+- Wiki touched: [[MU]] (20→21), [[index]], predictions.json.
+- **Predictions:** resolved **2026-06-23-mu-guide-holds-demand → RIGHT** (guide raised hugely, not cut; the June 23 −13% was a valuation reset, exactly as called); calibration 10→11 right of 16 resolved. **2026-06-22-mu-sells-the-news** left OPEN, tracking-toward-WRONG (+9% AH; grades on the June 25 regular-session close). SPX level calls (no-reclaim-7450, floor-becomes-ceiling-holds) left for the evening newsletter run — a strong MU guide is the catalyst their falsifiers named.
+- Committed locally (no push).
+
+---
+
 ## [2026-06-24] note | Morning brief: Korea Answered the Panic With a $59 Billion Buyback
 
 Before the Bell sent. Covered: overnight V-shaped Asia recovery (Kospi +3.3%, Samsung ~$59B buyback, SK Hynix $26B ADR listing) + US futures green into Micron's after-close print; the no-reclaim-7450 level call live today; Reaction Desk (Micron tonight = swing vote, PCE Friday, Fed speakers); YOLO desk carded a fade-the-flip 7,400 put consistent with the no-reclaim call. No wiki changes (morning runs don't ingest).
