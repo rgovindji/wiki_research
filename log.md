@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-24] daily | After-the-bell close run: MU blowout AH, failed-bounce tape, SemiWiki sweep
+
+Evening headless run for the June 24 close. **Tape:** a tired, waiting-for-Micron session — SPX opened green, ran to 7,428 (rejected just below the 7,450-7,480 flip zone), faded to close **7,358.22 (-0.10%)**; Nasdaq -0.43%, **Dow +0.35%** (value-over-growth, 3rd session); macro improved across the board (10Y 4.40%, WTI $69.87, gold -2.75%, VIX -4.4% to 18.63). **Then MU blew out AH (+12%)** — rev $41.5B vs ~$35.6B est, EPS $25.11, FQ4 guide $50B vs ~$43B Street, 16 take-or-pay SCAs (the MU print itself was ingested in the interactive daytime run: [[2026-06-24-MU-Q3-FY26-earnings]]).
+
+**SemiWiki daily sweep (9 items)** ingested as [[2026-06-24-semiwiki-daily]]: OpenAI × [[AVGO]] "Jalapeño" custom inference chip + the offsetting TPU v9 SerDes loss to MediaTek + a $29B Apollo lease guarantee; [[ASML]] xLight EUV-alternative; [[INTC]] Apple "2-3 years away"; [[QCOM]] Modular ~$4B; [[MU]] CXMT retail-DRAM substitution; MediaTek price hikes + GaN-on-SiC/Rubin-SiC-interposer → [[semiconductors]], [[bottleneck-roadmap]]. **Wiki touched:** [[AVGO]] (2→3), [[ASML]] (5→6), [[INTC]] (13→14), [[MU]] (21→22), [[semiconductors]] (6→7), [[index]]. **No stance changes.** Flag for user review: [[GOOGL]] at a 3rd straight close below the $350 Berkshire anchor ($345.29) — approaching the "sustained" falsifier on the googl-buffett-floor call (no flip without sign-off).
+
+**Market state:** newsletter/market_state/2026-06-24.json (regime bull-under-stress; SPX below the flip, but MU's blowout arms the heal-to-bull trigger for June 25). market_levels.py finally returned (verdict suspect — only the call wall failed cross-source; flip well-corroborated at ~7,450-7,480, put wall ~7,350-7,360). **Predictions:** no new predictions.json resolutions tonight (mu-guide-holds-demand already RIGHT from the daytime ingest); mu-sells-the-news tracking-toward-wrong on the +12% AH gap; no-reclaim-7450 held for the session, falsifier armed for June 25; 1 new call logged (supply-leads-on-mu). **YOLO:** 2026-06-24-spx-7400p graded no-trigger (high 7,428 fell short of the 7,440+ poke; fade paid from the sidelines) — record 1-2-5, playbook lesson 12 added. **Newsletter:** newsletter/issues/2026-06-24-afterhours.md.
+
+---
+
 ## [2026-06-24] ingest | THE PRINT — Micron fiscal Q3 FY26 earnings (the hinge event)
 
 - Source: sources/2026-06-24-MU-Q3-FY26-earnings.md (raw: raw/filings/2026-06-24-MU-Q3-FY26-prepared-remarks.pdf). User dropped the prepared-remarks PDF with "Thoughts."

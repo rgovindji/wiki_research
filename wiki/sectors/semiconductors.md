@@ -1,9 +1,9 @@
 ---
 type: sector
 tags: [semis, ai, hardware]
-last_updated: 2026-06-23
+last_updated: 2026-06-24
 last_full_review: 2026-05-09
-sources: 6
+sources: 7
 ---
 
 # Semiconductors
@@ -76,6 +76,7 @@ The chip stack — design (GPUs, CPUs, custom silicon), foundry ([[TSM|TSMC]]), 
 - Hyperscaler capex commentary on custom silicon vs. NVDA splits
 
 ## Recent developments
+- **2026-06-24 — SemiWiki sweep (9 items): a Broadcom/MediaTek SerDes swap, broad MediaTek price hikes, Qualcomm buys Modular, GaN-on-SiC tightening, an EUV alternative funds up** ([[2026-06-24-semiwiki-daily]]). Headline AI-silicon items: **OpenAI × [[AVGO]] "Jalapeño"** inference chip unveiled (9-mo design→tape-out, deploy end-2026, MSFT ~40%) — but **MediaTek won the Google TPU v9 SerDes socket** with a **336G** solution after Google's 448G target hit signal-integrity/thermal walls, and **Broadcom "lost its leading position for now"** (448G DSPs may need 2nm, ~2028-29). The long tail: **MediaTek raising prices 10-20%** across mobile SoCs+PMICs (component shortages/capacity/lead-times — a broad cost-push tell, in line with memory & CPU vendors); **Qualcomm ([[QCOM]]) buying Modular ~$4B** (silicon-agnostic AI software stack — build-once-run-anywhere across CPU/GPU/NPU/ASIC, deepening its data-center software moat); **GaN-on-SiC foundry slots tightening** (Feb-2026 DoD emergency-procurement prioritizing military GaN over commercial 5G/consumer, *plus* NVIDIA reportedly moving to **silicon-carbide interposers in next-gen Rubin** — redirecting SiC capacity to data centers, squeezing RF supply → [[bottleneck-roadmap]]); and **xLight** ([[ASML]] context) raising $350M for a free-electron-laser EUV alternative (Gelsinger chair, US-gov-backed, 2028 prototype). **Which means**: the custom-ASIC moat is contestable (one socket won, one lost across AVGO/MediaTek in a week), cost-push is now broad-based (MediaTek joins memory/CPU on price), and the SiC/GaN substrate layer is a fresh dual-use (defense + AI-interposer) bottleneck to watch. No stance changes.
 - **2026-06-23 — Global memory rout; plus four SemiWiki long-tail tells worth banking** ([[2026-06-23-memory-rout-niles-bofa-hawkish]], [[2026-06-23-semiwiki-daily]]). The headline event was the **~13% memory selloff** (KOSPI −10% circuit-breaker, [[MU]] −13%, SOXX −7.9%) on Dan Niles' AI "speed-bump" + BofA's 75bp-of-*hikes* call — a valuation reset of the most crowded trade, not a contracted-demand change (see bull-case point 1). Underneath, four diamonds-in-the-rough:
   - **The "DRAM can't shrink below 10nm" inflection.** A SemiWiki forum thread cites Deutsche Bank modeling **the DRAM supply gap persisting to 2030+** — and the structural reason: DRAM has historically grown bits via shrinks with little capex, but **sub-10nm shrinks are basically done**, so future bit-growth requires explosive *capacity* capex (analogized to 3D NAND's inflection 13 years ago). **Which means** the supply side is even more capex-gated (and slower) than the ASP debate implies — bullish-tight for the memory trio, but also why the cycle is unusually capex-heavy.
   - **AMD acquires MEXT** (memory-tiering startup) — AI software that makes **NAND flash appear as DRAM to the OS**, prefetching pages before they're needed, to cut hyperscalers' DRAM bill. A demand-side *efficiency* vector against the DRAM shortage (relieves some pressure at the margin); folds into AMD's data-center portfolio.
