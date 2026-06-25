@@ -3,7 +3,7 @@ type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
 last_updated: 2026-06-25
 last_full_review: 2026-05-09
-sources: 19
+sources: 20
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -110,6 +110,8 @@ Per Horace He (Meta PyTorch Compilers) — see [[2026-05-16-horace-he-ml-systems
 **Which means:** the [[MU]] HBM thesis isn't just a 2025-2026 cycle — *every* compute generation runs into the same data-shuffling wall, which is why HBM density and bandwidth keep scaling alongside FLOPs. The structural reason memory is a perennial bottleneck (not a one-cycle event) is the architecture of GPUs themselves. HBM4 → HBM4E → HBM5 cadence isn't optional; without it, the next NVDA chip generation suffocates on its own matmul throughput.
 
 **Cross-cycle note for robotics:** Sergey Levine ([[2026-05-16-sergey-levine-physical-intelligence]]) makes the same memory point in a different domain — π0 has only 1 second of visual context vs. human "hours to decades." Scaling robot context length requires the same memory hierarchy improvements that AI training does. Same vendors, same demand vector.
+
+**2026-06-25 — wafer-bonding as the next leading-edge enabler (IBM "0.7nm" NanoStack).** Per [[2026-06-25-semiwiki-daily]]: IBM claims the first sub-1nm node — a staggered sequential CFET with NMOS and PMOS fabricated on *separate* wafers (cut on different crystal planes, <001>/<110>, to optimize each carrier) and joined by a proprietary **"device-scale" wafer-bonding** step. **Which means**: the post-GAA logic roadmap (CFET) is increasingly gated by *bonding/integration* precision, not just lithography — the same direction as Samsung's 1d dual-wafer-bonded DRAM and the warpage/signoff problem below. The investable read is indirect (IBM doesn't manufacture; any foundry adopting it must license the bonding + differently-cut wafers, a friction tell) but it reinforces the thesis that whoever owns advanced *bonding/packaging* know-how compounds an edge as transistor shrink stalls. IBM is also buying a High-NA tool ([[ASML]]).
 
 ## Sub-bottleneck: advanced-packaging signoff is getting harder as packages get bigger (NEW 2026-06-19)
 

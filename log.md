@@ -9,6 +9,17 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-25] daily | Market fades soft-PCE+MU+QCOM trifecta; memory cost hits AAPL/MSFT/DELL
+
+The most instructive session in weeks: a soft core PCE (0.2% m/m / ~2.9% y/y), [[MU]]'s blowout digesting (+15.7% to $1,213.56), and [[QCOM]]'s data-center declaration all landed bullish — and SPX still closed flat (7,357.49, −0.01%), gapping to 7,405, failing at 7,419 below the ~7,450 dealer-gamma flip, then to a 7,323.50 low before recovering. The cap: the memory supercycle's two-sided bill went consumer-visible — [[AAPL]] (−6.13%, Mac/iPad +$300) and [[MSFT]] (−3.23%, Xbox +$100–150) raised product prices on memory costs (MSFT: console memory +2.5x, doubling again by fall 2027); our own [[DELL]] −5.67% (memory 10–70% of BOM). SOXX +3.9% vs the platform basket down hard — the toll-payer/toll-taker split now visible at the consumer layer. [[QCOM]] sold its own news ($219 open → $204.90 close). Plus the SemiWiki daily ([[2026-06-25-semiwiki-daily]]): IBM "0.7nm" NanoStack CFET (sub-1nm research tell, IBM doesn't manufacture) + the official OpenAI/[[AVGO]] Jalapeño unveil.
+
+- Sources: sources/2026-06-25-memory-cost-device-makers-fade.md, sources/2026-06-25-semiwiki-daily.md
+- Wiki touched: [[overview]] (daily lead), [[MU]] (22→23), [[AAPL]] (2→3), [[MSFT]] (4→5), [[DELL]] (2→3), [[QCOM]] (1→2, new Recent-dev section), [[semiconductors]] (7→8), [[ai-bubble-debate]] (41→42), [[bottleneck-roadmap]] (wafer-bonding tell)
+- Predictions resolved: no-reclaim-7450 RIGHT (the falsifier was armed by the MU guide and the reclaim still failed), floor-becomes-ceiling-holds RIGHT (no close >7,510 pre-PCE), supply-leads-on-mu RIGHT (SOXX +3.9% vs platforms down), mu-sells-the-news WRONG (MU +15.7%, not lower), intel-apple-pop-fades WRONG (INTC closed $132.87, never closed <$126 — tagged $125.41 intraday only). YOLO 7,475c NO-TRIGGER (SPX never reached 7,450; high 7,419) — desk 1-2-6.
+- **No stance/conviction changes.** GOOGL $343.71 = 4th straight close below Berkshire's $350 anchor — googl-buffett-floor falsifier ("sustained closes below $350") now flagged for user sign-off (no flip headless).
+
+---
+
 ## [2026-06-25] ingest | Cloudflare CEO Matthew Prince on the agentic web (MAD Podcast)
 
 - Source: sources/2026-06-25-cloudflare-prince-agentic-web.md (raw: raw/podcasts/2026-06-25-cloudflare-matthew-prince-mad-podcast.txt). User dropped the YouTube link, asked "what insights," then approved the ingest.

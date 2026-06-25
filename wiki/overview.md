@@ -1,14 +1,18 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-23
+last_updated: 2026-06-25
 last_full_review: 2026-05-09
-sources: 0
+sources: 2
 ---
 
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 25, 2026 — The market fades the best-possible news; the memory supercycle shows up in consumer prices
+
+The most instructive session in weeks: a **soft core PCE (0.2% m/m / ~2.9% y/y)**, **Micron's blowout** (+15.7% to $1,213.56, fully digesting the $50B guide), and **Qualcomm's data-center declaration** all landed bullish — and the **S&P still closed flat at 7,357.49 (−0.01%)**, gapping to 7,405, failing at **7,419** (never reaching the ~7,450 dealer-gamma flip), then sliding to a 7,323.50 low before recovering. **Which means:** when the tape can't hold the single most bullish catalyst stack of the month, the marginal seller is in control — and the seller showed up in the mega-cap platforms. **The new fact that capped it: the memory supercycle's two-sided bill arrived.** [[AAPL]] raised MacBook/iPad prices up to **$300** and [[MSFT]] raised Xbox prices **$100–150**, both citing soaring memory/storage costs from AI-datacenter demand (Microsoft: console memory/storage prices **+2.5x, doubling again by fall 2027**). AAPL **−6.13%** ($275.15), MSFT **−3.23%** ($352.83), and our own [[DELL]] **−5.67%** ($409.45, memory = 10–70% of BOM). **The same shortage that prints [[MU]] a record guide is now a COGS shock and a demand-destruction risk for the device makers that buy memory** — the supply-over-demand split sharpened on *both* ends in one session: SOXX **+3.9%** ($625.20), MU +15.7%, [[MRVL]] +1.7%, [[VRT]] +2.9% vs the platform basket down hard. Dow +0.14% (51,920.62), Nasdaq Composite −0.46% (fourth straight down day) — value over growth again. [[QCOM]] sold its own news intraday (opened $219.43 = the high, closed $204.90). Regime: **bull-under-stress**, still *below* the 7,450 flip — the shock absorbers stay off into the May-PCE follow-through. **No stance/conviction changes.** See [[2026-06-25-memory-cost-device-makers-fade]].
 
 ## June 23, 2026 — The chip rout arrives: a global memory selloff drops the S&P 1.4%, the day before Micron's print
 

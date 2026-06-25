@@ -3,13 +3,15 @@ type: theme
 tags: [ai, bubble, risk, debate]
 last_updated: 2026-06-25
 last_full_review: 2026-05-09
-sources: 41
+sources: 42
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side. The *unit-economics* leg of this debate (how perishable the frontier moat is, who captures inference margin) now lives in [[inference-economics]].
+
+**2026-06-25 — The supercycle's demand-destruction leg goes from theory to consumer prices.** Per [[2026-06-25-memory-cost-device-makers-fade]]: [[AAPL]] (Mac/iPad +$300) and [[MSFT]] (Xbox +$100–150) raised end-product prices and named **memory/storage costs** as the cause, with Microsoft guiding console memory **+2.5x, doubling again by fall 2027**. **Which means** Zlatev's "memory is now ~50% of a device BOM → OEMs on 5–6% margins pass it through → PC/phone units down mid-teens" thesis ([[2026-06-23-chanos-zlatev-ai-capex-debate]]) is no longer a forecast — it printed. This *splits* the debate sharply: it's the **hardest confirmation yet of the pricing-power bull** (the ASP is real enough to reprice the iPhone-maker's lineup, killing the "ASP-not-unit" critique) *and* the **activation of the demand-destruction bear** (the supercycle starting to eat its own downstream — the mechanism that historically ends memory up-cycles). Note the tape's tell: a session with three bullish catalysts (soft PCE + MU blowout + QCOM) couldn't hold a gain, because the memory bill landed on the mega-caps (AAPL −6.1%, MSFT −3.2%) the same day MU ripped +15.7% — the toll-payer/toll-taker split, now visible at the consumer layer. Surfaced as a both-sides input. (See [[MU]], [[AAPL]], [[DELL]], [[semiconductors]].)
 
 **2026-06-25 — A non-valuation, execution-side bear note (from a bull's mouth).** Per [[2026-06-25-latentspace-midha-amp-gpu-labs]] (a16z's Anjney Midha, himself net-long the buildout — talks-his-book), the warning isn't price: it's that **well-funded labs with all the GPUs they need still fail to ship** because culture frays when money outpaces hardship ("too much money too fast → fragile culture → don't make it to takeoff"). A reminder that indiscriminate AI-lab/capex exposure embeds *execution* risk, not just valuation risk — some of the capital now flowing in will be wasted on labs that never produce a shippable model. Pairs with the utilization-waste point (~60-70% MFU) in [[inference-economics]]: gross capex overstates effective output.
 

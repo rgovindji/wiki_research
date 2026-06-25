@@ -1,0 +1,92 @@
+{
+  "_doc": "Daily market-state snapshot. Written by the close-of-market run, read by the next morning run (and the next close run for day-over-day deltas). Reasoning fuel — the reader never sees this file, only the conclusions drawn from it. Fields left null were not collected; collect them next run rather than guessing.",
+  "date": "2026-06-25",
+  "as_of": "2026-06-25T16:00:00-04:00",
+  "session_note": "The most instructive session in weeks: the market FADED the best-possible news. Three bullish catalysts landed overnight/premarket — a soft core PCE (0.2% m/m / ~2.9% y/y), Micron's blowout fully digesting (+15.7% to $1,213.56), and Qualcomm's data-center declaration — and SPX still closed FLAT (7,357.49, -0.01%/-0.73 vs 7,358.22). Path: gapped UP to 7,404.91, ran to a high of 7,419.08 (which fell ~31 pts SHORT of the ~7,450 flip — the falsifier for no-reclaim-7450 was armed by the MU guide and the reclaim STILL failed), got rejected, then faded to a low of 7,323.50 (BROKE below the 7,350 put wall intraday) before recovering to close 7,357.49. Range 95.58 = 1.30%. The cap on the rip: the memory supercycle's two-sided bill went consumer-visible — AAPL (-6.13% to $275.15) and MSFT (-3.23% to $352.83) raised product prices on memory/storage costs (Apple Mac/iPad +$300; Microsoft Xbox +$100-150, citing console memory +2.5x and 'doubling again by fall 2027'), and DELL -5.67% to $409.45 (memory 10-70% of BOM). SOXX +3.94% to $625.20 (MU +15.7%, MRVL +1.65%, VRT +2.89%) vs the platform basket down hard = the toll-payer/toll-taker split now visible at the consumer layer. Dow +0.14% (51,920.62), Nasdaq Composite -0.46% (25,358.60, FOURTH straight down day) — value over growth again. QCOM sold its own investor-day news (opened $219.43 = the high, closed $204.90). When a tape can't hold the single most bullish catalyst stack of the month, the marginal seller is in control.",
+  "indexes": {
+    "spx": {
+      "close": 7357.49,
+      "chg_pct": -0.01,
+      "ohlc": [7404.91, 7419.08, 7323.50, 7357.49],
+      "note": "Open 7404.91, high 7419.08, low 7323.50, close 7357.49 (CBOE _SPX OHLC; -0.01% / -0.73 vs 7358.22 prior). Range 95.58 = 1.30%. The decisive read: a +0.8% gap on a three-catalyst bull stack ran to 7,419 and got SOLD ~31 pts below the ~7,450 flip — the no-reclaim-7450 mechanism (no mechanical dip-buying engine below the flip + the mega-cap memory-cost drag) held even against the exact catalyst its falsifier named. The intraday low 7,323.50 BROKE the 7,350 put wall before a late recovery — the put wall is now being pressured, not just defended. Closed essentially unchanged = a failed bull breakout, a distribution tell."
+    },
+    "nasdaq_composite": {
+      "close": 25358.60,
+      "chg_pct": -0.46,
+      "note": "-0.46% to 25,358.60 — FOURTH straight down day (first 4-day losing streak since February), dragged by the mega-cap memory-cost selloff (AAPL -6.13%, MSFT -3.23%). The semis/memory complex ripped underneath it (SOXX +3.94%, MU +15.7%) but the index-weight mega-caps overwhelmed it. NDX (Nasdaq-100) closed firmer than the broad Composite on the semi strength; the Composite's breadth was the value-over-growth split."
+    },
+    "dow": {
+      "close": 51920.62,
+      "chg_pct": 0.14,
+      "note": "+0.14% / +71.72 to 51,920.62 — GREEN. Dow up while Nasdaq Composite down = value-over-growth a FOURTH session. The memory-cost hit landed squarely on the growth/tech mega-caps (AAPL/MSFT), not the broad market — same chip/device-specific character as June 23-24, just rotated to the consumer-hardware layer."
+    }
+  },
+  "after_hours_events": [],
+  "regime": {
+    "call": "bull-under-stress",
+    "options": ["bull", "bull-under-stress", "sideways", "bear-rally", "bear"],
+    "rationale": "Held at bull-under-stress, but the BALANCE OF RISK shifted bearish today and that's worth logging honestly. The bullish case for a heal-to-bull was as loaded as it gets — soft PCE + MU blowout + QCOM — and the index could NOT reclaim the 7,450 flip (high 7,419, rejected), closing flat below it. Per playbook (don't flip regime on one session; require a close beyond a named level) the call stays bull-under-stress, but the failure to convert max-bullish news is a distribution tell, and the put wall was breached intraday (low 7,323.50) for the first time this stretch. What keeps it from a downgrade: (1) the memory/semis complex itself is strong (SOXX +3.94%, MU +15.7% on a re-rated franchise, not froth); (2) the selloff is device-maker/mega-cap-SPECIFIC (memory-cost margin story), not broad risk-off — Dow green, breadth ex-mega-cap-tech fine; (3) the put wall held on a CLOSING basis (closed 7,357.49, back above the intraday 7,323 break). Net: the tape is heavier than yesterday, the cushion stays off (sub-flip close), and PCE follow-through + Fed speakers are the next deciders.",
+    "what_changes_it": "Up to bull on a CLOSE above ~7,450 (reclaims the flip, re-stacks positive gamma) — but the most bullish catalyst stack of the month just failed to do it, so the burden of proof is now high. Down to bear-rally/bear on a CLOSE below 7,300 (the put wall breaks for real — today's 7,323 intraday break is the warning), OR a follow-through leg in the mega-cap memory-cost selloff that drags the index through 7,323. Watch (1) whether the platform/device-maker selloff (AAPL/MSFT/DELL) is a one-day repricing or the start of a memory-margin de-rate leg; (2) the 7,323-7,350 put-wall band on any retest; (3) Fed speakers vs the now-quieter BofA hike call (soft PCE cut against it); (4) the May-PCE follow-through into next week's June-jobs (~July 2)."
+  },
+  "key_levels": {
+    "spx_support": [7350, 7323, 7300, 7265],
+    "spx_resistance": [7419, 7450, 7510, 7600],
+    "notes": "Support: 7,350 = put wall (held on a CLOSING basis but BROKEN intraday today, low 7,323.50); 7,323 = today's low / fresh near-term shelf; 7,300 = prior aggregate put-wall magnet; 7,265 = June 10/11 hold. Resistance: 7,419 = today's high / fresh rejection point (the operative intraday ceiling); 7,450 = zero-gamma flip (THE reclaim line — failed again today on max-bullish news); 7,510 = broken-floor-now-ceiling; 7,600 = June 1 record. SPX still below the 7,450 flip = amplification zone, and unlike June 24 the bullish catalysts came AND the reclaim failed.",
+    "gamma": {
+      "zero_gamma_flip": 7450,
+      "call_wall": 7510,
+      "put_wall": 7350,
+      "net_gex_usd": -2100000000,
+      "near_put_wall": 7323,
+      "near_call_wall": 7419,
+      "source": "SNIPPET-PRIMARY (SpotGamma intraday snippet, 1:30pm ET: SPX 7,417.77, Net GEX -2.1B, negative-gamma regime). market_levels.py --audit hung 0-bytes a 6TH straight day (killed at exit 144) — the Polygon retry-loop failure is now a standing condition; per the June 24 recommendation the trust-period audit is FORMALLY RETIRED and gamma is snippet-primary until the loop is fixed. The flip (~7,450, well-corroborated as a 7,450-7,480 zone across snippet+Polygon+CBOE on June 24) behaved exactly today: high 7,419 rejected just below it. The put wall (~7,350, the 7,350-7,360 band on June 24) was BREACHED intraday (low 7,323.50) and reclaimed by the close — treat the put-side support as a 7,323-7,350 ZONE now, softening. near_put_wall set to today's low 7,323; near_call_wall set to today's rejection high 7,419 (the operative intraday resistance below the flip). Net GEX still NEGATIVE (snippet -2.1B) = amplify mode persists.",
+      "note": "market_levels.py failed for the 6th consecutive session (0-byte hang, killed exit 144) — formally retiring the trust-period audit per yesterday's recommendation; gamma is snippet-primary going forward, cross-checked against tape coherence. Closes + OHLC obtained via the CBOE delayed_quotes JSON endpoint for all 11 holdings + SPY/QQQ/INTC/SOXX/QCOM/AAPL/MSFT + _SPX/_VIX/_NDX; factor_tape.py (Yahoo) ran fine for cross-asset. Tape-coherence PASSES: close 7,357.49 below the 7,450 flip = negative gamma (confirmed by the -2.1B snippet); the day's high 7,419 was rejected JUST BELOW the flip (resistance behaved); the low 7,323.50 broke the 7,350 put wall and reclaimed (support softening, behaved as a magnet).",
+      "audit_verdict": "retired",
+      "computed_rejected": null,
+      "audit_log": "2026-06-25: market_levels.py --audit launched ~17:00 CT, hung 0-bytes for the entire run (6th straight session), killed at exit 144. RECOMMENDATION FROM JUNE 24 ACTIONED: the trust-period audit is retired; gamma is snippet-primary until the Polygon retry loop is fixed (separate dev task). SpotGamma intraday snippet (1:30pm ET): SPX 7,417.77, ATM IV 15.7%, Net GEX -2.1B (negative-gamma regime). Closes/OHLC via CBOE delayed_quotes JSON (SPX open 7404.91 / high 7419.08 / low 7323.50 / close 7357.49; VIX 18.89). Cross-asset (factor_tape.py, Yahoo): VIX 18.89, WTI 71.47, DXY 101.42, gold 4041.6 (10Y level not cleanly captured this run — tail-truncation on the capture; ~4.40 area, soft PCE biases it lower; refresh next run)."
+    }
+  },
+  "rates_commodities": {
+    "ust10y_pct": 4.40,
+    "wti_usd": 71.47,
+    "brent_usd": null,
+    "gold": 4041.60,
+    "note": "10Y ~4.40% (not cleanly captured this run — tail-truncation; soft core PCE biases it lower, refresh next run). WTI $71.47 (+1.61%, but 5d -5.32 still falling) — bounced off sub-$70 but the war premium remains gone; disinflationary backdrop intact. Gold $4,041.60 (+1.29%, 5d -317.3) — gold UP today after multiple down days = a mild hedge/risk-off bid creeping BACK, a small reversal of the dash-for-cash unwind, consistent with the equity fade. DXY 101.42 (-0.19%, rising 5d). The cross-asset board is still broadly disinflationary (soft PCE, oil sub-$72) but gold/VIX both ticking up = a touch of caution returning even as the rate fear eases. From factor_tape.py (Yahoo)."
+  },
+  "volatility_flow": {
+    "vix": 18.89,
+    "vix_note": "VIX 18.89 (+0.26 / +1.4%) — ticked UP on a flat SPX day, the second tell (with gold up) that hedges came back ON even as the index closed unchanged. A rising VIX + rising gold + a faded bull-news rip = the market paying up for protection into PCE despite the soft-inflation print. From factor_tape.py.",
+    "vix_term_structure": null,
+    "put_call_ratio": null,
+    "put_call_note": "Not collected (lags 1-2 days free). Structural read: VIX +1.4% with SPX flat, after the best-possible catalyst stack failed to lift the tape = demand for downside protection rebuilding into the PCE follow-through.",
+    "notable_options_flow": null,
+    "note": "No corroborated single large print. Cleanest flow read is structural: the 7,419 high rejected below the flip on max-bullish news, the 7,350 put wall broken intraday (7,323.50) then reclaimed, VIX + gold both up = caution rebuilding."
+  },
+  "technicals": {
+    "spx_vs_50dma": "+1.3% (50-DMA ~7,265 est; SPX 7,357.49)",
+    "spx_vs_200dma": "+6.0% (200-DMA ~6,940 est)",
+    "breadth_note": "Value over growth, fourth session. Dow green (+0.14%), Nasdaq Composite red (-0.46%). Portfolio movers (CBOE delayed_quotes, June 25 vs June 24 close): MU +15.74% $1,213.56 (the day's monster, digesting the blowout), VRT +2.89% $325.57, MRVL +1.65% $281.26 the green portfolio names; DELL -5.67% $409.45 (WORST — memory-cost BOM hit), NVDA -1.64% $195.74, TSM -1.32% $434.99, MAGS -2.57% $61.07, CRWV -2.10% $98.76, AVGO -0.83% $378.91, GOOGL -0.46% $343.71, ALAB -0.48% $398.00. Tracked: SOXX +3.94% $625.20, QCOM +3.79% $204.90 (faded from a $219.43 open), AAPL -6.13% $275.15, MSFT -3.23% $352.83, INTC +0.93% $132.87 (tagged $125.41 intraday — below the $126 fade trigger — but CLOSED well above it). GOOGL $343.71 = FOURTH straight close below Berkshire's $350 anchor (2026-06-01-googl-buffett-floor, falsifier = SUSTAINED closes below $350 — four closes now, flag for user sign-off).",
+    "note": "DMAs still drift-estimated (carried 11 sessions, stale) — refresh from a direct reading next run."
+  },
+  "factor_attribution": {
+    "dominant_driver": "memory-cost inflation hitting the device-maker mega-caps (AAPL/MSFT price hikes) — the supercycle's downstream-cost leg overwhelming a soft-PCE/MU-blowout bull setup",
+    "detail": "The day had a clear dominant driver, and it was a NEW one: the memory supercycle's cost side landing on the consumer-hardware mega-caps. Apple (+$300 on Macs/iPads) and Microsoft (+$100-150 on Xbox) raised end-product prices and blamed memory/storage costs; AAPL -6.13% / MSFT -3.23% were the single biggest index drags, capping a tape that otherwise had every reason to rally (soft core PCE 0.2% m/m, MU +15.7%, QCOM data-center declaration). This is the toll-payer/toll-taker split (the memory SELLER MU +15.7% vs the memory BUYERS AAPL/MSFT/DELL down hard) made visible at the consumer layer for the first time. Secondary: a mild caution rebuild (VIX +1.4%, gold +1.3%) into the May-PCE follow-through. Cross-asset (factor_tape.py, Yahoo): WTI $71.47 (+1.61%, 5d falling), DXY 101.42 (-0.19%), VIX 18.89 (+1.4%), gold $4,041.60 (+1.29%); 10Y ~4.40 (soft PCE, eased — not cleanly captured).",
+    "cross_asset": {"ust10y_pct": 4.40, "wti_usd": 71.47, "dxy": 101.42, "vix": 18.89, "gold_usd": 4041.60}
+  },
+  "calendar": [
+    {"date": "2026-06-26", "event": "May core PCE (Fed's preferred gauge) — RELEASED, was the morning print", "why": "Core PCE landed SOFT (0.2% m/m / ~2.9% y/y) on June 25's session, under the ~0.3%/3.3% feared — defused the BofA-75bp-hike scare. NOTE: this resolves the conditionals 2026-06-23-pce-reaction and 2026-06-18-pce-duration-branch as VOID/expired (both were conditional on a HOT print). The soft print did NOT trigger an equity relief rally — the memory-cost mega-cap hit swamped it."},
+    {"date": "all week", "event": "Fed speakers (Williams, Goolsbee, Kashkari, Waller, Barkin)", "why": "First voices after the soft core PCE. 'One soft print isn't a trend' caps any relief; 'data-dependent' greenlights it. With oil/yields easing and a soft PCE, the hawkish BofA hike risk is fading at the margin."},
+    {"date": "2026-06-29", "event": "Horizon: 2026-06-22-googl-350-reclaim", "why": "GOOGL to close back above $350 by June 29 (closed $343.71 today, 4th straight close below — tracking toward WRONG)."},
+    {"date": "2026-06-30", "event": "Horizon: 2026-06-12-spcx-holds-offer", "why": "No SPCX close below $135 through June 30 (comfortably above the offer)."},
+    {"date": "~2026-07-02", "event": "June jobs report (next macro binary)", "why": "Strong → rate fear re-arms, long-duration growth pressured. Cooling → soft-landing confirmed, broad relief. The next event after the PCE follow-through."},
+    {"date": "2026-09-01", "event": "Horizon: 2026-06-01-supply-over-demand", "why": "Supply-side basket vs demand-side platforms from the June 1 baseline. June 25 was a clean point FOR the supply side (SOXX +3.9% vs AAPL/MSFT down hard); feeds the standing thesis."}
+  ],
+  "open_questions": [
+    "NEW (the central question now): is the memory-cost mega-cap selloff (AAPL -6.1%, MSFT -3.2%, DELL -5.7%) a one-day repricing or the START of a memory-margin de-rate leg for the device makers? The supercycle that prints MU a $50B guide is now a multi-year COGS shock for the OEMs that buy memory (Microsoft guided console memory doubling again by fall 2027). If it's a regime, it pressures the platform/hardware side and EXTENDS the supply-over-demand split; if it's a one-day overshoot, AAPL/MSFT bounce. Governs the new 2026-06-25-aapl-memory-margin call.",
+    "NEW: the index failed to reclaim the 7,450 flip on the most bullish catalyst stack of the month and broke the 7,350 put wall intraday — is this a distribution tell that the next leg is down (toward 7,300), or does a quiet PCE-follow-through let the semis-strength (SOXX +3.9%) eventually carry the index over the flip? The cushion is still off (sub-flip close, net GEX -2.1B).",
+    "CARRIED → likely now VOID: 2026-06-23-pce-reaction and 2026-06-18-pce-duration-branch were both conditional on a HOT PCE; the print landed SOFT (0.2% m/m), so both mark expired/void next run unless a supercore re-read hardens it. The reaction-desk's soft-PCE branch (new 2026-06-25 call) fills that gap.",
+    "CARRIED (now 4 closes): 2026-06-01-googl-buffett-floor — GOOGL $343.71, FOURTH straight close below Berkshire's $350. Falsifier = SUSTAINED closes below $350; four closes is sustained — FLAG FOR USER SIGN-OFF (no headless flip). Note GOOGL again held up relatively (-0.46% vs the platform-mega-cap pain elsewhere), complicating a clean 'platforms structurally lag' read.",
+    "RESOLVED this run: market_levels.py audit formally RETIRED after 6 straight 0-byte hangs — gamma is now snippet-primary by standing policy until the Polygon retry loop is fixed (a dev task, out of the daily run's scope).",
+    "NEW (QCOM): the investor-day declaration sold the news ($219 open → $204.90 close) — does the AI-data-center story (Meta/MSFT customers, $15B FY29 target) hold a bid, or fade back toward the pre-event range as a 2028-shipment promise? Watch whether QCOM trades as a third AI-silicon vendor or reverts to a handset multiple."
+  ]
+}
