@@ -9,6 +9,18 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-25] ingest | Cloudflare CEO Matthew Prince on the agentic web (MAD Podcast)
+
+- Source: sources/2026-06-25-cloudflare-prince-agentic-web.md (raw: raw/podcasts/2026-06-25-cloudflare-matthew-prince-mad-podcast.txt). User dropped the YouTube link, asked "what insights," then approved the ingest.
+- **Headline insights:** (1) **bots/agents passed humans online in H1 2026** (Cloudflare Radar) — years ahead of forecast; 1,000×-in-5-yr projection = a structural traffic/compute multiplier (the cleanest *demand-side* rebuttal to the user's capex-drop thesis; Jevons made concrete). (2) **The ad-based internet business model is breaking** ("bots don't click ads") → value migrates to content-licensing + micropayments built on crypto rails (x402/HTTP-402 + stablecoins, Coinbase/Stripe) — confirms the value-migration thesis + a legit non-hype crypto use case. (3) **CPU is the under-discussed bottleneck** (1 agent/knowledge-worker = 40× annual CPU production) — corroborates Lip-Bu Tan + Dylan Patel. (4) **AI labor restructuring** — >20% layoff of "measurers" (middle mgmt/audit), not builders/sellers; span of control 6:1→12:1.
+- **Bias flag:** CEO talking his book (1,000×/CPU-shortage framings make Cloudflare indispensable); the bot>human crossover is the one measured anchor.
+- **The honest read for the user's running thesis:** this *splits* the bear case — the "value migrates" leg gets stronger, the "aggregate compute demand falls" leg gets weaker.
+- Wiki touched: **created [[NET]]** (neutral/low watchlist — edge-inference + agentic-security + internet-tollbooth; valuation the binding constraint); [[bottleneck-roadmap]] (18→19, CPU leg), [[ai-software-disruption]] (7→8, measurers-cut), [[ai-bubble-debate]] (40→41, demand-multiplier counterweight), [[inference-economics]] (14→15, edge inference + gateway cost-routing), [[RDDT]] (1→2, content-licensing read-through), [[watchlist]] (NET row), [[index]].
+- **Stance changes: none.** NET enters at neutral/low (new coverage, not a buy call).
+- Committed locally (no push).
+
+---
+
 ## [2026-06-25] note | Morning brief: Three Green Lights at Once
 
 Before the Bell sent. Covered: three overnight bullish catalysts landed at once — MU +17% premarket, Qualcomm's AI-data-center declaration (+Meta, +12-15%), and a SOFT core PCE (0.2% m/m / ~2.9% y/y, headline 4.1% a 3-yr high on energy); Nasdaq futures +2.4% gap the tape into the ~7,450 flip — the level that grades our no-reclaim-7450 call today. YOLO: 2026-06-25-spx-7475c (bullish reclaim-of-7,450 mirror, target 7,510). No wiki changes (morning runs don't ingest). NOTE: PCE released June 25, not June 26 as last night's market_state assumed.

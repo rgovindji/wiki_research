@@ -89,6 +89,7 @@ Active buy / hold / avoid candidates with one-line thesis and a near-term trigge
 | [[NVTS]] | bull / low conviction | NVDA 800V partner but ~74x sales — wait for revenue inflection | Quarterly revenue inflection |
 | [[NOK]] | bull / low conviction | NVDA $1B AI-RAN bet; long lead time to revenue | T-Mobile US trial results |
 | [[VPG]] | neutral / low conviction | **NEW 2026-05-13.** Force-torque sensing for humanoid actuators; CEO pivoting narrative to "Physical AI"; **P/E 135-215 prices in execution success** before it shows up in financials | Q2 2026 print; first named humanoid OEM design win |
+| [[NET]] | neutral / low conviction | **NEW 2026-06-25.** Rare two-sided AI value-migration play: pick-and-shovel on the **agentic web** (edge inference via Workers/isolates, AI-gateway cost-routing + agent security) *and* potential toll-collector on **what replaces the ad model** (pay-per-crawl / x402 micropayments). Bots passed humans online H1 2026; OpenAI mobile app + all of claude.ai run on it. **Valuation (perennially among the richest in software) is the binding constraint** — wait for a thesis-intact drawdown. ~$220 / ~$79B (2026-06-25). | Workers/AI revenue-mix disclosure; pay-per-crawl / x402 traction; valuation reset |
 
 ## Avoid (bear)
 

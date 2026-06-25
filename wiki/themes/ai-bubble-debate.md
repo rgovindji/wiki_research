@@ -3,7 +3,7 @@ type: theme
 tags: [ai, bubble, risk, debate]
 last_updated: 2026-06-25
 last_full_review: 2026-05-09
-sources: 40
+sources: 41
 ---
 
 # AI Bubble Debate
@@ -12,6 +12,10 @@ sources: 40
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side. The *unit-economics* leg of this debate (how perishable the frontier moat is, who captures inference margin) now lives in [[inference-economics]].
 
 **2026-06-25 — A non-valuation, execution-side bear note (from a bull's mouth).** Per [[2026-06-25-latentspace-midha-amp-gpu-labs]] (a16z's Anjney Midha, himself net-long the buildout — talks-his-book), the warning isn't price: it's that **well-funded labs with all the GPUs they need still fail to ship** because culture frays when money outpaces hardship ("too much money too fast → fragile culture → don't make it to takeoff"). A reminder that indiscriminate AI-lab/capex exposure embeds *execution* risk, not just valuation risk — some of the capital now flowing in will be wasted on labs that never produce a shippable model. Pairs with the utilization-waste point (~60-70% MFU) in [[inference-economics]]: gross capex overstates effective output.
+
+## June 25, 2026 — A demand-side counterweight to the "capex drops" bear: agentic traffic passed human traffic, and it's a compute multiplier
+
+Per [[2026-06-25-cloudflare-prince-agentic-web]] (Cloudflare CEO Matthew Prince — *bias-flagged: CEO, the framing makes Cloudflare indispensable; discount magnitudes*). The single hardest fact for the capex-unwind bear: **bots/agents passed humans on the internet in H1 2026** (a measured Cloudflare Radar number), *years* ahead of Cloudflare's own repeatedly-revised forecast, with a 1,000×-in-5-years projection. An agent shopping for a camera hits ~5,000 sites vs. a human's 5. **Which means:** agentic AI is a structural *traffic/compute multiplier* ("more servers, CPUs, GPUs, memory") — the Jevons-paradox bull case made concrete, and the cleanest rebuttal to the "models get efficient → capex drops → the whole complex de-rates" thesis. It does NOT refute the bear's *other* legs — Prince simultaneously confirms the ad model is breaking ("bots don't click ads") and value migrating to content-licensing/micropayments, i.e. the value-migration thesis. So the interview *splits* the bear case: the "value migrates" leg gets stronger, the "aggregate compute demand falls" leg gets weaker. Surfaced as a both-sides demand input, not resolved. (See [[bottleneck-roadmap]] CPU leg, [[inference-economics]], [[NET]].)
 
 ## June 23, 2026 — The debate stops being academic: the memory complex sells off ~13% on a famous bear's mic-drop + the Street's most hawkish Fed call
 

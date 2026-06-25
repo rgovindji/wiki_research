@@ -2,9 +2,9 @@
 type: company
 ticker: RDDT
 tags: [ai, internet, advertising, data-licensing, social]
-last_updated: 2026-06-20
+last_updated: 2026-06-25
 last_full_review: 2026-06-20
-sources: 1
+sources: 2
 conviction: medium
 stance: bull
 ---
@@ -33,6 +33,7 @@ Hyper-growth (+70% rev) social platform with two AI-linked engines — a premium
 - **AI data-licensing** — unique, human-written, opinion-rich corpus that LLM makers pay for (Google, OpenAI deals); a high-margin, AI-native revenue stream peers lack.
 - **Ad business inflecting** — under-monetized user base, improving ad stack, international + logged-out expansion runway.
 - **AI-search citation moat** — Reddit is one of the most-cited sources in AI answer engines, driving both relevance and traffic.
+- **🆕 2026-06-25 — Independent confirmation the labs pay for *net-new, reputable* content** (per [[2026-06-25-cloudflare-prince-agentic-web]], Cloudflare CEO). Prince: AI labs want "highly reputable sources filling in the holes in the Swiss cheese" — *net-new* knowledge, not another rewrite of the news — and the ad model is breaking because "bots don't click ads," so value migrates to licensing/micropayments. His own local newspaper now makes **more from AI licensing than display ads.** **Which means:** the structural case for Reddit's data-licensing pipe strengthens — RDDT is exactly the unique, opinion-rich, hard-to-synthesize corpus the labs need, and the agentic-web shift moves value *toward* proprietary-content owners and *away* from ad-supported eyeballs. The flip side (and RDDT's #1 bear): the same agentic shift that pays for licensing erodes the *ad/referral-traffic* leg (agents don't view ads), so the mix shift from ads → licensing has to be net-positive for RDDT specifically.
 
 ## Bear case / risks
 - **Google-search-traffic dependence** — algorithm changes / AI-overview cannibalization could hit referral traffic and engagement; the single biggest risk.
@@ -55,3 +56,4 @@ Bull / medium conviction. **Book-fit: core-add candidate** for the "AI-content-m
 
 ## Sources
 1. stockanalysis.com/stocks/RDDT/ — price/valuation, accessed 2026-06-18.
+2. [[2026-06-25-cloudflare-prince-agentic-web]] — Cloudflare CEO: labs pay for net-new reputable content ("holes in the Swiss cheese"); ad model breaking → value migrates to content licensing (added 2026-06-25; CEO-bias-flagged)
