@@ -1,15 +1,17 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-23
+last_updated: 2026-06-25
 last_full_review: 2026-05-09
-sources: 39
+sources: 40
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side. The *unit-economics* leg of this debate (how perishable the frontier moat is, who captures inference margin) now lives in [[inference-economics]].
+
+**2026-06-25 — A non-valuation, execution-side bear note (from a bull's mouth).** Per [[2026-06-25-latentspace-midha-amp-gpu-labs]] (a16z's Anjney Midha, himself net-long the buildout — talks-his-book), the warning isn't price: it's that **well-funded labs with all the GPUs they need still fail to ship** because culture frays when money outpaces hardship ("too much money too fast → fragile culture → don't make it to takeoff"). A reminder that indiscriminate AI-lab/capex exposure embeds *execution* risk, not just valuation risk — some of the capital now flowing in will be wasted on labs that never produce a shippable model. Pairs with the utilization-waste point (~60-70% MFU) in [[inference-economics]]: gross capex overstates effective output.
 
 ## June 23, 2026 — The debate stops being academic: the memory complex sells off ~13% on a famous bear's mic-drop + the Street's most hawkish Fed call
 

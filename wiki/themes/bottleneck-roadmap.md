@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
-last_updated: 2026-06-24
+last_updated: 2026-06-25
 last_full_review: 2026-05-09
-sources: 16
+sources: 18
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -22,6 +22,7 @@ The most important correction since the original sequence below: **there is not 
 - **Memory (2026) is confirming in real time** — June Korea exports: HBM +51% MoM, NAND +28% MoM ([[2026-06-21-korea-exports-memory]]) — but it's *cyclical*: rent, not franchise (DRAM already plateauing at +3% MoM).
 - **New layer: CPU / RL-environment compute** — server CPUs sold out on agent + verifier-loop demand ([[2026-06-20-dylan-patel-daytona-cpu-bottleneck]]; sub-bottleneck section below). Intel's Lip-Bu Tan independently confirms the CPU squeeze (No Priors, 6/24): training CPU:GPU attach *"one to eight" → "one to four"* as agentic/RL orchestration goes CPU-heavy ([[2026-06-24-nopriors-lipbu-tan-intel]]).
 - **Watch-item input bottleneck: helium.** Flagged by Lip-Bu Tan (No Priors, 6/24) as an under-appreciated semiconductor supply chokepoint — *"a lot of people didn't realize the helium impact can be quite significant"* ([[2026-06-24-nopriors-lipbu-tan-intel]]). Not yet investable for this book (no clean liquid play), but logged as a CEO-named constraint alongside power/memory.
+- **2026-06-25 — Two "soft" bottleneck claims to track against the physical sequence.** (1) *Execution/culture, not GPUs:* per [[2026-06-25-latentspace-midha-amp-gpu-labs]] (a16z/Amp — talks-his-book), many labs have all the cash + compute they need and **still can't ship** — the binding constraint is culture/alignment and, for challenger silicon, the *trust-boundary* problem (a ~2-yr tape-out needs early visibility into the *next* model architecture; founders who leave a lab lose it). His Matrox example deliberately adopts **Nvidia's reference architecture** for IO compatibility. (2) *Data, not compute:* per [[2026-06-25-latentspace-zaharia-databricks-agent-cloud]] (Databricks — promotional), the bottleneck has shifted to **data availability/placement** and OLTP↔analytics unification (their LTAP killing CDC pipelines). Both are self-serving framings (each sells the layer it names as the bottleneck), but worth tracking as the *non-physical* counter-claims to the power/wafer sequence.
 
 **Portfolio translation** (per [[ai-capex-cycle]] + Baker's "bottleneck trade nearing its end"): own the durable chokepoints through the cycle (**[[ASML]], [[TSM]], [[NVDA]], [[AVGO]]**), take the elevated near-term constraint where it's still cheap (**power: [[CEG]]/[[NRG]]/[[VRT]]**), and *rent* — never marry — the cyclical layers (commodity memory, pluggable optics, OSAT) with explicit exit discipline. Full ranked decision treatment in the research note `ai_bottleneck_roadmap_2030.html`.
 

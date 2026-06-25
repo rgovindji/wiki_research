@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-25] note | Morning brief: Three Green Lights at Once
+
+Before the Bell sent. Covered: three overnight bullish catalysts landed at once — MU +17% premarket, Qualcomm's AI-data-center declaration (+Meta, +12-15%), and a SOFT core PCE (0.2% m/m / ~2.9% y/y, headline 4.1% a 3-yr high on energy); Nasdaq futures +2.4% gap the tape into the ~7,450 flip — the level that grades our no-reclaim-7450 call today. YOLO: 2026-06-25-spx-7475c (bullish reclaim-of-7,450 mirror, target 7,510). No wiki changes (morning runs don't ingest). NOTE: PCE released June 25, not June 26 as last night's market_state assumed.
+
+---
+
 ## [2026-06-24] daily | After-the-bell close run: MU blowout AH, failed-bounce tape, SemiWiki sweep
 
 Evening headless run for the June 24 close. **Tape:** a tired, waiting-for-Micron session — SPX opened green, ran to 7,428 (rejected just below the 7,450-7,480 flip zone), faded to close **7,358.22 (-0.10%)**; Nasdaq -0.43%, **Dow +0.35%** (value-over-growth, 3rd session); macro improved across the board (10Y 4.40%, WTI $69.87, gold -2.75%, VIX -4.4% to 18.63). **Then MU blew out AH (+12%)** — rev $41.5B vs ~$35.6B est, EPS $25.11, FQ4 guide $50B vs ~$43B Street, 16 take-or-pay SCAs (the MU print itself was ingested in the interactive daytime run: [[2026-06-24-MU-Q3-FY26-earnings]]).

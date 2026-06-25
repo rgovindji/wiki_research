@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, software, saas, agents, disruption, saaspocalypse]
-last_updated: 2026-06-24
+last_updated: 2026-06-25
 last_full_review: 2026-06-22
-sources: 6
+sources: 7
 ---
 
 # AI Software Disruption ("AI eats SaaS")
@@ -16,6 +16,7 @@ The live thesis that LLM **agents disrupt the per-seat SaaS business model** —
 - **Confirmed seat erosion.** [[CRM]]'s own service customers reportedly show **~10% seat reduction** from AI — the agent-eats-seats mechanism is no longer theoretical.
 - **Pricing-power inversion.** Per [[2026-06-20-t6-simon-willison-coding]]: peers now ship 70-80% agent-written code; the SaaS *pricing honeymoon is ending* while the labs raise prices (Opus 4.7 ~+40% effective, GPT-5.5 2× GPT-5.4) — value accruing to the model layer, not the app.
 - **Investor framing.** Philippe Laffont ([[2026-06-20-laffont-coatue-bubble]]): "models are digital 3D printers — bad for software." Software trades ~5.2x fwd rev vs a ~7x 10-yr average; the de-rate is multiple compression on *fear*, largely ahead of revenue evidence.
+- **2026-06-25 — The incumbent counter-narrative: "data is the moat, models commoditize."** Per [[2026-06-25-latentspace-zaharia-databricks-agent-cloud]] (Databricks CTO Matei Zaharia — promotional, private co. selling exactly this), frontier models are "now pretty good," so the moat shifts to **getting the right data in place, then "slap an agent on top"** — and "many traditional software will be rewritten" on that paradigm. The bullish read for a *data-platform* incumbent (Databricks vs [[CRM]]/per-seat SaaS): if data + governance + the agent harness is where value accrues, the platforms that own the data layer survive the seat-erosion they sell against. **Which means:** a self-serving but coherent map of *who survives* "AI eats SaaS" — the data/governance layer, not the application seat. Treat as talk-their-book.
 
 ## The key reconciliation: it's a *growth* re-rate, not a *replacement* story (2026-06-23)
 The most useful framing of *why* quality SaaS keeps bleeding even though it won't be ripped out — the bear isn't "AI replaces Salesforce," it's **"AI flattens *seat growth*, so the multiple collapses from a compounder (~30x) to an entrenched utility (~12x)."** Lock-in is real (an F500 took ~18 months to leave CRM); but if agents stop *new seat* growth, the business becomes GDP+low-single-digits and **loses the premium multiple regardless of how sticky it is.** That single fact reconciles everything that looks "irrational": *entrenched + cheap + still falling daily* all coexist because the market is re-rating *terminal value*, which ignores near-term NRR.

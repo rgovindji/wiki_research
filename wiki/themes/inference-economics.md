@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, inference, open-weight, model-routing, unit-economics, agentic]
-last_updated: 2026-06-24
+last_updated: 2026-06-25
 last_full_review: 2026-06-20
-sources: 12
+sources: 14
 ---
 
 # Inference Economics
@@ -16,6 +16,7 @@ The economics of *serving* AI (not training it): how inference came to dominate 
 - **Inference is already the majority of compute, heading to 80%+.** Per OpenAI's head of industrial compute Sachin Katti ([[2026-06-20-katti-stanford-ai-supercycle]]): scaling laws now span the whole lifecycle — pretrain + RL post-training + synthetic-data generation + product serving — and **RL post-training and synthetic data are themselves inference workloads.** **Which means:** the demand bid under [[NVDA]] / [[CRWV]] / [[NBIS]] / memory survives even if *pretraining* scaling plateaus; the cycle is no longer a training-capex story.
 - **The CIO cost backlash is now a named narrative.** Per the [[2026-06-19-nebius-inflection-event|Nebius Inflection]] customer panels (Databricks, Cognition/Devin, DataRobot): AI line items jumped from $30/user SaaS to *millions*; CIOs are "relitigating the ROI," explicitly compared to early-AWS sticker shock (~2010-15). **Which means:** the next phase rewards *cost-per-outcome*, not raw token volume ("value-maxing, not token-maxing") — and that pressures frontier-lab pricing power from the demand side.
 - **Model routing is becoming standard practice.** Frontier models for the hard 10-20% of tasks; open-weight models for the other 80-90% ("10× faster/cheaper"). A live worked example (Nebius compliance agent): one run went **$657 (GPT-5.5) → $34 (DeepSeek V4) → $24 (Nemotron Ultra)** at near-equal recall, 70-80% cheaper than closed-source over 120 ground-truth tasks. **Which means:** a structural ceiling on closed-lab pricing for non-frontier work, and a durable bid for open-weight + cheap-inference infra.
+- **2026-06-25 — Two new utilization/cost reads from Latent Space.** (1) *Compute is wasted at the hardware layer:* per [[2026-06-25-latentspace-midha-amp-gpu-labs]] (Anjney Midha, a16z/Amp — talks-his-book), best-in-class **MFU is only ~60-70%** and node allocation often sits below the ~96% Google treats as a floor (<95% = an outage) — so *effective* compute runs well below *gross* capex, and a utilization-arbitrage layer (scheduling grids, compute exchanges) is the monetizable gap. (2) *Field cost data confirms token-burn is the live enterprise problem:* per [[2026-06-25-latentspace-zaharia-databricks-agent-cloud]] (Databricks CTO — promotional), one agent task burned **$500** debugging (read too many logs), and a 100k-employee consultancy faces **+$1k/employee/mo** of agent spend — so the headline product feature is *capping* spend. Databricks also claims specialized small models run **~100x cheaper than frontier (and better)** on narrow high-volume tasks and an OSS RL pipeline "beats Opus/GPT-5.5" on specific tasks. **Which means:** both reinforce value-maxing > token-maxing and the commoditization-pressure-on-frontier-pricing leg — but both sources sell exactly this (efficiency layer / data platform), so treat figures as directional, not audited.
 
 ## 2026-06-20 — The cost-backlash phase has *arrived* (dated price hikes), and the high-margin reasoning tier is barely monetized
 

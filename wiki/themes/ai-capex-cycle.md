@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, capex, hyperscalers]
-last_updated: 2026-06-20
+last_updated: 2026-06-25
 last_full_review: 2026-05-09
-sources: 18
+sources: 20
 ---
 
 # AI Capex Cycle
@@ -13,6 +13,7 @@ The multi-year, hundreds-of-billions-of-dollars buildout of AI compute infrastru
 
 ## Why it matters now
 
+- **2026-06-25 — Demand re-accelerated mid-2026; agent workloads are real, not theoretical (two Latent Space reads).** Per [[2026-06-25-latentspace-midha-amp-gpu-labs]] (a16z/Amp's Anjney Midha — talks-his-book), expected H2-2026 *excess* compute "is all gone, it's exploding" in the prior ~6 weeks, and **"Nvidia's not able to meet the demand of production"** — founders who raised billions are texting for "15 nodes in the next few weeks." Corroborates the [[MU]] supercycle and Korea export reads. *The brake:* Midha self-flags (as possibly overstated) that **"up to 20% of US data centers this year are at risk"** of failing community/permitting support, and predicts coming regulatory audits of fast-moving builders. Separately, Databricks ([[2026-06-25-latentspace-zaharia-databricks-agent-cloud]]) puts hard numbers under agent-driven infra demand — **~13M Neon databases/day** launched (much from agents branching/experimenting), ~50-60M VMs/day — evidence the capex is meeting genuine production usage. **Which means:** the near-term demand bid is intact and supply-constrained, but permitting/community is the new pace-limiter on the buildout that underwrites the cycle.
 - **🔥 2026-06-01 — GOOGL announces $80B equity raise (largest in tech history) + Berkshire Hathaway $10B private placement** anchoring at $351.81 (Class A) / $348.20 (Class C). Berkshire's position has been building since Q3 2025 — first disclosed today. **Which means** for the AI capex cycle: (1) **the 2027 GOOGL capex curve is materially steeper than wiki framing** — $185-190B (2026 guide) + $80B raise implies a 2027 run-rate of $220-250B at GOOGL alone; (2) **the "internally funded capex" bull pillar of [[ai-bubble-debate]] is broken at GOOGL specifically** — the cycle has exceeded what monopoly-search cash flow can fund; (3) **the funding mechanism is now the differentiator across hyperscalers** — MSFT self-funds, GOOGL self-funds + dilutes, META self-funds + cuts costs, ORCL leverages. Read-throughs to [[NVDA]], [[AVGO]], [[MU]], [[TSM]], [[VRT]], [[ETN]] and the rest of the GOOGL supplier stack are uniformly positive. Per [[2026-06-01-googl-80B-equity-raise-berkshire]].
 - **🔥 2026-05-26-27 — Anthropic closes $30B at $900B+ valuation, surpasses OpenAI ($852B).** 2.4x rerating in 90 days (Feb 2026 $380B → May 2026 $900B+). Sequoia + Dragoneer + Altimeter + Greenoaks co-lead, each ~$2B. **Which means** the model-lab demand-pull at the top of the capex cycle now embeds ~$1.75T+ combined Anthropic+OpenAI private value backing forward compute purchases. Per Gavin Baker May 21: Anthropic added $11B ARR in March alone. Sustained 100%+ growth required to defend valuation = sustained capex demand pull through 2027. Per [[2026-05-27-anthropic-900B-surpasses-openai]]. **Hyperscaler revenue concentration risk strengthens** (Damodaran: MSFT 50%, ORCL 50%+, GOOGL 43%, AMZN 51% of cloud-AI revenue is at OpenAI+Anthropic).
 - **🔥 2026-05-26 — Hyperscaler forward-funded capacity signal.** MSFT, GOOGL, AMZN reportedly proposing to fund SK Hynix capacity expansion in exchange for guaranteed HBM allocation through late 2020s. UBS reframes MU to $1,625 PT (3x), valuing memory as AI infrastructure not cyclical commodity. **Which means** capex regime is shifting from spot-pricing to contracted-pricing for the supply chain — bottleneck rents are now being prepaid. Per [[2026-05-26-micron-1T-ubs-1625-pt]].
