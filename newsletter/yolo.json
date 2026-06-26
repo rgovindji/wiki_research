@@ -120,6 +120,20 @@
       "resolution_note": "NO-TRIGGER — and the costliest one yet, because the thesis paid and we weren't on it. The card required SPX to POKE the 7,440-7,450 flip zone in the first ~90 min AND fail to hold it (rejection back below ~7,420). What happened: SPX opened 7,370.88, rallied to a HIGH of 7,428.06 — ~12-22 pts SHORT of the 7,440 trigger floor — got rejected there, and faded all afternoon to close 7,358.22 (-0.10%). The poke into 7,440+ never came, so by the card's terms the trade never existed; the desk stood aside. The uncomfortable part: the FADE itself was exactly right — the bounce died at resistance and a 7,400 put bought at the open would have closed ~42 pts ITM (a clean win). The error was trigger PLACEMENT, not direction: we set the entry at the round 7,450 flip when the tape was respecting the LOWER 7,424-7,428 broken-shelf/June-23-high as its real resistance (it had been rejected at ~7,424 the day before, too). The rejection came where the tape cared, ~15 pts under our trigger. This is the second time the no-trigger discipline missed a winner (June 10 the first) rather than avoiding a loss (June 18/23). Mechanism footnote: in a negative-gamma tape below the flip, the operative resistance is the most recent rejection high, not the round flip number above it — the flip is where dealers' behavior changes, but price can get sold well below it. Lesson distilled to playbook. Desk record: 1-2-5. NOTE: the time-stop rule (no 0DTE held into MU's AH print) was correctly built into the card and would have mattered had we been in — MU then blew out +12% AH, exactly the overnight event risk the rule exists to avoid."
     },
     {
+      "id": "2026-06-26-spx-7300p",
+      "date": "2026-06-26",
+      "issue": "2026-06-26-morning",
+      "structure": "SPX 0DTE 7,300 put",
+      "direction": "bearish (short-gamma flush continuation below the broken floor)",
+      "thesis": "The setup the desk has waited for, opening BELOW the wall instead of flushing into it. SPX closed 7,357.49; futures -0.5% imply an open ~7,320, on the 7,323-7,350 floor that broke INTRADAY yesterday (low 7,323.50). Genuine fresh catalyst: OpenAI weighing an IPO delay to 2027 ($1.4T data-center commitments, $14B 2026 loss, no profit until 2030) crystallizes the AI-capex/returns doubt; chips that ripped yesterday reverse (MU -5%, MRVL -3.7%, ARM -4% premarket); VIX through 20 (20.17) for the first time this stretch. Net GEX negative (-2.1B snippet) = below the ~7,450 flip dealers amplify, no mechanical dip-buying. The honest scar: the 7,350 put wall has CAUGHT every flush we've shorted into for 6 straight no-triggers, bouncing the tape each time. The distinction today: we open below the wall, so the trade is the NEXT layer down (lose 7,300, the line we publicly named as the character-change level), not a flush INTO the wall.",
+      "trigger": "SPX LOSES 7,300 with momentum after the first 30 minutes (a real break once the opening swing settles, not a one-print tag), regardless of catalyst (playbook lesson 1: key to the level). A gap-down that RECLAIMS 7,350 in the opening hour = no trade, the wall held again, desk stands aside (the live alternative, given the 6-session no-trigger record on flush-into-the-wall cards).",
+      "target": "7,265 - the June 10/11 hold / next hedge shelf. Exit there, where dealer hedging flips from tailwind to headwind for a short.",
+      "invalidation": "SPX reclaims 7,350 after entry - flush failed, out, no averaging down. Hard time-stop at 3:30 ET if neither target nor invalidation has hit (June 11 lesson: theta resolves 'almost' against the holder).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
       "id": "2026-06-25-spx-7475c",
       "date": "2026-06-25",
       "issue": "2026-06-25-morning",

@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-26] note | Morning brief: OpenAI Blinks, and the Market Asks the Question
+
+Before the Bell sent. Covered: OpenAI reportedly weighing an IPO delay to 2027 crystallizes AI-capex/returns doubt — futures down (S&P -0.5%, NDX -1.2%), chips that ripped yesterday reverse (MU -5% premarket), VIX through 20; open ~7,320 on the 7,323-7,350 broken floor, with 7,300 as the character-change line. YOLO: SPX 0DTE 7,300 put on a real break below 7,300, target 7,265. No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-25] note | Analysis: AI value-migration & capex-unwind playbook (+ failed video review)
 
 - Created wiki/analyses/ai-value-migration-capex-unwind-playbook.md — consolidates the curator's multi-day thesis (capex-cut scenario engine, differential-commoditization three-tier, unlock-as-trigger, MU pricing-top≠stock-top, the agentic-traffic counterweight) into one strategic map. Tradeable expression: **long the spread** (chokepoints + app/content, short rented-shovels). Conviction medium on structure / low on timing; falsifiers logged. Indexed under Analyses.
