@@ -3,7 +3,7 @@ type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
 last_updated: 2026-06-26
 last_full_review: 2026-05-09
-sources: 21
+sources: 22
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -129,6 +129,7 @@ Per [[2026-06-20-dylan-patel-daytona-cpu-bottleneck]] (Dylan Patel × Daytona Co
 - **Independent CEO corroboration — Cloudflare's Matthew Prince (2026-06-25, [[2026-06-25-cloudflare-prince-agentic-web]]).** Prince names the CPU shortage as the "under-discussed" bottleneck (everyone watches GPUs): "**every knowledge worker with *one* agent = 40× current annual CPU production**" — and it'll be hundreds of agents per person, not one. The driver is the same agentic loop (tool calls, sandboxes, scraping, DB calls) Dylan flags, now confirmed from the infrastructure seat that sits in front of a huge share of global traffic. He also gives the demand anchor underneath all of this: **bots/agents passed humans online in H1 2026** (years ahead of Cloudflare's own forecast), with a 1,000×-in-5-years projection — a structural traffic/compute multiplier across CPU + GPU + memory + network. (Bias: CEO talking his book; discount the magnitudes, but the bot>human crossover is a measured Radar number.) Reinforces the [[NET]] edge-inference read.
 - **NAND catching up to DRAM (update, not contradiction).** Dylan: DRAM "+4x last year and still rising"; **SSD/NAND now +3-4x with "another ~60% to go."** This is sharper NAND inflation than the 2026-05-09 Dwarkesh read (NAND rising *less* than DRAM); NAND lagged but is now catching up — bullish near-term [[SNDK]]/[[WDC]], reinforces the memory row above and the [[MU]] thesis.
 - **TSMC node-allocation squeeze (cross-ref):** all AI accelerators are on N3 → TSMC telling Apple/Qualcomm/MediaTek to "get off 3nm, move to 2nm faster," pushing mobile/PC vendors toward Intel (non-AI-competing foundry). NVDA's Groq acquisition partly = Groq-on-Samsung (no TSMC N3 capacity). Reinforces the [[AAPL]]-deprioritization flag.
+- **"Grindable, not just verifiable" is the real constraint on agent progress (Dwarkesh, [[2026-06-26-dwarkesh-next-training-paradigm]] — low-bias).** Coding/math advanced fastest because they're *grindable* — you can run 1,000 parallel rollouts in identical, resettable containers; **computer-use lagged** because you can't farm 1,000 live Amazon-checkout rollouts ("Andy Jassy will shut your bots down"). The unlock is building high-fidelity, deterministic **app clones** to train against — currently "labor-intensive and unscalable," and itself a heavy **CPU/sandbox + RL-environment compute** demand (each parallel rollout is a verifier/sim instance). **Which means:** the agentic buildout pulls *more* non-GPU compute (the warm-pool CPU + verifier-sandbox leg above) and underwrites the data/RL-environment vendor demand (Mercor/Surge/Scale) — for many domains, environment *construction*, not GPU supply, is the binding step.
 
 ## Sub-bottleneck: utilization waste + datacenter community backlash + alt-silicon co-design (NEW 2026-06-21)
 

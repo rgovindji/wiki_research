@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-26] ingest | Dwarkesh Patel — "What does the next training paradigm look like?"
+
+- Source: sources/2026-06-26-dwarkesh-next-training-paradigm.md (raw: raw/podcasts/2026-06-26-dwarkesh-next-training-paradigm.txt). User asked to review/save/update.
+- **Insights:** (1) **RLVR-generalization is the unresolved crux** of the whole AGI/capex bet — if RL across millions of grindable tasks generalizes → AGI → capex justified; if not → paradigm wall. Dwarkesh (low-bias, no book) leans skeptical via Dario's "train short / serve long → degradation" hint. (2) **"Verifiable isn't enough — must be *grindable"*** (deterministic replayable sims) — explains coding-first / computer-use-lag; environment *construction* is the binding step (CPU/sandbox + RL-env vendor demand). (3) **~30-50% of lab compute = inference that doesn't improve the model today** — continual-learning would convert it to a flywheel. (4) **"Dreaming"/test-time training = potential *4th scaling axis*** ("/dream incinerates compute") — speculative new compute sink. (5) **Continual-learning-from-deployment (2027-28)** shifts capability driver to deployment scale → distribution/data moat.
+- **Net for the book:** more compute-demand *axes* than the current pretrain+serve frame (bullish optionality for NVDA/memory on a multi-yr horizon), but contingent on the continual-learning recipe arriving AND on RLVR generalizing. The both-sides cuts cleanly: even a *slower* path to AGI isn't a smaller compute bill.
+- Wiki touched: [[ai-bubble-debate]] (44→45), [[inference-economics]] (17→18), [[ai-capex-cycle]] (21→22), [[bottleneck-roadmap]] (21→22), [[index]]. No new tickers; no stance changes.
+- Committed locally (no push).
+
+---
+
 ## [2026-06-26] note | Morning brief: OpenAI Blinks, and the Market Asks the Question
 
 Before the Bell sent. Covered: OpenAI reportedly weighing an IPO delay to 2027 crystallizes AI-capex/returns doubt — futures down (S&P -0.5%, NDX -1.2%), chips that ripped yesterday reverse (MU -5% premarket), VIX through 20; open ~7,320 on the 7,323-7,350 broken floor, with 7,300 as the character-change line. YOLO: SPX 0DTE 7,300 put on a real break below 7,300, target 7,265. No wiki changes (morning runs don't ingest).
