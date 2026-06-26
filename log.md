@@ -9,6 +9,15 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-25] note | Analysis: AI value-migration & capex-unwind playbook (+ failed video review)
+
+- Created wiki/analyses/ai-value-migration-capex-unwind-playbook.md — consolidates the curator's multi-day thesis (capex-cut scenario engine, differential-commoditization three-tier, unlock-as-trigger, MU pricing-top≠stock-top, the agentic-traffic counterweight) into one strategic map. Tradeable expression: **long the spread** (chokepoints + app/content, short rented-shovels). Conviction medium on structure / low on timing; falsifiers logged. Indexed under Analyses.
+- **Video review FAILED (honest non-result):** background agent dispatched to review youtube Q_YyRcHKXn0 ("When Will NVDA and The Hyperscalers Rebound?" — Steven Fiorillo, retail/SA NVDA-bull channel). The video has **no caption track at all** (YouTube timedtext list empty; ScribeTube 404; control video transcribed fine → API works, this video genuinely has no captions). No transcript = nothing filed; agent correctly refused to fabricate. Options: ASR (yt-dlp+Whisper) if the curator wants it.
+- **Standing instruction logged to memory (feedback-orchestrator-autonomy):** curator granted "never ask what to save — you're the orchestrator, go for it." Future ingests/analyses get filed + committed without asking (still flag stance changes; still confirm push/send/delete).
+- Wiki touched: new analysis page, [[index]]. No stance changes. Committed locally (no push).
+
+---
+
 ## [2026-06-25] daily | Market fades soft-PCE+MU+QCOM trifecta; memory cost hits AAPL/MSFT/DELL
 
 The most instructive session in weeks: a soft core PCE (0.2% m/m / ~2.9% y/y), [[MU]]'s blowout digesting (+15.7% to $1,213.56), and [[QCOM]]'s data-center declaration all landed bullish — and SPX still closed flat (7,357.49, −0.01%), gapping to 7,405, failing at 7,419 below the ~7,450 dealer-gamma flip, then to a 7,323.50 low before recovering. The cap: the memory supercycle's two-sided bill went consumer-visible — [[AAPL]] (−6.13%, Mac/iPad +$300) and [[MSFT]] (−3.23%, Xbox +$100–150) raised product prices on memory costs (MSFT: console memory +2.5x, doubling again by fall 2027); our own [[DELL]] −5.67% (memory 10–70% of BOM). SOXX +3.9% vs the platform basket down hard — the toll-payer/toll-taker split now visible at the consumer layer. [[QCOM]] sold its own news ($219 open → $204.90 close). Plus the SemiWiki daily ([[2026-06-25-semiwiki-daily]]): IBM "0.7nm" NanoStack CFET (sub-1nm research tell, IBM doesn't manufacture) + the official OpenAI/[[AVGO]] Jalapeño unveil.
