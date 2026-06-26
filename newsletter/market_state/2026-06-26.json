@@ -1,0 +1,92 @@
+{
+  "_doc": "Daily market-state snapshot. Written by the close-of-market run, read by the next morning run (and the next close run for day-over-day deltas). Reasoning fuel — the reader never sees this file, only the conclusions drawn from it. Fields left null were not collected; collect them next run rather than guessing.",
+  "date": "2026-06-26",
+  "as_of": "2026-06-26T16:00:00-04:00",
+  "session_note": "AI-returns doubt got a face and the chips paid for it — but the floor held. The NYT reported OpenAI is leaning toward delaying its IPO to 2027 (advisers offered Altman a $1T valuation later or a lower one sooner; he called a cut a nonstarter), turning a month of cost-side worry into a payoff question about the whole trade. The highest-beta expression — chips — round-tripped Thursday's blowout: SOXX -5.64% ($589.94), MU -6.69% ($1,132.33, giving back ~1/3 of the +15.7%), AVGO -3.67%, MRVL -5.15%, NVDA -1.64%, QCOM -7.57%, SanDisk -10%, with SoftBank -13% in Tokyo. The INVERSE of June 25: the prior day's memory-cost losers bounced (AAPL +3.14% $283.78, MSFT +5.71% $372.97), so the supply/demand split ran the wrong way today (a counter-print to supply-over-demand, NOT its falsifier). Path: SPX gapped down to open 7,312.74, dripped to a 7,294.18 low (a brief poke BELOW the 7,300 character-change line we'd named), then recovered to close 7,354.02 (-0.05% / -3.47 vs 7,357.49). Range 98.77 = 1.34%. VIX spiked to 20.72 at the open (first 20-handle this stretch) and FADED to close 18.41 (-2.54%, below Thursday) — the morning panic was bought. Our worst was the capex PROXY, VRT -6.64% ($303.95): it sells the building of capacity, so a 'will the spend pay back' doubt marks it down harder than a contracted supplier. MAGS +0.87% the only green holding (platform bounce). Dow 51,876.11 (-0.09%), Nasdaq Composite 25,297.62 (-0.24%, 5th straight down day). Weekly: S&P ~-2%, Nasdaq ~-4% — the first down week after a long record streak. The tell: worst-case morning (OpenAI scare, VIX>20, SPX to 7,294) and the index closed green off the lows holding 7,300 — distribution overhead, but the floor is defended.",
+  "indexes": {
+    "spx": {
+      "close": 7354.02,
+      "chg_pct": -0.05,
+      "ohlc": [7312.74, 7392.95, 7294.18, 7354.02],
+      "note": "Open 7312.74, high 7392.95, low 7294.18, close 7354.02 (CBOE _SPX OHLC; -0.05% / -3.47 vs 7357.49). Range 98.77 = 1.34%. The decisive read: the 7,300 line we publicly named as the character-change level was POKED (low 7,294.18, ~6 pts below) and RECLAIMED — the second straight session the put-side shelf caught a flush intraday and bounced it (June 25 low 7,323.50, June 26 low 7,294.18). Closed below the ~7,450 flip (amplify zone) for an 8th straight session but green off the lows. A failed bull breakout overhead (high 7,392.95 well short of the flip) but a defended floor underneath."
+    },
+    "nasdaq_composite": {
+      "close": 25297.62,
+      "chg_pct": -0.24,
+      "note": "-0.24% to 25,297.62 — FIFTH straight down day, the longest losing streak of 2026 (first 5-day streak). Dragged by the chip round-trip (SOXX -5.64%, MU -6.69%) even as the mega-cap platforms (AAPL +3.14%, MSFT +5.71%) bounced — the platform rebound cushioned the broad Composite to a small loss while the semis-heavy names led down."
+    },
+    "dow": {
+      "close": 51876.11,
+      "chg_pct": -0.09,
+      "note": "-0.09% / -44.51 to 51,876.11 — fractionally red. With AAPL/MSFT (Dow members) GREEN today, the Dow's small loss came from the broad risk-off rather than a tech-specific drag; the chip pain sits in the Nasdaq/SOX, not the Dow."
+    }
+  },
+  "after_hours_events": [],
+  "regime": {
+    "call": "bull-under-stress",
+    "options": ["bull", "bull-under-stress", "sideways", "bear-rally", "bear"],
+    "rationale": "Held at bull-under-stress. Today's tape actually firmed the floor case at the margin vs June 25's bearish-balance-of-risk read: (1) the worst-case morning (OpenAI IPO-delay scare, VIX through 20, SPX flushed to 7,294 below the 7,300 line) was BOUGHT — the index closed green off the lows (7,354) and VIX faded to 18.41, below Thursday; (2) the 7,300 put-side shelf held on a closing basis for the second straight session (June 25 reclaimed 7,323, June 26 reclaimed 7,294). What keeps it from an UPGRADE: (1) the index still can't get near the 7,450 flip (high 7,392.95), so the cushion stays off and overhead distribution persists — the close below the flip is now 8 sessions running; (2) the AI-returns doubt (OpenAI's IPO wobble) is a genuinely NEW overhang on sentiment, the marginal price-setter below the flip; (3) first down WEEK after a long record streak (S&P ~-2%, Nasdaq ~-4%). Net: a defended floor under a heavy, capped tape — range-bound below the flip with the 7,300 shelf as the line that defines the next leg.",
+    "what_changes_it": "Up to bull on a CLOSE above ~7,450 (reclaims the flip, re-stacks positive gamma) — but the index hasn't been able to approach it for 8 sessions, so the burden of proof is high. Down to bear-rally/bear on a CLOSE below 7,300 (the put-side shelf breaks for real — it has been poked intraday twice now, 7,323 then 7,294, and held both times on a closing basis), OR a second leg in the AI-capex-doubt selloff (more pre-revenue/promise names cracking, another marquee capex-payback headline). Watch (1) whether the 7,294-7,300 floor holds a third test or finally gives; (2) whether the OpenAI IPO-delay story metastasizes into a broader 'does AI pay' repricing or fades as a SoftBank/SpaceX-specific funding story; (3) the June jobs print (~July 2) as the next macro binary; (4) GOOGL's 5th-straight sub-$350 close (googl-buffett-floor, flagged for user)."
+  },
+  "key_levels": {
+    "spx_support": [7300, 7294, 7265, 7230],
+    "spx_resistance": [7393, 7450, 7510, 7600],
+    "notes": "Support: 7,300 = the named character-change line / put-side shelf (held on a CLOSING basis, poked to 7,294 intraday and reclaimed); 7,294 = today's low; 7,265 = June 10/11 hold / next hedge shelf; 7,230 = deeper air-pocket if 7,265 fails. Resistance: 7,393 = today's high / fresh rejection point; 7,450 = zero-gamma flip (THE reclaim line — un-tested today, high 7,393 fell ~57 pts short); 7,510 = broken-floor-now-ceiling; 7,600 = June 1 record. SPX still below the 7,450 flip = amplification zone, 8th straight close.",
+    "gamma": {
+      "zero_gamma_flip": 7450,
+      "call_wall": 7500,
+      "put_wall": 7300,
+      "net_gex_usd": null,
+      "near_put_wall": 7294,
+      "near_call_wall": 7393,
+      "source": "SNIPPET-PRIMARY (carried + tape-coherence). market_levels.py --audit hung 0-bytes a 7TH straight session (Polygon retry-loop failure, audit formally RETIRED 2026-06-25); gamma is snippet-primary by standing policy. No fresh SpotGamma snapshot indexed for June 26 — carried the June 25 structure (flip ~7,437-7,450, call wall ~7,500, put wall ~7,400 aggregate / ~7,300 near-view) and validated against the tape: close 7,354.02 below the ~7,450 flip = negative gamma persists; the day's high 7,393 was rejected well below the flip (resistance behaved); the low 7,294.18 poked the 7,300 put shelf and reclaimed (support behaved as a magnet, 2nd straight session). net_gex_usd left NULL (no fresh read; the stale June 25 value was -2.1B negative — directionally consistent with the sub-flip close but not re-measured). near_put_wall = today's low 7,294; near_call_wall = today's rejection high 7,393.",
+      "note": "market_levels.py failed for the 7th consecutive session (0-byte hang, killed). Gamma snippet-primary; net GEX not freshly measured — left null per the never-guess-a-level rule, with a note that the structure is tape-coherent (sub-flip close = negative gamma, put shelf at ~7,300 caught the 7,294 flush). Closes/OHLC obtained via the CBOE delayed_quotes JSON endpoint for all 11 holdings + SPY/QQQ/SOXX/AAPL/MSFT/INTC/QCOM/ARM + _SPX/_VIX/_NDX; factor_tape.py (Yahoo) ran fine for cross-asset.",
+      "audit_verdict": "retired",
+      "computed_rejected": null,
+      "audit_log": "2026-06-26: market_levels.py --audit launched ~17:00 CT, hung 0-bytes for the entire run (7th straight session), killed. Trust-period audit remains RETIRED (since June 25). Closes/OHLC via CBOE delayed_quotes JSON (SPX open 7312.74 / high 7392.95 / low 7294.18 / close 7354.02; VIX open 20.34 / high 20.72 / close 18.41). Cross-asset (factor_tape.py, Yahoo): 10Y 4.37% (-1.77%, falling), WTI 70.24 (-2.34%), DXY 101.37 (-0.06%), VIX 18.41, gold 4103.0 (+1.8%). No fresh SpotGamma snippet for June 26 indexed at run time; carried structure cross-checked against the tape (coheres)."
+    }
+  },
+  "rates_commodities": {
+    "ust10y_pct": 4.37,
+    "wti_usd": 70.24,
+    "brent_usd": null,
+    "gold": 4103.0,
+    "note": "10Y 4.37% (-1.77% today, falling 5d) — the rate side keeps EASING (soft PCE follow-through + risk-off bid), which on a normal day helps long-duration growth, but today the AI-returns doubt swamped the rate relief. WTI $70.24 (-2.34%, 5d -6.36 falling) — back toward sub-$70, war premium long gone, disinflationary backdrop intact. Gold $4,103.0 (+1.8%) — UP again, a third session of a mild risk-off/hedge bid creeping back even as rates ease, consistent with the equity caution. DXY 101.37 (-0.06%, rising 5d). The cross-asset board is disinflationary (oil sub-$71, 10Y 4.37) but gold up = the hedge bid is the tell, not the rate relief. From factor_tape.py (Yahoo)."
+  },
+  "volatility_flow": {
+    "vix": 18.41,
+    "vix_note": "VIX 18.41 (-0.48 / -2.54%) but the INTRADAY story is the signal: it OPENED 20.34 and spiked to 20.72 (first 20-handle this stretch) on the OpenAI scare, then FADED all day to close 18.41, BELOW Thursday. A VIX that prints a fear spike at the open and closes lower = the panic was sold, the protection bought into the morning got monetized as the floor held. 5d trend still rising (+2.01 over the week of the selloff). From factor_tape.py.",
+    "vix_term_structure": null,
+    "put_call_ratio": null,
+    "put_call_note": "Not collected (lags 1-2 days free). Structural read: VIX 20.72 intraday high faded to an 18.41 close as SPX recovered off 7,294 — fear bought at the open, sold by the close; the morning's hedging demand did not sustain.",
+    "notable_options_flow": null,
+    "note": "No corroborated single large print. Cleanest flow read is structural: VIX spiked through 20 at the open and faded under 18.5 as the 7,300 shelf held; the chip round-trip (SOXX -5.64%) was the day's concentrated selling, the platform bounce (AAPL/MSFT green) the offset."
+  },
+  "technicals": {
+    "spx_vs_50dma": "+1.2% (50-DMA ~7,265 est; SPX 7,354.02)",
+    "spx_vs_200dma": "+5.9% (200-DMA ~6,945 est)",
+    "breadth_note": "Chips down hard, platforms up — the inverse of June 25. Portfolio movers (CBOE delayed_quotes, June 26 vs June 25 close): MAGS +0.87% $61.60 (only green holding, platform bounce); TSM -0.61% $432.35, ALAB -1.57% $391.74, NVDA -1.64% $192.53, GOOGL -1.84% $337.39, CRWV -2.21% $96.58, DELL -2.43% $399.49, AVGO -3.67% $365.02, MRVL -5.15% $266.77, VRT -6.64% $303.95 (WORST), MU -6.69% $1,132.33 (gave back ~1/3 of Thursday). Tracked: SOXX -5.64% $589.94, QCOM -7.57% $189.39 (continued fading its investor day), AAPL +3.14% $283.78 (bounced from -6.13%), MSFT +5.71% $372.97 (bounced from -3.23%), INTC -3.41% $128.32, ARM -3.9% $334.27. GOOGL $337.39 = FIFTH straight close below Berkshire's $350 anchor (2026-06-01-googl-buffett-floor, falsifier = SUSTAINED closes below $350 — flag for user sign-off).",
+    "note": "DMAs still drift-estimated (carried 12 sessions, stale) — refresh from a direct reading next run."
+  },
+  "factor_attribution": {
+    "dominant_driver": "AI-capex/returns doubt — OpenAI's reported IPO delay turned cost-side worry into a payoff question, de-risking the highest-beta chip/capex names while the rate side (easing) and the prior day's memory-cost losers (AAPL/MSFT) went the other way",
+    "detail": "Clear single driver, and a NEW one: the AI-returns question made explicit by OpenAI weighing an IPO delay (advisers split on $1T-later vs lower-sooner; ~$1.4T committed spend, ~$14B 2026 loss, no profit until 2030). It hit the capex PROXIES and the pre-revenue/promise complex hardest — SOXX -5.64%, MU -6.69%, VRT -6.64% (our worst), SoftBank -13% in Tokyo, SpaceX secondary ~$202->$153 since debut — while the rate-sensitive/platform side went the opposite way (AAPL +3.14%, MSFT +5.71%, 10Y eased to 4.37%). The supply-over-demand split ran INVERSE today (chips down, platforms up) = a counter-print to the standing thesis, not its falsifier. Secondary: a persistent mild hedge bid (gold +1.8% a third session) even as rates ease — caution, not capitulation; the VIX 20.72 spike faded to an 18.41 close as the 7,300 floor held. Cross-asset (factor_tape.py, Yahoo): 10Y 4.37 (-1.77%), WTI 70.24 (-2.34%), DXY 101.37, VIX 18.41, gold 4103.0 (+1.8%).",
+    "cross_asset": {"ust10y_pct": 4.37, "wti_usd": 70.24, "dxy": 101.37, "vix": 18.41, "gold_usd": 4103.0}
+  },
+  "calendar": [
+    {"date": "2026-06-29", "event": "Horizon: 2026-06-22-googl-350-reclaim AND 2026-06-25-flip-stays-ceiling", "why": "GOOGL to close back above $350 by June 29 (closed $337.39 today, 5th straight below — tracking toward WRONG). AND: SPX no close above ~7,450 on June 26 or June 29 (today 7,354.02, below — one session left, tracking RIGHT)."},
+    {"date": "2026-06-30", "event": "Horizon: 2026-06-12-spcx-holds-offer", "why": "No SPCX close below $135 through June 30 (~$153 per the morning brief, above the $135 offer — tracking right but the IPO-delay headline pressures the secondary; verify the close)."},
+    {"date": "all week", "event": "Fed speakers (Williams, Kashkari, etc.)", "why": "First voices into the AI-doubt selloff; a 'data-dependent / soft-PCE-noted' tone cushions, a hawkish lean stacks on the risk-off. With 10Y at 4.37 and oil sub-$71 the BofA-75bp-hike risk keeps fading."},
+    {"date": "~2026-07-02", "event": "June jobs report (next macro binary)", "why": "Strong -> rate fear re-arms ON TOP of the AI-capex fear (governs 2026-06-25-jobs-duration-branch). Cooling -> at least the rate leg lifts, isolating whether the AI-returns scare has legs of its own."},
+    {"date": "2026-07-10", "event": "Horizon: 2026-06-25-aapl-memory-margin", "why": "AAPL not to reclaim $293.08 by July 10 (closed $283.78 today, +3.14% bounce but still below — tracking right, open)."},
+    {"date": "2026-09-01", "event": "Horizon: 2026-06-01-supply-over-demand", "why": "Supply-side basket vs demand-side platforms from the June 1 baseline. June 26 was a clean COUNTER-print (chips down, AAPL/MSFT up) — the second counter-print (with June 23); the standing thesis is intact but the inverse days are stacking, watch the spread into quarterly review."}
+  ],
+  "open_questions": [
+    "NEW (the central question now): is the OpenAI-IPO-delay AI-returns scare a one-day SoftBank/SpaceX/pre-revenue-specific funding story, or the start of a broader 'does AI pay' repricing that drags the contracted-supplier complex too? The contracted names (MU SCAs, AVGO/MRVL order books) have a fundamental floor the IPO-timing headline doesn't touch — but sentiment is the marginal price-setter below the flip, and VRT -6.64% shows the capex PROXIES wear the doubt regardless of their own backlogs. Governs the regime: a second capex-payback headline that cracks the contracted names = downgrade; a fade back = the floor holds.",
+    "NEW: the 7,294-7,300 shelf has now been poked intraday twice (June 25 low 7,323, June 26 low 7,294) and held on a closing basis both times — is the third test the one that breaks, or is the put wall genuinely defended into the June jobs print? The cushion is off (8th straight sub-flip close), so a real close below 7,300 hands the move to amplifying dealer flows toward 7,265.",
+    "NEW: supply-over-demand ran INVERSE a SECOND time (June 23, June 26 — chips down, platforms up) vs the June 25 clean point FOR it (SOXX +3.9% vs platforms down). The thesis is a Sept-1 horizon and intact, but the counter-prints are clustering on capex-DOUBT days (chips are higher-beta to AI sentiment) while the points-FOR cluster on memory-COST days (platforms are the toll-payers). Watch which regime dominates into quarterly review.",
+    "CARRIED (now 5 closes): 2026-06-01-googl-buffett-floor — GOOGL $337.39, FIFTH straight close below Berkshire's $350. Falsifier = SUSTAINED closes below $350; five closes is well past sustained — FLAG FOR USER SIGN-OFF (no headless flip). Note GOOGL is now UNDERperforming the platform bounce (AAPL/MSFT green, GOOGL -1.84%) — the AI-talent-exodus overhang plus the broad de-risking, complicating a clean read.",
+    "CARRIED: 2026-06-25-aapl-memory-margin — AAPL bounced +3.14% to $283.78 (memory-cost selloff partially retraced) but stayed below the $293.08 line; the call (no reclaim by July 10) is intact. Is yesterday's -6.13% a one-day overshoot now being bought, or does the memory-COGS de-rate reassert? Today's bounce is the first data point against the de-rate thesis.",
+    "CARRIED: 2026-06-12-spcx-holds-offer — SPCX ~$153 (above the $135 offer) but the OpenAI IPO-delay headline is exactly the pipeline-fear catalyst the call named; watch for any close below $135 by June 30."
+  ]
+}

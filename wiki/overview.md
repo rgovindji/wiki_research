@@ -1,14 +1,18 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-25
+last_updated: 2026-06-26
 last_full_review: 2026-05-09
-sources: 2
+sources: 3
 ---
 
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## June 26, 2026 — The AI-returns question gets a face: OpenAI weighs an IPO delay, chips round-trip, the floor holds
+
+**OpenAI is reportedly leaning toward pushing its IPO to 2027** — advisers gave Altman two options (wait for a $1T valuation or list sooner at a lower one), and he called any cut a nonstarter. **Which means:** the single most important *demand* name in the AI trade signaling that public markets might not pay its price right now turned a month of cost-side worries (memory bills, capex burn) into a question about the whole payoff — and the highest-beta expression of that question, the chips, sold first. SOXX **−5.6%**; [[MU]] **−6.69%** ($1,132.33, giving back part of Thursday's +15.7%), [[AVGO]] −3.67%, [[MRVL]] −5.15%, [[NVDA]] −1.64%, [[ARM]] −3.9%, [[INTC]] −3.4%, [[QCOM]] −7.57%, SanDisk −10%. The **inverse of June 25**: the prior day's memory-cost *losers* bounced — [[AAPL]] +3.14%, [[MSFT]] +5.71% — so the supply-over-demand split ran the *wrong* way today (a counter-print to the standing [[overview|supply-over-demand]] thesis, not its falsifier). **But the index held:** S&P closed **7,354.02 (−0.05%)**, after a brief poke to a **7,294.18 low** (below the 7,300 line we'd named as the character-change level) and a recovery to close above it; **VIX spiked to 20.72 at the open and faded to 18.41** (below Thursday) — the morning panic was bought. Our own [[VRT]] was the book's worst (−6.64%, $303.95): the capex-*proxy* takes the "will the spend pay back" doubt most directly, since it sells the *building* of capacity, not a contracted chip. Weekly: S&P ~−2%, Nasdaq ~−4% — the first down week after a long record streak. Regime: **bull-under-stress**, still below the ~7,450 flip; the 7,300 floor held on a closing basis for the second test. **No stance/conviction changes.** GOOGL $337.39 = 5th straight close below Berkshire's $350 ([[overview|googl-buffett-floor]] flagged for user sign-off). See [[2026-06-26-ai-capex-doubt-chip-reversal]], [[2026-06-26-semiwiki-daily]].
 
 ## June 25, 2026 — The market fades the best-possible news; the memory supercycle shows up in consumer prices
 

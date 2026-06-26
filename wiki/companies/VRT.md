@@ -2,9 +2,9 @@
 type: company
 ticker: VRT
 tags: [ai, power, cooling, data-center]
-last_updated: 2026-06-20
+last_updated: 2026-06-26
 last_full_review: 2026-05-09
-sources: 3
+sources: 4
 conviction: high
 stance: bull
 ---
@@ -47,6 +47,7 @@ The **only large player covering both power AND cooling** for AI data centers �
 5. **Geographic / customer mix** disclosure
 
 ## Recent developments
+- **2026-06-26 — −6.64% to $303.95, the book's worst day, on the AI-capex-doubt selloff; plus an 800VDC/SiC power-layer tell** ([[2026-06-26-ai-capex-doubt-chip-reversal]], [[2026-06-26-semiwiki-daily]]). The OpenAI IPO-delay headline (the "will the spend pay back?" question made explicit) hit the capex *proxies* hardest, and VRT led the portfolio down −6.64% — mechanism: VRT sells the **building of capacity**, so a doubt about *whether* the buildout continues marks it down more than a contracted chip supplier whose order book is already signed. **Which means** VRT is the cleanest in-book expression of capex sentiment — it overshoots on capex-doubt days and on capex-confirmation days alike; the thesis (the $9.5B backlog converts) is unchanged by a one-day sentiment move, and no guide or order datapoint moved. Separately, a SemiWiki item flags Nvidia's **800VDC** rack push reviving SiC/power-semis from oversupply toward shortage — directly adjacent to VRT/[[ETN]]'s 800V architecture and a tailwind to the power-distribution content story. Stance held **bull/high**; watch the backlog-conversion rate on the Q2 print, not the tape.
 - **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** Alphabet announced the largest equity raise in tech history ($30B underwritten + $40B ATM + $10B Berkshire private placement at $351.81 Class A / $348.20 Class C) explicitly to fund "AI compute infrastructure to meet unprecedented customer demand" — ~$50B is net-new AI capex above the prior $185-190B 2026 guide once the $30B RSU-tax mechanism is stripped out (see [[2026-06-01-googl-80B-equity-raise-berkshire]]). **Which means** [[VRT]] is at the front of the queue for GCP's incremental campus power + high-density cooling pull: every additional GCP hall built with TPU + NVDA Rubin racks at 140 kW/cabinet needs both UPS/PDU power distribution AND liquid cooling, and Vertiv is the only large vendor that covers both layers. The "unprecedented customer demand" wording (Anthropic 5 GW TPU + GCP backlog $460B) is a direct pull on VRT's $9.5B backlog conversion through 2027. Stance unchanged at bull / high. Watch: any explicit GCP design-win disclosure on Q2 print.
 - **🔥 2026-05-28 — DELL Q1 FY27 print = direct liquid-cooling demand-side validation** (per [[2026-05-28-DELL-Q1-FY27-earnings]]). DELL AI server revenue $16.1B (+757% YoY); **$51.3B AI backlog**; FY27 guide raised 20% to $165-169B. **Read-through to VRT**: every DELL PowerEdge XE9812 (Vera Rubin NVL72) shipping at scale = liquid-cooling pull at the highest density tier — GB300 racks run ~135 kW/rack at air-cooling thermal limit; Vera Rubin NVL72 is even denser. **Which means** VRT's high-density cooling product mix is structurally pulled by DELL's $51.3B backlog ramp over the next 4-6 quarters. Per [[2026-05-29-dell-upstream-second-derivative]] synthesis: VRT is one of the three cleanest "DELL-upstream not yet rerated" plays (with [[MOD]] and [[NVT]] — Goldman May 17 basket cohort). Stance unchanged at bull. Watch: Q2 print + any explicit DELL-AI-Factory design win disclosure.
 - **2026-05-13** — Feb 2026 detail surfaced: **$1B strategic acquisition** in high-density cooling solidified VRT's lead in GPU-cluster cooling. Market cap roughly **tripled since 2024**.

@@ -2,9 +2,9 @@
 type: company
 ticker: ARM
 tags: [ai, semis, ip, mag7-adjacent]
-last_updated: 2026-05-09
+last_updated: 2026-06-26
 last_full_review: 2026-05-09
-sources: 0
+sources: 1
 conviction: medium
 stance: bull
 ---
@@ -42,6 +42,7 @@ The IP / instruction-set layer underneath the entire mobile world AND now the da
 4. **SoftBank monetization** — any secondary offerings affecting float
 
 ## Recent developments
+- **2026-06-26 — Arm exec: ~50% of compute shipped into top AI data centers is now Arm** ([[2026-06-26-semiwiki-daily]]). A senior Arm executive (via Nikkei) put Arm's share of compute into leading AI data centers at **~50%** — the x86→Arm server shift the bull case rests on is now a banked fact, not a forecast, carried by the named custom-silicon roster (Nvidia Grace, Google Axion, AWS Graviton, Microsoft Cobalt, plus Apple/Qualcomm/MediaTek). **Which means:** the "CPU-shortage / hyperscalers go custom Arm" leg has hard corroboration, and server royalties run materially higher than mobile — accretive to ASP/mix above the Vera-Rubin pull-through. Caveat: single-exec figure, no methodology — directional, not audited; competition stays intense (Intel/AMD/Nvidia/cloud customers all fighting for AI-infra share). Stance held **bull/medium**; reinforces the standing royalty-mix conviction-upgrade path.
 - **🔥 2026-06-01 — RTX Spark PC superchip + Vera CPU "in full production" = cleanest royalty-stream pull-through of the year** (per [[2026-06-01-nvda-rtx-spark-computex-keynote]]). NVIDIA unveiled the **RTX Spark Arm-based PC superchip** with a **20-core Grace CPU co-designed with MediaTek** plus Blackwell RTX GPU, shipping fall 2026 in laptops/desktops from Microsoft Surface, Dell, HP, ASUS, Lenovo, MSI. Separately, Jensen confirmed **Vera CPU is "in full production"** with **Anthropic, OpenAI, and SpaceX AI named as early customers**, calling it "our new major growth driver." **Which means**: two of the three bull-case bullets the wiki tracks ("Data center penetration accelerating" + "Vera Rubin volume ramps in 2H 2026") just moved from forecast to commercially-shipping reality. The PC-side opens a **new royalty line ARM didn't previously have at NVIDIA scale** — the v9 architecture mix-shift bull thesis just got six new OEM design wins to compound on top of mobile/automotive/IoT. **Royalty-rate trajectory**: every premium AI-PC SKU shipping fall 2026 carries v9 royalty, structurally accretive to ASP/mix. Conviction held at **bull/medium** but the conviction-upgrade path now has cleaner triggers: (1) RTX Spark unit ship-rate disclosure 1H 2027 (2) ARM Holdings v9 mix % disclosure in 2027 earnings (3) MediaTek royalty-rate confirmation. Stance unchanged.
 
 ## Related

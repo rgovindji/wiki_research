@@ -1,9 +1,9 @@
 ---
 type: sector
 tags: [photonics, silicon-photonics, cpo, optical-interconnect, pic, ai-infrastructure]
-last_updated: 2026-06-23
+last_updated: 2026-06-26
 last_full_review: 2026-06-14
-sources: 6
+sources: 7
 conviction: medium
 ---
 
@@ -43,6 +43,8 @@ The investable nuance: the transition from pluggables to CPO is **disruptive to 
 - **Reliability / yield at scale** — PIC manufacturing adds optical variables (waveguide uniformity, coupling efficiency, packaging tolerances) that electrical chips don't have; yield is the gating variable as volumes rise.
 - **The device is not the product — the "realization corridor" is** (2026-06-18, SemiWiki EORB thread, [[2026-06-18-semiwiki-apple-intel-google-tpu-packaging-samsung-dram]]). A useful frame for handicapping CPO/optical-I/O winners: the modulator or optical engine is the breakthrough, but the *product* is the full electro-optical realization path — electrical launch → optical conversion → driver integration → package/substrate interface → alignment stability → thermal-drift control → fiber attach → SI/PI behavior → test coverage → yield learning → reliability. **Which means**: bet on whoever proves the whole corridor can be manufactured, tested, cooled, aligned and qualified at scale, not on the best optical device in isolation — it sharpens the existing yield-is-the-gate risk into a selection rule (favor integrated package+test+reliability competence, e.g. [[AVGO]]/[[TSM]]-COUPE/advanced-packaging incumbents, over pure-device storylines).
 - **The CPO link-quality race is now measurable — Intel and Nvidia are trading conference blows on bandwidth-vs-error-rate** (2026-06-23, SemiWiki forum, [[2026-06-23-semiwiki-daily]]). Two head-to-head DWDM optical-link datapoints: **Nvidia (ISSCC Feb 2026): BER <1e-12 at 256 Gb/s/fiber** (32 Gb/s/λ, 3D-stacked 7nm EIC / 65nm PIC); **Intel (VLSI Jun 2026): 800 Gb/s/fiber at BER <1e-9** (microring-based, open-cavity package). **Which means**: Intel is pushing ~3× the per-fiber bandwidth but at a *1,000× worse* raw error rate (1e-9 vs 1e-12) — the engineering frontier is the bandwidth-density / link-integrity / FEC trade-off, not raw speed alone, and microring (Intel) vs bandpass-filtered clock-forwarding (Nvidia) are diverging architectural bets. A diamond-in-the-rough tell for handicapping CPO: watch whose approach holds BER as bandwidth scales without burning the power/FEC budget — that's the realization-corridor gate (above) stated in numbers.
+
+- **"Device breakthrough is the spark; system realization is the revolution"** (2026-06-26, SemiWiki forum, Dr. Moh Kolbehdari, [[2026-06-26-semiwiki-daily]]). A restatement of the realization-corridor selection rule (above): ultra-fast modulators, photodetectors, plasmonic structures and atomic-scale optical switches are *device* records — but the infrastructure payoff requires the full convergence of packaging, fiber attach, laser integration, thermal stability, calibration, test, burn-in, manufacturability and lifecycle reliability. **Which means** the investable frame stays the same — favor whoever can yield/cool/calibrate/qualify the *whole* electro-optical system at scale (package+test+reliability incumbents) over the best isolated optical device. Confirms, not new — but a clean third independent articulation of the corridor thesis, and a reminder that AI's emerging bottleneck is data movement, not just compute.
 
 ## Open questions
 - When does CPO cross from leading-edge-only to mainstream switch deployment — and which transceiver makers successfully pivot vs get disrupted?

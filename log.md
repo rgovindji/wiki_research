@@ -9,6 +9,19 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-26] daily | OpenAI IPO-delay scare; chips round-trip, the 7,300 floor holds
+
+AI-returns doubt got a face: the NYT reported [[ai-bubble-debate|OpenAI is weighing an IPO delay to 2027]] (~$1.4T committed spend, ~$14B 2026 loss, no profit until 2030, $1T valuation line) — the most important *demand* name signaling public markets may not pay its price. Chips wore it (SOXX −5.6%, [[MU]] −6.69%, [[AVGO]] −3.67%, [[MRVL]] −5.15%, SoftBank −13%; [[VRT]] −6.64% the book's worst — the capex proxy takes the "will the spend pay back" doubt most directly), while the prior day's memory-cost losers bounced ([[AAPL]] +3.14%, [[MSFT]] +5.71%) — the supply-over-demand split ran INVERSE (2nd counter-print, June 23 the first; NOT the falsifier). SPX 7,354.02 (−0.05%): poked a 7,294.18 low (below the named 7,300 character-change line) then reclaimed to close green-of-lows; VIX spiked to 20.72 at the open, faded to 18.41 (morning panic bought). First down week after a long record streak (S&P ~−2%, Nasdaq ~−4%). Plus the SemiWiki daily ([[2026-06-26-semiwiki-daily]], 7 items): Samsung HBM4E 12-layer samples + ~$648B Korea bet, CXMT 64-layer 3D DRAM, [[ARM]] ~50% of AI-DC compute, Nvidia 800VDC reviving SiC/power semis, Intel 18A-P, a photonics device→system realization essay.
+
+- Sources: sources/2026-06-26-ai-capex-doubt-chip-reversal.md, sources/2026-06-26-semiwiki-daily.md
+- Wiki touched: [[overview]] (June 26 lead), [[ai-bubble-debate]] (45→46), [[MU]] (24→25), [[semiconductors]] (8→9), [[photonics]] (6→7), [[ARM]] (0→1), [[INTC]] (14→15), [[VRT]] (3→4), [[index]]
+- Market state: newsletter/market_state/2026-06-26.json (regime: bull-under-stress — defended floor under a capped tape; 8th straight sub-flip close)
+- Predictions: none resolved (none carried a June-26-only horizon). YOLO 7,300p NO-TRIGGER (SPX opened 7,313 above the line, poked 7,294, reclaimed 7,350 → stand-aside avoided a loss; desk 1-2-7). 1 new call logged (2026-06-26-floor-holds-into-jobs: no SPX close <7,300 before July-2 jobs). Friday weekly distillation done (calibration snapshot + Active-lesson verification refreshed; 13 Active, under cap).
+- **Stance changes flagged for review: GOOGL** — 5th straight close below Berkshire's $350 ($337.39); googl-buffett-floor falsifier long past "sustained," **needs user sign-off** (no headless flip). No other stance/conviction changes.
+- Newsletter: newsletter/issues/2026-06-26-afterhours.md (#14) — "The Doubt Gets a Face, and the Floor Holds Anyway"
+
+---
+
 ## [2026-06-26] ingest | Dwarkesh Patel — "What does the next training paradigm look like?"
 
 - Source: sources/2026-06-26-dwarkesh-next-training-paradigm.md (raw: raw/podcasts/2026-06-26-dwarkesh-next-training-paradigm.txt). User asked to review/save/update.
