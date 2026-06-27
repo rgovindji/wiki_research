@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-26] ingest | Martin Shkreli "Verdict on Micron" (livestream)
+
+- Source: sources/2026-06-26-shkreli-micron-verdict.md (raw: raw/podcasts/2026-06-26-shkreli-micron-verdict.txt). User asked for insights + save + updates.
+- **Bias VERY HIGH / low-rigor** (convicted fraudster turned streamer, "long just playing with momentum," ChatGPT-sourced figures, voice-clone gags). Captured for the sharp instincts, not the rigor. Net verdict: **bearish** ("this trade may come to an end").
+- **Three banked nuggets:** (1) **SCA-cancellation bear** — "maybe you can cancel those take-or-pay agreements when supply floods; you won't see that with NVDA, which controls supply" → independently sharpens the take-or-pay enforceability risk on [[mu-core-book-reconsideration]] (adds the cancellation angle + memory-has-no-supply-control contrast). (2) **HBM only ~15% of MU revenue** (unverified, ChatGPT-sourced — LOWER than the ~30% on file; flagged to verify vs FQ3 segment disclosure) → implies the spike is mostly commodity-price, not the HBM franchise. (3) **Aggregate memory revenue (~$124B) now exceeds NVDA (~$81B)** (inverted from a year ago) = a cycle-peak relative-value tell — "why is the commodity in the box worth more than the box?" — *caveat he surfaces himself:* NVDA revenue already includes the HBM COGS, so the comparison double-counts. Also live-confirmed the chips-down/software-up rotation.
+- Wiki touched: [[MU]] (25→26, new bear bullet, stance held bull/high), [[ai-bubble-debate]] (46→47, relative-value cycle-peak note), [[index]]. No stance changes.
+- Committed locally (no push).
+
+---
+
 ## [2026-06-26] daily | OpenAI IPO-delay scare; chips round-trip, the 7,300 floor holds
 
 AI-returns doubt got a face: the NYT reported [[ai-bubble-debate|OpenAI is weighing an IPO delay to 2027]] (~$1.4T committed spend, ~$14B 2026 loss, no profit until 2030, $1T valuation line) — the most important *demand* name signaling public markets may not pay its price. Chips wore it (SOXX −5.6%, [[MU]] −6.69%, [[AVGO]] −3.67%, [[MRVL]] −5.15%, SoftBank −13%; [[VRT]] −6.64% the book's worst — the capex proxy takes the "will the spend pay back" doubt most directly), while the prior day's memory-cost losers bounced ([[AAPL]] +3.14%, [[MSFT]] +5.71%) — the supply-over-demand split ran INVERSE (2nd counter-print, June 23 the first; NOT the falsifier). SPX 7,354.02 (−0.05%): poked a 7,294.18 low (below the named 7,300 character-change line) then reclaimed to close green-of-lows; VIX spiked to 20.72 at the open, faded to 18.41 (morning panic bought). First down week after a long record streak (S&P ~−2%, Nasdaq ~−4%). Plus the SemiWiki daily ([[2026-06-26-semiwiki-daily]], 7 items): Samsung HBM4E 12-layer samples + ~$648B Korea bet, CXMT 64-layer 3D DRAM, [[ARM]] ~50% of AI-DC compute, Nvidia 800VDC reviving SiC/power semis, Intel 18A-P, a photonics device→system realization essay.
