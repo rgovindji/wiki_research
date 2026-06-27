@@ -430,6 +430,45 @@
       "status": "open",
       "resolved": null,
       "resolution_note": null
+    },
+    {
+      "id": "2026-06-26-software-bounce-stalls",
+      "made": "2026-06-26",
+      "issue": "ad-hoc-software-rotation",
+      "type": "market-direction",
+      "claim": "Friday's software bounce (IGV +~4%, MSFT +5%) is a bear-market rally / partly-mechanical (quarter-end rebalancing + oversold short-covering), NOT a trend reclaim: IGV does NOT close above $88 on any session through Thursday July 2. Mechanism: a +4% pop BELOW the 50-DMA in a confirmed downtrend (IGV closed $84.76, lost its 50-DMA June 17), with the 10Y flat (~4.39%, so not a rate/duration rally) and NO fundamental software catalyst (no print showing consumption > seat-erosion), plus quarter-end rebalancing flows that cease after June 30 — reclaiming the broken-support/~50-DMA zone needs a real catalyst the near calendar (Fed speakers, June jobs ~July 2) doesn't obviously provide. $88 ~= the broken-support/declining-50-DMA zone; the fixed $88 governs the grade (lesson 7).",
+      "confidence": "medium",
+      "horizon": "2026-07-02",
+      "falsifier": "Any IGV close above $88 on or before July 2 (the bounce reclaimed the breakdown zone with real follow-through -> rotation has legs, not a bear rally). Note confounder: the June jobs print (~July 2) can move the whole tape.",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-26-software-quarter-end-fade",
+      "made": "2026-06-26",
+      "issue": "ad-hoc-software-rotation",
+      "type": "market-direction",
+      "claim": "Part of Friday's bounce was quarter-end rebalancing/window-dressing that reverses once the flows stop: IGV closes BELOW Friday's $84.76 on at least one of the first two post-quarter-end sessions (July 1 or July 2). Mechanism: after a quarter of extreme dispersion (software crushed, semis ripping), mechanical rebalancing buys the losers into the June 30 quarter-end; those flows cease July 1, removing a bid -> a give-back below Friday's close in the first two July sessions is the tell the bounce was partly mechanical. (Asymmetric test: the informative outcome is the falsifier holding.)",
+      "confidence": "low-medium",
+      "horizon": "2026-07-02",
+      "falsifier": "IGV closes ABOVE $84.76 on BOTH July 1 AND July 2 (the bounce held through the end of quarter-end flows -> real demand, not window-dressing). Confounder: a cool June jobs print (~July 2) could hold the tape up for non-software reasons.",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
+      "id": "2026-06-26-software-squeeze-not-rediscrimination",
+      "made": "2026-06-26",
+      "issue": "ad-hoc-software-rotation",
+      "type": "single-name",
+      "claim": "Friday's broad IGV move was an oversold/short-covering beta snap, NOT healthy quality re-discrimination: over June 29-July 2, the most-beaten disruption-TARGETS (equal-weight CRM + DUOL) OUTPERFORM the quality SURVIVORS (equal-weight VEEV + NOW) cumulative close-to-close (the squeeze signature -- the worst names bounce hardest). Mechanism: a healthy rotation rewards survivors and leaves the structurally-threatened behind; a short-covering snap does the opposite.",
+      "confidence": "low",
+      "horizon": "2026-07-02",
+      "falsifier": "Survivors (VEEV+NOW) OUTPERFORM targets (CRM+DUOL) cumulatively over June 29-July 2 (the market re-discriminated -> a healthier, more durable rotation than a squeeze).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
     }
   ]
 }
