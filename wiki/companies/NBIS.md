@@ -2,9 +2,9 @@
 type: company
 ticker: NBIS
 tags: [ai, neocloud, gpu-cloud, nvda-direct, international]
-last_updated: 2026-06-23
+last_updated: 2026-06-28
 last_full_review: 2026-05-13
-sources: 6
+sources: 7
 conviction: medium
 stance: bull
 ---
@@ -64,6 +64,7 @@ Neocloud peer to [[CRWV]] — **NVDA invested $2B for 8.3% stake**, locked in **
 
 ## Recent developments
 
+- **2026-06-28 — Fresh SemiAnalysis corroboration of the goodput-as-moat frame** ([[2026-06-28-semianalysis-true-cost-gpu-cluster]]; *bias MODERATE — funnels to ClusterMAX*). Real cluster TCO can vary **10–50%** at identical GPU price once goodput (useful work after failures/restarts), storage, networking, support, setup and debugging are counted; reliability worsens with scale, so fault-tolerance + fast node-replacement decide cost, not $/GPU-hr. **Which means:** the "neoclouds = dumb shells" bear ([[CRWV]] / Chanos) is structurally answered for operators with real software/optimization layers — exactly Zlatev's NBIS bull below. Stance/conviction held **bull/medium**.
 - **2026-06-23 — A semis L/S CIO cites Nebius by name as the *least* commodity-like neocloud** ([[2026-06-23-chanos-zlatev-ai-capex-debate]]; Val Zlatev, Analog Century — *net long AI*). Against Chanos's "neoclouds = equipment-leasing finance cos at single-digit ROIC" short ([[CRWV]]), Zlatev singles out Nebius as **not a dumb shell**: real software/optimization layers, and — the differentiator — **only ~50–60% contracted to hyperscalers, with the other ~40–50% sold as inference at SPOT**, so it captures the +40–50%-since-January spot-rent inflection ([[inference-economics]]) that pure-contracted peers can't. **Which means:** the spot-inference mix is a near-term bull *and* a volatility source (spot cuts both ways) — it's the operational reason NBIS screens above CRWV on tech but below on contracted visibility, the exact split this page already carries. (Transcript's "Nimbix" = Nebius mis-transcription.) Value still ultimately migrates to chip tech, not landlords (Zlatev's own caveat). Stance/conviction held **bull/medium**; bias: speaker is net-long.
 - **2026-06-20 — Risk/reward reassessment at ~$287 (conviction high → medium; stance held bull).** Two months after the May 13 print, the *business* has executed but the *stock* has re-rated to near its 52-wk high. The honest forward-return picture (per the independently-researched snapshot in [[2026-06-19-nebius-inflection-event]], as of 2026-06-18): mkt cap ~$73B; **~62-83x sales**; **EV/ARR ~38x current ($1.92B), ~9-10x the $7-9B forward run-rate**; **consensus 12-mo target ~$242 — *below* the ~$287 price.** Earnings-quality flag sharpened: the ~$621M Q1 net income / ~99 P/E is **mostly a non-cash ClickHouse revaluation mark** — core ops still ~−$100M/qtr; underwrite on EV/ARR, not the P/E. Financing watch: **FY26 capex $20-25B vs ~$3.2B revenue**, ~40% funded by equity + serial converts ($4.3B in 2026) → real dilution risk if a convert wave lands in a weak tape. Concentration nuance: **Meta's ~$27B is a *backstop* (buys excess capacity), not committed dedicated demand.** vs [[CRWV]]: NBIS is the smaller/faster-growing/owned-power name at ~62x sales; CRWV ~98% contracted at ~7x — analyst community split (surface, don't resolve). **Net:** the operational bull case is intact and the owned-power moat + [[inference-economics|inference-majority]] tailwind are real, but "high conviction" is hard to defend with the Street's target below spot. Tempered to **medium**; not a sell, a sizing/price-discipline call. (Source: Nebius "Inflection" event work-up + secondary aggregators; verify exact EV/ARR vs the 6-K before acting.)
 - **2026-05-13 — Q1 2026 BLOW-OUT (full data from official press release).** See [[2026-05-13-NBIS-Q1-2026-earnings]].

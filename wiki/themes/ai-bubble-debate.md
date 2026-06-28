@@ -1,15 +1,17 @@
 ---
 type: theme
 tags: [ai, bubble, risk, debate]
-last_updated: 2026-06-26
+last_updated: 2026-06-28
 last_full_review: 2026-05-09
-sources: 47
+sources: 48
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side. The *unit-economics* leg of this debate (how perishable the frontier moat is, who captures inference margin) now lives in [[inference-economics]].
+
+**2026-06-28 — The strongest Tier-1 bull-side scaling-conviction datapoint, for the ledger (bias VERY HIGH).** Per [[2026-06-28-latentspace-mark-chen-openai]] (OpenAI Chief Research Officer Mark Chen, Latent Space — *he is maximally long the scaling thesis; this is the bull strongman, not neutral evidence*): "I firmly believe in being on the exponential and in scaling laws… it's held for almost 10 orders of magnitude, no reason it should not keep holding"; "pre-training is **not dead, it's underrated**"; "**AGI is coming soon**," and OpenAI's 3-year roadmap goal is **end-to-end autonomous/self-sustaining research**. **Which means:** the bull case's *demand-durability* leg now has its cleanest first-person articulation from the lab driving the capex — if scaling keeps paying, the buildout is rational. **The bear's standing rebuttal:** none of this is falsifiable on his timeline, and a research chief asserting "the exponential continues" is exactly what you'd expect to hear at a top *and* at a true inflection — it's a prior, not a print. Filed as the opposing pole to the Shkreli/Zitron bear ledger; resolves only on hyperscaler guide cuts or a saturation in model capability, neither of which has printed. (See [[inference-economics]], [[ai-capex-cycle]].)
 
 **2026-06-26 — A sharp (if low-rigor) cycle-peak relative-value tell: aggregate memory revenue now *exceeds* Nvidia's.** Per [[2026-06-26-shkreli-micron-verdict]] (Martin Shkreli livestream — *bias VERY HIGH: entertainer/momentum-trader, ChatGPT-sourced figures, "long just playing with momentum"*): total memory/HBM revenue across Micron + SK Hynix + Samsung was ~**$124B last quarter vs Nvidia's ~$81B** — a year ago Nvidia was the larger. His read: "why would the commodity in the box be worth more than the box?" → the *memory* revenue spike is the part that mean-reverts, because memory (multiple suppliers can make the spec, no supply control) is more commoditizable than NVDA's franchise. **Which means:** a clean relative-value articulation of the cycle-peak bear — memory's revenue has overshot relative to the value-capturer it feeds. **The caveat that blunts it (Shkreli surfaces it himself):** NVDA's reported revenue *already includes* the HBM cost (HBM is a COGS component inside NVDA's rack revenue), so "total memory rev vs NVDA rev" double-counts the HBM sitting in both — suggestive, not clean. He also flags **HBM is only ~15% of Micron's revenue** (unverified, ChatGPT-sourced), implying the spike is mostly *commodity* price increases, not the HBM franchise. Surfaced as a both-sides input. (See [[MU]], [[bottleneck-roadmap]].)
 
