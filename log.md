@@ -9,6 +9,15 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-29] query | ZETA — refresh on user request
+
+- User asked "anything of interest in ZETA." Read existing page (neutral/low, drafted 2026-06-20) + fresh search (last-30-day default).
+- **Updated [[ZETA]]** (sources 1→2): added Recent developments (Q1 FY26 beat EPS $0.13 vs $0.111; **rev +50% YoY / +29% ex-acq** → ~21pp is M&A, partially answering the organic question; ARPU +21%; Athena ~60% AI usage / 7× agentic; **raised FY26 guide to $1,779–1,792M rev +36-37% / adj EBITDA $396–398M / positive GAAP NI**; stock ~$21.76, +19%/90d). Sharpened the bear with the **specific Culper Research (Nov-2024) "consent farms" + two-way-contract revenue round-tripping** allegation (~56% of adj EBITDA claim) — the key point: the allegation disputes *the very numbers that look good*, so strong prints don't de-risk it. Verdict refreshed.
+- **Stance HELD neutral/low** (not raised unilaterally) — conviction gated on accounting-credibility resolution, not the improving optics. No new short report surfaced as of mid-2026.
+- Committed locally (no push).
+
+---
+
 ## [2026-06-29] note | Morning brief: A Bounce the Chips Didn't Sign Off On
 
 Before the Bell sent. Covered: green futures (S&P +0.8%, Nasdaq-100 +1.2%) on an Iran stand-down + Comcast/Rocket Lab deal flow, but the bounce led by non-AI names while chips stayed weak in Asia; GOOGL-$350 and no-close-above-7,450 calls both grade today; Alphabet joins the Dow; YOLO desk cards a failed-rally fade at the 7,424–7,450 ceiling. No wiki changes (morning runs don't ingest).
