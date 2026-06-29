@@ -2,9 +2,9 @@
 type: company
 ticker: SPCX
 tags: [space, launch, satellite, starlink, ipo, mega-cap]
-last_updated: 2026-06-23
+last_updated: 2026-06-29
 last_full_review: 2026-06-20
-sources: 1
+sources: 2
 conviction: low
 stance: neutral
 ---
@@ -71,6 +71,7 @@ The dominant launch + satellite-broadband (Starlink) franchise, public since **J
 [[space-economy]] · [[RKLB]] · [[ASTS]] · [[overview]]
 
 ## Sources
+1. [[2026-06-11-bg2-baker-spacex-capex-update]] — BG2 IPO roadshow pod: space-compute economics + xAI/Cursor/Grok-4.3 + ~20% Vera Rubin (added 2026-06-29; bias-flagged: IPO marketing, holders)
 1. [[2026-06-23-chanos-zlatev-ai-capex-debate]] — Chanos S-1 teardown (launch loses money + subsidizes Starlink; xAI cash sinkhole; space-DC economics) (added 2026-06-23; bias-flagged: professional short)
 1. [SPCX closes at $161, +19% record debut — CNBC](https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html)
 2. [SpaceX IPO explained — CNBC](https://www.cnbc.com/2026/06/09/spacex-ipo-explained-stock-price-date.html)

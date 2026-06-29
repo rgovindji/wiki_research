@@ -2,9 +2,9 @@
 type: company
 ticker: ZETA
 tags: [ai, adtech, marketing-cloud, software, small-cap]
-last_updated: 2026-06-20
+last_updated: 2026-06-29
 last_full_review: 2026-06-20
-sources: 1
+sources: 2
 conviction: low
 stance: neutral
 ---

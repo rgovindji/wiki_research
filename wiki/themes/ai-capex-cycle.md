@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, capex, hyperscalers]
-last_updated: 2026-06-28
+last_updated: 2026-06-29
 last_full_review: 2026-05-09
-sources: 25
+sources: 26
 ---
 
 # AI Capex Cycle
@@ -143,6 +143,7 @@ The same [[bottleneck-roadmap]] framework applied to humanoid robotics yields it
 ## Industry sizing (UBS, 2026-06-12)
 UBS (Gaudois) frames the through-line: agentic AI broadens demand beyond accelerators/HBM into CPU, DRAM, NAND, networking, power management — total semi sell-in **$1.62T 2026 → $2.38T 2027**, memory **$961B → $1.638T** ([[2026-06-12-ubs-semi-2.38T-2027]]). Structural driver on the demand side: **memory content per AI server is several TB vs hundreds of GB for a traditional cloud server**. UBS sees cycle indicators "green into late 2027" — the optimistic anchor to weigh against the late-cycle warnings in [[valuation-environment]] and [[ai-bubble-debate]].
 
+- **2026-06-11 — The 2027 capex number keeps ratcheting up + the FCF cost is now visible** ([[2026-06-11-bg2-baker-spacex-capex-update]], *bias: SpaceX-IPO roadshow pod, holders*). **Morgan Stanley raised its 2027 hyperscaler capex forecast $950B → $1.1T**; Gerstner argues the real number is **~$1.5T** once SpaceX/Crusoe-type spend is included. The cost is now showing up in cash flows: **Mag-7 free cash flow is down ~80% from a few years ago** as capex consumes it, and **Google just raised $80B** (external funding — see the [[ai-bubble-debate]] "internally funded capex pillar broke" thread). The bull framing on the other side of that bill: **monetization per gigawatt rose ~$20B → $30–40B over 2026** ("accidental profitability"), and ~1T of incremental revenue is now forecast from just **3 companies (SpaceX, Anthropic, OpenAI) in 4–5 yrs** vs. the Mag-7 taking 7 yrs for the prior $1T. Treat the revenue claims as talk-their-book; the capex-ratchet and FCF-drain are the harder facts.
 - **2026-06-15 — Demand-durability datapoint: the labs are throttling demand, not chasing it** ([[2026-06-15-semiwiki-graphene-photonics-colossus-token-throttle]]). Per SemiWiki's "Disaggregating AI Compute," datacenters are *already fully utilized and demand still exceeds supply*; Anthropic/OpenAI/Gemini have ended unlimited-token plans and are moving license holders onto usage-credit pricing to **throttle** consumption. Anthropic separately leased capacity on Musk's Colossus at a reported **~$1.25B/month (~$16B/yr)** — a single inference-rental contract rivaling SpaceX's entire 2025 revenue ($18.7B per its S-1). **Which means**: the over-build bear leg gets a counter-datapoint — if the binding constraint is supply and price has to rise to ration demand, the "building ahead of demand" crash thesis weakens at the margin. Single-source on the $16B figure (treat as indicative); the throttling-via-pricing shift is corroborated and live (Anthropic plan change effective ~Jun 22).
 
 ## Tactical signals to watch
