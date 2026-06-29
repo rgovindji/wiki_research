@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-29] note | Morning brief: A Bounce the Chips Didn't Sign Off On
+
+Before the Bell sent. Covered: green futures (S&P +0.8%, Nasdaq-100 +1.2%) on an Iran stand-down + Comcast/Rocket Lab deal flow, but the bounce led by non-AI names while chips stayed weak in Asia; GOOGL-$350 and no-close-above-7,450 calls both grade today; Alphabet joins the Dow; YOLO desk cards a failed-rally fade at the 7,424–7,450 ceiling. No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-06-29] ingest | All-In #278 — China coding catch-up + Micron blowout (Gavin Baker)
 
 - Source: sources/2026-06-29-allin-278-china-coding-micron.md (raw: raw/podcasts/2026-06-29-allin-278-china-coding-micron.txt). User asked for insights.

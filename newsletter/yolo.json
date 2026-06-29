@@ -135,6 +135,20 @@
       "graded": true
     },
     {
+      "id": "2026-06-29-spx-7400p",
+      "date": "2026-06-29",
+      "issue": "2026-06-29-morning",
+      "structure": "SPX 0DTE 7,400 put",
+      "direction": "bearish (fade the relief rally at the broken-shelf/ceiling)",
+      "thesis": "The failed-rally fade lesson 12 endorses, keyed to our own house call 2026-06-25-flip-stays-ceiling. A weekend US-Iran stand-down + non-AI deal flow (Comcast +25% spinoff, Rocket Lab/Iridium +22%) gapped US futures green (S&P +0.8%, Nasdaq-100 +1.2%), implying an SPX open ~7,413 — recovering Friday's flush but walking the index right up to resistance it hasn't cleared for 8 straight sessions (Friday high 7,393, the ~7,450 zero-gamma flip untouched). The tell that makes this a fade and not a breakout: the bounce is led by NON-AI names while the chip complex — the market's actual worry — stayed weak in Asia overnight (Kospi -3%, Samsung -3.7%). A relief gap that has to climb the ceiling on its own steam, with the AI complex not leading, is the textbook spot to get sold. Keyed to the level (7,424-7,428 broken shelf) per lesson 12, not the round 7,450 above it — the tape rejected at 7,424-7,428 on June 23 AND 24, ~15-22 pts below the flip.",
+      "trigger": "SPX rallies into the 7,424-7,428 broken-shelf zone in the first ~90 minutes AND fails to hold it (15-30 min rejection back below ~7,410, not a clean break). No poke into 7,424+ = no trade, desk stands aside. A clean HOLD above 7,450 for ~30 min = no trade (that is our flip-stays-ceiling call breaking — stand aside, do not fight it).",
+      "target": "The 7,350 close-pin zone, where Friday's tape settled and dealer hedging flips from tailwind to headwind for a short. First checkpoint Friday's 7,393 high.",
+      "invalidation": "SPX holds above 7,450 for ~30 min after the poke (the flip is reclaimed, ceiling call wrong) - out, no bearish re-entry. Hard time-stop at 3:30 ET if neither target nor invalidation has hit (June 11 lesson: theta resolves 'almost' against the holder).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
       "id": "2026-06-25-spx-7475c",
       "date": "2026-06-25",
       "issue": "2026-06-25-morning",
