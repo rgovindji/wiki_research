@@ -9,6 +9,18 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-29] daily | Relief rally with chips leading; GOOGL reclaims $350, ALAB +16%
+
+After-the-bell close run for June 29. **Tape:** a broad risk-on relief day — SPX **7,440.43 (+1.18%)**, high 7,444.32 / low 7,348.88, closing ~10 pts under the ~7,450 zero-gamma flip (9th straight sub-flip close, but right at the doorstep); Nasdaq +2.07% (25,820.15), **Dow above 52,000 first time** (52,182.74, +0.59%). Driver: a weekend **US-Iran stand-down** + quarter-end window-dressing + a chip rebound. The morning brief worried chips would lag the bounce — instead they LED: **SOXX +4.14%**, [[TSM]] +5.26%, [[ALAB]] +16.4% (the book's best, on Stifel→$460 / BofA→$450 PT raises), [[MRVL]] +4.12%, [[NVDA]] +1.27%, [[MU]] +1.14%, while the **platforms lagged** ([[AAPL]] −0.72%, [[MSFT]] −1.18%, [[QCOM]] −0.35%). A clean **supply-over-demand** day (point FOR the standing thesis). [[GOOGL]] +4.8% to **$353.65**, reclaiming Berkshire's $350 on day one in the **Dow** (replaced Verizon). Cross-asset (factor_tape): 10Y 4.37 flat, WTI 70.42 (+1.72%, war premium absent), DXY 101.1, VIX 17.65 (−4.13%, faded from a 19.45 high), gold 4,030.5 (−1.18%, hedge bid unwinding) — risk-on confirmed.
+
+**SemiWiki daily sweep (11 items)** ingested as [[2026-06-29-semiwiki-daily]]: **Qualcomm in talks to buy Tenstorrent $8–10B** (BUDA CUDA-attack + Tensix training cores under Dragonfly) → [[QCOM]] (2→3); **CXMT–Tencent ~$3B LTA** (China memory climbs the stack, signs take-or-pay, still commodity-tier) → [[MU]] (27→28); **Counterpoint Foundry 2.0 +23% YoY / TSMC +41%** + foundry price-hike reports → [[TSM]] (15→16); Dylan Patel token-factory + AOC-break-up-Apple → [[semiconductors]] (9→10). market_levels.py --audit hung 0-bytes again (8th straight session, audit long retired); closes pulled from the **Yahoo chart API** (validated, 4 PM stamps). Gamma snippet-primary: flip ~7,406–7,450, put wall 7,300, negative gamma persists (close below flip).
+
+**Predictions:** resolved **2026-06-22-googl-350-reclaim → RIGHT** (GOOGL closed $353.65 >$350 by the June 29 horizon — and this takes the long-standing googl-buffett-floor "sustained sub-$350" flag off the table; the reclaim is exactly why no headless flip was warranted) and **2026-06-25-flip-stays-ceiling → RIGHT** (no SPX close above 7,450 on June 26 or 29; high 7,444 fell ~6 pts short — the level read converted against the fixed 7,450 again). Calibration now 16 right / 1 partial / 6 wrong / 2 expired of 25 resolved. 2 new calls logged (2026-06-29-flip-breaks-into-jobs market-direction, 2026-06-29-supplier-leads-quarter-end single-name/basket). **YOLO:** 2026-06-29-spx-7400p **NO-TRIGGER** (SPX cleared the 7,424–7,428 shelf and held above it into the close — no fade to short; the bearish thesis was wrong, stand-aside avoided a loss) → desk **1-2-8** (6 avoided losses, 2 missed winners). **Playbook:** lesson 14 added (a broad relief bid led by the highest-beta complex is a regime tell, not a fade setup).
+
+**Stance changes flagged for review: none.** GOOGL's $350 reclaim resolves the only carried flag favorably. **Market state:** newsletter/market_state/2026-06-29.json (regime: bull-under-stress → leaning toward upgrade; the flip is one close away). **Newsletter:** newsletter/issues/2026-06-29-afterhours.md (#15).
+
+---
+
 ## [2026-06-29] ingest | SemiAnalysis tungsten/WF₆ critical-materials bottleneck (X thread)
 
 - Source: sources/2026-06-29-semianalysis-tungsten-wf6-bottleneck.md (X thread; not archived locally). User shared it asking for thoughts.
