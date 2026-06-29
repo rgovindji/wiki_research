@@ -3,13 +3,15 @@ type: theme
 tags: [ai, bubble, risk, debate]
 last_updated: 2026-06-28
 last_full_review: 2026-05-09
-sources: 48
+sources: 49
 ---
 
 # AI Bubble Debate
 
 ## What this is
 The live debate over whether the AI investment cycle is a healthy productivity-driven boom or a 1999-style bubble. Both sides of the wiki need to keep this honest — see [[ai-capex-cycle]] for the bull mechanics and [[market-concentration]] / [[valuation-environment]] for the price side. The *unit-economics* leg of this debate (how perishable the frontier moat is, who captures inference margin) now lives in [[inference-economics]].
+
+**2026-06-29 — China open-weight catches the *available* US frontier — partly because the US handicapped itself (All-In #278).** Per [[2026-06-29-allin-278-china-coding-micron]] (*bias HIGH: Baker long AI-infra; Sacks is the sitting AI czar with a policy agenda*): Z.AI's **GLM 5.2** (open-weight, MIT, reportedly **Huawei-Ascend-trained**) **beat GPT-5.5 on SWE coding and trails Opus 4.8 by <1pp at ~85% lower cost** — and it matches the best *available* US models partly because **Anthropic's "Fable" was rolled back after a jailbreak report and GPT-5.6 is stuck in new approval hoops.** Sacks's frame (discount for his role): US regulatory self-handicapping (which he ties to Dario-style regulatory-capture lobbying) is letting China close a gap that's "6 months on models, 24 months on silicon, yet only a few months in total." **Which means — both-sides:** for the *bear*, frontier-lab pricing power and the "US moat" both look thinner (open-weight commoditization + a self-inflicted pause); for the *bull*, Baker reframes it as **value shifting frontier→infrastructure** (composable models), *bullish AI infra* even as it's bearish frontier margins. Also logged: Baker pegs **Anthropic ≈ $3T / >$100B 2026 revenue / ~85% inference GM** (enthusiastic, book-talking) and argues **rising memory cost may be *good* — it slows the prisoner's-dilemma buildout, buying society time to adapt.** Surfaced, not resolved. (See [[inference-economics]], [[MU]], [[us-china-relations]].)
 
 **2026-06-28 — The strongest Tier-1 bull-side scaling-conviction datapoint, for the ledger (bias VERY HIGH).** Per [[2026-06-28-latentspace-mark-chen-openai]] (OpenAI Chief Research Officer Mark Chen, Latent Space — *he is maximally long the scaling thesis; this is the bull strongman, not neutral evidence*): "I firmly believe in being on the exponential and in scaling laws… it's held for almost 10 orders of magnitude, no reason it should not keep holding"; "pre-training is **not dead, it's underrated**"; "**AGI is coming soon**," and OpenAI's 3-year roadmap goal is **end-to-end autonomous/self-sustaining research**. **Which means:** the bull case's *demand-durability* leg now has its cleanest first-person articulation from the lab driving the capex — if scaling keeps paying, the buildout is rational. **The bear's standing rebuttal:** none of this is falsifiable on his timeline, and a research chief asserting "the exponential continues" is exactly what you'd expect to hear at a top *and* at a true inflection — it's a prior, not a print. Filed as the opposing pole to the Shkreli/Zitron bear ledger; resolves only on hyperscaler guide cuts or a saturation in model capability, neither of which has printed. (See [[inference-economics]], [[ai-capex-cycle]].)
 

@@ -9,6 +9,17 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-29] ingest | All-In #278 — China coding catch-up + Micron blowout (Gavin Baker)
+
+- Source: sources/2026-06-29-allin-278-china-coding-micron.md (raw: raw/podcasts/2026-06-29-allin-278-china-coding-micron.txt). User asked for insights.
+- **Bias HIGH / AI-maximalist** (Baker long MU/SpaceX/Anthropic/AI-infra; Sacks = sitting AI czar). Weight Baker's structural/industry points; bias-flag the SpaceX/orbital/Anthropic-valuation talk.
+- **Micron/DRAM (Baker — the core):** "DRAM is THE bottleneck" above lasers/capacitors/power-semis/NAND/HDD (derides "bottleneck bros"); **SCAs "transformational"** — ~50% of revenue across ~4 customers, **floor pricing above prior-cycle-peak gross margins** (strongest external validation of the SCA de-cyclicalization thesis; counters the Shkreli "cancelable when supply floods" bear on the structural point); **DRAM trades cheap vs rest of AI**; **DRAM ≈ 30-40% of hyperscaler capex next year**; **CXMT floods CONSUMER-grade DRAM, not AI-grade** (only 3 firms make HBM/SOCAMM/LPDDR → China-flood bear contained to commodity tier).
+- **China open-weight:** Z.AI **GLM 5.2** (744B, MIT, Huawei-Ascend-trained) beat GPT-5.5 on SWE coding, <1pp from Opus 4.8, ~85% cheaper — matches the *available* US frontier partly because **Anthropic Fable rolled back (jailbreak report) + GPT-5.6 in approval limbo** (Sacks: US regulatory self-handicap / China-race liability). **Composable models / council of LLMs** → value shifts frontier-margins → infra. **Inference disaggregation** (prefill/decode; Grok/Cerebras decode chips on old GPUs) extends GPU life 7-12yr → financability (counters depreciation bear). **Anthropic ≈ $3T / >$100B 2026 rev / ~85% inference GM** (Baker, book-talking). Megapods/modular DC → [[DELL]]/[[VRT]].
+- Wiki touched: [[MU]] (26→27, bull corroboration, stance held bull/high), [[inference-economics]] (19→20), [[ai-bubble-debate]] (48→49), [[bottleneck-roadmap]] (22→23), [[ai-capex-cycle]] (24→25), [[index]]. No stance changes.
+- Committed locally (no push).
+
+---
+
 ## [2026-06-26] ingest | Martin Shkreli "Verdict on Micron" (livestream)
 
 - Source: sources/2026-06-26-shkreli-micron-verdict.md (raw: raw/podcasts/2026-06-26-shkreli-micron-verdict.txt). User asked for insights + save + updates.
