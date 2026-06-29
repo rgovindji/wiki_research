@@ -1,9 +1,9 @@
 ---
 type: macro
 tags: [macro, geopolitics, us-china, tariffs, export-controls, taiwan, rare-earths]
-last_updated: 2026-06-19
+last_updated: 2026-06-29
 last_full_review: 2026-05-12
-sources: 3
+sources: 4
 ---
 
 # US-China Relations
@@ -211,6 +211,9 @@ A new bilateral chokepoint is forming in parallel with the AI-chip story, and th
 - The robotics supply chain (rare-earth magnets, harmonic drives, precision actuators, servo motors) has the **same structural China dependency as semiconductors had pre-2018** — and the decoupling response is roughly a half-decade behind.
 - The wiki's [[MP]] high-conviction position (only fully integrated US NdFeB producer) is the most direct US-supply-chain answer to this; reinforced by every leading-researcher commentary the wiki has captured in 2026.
 - The next plausible export-control / industrial-policy lever from a 2027-2028 administration is *robotics components*. Watch for: (a) DoD humanoid procurement requirements with domestic-content rules; (b) Chinese rare-earth retaliation similar to the 2024 gallium/germanium move; (c) US tariff carve-outs for non-PRC sourcing.
+
+### Critical-materials lever: tungsten / WF₆ (NEW 2026-06-29)
+Per [[2026-06-29-semianalysis-tungsten-wf6-bottleneck]] (SemiAnalysis): **tungsten** — a China-dominated raw material — is the input for **WF₆**, the CVD gas that fills fab vias. Supply is tightening: Japan's WF₆ makers (SK Materials, Shin-Etsu) squeezed on falling tungsten imports; **Korean WF₆ import prices +151% YTD.** **Which means** tungsten is now another item in China's critical-minerals export-control arsenal alongside gallium/germanium/antimony/graphite/rare-earths — a low-cost-share but single-source input whose weaponization could gate fab throughput across the *entire* semi supply chain (everyone uses tungsten CVD). Strategic value accrues to **ex-China tungsten supply** (speculative Western/Korea miners — verify) and reinforces the onshoring/indigenization thesis. Full investability caveat in [[bottleneck-roadmap]] (it's a risk flag, not a clean position).
 
 **Affected wiki positions:**
 - [[MP]] — directly reinforced as the strategic US asset (bullish)

@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-29] ingest | SemiAnalysis tungsten/WF₆ critical-materials bottleneck (X thread)
+
+- Source: sources/2026-06-29-semianalysis-tungsten-wf6-bottleneck.md (X thread; not archived locally). User shared it asking for thoughts.
+- **Insight:** tungsten (China-dominated) → WF₆ CVD gas that fills fab vias; supply tightening (Japan WF₆ makers squeezed; Korean WF₆ imports +151% YTD). A new China-controlled critical-input swept into the export-control fight + another AI-hardware cost-push.
+- **The honest read (Baker tension):** textbook "esoteric bottleneck" — real but hard to monetize (tiny cost-share, suppliers buried in conglomerates). Lands in direct tension with Gavin Baker (All-In #278) "it's DRAM, not the esoteric stuff." Reconciliation logged: DRAM = where pricing-power/capital accrues (biggest constraint); WF₆/helium = tail-risk/fragility inputs (a China supply-shock could gate fab throughput). Filed as a **risk flag, not a position**; only semi-clean exposure = ex-China tungsten miners (speculative, verify).
+- Wiki touched: [[bottleneck-roadmap]] (23→24, sibling to helium watch-item), [[us-china-relations]] (3→4, tungsten as a critical-minerals lever), [[index]]. No stance changes.
+- Committed locally (no push).
+
+---
+
 ## [2026-06-29] query | ZETA — refresh on user request
 
 - User asked "anything of interest in ZETA." Read existing page (neutral/low, drafted 2026-06-20) + fresh search (last-30-day default).
