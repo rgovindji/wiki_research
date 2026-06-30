@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-30] ingest | Claude GA on Azure (Microsoft Foundry) running on NVIDIA GB300
+
+- **Discovery**: `feed_scan` r/stocks (investor persona) → DeepSeek triage **7/10, tagged NVDA** → verified via WebSearch (NVIDIA + Microsoft + CNBC) + price via Polygon.
+- **Key facts**: Anthropic's Claude (Haiku/Sonnet/Opus) went **GA in Microsoft Foundry on Azure on 2026-06-29, running on NVIDIA GB300 NVL72 (Blackwell Ultra) + Quantum-X800 InfiniBand** — East US + West Europe at launch, 3 more regions by mid-July. First Anthropic-on-NVIDIA *production* deployment. Operationalizes the **Nov-2025 Microsoft–NVIDIA–Anthropic deal**: Anthropic committed **$30B Azure compute** (+ up to ~1 GW); NVDA invested up to $10B, MSFT up to $5B into Anthropic at ~$350B. Prices Polygon-verified (close 06-29): NVDA $194.97, MSFT $368.57.
+- **Pages touched**: filed [[2026-06-30-anthropic-claude-gb300-azure-launch]]; patched [[NVDA]] + [[MSFT]] Recent developments (frontmatter last_updated/sources bumped); light bullet to [[ai-capex-cycle]] (circular-financing structure now has product behind it); [[index]].
+- **Stance held — bull/high on both NVDA and MSFT**; no flip (milestone GA, no volume/revenue disclosed). Flagged as demand-side anchor + cleanest vendor-financing-circularity example, not a re-rate.
+- Committed locally (no push).
+
+---
+
 ## [2026-06-30] ingest | ASTS × Rakuten Japan sovereign-LEO JV (~$1B gov support) — via the new feed pipeline
 
 - **First end-to-end ingest through the new ingestion stack**: `feed_scan` (r/stocks, investor persona) surfaced it → `feed_triage` (DeepSeek v4-flash) scored it **8/10 "ingest", tagged ASTS** → verified via WebSearch → price Polygon-verified ($86.77 close 06-29, +21%).
