@@ -9,6 +9,15 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-30] note | Created the [[stablecoin]] theme page (flagged 3×) + Solana-tailwind read
+
+- Spun up [[stablecoin]] (`wiki/themes/stablecoin.md`): the competitive map (USDC/[[CRCL]] vs USDT vs the Open USD consortium), who-captures-the-reserve-float economics, the yield-ban regulatory thread, public-equity expressions ([[CRCL]] most exposed; [[COIN]] ambiguous), and a chain-settlement section answering the **Solana** question.
+- **Solana read:** Open USD launching Solana-first is a *modest narrative* tailwind (credibility for Solana-as-settlement) but the *direct* SOL token-price linkage is **weak** (stablecoin fees are trivial; float yield accrues to the issuer, not SOL holders; multi-chain dilutes exclusivity). Durable version only if OUSD scales AND Solana keeps dominant settlement share. SOL is crypto — outside the equity core; no SOL page.
+- Linked [[CRCL]] → [[stablecoin]]; touched [[index]] (themes). conviction medium on the theme.
+- Committed locally (no push).
+
+---
+
 ## [2026-06-30] query+ingest | CRCL selloff + the Open USD consortium (new page created)
 
 - User asked why [[CRCL]] is dumping + details on "OpenUSD". Verified: CRCL $75.96 (Polygon 06-29), ~52% off the $159.47 high, below all EMAs. Catalyst (06-30): a **140-firm "Open Standard" consortium** (Visa/Mastercard/Stripe/BlackRock/BNY/Coinbase/Ripple/Google/Shopify) launching **Open USD (OUSD)** — multi-chain (Solana day-1, then Base/Polygon/Stellar), **shares reserve yield with adopters** (attacks Circle's core economics). Sharpest signal: **Coinbase** (Circle's biggest distributor) is in the consortium.

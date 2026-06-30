@@ -48,7 +48,7 @@ The dominant *regulated* US-stablecoin first-mover (issuer of **USDC**) — but 
 - **2026-06-30 — CRCL ~−8% as the Open USD consortium lands** ([[2026-06-30-open-usd-consortium-vs-circle]]). 140+ firms incl. Visa/Stripe/BlackRock/Coinbase back a multi-chain (Solana-first) USD stablecoin that shares reserve yield with adopters. **Which means:** Circle's moat is being attacked by the firms that *are* the distribution (incl. its own biggest partner) on the exact economics that are its revenue — a structural bear catalyst, though OUSD is unproven (no firm date, undisclosed reserves/regulated entity). Price $75.96 (06-29), ~52% off high, below all EMAs.
 
 ## Related
-[[COIN]] · [[GLXY]] · [[HOOD]] · [[overview]] · stablecoin *(theme page candidate)*
+[[COIN]] · [[GLXY]] · [[HOOD]] · [[stablecoin]] · [[overview]]
 
 ## Sources
 1. [[2026-06-30-open-usd-consortium-vs-circle]] — the Open USD consortium launch + why CRCL is dumping

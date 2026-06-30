@@ -145,6 +145,7 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 
 ## Themes (`wiki/themes/`)
 
+- [[stablecoin]] — **NEW 2026-06-30** — who captures the reserve float / which distribution wins; USDC ([[CRCL]]) vs USDT vs the **Open USD** consortium; the yield-ban regulatory thread; Solana-as-settlement angle (modest narrative tailwind, weak direct token linkage). Adjacent/fintech coverage.
 - [[ai-capex-cycle]] — hyperscalers spending ~$725B in 2026 (+77% YoY); 40% of S&P 500 EPS growth attributed to AI
 - [[market-concentration]] — Mag 7 = 35% of S&P 500, equal to dot-com peak; counter-thesis
 - [[ai-bubble-debate]] — bull (real productivity) vs. bear (CAPE 39.8, capex ROI uncertain)
