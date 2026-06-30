@@ -25,6 +25,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import subprocess
 import sys
 import urllib.request
 import urllib.parse
@@ -76,12 +77,8 @@ SOURCES = [
 ]
 
 
-def fetch(url: str, timeout: int = 25, accept: str = "*/*", proxy: str | None = None, ua: str = UA) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": accept})
-    if proxy:
-        opener = urllib.request.build_opener(urllib.request.ProxyHandler({"http": proxy, "https": proxy}))
-        with opener.open(req, timeout=timeout) as r:
-            return r.read().decode("utf-8", errors="replace")
+def fetch(url: str, timeout: int = 25, accept: str = "*/*") -> str:
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8", errors="replace")
 
@@ -90,31 +87,70 @@ def fetch_json(url: str, timeout: int = 25):
     return json.loads(fetch(url, timeout, accept="application/json"))
 
 
-def webshare_proxies(limit: int = 10) -> list[str]:
-    """Fetch the Webshare proxy list (Authorization: Token <WEBSHARE_API_KEY>)."""
-    key = os.environ.get("WEBSHARE_API_KEY")
-    if not key:
-        return []
-    try:
-        url = f"https://proxy.webshare.io/api/v2/proxy/list/?mode=direct&page=1&page_size={limit}"
-        req = urllib.request.Request(url, headers={"Authorization": f"Token {key}"})
-        with urllib.request.urlopen(req, timeout=20) as r:
-            data = json.load(r)
-    except Exception as e:
-        print(f"[feed_scan] Webshare proxy-list failed: {e}", file=sys.stderr)
-        return []
-    proxies = []
-    for p in data.get("results", []):
-        if p.get("valid", True) and p.get("proxy_address") and p.get("port"):
-            proxies.append(f"http://{p['username']}:{p['password']}@{p['proxy_address']}:{p['port']}")
-    return proxies
+def socks_proxy() -> str | None:
+    """Webshare rotating residential SOCKS5 endpoint from WEBSHARE_PROXY_USER/PASS.
+    (Reddit 403s its .json everywhere now and the HTTP proxy can't CONNECT for TLS;
+    the residential SOCKS5 endpoint + Reddit's still-public .rss feed is the way in.)"""
+    u = os.environ.get("WEBSHARE_PROXY_USER")
+    p = os.environ.get("WEBSHARE_PROXY_PASS")
+    if not (u and p):
+        return None
+    host = os.environ.get("WEBSHARE_PROXY_HOST", "p.webshare.io")
+    port = os.environ.get("WEBSHARE_PROXY_PORT", "1080")
+    return f"socks5h://{u}:{p}@{host}:{port}"
 
 
-def get_proxies() -> list[str]:
-    global _PROXIES
-    if _PROXIES is None:
-        _PROXIES = webshare_proxies()
-    return _PROXIES
+def fetch_via_proxy(url: str, ua: str = REDDIT_UA, timeout: int = 30, retries: int = 3) -> str:
+    """Fetch through the rotating SOCKS5 proxy via curl. We shell out to curl (not requests)
+    because Reddit fingerprints and 403s Python's TLS stack, while curl's passes cleanly."""
+    proxy = socks_proxy()
+    if not proxy:
+        raise RuntimeError("no proxy configured (WEBSHARE_PROXY_USER/PASS)")
+    cmd = ["curl", "-s", "--max-time", str(timeout), "--proxy", proxy,
+           "-A", ua, "-H", "Accept-Language: en-US,en;q=0.9", "-w", "\n%{http_code}", url]
+    last = "no attempt"
+    for _ in range(retries):
+        try:
+            res = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout + 10)
+        except Exception as e:
+            last = str(e)
+            continue
+        out = res.stdout
+        nl = out.rfind("\n")
+        body, code = (out[:nl], out[nl + 1:].strip()) if nl != -1 else (out, "")
+        if code == "200" and body.strip():
+            return body
+        last = f"HTTP {code or '?'}"
+    raise RuntimeError(f"{retries} curl attempts failed (last: {last})")
+
+
+def parse_feed(xml: str, limit: int) -> list[dict]:
+    """Parse RSS 2.0 or Atom into {id, title, url, published, summary}."""
+    root = ET.fromstring(xml)
+    items = []
+    for it in root.iter("item"):  # RSS 2.0
+        link = (it.findtext("link") or "").strip()
+        guid = (it.findtext("guid") or link).strip()
+        items.append({
+            "id": guid or link,
+            "title": _clip(it.findtext("title") or "", 220),
+            "url": link,
+            "published": (it.findtext("pubDate") or "").strip(),
+            "summary": _clip(it.findtext("description") or ""),
+        })
+    if not items:  # Atom (Reddit's .rss is Atom)
+        ns = "{http://www.w3.org/2005/Atom}"
+        for e in root.iter(f"{ns}entry"):
+            link_el = e.find(f"{ns}link")
+            link = (link_el.get("href") if link_el is not None else "") or ""
+            items.append({
+                "id": (e.findtext(f"{ns}id") or link).strip(),
+                "title": _clip(e.findtext(f"{ns}title") or "", 220),
+                "url": link,
+                "published": (e.findtext(f"{ns}updated") or e.findtext(f"{ns}published") or "").strip(),
+                "summary": _clip(e.findtext(f"{ns}content") or e.findtext(f"{ns}summary") or ""),
+            })
+    return items[:limit]
 
 
 def _clip(s: str, n: int = 400) -> str:
@@ -126,33 +162,7 @@ def _clip(s: str, n: int = 400) -> str:
 
 def collect_rss(src: dict) -> list[dict]:
     xml = fetch(src["url"], accept="application/rss+xml, application/xml, text/xml")
-    root = ET.fromstring(xml)
-    items = []
-    # RSS 2.0
-    for it in root.iter("item"):
-        link = (it.findtext("link") or "").strip()
-        guid = (it.findtext("guid") or link).strip()
-        items.append({
-            "id": guid or link,
-            "title": _clip(it.findtext("title") or "", 200),
-            "url": link,
-            "published": (it.findtext("pubDate") or "").strip(),
-            "summary": _clip(it.findtext("description") or ""),
-        })
-    # Atom fallback
-    if not items:
-        ns = "{http://www.w3.org/2005/Atom}"
-        for e in root.iter(f"{ns}entry"):
-            link_el = e.find(f"{ns}link")
-            link = (link_el.get("href") if link_el is not None else "") or ""
-            items.append({
-                "id": (e.findtext(f"{ns}id") or link).strip(),
-                "title": _clip(e.findtext(f"{ns}title") or "", 200),
-                "url": link,
-                "published": (e.findtext(f"{ns}updated") or "").strip(),
-                "summary": _clip(e.findtext(f"{ns}summary") or ""),
-            })
-    return items[: src.get("limit", 8)]
+    return parse_feed(xml, src.get("limit", 8))
 
 
 def collect_hn(src: dict) -> list[dict]:
@@ -211,43 +221,25 @@ def collect_hf_papers(src: dict) -> list[dict]:
 
 
 def collect_reddit(src: dict) -> list[dict]:
-    # Reddit blocks our IP directly; route the official .json through Webshare proxies.
+    # Reddit 403s its .json everywhere; the still-public .rss feed via residential SOCKS5 works.
     sub = src["sub"]
     limit = src.get("limit", 6)
-    proxies = get_proxies()
-    if not proxies:
-        print(f"[feed_scan] reddit r/{sub}: no Webshare proxies (set WEBSHARE_API_KEY) — skipping",
-              file=sys.stderr)
+    if not socks_proxy():
+        print(f"[feed_scan] reddit r/{sub}: no WEBSHARE_PROXY_USER/PASS — skipping", file=sys.stderr)
         return []
-    url = f"https://www.reddit.com/r/{sub}/{src.get('sort', 'top')}.json?t=day&limit={limit * 2}"
-    data = None
-    for proxy in proxies[:4]:  # try up to 4 proxies; Reddit blocks many datacenter IPs
-        try:
-            raw = fetch(url, timeout=18, accept="application/json", proxy=proxy, ua=REDDIT_UA)
-            d = json.loads(raw)
-            if isinstance(d, dict) and "data" in d:
-                data = d
-                break
-        except Exception:
-            continue
-    if not data:
-        print(f"[feed_scan] reddit r/{sub}: all proxies blocked/failed — Reddit blocks datacenter "
-              f"IPs, so this may need Webshare *residential* proxies — skipping", file=sys.stderr)
+    sort = src.get("sort", "top")
+    url = (f"https://www.reddit.com/r/{sub}/.rss" if sort == "hot"
+           else f"https://www.reddit.com/r/{sub}/{sort}/.rss?t=day")
+    try:
+        xml = fetch_via_proxy(url)
+    except Exception as e:
+        print(f"[feed_scan] reddit r/{sub} via proxy failed ({e}) — skipping", file=sys.stderr)
         return []
-    out = []
-    for c in data["data"].get("children", []):
-        d = c.get("data", {})
-        out.append({
-            "id": "reddit-" + d.get("id", ""),
-            "title": _clip(d.get("title") or "", 220),
-            "url": "https://www.reddit.com" + d.get("permalink", ""),
-            "published": str(d.get("created_utc", "")),
-            "summary": f"▲{d.get('ups', 0)} · {d.get('num_comments', 0)} comments · "
-                       + _clip(d.get("selftext") or "", 300),
-        })
-        if len(out) >= limit:
-            break
-    return out
+    items = parse_feed(xml, limit)
+    for it in items:
+        it["id"] = "reddit-" + (it["id"] or it["url"])
+        it["summary"] = f"r/{sub} · " + (it["summary"] or "")
+    return items
 
 
 COLLECTORS = {
