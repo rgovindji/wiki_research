@@ -9,6 +9,14 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-30] note | Morning brief: Leaning on the Door at 7,440
+
+Before the Bell sent. Covered: quiet quarter-end open (futures flat) with SPX pinned to the 7,440 call wall / ~7,450 flip after Monday's chip-led rip; Asia followed through (Taiwan +2.5%, Samsung +4%); TSMC advanced-node price hike (toll-taker raises the toll); flip-holds-first-test resolves over today/tomorrow; YOLO long-side 7,500c keyed to a held 7,450 reclaim. No wiki changes (morning runs don't ingest).
+
+---
+
+---
+
 ## [2026-06-30] note | Built the thesis ledger — the always-loaded current-beliefs spine
 
 - Created [[thesis-ledger]] (`wiki/thesis-ledger.md`): 11 live cross-cutting theses (capex cycle / inference economics / memory super-cycle / chokepoints / custom-silicon-coexists / power+labor / neoclouds / bubble-as-positioning-risk / AI-infra debt / rates overlay / bull-under-stress posture), each with stance · conviction · load-bearing evidence (links) · **falsifier** · date. Plus an "open calls awaiting user sign-off" block. Synthesized from [[overview]] + [[watchlist]] + the theme pages — reflects the wiki's actual current beliefs, conviction honest (risk theses first-class).

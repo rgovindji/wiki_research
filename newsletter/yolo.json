@@ -150,6 +150,20 @@
       "graded": true
     },
     {
+      "id": "2026-06-30-spx-7500c",
+      "date": "2026-06-30",
+      "issue": "2026-06-30-morning",
+      "structure": "SPX 0DTE 7,500 call",
+      "direction": "bullish (held reclaim of the flip, momentum to the next wall)",
+      "thesis": "The long side of our own house call 2026-06-29-flip-holds-first-test, taken honestly per lesson 14 (don't fade a chip-led bid — Monday's fade got run over). SPX closed 7,440.43 pinned to the 7,440 call wall, ~10 pts under the ~7,450 zero-gamma flip, inside the 7,421-7,450 boundary for the first time in nine sessions after CLEARING the 7,424-7,428 broken-shelf that capped eight of them. Asia followed through overnight (Taiwan +2.5%, Samsung +4%, Nikkei back over 70k) and the chip complex held Monday's bid — the highest-beta names leading is a regime-bid texture, not a fade setup. Futures are nearly flat (Dow +0.2%, broad indexes <+0.1%), so a gap-and-go is NOT given; the trigger demands a held reclaim, not a poke. If the flip finally reclaims and holds, the same dealers who capped this tape for three weeks chase it up and the air to 7,510 is the trade. Keyed to the level (reclaim/hold 7,450) per lesson 1; quarter-end flows are context, not a key. Note: if this triggers and works, our flip-holds-first-test call grades wrong tomorrow — we take that trade.",
+      "trigger": "SPX reclaims 7,450 (the zero-gamma flip) after the open and HOLDS it ~30 minutes. The hold-filter is the entire entry — it separates a real positive-gamma re-stack (gap-and-go) from a gap-and-fade that prints at 9:30 and dies by 10 (the June 25 lesson: a premarket level is not a cash-session reclaim). No hold above 7,450 = no trade, desk flat; a poke-and-reject back under ~7,425 is our flip-holds call surviving — stand aside, do not fight it with a bearish improvisation.",
+      "target": "The 7,510 broken-floor-now-ceiling / next dominant call-wall zone, where dealer hedging flips from tailwind to headwind for a long. Exit AT the wall, not above it (lesson 8: in a re-stacked positive-gamma tape the wall is where the move dies). First checkpoint the round 7,500.",
+      "invalidation": "SPX back below 7,425 (the broken shelf) after the reclaim — failed break, out, no bearish re-entry on the fade (June 10 lesson: process, not mood). Hard time-stop at 3:30 ET if neither target nor invalidation has hit (June 11 lesson: theta resolves 'almost' against the holder).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
+    },
+    {
       "id": "2026-06-25-spx-7475c",
       "date": "2026-06-25",
       "issue": "2026-06-25-morning",
