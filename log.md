@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-30] note | Built the thesis ledger — the always-loaded current-beliefs spine
+
+- Created [[thesis-ledger]] (`wiki/thesis-ledger.md`): 11 live cross-cutting theses (capex cycle / inference economics / memory super-cycle / chokepoints / custom-silicon-coexists / power+labor / neoclouds / bubble-as-positioning-risk / AI-infra debt / rates overlay / bull-under-stress posture), each with stance · conviction · load-bearing evidence (links) · **falsifier** · date. Plus an "open calls awaiting user sign-off" block. Synthesized from [[overview]] + [[watchlist]] + the theme pages — reflects the wiki's actual current beliefs, conviction honest (risk theses first-class).
+- **Purpose:** the small, always-loaded spine that fixes the "gives general opinions / have to remind it" problem — sessions orient from the ledger, then `wikidb ask` fills detail. Complements the retrieval upgrade (the spine; retrieval is the index).
+- **Wired in:** CLAUDE.md "Answer a query" now step 0 = read the ledger first; directory layout marks it read-first; `scripts/daily_prompt.md` context-loading adds it; [[index]] top-level links it.
+- Wiki touched: [[thesis-ledger]] (new), [[index]], CLAUDE.md, scripts/daily_prompt.md. No stance changes (ledger records existing stances).
+- Committed locally (no push).
+
+---
+
 ## [2026-06-30] analysis | NBIS neocloud thesis + buy zones (TA chart, Polygon-verified)
 
 - Filed [[2026-06-30-nbis-neocloud-buy-zones]] — combines the bull/medium thesis with a marked technicals/buy-zones layer. Companion HTML `nbis_analysis_2026-06-29.html` (TradingView Lightweight-Charts; EMAs + buy zones + supports).

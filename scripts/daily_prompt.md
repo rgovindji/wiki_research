@@ -13,7 +13,7 @@ You are running the daily close-of-market job for rgovindji's Investing wiki in 
 2. **MEMORY.md** index + the linked feedback files for `daily-update-workflow`, `earnings-workflow`, `accountability-log`, `connect-the-dots`, `what-this-means-box`
 3. **index.md** — catalog of all wiki pages (so you know what's covered)
 4. The last ~80 entries of **log.md** (so you don't re-ingest what's already in)
-5. **wiki/watchlist.md** — current stance/conviction table
+5. **wiki/thesis-ledger.md** (the current-beliefs spine — live theses + conviction + falsifiers; read before reasoning) + **wiki/watchlist.md** (current stance/conviction table)
 6. **scripts/newsletter_style.md** — the newsletter voice guide (for part 4)
 7. **newsletter/portfolio.json** + the most recent two issues in `newsletter/issues/` — portfolio state and yesterday's letter
 8. **newsletter/predictions.json** — the prediction ledger (what's open, what resolves today)

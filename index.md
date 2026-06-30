@@ -6,6 +6,7 @@ Catalog of every page in the wiki. Updated on every ingest. Drill into pages fro
 
 ## Top-level
 
+- [[thesis-ledger]] — ⭐ **the current-beliefs spine — read first.** Live cross-cutting theses (capex cycle, memory super-cycle, chokepoints, neoclouds, bubble-as-positioning-risk, AI-infra debt, rates overlay) each with stance · conviction · falsifier. Small + always-loaded; per-name stances live in [[watchlist]] (NEW 2026-06-30)
 - [[overview]] — current macro stance + leading theses (synthesis page, May 2026)
 - [[watchlist]] — active buy / hold / avoid candidates with one-line theses
 - [[feedback-log]] — accountability log: wiki's calls vs actual outcomes; right / right-but-timing-wrong / process gap verdicts (NEW 2026-05-14)

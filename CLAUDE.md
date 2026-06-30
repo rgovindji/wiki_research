@@ -36,7 +36,8 @@ raw/
   assets/        # images, charts, screenshots referenced from articles
 sources/         # one .md per raw source — short summary + key takeaways + links to wiki pages it touched
 wiki/
-  overview.md            # top-level synthesis: current macro stance + leading theses
+  thesis-ledger.md       # ⭐ the current-beliefs spine — read FIRST every session (live theses + conviction + falsifiers)
+  overview.md            # top-level synthesis: current macro stance + leading theses (day-by-day tape)
   watchlist.md           # active buy/sell candidates with thesis + trigger
   companies/             # one page per ticker (UPPERCASE filename, e.g. NVDA.md)
   sectors/               # semiconductors, cloud-hyperscalers, ai-software, etc.
@@ -199,6 +200,11 @@ touches: [overview, valuation-environment, NVDA]
 **Retrieval is mandatory before reasoning. Never answer from general knowledge or from
 whatever happens to be in context — the wiki holds 300+ pages no single session can hold.**
 
+0. **Orient — read `wiki/thesis-ledger.md` first.** It's the compact current-beliefs spine
+   (live cross-cutting theses + conviction + falsifiers). Anchor every answer to the relevant
+   thesis and its stance/conviction, rather than forming a fresh "general" take. If your answer
+   would contradict a ledger thesis, that's a finding to surface (and possibly a stance change
+   needing user sign-off), not something to paper over.
 1. **Recall first — always run `python3 scripts/wikidb.py ask "<the question>"`.** This is hybrid
    (lexical + semantic) retrieval over every wiki page and source summary; it auto-refreshes the
    index first and returns the most relevant dated, cited passages with conviction/stance. Run it
