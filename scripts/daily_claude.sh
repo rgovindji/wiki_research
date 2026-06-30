@@ -159,6 +159,16 @@ if [[ -f "$REPO_DIR/scripts/validate_loop.py" ]]; then
   fi
 fi
 
+# ----- 2c. Refresh the retrieval index (local, gitignored) so `wikidb ask` is warm -----
+if [[ -f "$REPO_DIR/scripts/wikidb.py" ]]; then
+  if "$PYTHON_BIN" "$REPO_DIR/scripts/wikidb.py" build 2>&1 | tee -a "$RUN_LOG"; then
+    log "wikidb index refreshed"
+  else
+    # Non-fatal: stale index degrades retrieval but must not block commit/email.
+    log "WARNING: wikidb build failed — search index may be stale (non-fatal)"
+  fi
+fi
+
 # ----- 3. Detect changes -----
 DIRTY="false"
 if [[ -n "$(git status --porcelain)" ]]; then

@@ -196,11 +196,22 @@ touches: [overview, valuation-environment, NVDA]
 
 ### Answer a query
 
-1. **Read `index.md`** to find candidate pages.
-2. **Read those pages** (and the sources they cite if needed).
-3. **Synthesize** an answer with citations to wiki pages and source summaries.
-4. **Ask the user** if the answer should be filed back as a new page in `wiki/analyses/`. Good queries become permanent assets.
-5. **Append to `log.md`**.
+**Retrieval is mandatory before reasoning. Never answer from general knowledge or from
+whatever happens to be in context — the wiki holds 300+ pages no single session can hold.**
+
+1. **Recall first — always run `python3 scripts/wikidb.py ask "<the question>"`.** This is hybrid
+   (lexical + semantic) retrieval over every wiki page and source summary; it auto-refreshes the
+   index first and returns the most relevant dated, cited passages with conviction/stance. Run it
+   *before* forming any view. Rephrase and re-run for distinct sub-questions.
+2. **State what the wiki already knows** — briefly list the relevant prior claims the recall
+   surfaced (with their dates/sources) before adding anything new. If recall returns a position
+   the wiki already holds, build on it; do not silently re-derive a fresh "general" take.
+3. **Read the full pages** behind the top passages (and the sources they cite) when depth is needed.
+   Use `index.md` only as a secondary map when recall is thin.
+4. **Synthesize** an answer with citations to wiki pages and source summaries. Only then layer in
+   fresh WebSearch for anything dated within the last 30 days.
+5. **Ask the user** if the answer should be filed back as a new page in `wiki/analyses/`. Good queries become permanent assets.
+6. **Append to `log.md`**.
 
 ### Lint pass
 
@@ -252,9 +263,19 @@ Example:
 
 ## Tools the LLM can use
 
+- **`python3 scripts/wikidb.py ask "<question>"`** — **the primary recall tool. Use it first on
+  every query.** Hybrid lexical + semantic retrieval over all wiki pages and source summaries,
+  returning dated, cited passages re-ranked by recency and conviction. Auto-refreshes the index
+  before searching (build-before-read), so results are never stale. Backed by Voyage embeddings
+  (`VOYAGE_API_KEY` in `.env`); degrades gracefully to lexical-only if the API is unreachable.
+  - `wikidb.py build` — refresh the index manually (also runs automatically in the daily/sweep jobs).
+  - `wikidb.py search "<terms>"` — legacy whole-document FTS5 (use `ask` instead for questions).
+  - `wikidb.py page TICKER` / `stats` / `stale` — inspect the index.
 - **WebSearch** — for current prices, recent news, and finding sources.
 - **WebFetch** — for ingesting articles by URL.
 - **Bash / Read / Write / Edit** — to maintain the wiki files.
 - **Grep over `log.md`** — to recall recent activity.
 
-When the user asks "what's the latest on X", default to: read the wiki page first, then run a fresh WebSearch for anything dated within the last 30 days, then update the page if you find something new.
+When the user asks "what's the latest on X", default to: **`wikidb ask "X"` first**, then read the
+surfaced page(s), then run a fresh WebSearch for anything dated within the last 30 days, then update
+the page if you find something new.

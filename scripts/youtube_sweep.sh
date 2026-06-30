@@ -45,4 +45,6 @@ $(cat "$PROMPT_FILE")" \
   --output-format text \
   || { echo "claude exited non-zero ($?)"; exit 1; }
 
+# Refresh the local retrieval index so newly-written pages are searchable (non-fatal).
+python3 "$REPO_DIR/scripts/wikidb.py" build 2>&1 || echo "WARNING: wikidb build failed (non-fatal)"
 echo "==== youtube-sweep done $(date) ===="
