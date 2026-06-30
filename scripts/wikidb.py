@@ -42,11 +42,24 @@ HEADING_RE = re.compile(r"^(#{1,6})\s+(.*\S)\s*$")
 DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
 BULLET_RE = re.compile(r"^\s*[-*]\s+")
 
+# Administrative / meta sections with near-zero retrieval value — excluded from chunking
+# so they don't pollute results (e.g. a "Citations" section matching an off-topic query).
+BOILERPLATE_HEADINGS = {
+    "citations", "sources", "related", "see also", "references",
+    "wiki updates", "wiki updates made", "wiki updates suggested",
+}
+
+
+def _is_boilerplate(crumb: str) -> bool:
+    return crumb.split(">")[-1].strip().lower() in BOILERPLATE_HEADINGS
+
 # Embedding backend. Auto-detects provider from .env: Voyage (VOYAGE_API_KEY,
 # default model voyage-3.5) is preferred over OpenAI (OPENAI_API_KEY/OPEN_AI_KEY,
 # text-embedding-3-small). Override with WIKI_EMBED_PROVIDER / WIKI_EMBED_MODEL.
 EMBED_BATCH = 96
 RRF_K = 60  # reciprocal-rank-fusion constant
+LOWCONF_SIM = 0.45  # below this best cosine sim (and no strong lexical hit) -> low-confidence warning
+LEX_STRONG = 2      # a shown result with lexical rank <= this counts as a strong lexical anchor
 
 
 def load_env() -> None:
@@ -173,6 +186,8 @@ def chunk_doc(doc: "Doc", max_chars: int = 1200) -> list[Chunk]:
 
     raw: list[tuple[str, str]] = []  # (heading, text)
     for heading, body_lines in sections:
+        if _is_boilerplate(heading):
+            continue
         bullets = [l for l in body_lines if BULLET_RE.match(l)]
         dated = [l for l in bullets if DATE_RE.search(l)]
         if len(dated) >= 2 and len(dated) >= len(bullets) / 2:
@@ -269,9 +284,21 @@ def _embed_openai(texts: list[str]) -> list[list[float]] | None:
     return out
 
 
+STOPWORDS = {
+    "is", "are", "was", "were", "be", "been", "being", "the", "a", "an", "of", "to",
+    "in", "on", "for", "and", "or", "with", "by", "at", "as", "from", "into", "vs",
+    "what", "how", "who", "why", "when", "which", "where", "does", "do", "did", "will",
+    "would", "should", "could", "can", "about", "this", "that", "these", "those", "it",
+    "its", "i", "my", "me", "we", "our", "you", "your", "more", "most", "than", "then",
+    "there", "their", "they", "any", "some", "if", "so", "vs.",
+}
+
+
 def _fts_query(q: str) -> str:
-    """Turn a natural-language question into a safe FTS5 OR-query of quoted terms."""
-    words = [w for w in re.findall(r"[A-Za-z0-9$%.+-]+", q) if len(w) > 1]
+    """Turn a natural-language question into a safe FTS5 OR-query of quoted, content-bearing
+    terms (function words dropped so filler doesn't generate spurious lexical matches)."""
+    words = [w for w in re.findall(r"[A-Za-z0-9$%.+-]+", q.lower())
+             if len(w) > 1 and w not in STOPWORDS]
     return " OR ".join(f'"{w}"' for w in words)
 
 
@@ -672,6 +699,7 @@ def cmd_ask(args) -> int:
 
     # --- semantic half ---
     sem_rank: dict[int, int] = {}
+    sem_sim: dict[int, float] = {}
     qv = embed_texts([q], input_type="query") if (not args.no_embed and has_embed_key()) else None
     if qv:
         import numpy as np
@@ -690,7 +718,9 @@ def cmd_ask(args) -> int:
             qn = qvec / (np.linalg.norm(qvec) + 1e-8)
             sims = matn @ qn
             for rank, idx in enumerate(np.argsort(-sims)[:50]):
-                sem_rank[ids[int(idx)]] = rank
+                cid = ids[int(idx)]
+                sem_rank[cid] = rank
+                sem_sim[cid] = float(sims[int(idx)])
 
     # --- reciprocal-rank fusion ---
     scores: dict[int, float] = {}
@@ -706,14 +736,16 @@ def cmd_ask(args) -> int:
     today = datetime.date.today()
 
     def recency(d: str | None) -> float:
+        # Gentle decay: 1.0 (today) -> 0.6 (old). A tie-breaker, not a dominator —
+        # foundational/undated content must not be buried under fresh daily bullets.
         if not d:
-            return 0.7
+            return 0.85
         try:
             dt = datetime.date.fromisoformat(d)
         except Exception:
-            return 0.7
+            return 0.85
         days = max(0, (today - dt).days)
-        return max(0.4, 0.5 ** (days / 180.0))
+        return 0.6 + 0.4 * (0.5 ** (days / 365.0))
 
     conv_factor = {"high": 1.15, "medium": 1.0, "low": 0.85}
     ids = list(scores)
@@ -730,12 +762,51 @@ def cmd_ask(args) -> int:
             continue
         fm = fm_map.get(r["path"], {})
         conv = conv_factor.get(str(fm.get("conviction", "")).lower(), 1.0)
-        ranked.append((base * recency(r["date_hint"]) * conv, r, fm))
+        rec = recency(r["date_hint"])
+        comp = {"rrf": base, "rec": rec, "conv": conv,
+                "lex": lex_rank.get(cid), "sem": sem_rank.get(cid),
+                "sim": sem_sim.get(cid)}
+        ranked.append((base * rec * conv, r, fm, comp))
     ranked.sort(key=lambda x: -x[0])
     conn.close()
 
+    # Per-page diversity cap: at most `per_page` chunks from any one page in the
+    # displayed set, then backfill if the cap left us short.
+    show, page_counts = [], {}
+    for item in ranked:
+        path = item[1]["path"]
+        if page_counts.get(path, 0) >= args.per_page:
+            continue
+        show.append(item)
+        page_counts[path] = page_counts.get(path, 0) + 1
+        if len(show) >= args.limit:
+            break
+    if len(show) < args.limit:
+        picked = {id(x) for x in show}
+        for item in ranked:
+            if id(item) in picked:
+                continue
+            show.append(item)
+            if len(show) >= args.limit:
+                break
+
+    # Confidence signal: low only when semantics are weak AND there's no strong lexical
+    # anchor — this spares short exact-token queries (e.g. "Vera Rubin") whose sim is low
+    # but whose lexical match is exact, while still flagging genuinely-absent topics.
+    best_sim = max((c["sim"] for *_, c in show if c.get("sim") is not None), default=None)
+    # A real anchor needs a strong lexical hit that is ALSO semantically corroborated
+    # (present in the semantic top-K) — a keyword match on a generic word alone won't do.
+    has_lex_anchor = any(
+        c.get("lex") is not None and c["lex"] <= LEX_STRONG and c.get("sim") is not None
+        for *_, c in show
+    )
+    low_conf = best_sim is not None and best_sim < LOWCONF_SIM and not has_lex_anchor
     print(f'## Retrieved context for: "{q}"\n')
-    for n, (score, r, fm) in enumerate(ranked[: args.limit], 1):
+    if low_conf:
+        print(f"> ⚠ **Low confidence** (best semantic match {best_sim:.2f} < {LOWCONF_SIM}, "
+              f"no strong lexical hit). The wiki likely doesn't cover this — treat results "
+              f"as weak, and prefer a fresh WebSearch.\n")
+    for n, (score, r, fm, comp) in enumerate(show, 1):
         meta = []
         if r["date_hint"]:
             meta.append(r["date_hint"])
@@ -745,11 +816,20 @@ def cmd_ask(args) -> int:
             meta.append(f"stance: {fm['stance']}")
         tail = ("  ·  " + "  ·  ".join(meta)) if meta else ""
         print(f"### {n}. {r['heading']}  ·  `{r['path']}`{tail}")
+        if args.scores:
+            lex = f"L{comp['lex']}" if comp["lex"] is not None else "L-"
+            sem = f"S{comp['sem']}" if comp["sem"] is not None else "S-"
+            sim = f"sim={comp['sim']:.2f}" if comp.get("sim") is not None else "sim=-"
+            print(f"_[score={score:.4f} rrf={comp['rrf']:.4f} rec={comp['rec']:.2f} "
+                  f"conv={comp['conv']:.2f} {sim} {lex} {sem}]_")
         print(r["text"].strip())
         print()
     mode = "hybrid (lexical+semantic)" if sem_rank else (
         "lexical-only (no embeddings cached)" if has_embed_key() else "lexical-only (no API key)")
-    print(f"_retrieval: {mode} · {len(ranked)} candidates · top {min(args.limit, len(ranked))} shown_")
+    distinct = len({r["path"] for _, r, _, _ in show})
+    simtxt = f" · best_sim={best_sim:.2f}" if best_sim is not None else ""
+    print(f"_retrieval: {mode} · {len(ranked)} candidates · top {len(show)} shown "
+          f"across {distinct} page(s){simtxt}_")
     return 0
 
 
@@ -771,8 +851,10 @@ def main(argv: list[str] | None = None) -> int:
     pa = sub.add_parser("ask", help="hybrid retrieval (lexical+semantic) returning cited chunks")
     pa.add_argument("query", nargs="+", help="natural-language question")
     pa.add_argument("--limit", type=int, default=8, help="how many chunks to return")
+    pa.add_argument("--per-page", type=int, default=3, help="max chunks from any one page")
     pa.add_argument("--no-build", action="store_true", help="skip the incremental rebuild first")
     pa.add_argument("--no-embed", action="store_true", help="lexical-only; skip OpenAI embeddings")
+    pa.add_argument("--scores", action="store_true", help="show score breakdown per result (debug)")
     pa.set_defaults(func=cmd_ask)
 
     sub.add_parser("stale", help="list pages that need re-indexing").set_defaults(func=cmd_stale)
