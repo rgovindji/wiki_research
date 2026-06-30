@@ -1,14 +1,18 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-26
+last_updated: 2026-06-30
 last_full_review: 2026-05-09
-sources: 3
+sources: 4
 ---
 
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## 🔼 June 30, 2026 — The ceiling breaks: S&P closes 7,499.36 above the three-week flip, positive gamma re-stacks, the best quarter in six years closes on a broad bid
+
+**The S&P broke the nine-session ceiling: closed 7,499.36 (+0.79%), high 7,508.29**, clearing the ~7,450 zero-gamma flip it had failed to reclaim for nine straight sessions and pinning at the 7,500 call wall. **Which means:** for the first time since the early-June top the index closed *above* the flip — dealer gamma re-stacked positive (net GEX ~+$24B; flip migrated down to ~7,394, now support) — so the mechanical regime flips from amplify-moves to dampen-moves. **The bounce broadened:** unlike June 29's chip-only lead, the platforms joined — [[AAPL]] +2.70% ($289.36), [[MSFT]] +1.21% ($373.02) — while chips still led (SOXX +4.3%, [[TSM]] +4.94%, [[MRVL]] +7.25%, [[VRT]] +9.07% the book's standout, [[ALAB]] +5.94%, [[NVDA]] +2.63% back over $200, [[DELL]] +4.06%). All 11 model-portfolio holdings green. Lone red of note: [[QCOM]] −2.08% (the reported $8–10B Tenstorrent deal = acquisition/dilution overhang). VIX 16.45 (a fear drain); Nasdaq +1.52% to 26,213.72; Dow 52,319.20. **Quarter close:** best S&P/Nasdaq quarter in ~6 years despite the Iran war and the late-June AI-doubt selloff. **This triggers the [[thesis-ledger|T11 posture falsifier]]** — "a close back above ~7,450 *with breadth* → shock absorbers re-stack, add" — flagged for user sign-off (no headless posture flip). **Caveats banked:** (1) one close on a quarter-end window-dressing tape isn't a confirmed regime — July 1 Warsh (Sintra) + July 2 jobs are the real tests; (2) the AI-capex-payoff doubt that started the selloff was out-shouted by an Iran-relief bid, not answered. Resolved [[overview|flip-holds-first-test]] **WRONG** (we called no close above 7,450; it closed 7,499 — and we'd taken the long side on the desk, which paid). See [[2026-06-30-semiwiki-feeds-daily]].
 
 ## June 26, 2026 — The AI-returns question gets a face: OpenAI weighs an IPO delay, chips round-trip, the floor holds
 

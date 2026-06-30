@@ -9,6 +9,15 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-30] daily | The ceiling breaks: S&P closes 7,499 above the flip, regime flips bull
+
+- **Market:** S&P **+0.79% to 7,499.36** (high 7,508.29), CLEARING the ~7,450 zero-gamma flip it failed to reclaim for nine straight sessions and pinning the 7,500 call wall. Positive gamma re-stacked (net GEX ~+$24B; flip migrated to ~7,394 = support). Bounce **broadened** — platforms joined ([[AAPL]] +2.70%, [[MSFT]] +1.21%) while chips still led (SOXX +4.3%, [[VRT]] +9.07%, [[MRVL]] +7.25%, [[TSM]] +4.94%, [[ALAB]] +5.94%, [[NVDA]] +2.63% back >$200, [[DELL]] +4.06%, [[CRWV]] +4.22%). All 11 holdings green; [[QCOM]] −2.08% the lone tracked red (Tenstorrent-deal dilution). VIX 16.45. Best S&P/Nasdaq quarter in ~6 years closes. Touched [[overview]].
+- **STANCE FLAG (needs user sign-off):** [[thesis-ledger|T11]] posture falsifier TRIGGERED — "a close above ~7,450 *with breadth* → re-stack, add." Flagged in the ledger's open-calls; **not** auto-flipped per headless rules. Confirm with a post-quarter-end hold above the flip (July 1 Warsh, July 2 jobs).
+- **Ingest:** [[2026-06-30-semiwiki-feeds-daily]] — photonics' scaling gate = *repeatable* test/metrology; China memory equipment tenders (CXMT ~$5–6B / +50–60k wspm, YMTC Phase-2); Goertek 12" AR optical plant; **Intel Q2 = July 23 AMC**; "HBM Is Not All You Need" GDDR-for-prefill research. Touched [[semiconductors]], [[INTC]].
+- **Predictions resolved:** flip-holds-first-test **WRONG** (close above 7,450); spcx-holds-offer **RIGHT** (SPCX $170.86 ≥ $135 at the June-30 horizon); software-bounce-stalls **WRONG** (IGV $90.60 > $88). YOLO 2026-06-30-spx-7500c **WIN** (held reclaim ran to the 7,500 checkpoint, high 7,508; desk 2-2-8). 3 calls logged. Playbook lesson 15 added.
+
+---
+
 ## [2026-06-30] note | Created the [[stablecoin]] theme page (flagged 3×) + Solana-tailwind read
 
 - Spun up [[stablecoin]] (`wiki/themes/stablecoin.md`): the competitive map (USDC/[[CRCL]] vs USDT vs the Open USD consortium), who-captures-the-reserve-float economics, the yield-ban regulatory thread, public-equity expressions ([[CRCL]] most exposed; [[COIN]] ambiguous), and a chain-settlement section answering the **Solana** question.

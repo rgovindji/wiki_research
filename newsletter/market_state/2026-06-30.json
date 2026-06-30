@@ -1,0 +1,92 @@
+{
+  "_doc": "Daily market-state snapshot. Written by the close-of-market run, read by the next morning run (and the next close run for day-over-day deltas). Reasoning fuel — the reader never sees this file, only the conclusions drawn from it. Fields left null were not collected; collect them next run rather than guessing.",
+  "date": "2026-06-30",
+  "as_of": "2026-06-30T16:00:00-04:00",
+  "session_note": "THE CEILING BROKE. On the last day of the quarter SPX closed 7,499.36 (+0.79% / +58.93 vs 7,440.43), high 7,508.29, low 7,438.04 — CLEARING the ~7,450 zero-gamma flip it had failed to reclaim for nine straight sessions and pinning the 7,500 call wall into the close. The regime flips: dealer gamma re-stacked POSITIVE (snippet net GEX ~+$23.95B; flip migrated DOWN to ~7,394, now support) — the mechanical state goes from amplify-moves to dampen-moves for the first time since the early-June top. And the bounce BROADENED: unlike June 29's chip-only lead, the demand-side platforms JOINED — AAPL +2.70% ($289.36), MSFT +1.21% ($373.02) — while the supply-side chips still led: VRT +9.07% ($334.82, the book's standout), MRVL +7.25% ($297.89), SOXX +4.30% ($640.76), TSM +4.94% ($477.57), ALAB +5.94% ($483.02), NVDA +2.63% ($200.09, back over $200), DELL +4.06% ($431.46), CRWV +4.22% ($99.54), AVGO +1.42% ($377.75), MU +0.79% ($1,154.29), MAGS +1.23% ($64.30), GOOGL +1.05% ($357.37). ALL 11 model-portfolio holdings green. Lone tracked red of note: QCOM -2.08% ($184.79) on the reported $8-10B Tenstorrent acquisition/dilution overhang. Nasdaq 26,213.72 (+1.52%), Dow 52,319.20 (+0.26%). VIX 16.45 (a continued fear DRAIN, -10% vs prevClose ~18.41), gold $4,021.80 (5d -108, falling hard = hedge bid gone), WTI $70.03, 10Y 4.42% — risk-on corroborated cross-asset. This is the best S&P/Nasdaq quarter in ~6 years, closing on a broad bid despite the Iran war and the late-June AI-doubt selloff. The tell: the index didn't just touch the flip (June 29), it CLOSED ~50 pts through it on broadening breadth. The carried caveats: (1) one close on a quarter-end window-dressing tape isn't a confirmed regime — July 1 Warsh (Sintra) + July 2 jobs are the real tests; (2) the AI-capex-payoff doubt that started the late-June selloff was out-shouted by an Iran-relief bid, not answered.",
+  "indexes": {
+    "spx": {
+      "close": 7499.36,
+      "chg_pct": 0.79,
+      "ohlc": [7440.0, 7508.29, 7438.04, 7499.36],
+      "note": "Close 7,499.36 (+0.79% / +58.93 vs 7,440.43; Yahoo chart API ^GSPC, 4 PM stamp). High 7,508.29, low 7,438.04. Open est ~7,440 (near prior close; the gap was small, futures nearly flat into the open). Path: opened near 7,440, held above the broken-shelf, reclaimed the ~7,450 flip and HELD, ran to a 7,508.29 high (tagged the 7,500/7,510 zone), pinned the 7,500 call wall into the close at 7,499.36. DECISIVE: this is the FIRST close above the ~7,450 flip in nine sessions (prior closes capped 7,354-7,440), re-stacking positive gamma. 7,450 is now support; the next resistance is 7,510 then the 7,600 June-1 record. Resolves flip-holds-first-test WRONG."
+    },
+    "nasdaq_composite": {
+      "close": 26213.72,
+      "chg_pct": 1.52,
+      "note": "+1.52% to 26,213.72 — second straight strong up-day, led by the chip continuation (SOXX +4.30%) AND the platforms rejoining (AAPL +2.70%, MSFT +1.21%). QQQ +1.70% to $736.40."
+    },
+    "dow": {
+      "close": 52319.20,
+      "chg_pct": 0.26,
+      "note": "+0.26% to 52,319.20 — a fresh record but the laggard index today (price-weighted, lower tech beta); the action was in the Nasdaq/semis."
+    }
+  },
+  "after_hours_events": [],
+  "regime": {
+    "call": "bull",
+    "options": ["bull", "bull-under-stress", "sideways", "bear-rally", "bear"],
+    "rationale": "UPGRADED to bull from bull-under-stress. The three marks all printed: (1) SPX CLOSED 7,499.36, ~50 pts ABOVE the ~7,450 zero-gamma flip it couldn't reclaim for nine sessions — positive gamma re-stacked (snippet net GEX ~+$23.95B), so dealers now dampen moves rather than amplify them; (2) BREADTH confirmed and broadened — the demand-side platforms JOINED the chip-led bid (AAPL +2.70%, MSFT +1.21%), all 11 holdings green, Nasdaq +1.52%; (3) cross-asset risk-on — VIX 16.45 (fear drain), gold falling hard (hedge bid unwinding), oil contained, 10Y stable. This is the bull re-confirmation the tape failed to deliver for three weeks. What keeps a sliver of caution (not enough to withhold the upgrade): (1) it's a QUARTER-END window-dressing tape — the mechanical bid for the quarter's winners (chips) ceases July 1, so the breakout's durability is tested by the post-quarter-end sessions; (2) the AI-capex-payoff doubt (the OpenAI-IPO-wobble) that drove the late-June selloff was out-shouted by an Iran-relief bid, not answered — a sentiment turn, not a fundamental all-clear; (3) the July 1 Warsh (Sintra) speech and July 2 jobs print are live binaries that could re-arm rate fear.",
+    "what_changes_it": "Back DOWN to bull-under-stress on a CLOSE below ~7,450 (the reclaimed flip, now support — would mean the breakout was a quarter-end-flow head-fake or a hawkish-Warsh flush negated it). Down to bear-rally/bear on a close below 7,300 (the twice-defended shelf; far below today's 7,438 low) OR a second leg in the AI-capex-doubt selloff cracking the contracted-supplier names. Up toward a record-chase if SPX clears and holds 7,510 with the 7,600 June-1 record (7,599.96) as the next magnet. Watch: (1) does the breakout HOLD above 7,450 post-quarter-end (July 1-2) or fade as window-dressing flows reverse; (2) July 1 Warsh tone (dovish = fuel to 7,510+; hawkish = caps and could push back under the flip); (3) July 2 jobs (hot re-arms rate fear on top of AI-doubt; cool = broad relief); (4) whether the platform re-join sticks (a broad bull) or chips re-narrow."
+  },
+  "key_levels": {
+    "spx_support": [7450, 7394, 7300, 7265],
+    "spx_resistance": [7510, 7600],
+    "notes": "REGIME FLIP repositions the levels. Support: 7,450 = the reclaimed zero-gamma flip, now FIRST support (was the three-week ceiling); 7,394 = the migrated-down gamma flip / character-change line below which gamma flips negative again; 7,300 = twice-defended put-side shelf; 7,265 = June 10/11 hold. Resistance: 7,510 = the next wall / broken-floor-from-mid-June; 7,600 = June 1 record (7,599.96). SPX closed 7,499.36, pinned the 7,500 call wall, ~50 pts above the flip = first above-flip close in nine sessions.",
+    "gamma": {
+      "zero_gamma_flip": 7394,
+      "call_wall": 7500,
+      "put_wall": 7300,
+      "net_gex_usd": 23950000000,
+      "near_put_wall": 7438,
+      "near_call_wall": 7500,
+      "source": "SNIPPET FALLBACK (Flashalpha/InsiderFinance, June 30) — market_levels.py --audit was UNAVAILABLE today (the script hung at 0-byte output for ~8 min and was killed, exit 144; the known intermittent hang flagged in the playbook, which preceded the one clean run June 29). Per the audit policy, computed is treated as FAIL/unavailable and snippet levels govern the snapshot. Snippet (June 30, post-breakout): net GEX +$23.95B (POSITIVE — re-stacked, confirming the regime flip), zero-gamma flip ~7,393.88 (migrated DOWN, now support below the close), call wall $7,500 (209K OI — exactly where SPX pinned at the 7,499.36 close; textbook positive-gamma 'dealers sell into the call wall' pin). Put wall carried at 7,300 (the June-29 computed level; likely migrated up post-breakout but not freshly confirmed — treat as a zone 7,300-7,400). near_call_wall = 7,500 (the wall the close pinned); near_put_wall = today's low 7,438 (the bought level / first ledge). THE REFRAME for the letters: SPX closed ABOVE the flip and AT the 7,500 call wall — positive gamma is back, 7,450 flips from ceiling to support, and the next resistance is 7,510/7,600.",
+      "note": "market_levels.py UNAVAILABLE (0-byte hang, killed exit 144) — snippet fallback per policy; computed levels rejected (no run). Operative reframe: positive gamma RE-STACKED (+$23.95B) on the close above the flip — the three-week cushion-off / amplify-moves regime is over for now. Closes/OHLC for all 11 holdings + SPY/QQQ/SOXX/AAPL/MSFT/QCOM via the Yahoo chart API (validated 4 PM stamps). factor_tape.py (Yahoo) ran clean for cross-asset.",
+      "audit_verdict": "unavailable",
+      "computed_rejected": "market_levels.py hung at 0-byte output for ~8 minutes and was killed (exit 144) before producing any computed flip/walls/net-GEX or audit block — the recurring intermittent hang. No computed numbers to record; snippet governs.",
+      "audit_log": "2026-06-30: market_levels.py --audit HUNG (0-byte stdout, killed after ~8 min, exit 144) — back to the intermittent-hang failure mode the playbook documents (June 29 was the one clean run in ~3 weeks). Fell back to snippet per the suspect/fail policy. Snippet crosscheck (Flashalpha/InsiderFinance, June 30): net GEX +$23.95B (positive), zero-gamma ~7,393.88, call wall 7,500 (209K OI), prior-day put wall 7,300. Cross-asset (factor_tape.py, Yahoo, clean): 10Y 4.42% (+0.05 abs / +1.05%, 5d -0.09 falling), WTI 70.03 (-1.02%, 5d -3.18 falling), DXY 101.16 (5d -0.25), VIX 16.45 (-6.8%, 5d -3.04 falling), gold 4021.8 (-0.01%, 5d -108.1 falling hard)."
+    }
+  },
+  "rates_commodities": {
+    "ust10y_pct": 4.42,
+    "wti_usd": 70.03,
+    "brent_usd": null,
+    "gold": 4021.8,
+    "note": "10Y 4.42% (+0.05 abs / +1.05% today, 5d -0.09 falling) — rate side stable; today's risk-on was equity-led, not a duration-bid story (though the platforms rejoining is mildly consistent with stable rates). WTI $70.03 (-1.02% today, 5d -3.18 falling) — crude soft, no war premium, Iran de-escalation holding (oil-is-the-tell: relief intact). Gold $4,021.80 (5d -108.1, falling hard) — the hedge bid keeps UNWINDING, the cleanest cross-asset confirmation of risk-on (a second straight session of gold-down/VIX-down). DXY 101.16. The board is risk-on and disinflationary-leaning. From factor_tape.py (Yahoo)."
+  },
+  "volatility_flow": {
+    "vix": 16.45,
+    "vix_note": "VIX 16.45 (-6.8% on factor_tape's reference; ~-10% vs Yahoo prevClose 18.41) — a second straight fear DRAIN, now under 16.5, the lowest of this stretch. Intraday range tight (16.27-17.75). Positive gamma re-stacking + a held breakout = no demand for downside protection. 5d -3.04 falling. From factor_tape.py.",
+    "vix_term_structure": null,
+    "put_call_ratio": null,
+    "put_call_note": "Not collected (lags 1-2 days free). Structural read: VIX sub-16.5 into a breakout close = protection being monetized, not bid.",
+    "notable_options_flow": null,
+    "note": "No corroborated single large print. Cleanest flow read is structural: SPX pinned the 7,500 call wall (209K OI) into the close — the breakout ran straight into the dominant call strike and stalled there (textbook positive-gamma pin). The day's buying was broad (chips + platforms both green), the mirror of the chip-only June 29 tape."
+  },
+  "technicals": {
+    "spx_vs_50dma": "+3.0% (50-DMA ~7,280 est; SPX 7,499.36)",
+    "spx_vs_200dma": "+7.9% (200-DMA ~6,950 est)",
+    "breadth_note": "Broad — chips AND platforms green, all 11 holdings up. Portfolio movers (Yahoo chart API, June 30 vs June 29 close): VRT +9.07% $334.82 (BEST; broad AI-infra breadth broadening into power/cooling, no single catalyst), MRVL +7.25% $297.89, ALAB +5.94% $483.02 (high 499.48 — near $500), TSM +4.94% $477.57, CRWV +4.22% $99.54, DELL +4.06% $431.46, NVDA +2.63% $200.09 (back >$200), AVGO +1.42% $377.75, MAGS +1.23% $64.30, GOOGL +1.05% $357.37, MU +0.79% $1,154.29 (high 1,168.68). Tracked: SOXX +4.30% $640.76, AAPL +2.70% $289.36 (rejoined the bid; still below the $293.08 memory-margin line), MSFT +1.21% $373.02, QCOM -2.08% $184.79 (lone red — Tenstorrent $8-10B deal dilution), SPCX ~$170.86 (well above the $135 offer), IGV $90.60 (>$88).",
+    "note": "DMAs still drift-estimated (carried) — refresh from a direct reading when market_levels.py runs clean. SPY x10 (7,468) ran ~31 pts below SPX (7,499) — use SPX as the index read."
+  },
+  "factor_attribution": {
+    "dominant_driver": "Continuation of the relief rally + quarter-end window-dressing + a breadth-broadening bid that carried SPX THROUGH the three-week ~7,450 ceiling — risk-on, now joined by the demand-side platforms, not just the chips",
+    "detail": "Clear driver and a constructive one: the June-29 Iran-relief turn extended into a second session, and on the last day of the quarter the bid broadened from chips-only to chips-plus-platforms (AAPL +2.70%, MSFT +1.21% rejoined). Quarter-end window-dressing (mechanical bid for the quarter's winners = the chips: VRT +9%, MRVL +7%, SOXX +4.3%) added fuel into the close. The result: SPX cleared the ~7,450 flip it had failed nine straight sessions and pinned the 7,500 call wall, re-stacking positive gamma (+$23.95B). Cross-asset confirms risk-on: VIX 16.45 (2nd straight drain), gold falling hard (hedge unwinding), oil contained sub-$71, 10Y stable. The cautions: this is a quarter-end tape (the window-dressing bid ceases July 1) with the AI-returns doubt unanswered (out-shouted by Iran relief), and the July 1 Warsh / July 2 jobs binaries are live. supply-over-demand was muddier today than June 29 (platforms green too) — chips still led on magnitude (SOXX +4.3% > AAPL/MSFT), so it leans a soft point FOR the thesis, not a clean one. Cross-asset (factor_tape.py, Yahoo): 10Y 4.42 (+1.05%), WTI 70.03 (-1.02%), DXY 101.16, VIX 16.45 (-6.8%), gold 4021.8 (5d -108 falling).",
+    "cross_asset": {"ust10y_pct": 4.42, "wti_usd": 70.03, "dxy": 101.16, "vix": 16.45, "gold_usd": 4021.8}
+  },
+  "calendar": [
+    {"date": "2026-07-01", "event": "Fed Chair Warsh speaks (ECB Sintra forum, ~9:30 ET) + Horizon: 2026-06-29-warsh-reaction", "why": "First Fed tone after the breakout. Dovish/data-dependent = fuel to extend toward 7,510/7,600; hawkish caps the bounce, could push back under the reclaimed 7,450 flip and re-arm the rate fear. Resolves the warsh-reaction conditional (hawkish -> no close above 7,450 + mega-cap-growth down)."},
+    {"date": "~2026-07-02", "event": "June jobs report (pulled early; markets closed Fri Jul 3) + software-rotation cluster horizon", "why": "The week's macro binary (governs 2026-06-25-jobs-duration-branch). Hot -> rate fear re-arms on top of AI-doubt, mega-cap growth takes the double hit, chips trade their order books. Cooling -> broad relief. ALSO: the software-quarter-end-fade + software-squeeze calls grade by July 2 (IGV closed $90.60 today, above the $88 bounce-stalls line = that call already resolved WRONG)."},
+    {"date": "2026-07-07", "event": "Horizon: 2026-06-25-jobs-duration-branch", "why": "Two sessions after the jobs print — SOXX vs mega-cap-growth basket on a hot print."},
+    {"date": "2026-07-10", "event": "Horizon: 2026-06-25-aapl-memory-margin", "why": "AAPL not to reclaim $293.08 by July 10 (closed $289.36 today, +2.70% — bounced but still below the line; tracking right, open)."},
+    {"date": "2026-07-23", "event": "Intel (INTC) Q2 2026 earnings (AMC)", "why": "Next hard foundry/yield checkpoint for the INTC binary — external-foundry revenue + 18A/18A-P yield-at-volume."},
+    {"date": "2026-09-01", "event": "Horizon: 2026-06-01-supply-over-demand", "why": "Supply-side basket vs demand-side platforms from the June 1 baseline. June 30 was muddier (platforms green too) — chips led on magnitude (SOXX +4.3% > AAPL/MSFT), a soft point FOR; the regime-dependence pattern holds (chips lead on risk-on days)."}
+  ],
+  "open_questions": [
+    "Does the breakout HOLD? SPX closed 7,499.36 above the ~7,450 flip and re-stacked positive gamma, but on a quarter-end window-dressing tape whose mechanical bid (for the quarter's winner chips) ceases July 1. The new central question: does the index stay above the reclaimed flip (now support) through the July 1 Warsh / July 2 jobs sessions, confirming the bull regime — or fade back below 7,450 as month-end flows reverse and the AI-returns doubt re-asserts? This is the flip-now-support-holds call logged tonight.",
+    "Is the rally BROADENING durably or just a quarter-end artifact? June 29 was chip-only; June 30 the platforms JOINED (AAPL +2.70%, MSFT +1.21%) — a healthier, broader bid. But platforms rejoining on the last day of the quarter could be window-dressing rotation into laggards. Watch whether AAPL/MSFT keep pace post-quarter-end or re-diverge from the chip leadership.",
+    "supply-over-demand was MUDDIER today (both chips and platforms green) — chips still led on magnitude (SOXX +4.3% > AAPL +2.7%, MSFT +1.2%), a soft point FOR. The pattern (points-FOR on risk-on chip-led days) holds but less cleanly than June 29. Sept-1 thesis intact; the broadening bid is the watch item.",
+    "CARRIED: 2026-06-25-aapl-memory-margin — AAPL +2.70% to $289.36, bounced but STILL below the $293.08 line (call: no reclaim by July 10). The memory-cost de-rate thesis intact; tracking right, open.",
+    "RESOLVED: 2026-06-12-spcx-holds-offer RIGHT (SPCX ~$170.86 at the June-30 horizon, never closed below the $135 offer). 2026-06-26-software-bounce-stalls WRONG (IGV $90.60 > $88, reclaimed the breakdown zone with the broad-market follow-through). flip-holds-first-test WRONG (close above 7,450). YOLO spx-7500c WIN.",
+    "Was the market_levels.py hang a one-off or is the intermittent-hang failure mode back? June 29 was the first clean --audit run in ~3 weeks; June 30 hung again (0-byte, killed exit 144). Re-run next session; if it keeps hanging, the side-by-side trust period can't progress and snippet stays primary."
+  ]
+}

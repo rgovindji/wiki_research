@@ -90,6 +90,7 @@ Index below the ~7,450 dealer-gamma flip; the 7,300 floor has held on a closing 
 ---
 
 ## Open calls awaiting user sign-off
+- **T11 posture (regime) — FALSIFIER TRIGGERED 2026-06-30.** SPX closed **7,499.36 above the ~7,450 flip with breadth** (platforms joined: AAPL +2.7%, MSFT +1.2%; all 11 holdings green; VIX 16.45; positive gamma re-stacked ~+$24B). T11's posture-falsifier reads: "a close back above ~7,450 *with breadth* (shock absorbers re-stack → add)." Per headless rules this is **not auto-flipped** — flagged for user sign-off to move the posture from *bull-under-stress → bull / add-bias*. Caveat: a single quarter-end-window-dressing close ahead of July 1 Warsh + July 2 jobs; confirm with a hold above the flip post-quarter-end before fully re-stacking the barbell. → [[overview]]
 - **[[NBIS]]** — hold bull/medium vs downgrade to neutral at current valuation? (06-29 pullback-and-reclaim eases, doesn't resolve.) → [[2026-06-30-nbis-neocloud-buy-zones]]
 - **[[GOOGL]]** — 5+ straight closes below Berkshire's $350 mark flagged ("googl-buffett-floor").
 - **Memory (T3)** — the 05-13 grid says "hold, don't trim"; the 06-29 late-cycle framework says "trim the leveraged cyclical." More recent view leans trim.
