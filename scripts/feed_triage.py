@@ -27,10 +27,53 @@ import subprocess
 import sys
 import urllib.error
 import urllib.request
+from datetime import date, datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
+# Repo standard: pass dates in, don't read the wall clock. Override with --today.
+REFERENCE_DATE = date(2026, 6, 30)
+
+
+def parse_published(published: str) -> datetime | None:
+    """Best-effort parse of the varied `published` formats present in the feeds.
+
+    Handles RFC-822 RSS pubDate, ISO-8601 / Atom timestamps, and epoch-seconds
+    strings (reddit created_utc). Returns a tz-aware UTC datetime, or None if
+    the value is empty / unparseable.
+    """
+    published = (published or "").strip()
+    if not published:
+        return None
+    # epoch-seconds string, e.g. "1750000000.0"
+    try:
+        return datetime.fromtimestamp(float(published), tz=timezone.utc)
+    except (ValueError, OverflowError, OSError):
+        pass
+    # ISO-8601 / Atom, e.g. "2026-06-24T12:00:00Z" or "...+00:00"
+    try:
+        dt = datetime.fromisoformat(published.replace("Z", "+00:00"))
+        return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except ValueError:
+        pass
+    # RFC-822 RSS pubDate, e.g. "Wed, 24 Jun 2026 12:00:00 GMT"
+    try:
+        dt = parsedate_to_datetime(published)
+        if dt is not None:
+            return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError):
+        pass
+    return None
+
+
+def age_days_for(published: str, today: date) -> int | None:
+    """Whole days between `published` and `today` (UTC). None if unparseable."""
+    dt = parse_published(published)
+    if dt is None:
+        return None
+    return (today - dt.astimezone(timezone.utc).date()).days
 
 
 def load_env() -> None:
@@ -76,11 +119,14 @@ def run_feed_scan(all_flag: bool, no_update: bool) -> dict:
         return {"new_items": 0, "by_persona": {}}
 
 
-def deepseek_score(items: list[dict], tickers: list[str], theses: list[str], model: str, key: str) -> dict:
+def deepseek_score(items: list[dict], tickers: list[str], theses: list[str], model: str, key: str,
+                   today: date) -> dict:
     catalog = ", ".join(tickers)
     thesis_list = "\n".join(f"- {t}" for t in theses)
     compact = [{"id": it["id"], "persona": it["persona"], "source": it["source"],
-                "title": it["title"], "summary": (it.get("summary") or "")[:300]} for it in items]
+                "title": it["title"], "summary": (it.get("summary") or "")[:300],
+                "published": it.get("published", ""), "age_days": it.get("age_days")}
+               for it in items]
     system = (
         "You are the ingestion triage analyst for a long-term AI/semis/compute equity research "
         "wiki. Score each feed item for whether it is worth the curator's attention. Be a harsh "
@@ -90,7 +136,14 @@ def deepseek_score(items: list[dict], tickers: list[str], theses: list[str], mod
         "memes, generic news, and anything off-topic."
     )
     user = (
-        f"Tracked tickers: {catalog}\n\nLive theses:\n{thesis_list}\n\n"
+        f"Today is {today.isoformat()}. Tracked tickers: {catalog}\n\nLive theses:\n{thesis_list}\n\n"
+        f"Each item carries `age_days` (days since it was published, relative to today; null if "
+        "unknown). RECENCY MATTERS: this feed is for timely signal. Penalize stale items — anything "
+        "older than ~14 days should normally be capped to score <=4 and action 'skip', and its `why` "
+        "must note 'stale (Nd old)' using the item's age_days. EXCEPTION: genuinely evergreen / "
+        "structural analysis (valuation frameworks, durable multi-year theses, foundational "
+        "explainers) is not killed by age — judge those on substance, but still note the age. Treat "
+        "null age_days as unknown (don't penalize for it).\n\n"
         f"Score these {len(items)} items. For each return: id, score (0-10 integer), "
         "action ('ingest' >=7 worth a source summary/page update, 'watch' 4-6 note it, "
         "'skip' <=3 noise), tag (the single most relevant ticker symbol or thesis keyword, or "
@@ -120,8 +173,12 @@ def main() -> int:
     ap.add_argument("--no-update", action="store_true", help="don't update feed_scan's seen-cache")
     ap.add_argument("--min", type=int, default=0, help="only show items with score >= MIN")
     ap.add_argument("--json", metavar="PATH", help="write the scored items to PATH")
+    ap.add_argument("--today", metavar="YYYY-MM-DD",
+                    help=f"reference date for recency penalty (default {REFERENCE_DATE.isoformat()})")
     args = ap.parse_args()
     load_env()
+
+    today = date.fromisoformat(args.today) if args.today else REFERENCE_DATE
 
     digest = run_feed_scan(args.all, args.no_update)
     items = [it for v in digest.get("by_persona", {}).values() for it in v]
@@ -129,12 +186,15 @@ def main() -> int:
         print("[feed_triage] nothing new to triage.")
         return 0
 
+    for it in items:
+        it["age_days"] = age_days_for(it.get("published", ""), today)
+
     key = os.environ.get("DEEPSEEK_API_KEY")
     model = os.environ.get("DEEPSEEK_MODEL", "deepseek-v4-flash")
     scored = {it["id"]: {"score": None, "action": "?", "tag": "", "why": ""} for it in items}
     if key:
         try:
-            result = deepseek_score(items, *wiki_context(), model, key)
+            result = deepseek_score(items, *wiki_context(), model, key, today)
             for r in result.get("items", []):
                 if r.get("id") in scored:
                     scored[r["id"]] = {"score": r.get("score"), "action": r.get("action", "?"),
