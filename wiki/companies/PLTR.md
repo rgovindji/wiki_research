@@ -2,9 +2,9 @@
 type: company
 ticker: PLTR
 tags: [ai, defense, government, software, agentic-ai, palantir]
-last_updated: 2026-05-17
+last_updated: 2026-06-29
 last_full_review: 2026-05-17
-sources: 1
+sources: 2
 conviction: medium
 stance: bull
 ---
@@ -24,12 +24,15 @@ Palantir is the **only AI software company with a 20+ year DoD/intelligence-comm
 | Listing | NYSE (PLTR) | — |
 | Market cap | ~$300B+ (verify; high-multiple) | 2026-05 |
 | **Maven program of record ceiling** | **$13B+ cumulative** (vs $480M May 2024) | March 2026 |
-| Q1 2026 revenue | ~$1.2B (verify; growing 30%+ YoY) | latest reported |
-| Government revenue mix | ~55-60% | 2025-2026 |
-| Commercial revenue mix | ~40-45% | 2025-2026 |
-| US revenue concentration | ~70% | 2025-2026 |
-| Operating margin (non-GAAP) | ~40%+ | latest |
-| Rule of 40+ | yes (growth+margin >40%) | 2025+ |
+| Q1 2026 revenue | **$1.633B, +84.7% YoY** (accelerating at scale — rare) | Q1 2026 (8-K) |
+| US commercial growth | **+133% YoY** | Q1 2026 |
+| FY2026 guide | **+71% revenue growth** | Q1 2026 |
+| Net dollar retention | **150%** | Q1 2026 |
+| Rule of 40 | **145%** (growth + adj-EBITDA margin) | Q1 2026 |
+| Net margin | ~53% · ~$8B cash, zero debt | Q1 2026 |
+| Government / commercial mix | ~50/50, both growing ~85% | 2026 |
+| **Forward P/E** | **~71–80x** | 2026-06-29 |
+| **Price/sales** | **~62x — the binding risk** | 2026-06-29 |
 
 ## Role in AI ecosystem
 - **Maven**: DoD AI/ML platform for intelligence analysis + battlefield decision-making — designated program of record March 2026
@@ -67,6 +70,7 @@ Cross-link to AI compute stack: Palantir runs on hyperscaler cloud (predominantl
 6. **2026 Q2 earnings** (early August) — guidance trajectory
 
 ## Recent developments
+- **2026-06-29 — Refreshed on a Q1 2026 blowout + the valuation crux (user query; [[2026-06-29-future-investing-pltr]], retail video bias-flagged but numbers verified vs the 8-K).** Q1 2026: revenue **$1.633B, +84.7% YoY** (*accelerating* at scale — rare), **US commercial +133%**, **NDR 150%**, **Rule of 40 = 145%** (a tier matched only by NVDA/MU/SK Hynix), net margin ~53%, ~$8B cash / zero debt, FY26 guide +71%. **The business is verified elite — not hype.** *But the binding risk is valuation:* **~62x sales / ~71-80x forward earnings**, the richest large-cap software multiple even after a ~40% drawdown from ~$207. **Which means** the "cheapest PLTR has been" framing is *relative to its own 200x+ mania*, not absolute value — at 62x sales the price embeds ~a decade of flawless execution, so multiple compression (not the fundamentals) is the dominant return driver, and any deceleration off the 85% base de-rates it violently (the $207→~$106 move is the preview). **On a "fundamental, not AI" framing — it's backwards:** the *fundamentals* justify a great company; only the *AI/AIP narrative* justifies 62x sales. You can't own PLTR as a cheap fundamental play — it's an elite business at a narrative-priced multiple. Stance held **bull (business) / medium (valuation-gated)**; high-conviction-required, high-beta premium-growth, *not* a value buy.
 - **2026-05-17 (research via Agent L)** — Maven designated formal Pentagon program of record (March 2026); contract value $480M (May 2024) → $13B+ cumulative ceilings 2026
 - Most under-covered AI revenue stream in public defense (per agent verdict)
 
@@ -87,6 +91,7 @@ Cross-link to AI compute stack: Palantir runs on hyperscaler cloud (predominantl
 
 ## Sources
 1. [[2026-05-17-robotics-multi-agent-batch]] — Agent L defense AI research; Maven program-of-record designation
+2. [[2026-06-29-future-investing-pltr]] — retail bull video (trigger, bias-flagged) cross-checked vs PLTR Q1 2026 8-K (rev/growth/NDR/Rule-of-40/margins) + GuruFocus/stockanalysis (fwd P/E ~71-80x, P/S ~62x). Added 2026-06-29.
 
 ## Citations
 - DOD Palantir Maven Smart System Contract Increase: https://defensescoop.com/2025/05/23/dod-palantir-maven-smart-system-contract-increase/

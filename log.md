@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-29] query | PLTR refresh (user-shared retail video)
+
+- Source: sources/2026-06-29-future-investing-pltr.md (Future Investing YouTube; bias HIGH/retail — bought the dip, talks his book). User asked about PLTR "as a fundamental play not AI-related."
+- **Numbers verified vs the Q1 2026 8-K** (I'd assumed retail cherry-picking; they check out): rev **$1.633B +84.7% YoY**, US commercial +133%, **NDR 150%**, **Rule of 40 145%**, ~53% net margin, $8B cash/no debt, FY26 guide +71%, Maven program-of-record. **Business is genuinely elite.**
+- **The crux + the reframe of the user's framing:** valuation is the binding risk — **~62x sales / ~71-80x fwd P/E**, richest large-cap software even after the ~40% drawdown ($207→~$106). The "fundamental, not AI" framing is *backwards*: fundamentals justify a great company; only the AI/AIP narrative justifies 62x sales. Not a value play — an elite business at a narrative price; multiple compression is the dominant return driver; high-beta.
+- Wiki touched: [[PLTR]] (1→2 sources, snapshot refreshed + valuation-crux recent-dev; stance held bull/medium), [[index]]. No stance change.
+- Committed locally (no push).
+
+---
+
 ## [2026-06-29] daily | Relief rally with chips leading; GOOGL reclaims $350, ALAB +16%
 
 After-the-bell close run for June 29. **Tape:** a broad risk-on relief day — SPX **7,440.43 (+1.18%)**, high 7,444.32 / low 7,348.88, closing ~10 pts under the ~7,450 zero-gamma flip (9th straight sub-flip close, but right at the doorstep); Nasdaq +2.07% (25,820.15), **Dow above 52,000 first time** (52,182.74, +0.59%). Driver: a weekend **US-Iran stand-down** + quarter-end window-dressing + a chip rebound. The morning brief worried chips would lag the bounce — instead they LED: **SOXX +4.14%**, [[TSM]] +5.26%, [[ALAB]] +16.4% (the book's best, on Stifel→$460 / BofA→$450 PT raises), [[MRVL]] +4.12%, [[NVDA]] +1.27%, [[MU]] +1.14%, while the **platforms lagged** ([[AAPL]] −0.72%, [[MSFT]] −1.18%, [[QCOM]] −0.35%). A clean **supply-over-demand** day (point FOR the standing thesis). [[GOOGL]] +4.8% to **$353.65**, reclaiming Berkshire's $350 on day one in the **Dow** (replaced Verizon). Cross-asset (factor_tape): 10Y 4.37 flat, WTI 70.42 (+1.72%, war premium absent), DXY 101.1, VIX 17.65 (−4.13%, faded from a 19.45 high), gold 4,030.5 (−1.18%, hedge bid unwinding) — risk-on confirmed.
