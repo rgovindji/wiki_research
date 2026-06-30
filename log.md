@@ -9,6 +9,15 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-30] ingest | ASTS × Rakuten Japan sovereign-LEO JV (~$1B gov support) — via the new feed pipeline
+
+- **First end-to-end ingest through the new ingestion stack**: `feed_scan` (r/stocks, investor persona) surfaced it → `feed_triage` (DeepSeek v4-flash) scored it **8/10 "ingest", tagged ASTS** → verified via WebSearch → price Polygon-verified ($86.77 close 06-29, +21%).
+- Facts: Rakuten + [[ASTS]] **50/50 JV** for Japan's domestically-controlled LEO direct-to-smartphone network; **~$1B (¥150B) gov support / ~$926M subsidy**; phased launch end-2026, nationwide FY2027; framed as economic-security vs Starlink.
+- Filed [[2026-06-30-asts-rakuten-japan-jv]]; patched [[ASTS]] (Recent developments + frontmatter last_updated/sources; **stance held bull/medium**, flagged the Japan JV as a conviction-positive datapoint — a *second* government-anchored market that answers the Starlink-D2C bear leg). Touched [[index]].
+- Committed locally (no push).
+
+---
+
 ## [2026-06-30] note | Morning brief: Leaning on the Door at 7,440
 
 Before the Bell sent. Covered: quiet quarter-end open (futures flat) with SPX pinned to the 7,440 call wall / ~7,450 flip after Monday's chip-led rip; Asia followed through (Taiwan +2.5%, Samsung +4%); TSMC advanced-node price hike (toll-taker raises the toll); flip-holds-first-test resolves over today/tomorrow; YOLO long-side 7,500c keyed to a held 7,450 reclaim. No wiki changes (morning runs don't ingest).

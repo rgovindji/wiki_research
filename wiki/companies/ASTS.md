@@ -2,9 +2,9 @@
 type: company
 ticker: ASTS
 tags: [space, satellite, telecom, direct-to-cell, speculative]
-last_updated: 2026-05-13
+last_updated: 2026-06-30
 last_full_review: 2026-05-13
-sources: 1
+sources: 3
 conviction: medium
 stance: bull
 ---
@@ -79,6 +79,7 @@ The pure-play direct-to-cellphone-from-space bet — Q1 2026 validated the core 
 
 ## Recent developments
 
+- **2026-06-30 — Rakuten 50/50 JV for Japan's sovereign LEO network; ~$1B (¥150B) government support; ASTS +21% to $86.77** ([[2026-06-30-asts-rakuten-japan-jv]]). Japan will back a domestically-controlled direct-to-smartphone LEO network — ~$926M in subsidies — explicitly to cut reliance on Starlink; phased launch end-2026, nationwide FY2027. **Which means:** a *second* government-anchored market after the US-gov awards, with a marquee operator (Rakuten) and sovereign-security funding — it validates the direct-to-unmodified-smartphone model against the Starlink-Direct-to-Cell structural risk in the bear case, and de-risks the revenue path beyond US MNOs. Held **bull / medium**; a clear conviction-positive datapoint (flagged for review). Price still ~35% below the 2026-05-28 high of $133.86.
 - **2026-05-11 — Q1 2026 print** (see [[2026-05-11-ASTS-Q1-2026-earnings]]). Revenue $14.7M; net loss $191M; cash $3.5B; FCC Supplemental Coverage from Space approved; 98.9 Mbps direct-to-unmodified-smartphone record. 2026 guide $150-200M reaffirmed. Stock surged ~12% pre-Q1; sustained post-print.
 - **2026-Q1** — Won 3 new US Government awards via prime contractors
 - **2026-Q1** — Raised >$1B in debt proceeds to fund satellite buildout
@@ -91,6 +92,7 @@ The pure-play direct-to-cellphone-from-space bet — Q1 2026 validated the core 
 
 1. [[2026-05-11-ASTS-Q1-2026-earnings]] — official Q1 2026 press release
 2. [[2026-05-14-space-economy-budget-sources]] — CSIS analysis on commercial-services starvation pattern + $190M new proliferated LEO satcom line
+3. [[2026-06-30-asts-rakuten-japan-jv]] — Rakuten 50/50 JV for Japan's sovereign LEO network (~$1B gov support)
 
 ## Citations
 
