@@ -44,3 +44,6 @@ gamma-desk/
 
 # SemiWiki daily-scan incremental cache (scripts/semiwiki_scan.py)
 .semiwiki_seen.json
+
+# Multi-source feed-scan incremental cache (scripts/feed_scan.py)
+.feeds_seen.json
