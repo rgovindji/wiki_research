@@ -1,7 +1,7 @@
 ---
 type: sector
 tags: [cloud, ai, hyperscalers, mag7]
-last_updated: 2026-05-09
+last_updated: 2026-06-30
 last_full_review: 2026-05-09
 sources: 0
 ---
@@ -29,6 +29,7 @@ The four companies running the cloud platforms that train and serve AI models: *
 **Common thread:** every hyperscaler's custom silicon program is co-developed with [[AVGO]]. This makes Broadcom the **systematic non-NVDA hedge** — when hyperscalers reduce dependence on Nvidia, Broadcom is the disproportionate beneficiary.
 
 ## Bull case
+- **The "tollbooth" thesis — token optimization is a *gift* to the hyperscalers (NEW 2026-06-30, [[2026-06-30-uncoveralpha-token-optimization-hyperscalers]]; bias HIGH).** As enterprises stop "token maxing" (always-buy-the-best-model) and start routing the routine ~80% to cheap/open-weight models, per-token price falls but **total volume explodes and almost every token crosses a hyperscaler's managed-inference toll** (AWS ~35-38% op margin, GCP >33%). The compression hits the *model* layer, not the *infra* layer — Jevons pointed at the cloud P&L. The orchestration layer (Bedrock 110+ models + Intelligent Prompt Routing + AgentCore; Azure Foundry; Vertex) is the durable capture point. **Caveat:** load-bearing assumption is that the toll stays sticky; managed inference is itself getting competitive. See [[inference-economics]]. Cleanest read for [[AMZN]]/AWS (pure tollbooth).
 - Hyperscalers are the **only buyers at scale** for AI compute → they capture supplier rents from any chip vendor that doesn't have a defensible monopoly
 - Cloud + AI is an **operating-leverage business** — incremental AI revenue largely drops to the gross margin line once infra is built
 - Multi-product moats: AI is a feature on top of existing cloud + productivity products with sticky enterprise contracts

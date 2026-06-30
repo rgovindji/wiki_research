@@ -1,7 +1,7 @@
 ---
 type: theme
 tags: [ai, inference, open-weight, model-routing, unit-economics, agentic]
-last_updated: 2026-06-29
+last_updated: 2026-06-30
 last_full_review: 2026-06-20
 sources: 21
 ---
@@ -61,6 +61,7 @@ Two well-credentialed sources, the *same* fact, opposite spin — surface both, 
 - **RL post-training efficiency (incremental, not regime-change)** — Cursor's Sasha Rush on how **Composer 2.5** was trained ([[2026-06-24-dwarkesh-sasha-rush-on-policy-distillation]]): *off-policy self-distillation* synthesizes a "teacher" by injecting targeted text feedback at the exact spot a reader-model flags an error in a long (100s-of-turn) agentic rollout, fixing specific mistakes *"much quicker than the full RL process."* **But the explicit limiter cuts against "training is collapsing to free":** *"not at the point yet where it replaces aspects of RL"* — runs *alongside* full RL, only catches *"easily identifiable"* errors, yields *"slightly better, a little bit at a time."* Net: real marginal efficiency on the cost-of-RL curve; not a step-change. Also a tell that app-layer leaders ([[ai-software-disruption|Cursor]]) are building their *own* frontier models.
 
 ## Who captures the margin (where this points)
+- **Hyperscaler managed-inference / orchestration — the "tollbooth" (NEW 2026-06-30, [[2026-06-30-uncoveralpha-token-optimization-hyperscalers]]; bias HIGH).** The sharpest framing of the value-migration: labs = carmakers (margin per car), hyperscalers = the tollbooth (same toll regardless of car). As the economy routes the routine ~80% down to cheap/open-weight models, per-token price compresses — but **the compression lands on the *model* layer, not the *infrastructure* layer**, and token volume explodes (MSFT >100T tokens/qtr +5× YoY, 300+ customers >1T each on Foundry; Google 480T→1.3 quadrillion tokens/month; cost down ~280× in 2yr / ~10×/yr — yet volume grows several-fold). Every token still crosses the toll (AWS ~35-38% op margin, GCP >33% and climbing), on a partly-depreciated installed base. **Which means:** Jevons pointed at the cloud P&L — bullish [[MSFT]]/[[AMZN]]/[[GOOGL]], and the orchestration layer (Bedrock/Foundry/Vertex routing + agent harness + fine-tunes + observability) is where the durable capture moves; the lab becomes an interchangeable back-end component. **Load-bearing caveat (counter-thesis):** assumes the *infra/managed-inference* margin stays sticky — but that toll is itself getting competitive (Bedrock vs Vertex vs Foundry vs neoclouds vs the labs' own APIs vs model-maker price cuts). Cleanest for AMZN (pure tollbooth); messier for MSFT/GOOGL who also carry model-margin bets. Tensions with Zlatev's "value migrates to chip tech, not landlords" — both can be partly true.
 - **Cheap-inference / neocloud infra** — [[NBIS]], [[CRWV]] (managed inference + open-weight serving = the routed-away volume). Double-edged: the same "route to cheapest compute" backlash pressures *their* pricing too (commoditization risk).
 - **Memory** — [[MU]] / HBM: inference is memory-bound; Katti calls *memory architecture* the medium/long-term frontier ("the compute-unit shape is known"). Bullish content-per-server.
 - **Non-NVDA silicon optionality** — Cerebras (fast inference), Trainium (~$50B run-rate), TPU; structurally guaranteed a seat by TSMC wafer allocation.

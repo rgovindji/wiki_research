@@ -2,7 +2,7 @@
 type: company
 ticker: AMZN
 tags: [ai, mag7, cloud, retail]
-last_updated: 2026-06-20
+last_updated: 2026-06-30
 last_full_review: 2026-05-09
 sources: 6
 conviction: medium
@@ -43,6 +43,8 @@ Two re-acceleration stories on parallel tracks — AWS regaining cloud growth sh
 - **AMZN held 2026 capex FLAT at $200B (May 2026; see [[2026-05-12-hyperscaler-capex-q1-revisions]])** while MSFT, GOOGL, META all raised. Could be read two ways: (a) supply-constrained (bullish supply chain, neutral AMZN) or (b) leaning harder on internal Trainium silicon (bearish for NVDA's AMZN revenue line, neutral AMZN). The Stratechery framing tilts toward "structural AI-readiness gap" as the explanation. If AMZN can't show AI-attached revenue growth in line with peers by 2H 2026, consider downgrade to neutral.
 
 ## Recent developments
+
+- **2026-06-30 — Contradicting evidence to the "AMZN = relative underweight" stance: the cleanest *pure-tollbooth* AI beneficiary** ([[2026-06-30-uncoveralpha-token-optimization-hyperscalers]]; bias HIGH). The "token optimization is a gift to the hyperscalers" thesis lands hardest on AWS: as enterprises route the routine ~80% of work to cheap/open-weight models, per-token price falls but volume explodes and **every token still crosses Bedrock's toll** (AWS ~35-38% op margin) — and unlike [[MSFT]]/[[GOOGL]], **AWS has no frontier-model margin to lose** (no first-party frontier model), so it's the purest tollbooth. Bedrock as the orchestration layer (110+ model variants + Intelligent Prompt Routing + AgentCore; multi-billion ARR, customer spend +60% QoQ) is the capture point. **Which means:** this is a real counter to the wiki's standing "AMZN is the relative underweight among the hyperscalers" read — the very model-commoditization that pressures others is *structurally good* for the pure infra/orchestration toll-taker. **Surfaced, not resolved** (caveat: assumes the managed-inference toll stays sticky; the source is a paid long-hyperscaler advocacy piece). Stance/conviction held **bull/medium** pending the Trainium 3 ramp + AWS AI-attached growth disclosures.
 
 - **🔥 2026-06-01 — GOOGL $80B raise + Berkshire $10B placement read-through:** [[GOOGL]] just raised an $80B war chest ($30B underwritten + $40B ATM + $10B Berkshire at $351.81/$348.20) explicitly to accelerate GCP AI infrastructure on top of $185-190B 2026 capex ([[2026-06-01-googl-80B-equity-raise-berkshire]]). For AWS, this is the most material competitive escalation at the cloud-AI tier in years — GCP now has both the capital and the institutional validation (Berkshire stamp) to press harder into AWS share, exactly while the Stratechery "Nitro/EFA networking handicap" bear thesis is unresolved. **Which means:** Bezos's cash-flow-discipline framing still holds — AMZN held 2026 capex flat at $200B and can self-fund without dilution, which is structurally healthier than GOOGL's posture. But the competitive intensity just ratcheted, and the strategic question for AWS leadership is now: respond by accelerating capex (and abandon flat-capex discipline), respond on price (margin compression), or trust Trainium 3 + startup-distribution to hold share. None are free options. Stance/conviction unchanged at bull/medium; this raises the importance of the Trainium 3 ramp and AWS AI-attached growth disclosures in 2H 2026 as the key data points.
 

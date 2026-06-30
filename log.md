@@ -9,6 +9,15 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-30] ingest | UncoverAlpha "token optimization is a gift to the hyperscalers" (the tollbooth thesis)
+
+- User shared the UncoverAlpha (Rihard Jarc) article; *bias HIGH — paid long-hyperscaler advocacy*. Strong, mostly-right *extension* of the wiki's value-migration thesis: labs=carmakers, hyperscalers=the tollbooth; token optimization compresses the *model* layer not the *infra* layer while volume explodes (MSFT >100T tokens/qtr; Google 1.3 quadrillion/month; cost −280×/2yr) → Jevons on the cloud P&L. Orchestration (Bedrock/Foundry/Vertex) = capture layer.
+- My pushbacks filed: (1) load-bearing assumption = managed-inference toll stays sticky (itself getting competitive); (2) cleanest for [[AMZN]] (pure tollbooth, no model margin to lose), messier for [[MSFT]]/[[GOOGL]]; (3) EO/geopolitics leg speculative; (4) tensions with Zlatev "value → chip tech, not landlords."
+- Filed [[2026-06-30-uncoveralpha-token-optimization-hyperscalers]]; patched [[inference-economics]] ("Who captures the margin" — added the tollbooth + token data + caveat), [[ai-software-disruption]] ("harness owned by hyperscalers", reconciles Noam Brown), [[cloud-hyperscalers]] (bull case). Added a **contradicting-evidence** note to [[AMZN]] — cleanest pure-tollbooth bull, a counter to the "AMZN = relative underweight" stance (surfaced, not resolved; held bull/medium). Touched [[index]].
+- Committed locally (no push).
+
+---
+
 ## [2026-06-30] query+ingest | META closed-model pivot (Muse Spark) — the "secret model" reality-check
 
 - User asked about a META "secret model that crushes Opus 4.8" rumor. Ran the loop (ledger → wikidb ask → WebSearch → Polygon price). Produced HTML work-up `meta_analysis_2026-06-30.html` (marked chart + tooltips), then patched the wiki.
