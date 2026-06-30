@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import urllib.request
 import urllib.parse
@@ -33,6 +34,22 @@ from xml.etree import ElementTree as ET
 REPO = Path(__file__).resolve().parents[1]
 SEEN_PATH = REPO / ".feeds_seen.json"
 UA = "investing-wiki-feedscan/1.0 (+research; contact rgovindji)"
+# Reddit blocks our IP directly, so reddit sources route through Webshare proxies with a
+# browser UA. Reddit's own .json is the data source — the proxy only changes the source IP.
+REDDIT_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+             "(KHTML, like Gecko) Chrome/121.0 Safari/537.36")
+_PROXIES = None
+
+
+def load_env() -> None:
+    env = REPO / ".env"
+    if not env.exists():
+        return
+    for line in env.read_text(encoding="utf-8", errors="replace").splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            k, _, v = line.partition("=")
+            os.environ.setdefault(k.strip(), v.strip().strip("'\""))
 
 # ── Source registry — persona-tagged. Extend freely; each source degrades gracefully. ──
 SOURCES = [
@@ -51,20 +68,53 @@ SOURCES = [
     {"name": "hn-markets", "persona": "investor", "type": "hn", "limit": 6, "min_points": 60,
      "query": "valuation OR earnings OR semiconductor OR Nvidia OR bubble OR AI capex"},
     {"name": "r-stocks", "persona": "investor", "type": "reddit", "sub": "stocks", "limit": 5},
+    {"name": "r-wallstreetbets", "persona": "investor", "type": "reddit", "sub": "wallstreetbets", "limit": 5, "sort": "hot"},
+    {"name": "r-investing", "persona": "investor", "type": "reddit", "sub": "investing", "limit": 4},
     # Operators / industry analysts
     {"name": "semianalysis", "persona": "operator", "type": "rss", "limit": 5,
      "url": "https://semianalysis.com/feed/"},
 ]
 
 
-def fetch(url: str, timeout: int = 25, accept: str = "*/*") -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept})
+def fetch(url: str, timeout: int = 25, accept: str = "*/*", proxy: str | None = None, ua: str = UA) -> str:
+    req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": accept})
+    if proxy:
+        opener = urllib.request.build_opener(urllib.request.ProxyHandler({"http": proxy, "https": proxy}))
+        with opener.open(req, timeout=timeout) as r:
+            return r.read().decode("utf-8", errors="replace")
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8", errors="replace")
 
 
 def fetch_json(url: str, timeout: int = 25):
     return json.loads(fetch(url, timeout, accept="application/json"))
+
+
+def webshare_proxies(limit: int = 10) -> list[str]:
+    """Fetch the Webshare proxy list (Authorization: Token <WEBSHARE_API_KEY>)."""
+    key = os.environ.get("WEBSHARE_API_KEY")
+    if not key:
+        return []
+    try:
+        url = f"https://proxy.webshare.io/api/v2/proxy/list/?mode=direct&page=1&page_size={limit}"
+        req = urllib.request.Request(url, headers={"Authorization": f"Token {key}"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            data = json.load(r)
+    except Exception as e:
+        print(f"[feed_scan] Webshare proxy-list failed: {e}", file=sys.stderr)
+        return []
+    proxies = []
+    for p in data.get("results", []):
+        if p.get("valid", True) and p.get("proxy_address") and p.get("port"):
+            proxies.append(f"http://{p['username']}:{p['password']}@{p['proxy_address']}:{p['port']}")
+    return proxies
+
+
+def get_proxies() -> list[str]:
+    global _PROXIES
+    if _PROXIES is None:
+        _PROXIES = webshare_proxies()
+    return _PROXIES
 
 
 def _clip(s: str, n: int = 400) -> str:
@@ -161,18 +211,28 @@ def collect_hf_papers(src: dict) -> list[dict]:
 
 
 def collect_reddit(src: dict) -> list[dict]:
-    # Unauthenticated Reddit is often blocked on cloud IPs; try, degrade to [] with a note.
+    # Reddit blocks our IP directly; route the official .json through Webshare proxies.
     sub = src["sub"]
-    url = f"https://www.reddit.com/r/{sub}/top.json?t=day&limit={src.get('limit', 6) * 2}"
-    try:
-        data = fetch_json(url)
-    except Exception as e:
-        print(f"[feed_scan] reddit r/{sub} unavailable ({e}); needs OAuth creds — skipping",
+    limit = src.get("limit", 6)
+    proxies = get_proxies()
+    if not proxies:
+        print(f"[feed_scan] reddit r/{sub}: no Webshare proxies (set WEBSHARE_API_KEY) — skipping",
               file=sys.stderr)
         return []
-    if not isinstance(data, dict) or "data" not in data:
-        print(f"[feed_scan] reddit r/{sub} returned non-JSON (blocked); needs OAuth — skipping",
-              file=sys.stderr)
+    url = f"https://www.reddit.com/r/{sub}/{src.get('sort', 'top')}.json?t=day&limit={limit * 2}"
+    data = None
+    for proxy in proxies[:4]:  # try up to 4 proxies; Reddit blocks many datacenter IPs
+        try:
+            raw = fetch(url, timeout=18, accept="application/json", proxy=proxy, ua=REDDIT_UA)
+            d = json.loads(raw)
+            if isinstance(d, dict) and "data" in d:
+                data = d
+                break
+        except Exception:
+            continue
+    if not data:
+        print(f"[feed_scan] reddit r/{sub}: all proxies blocked/failed — Reddit blocks datacenter "
+              f"IPs, so this may need Webshare *residential* proxies — skipping", file=sys.stderr)
         return []
     out = []
     for c in data["data"].get("children", []):
@@ -185,7 +245,7 @@ def collect_reddit(src: dict) -> list[dict]:
             "summary": f"▲{d.get('ups', 0)} · {d.get('num_comments', 0)} comments · "
                        + _clip(d.get("selftext") or "", 300),
         })
-        if len(out) >= src.get("limit", 6):
+        if len(out) >= limit:
             break
     return out
 
@@ -203,6 +263,7 @@ def main() -> int:
     ap.add_argument("--persona", help="only this persona (builder/researcher/investor/operator)")
     ap.add_argument("--source", help="only this source name")
     args = ap.parse_args()
+    load_env()
 
     seen = set()
     if SEEN_PATH.exists() and not args.all:
