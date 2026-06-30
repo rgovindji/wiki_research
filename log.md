@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-30] analysis | NBIS neocloud thesis + buy zones (TA chart, Polygon-verified)
+
+- Filed [[2026-06-30-nbis-neocloud-buy-zones]] — combines the bull/medium thesis with a marked technicals/buy-zones layer. Companion HTML `nbis_analysis_2026-06-29.html` (TradingView Lightweight-Charts; EMAs + buy zones + supports).
+- Numbers Polygon-verified via new `scripts/ticker_ta.py` (daily OHLC + EMAs/gaps/swing-lows): close **$261.15** (06-29), EMAs 20/50/200 = $248/$215/$140, double-bottom $234, buy zones B $232–240 / C $200–215, invalidation < $234.
+- Process upgrades (saved to memory): (1) **verify every price/level from Polygon, not WebSearch** — corrected an earlier stale-snippet price error; (2) **include a marked TA chart** in equity analyses. Built `scripts/ticker_ta.py` as the reusable data layer.
+- Wiki touched: [[2026-06-30-nbis-neocloud-buy-zones]] (new), [[NBIS]] (open curator Q noted — hold bull/medium), [[index]]. No stance change.
+- Committed locally (no push).
+
+---
+
 ## [2026-06-29] query | PLTR refresh (user-shared retail video)
 
 - Source: sources/2026-06-29-future-investing-pltr.md (Future Investing YouTube; bias HIGH/retail — bought the dip, talks his book). User asked about PLTR "as a fundamental play not AI-related."
