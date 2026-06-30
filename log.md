@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-30] query+ingest | META closed-model pivot (Muse Spark) — the "secret model" reality-check
+
+- User asked about a META "secret model that crushes Opus 4.8" rumor. Ran the loop (ledger → wikidb ask → WebSearch → Polygon price). Produced HTML work-up `meta_analysis_2026-06-30.html` (marked chart + tooltips), then patched the wiki.
+- Verified: MSL (Wang) shipped a **dual-track 04-08** (open Llama 5 + closed **Muse Spark**); Muse Spark ranks **4th on the Artificial Analysis Index (52)** — frontier *follower*, not leader. Mango/Avocado rumored next. Price **$562.60** (Polygon 06-29), below all EMAs, ~26% off the $759 high.
+- Key reframe filed: **model leadership ≠ META stock driver** (no model-API revenue) — the stock answers to capex discipline / dilution overhang / ad-ROI, read at Q2.
+- Filed [[2026-06-30-meta-muse-spark-msl-closed-pivot]]; patched [[META]] (new Recent-dev bullet + new bear bullet "frontier-follower, not leader" + frontmatter last_updated/sources 5→6). Touched [[index]]. **Stance held bull/medium** (sharpens the research-led bear; flagged for review at next print).
+- Committed locally (no push).
+
+---
+
 ## [2026-06-30] ingest | Claude GA on Azure (Microsoft Foundry) running on NVIDIA GB300
 
 - **Discovery**: `feed_scan` r/stocks (investor persona) → DeepSeek triage **7/10, tagged NVDA** → verified via WebSearch (NVIDIA + Microsoft + CNBC) + price via Polygon.
