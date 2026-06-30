@@ -9,6 +9,15 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-30] query+ingest | CRCL selloff + the Open USD consortium (new page created)
+
+- User asked why [[CRCL]] is dumping + details on "OpenUSD". Verified: CRCL $75.96 (Polygon 06-29), ~52% off the $159.47 high, below all EMAs. Catalyst (06-30): a **140-firm "Open Standard" consortium** (Visa/Mastercard/Stripe/BlackRock/BNY/Coinbase/Ripple/Google/Shopify) launching **Open USD (OUSD)** — multi-chain (Solana day-1, then Base/Polygon/Stellar), **shares reserve yield with adopters** (attacks Circle's core economics). Sharpest signal: **Coinbase** (Circle's biggest distributor) is in the consortium.
+- Answered the user's specifics: it's a *real* multi-chain transferable token (not a BS coin) with the distribution + economics to threaten USDC — but unproven (no firm date; undisclosed reserves/custodian/regulated entity).
+- **Created new page [[CRCL]]** (Circle; stance **neutral/low — flagged for review**, adjacent/fintech coverage) + filed [[2026-06-30-open-usd-consortium-vs-circle]]. Touched [[index]] (companies + sources). Stablecoin theme page still uncreated (flagged twice — candidate next).
+- Committed locally (no push).
+
+---
+
 ## [2026-06-30] ingest | UncoverAlpha "token optimization is a gift to the hyperscalers" (the tollbooth thesis)
 
 - User shared the UncoverAlpha (Rihard Jarc) article; *bias HIGH — paid long-hyperscaler advocacy*. Strong, mostly-right *extension* of the wiki's value-migration thesis: labs=carmakers, hyperscalers=the tollbooth; token optimization compresses the *model* layer not the *infra* layer while volume explodes (MSFT >100T tokens/qtr; Google 1.3 quadrillion/month; cost −280×/2yr) → Jevons on the cloud P&L. Orchestration (Bedrock/Foundry/Vertex) = capture layer.
