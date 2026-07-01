@@ -1,7 +1,7 @@
 ---
 type: theme
 tags: [hedging, risk, defensive, volatility, late-cycle]
-last_updated: 2026-06-22
+last_updated: 2026-07-01
 last_full_review: 2026-05-14
 sources: 1
 conviction: high
@@ -114,18 +114,19 @@ Cross-reference [[ai-bubble-debate]] late-cycle warning indicators:
 #### Naked single-stock puts
 **Why not:** Concentrated risk. Use spreads instead.
 
-## Recommended hedge stack (current — May 14, 2026)
+## Recommended hedge stack (current — 2026-07-01)
 
-Total ~6-9% of portfolio in hedges + ~3-5% in cash = ~10% defensive sleeve
+**Regime note (2026-07-01):** the tape **flipped bull** (S&P reclaimed the ~7,450 flip, closed 7,499) and the Mag-7 leaders have **pulled back** (buyable) — so this is a *lighter / tactical* posture, not the max-defensive May/June stack. Keep a structural core (cash + gold) + one event hedge into the **late-July Q2 hyperscaler prints** (the capex-cycle master switch per [[thesis-ledger]] T1). Match the hedge to the factor — **SOXX/QQQ, not SPX** (see the high-beta rule above). Total ~5-8% in hedges + ~3-5% cash = ~10% defensive sleeve. *(Prior stack's May 23 / June 27 put spreads have expired.)*
 
 | Hedge | Sizing | Purpose | Window |
 |---|---|---|---|
-| **BIL / SGOV** | 3-5% | Dry powder + positive carry | Always-on |
-| **QQQ May 23 540/520 put spread** | 1% | NVDA event hedge | Through May 23 |
-| **NVDA May 23 200/180 put spread** | 0.5-1% | Direct NVDA hedge | Through May 23 |
-| **QQQ June 27 530/500 put spread** | 1.5% | June 10 CPI event hedge | Through June 27 |
-| **VIX July 22/30 call spread** | 0.5-1% | Vol-spike insurance | Through July |
-| **GLD** | 1-2% | Fed credibility tail hedge | Structural |
+| **BIL / SGOV** | 3-5% | Dry powder + ~5% carry; the purest hedge (raise by trimming parabolic names) | Always-on |
+| **SOXX put spread (~6% / ~15% OTM)** | 1.5-2% | Semis tail hedge — the factor that actually needs hedging | Through late-July Q2 prints |
+| **NVDA put spread (~5-8% OTM)** | 0.5-1% | Direct hedge on the largest single-name beta | Through Q2 prints |
+| **VIX call spread** | 0.5-1% | Vol-spike insurance | ~Aug expiry |
+| **GLD** | 1-3% | Fed-credibility / real-rates tail hedge (uncorrelated) | Structural |
+
+*Structures are % OTM + sizing + window; pick exact strikes at execution. Cost of a ~7% stack in a calm year ≈ 0.3-0.5% drag.*
 
 ## Smart-money macro hedging signal (NEW 2026-05-17 PM)
 
