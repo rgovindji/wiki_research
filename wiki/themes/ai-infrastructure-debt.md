@@ -1,13 +1,17 @@
 ---
 type: theme
 tags: [debt, private-credit, srt, ai-data-centers, systemic-risk, contagion]
-last_updated: 2026-06-10
+last_updated: 2026-07-01
 last_full_review: 2026-05-15
-sources: 4
+sources: 5
 conviction: high
 ---
 
 # AI Infrastructure Debt — The Contagion Mechanism
+
+## 2026-07-01 — Damodaran independently names *this exact mechanism* as the one part of AI he worries about
+
+Per [[2026-07-01-damodaran-ai-valuations-spacex]] (NYU's Aswath Damodaran — a valuation professor with *no book to talk*, among the least-conflicted voices in the roster): asked directly what in AI worries him, he isolates it to **the debt-funded architecture layer** — "not the Mag-7, not NVIDIA… it's mostly small-to-mid-size companies using *borrowed money* to build AI architectures. When the reckoning comes, they're going to take some of us down with them." Everything else (equity-funded overreach, the "big market delusion") he calls a *healthy* boom-and-cleanup that only matters "**when it spills over into the rest of society** — and that happens when they borrow too much." **Which means:** the wiki's contagion thesis now has independent, low-bias corroboration from outside the trading community — and it converges with the Chanos frame (6/23, [[ai-bubble-debate]]) that the risk sits in the *landlord/neocloud/finance* layer, not the chipmakers. It sharpens the page's screen: the names to fear are the *levered, mid-cap, single-customer* builders (the [[APLD]] / [[IREN]] / private-neocloud cohort), not the self-funding hyperscalers ([[GOOGL]] equity raise below) or the customer-prepaid ORCL book. Falsifiable read: the spillover risk is proportional to how much of the buildout is *debt* vs equity/customer-prepay — track the financing mix, not the headline capex.
 
 ## 🔥 June 10, 2026 — ORCL Q4: the thesis's flagship name reported, and the picture got more complicated in both directions
 

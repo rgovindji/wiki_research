@@ -1,9 +1,9 @@
 ---
 type: theme
 tags: [ai, supply-chain, bottlenecks, semianalysis, robotics, wam]
-last_updated: 2026-06-29
+last_updated: 2026-07-01
 last_full_review: 2026-05-09
-sources: 24
+sources: 25
 ---
 
 # Bottleneck Roadmap (2026 → 2030)
@@ -135,6 +135,15 @@ Per [[2026-06-20-dylan-patel-daytona-cpu-bottleneck]] (Dylan Patel × Daytona Co
 - **NAND catching up to DRAM (update, not contradiction).** Dylan: DRAM "+4x last year and still rising"; **SSD/NAND now +3-4x with "another ~60% to go."** This is sharper NAND inflation than the 2026-05-09 Dwarkesh read (NAND rising *less* than DRAM); NAND lagged but is now catching up — bullish near-term [[SNDK]]/[[WDC]], reinforces the memory row above and the [[MU]] thesis.
 - **TSMC node-allocation squeeze (cross-ref):** all AI accelerators are on N3 → TSMC telling Apple/Qualcomm/MediaTek to "get off 3nm, move to 2nm faster," pushing mobile/PC vendors toward Intel (non-AI-competing foundry). NVDA's Groq acquisition partly = Groq-on-Samsung (no TSMC N3 capacity). Reinforces the [[AAPL]]-deprioritization flag.
 - **"Grindable, not just verifiable" is the real constraint on agent progress (Dwarkesh, [[2026-06-26-dwarkesh-next-training-paradigm]] — low-bias).** Coding/math advanced fastest because they're *grindable* — you can run 1,000 parallel rollouts in identical, resettable containers; **computer-use lagged** because you can't farm 1,000 live Amazon-checkout rollouts ("Andy Jassy will shut your bots down"). The unlock is building high-fidelity, deterministic **app clones** to train against — currently "labor-intensive and unscalable," and itself a heavy **CPU/sandbox + RL-environment compute** demand (each parallel rollout is a verifier/sim instance). **Which means:** the agentic buildout pulls *more* non-GPU compute (the warm-pool CPU + verifier-sandbox leg above) and underwrites the data/RL-environment vendor demand (Mercor/Surge/Scale) — for many domains, environment *construction*, not GPU supply, is the binding step.
+
+## Sub-bottleneck: memory-cell stagnation + the 1 W/mm² power-density wall + co-design as the real lever (NEW 2026-07-01)
+
+Per [[2026-07-01-sequoia-dylan-patel-hw-sw-codesign]] (Dylan Patel × Sequoia; *bias-flagged: hosts long SpaceX/Crusoe, Patel sells InferenceX*):
+
+- **No memory *cell* breakthrough in decades = the perennial-memory-bottleneck's root cause.** The NAND cell is ~25 yr old, the DRAM cell ~40 yr old; HBM has only added stacks/speed, not a new cell. **The next real bandwidth lever = stacking memory *directly on* the compute die** (vs beside it as HBM), which makes bandwidth "explode." **Which means:** deepens the [[MU]] thesis (memory is structural, not one-cycle — same conclusion as Horace He above) *and* flags memory-on-logic 3D integration as the packaging vector to watch (read-through to [[TSM]] CoWoS/SoIC, [[AMKR]], hybrid-bonding tool makers).
+- **Power density has been pinned at ~1 W/mm² for two decades.** A data-center/desktop die's wattage ≈ its area in mm² (100 mm² ≈ ~100 W); newest NVDA/TPU silicon still sits there → chips scale wattage only by adding silicon (Rubin ~2,000 W, **Rubin Ultra ~4,000 W**). The in-development unlock is pushing *past* 1 W/mm² (more power into less silicon) — hard because of thermal + electrical-interference limits, but it would cut silicon per chip. **Which means:** a new axis on the power/thermal bottleneck — watch for >1 W/mm² claims as a silicon-efficiency (and cooling-intensity) inflection; bullish the liquid-cooling/thermal stack ([[VRT]], [[MOD]]) if power density climbs.
+- **Custom-silicon fragmentation is deeper than "Google + Broadcom."** Google runs **three distinct TPU design programs — Broadcom, MediaTek, and an undisclosed third — different *architectures*, not just different vendors.** Everyone will deploy tens of $B (Google hundreds of $B/yr) of ASICs, but keeps NVIDIA as the general-purpose hedge because labs "don't know what architecture they'll run in a year" (local-minima risk — an ASIC optimized for today's model can be *wrong* after an architecture breakthrough). **Which means:** the ASIC TAM is bigger and more multi-vendor than the wiki assumed (bullish [[AVGO]] *and* [[MEDIATEK]] as TPU partners; read-through [[ALAB]]/[[MRVL]] connectivity), but NVDA's general-purpose moat is the structural counter — see [[NVDA]].
+- **CUDA moat "partially disentangled."** Models now write their own kernels (Claude/Codex do the optimization), and there are only *tens* of frontier labs, not thousands — so "everyone needs CUDA compatibility" is weakening. The real lock-in is that downstream *open* models (DeepSeek/Kimi/Qwen/Xiaomi/Nemotron) are co-designed for GPUs → ecosystem gravity; Google's counter is shipping good open models (Gemma) so an OSS ecosystem optimizes for TPUs. **Which means:** a slow erosion vector on the [[NVDA]] software moat — watch whether Google/Gemma-class open weights start running natively-optimized on TPUs.
 
 ## Sub-bottleneck: utilization waste + datacenter community backlash + alt-silicon co-design (NEW 2026-06-21)
 

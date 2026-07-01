@@ -2,9 +2,9 @@
 type: company
 ticker: private
 tags: [ai, ai-infrastructure, data-centers, neocloud, private, pre-ipo, energy, stargate]
-last_updated: 2026-06-22
+last_updated: 2026-07-01
 last_full_review: 2026-06-22
-sources: 8
+sources: 9
 conviction: low
 stance: neutral
 ---
@@ -64,6 +64,7 @@ From CEO Chase Lochmiller's interviews ([Acquired/IA-Summit, Oct 2025](https://w
 - **Still UNVERIFIED after the interviews:** revenue, gross margin, burn, customer concentration % — Lochmiller talks scale and strategy, never unit economics. The bull is *real and substantive*; the underwriting gap (and the cap-table-seat problem) is unchanged.
 
 ## Recent developments
+- **2026-07-01 — Two reads from Patel (Sequoia): a first *demand* crack (customer asked to halt a buildout) *and* the bull case for why Crusoe wins** (per [[2026-07-01-sequoia-dylan-patel-hw-sw-codesign]]; *bias: Sequoia hosts are disclosed Crusoe investors*). Cautionary datapoint: Patel notes a same-day tweet that **Crusoe publicly said one of its customers asked to *halt* construction on one data-center buildout** — the first visible crack in the "build, build, build" demand story (surface, watch for corroboration; not yet a trend). Offsetting bull framing: Crusoe/CoreWeave are the archetypal **hyperlevered-equity operators** who win on *time-to-market* — the neocloud opportunity exists because AI GPU-rental mechanics stripped away the hyperscalers' CPU-cloud moats and Microsoft's own DC teams "fell on their face" doubling forecasts. Patel ribs the "Crusoe = ex-Bitcoin guys" origin but credits the team (main DC lead ex-Microsoft). **Which means:** the leverage that powers the fast-build edge is the same leverage that makes a demand wobble dangerous ([[ai-infrastructure-debt]]) — the halt-tweet is exactly the kind of signal to track for the levered mid-cap builder cohort. Stance held **neutral / low**.
 - **2026-06-18 — Meta signed new AI-compute deals with Crusoe** for ~**1.6 GW** across **Childress, TX** and **Warrenton, MO**. Materially **de-risks** the prior Abilene reallocation overhang (below). From multiple outlets (TechStartups, Yahoo/Bloomberg).
 - **2026-03 — Abilene expansion friction:** Oracle/OpenAI **dropped a planned ~0.8 GW expansion** (1.2 GW → ~2 GW) of the flagship Abilene site. Reporting tied this partly to a **multi-day cooling outage (winter weather, liquid-cooling equipment)** that "damaged" the OpenAI–Crusoe relationship. **Nvidia paid a ~$150M deposit** to secure the freed capacity and brokered talks to place it with Meta — an unusual vendor intervention. (DCD, Reuters via Yahoo.) Oracle publicly **disputed** the cancellation framing, saying the 4.5 GW Oracle–OpenAI agreement remained on track. → Surfaced as **contradiction**, not resolved.
 - **2026-03-16 / 03-25 — Axios Pro:** Crusoe raising a **pre-IPO round, up to $2B at $30–40B** [rumored]. Widely viewed as a 2026 IPO candidate; **no confirmed IPO filing found** as of this writing.

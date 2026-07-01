@@ -1,9 +1,9 @@
 ---
 type: macro
 tags: [valuation, risk]
-last_updated: 2026-06-14
+last_updated: 2026-07-01
 last_full_review: 2026-05-09
-sources: 1
+sources: 2
 ---
 
 # Valuation Environment
@@ -20,6 +20,14 @@ The aggregate-level price the market is paying for a dollar of earnings, cash fl
 | Buffett Indicator (mkt cap / GDP) | **217–228%** | Dot-com peak was ~150%; Buffett's "reasonable" range is 75–90% |
 | Top 10 stocks share of S&P 500 | **>35%** | See [[market-concentration]] — exceeds 1929 and 2000 concentration |
 | S&P 500 level | 7,209 (April close) | All-time high |
+
+## 2026-07-01 — Damodaran: "great company ≠ great investment," the SpaceX number, and the big-market delusion
+
+Per [[2026-07-01-damodaran-ai-valuations-spacex]] (NYU's Aswath Damodaran — valuation professor, *no book to talk*):
+- **SpaceX (the viral call):** his intrinsic value is **$1.3T on ~$20B revenue** ("requires a lot of story to come true"); at the **>$1.8T** it now trades, he calls it **overpriced** — "a great company that's not [currently] a great investment." Musk is a *net-neutral* on price (as many refuse to own it because of him as are drawn to it). Full company treatment in [[SPCX]].
+- **"Big market delusion":** any big market → people overreach → correction/cleanup. He calls that *healthy* ("do you want a world run by actuaries? we'd still be in caves"); the only version that matters for the broad market is the **debt-funded** overreach that spills into society (routes to [[ai-infrastructure-debt]]).
+- **"Markets are high because of AI" is lazy.** Strip out the AI names and the market *still* trades richer than pre-AI; over the last ~2 months it *held* while NVDA/Mag-7 sold off — evidence of real breadth, not an AI-only melt-up. Tempers the "concentration = fragility" read below without refuting it.
+- **Investor vs trader:** "95% of people in markets are traders, not investors" — a caution that most of the multiple is set by mood/momentum, not intrinsic value, right now.
 
 ## Why valuations matter (and don't)
 
