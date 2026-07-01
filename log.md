@@ -9,6 +9,16 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-07-01] analysis | Flagship AI-ecosystem report — picks, regime call, next-sector prediction
+
+- User asked for an intelligent AI-ecosystem report: top purchasable picks, an overextension signal, and a rising-sector prediction. Built from the [[thesis-ledger]] + a live **27-name Polygon extension screen** (verified 06-30 close; paced around the 5/min rate limit).
+- **Regime call:** tape flipped bull (S&P reclaimed the flip, 7,499) and — the non-obvious finding — **all Mag-7 leaders pulled back to/below their 20-EMA** (12–33% off highs) = buyable; froth is in semicap ([[KLAC]] +24%, [[LRCX]] +17%) + momentum ([[PANW]] +18%, [[AMD]]/[[GEV]] +13%). Answer: not too overextended to buy *quality on the dip* with discipline; don't chase the hot names.
+- **Top purchasable:** [[GOOGL]] (cheapest, on EMAs), [[AMZN]] (tollbooth), [[NVDA]] (at 50-EMA), [[AVGO]] (−24% off hi), [[TSM]] (chokepoint), [[CEG]]/[[VST]] (nuclear value). **Avoid chasing:** KLAC/LRCX/PANW/AMD/GEV/MU/NBIS/PLTR.
+- **Next-sector prediction: AI-Security/cybersecurity** — Gartner 8%→40% AI-cyber spend, agentic attack surface + autonomous vuln discovery, the June-2 EO, PANW +44%/mo. Entry caveat: leaders already ran.
+- Filed [[2026-07-01-ai-ecosystem-picks-report]] + HTML `ai_ecosystem_report_2026-07-01.html`. Touched [[index]]. No stance changes (synthesis of existing stances). Committed locally (no push).
+
+---
+
 ## [2026-07-01] query+ingest | OUST + BB rocket to 52-wk highs (physical-AI momentum) — HTML report + BB page created
 
 - User asked why [[OUST]] + [[BB]] rocketed + what they do; requested an HTML report. Verified (Polygon, 06-30 close): OUST **$62.52** (~+13%, 52-wk high $63.79, ~40% above 20-EMA = parabolic); BB **$12.65** (~+20% post-earnings, 52-wk high $12.93).
