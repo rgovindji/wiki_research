@@ -9,6 +9,14 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-07-01] daily | Meta Compute repriced the AI-supply complex; breakout held, leadership broke
+
+**Close-of-market run.** THE STORY: Bloomberg reported **Meta building a cloud business ("Meta Compute") to sell EXCESS AI compute** — META +8.8%, but it torched the neocloud scarcity premium ([[CRWV]] −13.9% $85.68, [[NBIS]] −17.0% $229.18; both count Meta as a backstop customer) and, stacked with **B200 rental rates −31% MoM** + rate pressure (~50bp of hikes priced by Dec), drove a **violent supply-down/demand-up rotation** the index masked: SPX **7,483.23 (−0.2%, held above the reclaimed 7,450 flip)**, Nasdaq −0.66%, VIX 16.59 — but [[MU]] −10.6%, [[ALAB]] −10.8%, [[MRVL]] −8.7%, SOXX −6.4%, [[TSM]] −7%, [[VRT]] −7% vs [[MSFT]] +3.0%, [[AAPL]] +1.7%, [[GOOGL]] +1.1%. Our supply-heavy book ≈ **−3%** on a flat index. Warsh (Sintra) mixed-hawkish ("prices too high" / "risks have come down") = a sideshow; **ADP +98K** (cooling) into Thursday's BLS jobs.
+Ingested [[2026-07-01-meta-compute-ai-oversupply-rotation]] (also carries SemiWiki diamonds: **OXMIQ/Koduri $35M** licensable GPU w/ Samsung+MediaTek; **Etched** $5B TSMC-backed inference ASIC; **Intel Santa Clara EUV** groundbreak; ASML +53% YTD on Samsung/SK capex). Wiki touched: [[overview]], [[ai-capex-cycle]] (overbuild-watch flag → live datapoint), [[CRWV]], [[NBIS]], [[MU]], index.md.
+**No stance/conviction flips (headless).** FLAGS FOR USER: (1) supply-over-demand thesis ran hard *inverse* (3rd counter-print, all on capex-doubt days; Sept-1 horizon intact); (2) **neocloud thesis (T7) took its cleanest bear datapoint** — Meta reselling compute makes the scarcity premium contestable by the customers themselves (CRWV/NBIS review flagged); (3) T11 posture (the June-30 breakout falsifier) still open for sign-off — today's internal damage argues *for* the caution, the breakout held only at the index level. Predictions: warsh-reaction WRONG, aapl-memory-margin WRONG (AAPL reclaimed $293.08 as memory-buyer bid); YOLO 7,400p no-trigger (avoided loss, desk 2-2-9). market_state written (regime: bull-under-stress). Note: `market_levels.py` hung again (0-byte, killed) — closes via Yahoo chart API fallback; gamma carried structurally (no fresh net-GEX snippet).
+
+---
+
 ## [2026-07-01] note | Morning brief: The Breakout Meets Its First Bill
 
 Before the Bell sent. Covered: S&P futures −0.2% holding ~35 pts above the reclaimed 7,450 floor into a data-heavy morning (ADP 8:15 ET, Warsh at Sintra 9:00 ET); Nvidia −1.1% under $200 on GPU-lease-rates down 31%; Warsh-reaction call resolves today (spirit grade). YOLO: 0DTE SPX 7,400p armed only on a hawkish-Warsh regime re-flip below 7,394. No wiki changes (morning runs don't ingest).

@@ -1,14 +1,18 @@
 ---
 type: overview
 tags: [overview, synthesis]
-last_updated: 2026-06-30
+last_updated: 2026-07-01
 last_full_review: 2026-05-09
-sources: 4
+sources: 5
 ---
 
 # Overview — June 2026
 
 The top-level synthesis. Read this first. Updated whenever a meaningful new source lands.
+
+## ⚠️ July 1, 2026 — The breakout holds the line but the *inside* breaks: Meta says it'll sell excess compute, the AI-supply complex is repriced, platforms become the safe haven
+
+**Index held, leadership fractured.** SPX closed **7,483.23 (−0.2%)** — *above* the reclaimed ~7,450 flip (breakout technically intact), Dow 52,305.24 (−14 pts), Nasdaq −0.66%, VIX 16.59. **But underneath was a violent supply-down / demand-up rotation** the index masked: **[[MU]] −10.6%** ($1,032.28), [[ALAB]] −10.8% ($430.86), [[MRVL]] −8.7% ($272.05), AMD −6.9%, SOXX −6.4%, [[TSM]] −7.0% ($444.23), [[VRT]] −7.0% ($311.42), [[CRWV]] −13.9% ($85.68), [[NVDA]] −1.3% ($197.58, back under $200) — while the **platforms rose**: [[MSFT]] +3.0% ($384.28), [[AAPL]] +1.7% ($294.38), [[GOOGL]] +1.1% ($361.21), META +8.8%. **The catalyst:** **Meta is building a cloud business ("Meta Compute") to sell EXCESS AI compute** (Bloomberg) — which *adds GPU supply*, pressures rental pricing, and threatens the neocloud **scarcity premium** ([[NBIS]] −17.0%, CRWV −13.9%; both count Meta as a backstop customer). Stacked with a hard datapoint — **cloud B200 rental rates fell ~31% in a month** — and rate pressure (~50bp of Fed hikes now priced by December). **Which means:** the [[ai-capex-cycle|AI-capex-payback]] doubt that was *out-shouted* by the Iran-relief bid last week finally *drove tape* — and on capex-doubt days the money rotates OUT of the picks-and-shovels INTO the platforms (the demand side that would *benefit* from cheaper compute). Our supply-heavy book took an estimated **~−3%** on the day even as the index sat flat. **Warsh (Sintra)** was hawkish-leaning but mixed ("prices too high"; also "inflation risks have come down") — a sideshow to the oversupply story (10Y only +0.10 to 4.47, mega-caps *up*). **ADP +98K** (below +110K est, cooling) into Thursday's BLS jobs. Regime: back to **bull-under-stress** — the breakout held at the index level, but the AI-supply leadership that *is* the thesis got repriced on a real supply-side catalyst, not sentiment. **No headless stance flips;** the supply-over-demand thesis ran hard *inverse* today (a counter-print, its 3rd on a capex-doubt day; Sept-1 horizon intact) and the neocloud thesis (T7) took a genuine bear datapoint. See [[2026-07-01-meta-compute-ai-oversupply-rotation]].
 
 ## 🔼 June 30, 2026 — The ceiling breaks: S&P closes 7,499.36 above the three-week flip, positive gamma re-stacks, the best quarter in six years closes on a broad bid
 
