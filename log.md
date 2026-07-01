@@ -9,6 +9,15 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-06-30] query+ingest | Google's rumored 3rd TPU design partner = Marvell
+
+- User asked who the rumored 3rd Google TPU design partner is (2 known). Answer: **[[MRVL]]** — Google reportedly in talks (unsigned) for an **inference TPU + a memory-processing unit (MPU)**, adding to [[AVGO]] (training anchor, through-2031 lock, "8t") + MediaTek (inference/cost "8i", v9 SerDes 336G). Multi-supplier "automotive" architecture so no vendor gets leverage. ("4th" = Intel Foundry, but as a *fab* option ~2028, not a design partner.)
+- Investing read: bull datapoint for MRVL (already anchors AWS Trainium3 + MSFT Maia + optical DSPs; Google adds the most-custom-silicon-biased hyperscaler) — caveat unsigned. Mild TPU share-of-wallet caution for AVGO (complements the logged v9-SerDes loss), not a thesis-breaker; Broadcom stays anchor.
+- Filed [[2026-06-30-google-tpu-third-partner-marvell]]; patched [[MRVL]] (Recent-dev + frontmatter) + [[AVGO]] (Recent-dev). Touched [[index]]. Stances held (MRVL bull/med-high, AVGO bull/high).
+- Committed locally (no push).
+
+---
+
 ## [2026-06-30] daily | The ceiling breaks: S&P closes 7,499 above the flip, regime flips bull
 
 - **Market:** S&P **+0.79% to 7,499.36** (high 7,508.29), CLEARING the ~7,450 zero-gamma flip it failed to reclaim for nine straight sessions and pinning the 7,500 call wall. Positive gamma re-stacked (net GEX ~+$24B; flip migrated to ~7,394 = support). Bounce **broadened** — platforms joined ([[AAPL]] +2.70%, [[MSFT]] +1.21%) while chips still led (SOXX +4.3%, [[VRT]] +9.07%, [[MRVL]] +7.25%, [[TSM]] +4.94%, [[ALAB]] +5.94%, [[NVDA]] +2.63% back >$200, [[DELL]] +4.06%, [[CRWV]] +4.22%). All 11 holdings green; [[QCOM]] −2.08% the lone tracked red (Tenstorrent-deal dilution). VIX 16.45. Best S&P/Nasdaq quarter in ~6 years closes. Touched [[overview]].
