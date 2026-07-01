@@ -23,13 +23,14 @@ Highest-quality Western lidar pure-play with a credible 2026 profitability infle
 
 | Metric            | Value         | As of      |
 | ----------------- | ------------- | ---------- |
-| Stock price       | ~$26.80       | 2026-05-12 |
-| Market cap        | ~$1.71B       | 2026-05-12 |
-| Revenue (TTM)     | $169.4M       | 2025 FY    |
-| Rev growth (YoY)  | +52% (2025); +49% (Q1 2026) | 2026-Q1 |
-| Net loss (TTM)    | -$60.4M       | 2025 FY    |
-| Q1 2026 GM        | 43% (+200bps) | 2026-Q1    |
-| Cash              | $175M (zero debt) | 2026-Q1 |
+| Stock price       | **$62.52** (52-wk high) | 2026-06-30 (Polygon) |
+| Market cap        | ~$4.0B        | 2026-06-30 |
+| Revenue (TTM)     | ~$185M        | through Q1 2026 (Polygon) |
+| Rev growth (YoY)  | +49% (Q1 2026) | 2026-Q1 |
+| Net income (TTM)  | ~−$56M (loss) | Polygon |
+| Gross margin (TTM)| ~49%          | Polygon |
+| Cash / curr. assets | ~$251M (zero debt) | 2026-Q1 |
+| **Price / Sales** | **~21×** → **overvalued** (loss-making, Hesai-outscaled; parabolic run) | 2026-06-30 |
 | Avg analyst PT    | $41.33 (Strong Buy, 4 analysts) | 2026-05 |
 | ATM offering      | $100M launched May 2026 | 2026-05 |
 

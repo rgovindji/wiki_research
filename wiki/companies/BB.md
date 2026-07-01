@@ -23,8 +23,13 @@ A genuine turnaround: an automotive real-time OS (**QNX**, in 250M+ vehicles wit
 | Price | **$12.65** | 2026-06-30 (Polygon) |
 | 52-wk high | $12.93 | 2026-06-30 |
 | Trend (EMAs) | above 20/50/200 ($9.70/$8.05/$5.48) | 2026-06-30 |
+| Market cap | ~$7.4B | 2026-06-30 |
+| Revenue (TTM) | ~$580M | through FQ1'27 (Polygon) |
 | FQ1'27 revenue | $152.9M (+26% YoY) | Q1 FY27 |
-| Adj EBITDA | $36.3M (+144% YoY) | Q1 FY27 |
+| Gross margin (TTM) | ~77% (software-like) | Polygon |
+| Net income (TTM) | ~+$60M (profitable) | Polygon |
+| Adj EBITDA (FQ1) | $36.3M (+144% YoY) | Q1 FY27 |
+| **Price / Sales** | **~12.8×** (P/E ~124× on turnaround base) → **fair, leaning full** | 2026-06-30 |
 
 ## What it does
 - **QNX** — real-time OS embedded in **250M+ vehicles**: digital cockpits, ADAS, autonomous-driving functions. ~**$1B royalty backlog**; management guides QNX rev **~+15%**. The core growth engine + the physical-AI/autonomy tie-in.
