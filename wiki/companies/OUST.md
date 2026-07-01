@@ -2,7 +2,7 @@
 type: company
 ticker: OUST
 tags: [lidar, robotics, humanoid, automotive, smart-infrastructure, physical-ai]
-last_updated: 2026-05-13
+last_updated: 2026-07-01
 last_full_review: 2026-05-13
 sources: 1
 conviction: low
@@ -67,6 +67,7 @@ Highest-quality Western lidar pure-play with a credible 2026 profitability infle
 
 ## Recent developments
 
+- **2026-06-30 — +~13% to a 52-wk high ($62.52; intraday $63.79) on a stack of physical-AI deals — now parabolic** ([[2026-07-01-oust-bb-physical-ai-52wk-highs]]). Catalysts: **Benchmark** manufacturing expansion (100k+ Rev8 sensors/yr capacity); a **BlueCity** NJ-DOT highway deployment at MetLife Stadium (World-Cup traffic digital twin); **AIM Intelligent Machines** (autonomous heavy machinery); **FieldAI** (industrial robots); **BABA** compliance (federal-infra eligibility). Moved with the autonomy basket (SLS/[[BB]]; Aeva +11%). **Which means:** the bull leg is firing — real, accelerating commercial traction — but it is *not* the Hesai-fix (humanoid-OEM design win / US tariffs) the wiki set as its upgrade condition, and the stock is now **~40% above its 20-EMA at an all-time high** (~4× off the March low). **Stance held bull/low** — traction is real, the structural scale bear vs Hesai is unchanged; chase risk high at the high.
 - **2026-05-14 — Stock +26% since wiki downgrade ($26.80 → $33.86).** Multiple catalysts stacked through the week:
   - **NVDA DRIVE Hyperion + DriveWorks full qualification** for Rev8 family — OEMs and AV developers at Level 4 autonomy can plug OUST sensors into pre-built NVDA software stack (material step up from prior "qualified to run on" framing)
   - **BlueCity smart-infrastructure expansion** — going from 6 to **30+ intersections in greater Atlanta**, including the area around Mercedes-Benz Stadium ahead of the 2026 FIFA World Cup (recurring software/lidar revenue smoothing)

@@ -182,6 +182,9 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 
 ## Companies (`wiki/companies/`)
 
+### Adjacent / autonomy · auto-software (non-AI-core)
+- [[BB]] — **NEW 2026-07-01** — BlackBerry (QNX auto OS in 250M+ vehicles + Secure Comms); neutral/low. Created on the QNX-earnings-beat 52-wk-high rally. Initial stance flagged for review.
+
 ### Adjacent / fintech (non-AI-core)
 - [[CRCL]] — **NEW 2026-06-30** — Circle (USDC issuer); neutral/low. Created on the Open USD consortium threat + the ~52%-off-high selloff. Initial stance flagged for review.
 
@@ -360,6 +363,7 @@ These pages exist to prevent off-framework user purchases. Stub-level depth by d
 - [[2026-05-15-weekly-synthesis]] — first weekly synthesis instance; "The week the supply chain raised its hand — and the bond market raised it higher"; AMAT guide raise + 30y auction above 5%; ~1,300 words; internal draft for Saturday May 17 publication (NEW 2026-05-14)
 
 ## Sources (`sources/`)
+- [[2026-07-01-oust-bb-physical-ai-52wk-highs]] — **NEW 2026-07-01** — why [[OUST]] + [[BB]] rocketed to 52-wk highs (06-30): OUST +13% on a deal stack (Benchmark 100k capacity, BlueCity/NJ-DOT, AIM, FieldAI, BABA) — parabolic, still structurally out-scaled by Hesai (held bull/low); BB +20% on a QNX FQ1'27 earnings beat (rev +26%, EBITDA +144%) — earnings-backed turnaround (new page, neutral/low). Both lifted by physical-AI/autonomy retail momentum. Companion HTML `oust_bb_report_2026-07-01.html`. → [[OUST]] / [[BB]] / [[robotics]]
 - [[2026-06-30-google-tpu-third-partner-marvell]] — **NEW 2026-06-30** — Google's rumored **3rd TPU design partner = [[MRVL]]** (in talks, unsigned, for an inference TPU + a memory-processing unit), alongside [[AVGO]] (training anchor, locked through 2031) + MediaTek (inference/cost, v9 SerDes). Multi-supplier "no vendor gets leverage" architecture. Bull datapoint for MRVL; mild TPU share-caution for AVGO (not a thesis-breaker). Intel Foundry = *fab* option (2028), not a design partner. → [[MRVL]] / [[AVGO]] / [[GOOGL]]
 - [[2026-06-30-semiwiki-feeds-daily]] — **NEW 2026-06-30** — SemiWiki/feeds sweep: photonics' scaling gate = *repeatable* test/metrology (CPO/PIC probe stations); China memory equipment tenders (CXMT ~$5–6B / +50–60k wspm, YMTC Phase-2); Goertek 12" AR optical wafer plant; **Intel Q2 = July 23 AMC**; research "HBM Is Not All You Need" (GDDR-for-prefill, marginal HBM-relief) → [[semiconductors]] / [[INTC]] / [[inference-economics]] / [[overview]]
 - [[2026-06-30-open-usd-consortium-vs-circle]] — **NEW 2026-06-30** — why [[CRCL]] is dumping: a 140-firm consortium ("Open Standard") launching **Open USD (OUSD)** — Visa/Mastercard/Stripe/BlackRock/BNY/**Coinbase**/Ripple/Google/Shopify. Multi-chain (Solana day-1, then Base/Polygon/Stellar), **shares reserve yield with adopters** (attacks Circle's core revenue), Coinbase (Circle's biggest distributor) defecting. Real structural threat but unproven (no date, undisclosed reserves). → [[CRCL]] / [[COIN]]

@@ -9,6 +9,15 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-07-01] query+ingest | OUST + BB rocket to 52-wk highs (physical-AI momentum) — HTML report + BB page created
+
+- User asked why [[OUST]] + [[BB]] rocketed + what they do; requested an HTML report. Verified (Polygon, 06-30 close): OUST **$62.52** (~+13%, 52-wk high $63.79, ~40% above 20-EMA = parabolic); BB **$12.65** (~+20% post-earnings, 52-wk high $12.93).
+- **OUST** = deal stack (Benchmark 100k Rev8 capacity, BlueCity/NJ-DOT MetLife/World-Cup, AIM Intelligent Machines, FieldAI, BABA compliance) + physical-AI momentum. **BB** = QNX FQ1'27 earnings beat (rev $152.9M +26%, adj EBITDA $36.3M +144%; QNX in 250M+ vehicles, ~$1B backlog). Both lifted by the SLS/BB/OUST autonomy-basket retail momentum.
+- Deliverable: `oust_bb_report_2026-07-01.html` (two marked charts + tooltips). Filed [[2026-07-01-oust-bb-physical-ai-52wk-highs]]; patched [[OUST]] (Recent-dev + frontmatter; **held bull/low** — run is the bull leg firing but doesn't fix the Hesai scale bear); **created [[BB]]** (BlackBerry; QNX/Secure-Comms turnaround; **neutral/low, flagged for review**). Touched [[index]] (companies + sources).
+- Committed locally (no push).
+
+---
+
 ## [2026-06-30] query+ingest | Google's rumored 3rd TPU design partner = Marvell
 
 - User asked who the rumored 3rd Google TPU design partner is (2 known). Answer: **[[MRVL]]** — Google reportedly in talks (unsigned) for an **inference TPU + a memory-processing unit (MPU)**, adding to [[AVGO]] (training anchor, through-2031 lock, "8t") + MediaTek (inference/cost "8i", v9 SerDes 336G). Multi-supplier "automotive" architecture so no vendor gets leverage. ("4th" = Intel Foundry, but as a *fab* option ~2028, not a design partner.)
