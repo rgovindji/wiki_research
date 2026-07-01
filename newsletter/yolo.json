@@ -177,6 +177,20 @@
       "status": "no-trigger",
       "resolved": "2026-06-25",
       "resolution_note": "NO-TRIGGER — and the stand-aside AVOIDED A LOSS. The card required SPX to RECLAIM 7,450 (the zero-gamma flip) and HOLD it ~30 minutes — the hold-filter was the entire entry, separating a real gap-and-go from a gap-and-fade. What happened: the +2.4% Nasdaq-futures gap faded into the cash open. SPX opened 7,404.91, rallied only to 7,419.08 (~31 pts SHORT of the 7,450 trigger), got rejected there and faded to a 7,323.50 low before closing 7,357.49 (-0.01%). The 7,450 reclaim never came, so by the card's terms the trade never existed; the desk stood aside. Unlike June 10/24 (no-triggers whose theses paid from the sidelines), this one AVOIDED a loss: the bullish thesis was WRONG (no gap-and-go — the index never cleared the flip and closed below its own open), so a 7,475 call bought on a loose entry would have expired worthless. The hold-filter demanded a confirmation the gap never delivered. Mechanism footnote: a premarket futures gap is not a cash-session reclaim — and the most bullish catalyst stack of the month (soft PCE + MU blowout + QCOM) STILL couldn't carry the flip, because the mega-cap memory-cost selloff (AAPL -6.1%, MSFT -3.2%) capped the rip. The bullish mirror of the week's lesson: no confirmation, no trade, in either direction. Desk record 1-2-6 (6th stand-aside; 4 avoided losses, 2 missed winners). NOTE: our own house call 2026-06-23-no-reclaim-7450 graded RIGHT today (the reclaim failed), so the desk correctly declined to fight it — the card said 'if this works our no-reclaim call grades wrong; we take that trade,' and the trade never set up because the no-reclaim call held."
+    },
+    {
+      "id": "2026-07-01-spx-7400p",
+      "date": "2026-07-01",
+      "issue": "2026-07-01-morning",
+      "structure": "SPX 0DTE 7,400 put",
+      "direction": "bearish (regime re-flip on a hawkish-Warsh break of the reclaimed floor)",
+      "thesis": "The morning after the breakout, positive gamma re-stacked (+$23.95B, June-30 snippet) — the tape is now BUILT TO DAMPEN: dips toward the reclaimed 7,450 flip get bought, pushes into the 7,500 call wall (where SPX pinned yesterday) get sold. In that regime a real directional move needs an event to break the machinery, and there is exactly one on the card today: Warsh at Sintra (9:00 ET), first international appearance, hawkish reputation, no forward guidance. The ONLY clean downside trade is a genuine regime RE-FLIP — SPX doesn't just wobble at 7,450, it loses the migrated zero-gamma flip at ~7,394, below which dealer hedging turns from cushion back to accelerant (gamma negative again). That is the distinction from the flush-shorts that no-triggered all of late June: those bought a break of a DEFENDED floor in a NEGATIVE-gamma tape (the shelf bounced every one); this one only exists if positive gamma is actually snuffed out below 7,394, which re-arms amplification. Futures modestly red (S&P -0.2%, NQ -0.4%), NVDA -1.1% under $200 on the GPU-lease-rate doubt, gold ticking back up +0.6% — the caution texture that makes a hawkish-Warsh break plausible. Keyed to the level (7,394) per lesson 1; Warsh is context.",
+      "trigger": "After Warsh speaks (9:00 ET), SPX LOSES 7,450 AND breaks ~7,394 (the migrated zero-gamma flip) WITH MOMENTUM — a real break below the character-change line once the reaction settles, not a one-print tag. No break of 7,394 = no trade, desk stands aside (a hold above 7,450, or a wobble to 7,450 that gets bought, is the breakout surviving — do not fight it).",
+      "target": "7,300 — the twice-defended put-side shelf, where dealer hedging flips from tailwind to headwind for a short. First checkpoint 7,350.",
+      "invalidation": "SPX reclaims 7,394 or holds above 7,450 after the break — the breakout survived, out, no re-entry, no averaging down. Hard time-stop 3:30 ET if neither target nor invalidation has hit (June 11 lesson: theta resolves 'almost' against the holder).",
+      "status": "open",
+      "resolved": null,
+      "resolution_note": null
     }
   ]
 }

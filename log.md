@@ -9,6 +9,12 @@ grep "^## \[" log.md | tail -5
 
 ---
 
+## [2026-07-01] note | Morning brief: The Breakout Meets Its First Bill
+
+Before the Bell sent. Covered: S&P futures −0.2% holding ~35 pts above the reclaimed 7,450 floor into a data-heavy morning (ADP 8:15 ET, Warsh at Sintra 9:00 ET); Nvidia −1.1% under $200 on GPU-lease-rates down 31%; Warsh-reaction call resolves today (spirit grade). YOLO: 0DTE SPX 7,400p armed only on a hawkish-Warsh regime re-flip below 7,394. No wiki changes (morning runs don't ingest).
+
+---
+
 ## [2026-07-01] analysis | Flagship AI-ecosystem report — picks, regime call, next-sector prediction
 
 - User asked for an intelligent AI-ecosystem report: top purchasable picks, an overextension signal, and a rising-sector prediction. Built from the [[thesis-ledger]] + a live **27-name Polygon extension screen** (verified 06-30 close; paced around the 5/min rate limit).
